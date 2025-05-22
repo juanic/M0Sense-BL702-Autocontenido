@@ -1,91 +1,153 @@
-# M0sense_BL702_example
+# 🧠 M0sense BL702 Example
 
-## Foreword
+Este repositorio contiene ejemplos de aplicación para la familia de microcontroladores **Bouffalo Lab BL702**, utilizando el SDK oficial (`bl_mcu_sdk`) y el toolchain RISC-V en Windows. La idea del repositorio
+es que sea lo más autocontenido posible, creado a partir del [original].(https://github.com/sipeed/M0sense_BL702_example)
 
-**Structure Of This Project**
+---
 
-```shell
-❯ tree -d -L 2
-.
-├── bl_mcu_sdk      # bl_mcu_sdk freezed at v1.4.5 
-│   ├── bsp
-│   ├── common
-│   ├── components
-│   ├── docs
-│   ├── drivers
-│   ├── examples
-│   ├── tools
-│   └── zephyr
-├── m0sense_apps    # m0sense_apps(demo) list inside
-│   ├── blink           # rgb led blink
-│   ├── hello_world     # echo hello, world on your usb
-│   ├── lcd_flush       # flush lcd with random color
-│   └── rtos_demos      # some 
-├── misc            # some other not categorized 
-│   ├── firmware        # base firmware support drag-and-drop operation
-│   ├── sdk_patch       # patch of bl_mcu_sdk@v1.4.5 for further support
-│   └── utils           # some utils for easy use
-└── uf2_demos       # much pre-converted uf2 files just for your drag-and-drop
+## 📦 Estructura del repositorio
+
+```
+M0sense_BL702_example/
+├── bl_mcu_sdk/               # SDK oficial con drivers y ejemplos de uso
+├── m0sense_apps/             # Aplicaciones de ejemplo
+├── misc/
+│   ├── sdk_patch/            # Parches opcionales para el SDK
+│   └── utils/uf2_convert     # Conversor bin → UF2
+├── build_sc.sh               # Script de compilación modificado
+├── build.sh                  # Script de compilación original
+└── README.md
 ```
 
-We recommend applying patch on `bl_mcu_sdk` for further feature support.
-So make sure your app is developed with completely patched `bl_mcu_sdk` if necessary.
+---
 
-Now you can just jump to *[0. Clone this repository and have try](#0-clone-this-repository-and-have-try)* and try these pre-compiled apps.
+## 🖥️ Requisitos
 
-## 0. Clone this repository and have try
+- **Windows 10 o superior**
+- [Git for Windows](https://git-scm.com/download/win) (incluye Git Bash)
+- Toolchain RISC-V precompilada para Windows
+- `make` (instalable con [MSYS2](https://www.msys2.org/) o Cygwin)
 
-Go to any directory you want and type these below:
+---
 
-```shell
-git clone https://github.com/sipeed/M0sense_BL702_example.git
+## 🛠️ Instalación paso a paso
+
+### 1. Clonar este repositorio
+
+```bash
+git clone https://github.com/tu-usuario/M0sense_BL702_example.git
 cd M0sense_BL702_example
 ```
 
-And there are several compiled apps under `uf2_demos`.
+---
 
-You can just hold the `Boot` button near the `Reset` button and then reset the board, Tap `Reset` button or repower just due to you.
+### 2. Descargar e instalar la toolchain RISC-V para Windows
 
-And then there will be a REMOVABLE UDISK labeled `M0SENSE` appear on your PC where you can put the uf2 apps.
+1. Ir a:  
+   👉 https://github.com/sifive/freedom-tools/releases
 
-**THEN JUST DROP ONE OF THEM INTO THE DISK AND IT WILL SOON AUTO REBOOT TO YOUR CHOSEN APP, ENJOY IT.**
+2. Buscar un ZIP que contenga:  
+   `riscv64-unknown-elf-toolchain-*-x86_64-w64-mingw32.zip` 
 
-If you want to compile it on yourself or fethermore develop your app based on M0Sense.
+3. Extraer en una carpeta como:  
+   `C:\riscv64-tools\`
 
-**SO KEEP GOING**
+4. Verificar que exista:  
+   `C:\riscv64-tools\bin\riscv64-unknown-elf-gcc.exe`
 
-## 1. Prepare bl_mcu_sdk (may need much time for some reson)
 
-We take the advice from Bouffalolab to import the [bl_mcu_sdk](https://github.com/bouffalolab/bl_mcu_sdk/blob/release_v1.4.5/README.md#how-to-make-sdk-as-submodule) as submodule.
+---
 
-You just need to type this command below after you cloned this repository.
+### 3. Configurar el entorno (`~/.bashrc`)
 
-```shell
-$ git submodule update --init
-```
-And then wait for it to finish.
-
-After that, you have to APPLY patch needed.
+Abrí Git Bash y agregá esto a tu `~/.bashrc`:
 
 ```bash
-./build.sh patch
+export PATH="/c/riscv64-tools/bin:$PATH"
 ```
 
-If you have not used `GIT`, maybe run this command below first. If you understand what this is, you should know whether to do it.
+Recargá el entorno:
 
 ```bash
-git config user.email "m0sense@sipeed.com"
-git config user.name "tinymaix"
+source ~/.bashrc
 ```
 
-## 2. Compile in yourself
+Verificá:
 
-There are several demos available under `m0sense_apps`. We also provide a shell script named `build.sh`.
+```bash
+riscv64-unknown-elf-gcc --version
+```
 
-Simply type these below and press Enter, there will be the newest `blink_baremetal.uf2` under `uf2_demos` waiting for darg-and-drop.
+---
 
-```shell
+### 4. Instalar `make` (si no lo tenés)
+
+Si usás **MSYS2**:
+
+```bash
+pacman -Syu
+pacman -S make
+```
+
+Si usás **Cygwin**, asegurate de instalar el paquete `make` durante la instalación.
+
+---
+
+## 🚀 Compilación
+
+Desde la raíz del proyecto, ejecutá:
+
+```bash
 ./build.sh m0sense_apps/blink/blink_baremetal
-``` 
+```
 
-Just type `./build.sh m0sense_apps` and press `Tab` more than once, then you can choose what to be compiled after many auto completion until it's directory just like above.
+Al finalizar, el binario generado estará en:
+
+```
+bl_mcu_sdk/out/m0sense_apps/blink/blink_baremetal/blink_baremetal_bl702.bin
+```
+
+Si el proyecto no genera errores, también se convertirá automáticamente a formato `.uf2`.
+
+---
+
+## 🧪 Comandos útiles
+
+| Comando                          | Descripción                                     |
+|----------------------------------|-------------------------------------------------|
+| `./build.sh clean`              | Elimina archivos de compilación previos        |
+| `./build.sh patch`              | Aplica los parches ubicados en `misc/sdk_patch` |
+
+---
+
+## 🛠️ Estructura del build
+
+- El script **no requiere que `bl_mcu_sdk` sea un repositorio Git** (a diferencia del original)
+- Los parches se aplican solo si están presentes (`*.patch`)        (en el original falla la aplicación de los parches, las modificaciones se hicieron a mano, principalmente para poder usar la pantalla, esta fue una de las razones de hacerlo "autocontenido")
+- El `make` se ejecuta con la configuración del proyecto y placa
+
+---
+
+## 🐛 Solución de problemas
+
+| Problema                                  | Solución                                                 |
+|-------------------------------------------|----------------------------------------------------------|
+| `make: command not found`                 | Instalá `make` desde MSYS2 o Cygwin                      |
+| `riscv64-unknown-elf-gcc: command not found` | Verificá que el PATH a la toolchain esté bien seteado   |
+| `.bin` no generado                        | Verificá los errores del compilador                     |
+
+---
+
+## 📤 Programación del BL702
+
+Podés cargar el archivo `.bin` o `.uf2` usando:
+
+- **BLDevCube** (oficial de Bouffalo Lab)
+- **Arrastrar el `.uf2`** si tu placa tiene soporte de USB Drag & Drop
+
+---
+
+## 📜 Licencia
+
+MIT - este repositorio es libre para uso educativo o experimental.
+
