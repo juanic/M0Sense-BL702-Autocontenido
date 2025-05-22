@@ -9,13 +9,16 @@ es que sea lo más autocontenido posible, creado a partir del [original].(https:
 
 ```
 M0sense_BL702_example/
-├── bl_mcu_sdk/               # SDK oficial con drivers y ejemplos de uso
-├── m0sense_apps/             # Aplicaciones de ejemplo
+├── 3D_models                    # Modelo 3D de la placa M0Sense
+├── Dosc                         # Documentación de la placa, datasheets
+├── bl_mcu_sdk/                  # SDK oficial con drivers y ejemplos de uso
+├── m0sense_apps/                # Aplicaciones de ejemplo
 ├── misc/
-│   ├── sdk_patch/            # Parches opcionales para el SDK
-│   └── utils/uf2_convert     # Conversor bin → UF2
-├── build_sc.sh               # Script de compilación modificado
-├── build.sh                  # Script de compilación original
+│   ├── sdk_patch/                # Parches opcionales para el SDK
+│   └── utils/uf2_convert         # Conversor bin → UF2
+├── build_sc.sh                   # Script de compilación modificado
+├── build.sh                      # Script de compilación original
+├── m0sense_udisk_bl702_v0.1.bin  # Binario para programar la placa usando uf2, usando BouffaloLabDevCube 
 └── README.md
 ```
 
