@@ -1,0 +1,2 @@
+C:/riscv64-tools/bin/riscv64-unknown-elf-ar.exe qc libusb_stdio.a CMakeFiles/usb_stdio.dir/__/__/bsp/bsp_common/usb/usb_dc.c.obj CMakeFiles/usb_stdio.dir/usb_stdio.c.obj
+C:/riscv64-tools/bin/riscv64-unknown-elf-ranlib.exe libusb_stdio.a

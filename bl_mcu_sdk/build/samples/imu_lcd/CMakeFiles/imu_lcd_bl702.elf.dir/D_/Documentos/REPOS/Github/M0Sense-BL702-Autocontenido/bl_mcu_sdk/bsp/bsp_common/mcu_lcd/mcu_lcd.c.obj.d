@@ -1,0 +1,37 @@
+samples/imu_lcd/CMakeFiles/imu_lcd_bl702.elf.dir/D_/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/mcu_lcd/mcu_lcd.c.obj: \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/mcu_lcd/mcu_lcd.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/mcu_lcd/mcu_lcd.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/mcu_lcd/font.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/mcu_lcd/st7735s.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/platform/bflb_platform.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\stdio.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\newlib.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_newlib_version.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\config.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\ieeefp.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\features.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\cdefs.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_default_types.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stddef.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdarg.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\reent.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\lock.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_pthreadtypes.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\stdio.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\string.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\string.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_intsup.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdbool.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\stdlib.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\stdlib.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/common/device/drv_device.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/common/list/drv_list.h

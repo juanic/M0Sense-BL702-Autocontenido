@@ -1,0 +1,2 @@
+C:/riscv64-tools/bin/riscv64-unknown-elf-ar.exe qc libusb_stack.a CMakeFiles/usb_stack.dir/class/audio/usbd_audio.c.obj CMakeFiles/usb_stack.dir/class/cdc/usbd_cdc.c.obj CMakeFiles/usb_stack.dir/class/hid/usbd_hid.c.obj CMakeFiles/usb_stack.dir/class/msc/usbd_msc.c.obj CMakeFiles/usb_stack.dir/class/video/usbd_video.c.obj CMakeFiles/usb_stack.dir/core/usbd_core.c.obj
+C:/riscv64-tools/bin/riscv64-unknown-elf-ranlib.exe libusb_stack.a

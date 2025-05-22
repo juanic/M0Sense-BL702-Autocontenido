@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/risc-v/Core/Include/riscv_encoding.h
+
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/startup/GCC/entry.S
+risc-v/Core/Include/riscv_encoding.h
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/startup/GCC/risc-v/Core/Include/riscv_encoding.h
+
