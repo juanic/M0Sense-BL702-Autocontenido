@@ -1,8 +1,8 @@
 libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/BasicMathFunctions/riscv_clip_q31.c.obj: \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/BasicMathFunctions/riscv_clip_q31.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/basic_math_functions.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_core.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/BasicMathFunctions/riscv_clip_q31.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/basic_math_functions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_core.h \
  c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdint.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\stdint.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_default_types.h \
@@ -10,17 +10,17 @@ libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/BasicMathFunctions/riscv_clip_q31.c
  c\:\riscv64-tools\riscv64-unknown-elf\include\_newlib_version.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_intsup.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_stdint.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_version.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_compiler.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_gcc.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/riscv_encoding.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/riscv_bits.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_base.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_fpu.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_dsp.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_pmp.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_cache.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_compatiable.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_version.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_compiler.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_gcc.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/riscv_encoding.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/riscv_bits.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_base.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_fpu.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_dsp.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_pmp.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_cache.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_compatiable.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\string.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\newlib.h \
@@ -41,7 +41,7 @@ libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/BasicMathFunctions/riscv_clip_q31.c
  c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include-fixed\syslimits.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\limits.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\syslimits.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_memory.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/none.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/utils.h
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_memory.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/none.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/utils.h

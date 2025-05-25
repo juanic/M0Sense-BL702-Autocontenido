@@ -15,10 +15,10 @@
 ########################
 
 //No help, variable specified on the command line.
-APP:UNINITIALIZED=blink_baremetal
+APP:UNINITIALIZED=audio_recording
 
 //No help, variable specified on the command line.
-APP_DIR:UNINITIALIZED=../m0sense_apps/blink
+APP_DIR:UNINITIALIZED=../m0sense_apps
 
 //No help, variable specified on the command line.
 BOARD:UNINITIALIZED=bl702_iot
@@ -257,7 +257,7 @@ CONFIG_PRINT_FLOAT:UNINITIALIZED=y
 CONFIG_ROMAPI:UNINITIALIZED=y
 
 //No help, variable specified on the command line.
-CONFIG_USBSTDIO_ENABLE:UNINITIALIZED=y
+CONFIG_USBSTDIO_ENABLE:UNINITIALIZED=n
 
 //No help, variable specified on the command line.
 CONFIG_USB_HS:UNINITIALIZED=n
@@ -392,7 +392,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 CMAKE_OBJCOPY:INTERNAL=riscv64-unknown-elf-objcopy
 CMAKE_OBJDUMP:INTERNAL=riscv64-unknown-elf-objdump
 //Platform information initialized

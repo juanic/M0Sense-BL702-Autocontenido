@@ -88,6 +88,7 @@ int main()
 {
     //BENCH_INIT;
     bflb_platform_init(0); 
+    printf("start fft test.\n");
     DSP_rfft_fast_f32();
     DSP_rfft_f32();
     //BENCH_FINISH;

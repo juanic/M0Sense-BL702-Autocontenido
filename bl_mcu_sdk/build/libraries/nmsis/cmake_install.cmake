@@ -1,4 +1,4 @@
-# Install script for directory: D:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis
+# Install script for directory: D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

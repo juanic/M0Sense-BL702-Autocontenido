@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named blink_baremetal_bl702.elf
+# Target rules for targets named audio_recording_bl702.elf
 
 # Build rule for target.
-blink_baremetal_bl702.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blink_baremetal_bl702.elf
-.PHONY : blink_baremetal_bl702.elf
+audio_recording_bl702.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audio_recording_bl702.elf
+.PHONY : audio_recording_bl702.elf
 
 # fast build rule for target.
-blink_baremetal_bl702.elf/fast:
-	$(MAKE) $(MAKESILENT) -f samples/blink_baremetal/CMakeFiles/blink_baremetal_bl702.elf.dir/build.make samples/blink_baremetal/CMakeFiles/blink_baremetal_bl702.elf.dir/build
-.PHONY : blink_baremetal_bl702.elf/fast
+audio_recording_bl702.elf/fast:
+	$(MAKE) $(MAKESILENT) -f samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build.make samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build
+.PHONY : audio_recording_bl702.elf/fast
 
 #=============================================================================
 # Target rules for targets named common
@@ -154,6 +154,19 @@ bl702_driver: cmake_check_build_system
 bl702_driver/fast:
 	$(MAKE) $(MAKESILENT) -f libraries/bl702_driver/CMakeFiles/bl702_driver.dir/build.make libraries/bl702_driver/CMakeFiles/bl702_driver.dir/build
 .PHONY : bl702_driver/fast
+
+#=============================================================================
+# Target rules for targets named nmsis
+
+# Build rule for target.
+nmsis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmsis
+.PHONY : nmsis
+
+# fast build rule for target.
+nmsis/fast:
+	$(MAKE) $(MAKESILENT) -f libraries/nmsis/CMakeFiles/nmsis.dir/build.make libraries/nmsis/CMakeFiles/nmsis.dir/build
+.PHONY : nmsis/fast
 
 #=============================================================================
 # Target rules for targets named usb_stack
@@ -202,9 +215,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... audio_recording_bl702.elf"
 	@echo "... bl702_driver"
-	@echo "... blink_baremetal_bl702.elf"
 	@echo "... common"
+	@echo "... nmsis"
 	@echo "... shell"
 	@echo "... usb_stack"
 	@echo "... usb_stdio"

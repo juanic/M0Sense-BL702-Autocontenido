@@ -17,7 +17,7 @@ extern void bflb_platform_init(uint32_t baudrate);
 #define MSG_ERR(a, ...) bflb_platform_printf(a, ##__VA_ARGS__)
 
 #undef printf
-//#define printf(a, ...)  bflb_platform_printf(a, ##__VA_ARGS__)
+#define printf(a, ...)  bflb_platform_printf(a, ##__VA_ARGS__)
 #ifdef __riscv
 
 #define read_csr(reg)                                                          \

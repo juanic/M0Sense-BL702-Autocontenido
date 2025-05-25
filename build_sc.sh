@@ -3,7 +3,7 @@
 # === CONFIGURACIÓN DE TOOLCHAIN ===
 export PATH="/c/riscv64-tools/bin:$PATH"
 
-SUPPORT_USBSTDIO_ENABLE=y
+SUPPORT_USBSTDIO_ENABLE=n
 APP=rtos_demo
 APP_DIR=m0sense_apps
 

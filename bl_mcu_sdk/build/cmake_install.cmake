@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/blink_baremetal/cmake_install.cmake")
+  include("D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/audio_recording/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

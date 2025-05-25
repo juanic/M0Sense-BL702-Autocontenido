@@ -6,6 +6,8 @@
 #include <hal_gpio.h>
 /* USB STDIO */
 #include <usb_stdio.h>
+#include <math.h>
+#include <string.h>
 
 #include "io_def.h"
 
@@ -13,6 +15,50 @@
 static adc_data_parse_t data_parse;
 static bool pingpong_idx = false;
 static int16_t raw_adc_buffer[2][SAMPLE_COUNT * (sizeof(uint32_t) / sizeof(int16_t))];
+
+#include "riscv_math.h"
+#include "riscv_const_structs.h"
+#include "riscv_common_tables.h"
+#include "mcu_lcd.h"
+
+#define FFT_SIZE SAMPLE_COUNT
+static float32_t fft_input[FFT_SIZE];
+static float32_t fft_output[FFT_SIZE];
+
+// Tabla cromática de notas (de C0 a B7)
+typedef struct {
+    const char* name;
+    float freq;
+} note_t;
+
+uint16_t color_back =  0x0000;
+uint16_t color_font =  0xffff;
+
+static const note_t chromatic_notes[] = {
+    {"C0", 16.35}, {"C#0", 17.32}, {"D0", 18.35}, {"D#0", 19.45}, {"E0", 20.60}, {"F0", 21.83}, {"F#0", 23.12}, {"G0", 24.50}, {"G#0", 25.96}, {"A0", 27.50}, {"A#0", 29.14}, {"B0", 30.87},
+    {"C1", 32.70}, {"C#1", 34.65}, {"D1", 36.71}, {"D#1", 38.89}, {"E1", 41.20}, {"F1", 43.65}, {"F#1", 46.25}, {"G1", 49.00}, {"G#1", 51.91}, {"A1", 55.00}, {"A#1", 58.27}, {"B1", 61.74},
+    {"C2", 65.41}, {"C#2", 69.30}, {"D2", 73.42}, {"D#2", 77.78}, {"E2", 82.41}, {"F2", 87.31}, {"F#2", 92.50}, {"G2", 98.00}, {"G#2", 103.83}, {"A2", 110.00}, {"A#2", 116.54}, {"B2", 123.47},
+    {"C3", 130.81}, {"C#3", 138.59}, {"D3", 146.83}, {"D#3", 155.56}, {"E3", 164.81}, {"F3", 174.61}, {"F#3", 185.00}, {"G3", 196.00}, {"G#3", 207.65}, {"A3", 220.00}, {"A#3", 233.08}, {"B3", 246.94},
+    {"C4", 261.63}, {"C#4", 277.18}, {"D4", 293.66}, {"D#4", 311.13}, {"E4", 329.63}, {"F4", 349.23}, {"F#4", 369.99}, {"G4", 392.00}, {"G#4", 415.30}, {"A4", 440.00}, {"A#4", 466.16}, {"B4", 493.88},
+    {"C5", 523.25}, {"C#5", 554.37}, {"D5", 587.33}, {"D#5", 622.25}, {"E5", 659.25}, {"F5", 698.46}, {"F#5", 739.99}, {"G5", 783.99}, {"G#5", 830.61}, {"A5", 880.00}, {"A#5", 932.33}, {"B5", 987.77},
+    {"C6", 1046.50}, {"C#6", 1108.73}, {"D6", 1174.66}, {"D#6", 1244.51}, {"E6", 1318.51}, {"F6", 1396.91}, {"F#6", 1479.98}, {"G6", 1567.98}, {"G#6", 1661.22}, {"A6", 1760.00}, {"A#6", 1864.66}, {"B6", 1975.53},
+    {"C7", 2093.00}, {"C#7", 2217.46}, {"D7", 2349.32}, {"D#7", 2489.02}, {"E7", 2637.02}, {"F7", 2793.83}, {"F#7", 2959.96}, {"G7", 3135.96}, {"G#7", 3322.44}, {"A7", 3520.00}, {"A#7", 3729.31}, {"B7", 3951.07}
+};
+#define NUM_CHROMATIC_NOTES (sizeof(chromatic_notes)/sizeof(chromatic_notes[0]))
+
+const char* freq_to_note(float freq, float* diff_hz) {
+    float min_diff = 1e6f;
+    int min_idx = 0;
+    for (int i = 0; i < NUM_CHROMATIC_NOTES; i++) {
+        float d = fabsf(freq - chromatic_notes[i].freq);
+        if (d < min_diff) {
+            min_diff = d;
+            min_idx = i;
+        }
+    }
+    if (diff_hz) *diff_hz = freq - chromatic_notes[min_idx].freq;
+    return chromatic_notes[min_idx].name;
+}
 
 void dma_ch0_irq_callback(struct device* dev, void* args, uint32_t size, uint32_t state)
 {
@@ -27,12 +73,59 @@ void dma_ch0_irq_callback(struct device* dev, void* args, uint32_t size, uint32_
         adc_buffer[i] = (((uint32_t*)adc_buffer)[i] & 0xffff) >> 2;
         res_all += (uint32_t)adc_buffer[i];
     }
-
+    /*
     for (int i = 0; i < SAMPLE_COUNT; i++) {
         adc_buffer[i] -= res_all / SAMPLE_COUNT;
         adc_buffer[i] <<= 6;
         printf("%5d", adc_buffer[i]);
         printf(i % 16 == 15 ? "\r\n" : ", ");
+    }*/
+    // Conversión a float32_t para FFT
+    for (int i = 0; i < FFT_SIZE; i++) {
+        fft_input[i] = (float32_t)adc_buffer[i];
+    }
+
+    // Cálculo de la FFT
+    riscv_rfft_fast_instance_f32 S;
+    riscv_rfft_fast_init_f32(&S, FFT_SIZE);
+    riscv_rfft_fast_f32(&S, fft_input, fft_output, 0);
+
+    // Buscar el máximo del espectro y mostrar la frecuencia correspondiente
+    float max_magnitude = 0.0f;
+    int max_index = 0;
+    for (int i = 1; i < FFT_SIZE / 2; i++) { // Ignora DC (i=0)
+        float real = fft_output[2 * i];
+        float imag = fft_output[2 * i + 1];
+        float mag = sqrtf(real * real + imag * imag);
+        if (mag > max_magnitude) {
+            max_magnitude = mag;
+            max_index = i;
+        }
+    }
+    float fs = 16000.0f; // Frecuencia de muestreo en Hz
+    float freq = (max_index * fs) / FFT_SIZE;
+
+    float diff_hz;
+    const char* note = freq_to_note(freq, &diff_hz);
+
+    float threshold = 5000.0f; // Umbral de magnitud (ajusta según tu señal)
+    if (max_magnitude > threshold) {
+        printf("Frecuencia dominante: %.2f Hz, Nota: %s (desviación: %.2f Hz)\r\n", freq, note, diff_hz);
+        lcd_clear(0x0000);
+        lcd_draw_str_ascii16(0, 0, color_font, color_back, "Frec.:", 12);
+        lcd_draw_str_ascii16(0, 32, color_font, color_back, "Nota:", 6);
+        lcd_draw_str_ascii16(0, 64, color_font, color_back, "Desvio:", 12);
+        char freq_str[32];
+        char note_str[16];
+        char desviación_str[32];
+        // Formatear la frecuencia y la nota    
+        sprintf(freq_str, "%.2f Hz", freq);
+        sprintf(note_str, "%s", note);
+        sprintf(desviación_str, "(%.2f Hz)", diff_hz);
+        // Dibujar la frecuencia y la nota en la pantalla LCD   
+        lcd_draw_str_ascii16(80, 0, color_font, color_back, freq_str, strlen(freq_str));
+        lcd_draw_str_ascii16(80, 32, color_font, color_back, note_str, strlen(note_str));
+        lcd_draw_str_ascii16(80, 64, color_font, color_back, desviación_str, strlen(desviación_str));
     }
 }
 
@@ -41,6 +134,14 @@ int main(void)
     bflb_platform_init(0);
     MSG_DBG(
         "Now can use MSG_xxx, LOG_xxx and bflb_platform_printf on uart.\r\n");  // just appear on uart unless use printf
+    GLB_GPIO_Type gpios_lcd[] = {LCD_SCK_PIN, LCD_SDA_PIN};
+    GLB_GPIO_Func_Init(GPIO_FUN_SPI, gpios_lcd, sizeof(gpios_lcd) / sizeof(GLB_GPIO_Type));
+
+    if (lcd_init()) {
+        printf("[init] lcd init err \r\n");
+    }
+    lcd_set_dir(3, 0);
+    lcd_clear(0xffff);
 
 #ifdef M0SENSE_USE_USBSTDIO
     usb_stdio_init();                                        // MUST be called before any call to printf or puts

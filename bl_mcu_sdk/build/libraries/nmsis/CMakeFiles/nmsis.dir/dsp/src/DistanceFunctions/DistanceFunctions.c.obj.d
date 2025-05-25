@@ -1,9 +1,9 @@
 libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/DistanceFunctions/DistanceFunctions.c.obj: \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/DistanceFunctions.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_boolean_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/distance_functions.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_core.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/DistanceFunctions.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_boolean_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/distance_functions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_core.h \
  c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdint.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\stdint.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_default_types.h \
@@ -11,17 +11,17 @@ libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/DistanceFunctions/DistanceFunctions
  c\:\riscv64-tools\riscv64-unknown-elf\include\_newlib_version.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_intsup.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_stdint.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_version.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_compiler.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/nmsis_gcc.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/riscv_encoding.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/riscv_bits.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_base.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_fpu.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_dsp.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_pmp.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_feature_cache.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/core/inc/core_compatiable.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_version.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_compiler.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/nmsis_gcc.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/riscv_encoding.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/riscv_bits.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_base.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_fpu.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_dsp.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_pmp.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_feature_cache.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/core/inc/core_compatiable.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\string.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\newlib.h \
@@ -42,29 +42,29 @@ libraries/nmsis/CMakeFiles/nmsis.dir/dsp/src/DistanceFunctions/DistanceFunctions
  c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include-fixed\syslimits.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\limits.h \
  c\:\riscv64-tools\riscv64-unknown-elf\include\sys\syslimits.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_memory.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/none.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/utils.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/statistics_functions.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/basic_math_functions.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/fast_math_functions.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_boolean_distance_template.h \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_braycurtis_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_canberra_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_chebyshev_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_cityblock_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_correlation_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_cosine_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_dice_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_euclidean_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_hamming_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_jaccard_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_jensenshannon_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_kulsinski_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_minkowski_distance_f32.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_rogerstanimoto_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_russellrao_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_sokalmichener_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_sokalsneath_distance.c \
- D\:/Documentos/REPOS/Github/M0sense_BL702_example/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_yule_distance.c
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_memory.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/riscv_math_types.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/none.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/utils.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/statistics_functions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/basic_math_functions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/inc/dsp/fast_math_functions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_boolean_distance_template.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_braycurtis_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_canberra_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_chebyshev_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_cityblock_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_correlation_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_cosine_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_dice_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_euclidean_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_hamming_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_jaccard_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_jensenshannon_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_kulsinski_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_minkowski_distance_f32.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_rogerstanimoto_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_russellrao_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_sokalmichener_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_sokalsneath_distance.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/dsp/src/DistanceFunctions/riscv_yule_distance.c
