@@ -2,7 +2,7 @@
 
 Este proyecto implementa un **afinador de instrumentos musicales** utilizando una **transformada rápida de Fourier (FFT)** para detectar la frecuencia dominante de una señal de audio, y mostrar la nota musical correspondiente en una **pantalla LCD SPI** conectada a la placa **M0Sense (BL702)**.
 
-![Afinador en pantalla](./docs/example.png) <!-- Asegúrate de subir una imagen real del dispositivo funcionando -->
+![Afinador en pantalla](./docs/example.jpg) <!-- Asegúrate de subir una imagen real del dispositivo funcionando -->
 
 ---
 
@@ -28,7 +28,6 @@ Este proyecto implementa un **afinador de instrumentos musicales** utilizando un
   - Indicador gráfico de afinación (estilo afinador cromático)
 
 <video src="./docs/VID_20250524_134519419.mp4" controls width="400"></video>
-![](docs/VID_20250524_134519419.gif)
 ---
 
 ## 📷 Interfaz visual
@@ -51,10 +50,11 @@ La pantalla LCD muestra:
 ---
 
 ## 📁 Estructura del proyecto
-
+```
 .
 ├── main.c                  # Código principal del afinador
 ├── io_def.h                # Definiciones de pines para el LCD y micrófono
 ├── docs/
 │   └── example.png         # Imagen de la pantalla del afinador
 └── README.md               # Este archivo
+```
