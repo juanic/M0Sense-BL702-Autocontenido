@@ -27,7 +27,8 @@ Este proyecto implementa un **afinador de instrumentos musicales** utilizando un
   - Frecuencia detectada
   - Indicador gráfico de afinación (estilo afinador cromático)
 
-<video src="./docs/VID_20250524_134519419.mp4" controls width="400"></video>
+<video src="./docs/example.mp4" controls width="400"></video>
+![](docs/example.gif)
 ---
 
 ## 📷 Interfaz visual
