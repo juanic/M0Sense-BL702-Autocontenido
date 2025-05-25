@@ -1,0 +1,20 @@
+libraries/freertos/CMakeFiles/freertos.dir/portable/gcc/risc-v/bl702/port.c.obj: \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/port.c \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/FreeRTOS.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stddef.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_default_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\features.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_newlib_version.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_intsup.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_stdint.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/FreeRTOSConfig.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/projdefs.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/portable.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/deprecated_definitions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/portmacro.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/mpu_wrappers.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/task.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/list.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/portmacro.h

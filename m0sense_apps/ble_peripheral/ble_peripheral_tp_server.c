@@ -23,6 +23,8 @@ NOTES
 #include "ble_peripheral_tp_server.h"
 #include "log.h"
 
+#include "usb_stdio.h"
+
 static void ble_tp_connected(struct bt_conn *conn, u8_t err);
 static void ble_tp_disconnected(struct bt_conn *conn, u8_t reason);
 
@@ -53,9 +55,9 @@ static void ble_tp_tx_mtu_size(struct bt_conn *conn, u8_t err,
 {
     if (!err) {
         tx_mtu_size = bt_gatt_get_mtu(ble_tp_conn);
-        BT_WARN("ble tp echange mtu size success, mtu size: %d", tx_mtu_size);
+        printf("ble tp echange mtu size success, mtu size: %d", tx_mtu_size);
     } else {
-        BT_WARN("ble tp echange mtu size failure, err: %d", err);
+        printf("ble tp echange mtu size failure, err: %d", err);
     }
 }
 #endif
@@ -72,10 +74,11 @@ static void ble_tp_connected(struct bt_conn *conn, u8_t err)
     #endif
 
     if (err) {
+        printf("ble tp connected failure, err: %d", err);
         return;
     }
 
-    BT_WARN("Tp connected");
+    printf("Tp connected");
     ble_tp_conn = conn;
 
     #if !defined(CONFIG_BT_OAD_SERVER)
@@ -83,9 +86,9 @@ static void ble_tp_connected(struct bt_conn *conn, u8_t err)
     ret = bt_le_set_data_len(ble_tp_conn, tx_octets, tx_time);
 
     if (!ret) {
-        BT_WARN("ble tp set data length success");
+        printf("ble tp set data length success");
     } else {
-        BT_WARN("ble tp set data length failure, err: %d", ret);
+        printf("ble tp set data length failure, err: %d", ret);
     }
 
     //exchange mtu size after connected.
@@ -93,9 +96,9 @@ static void ble_tp_connected(struct bt_conn *conn, u8_t err)
     ret = bt_gatt_exchange_mtu(ble_tp_conn, &exchg_mtu);
 
     if (!ret) {
-        BT_WARN("ble tp exchange mtu size pending");
+        printf("ble tp exchange mtu size pending");
     } else {
-        BT_WARN("ble tp exchange mtu size failure, err: %d", ret);
+        printf("ble tp exchange mtu size failure, err: %d", ret);
     }
     #endif
 }
@@ -106,10 +109,10 @@ NAME
 */
 static void ble_tp_disconnected(struct bt_conn *conn, u8_t reason)
 {
-    BT_WARN("Tp disconnected");
+    printf("Tp disconnected");
 
     if (created_tp_task) {
-        BT_WARN("Delete throughput tx task");
+        printf("Delete throughput tx task");
         vTaskDelete(ble_tp_task_h);
         created_tp_task = 0;
     }
@@ -139,21 +142,21 @@ NAME
 static int ble_tp_recv_wr(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                           const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
-    BT_WARN("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
-    BT_WARN("recv data:%s", bt_hex(buf, len));
+    printf("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
+    printf("recv data:%s", bt_hex(buf, len));
 
     if (flags & BT_GATT_WRITE_FLAG_PREPARE) {
         //Don't use prepare write data, execute write will upload data again.
-        BT_WARN("recv prepare write request");
+        printf("recv prepare write request");
         return 0;
     }
 
     if (flags & BT_GATT_WRITE_FLAG_CMD) {
         //Use write command data.
-        BT_WARN("recv write command");
+        printf("recv write command");
     } else {
         //Use write request / execute write data.
-        BT_WARN("recv write request / exce write");
+        printf("recv write request / execute write");
     }
 
     k_sem_give(&notify_poll_sem);
@@ -167,7 +170,7 @@ NAME
 
 static void indicate_rsp(struct bt_conn *conn, const struct bt_gatt_attr *attr, u8_t err)
 {
-    BT_WARN("receive comfirmation, err:%d", err);
+    printf("receive comfirmation, err:%d", err);
 }
 
 static int bl_tp_send_indicate(struct bt_conn *conn, const struct bt_gatt_attr *attr,
@@ -195,7 +198,7 @@ static void ble_tp_ind_ccc_changed(const struct bt_gatt_attr *attr, u16_t value)
 
     if (value == BT_GATT_CCC_INDICATE) {
         err = bl_tp_send_indicate(ble_tp_conn, get_attr(BT_CHAR_BLE_TP_IND_ATTR_VAL_INDEX), data, 9);
-        BT_WARN("ble tp send indatcate: %d", err);
+        printf("ble tp send indatcate: %d", err);
     }
 }
 
@@ -214,7 +217,7 @@ static void ble_tp_notify_task(void *pvParameters)
         //send data to client
         err = bt_gatt_notify(ble_tp_conn, get_attr(BT_CHAR_BLE_TP_NOT_ATTR_VAL_INDEX), data, (tx_mtu_size - 3));
         data[0] = data[0] + 1;
-        BT_WARN("ble tp send notify : %d", err);
+        printf("ble tp send notify : %d", err);
     }
 }
 
@@ -224,20 +227,20 @@ NAME
 */
 static void ble_tp_notify_ccc_changed(const struct bt_gatt_attr *attr, u16_t value)
 {
-    BT_WARN("ccc:value=[%d]", value);
+    printf("ccc:value=[%d]", value);
 
     if (value == BT_GATT_CCC_NOTIFY) {
 
         if (xTaskCreate(ble_tp_notify_task, (char *)"bletp", 512, NULL, 15, &ble_tp_task_h) == pdPASS) {
             created_tp_task = 1;
-            BT_WARN("Create throughput tx task success");
+            printf("Create throughput tx task success");
         } else {
             created_tp_task = 0;
-            BT_WARN("Create throughput tx taskfail");
+            printf("Create throughput tx taskfail");
         }
     } else {
         if (created_tp_task) {
-            BT_WARN("Delete throughput tx task");
+            printf("Delete throughput tx task");
             vTaskDelete(ble_tp_task_h);
             created_tp_task = 0;
         }
@@ -300,11 +303,19 @@ NAME
     ble_tp_init
 */
 void ble_tp_init()
-{
+{   printf("ble_tp_init\r\n");
+
+
     if (!isRegister) {
-        isRegister = 1;
+
+        printf("ble_tp_init: register ble tp service");
+        // Register the throughput service  
         bt_conn_cb_register(&ble_tp_conn_callbacks);
+        // Register the throughput service
         bt_gatt_service_register(&ble_tp_server);
+        printf("ble_tp_init: register ble tp service done");
+        // Initialize the semaphore for notify polling  
+        printf("ble_tp_init: init notify_poll_sem");
         k_sem_init(&notify_poll_sem, 0, 1);
     }
 }

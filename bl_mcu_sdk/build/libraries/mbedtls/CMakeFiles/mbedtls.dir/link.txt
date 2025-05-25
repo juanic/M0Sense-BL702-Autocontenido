@@ -1,0 +1,2 @@
+C:/riscv64-tools/bin/riscv64-unknown-elf-ar.exe qc libmbedtls.a CMakeFiles/mbedtls.dir/bflb_port/src/bflb_aes.c.obj CMakeFiles/mbedtls.dir/bflb_port/src/bflb_ccm.c.obj CMakeFiles/mbedtls.dir/library/sha256.c.obj CMakeFiles/mbedtls.dir/library/platform_util.c.obj
+C:/riscv64-tools/bin/riscv64-unknown-elf-ranlib.exe libmbedtls.a

@@ -1,0 +1,32 @@
+libraries/freertos/CMakeFiles/freertos.dir/stream_buffer.c.obj: \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/stream_buffer.c \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_default_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\features.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_newlib_version.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_intsup.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_stdint.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\string.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\newlib.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\config.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\ieeefp.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\reent.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\_ansi.h \
+ c\:\riscv64-tools\lib\gcc\riscv64-unknown-elf\10.2.0\include\stddef.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\machine\_types.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\lock.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\cdefs.h \
+ c\:\riscv64-tools\riscv64-unknown-elf\include\sys\string.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/FreeRTOS.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/FreeRTOSConfig.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/projdefs.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/portable.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/deprecated_definitions.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/portable/gcc/risc-v/bl702/portmacro.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/mpu_wrappers.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/task.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/list.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/include/stream_buffer.h

@@ -63,15 +63,15 @@ CMAKE_BINARY_DIR = D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: samples/audio_recording/all
+all: samples/ble_peripheral/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: samples/audio_recording/preinstall
+preinstall: samples/ble_peripheral/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: samples/audio_recording/clean
+clean: samples/ble_peripheral/clean
 .PHONY : clean
 
 #=============================================================================
@@ -90,6 +90,21 @@ libraries/bl702_driver/clean: libraries/bl702_driver/CMakeFiles/bl702_driver.dir
 .PHONY : libraries/bl702_driver/clean
 
 #=============================================================================
+# Directory level rules for directory libraries/ble
+
+# Recursive "all" directory target.
+libraries/ble/all: libraries/ble/CMakeFiles/ble.dir/all
+.PHONY : libraries/ble/all
+
+# Recursive "preinstall" directory target.
+libraries/ble/preinstall:
+.PHONY : libraries/ble/preinstall
+
+# Recursive "clean" directory target.
+libraries/ble/clean: libraries/ble/CMakeFiles/ble.dir/clean
+.PHONY : libraries/ble/clean
+
+#=============================================================================
 # Directory level rules for directory libraries/common
 
 # Recursive "all" directory target.
@@ -105,19 +120,34 @@ libraries/common/clean: libraries/common/CMakeFiles/common.dir/clean
 .PHONY : libraries/common/clean
 
 #=============================================================================
-# Directory level rules for directory libraries/nmsis
+# Directory level rules for directory libraries/freertos
 
 # Recursive "all" directory target.
-libraries/nmsis/all: libraries/nmsis/CMakeFiles/nmsis.dir/all
-.PHONY : libraries/nmsis/all
+libraries/freertos/all: libraries/freertos/CMakeFiles/freertos.dir/all
+.PHONY : libraries/freertos/all
 
 # Recursive "preinstall" directory target.
-libraries/nmsis/preinstall:
-.PHONY : libraries/nmsis/preinstall
+libraries/freertos/preinstall:
+.PHONY : libraries/freertos/preinstall
 
 # Recursive "clean" directory target.
-libraries/nmsis/clean: libraries/nmsis/CMakeFiles/nmsis.dir/clean
-.PHONY : libraries/nmsis/clean
+libraries/freertos/clean: libraries/freertos/CMakeFiles/freertos.dir/clean
+.PHONY : libraries/freertos/clean
+
+#=============================================================================
+# Directory level rules for directory libraries/mbedtls
+
+# Recursive "all" directory target.
+libraries/mbedtls/all: libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+.PHONY : libraries/mbedtls/all
+
+# Recursive "preinstall" directory target.
+libraries/mbedtls/preinstall:
+.PHONY : libraries/mbedtls/preinstall
+
+# Recursive "clean" directory target.
+libraries/mbedtls/clean: libraries/mbedtls/CMakeFiles/mbedtls.dir/clean
+.PHONY : libraries/mbedtls/clean
 
 #=============================================================================
 # Directory level rules for directory libraries/shell
@@ -165,67 +195,75 @@ libraries/usb_stdio/clean: libraries/usb_stdio/CMakeFiles/usb_stdio.dir/clean
 .PHONY : libraries/usb_stdio/clean
 
 #=============================================================================
-# Directory level rules for directory samples/audio_recording
+# Directory level rules for directory samples/ble_peripheral
 
 # Recursive "all" directory target.
-samples/audio_recording/all: samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all
-samples/audio_recording/all: libraries/common/all
-samples/audio_recording/all: libraries/bl702_driver/all
-samples/audio_recording/all: libraries/nmsis/all
-samples/audio_recording/all: libraries/usb_stack/all
-samples/audio_recording/all: libraries/shell/all
-samples/audio_recording/all: libraries/usb_stdio/all
-.PHONY : samples/audio_recording/all
+samples/ble_peripheral/all: samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all
+samples/ble_peripheral/all: libraries/common/all
+samples/ble_peripheral/all: libraries/bl702_driver/all
+samples/ble_peripheral/all: libraries/freertos/all
+samples/ble_peripheral/all: libraries/ble/all
+samples/ble_peripheral/all: libraries/mbedtls/all
+samples/ble_peripheral/all: libraries/usb_stack/all
+samples/ble_peripheral/all: libraries/shell/all
+samples/ble_peripheral/all: libraries/usb_stdio/all
+.PHONY : samples/ble_peripheral/all
 
 # Recursive "preinstall" directory target.
-samples/audio_recording/preinstall: libraries/common/preinstall
-samples/audio_recording/preinstall: libraries/bl702_driver/preinstall
-samples/audio_recording/preinstall: libraries/nmsis/preinstall
-samples/audio_recording/preinstall: libraries/usb_stack/preinstall
-samples/audio_recording/preinstall: libraries/shell/preinstall
-samples/audio_recording/preinstall: libraries/usb_stdio/preinstall
-.PHONY : samples/audio_recording/preinstall
+samples/ble_peripheral/preinstall: libraries/common/preinstall
+samples/ble_peripheral/preinstall: libraries/bl702_driver/preinstall
+samples/ble_peripheral/preinstall: libraries/freertos/preinstall
+samples/ble_peripheral/preinstall: libraries/ble/preinstall
+samples/ble_peripheral/preinstall: libraries/mbedtls/preinstall
+samples/ble_peripheral/preinstall: libraries/usb_stack/preinstall
+samples/ble_peripheral/preinstall: libraries/shell/preinstall
+samples/ble_peripheral/preinstall: libraries/usb_stdio/preinstall
+.PHONY : samples/ble_peripheral/preinstall
 
 # Recursive "clean" directory target.
-samples/audio_recording/clean: samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/clean
-samples/audio_recording/clean: libraries/common/clean
-samples/audio_recording/clean: libraries/bl702_driver/clean
-samples/audio_recording/clean: libraries/nmsis/clean
-samples/audio_recording/clean: libraries/usb_stack/clean
-samples/audio_recording/clean: libraries/shell/clean
-samples/audio_recording/clean: libraries/usb_stdio/clean
-.PHONY : samples/audio_recording/clean
+samples/ble_peripheral/clean: samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/clean
+samples/ble_peripheral/clean: libraries/common/clean
+samples/ble_peripheral/clean: libraries/bl702_driver/clean
+samples/ble_peripheral/clean: libraries/freertos/clean
+samples/ble_peripheral/clean: libraries/ble/clean
+samples/ble_peripheral/clean: libraries/mbedtls/clean
+samples/ble_peripheral/clean: libraries/usb_stack/clean
+samples/ble_peripheral/clean: libraries/shell/clean
+samples/ble_peripheral/clean: libraries/usb_stdio/clean
+.PHONY : samples/ble_peripheral/clean
 
 #=============================================================================
-# Target rules for target samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir
+# Target rules for target samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir
 
 # All Build rule for target.
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/common/CMakeFiles/common.dir/all
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/nmsis/CMakeFiles/nmsis.dir/all
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all: libraries/shell/CMakeFiles/shell.dir/all
-	$(MAKE) $(MAKESILENT) -f samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build.make samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/depend
-	$(MAKE) $(MAKESILENT) -f samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build.make samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=1 "Built target audio_recording_bl702.elf"
-.PHONY : samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/common/CMakeFiles/common.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/freertos/CMakeFiles/freertos.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/ble/CMakeFiles/ble.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/shell/CMakeFiles/shell.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/depend
+	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=71,72,73,74,75 "Built target ble_peripheral_bl702.elf"
+.PHONY : samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all
 
 # Build rule for subdir invocation for target.
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/rule: cmake_check_build_system
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 100
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
-.PHONY : samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/rule
+.PHONY : samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/rule
 
 # Convenience name for target.
-audio_recording_bl702.elf: samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/rule
-.PHONY : audio_recording_bl702.elf
+ble_peripheral_bl702.elf: samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/rule
+.PHONY : ble_peripheral_bl702.elf
 
 # clean rule for target.
-samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/clean:
-	$(MAKE) $(MAKESILENT) -f samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/build.make samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/clean
-.PHONY : samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/clean
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/clean:
+	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/clean
+.PHONY : samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/clean
 
 #=============================================================================
 # Target rules for target libraries/common/CMakeFiles/common.dir
@@ -234,12 +272,12 @@ samples/audio_recording/CMakeFiles/audio_recording_bl702.elf.dir/clean:
 libraries/common/CMakeFiles/common.dir/all:
 	$(MAKE) $(MAKESILENT) -f libraries/common/CMakeFiles/common.dir/build.make libraries/common/CMakeFiles/common.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/common/CMakeFiles/common.dir/build.make libraries/common/CMakeFiles/common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=12 "Built target common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=76,77,78,79,80,81 "Built target common"
 .PHONY : libraries/common/CMakeFiles/common.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/common/CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/common/CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
 .PHONY : libraries/common/CMakeFiles/common.dir/rule
@@ -260,12 +298,12 @@ libraries/common/CMakeFiles/common.dir/clean:
 libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all: libraries/common/CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f libraries/bl702_driver/CMakeFiles/bl702_driver.dir/build.make libraries/bl702_driver/CMakeFiles/bl702_driver.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/bl702_driver/CMakeFiles/bl702_driver.dir/build.make libraries/bl702_driver/CMakeFiles/bl702_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11 "Built target bl702_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45 "Built target bl702_driver"
 .PHONY : libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/bl702_driver/CMakeFiles/bl702_driver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
 .PHONY : libraries/bl702_driver/CMakeFiles/bl702_driver.dir/rule
@@ -280,30 +318,86 @@ libraries/bl702_driver/CMakeFiles/bl702_driver.dir/clean:
 .PHONY : libraries/bl702_driver/CMakeFiles/bl702_driver.dir/clean
 
 #=============================================================================
-# Target rules for target libraries/nmsis/CMakeFiles/nmsis.dir
+# Target rules for target libraries/freertos/CMakeFiles/freertos.dir
 
 # All Build rule for target.
-libraries/nmsis/CMakeFiles/nmsis.dir/all:
-	$(MAKE) $(MAKESILENT) -f libraries/nmsis/CMakeFiles/nmsis.dir/build.make libraries/nmsis/CMakeFiles/nmsis.dir/depend
-	$(MAKE) $(MAKESILENT) -f libraries/nmsis/CMakeFiles/nmsis.dir/build.make libraries/nmsis/CMakeFiles/nmsis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98 "Built target nmsis"
-.PHONY : libraries/nmsis/CMakeFiles/nmsis.dir/all
+libraries/freertos/CMakeFiles/freertos.dir/all:
+	$(MAKE) $(MAKESILENT) -f libraries/freertos/CMakeFiles/freertos.dir/build.make libraries/freertos/CMakeFiles/freertos.dir/depend
+	$(MAKE) $(MAKESILENT) -f libraries/freertos/CMakeFiles/freertos.dir/build.make libraries/freertos/CMakeFiles/freertos.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=82,83,84,85,86,87,88 "Built target freertos"
+.PHONY : libraries/freertos/CMakeFiles/freertos.dir/all
 
 # Build rule for subdir invocation for target.
-libraries/nmsis/CMakeFiles/nmsis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 86
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/nmsis/CMakeFiles/nmsis.dir/all
+libraries/freertos/CMakeFiles/freertos.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/freertos/CMakeFiles/freertos.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
-.PHONY : libraries/nmsis/CMakeFiles/nmsis.dir/rule
+.PHONY : libraries/freertos/CMakeFiles/freertos.dir/rule
 
 # Convenience name for target.
-nmsis: libraries/nmsis/CMakeFiles/nmsis.dir/rule
-.PHONY : nmsis
+freertos: libraries/freertos/CMakeFiles/freertos.dir/rule
+.PHONY : freertos
 
 # clean rule for target.
-libraries/nmsis/CMakeFiles/nmsis.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libraries/nmsis/CMakeFiles/nmsis.dir/build.make libraries/nmsis/CMakeFiles/nmsis.dir/clean
-.PHONY : libraries/nmsis/CMakeFiles/nmsis.dir/clean
+libraries/freertos/CMakeFiles/freertos.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libraries/freertos/CMakeFiles/freertos.dir/build.make libraries/freertos/CMakeFiles/freertos.dir/clean
+.PHONY : libraries/freertos/CMakeFiles/freertos.dir/clean
+
+#=============================================================================
+# Target rules for target libraries/ble/CMakeFiles/ble.dir
+
+# All Build rule for target.
+libraries/ble/CMakeFiles/ble.dir/all: libraries/common/CMakeFiles/common.dir/all
+libraries/ble/CMakeFiles/ble.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
+libraries/ble/CMakeFiles/ble.dir/all: libraries/freertos/CMakeFiles/freertos.dir/all
+libraries/ble/CMakeFiles/ble.dir/all: libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+	$(MAKE) $(MAKESILENT) -f libraries/ble/CMakeFiles/ble.dir/build.make libraries/ble/CMakeFiles/ble.dir/depend
+	$(MAKE) $(MAKESILENT) -f libraries/ble/CMakeFiles/ble.dir/build.make libraries/ble/CMakeFiles/ble.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target ble"
+.PHONY : libraries/ble/CMakeFiles/ble.dir/all
+
+# Build rule for subdir invocation for target.
+libraries/ble/CMakeFiles/ble.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 86
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/ble/CMakeFiles/ble.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
+.PHONY : libraries/ble/CMakeFiles/ble.dir/rule
+
+# Convenience name for target.
+ble: libraries/ble/CMakeFiles/ble.dir/rule
+.PHONY : ble
+
+# clean rule for target.
+libraries/ble/CMakeFiles/ble.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libraries/ble/CMakeFiles/ble.dir/build.make libraries/ble/CMakeFiles/ble.dir/clean
+.PHONY : libraries/ble/CMakeFiles/ble.dir/clean
+
+#=============================================================================
+# Target rules for target libraries/mbedtls/CMakeFiles/mbedtls.dir
+
+# All Build rule for target.
+libraries/mbedtls/CMakeFiles/mbedtls.dir/all: libraries/common/CMakeFiles/common.dir/all
+libraries/mbedtls/CMakeFiles/mbedtls.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
+	$(MAKE) $(MAKESILENT) -f libraries/mbedtls/CMakeFiles/mbedtls.dir/build.make libraries/mbedtls/CMakeFiles/mbedtls.dir/depend
+	$(MAKE) $(MAKESILENT) -f libraries/mbedtls/CMakeFiles/mbedtls.dir/build.make libraries/mbedtls/CMakeFiles/mbedtls.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=89,90,91 "Built target mbedtls"
+.PHONY : libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+
+# Build rule for subdir invocation for target.
+libraries/mbedtls/CMakeFiles/mbedtls.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
+.PHONY : libraries/mbedtls/CMakeFiles/mbedtls.dir/rule
+
+# Convenience name for target.
+mbedtls: libraries/mbedtls/CMakeFiles/mbedtls.dir/rule
+.PHONY : mbedtls
+
+# clean rule for target.
+libraries/mbedtls/CMakeFiles/mbedtls.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libraries/mbedtls/CMakeFiles/mbedtls.dir/build.make libraries/mbedtls/CMakeFiles/mbedtls.dir/clean
+.PHONY : libraries/mbedtls/CMakeFiles/mbedtls.dir/clean
 
 #=============================================================================
 # Target rules for target libraries/usb_stack/CMakeFiles/usb_stack.dir
@@ -312,12 +406,12 @@ libraries/nmsis/CMakeFiles/nmsis.dir/clean:
 libraries/usb_stack/CMakeFiles/usb_stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stack/CMakeFiles/usb_stack.dir/build.make libraries/usb_stack/CMakeFiles/usb_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stack/CMakeFiles/usb_stack.dir/build.make libraries/usb_stack/CMakeFiles/usb_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=99 "Built target usb_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=94,95,96,97,98 "Built target usb_stack"
 .PHONY : libraries/usb_stack/CMakeFiles/usb_stack.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/usb_stack/CMakeFiles/usb_stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/usb_stack/CMakeFiles/usb_stack.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
 .PHONY : libraries/usb_stack/CMakeFiles/usb_stack.dir/rule
@@ -338,12 +432,12 @@ libraries/usb_stack/CMakeFiles/usb_stack.dir/clean:
 libraries/shell/CMakeFiles/shell.dir/all:
 	$(MAKE) $(MAKESILENT) -f libraries/shell/CMakeFiles/shell.dir/build.make libraries/shell/CMakeFiles/shell.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/shell/CMakeFiles/shell.dir/build.make libraries/shell/CMakeFiles/shell.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num= "Built target shell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=92,93 "Built target shell"
 .PHONY : libraries/shell/CMakeFiles/shell.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/shell/CMakeFiles/shell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/shell/CMakeFiles/shell.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
 .PHONY : libraries/shell/CMakeFiles/shell.dir/rule
@@ -363,16 +457,16 @@ libraries/shell/CMakeFiles/shell.dir/clean:
 # All Build rule for target.
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/common/CMakeFiles/common.dir/all
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
-libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/shell/CMakeFiles/shell.dir/all
+libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build.make libraries/usb_stdio/CMakeFiles/usb_stdio.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build.make libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=100 "Built target usb_stdio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=99,100 "Built target usb_stdio"
 .PHONY : libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
 
 # Build rule for subdir invocation for target.
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles 0
 .PHONY : libraries/usb_stdio/CMakeFiles/usb_stdio.dir/rule

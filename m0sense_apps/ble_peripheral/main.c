@@ -31,6 +31,10 @@
 #include "ble_lib_api.h"
 #include "hci_driver.h"
 #include "bl702_sec_eng.h"
+/* USB STDIO */
+#include "usb_stdio.h"
+#include "io_def.h"
+#include <hal_gpio.h>
 
 #if defined(CONFIG_BT_OAD_SERVER)
 #include "oad_main.h"
@@ -49,7 +53,7 @@ uint8_t sharedBuf[16];
 void user_vAssertCalled(void) __attribute__((weak, alias("vAssertCalled")));
 void vAssertCalled(void)
 {
-    MSG("vAssertCalled\r\n");
+    printf("vAssertCalled\r\n");
 
     while (1)
         ;
@@ -62,10 +66,10 @@ void vApplicationTickHook(void)
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 {
-    MSG("vApplicationStackOverflowHook\r\n");
+    printf("vApplicationStackOverflowHook\r\n");
 
     if (pcTaskName) {
-        MSG("Stack name %s\r\n", pcTaskName);
+        printf("Stack name %s\r\n", pcTaskName);
     }
 
     while (1)
@@ -74,7 +78,7 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 
 void vApplicationMallocFailedHook(void)
 {
-    MSG("vApplicationMallocFailedHook\r\n");
+    printf("vApplicationMallocFailedHook\r\n");
 
     while (1)
         ;
@@ -133,10 +137,10 @@ int ble_start_adv(void)
         .interval_max = BT_GAP_ADV_FAST_INT_MAX_3,
     };
 
-    //char *adv_name = "BL_TEST_01"; // This name must be the same as adv_name in ble_central
+    char *adv_name = "BL_TEST_01"; // This name must be the same as adv_name in ble_central
     struct bt_data adv_data[] = {
         BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_NO_BREDR | BT_LE_AD_GENERAL)),
-        //BT_DATA(BT_DATA_NAME_COMPLETE, adv_name, strlen(adv_name)),
+        BT_DATA(BT_DATA_NAME_COMPLETE, adv_name, strlen(adv_name)),
     };
 
     return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
@@ -165,15 +169,15 @@ void bt_enable_cb(int err)
 
 void ble_stack_start(void)
 {
-    MSG("[OS] ble_controller_init...\r\n");
+    printf("[OS] ble_controller_init...\r\n");
     GLB_Set_EM_Sel(GLB_EM_8KB);
     ble_controller_init(configMAX_PRIORITIES - 1);
 
     // Initialize BLE Host stack
-    MSG("[OS] hci_driver_init...\r\n");
+    printf("[OS] hci_driver_init...\r\n");
     hci_driver_init();
 
-    MSG("[OS] bt_enable...\r\n");
+    printf("[OS] bt_enable...\r\n");
     bt_enable(bt_enable_cb);
 }
 
@@ -196,7 +200,17 @@ int main(void)
 
     bflb_platform_init(0);
     HBN_Set_XCLK_CLK_Sel(HBN_XCLK_CLK_XTAL);
-
+    #ifdef M0SENSE_USE_USBSTDIO
+    usb_stdio_init();                                        // MUST be called before any call to printf or puts
+    printf("Now can use printf, puts on usb_cdc_acm.\r\n");  // on usb, ttyACMx on Linux or COMx on Windows.
+    #endif
+    gpio_set_mode(LED_B_PIN, GPIO_OUTPUT_PP_MODE);
+    gpio_set_mode(LED_G_PIN, GPIO_OUTPUT_PP_MODE);
+    gpio_set_mode(LED_R_PIN, GPIO_OUTPUT_PP_MODE);
+    printf("[init] gpio set mode complete.\r\n");
+    gpio_write(LED_B_PIN, false);
+    gpio_write(LED_G_PIN, true);
+    gpio_write(LED_R_PIN, true);
     //Set capcode
     tmpVal = BL_RD_REG(AON_BASE, AON_XTAL_CFG);
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, AON_XTAL_CAPCODE_IN_AON, 33);
@@ -207,7 +221,7 @@ int main(void)
 
     vPortDefineHeapRegions(xHeapRegions);
 
-    MSG("[OS] ble_init_task.....\r\n");
+    printf("[OS] ble_init_task.....\r\n");
     xTaskCreateStatic(ble_init_task, (char *)"ble_init", sizeof(ble_init_stack) / 4, NULL, 15, ble_init_stack, &ble_init_task_h);
 
     vTaskStartScheduler();
@@ -215,5 +229,6 @@ int main(void)
     BL_CASE_SUCCESS;
     while (1) {
         bflb_platform_delay_ms(100);
+        
     }
 }
