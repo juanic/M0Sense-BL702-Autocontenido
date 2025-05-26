@@ -81,7 +81,7 @@ Disassembly of section .text:
 
     /* start load code to itcm like. */
     call start_load
-23000056:	004060ef          	jal	ra,2300605a <start_load>
+23000056:	024060ef          	jal	ra,2300607a <start_load>
 
     jal System_Post_Init
 2300005a:	53c060ef          	jal	ra,23006596 <System_Post_Init>
@@ -95,7 +95,7 @@ Disassembly of section .text:
     li a2, 0
 23000064:	4601                	li	a2,0
     call main
-23000066:	071030ef          	jal	ra,230038d6 <main>
+23000066:	055030ef          	jal	ra,230038ba <main>
 
     csrci mstatus, (1 << 3)
 2300006a:	30047073          	csrci	mstatus,8
@@ -109,26 +109,26 @@ __exit:
 
 23000080 <__Vectors>:
 	...
-2300008c:	6306 2300 0000 0000 0000 0000 0000 0000     .c.#............
-2300009c:	6306 2300 0001 0000 0000 0000 0102 0000     .c.#............
-230000ac:	6306 2300 6306 2300 0000 0000 0000 0000     .c.#.c.#........
-230000bc:	0000 0000 6306 2300 6306 2300 6306 2300     .....c.#.c.#.c.#
-230000cc:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-230000dc:	0000 0000 6306 2300 6306 2300 6306 2300     .....c.#.c.#.c.#
-230000ec:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-230000fc:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-2300010c:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-2300011c:	6306 2300 0000 0000 6306 2300 6306 2300     .c.#.....c.#.c.#
-2300012c:	6306 2300 0000 0000 6306 2300 6306 2300     .c.#.....c.#.c.#
-2300013c:	0000 0000 6306 2300 0000 0000 6306 2300     .....c.#.....c.#
-2300014c:	0000 0000 6306 2300 6306 2300 6306 2300     .....c.#.c.#.c.#
-2300015c:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-2300016c:	0000 0000 6306 2300 6306 2300 0000 0000     .....c.#.c.#....
-2300017c:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-2300018c:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-2300019c:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-230001ac:	6306 2300 6306 2300 6306 2300 6306 2300     .c.#.c.#.c.#.c.#
-230001bc:	6306 2300 0000 0000                         .c.#....
+2300008c:	6326 2300 0000 0000 0000 0000 0000 0000     &c.#............
+2300009c:	6326 2300 0001 0000 0000 0000 0102 0000     &c.#............
+230000ac:	6326 2300 6326 2300 0000 0000 0000 0000     &c.#&c.#........
+230000bc:	0000 0000 6326 2300 6326 2300 6326 2300     ....&c.#&c.#&c.#
+230000cc:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+230000dc:	0000 0000 6326 2300 6326 2300 6326 2300     ....&c.#&c.#&c.#
+230000ec:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+230000fc:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+2300010c:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+2300011c:	6326 2300 0000 0000 6326 2300 6326 2300     &c.#....&c.#&c.#
+2300012c:	6326 2300 0000 0000 6326 2300 6326 2300     &c.#....&c.#&c.#
+2300013c:	0000 0000 6326 2300 0000 0000 6326 2300     ....&c.#....&c.#
+2300014c:	0000 0000 6326 2300 6326 2300 6326 2300     ....&c.#&c.#&c.#
+2300015c:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+2300016c:	0000 0000 6326 2300 6326 2300 0000 0000     ....&c.#&c.#....
+2300017c:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+2300018c:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+2300019c:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+230001ac:	6326 2300 6326 2300 6326 2300 6326 2300     &c.#&c.#&c.#&c.#
+230001bc:	6326 2300 0000 0000                         &c.#....
 
 230001c4 <__fsym___cmd_memtrace>:
 230001c4:	a94c 2303 3b38 2303                         L..#8;.#
@@ -431,7 +431,7 @@ is_exception:
 23000506:	0003a117          	auipc	sp,0x3a
 2300050a:	62a12103          	lw	sp,1578(sp) # 2303ab30 <xISRStackTop>
 	jal Trap_Handler
-2300050e:	433050ef          	jal	ra,23006140 <Trap_Handler>
+2300050e:	453050ef          	jal	ra,23006160 <Trap_Handler>
 	j is_exception
 23000512:	b7e5                	j	230004fa <is_exception>
 
@@ -4878,6575 +4878,6586 @@ chip_specific_stack_frame:				/* First add any chip specific registers to the st
 230037a4:	0105d5b3          	srl	a1,a1,a6
 230037a8:	bb8d                	j	2300351a <__umoddi3+0xb0>
 
-230037aa <ble_init_task>:
+230037aa <bt_enable_cb>:
+    return true;
+}
+#endif
+
+void bt_enable_cb(int err)
+{
+230037aa:	7179                	addi	sp,sp,-48
+230037ac:	d606                	sw	ra,44(sp)
+    ble_tp_init();
+230037ae:	5dc000ef          	jal	ra,23003d8a <ble_tp_init>
+    struct bt_le_adv_param adv_param = {
+230037b2:	002017b7          	lui	a5,0x201
+230037b6:	b0078793          	addi	a5,a5,-1280 # 200b00 <_heap_size+0x1faf00>
+230037ba:	c83e                	sw	a5,16(sp)
+230037bc:	02000793          	li	a5,32
+230037c0:	00f11a23          	sh	a5,20(sp)
+    struct bt_data adv_data[] = {
+230037c4:	10100793          	li	a5,257
+230037c8:	00f11c23          	sh	a5,24(sp)
+        BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_NO_BREDR | BT_LE_AD_GENERAL)),
+230037cc:	4799                	li	a5,6
+230037ce:	00f10623          	sb	a5,12(sp)
+    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
+230037d2:	082c                	addi	a1,sp,24
+    struct bt_data adv_data[] = {
+230037d4:	007c                	addi	a5,sp,12
+    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
+230037d6:	0808                	addi	a0,sp,16
+230037d8:	4701                	li	a4,0
+230037da:	4681                	li	a3,0
+230037dc:	4605                	li	a2,1
+    struct bt_data adv_data[] = {
+230037de:	ce3e                	sw	a5,28(sp)
+    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
+230037e0:	24f100ef          	jal	ra,2301422e <bt_le_adv_start>
+#if defined(CONFIG_BT_OAD_SERVER)
+    oad_service_enable(app_check_oad);
+#endif
     ble_start_adv();
 }
+230037e4:	50b2                	lw	ra,44(sp)
+230037e6:	6145                	addi	sp,sp,48
+230037e8:	8082                	ret
+
+230037ea <ble_init_task>:
 
 void ble_stack_start(void)
 {
     printf("[OS] ble_controller_init...\r\n");
-230037aa:	23035537          	lui	a0,0x23035
+230037ea:	23035537          	lui	a0,0x23035
 {
     ble_stack_start();
 }
 
 static void ble_init_task(void *pvParameters)
 {
-230037ae:	1141                	addi	sp,sp,-16
+230037ee:	1141                	addi	sp,sp,-16
     printf("[OS] ble_controller_init...\r\n");
-230037b0:	8d850513          	addi	a0,a0,-1832 # 230348d8 <strtol+0x10>
+230037f0:	8d850513          	addi	a0,a0,-1832 # 230348d8 <strtol+0x10>
 {
-230037b4:	c606                	sw	ra,12(sp)
+230037f4:	c606                	sw	ra,12(sp)
     printf("[OS] ble_controller_init...\r\n");
-230037b6:	3f8050ef          	jal	ra,23008bae <puts>
+230037f6:	3b8050ef          	jal	ra,23008bae <puts>
     GLB_Set_EM_Sel(GLB_EM_8KB);
-230037ba:	450d                	li	a0,3
-230037bc:	7f5020ef          	jal	ra,230067b0 <GLB_Set_EM_Sel>
+230037fa:	450d                	li	a0,3
+230037fc:	7b5020ef          	jal	ra,230067b0 <GLB_Set_EM_Sel>
     ble_controller_init(configMAX_PRIORITIES - 1);
-230037c0:	4519                	li	a0,6
-230037c2:	0241b0ef          	jal	ra,2301e7e6 <ble_controller_init>
+23003800:	4519                	li	a0,6
+23003802:	7e51a0ef          	jal	ra,2301e7e6 <ble_controller_init>
     printf("[OS] hci_driver_init...\r\n");
-230037c6:	23035537          	lui	a0,0x23035
-230037ca:	8f850513          	addi	a0,a0,-1800 # 230348f8 <strtol+0x30>
-230037ce:	3e0050ef          	jal	ra,23008bae <puts>
+23003806:	23035537          	lui	a0,0x23035
+2300380a:	8f850513          	addi	a0,a0,-1800 # 230348f8 <strtol+0x30>
+2300380e:	3a0050ef          	jal	ra,23008bae <puts>
     hci_driver_init();
-230037d2:	3b00a0ef          	jal	ra,2300db82 <hci_driver_init>
+23003812:	3700a0ef          	jal	ra,2300db82 <hci_driver_init>
     printf("[OS] bt_enable...\r\n");
-230037d6:	23035537          	lui	a0,0x23035
-230037da:	91450513          	addi	a0,a0,-1772 # 23034914 <strtol+0x4c>
-230037de:	3d0050ef          	jal	ra,23008bae <puts>
+23003816:	23035537          	lui	a0,0x23035
+2300381a:	91450513          	addi	a0,a0,-1772 # 23034914 <strtol+0x4c>
+2300381e:	390050ef          	jal	ra,23008bae <puts>
     bt_enable(bt_enable_cb);
-230037e2:	23004537          	lui	a0,0x23004
-230037e6:	8ca50513          	addi	a0,a0,-1846 # 230038ca <bt_enable_cb>
-230037ea:	6e90f0ef          	jal	ra,230136d2 <bt_enable>
+23003822:	23003537          	lui	a0,0x23003
+23003826:	7aa50513          	addi	a0,a0,1962 # 230037aa <bt_enable_cb>
+2300382a:	6a90f0ef          	jal	ra,230136d2 <bt_enable>
     ble_init();
     vTaskDelete(NULL);
 }
-230037ee:	40b2                	lw	ra,12(sp)
+2300382e:	40b2                	lw	ra,12(sp)
     vTaskDelete(NULL);
-230037f0:	4501                	li	a0,0
+23003830:	4501                	li	a0,0
 }
-230037f2:	0141                	addi	sp,sp,16
+23003832:	0141                	addi	sp,sp,16
     vTaskDelete(NULL);
-230037f4:	0b50806f          	j	2300c0a8 <vTaskDelete>
+23003834:	0750806f          	j	2300c0a8 <vTaskDelete>
 
-230037f8 <vAssertCalled>:
+23003838 <vAssertCalled>:
     printf("vAssertCalled\r\n");
-230037f8:	23035537          	lui	a0,0x23035
+23003838:	23035537          	lui	a0,0x23035
 {
-230037fc:	1141                	addi	sp,sp,-16
+2300383c:	1141                	addi	sp,sp,-16
     printf("vAssertCalled\r\n");
-230037fe:	92850513          	addi	a0,a0,-1752 # 23034928 <strtol+0x60>
+2300383e:	92850513          	addi	a0,a0,-1752 # 23034928 <strtol+0x60>
 {
-23003802:	c606                	sw	ra,12(sp)
+23003842:	c606                	sw	ra,12(sp)
     printf("vAssertCalled\r\n");
-23003804:	3aa050ef          	jal	ra,23008bae <puts>
+23003844:	36a050ef          	jal	ra,23008bae <puts>
     while (1)
-23003808:	a001                	j	23003808 <vAssertCalled+0x10>
+23003848:	a001                	j	23003848 <vAssertCalled+0x10>
 
-2300380a <vApplicationStackOverflowHook>:
+2300384a <vApplicationStackOverflowHook>:
 {
-2300380a:	1141                	addi	sp,sp,-16
+2300384a:	1141                	addi	sp,sp,-16
     printf("vApplicationStackOverflowHook\r\n");
-2300380c:	23035537          	lui	a0,0x23035
+2300384c:	23035537          	lui	a0,0x23035
 {
-23003810:	c422                	sw	s0,8(sp)
+23003850:	c422                	sw	s0,8(sp)
     printf("vApplicationStackOverflowHook\r\n");
-23003812:	93850513          	addi	a0,a0,-1736 # 23034938 <strtol+0x70>
+23003852:	93850513          	addi	a0,a0,-1736 # 23034938 <strtol+0x70>
 {
-23003816:	842e                	mv	s0,a1
-23003818:	c606                	sw	ra,12(sp)
+23003856:	842e                	mv	s0,a1
+23003858:	c606                	sw	ra,12(sp)
     printf("vApplicationStackOverflowHook\r\n");
-2300381a:	394050ef          	jal	ra,23008bae <puts>
+2300385a:	354050ef          	jal	ra,23008bae <puts>
     if (pcTaskName) {
-2300381e:	c801                	beqz	s0,2300382e <vApplicationStackOverflowHook+0x24>
+2300385e:	c801                	beqz	s0,2300386e <vApplicationStackOverflowHook+0x24>
         printf("Stack name %s\r\n", pcTaskName);
-23003820:	23035537          	lui	a0,0x23035
-23003824:	85a2                	mv	a1,s0
-23003826:	95850513          	addi	a0,a0,-1704 # 23034958 <strtol+0x90>
-2300382a:	26a050ef          	jal	ra,23008a94 <iprintf>
+23003860:	23035537          	lui	a0,0x23035
+23003864:	85a2                	mv	a1,s0
+23003866:	95850513          	addi	a0,a0,-1704 # 23034958 <strtol+0x90>
+2300386a:	22a050ef          	jal	ra,23008a94 <iprintf>
     while (1)
-2300382e:	a001                	j	2300382e <vApplicationStackOverflowHook+0x24>
+2300386e:	a001                	j	2300386e <vApplicationStackOverflowHook+0x24>
 
-23003830 <vApplicationMallocFailedHook>:
+23003870 <vApplicationMallocFailedHook>:
     printf("vApplicationMallocFailedHook\r\n");
-23003830:	23035537          	lui	a0,0x23035
+23003870:	23035537          	lui	a0,0x23035
 {
-23003834:	1141                	addi	sp,sp,-16
+23003874:	1141                	addi	sp,sp,-16
     printf("vApplicationMallocFailedHook\r\n");
-23003836:	96850513          	addi	a0,a0,-1688 # 23034968 <strtol+0xa0>
+23003876:	96850513          	addi	a0,a0,-1688 # 23034968 <strtol+0xa0>
 {
-2300383a:	c606                	sw	ra,12(sp)
+2300387a:	c606                	sw	ra,12(sp)
     printf("vApplicationMallocFailedHook\r\n");
-2300383c:	372050ef          	jal	ra,23008bae <puts>
+2300387c:	332050ef          	jal	ra,23008bae <puts>
     while (1)
-23003840:	a001                	j	23003840 <vApplicationMallocFailedHook+0x10>
+23003880:	a001                	j	23003880 <vApplicationMallocFailedHook+0x10>
 
-23003842 <vApplicationGetIdleTaskMemory>:
+23003882 <vApplicationGetIdleTaskMemory>:
     *ppxIdleTaskTCBBuffer = &xIdleTaskTCB;
-23003842:	420187b7          	lui	a5,0x42018
-23003846:	45078793          	addi	a5,a5,1104 # 42018450 <xIdleTaskTCB.0>
-2300384a:	c11c                	sw	a5,0(a0)
+23003882:	420187b7          	lui	a5,0x42018
+23003886:	45078793          	addi	a5,a5,1104 # 42018450 <xIdleTaskTCB.0>
+2300388a:	c11c                	sw	a5,0(a0)
     *ppxIdleTaskStackBuffer = uxIdleTaskStack;
-2300384c:	420187b7          	lui	a5,0x42018
-23003850:	9d078793          	addi	a5,a5,-1584 # 420179d0 <uxIdleTaskStack.1>
-23003854:	c19c                	sw	a5,0(a1)
+2300388c:	420187b7          	lui	a5,0x42018
+23003890:	9d078793          	addi	a5,a5,-1584 # 420179d0 <uxIdleTaskStack.1>
+23003894:	c19c                	sw	a5,0(a1)
     *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
-23003856:	20000793          	li	a5,512
-2300385a:	c21c                	sw	a5,0(a2)
+23003896:	20000793          	li	a5,512
+2300389a:	c21c                	sw	a5,0(a2)
 }
-2300385c:	8082                	ret
+2300389c:	8082                	ret
 
-2300385e <vApplicationGetTimerTaskMemory>:
+2300389e <vApplicationGetTimerTaskMemory>:
     *ppxTimerTaskTCBBuffer = &xTimerTaskTCB;
-2300385e:	420187b7          	lui	a5,0x42018
-23003862:	4b078793          	addi	a5,a5,1200 # 420184b0 <xTimerTaskTCB.2>
-23003866:	c11c                	sw	a5,0(a0)
+2300389e:	420187b7          	lui	a5,0x42018
+230038a2:	4b078793          	addi	a5,a5,1200 # 420184b0 <xTimerTaskTCB.2>
+230038a6:	c11c                	sw	a5,0(a0)
     *ppxTimerTaskStackBuffer = uxTimerTaskStack;
-23003868:	420187b7          	lui	a5,0x42018
-2300386c:	1d078793          	addi	a5,a5,464 # 420181d0 <uxTimerTaskStack.3>
-23003870:	c19c                	sw	a5,0(a1)
+230038a8:	420187b7          	lui	a5,0x42018
+230038ac:	1d078793          	addi	a5,a5,464 # 420181d0 <uxTimerTaskStack.3>
+230038b0:	c19c                	sw	a5,0(a1)
     *pulTimerTaskStackSize = configTIMER_TASK_STACK_DEPTH;
-23003872:	0a000793          	li	a5,160
-23003876:	c21c                	sw	a5,0(a2)
+230038b2:	0a000793          	li	a5,160
+230038b6:	c21c                	sw	a5,0(a2)
 }
-23003878:	8082                	ret
+230038b8:	8082                	ret
 
-2300387a <ble_start_adv>:
-    struct bt_le_adv_param adv_param = {
-2300387a:	002017b7          	lui	a5,0x201
-{
-2300387e:	7179                	addi	sp,sp,-48
-    struct bt_le_adv_param adv_param = {
-23003880:	b0078793          	addi	a5,a5,-1280 # 200b00 <_heap_size+0x1faf00>
-23003884:	c43e                	sw	a5,8(sp)
-23003886:	02000793          	li	a5,32
-2300388a:	00f11623          	sh	a5,12(sp)
-    struct bt_data adv_data[] = {
-2300388e:	10100793          	li	a5,257
-23003892:	00f11823          	sh	a5,16(sp)
-        BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_NO_BREDR | BT_LE_AD_GENERAL)),
-23003896:	4799                	li	a5,6
-23003898:	00f10223          	sb	a5,4(sp)
-    struct bt_data adv_data[] = {
-2300389c:	005c                	addi	a5,sp,4
-2300389e:	ca3e                	sw	a5,20(sp)
-230038a0:	6785                	lui	a5,0x1
-230038a2:	a0978793          	addi	a5,a5,-1527 # a09 <__heap_min_size+0x609>
-230038a6:	00f11c23          	sh	a5,24(sp)
-230038aa:	230357b7          	lui	a5,0x23035
-    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
-230038ae:	080c                	addi	a1,sp,16
-230038b0:	0028                	addi	a0,sp,8
-    struct bt_data adv_data[] = {
-230038b2:	98878793          	addi	a5,a5,-1656 # 23034988 <strtol+0xc0>
-    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
-230038b6:	4701                	li	a4,0
-230038b8:	4681                	li	a3,0
-230038ba:	4609                	li	a2,2
-{
-230038bc:	d606                	sw	ra,44(sp)
-    struct bt_data adv_data[] = {
-230038be:	ce3e                	sw	a5,28(sp)
-    return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
-230038c0:	16f100ef          	jal	ra,2301422e <bt_le_adv_start>
-}
-230038c4:	50b2                	lw	ra,44(sp)
-230038c6:	6145                	addi	sp,sp,48
-230038c8:	8082                	ret
-
-230038ca <bt_enable_cb>:
-{
-230038ca:	1141                	addi	sp,sp,-16
-230038cc:	c606                	sw	ra,12(sp)
-    ble_tp_init();
-230038ce:	2971                	jal	23003d6a <ble_tp_init>
-}
-230038d0:	40b2                	lw	ra,12(sp)
-230038d2:	0141                	addi	sp,sp,16
-    ble_start_adv();
-230038d4:	b75d                	j	2300387a <ble_start_adv>
-
-230038d6 <main>:
+230038ba <main>:
 
 int main(void)
 {
-230038d6:	1141                	addi	sp,sp,-16
+230038ba:	1141                	addi	sp,sp,-16
     static StackType_t ble_init_stack[1024];
     static StaticTask_t ble_init_task_h;
     uint32_t tmpVal = 0;
 
     bflb_platform_init(0);
-230038d8:	4501                	li	a0,0
+230038bc:	4501                	li	a0,0
 {
-230038da:	c606                	sw	ra,12(sp)
+230038be:	c606                	sw	ra,12(sp)
     bflb_platform_init(0);
-230038dc:	68c000ef          	jal	ra,23003f68 <bflb_platform_init>
+230038c0:	6c8000ef          	jal	ra,23003f88 <bflb_platform_init>
     HBN_Set_XCLK_CLK_Sel(HBN_XCLK_CLK_XTAL);
-230038e0:	4505                	li	a0,1
-230038e2:	0d0030ef          	jal	ra,230069b2 <HBN_Set_XCLK_CLK_Sel>
+230038c4:	4505                	li	a0,1
+230038c6:	0ec030ef          	jal	ra,230069b2 <HBN_Set_XCLK_CLK_Sel>
     #ifdef M0SENSE_USE_USBSTDIO
     usb_stdio_init();                                        // MUST be called before any call to printf or puts
-230038e6:	3801a0ef          	jal	ra,2301dc66 <usb_stdio_init>
+230038ca:	39c1a0ef          	jal	ra,2301dc66 <usb_stdio_init>
     printf("Now can use printf, puts on usb_cdc_acm.\r\n");  // on usb, ttyACMx on Linux or COMx on Windows.
-230038ea:	23035537          	lui	a0,0x23035
-230038ee:	99450513          	addi	a0,a0,-1644 # 23034994 <strtol+0xcc>
-230038f2:	2bc050ef          	jal	ra,23008bae <puts>
+230038ce:	23035537          	lui	a0,0x23035
+230038d2:	98850513          	addi	a0,a0,-1656 # 23034988 <strtol+0xc0>
+230038d6:	2d8050ef          	jal	ra,23008bae <puts>
     #endif
     gpio_set_mode(LED_B_PIN, GPIO_OUTPUT_PP_MODE);
-230038f6:	4585                	li	a1,1
-230038f8:	455d                	li	a0,23
-230038fa:	23c010ef          	jal	ra,23004b36 <gpio_set_mode>
+230038da:	4585                	li	a1,1
+230038dc:	455d                	li	a0,23
+230038de:	278010ef          	jal	ra,23004b56 <gpio_set_mode>
     gpio_set_mode(LED_G_PIN, GPIO_OUTPUT_PP_MODE);
-230038fe:	4585                	li	a1,1
-23003900:	4561                	li	a0,24
-23003902:	234010ef          	jal	ra,23004b36 <gpio_set_mode>
+230038e2:	4585                	li	a1,1
+230038e4:	4561                	li	a0,24
+230038e6:	270010ef          	jal	ra,23004b56 <gpio_set_mode>
     gpio_set_mode(LED_R_PIN, GPIO_OUTPUT_PP_MODE);
-23003906:	4585                	li	a1,1
-23003908:	4565                	li	a0,25
-2300390a:	22c010ef          	jal	ra,23004b36 <gpio_set_mode>
+230038ea:	4585                	li	a1,1
+230038ec:	4565                	li	a0,25
+230038ee:	268010ef          	jal	ra,23004b56 <gpio_set_mode>
     printf("[init] gpio set mode complete.\r\n");
-2300390e:	23035537          	lui	a0,0x23035
-23003912:	9c050513          	addi	a0,a0,-1600 # 230349c0 <strtol+0xf8>
-23003916:	298050ef          	jal	ra,23008bae <puts>
+230038f2:	23035537          	lui	a0,0x23035
+230038f6:	9b450513          	addi	a0,a0,-1612 # 230349b4 <strtol+0xec>
+230038fa:	2b4050ef          	jal	ra,23008bae <puts>
     gpio_write(LED_B_PIN, false);
-2300391a:	4581                	li	a1,0
-2300391c:	455d                	li	a0,23
-2300391e:	374010ef          	jal	ra,23004c92 <gpio_write>
+230038fe:	4581                	li	a1,0
+23003900:	455d                	li	a0,23
+23003902:	3b0010ef          	jal	ra,23004cb2 <gpio_write>
     gpio_write(LED_G_PIN, true);
-23003922:	4585                	li	a1,1
-23003924:	4561                	li	a0,24
-23003926:	36c010ef          	jal	ra,23004c92 <gpio_write>
+23003906:	4585                	li	a1,1
+23003908:	4561                	li	a0,24
+2300390a:	3a8010ef          	jal	ra,23004cb2 <gpio_write>
     gpio_write(LED_R_PIN, true);
-2300392a:	4585                	li	a1,1
-2300392c:	4565                	li	a0,25
-2300392e:	364010ef          	jal	ra,23004c92 <gpio_write>
+2300390e:	4585                	li	a1,1
+23003910:	4565                	li	a0,25
+23003912:	3a0010ef          	jal	ra,23004cb2 <gpio_write>
     //Set capcode
     tmpVal = BL_RD_REG(AON_BASE, AON_XTAL_CFG);
-23003932:	400106b7          	lui	a3,0x40010
-23003936:	8846a783          	lw	a5,-1916(a3) # 4000f884 <__ram_load_addr+0x1cfd2990>
+23003916:	400106b7          	lui	a3,0x40010
+2300391a:	8846a783          	lw	a5,-1916(a3) # 4000f884 <__ram_load_addr+0x1cfd2990>
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, AON_XTAL_CAPCODE_IN_AON, 33);
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, AON_XTAL_CAPCODE_OUT_AON, 33);
-2300393a:	f0010737          	lui	a4,0xf0010
-2300393e:	177d                	addi	a4,a4,-1
-23003940:	8ff9                	and	a5,a5,a4
-23003942:	08610737          	lui	a4,0x8610
-23003946:	8fd9                	or	a5,a5,a4
+2300391e:	f0010737          	lui	a4,0xf0010
+23003922:	177d                	addi	a4,a4,-1
+23003924:	8ff9                	and	a5,a5,a4
+23003926:	08610737          	lui	a4,0x8610
+2300392a:	8fd9                	or	a5,a5,a4
     BL_WR_REG(AON_BASE, AON_XTAL_CFG, tmpVal);
-23003948:	88f6a223          	sw	a5,-1916(a3)
+2300392c:	88f6a223          	sw	a5,-1916(a3)
 
     Sec_Eng_Trng_Enable();
-2300394c:	0f2030ef          	jal	ra,23006a3e <Sec_Eng_Trng_Enable>
+23003930:	10e030ef          	jal	ra,23006a3e <Sec_Eng_Trng_Enable>
 
     vPortDefineHeapRegions(xHeapRegions);
-23003950:	42016537          	lui	a0,0x42016
-23003954:	00050513          	mv	a0,a0
-23003958:	273070ef          	jal	ra,2300b3ca <vPortDefineHeapRegions>
+23003934:	42016537          	lui	a0,0x42016
+23003938:	00050513          	mv	a0,a0
+2300393c:	28f070ef          	jal	ra,2300b3ca <vPortDefineHeapRegions>
 
     printf("[OS] ble_init_task.....\r\n");
-2300395c:	23035537          	lui	a0,0x23035
-23003960:	9e050513          	addi	a0,a0,-1568 # 230349e0 <strtol+0x118>
-23003964:	24a050ef          	jal	ra,23008bae <puts>
+23003940:	23035537          	lui	a0,0x23035
+23003944:	9d450513          	addi	a0,a0,-1580 # 230349d4 <strtol+0x10c>
+23003948:	266050ef          	jal	ra,23008bae <puts>
     xTaskCreateStatic(ble_init_task, (char *)"ble_init", sizeof(ble_init_stack) / 4, NULL, 15, ble_init_stack, &ble_init_task_h);
-23003968:	42018837          	lui	a6,0x42018
-2300396c:	420177b7          	lui	a5,0x42017
-23003970:	230355b7          	lui	a1,0x23035
-23003974:	23003537          	lui	a0,0x23003
-23003978:	97080813          	addi	a6,a6,-1680 # 42017970 <ble_init_task_h.5>
-2300397c:	97078793          	addi	a5,a5,-1680 # 42016970 <ble_init_stack.4>
-23003980:	473d                	li	a4,15
-23003982:	4681                	li	a3,0
-23003984:	40000613          	li	a2,1024
-23003988:	9fc58593          	addi	a1,a1,-1540 # 230349fc <strtol+0x134>
-2300398c:	7aa50513          	addi	a0,a0,1962 # 230037aa <ble_init_task>
-23003990:	594080ef          	jal	ra,2300bf24 <xTaskCreateStatic>
+2300394c:	42018837          	lui	a6,0x42018
+23003950:	420177b7          	lui	a5,0x42017
+23003954:	230355b7          	lui	a1,0x23035
+23003958:	23003537          	lui	a0,0x23003
+2300395c:	97080813          	addi	a6,a6,-1680 # 42017970 <ble_init_task_h.5>
+23003960:	97078793          	addi	a5,a5,-1680 # 42016970 <ble_init_stack.4>
+23003964:	473d                	li	a4,15
+23003966:	4681                	li	a3,0
+23003968:	40000613          	li	a2,1024
+2300396c:	9f058593          	addi	a1,a1,-1552 # 230349f0 <strtol+0x128>
+23003970:	7ea50513          	addi	a0,a0,2026 # 230037ea <ble_init_task>
+23003974:	5b0080ef          	jal	ra,2300bf24 <xTaskCreateStatic>
 
     vTaskStartScheduler();
-23003994:	624080ef          	jal	ra,2300bfb8 <vTaskStartScheduler>
+23003978:	640080ef          	jal	ra,2300bfb8 <vTaskStartScheduler>
 
     BL_CASE_SUCCESS;
-23003998:	23035537          	lui	a0,0x23035
-2300399c:	a0850513          	addi	a0,a0,-1528 # 23034a08 <strtol+0x140>
-230039a0:	298d                	jal	23003e12 <bflb_platform_printf>
+2300397c:	23035537          	lui	a0,0x23035
+23003980:	9fc50513          	addi	a0,a0,-1540 # 230349fc <strtol+0x134>
+23003984:	217d                	jal	23003e32 <bflb_platform_printf>
+
     while (1) {
         bflb_platform_delay_ms(100);
-230039a2:	06400513          	li	a0,100
-230039a6:	6ae000ef          	jal	ra,23004054 <bflb_platform_delay_ms>
+23003986:	06400513          	li	a0,100
+2300398a:	6ea000ef          	jal	ra,23004074 <bflb_platform_delay_ms>
     while (1) {
-230039aa:	bfe5                	j	230039a2 <main+0xcc>
+2300398e:	bfe5                	j	23003986 <main+0xcc>
 
-230039ac <ble_tp_recv_rd>:
+23003990 <ble_tp_recv_rd>:
                           void *buf, u16_t len, u16_t offset)
 {
     int size = 9;
-    char data[9] = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09 };
+    char data[9] = { 0xDE, 0xAD, 0xBE, 0xEF, 0x05, 0x06, 0x07, 0x08, 0x09 };
 
     memcpy(buf, data, size);
-230039ac:	4785                	li	a5,1
-230039ae:	00f60023          	sb	a5,0(a2) # 10000 <_heap_size+0xa400>
-230039b2:	4789                	li	a5,2
-230039b4:	00f600a3          	sb	a5,1(a2)
-230039b8:	478d                	li	a5,3
-230039ba:	00f60123          	sb	a5,2(a2)
-230039be:	4791                	li	a5,4
-230039c0:	00f601a3          	sb	a5,3(a2)
-230039c4:	4795                	li	a5,5
-230039c6:	00f60223          	sb	a5,4(a2)
-230039ca:	4799                	li	a5,6
-230039cc:	00f602a3          	sb	a5,5(a2)
-230039d0:	479d                	li	a5,7
-230039d2:	00f60323          	sb	a5,6(a2)
-230039d6:	47a1                	li	a5,8
-230039d8:	00f603a3          	sb	a5,7(a2)
-230039dc:	47a5                	li	a5,9
+23003990:	fde00793          	li	a5,-34
+23003994:	00f60023          	sb	a5,0(a2) # 10000 <_heap_size+0xa400>
+23003998:	fad00793          	li	a5,-83
+2300399c:	00f600a3          	sb	a5,1(a2)
+230039a0:	fbe00793          	li	a5,-66
+230039a4:	00f60123          	sb	a5,2(a2)
+230039a8:	57bd                	li	a5,-17
+230039aa:	00f601a3          	sb	a5,3(a2)
+230039ae:	4795                	li	a5,5
+230039b0:	00f60223          	sb	a5,4(a2)
+230039b4:	4799                	li	a5,6
+230039b6:	00f602a3          	sb	a5,5(a2)
+230039ba:	479d                	li	a5,7
+230039bc:	00f60323          	sb	a5,6(a2)
+230039c0:	47a1                	li	a5,8
+230039c2:	00f603a3          	sb	a5,7(a2)
+230039c6:	47a5                	li	a5,9
 {
-230039de:	1141                	addi	sp,sp,-16
+230039c8:	1141                	addi	sp,sp,-16
     memcpy(buf, data, size);
-230039e0:	00f60423          	sb	a5,8(a2)
+230039ca:	00f60423          	sb	a5,8(a2)
 
     return size;
 }
-230039e4:	4525                	li	a0,9
-230039e6:	0141                	addi	sp,sp,16
-230039e8:	8082                	ret
+230039ce:	4525                	li	a0,9
+230039d0:	0141                	addi	sp,sp,16
+230039d2:	8082                	ret
 
-230039ea <indicate_rsp>:
+230039d4 <indicate_rsp>:
     indicate_rsp /bl_tp_send_indicate
 */
 
 static void indicate_rsp(struct bt_conn *conn, const struct bt_gatt_attr *attr, u8_t err)
 {
-    printf("receive comfirmation, err:%d", err);
-230039ea:	23035537          	lui	a0,0x23035
-230039ee:	85b2                	mv	a1,a2
-230039f0:	a1850513          	addi	a0,a0,-1512 # 23034a18 <strtol+0x150>
-230039f4:	0a00506f          	j	23008a94 <iprintf>
+    printf("receive comfirmation, err:%d\r\n", err);
+230039d4:	23035537          	lui	a0,0x23035
+230039d8:	85b2                	mv	a1,a2
+230039da:	a0c50513          	addi	a0,a0,-1524 # 23034a0c <strtol+0x144>
+230039de:	0b60506f          	j	23008a94 <iprintf>
 
-230039f8 <ble_tp_disconnected>:
-{
-230039f8:	1141                	addi	sp,sp,-16
-    printf("Tp disconnected");
-230039fa:	23035537          	lui	a0,0x23035
-{
-230039fe:	c422                	sw	s0,8(sp)
-    printf("Tp disconnected");
-23003a00:	a3850513          	addi	a0,a0,-1480 # 23034a38 <strtol+0x170>
-    if (created_tp_task) {
-23003a04:	4201a437          	lui	s0,0x4201a
-{
-23003a08:	c606                	sw	ra,12(sp)
-    if (created_tp_task) {
-23003a0a:	a8440413          	addi	s0,s0,-1404 # 42019a84 <created_tp_task>
-    printf("Tp disconnected");
-23003a0e:	086050ef          	jal	ra,23008a94 <iprintf>
-    if (created_tp_task) {
-23003a12:	00044783          	lbu	a5,0(s0)
-23003a16:	eb89                	bnez	a5,23003a28 <ble_tp_disconnected+0x30>
-}
-23003a18:	40b2                	lw	ra,12(sp)
-23003a1a:	4422                	lw	s0,8(sp)
-    ble_tp_conn = NULL;
-23003a1c:	4201a7b7          	lui	a5,0x4201a
-23003a20:	a607ae23          	sw	zero,-1412(a5) # 42019a7c <ble_tp_conn>
-}
-23003a24:	0141                	addi	sp,sp,16
-23003a26:	8082                	ret
-        printf("Delete throughput tx task");
-23003a28:	23035537          	lui	a0,0x23035
-23003a2c:	a4850513          	addi	a0,a0,-1464 # 23034a48 <strtol+0x180>
-23003a30:	064050ef          	jal	ra,23008a94 <iprintf>
-        vTaskDelete(ble_tp_task_h);
-23003a34:	4201a7b7          	lui	a5,0x4201a
-23003a38:	a807a503          	lw	a0,-1408(a5) # 42019a80 <ble_tp_task_h>
-23003a3c:	66c080ef          	jal	ra,2300c0a8 <vTaskDelete>
-}
-23003a40:	40b2                	lw	ra,12(sp)
-        created_tp_task = 0;
-23003a42:	00040023          	sb	zero,0(s0)
-}
-23003a46:	4422                	lw	s0,8(sp)
-    ble_tp_conn = NULL;
-23003a48:	4201a7b7          	lui	a5,0x4201a
-23003a4c:	a607ae23          	sw	zero,-1412(a5) # 42019a7c <ble_tp_conn>
-}
-23003a50:	0141                	addi	sp,sp,16
-23003a52:	8082                	ret
-
-23003a54 <ble_tp_ind_ccc_changed>:
+230039e2 <ble_tp_ind_ccc_changed>:
     ble_tp_ind_ccc_changed
 */
 static void ble_tp_ind_ccc_changed(const struct bt_gatt_attr *attr, u16_t value)
 {
     int err = -1;
     char data[9] = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09 };
-23003a54:	040307b7          	lui	a5,0x4030
+230039e2:	040307b7          	lui	a5,0x4030
 {
-23003a58:	1101                	addi	sp,sp,-32
+230039e6:	1101                	addi	sp,sp,-32
     char data[9] = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09 };
-23003a5a:	20178793          	addi	a5,a5,513 # 4030201 <_heap_size+0x402a601>
-23003a5e:	c23e                	sw	a5,4(sp)
-23003a60:	080707b7          	lui	a5,0x8070
-23003a64:	60578793          	addi	a5,a5,1541 # 8070605 <_heap_size+0x806aa05>
-23003a68:	4725                	li	a4,9
-23003a6a:	c43e                	sw	a5,8(sp)
+230039e8:	20178793          	addi	a5,a5,513 # 4030201 <_heap_size+0x402a601>
+230039ec:	c23e                	sw	a5,4(sp)
+230039ee:	080707b7          	lui	a5,0x8070
+230039f2:	60578793          	addi	a5,a5,1541 # 8070605 <_heap_size+0x806aa05>
+230039f6:	4725                	li	a4,9
+230039f8:	c43e                	sw	a5,8(sp)
 {
-23003a6c:	ce06                	sw	ra,28(sp)
+230039fa:	ce06                	sw	ra,28(sp)
     char data[9] = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09 };
-23003a6e:	00e10623          	sb	a4,12(sp)
+230039fc:	00e10623          	sb	a4,12(sp)
 
     if (value == BT_GATT_CCC_INDICATE) {
-23003a72:	4789                	li	a5,2
-23003a74:	00f58563          	beq	a1,a5,23003a7e <ble_tp_ind_ccc_changed+0x2a>
+23003a00:	4789                	li	a5,2
+23003a02:	00f58563          	beq	a1,a5,23003a0c <ble_tp_ind_ccc_changed+0x2a>
         err = bl_tp_send_indicate(ble_tp_conn, get_attr(BT_CHAR_BLE_TP_IND_ATTR_VAL_INDEX), data, 9);
-        printf("ble tp send indatcate: %d", err);
+        printf("ble tp send indatcate: %d\r\n", err);
     }
 }
-23003a78:	40f2                	lw	ra,28(sp)
-23003a7a:	6105                	addi	sp,sp,32
-23003a7c:	8082                	ret
+23003a06:	40f2                	lw	ra,28(sp)
+23003a08:	6105                	addi	sp,sp,32
+23003a0a:	8082                	ret
         err = bl_tp_send_indicate(ble_tp_conn, get_attr(BT_CHAR_BLE_TP_IND_ATTR_VAL_INDEX), data, 9);
-23003a7e:	4201a7b7          	lui	a5,0x4201a
+23003a0c:	4201a7b7          	lui	a5,0x4201a
     ind_params.attr = attr;
-23003a82:	420185b7          	lui	a1,0x42018
+23003a10:	420185b7          	lui	a1,0x42018
     return bt_gatt_indicate(conn, &ind_params);
-23003a86:	a7c7a503          	lw	a0,-1412(a5) # 42019a7c <ble_tp_conn>
+23003a14:	a7c7a503          	lw	a0,-1412(a5) # 42019a7c <ble_tp_conn>
     ind_params.attr = attr;
-23003a8a:	52c58793          	addi	a5,a1,1324 # 4201852c <ind_params.0>
+23003a18:	52c58793          	addi	a5,a1,1324 # 4201852c <ind_params.0>
     ind_params.len = len;
-23003a8e:	02e79423          	sh	a4,40(a5)
+23003a1c:	02e79423          	sh	a4,40(a5)
     ind_params.attr = attr;
-23003a92:	9ac18693          	addi	a3,gp,-1620 # 420161ac <attrs+0x78>
+23003a20:	9ac18693          	addi	a3,gp,-1620 # 420161ac <attrs+0x78>
     ind_params.func = indicate_rsp;
-23003a96:	23004737          	lui	a4,0x23004
+23003a24:	23004737          	lui	a4,0x23004
     ind_params.attr = attr;
-23003a9a:	cfd4                	sw	a3,28(a5)
+23003a28:	cfd4                	sw	a3,28(a5)
     ind_params.func = indicate_rsp;
-23003a9c:	9ea70713          	addi	a4,a4,-1558 # 230039ea <indicate_rsp>
+23003a2a:	9d470713          	addi	a4,a4,-1580 # 230039d4 <indicate_rsp>
     ind_params.data = data;
-23003aa0:	0054                	addi	a3,sp,4
+23003a2e:	0054                	addi	a3,sp,4
     return bt_gatt_indicate(conn, &ind_params);
-23003aa2:	52c58593          	addi	a1,a1,1324
+23003a30:	52c58593          	addi	a1,a1,1324
     ind_params.data = data;
-23003aa6:	d3d4                	sw	a3,36(a5)
+23003a34:	d3d4                	sw	a3,36(a5)
     ind_params.func = indicate_rsp;
-23003aa8:	d398                	sw	a4,32(a5)
+23003a36:	d398                	sw	a4,32(a5)
     ind_params.uuid = NULL;
-23003aaa:	0007ac23          	sw	zero,24(a5)
+23003a38:	0007ac23          	sw	zero,24(a5)
     return bt_gatt_indicate(conn, &ind_params);
-23003aae:	7f60c0ef          	jal	ra,230102a4 <bt_gatt_indicate>
-23003ab2:	85aa                	mv	a1,a0
-        printf("ble tp send indatcate: %d", err);
-23003ab4:	23035537          	lui	a0,0x23035
-23003ab8:	a6450513          	addi	a0,a0,-1436 # 23034a64 <strtol+0x19c>
-23003abc:	7d9040ef          	jal	ra,23008a94 <iprintf>
+23003a3c:	0690c0ef          	jal	ra,230102a4 <bt_gatt_indicate>
+23003a40:	85aa                	mv	a1,a0
+        printf("ble tp send indatcate: %d\r\n", err);
+23003a42:	23035537          	lui	a0,0x23035
+23003a46:	a2c50513          	addi	a0,a0,-1492 # 23034a2c <strtol+0x164>
+23003a4a:	04a050ef          	jal	ra,23008a94 <iprintf>
 }
-23003ac0:	40f2                	lw	ra,28(sp)
-23003ac2:	6105                	addi	sp,sp,32
-23003ac4:	8082                	ret
+23003a4e:	40f2                	lw	ra,28(sp)
+23003a50:	6105                	addi	sp,sp,32
+23003a52:	8082                	ret
 
-23003ac6 <ble_tp_recv_wr>:
+23003a54 <ble_tp_disconnected>:
+    printf("Tp disconnected\r\n");
+23003a54:	23035537          	lui	a0,0x23035
 {
-23003ac6:	1141                	addi	sp,sp,-16
-23003ac8:	c226                	sw	s1,4(sp)
-    printf("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
-23003aca:	23035537          	lui	a0,0x23035
-23003ace:	84b6                	mv	s1,a3
+23003a58:	1141                	addi	sp,sp,-16
+    printf("Tp disconnected\r\n");
+23003a5a:	a4850513          	addi	a0,a0,-1464 # 23034a48 <strtol+0x180>
 {
-23003ad0:	c04a                	sw	s2,0(sp)
-    printf("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
-23003ad2:	86be                	mv	a3,a5
+23003a5e:	c606                	sw	ra,12(sp)
+23003a60:	c422                	sw	s0,8(sp)
+    printf("Tp disconnected\r\n");
+23003a62:	14c050ef          	jal	ra,23008bae <puts>
+    gpio_write(LED_R_PIN, true);
+23003a66:	4585                	li	a1,1
+23003a68:	4565                	li	a0,25
+    if (created_tp_task) {
+23003a6a:	4201a437          	lui	s0,0x4201a
+    gpio_write(LED_R_PIN, true);
+23003a6e:	244010ef          	jal	ra,23004cb2 <gpio_write>
+    if (created_tp_task) {
+23003a72:	a8440413          	addi	s0,s0,-1404 # 42019a84 <created_tp_task>
+23003a76:	00044783          	lbu	a5,0(s0)
+23003a7a:	eb89                	bnez	a5,23003a8c <ble_tp_disconnected+0x38>
+}
+23003a7c:	40b2                	lw	ra,12(sp)
+23003a7e:	4422                	lw	s0,8(sp)
+    ble_tp_conn = NULL;
+23003a80:	4201a7b7          	lui	a5,0x4201a
+23003a84:	a607ae23          	sw	zero,-1412(a5) # 42019a7c <ble_tp_conn>
+}
+23003a88:	0141                	addi	sp,sp,16
+23003a8a:	8082                	ret
+        printf("Delete throughput tx task\r\n");
+23003a8c:	23035537          	lui	a0,0x23035
+23003a90:	a5c50513          	addi	a0,a0,-1444 # 23034a5c <strtol+0x194>
+23003a94:	11a050ef          	jal	ra,23008bae <puts>
+        vTaskDelete(ble_tp_task_h);
+23003a98:	4201a7b7          	lui	a5,0x4201a
+23003a9c:	a807a503          	lw	a0,-1408(a5) # 42019a80 <ble_tp_task_h>
+23003aa0:	608080ef          	jal	ra,2300c0a8 <vTaskDelete>
+}
+23003aa4:	40b2                	lw	ra,12(sp)
+        created_tp_task = 0;
+23003aa6:	00040023          	sb	zero,0(s0)
+}
+23003aaa:	4422                	lw	s0,8(sp)
+    ble_tp_conn = NULL;
+23003aac:	4201a7b7          	lui	a5,0x4201a
+23003ab0:	a607ae23          	sw	zero,-1412(a5) # 42019a7c <ble_tp_conn>
+}
+23003ab4:	0141                	addi	sp,sp,16
+23003ab6:	8082                	ret
+
+23003ab8 <ble_tp_recv_wr>:
 {
-23003ad4:	8932                	mv	s2,a2
-    printf("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
-23003ad6:	85a6                	mv	a1,s1
-23003ad8:	863a                	mv	a2,a4
-23003ada:	a8050513          	addi	a0,a0,-1408 # 23034a80 <strtol+0x1b8>
+23003ab8:	1101                	addi	sp,sp,-32
+23003aba:	ca26                	sw	s1,20(sp)
+    printf("recv data len=%d, offset=%d, flag=%d\r\n", len, offset, flags);
+23003abc:	23035537          	lui	a0,0x23035
+23003ac0:	84b6                	mv	s1,a3
 {
-23003ade:	c606                	sw	ra,12(sp)
-23003ae0:	c422                	sw	s0,8(sp)
-23003ae2:	843e                	mv	s0,a5
-    printf("recv data len=%d, offset=%d, flag=%d", len, offset, flags);
-23003ae4:	7b1040ef          	jal	ra,23008a94 <iprintf>
-    printf("recv data:%s", bt_hex(buf, len));
-23003ae8:	85a6                	mv	a1,s1
-23003aea:	854a                	mv	a0,s2
-23003aec:	6d3090ef          	jal	ra,2300d9be <bt_hex_real>
-23003af0:	85aa                	mv	a1,a0
-23003af2:	23035537          	lui	a0,0x23035
-23003af6:	aa850513          	addi	a0,a0,-1368 # 23034aa8 <strtol+0x1e0>
-23003afa:	79b040ef          	jal	ra,23008a94 <iprintf>
+23003ac2:	c84a                	sw	s2,16(sp)
+    printf("recv data len=%d, offset=%d, flag=%d\r\n", len, offset, flags);
+23003ac4:	86be                	mv	a3,a5
+{
+23003ac6:	8932                	mv	s2,a2
+    printf("recv data len=%d, offset=%d, flag=%d\r\n", len, offset, flags);
+23003ac8:	85a6                	mv	a1,s1
+23003aca:	863a                	mv	a2,a4
+23003acc:	a7850513          	addi	a0,a0,-1416 # 23034a78 <strtol+0x1b0>
+{
+23003ad0:	ce06                	sw	ra,28(sp)
+23003ad2:	cc22                	sw	s0,24(sp)
+23003ad4:	c64e                	sw	s3,12(sp)
+23003ad6:	843e                	mv	s0,a5
+    printf("recv data len=%d, offset=%d, flag=%d\r\n", len, offset, flags);
+23003ad8:	7bd040ef          	jal	ra,23008a94 <iprintf>
+    printf("recv data:%s\r\n", bt_hex(buf, len));
+23003adc:	85a6                	mv	a1,s1
+23003ade:	854a                	mv	a0,s2
+23003ae0:	6df090ef          	jal	ra,2300d9be <bt_hex_real>
+23003ae4:	230359b7          	lui	s3,0x23035
+23003ae8:	85aa                	mv	a1,a0
+23003aea:	aa098513          	addi	a0,s3,-1376 # 23034aa0 <strtol+0x1d8>
+23003aee:	7a7040ef          	jal	ra,23008a94 <iprintf>
+    printf("recv data:%s\r\n", buf);
+23003af2:	85ca                	mv	a1,s2
+23003af4:	aa098513          	addi	a0,s3,-1376
+23003af8:	79d040ef          	jal	ra,23008a94 <iprintf>
     if (flags & BT_GATT_WRITE_FLAG_PREPARE) {
-23003afe:	00147793          	andi	a5,s0,1
-23003b02:	ef8d                	bnez	a5,23003b3c <ble_tp_recv_wr+0x76>
+23003afc:	00147793          	andi	a5,s0,1
+23003b00:	eba9                	bnez	a5,23003b52 <ble_tp_recv_wr+0x9a>
     if (flags & BT_GATT_WRITE_FLAG_CMD) {
-23003b04:	8809                	andi	s0,s0,2
-23003b06:	e405                	bnez	s0,23003b2e <ble_tp_recv_wr+0x68>
-        printf("recv write request / execute write");
-23003b08:	23035537          	lui	a0,0x23035
-23003b0c:	ae850513          	addi	a0,a0,-1304 # 23034ae8 <strtol+0x220>
-23003b10:	785040ef          	jal	ra,23008a94 <iprintf>
+23003b02:	8809                	andi	s0,s0,2
+23003b04:	e021                	bnez	s0,23003b44 <ble_tp_recv_wr+0x8c>
+        printf("recv write request / execute write\r\n");
+23003b06:	23035537          	lui	a0,0x23035
+23003b0a:	ae050513          	addi	a0,a0,-1312 # 23034ae0 <strtol+0x218>
+23003b0e:	0a0050ef          	jal	ra,23008bae <puts>
     k_sem_give(&notify_poll_sem);
-23003b14:	42018537          	lui	a0,0x42018
-23003b18:	55850513          	addi	a0,a0,1368 # 42018558 <notify_poll_sem>
-23003b1c:	405090ef          	jal	ra,2300d720 <k_sem_give>
+23003b12:	42018537          	lui	a0,0x42018
+23003b16:	55850513          	addi	a0,a0,1368 # 42018558 <notify_poll_sem>
+23003b1a:	407090ef          	jal	ra,2300d720 <k_sem_give>
+    gpio_write(LED_G_PIN, false);
+23003b1e:	4581                	li	a1,0
+23003b20:	4561                	li	a0,24
+23003b22:	190010ef          	jal	ra,23004cb2 <gpio_write>
+    bflb_platform_delay_ms(500);
+23003b26:	1f400513          	li	a0,500
+23003b2a:	23a9                	jal	23004074 <bflb_platform_delay_ms>
+    gpio_write(LED_G_PIN, true);
+23003b2c:	4561                	li	a0,24
+23003b2e:	4585                	li	a1,1
+23003b30:	182010ef          	jal	ra,23004cb2 <gpio_write>
 }
-23003b20:	40b2                	lw	ra,12(sp)
-23003b22:	4422                	lw	s0,8(sp)
-23003b24:	4902                	lw	s2,0(sp)
-23003b26:	8526                	mv	a0,s1
-23003b28:	4492                	lw	s1,4(sp)
-23003b2a:	0141                	addi	sp,sp,16
-23003b2c:	8082                	ret
-        printf("recv write command");
-23003b2e:	23035537          	lui	a0,0x23035
-23003b32:	ad450513          	addi	a0,a0,-1324 # 23034ad4 <strtol+0x20c>
-23003b36:	75f040ef          	jal	ra,23008a94 <iprintf>
-23003b3a:	bfe9                	j	23003b14 <ble_tp_recv_wr+0x4e>
-        printf("recv prepare write request");
-23003b3c:	23035537          	lui	a0,0x23035
-23003b40:	ab850513          	addi	a0,a0,-1352 # 23034ab8 <strtol+0x1f0>
-23003b44:	751040ef          	jal	ra,23008a94 <iprintf>
+23003b34:	40f2                	lw	ra,28(sp)
+23003b36:	4462                	lw	s0,24(sp)
+23003b38:	4942                	lw	s2,16(sp)
+23003b3a:	49b2                	lw	s3,12(sp)
+23003b3c:	8526                	mv	a0,s1
+23003b3e:	44d2                	lw	s1,20(sp)
+23003b40:	6105                	addi	sp,sp,32
+23003b42:	8082                	ret
+        printf("recv write command\r\n");
+23003b44:	23035537          	lui	a0,0x23035
+23003b48:	acc50513          	addi	a0,a0,-1332 # 23034acc <strtol+0x204>
+23003b4c:	062050ef          	jal	ra,23008bae <puts>
+23003b50:	b7c9                	j	23003b12 <ble_tp_recv_wr+0x5a>
+        printf("recv prepare write request\r\n");
+23003b52:	23035537          	lui	a0,0x23035
+23003b56:	ab050513          	addi	a0,a0,-1360 # 23034ab0 <strtol+0x1e8>
+23003b5a:	054050ef          	jal	ra,23008bae <puts>
 }
-23003b48:	40b2                	lw	ra,12(sp)
-23003b4a:	4422                	lw	s0,8(sp)
+23003b5e:	40f2                	lw	ra,28(sp)
+23003b60:	4462                	lw	s0,24(sp)
         return 0;
-23003b4c:	4481                	li	s1,0
+23003b62:	4481                	li	s1,0
 }
-23003b4e:	4902                	lw	s2,0(sp)
-23003b50:	8526                	mv	a0,s1
-23003b52:	4492                	lw	s1,4(sp)
-23003b54:	0141                	addi	sp,sp,16
-23003b56:	8082                	ret
+23003b64:	4942                	lw	s2,16(sp)
+23003b66:	49b2                	lw	s3,12(sp)
+23003b68:	8526                	mv	a0,s1
+23003b6a:	44d2                	lw	s1,20(sp)
+23003b6c:	6105                	addi	sp,sp,32
+23003b6e:	8082                	ret
 
-23003b58 <ble_tp_notify_ccc_changed>:
+23003b70 <ble_tp_notify_ccc_changed>:
 NAME
     ble_tp_not_ccc_changed
 */
 static void ble_tp_notify_ccc_changed(const struct bt_gatt_attr *attr, u16_t value)
 {
     printf("ccc:value=[%d]", value);
-23003b58:	23035537          	lui	a0,0x23035
+23003b70:	23035537          	lui	a0,0x23035
 {
-23003b5c:	1141                	addi	sp,sp,-16
+23003b74:	1141                	addi	sp,sp,-16
     printf("ccc:value=[%d]", value);
-23003b5e:	b0c50513          	addi	a0,a0,-1268 # 23034b0c <strtol+0x244>
+23003b76:	b0450513          	addi	a0,a0,-1276 # 23034b04 <strtol+0x23c>
 {
-23003b62:	c422                	sw	s0,8(sp)
-23003b64:	c606                	sw	ra,12(sp)
-23003b66:	842e                	mv	s0,a1
+23003b7a:	c422                	sw	s0,8(sp)
+23003b7c:	c606                	sw	ra,12(sp)
+23003b7e:	842e                	mv	s0,a1
     printf("ccc:value=[%d]", value);
-23003b68:	72d040ef          	jal	ra,23008a94 <iprintf>
+23003b80:	715040ef          	jal	ra,23008a94 <iprintf>
 
     if (value == BT_GATT_CCC_NOTIFY) {
-23003b6c:	4785                	li	a5,1
-23003b6e:	02f40f63          	beq	s0,a5,23003bac <ble_tp_notify_ccc_changed+0x54>
+23003b84:	4785                	li	a5,1
+23003b86:	02f40f63          	beq	s0,a5,23003bc4 <ble_tp_notify_ccc_changed+0x54>
         } else {
             created_tp_task = 0;
-            printf("Create throughput tx taskfail");
+            printf("Create throughput tx taskfail\r\n");
         }
     } else {
         if (created_tp_task) {
-23003b72:	4201a437          	lui	s0,0x4201a
-23003b76:	a8440413          	addi	s0,s0,-1404 # 42019a84 <created_tp_task>
-23003b7a:	00044783          	lbu	a5,0(s0)
-23003b7e:	e789                	bnez	a5,23003b88 <ble_tp_notify_ccc_changed+0x30>
-            printf("Delete throughput tx task");
+23003b8a:	4201a437          	lui	s0,0x4201a
+23003b8e:	a8440413          	addi	s0,s0,-1404 # 42019a84 <created_tp_task>
+23003b92:	00044783          	lbu	a5,0(s0)
+23003b96:	e789                	bnez	a5,23003ba0 <ble_tp_notify_ccc_changed+0x30>
+            printf("Delete throughput tx task\r\n");
             vTaskDelete(ble_tp_task_h);
             created_tp_task = 0;
         }
     }
 }
-23003b80:	40b2                	lw	ra,12(sp)
-23003b82:	4422                	lw	s0,8(sp)
-23003b84:	0141                	addi	sp,sp,16
-23003b86:	8082                	ret
-            printf("Delete throughput tx task");
-23003b88:	23035537          	lui	a0,0x23035
-23003b8c:	a4850513          	addi	a0,a0,-1464 # 23034a48 <strtol+0x180>
-23003b90:	705040ef          	jal	ra,23008a94 <iprintf>
+23003b98:	40b2                	lw	ra,12(sp)
+23003b9a:	4422                	lw	s0,8(sp)
+23003b9c:	0141                	addi	sp,sp,16
+23003b9e:	8082                	ret
+            printf("Delete throughput tx task\r\n");
+23003ba0:	23035537          	lui	a0,0x23035
+23003ba4:	a5c50513          	addi	a0,a0,-1444 # 23034a5c <strtol+0x194>
+23003ba8:	006050ef          	jal	ra,23008bae <puts>
             vTaskDelete(ble_tp_task_h);
-23003b94:	4201a7b7          	lui	a5,0x4201a
-23003b98:	a807a503          	lw	a0,-1408(a5) # 42019a80 <ble_tp_task_h>
-23003b9c:	50c080ef          	jal	ra,2300c0a8 <vTaskDelete>
-            created_tp_task = 0;
-23003ba0:	00040023          	sb	zero,0(s0)
-}
-23003ba4:	40b2                	lw	ra,12(sp)
-23003ba6:	4422                	lw	s0,8(sp)
-23003ba8:	0141                	addi	sp,sp,16
-23003baa:	8082                	ret
-        if (xTaskCreate(ble_tp_notify_task, (char *)"bletp", 512, NULL, 15, &ble_tp_task_h) == pdPASS) {
 23003bac:	4201a7b7          	lui	a5,0x4201a
-23003bb0:	230355b7          	lui	a1,0x23035
-23003bb4:	23004537          	lui	a0,0x23004
-23003bb8:	a8078793          	addi	a5,a5,-1408 # 42019a80 <ble_tp_task_h>
-23003bbc:	473d                	li	a4,15
-23003bbe:	4681                	li	a3,0
-23003bc0:	20000613          	li	a2,512
-23003bc4:	b1c58593          	addi	a1,a1,-1252 # 23034b1c <strtol+0x254>
-23003bc8:	cda50513          	addi	a0,a0,-806 # 23003cda <ble_tp_notify_task>
-23003bcc:	460080ef          	jal	ra,2300c02c <xTaskCreate>
-23003bd0:	87aa                	mv	a5,a0
-23003bd2:	00850f63          	beq	a0,s0,23003bf0 <ble_tp_notify_ccc_changed+0x98>
-            printf("Create throughput tx taskfail");
-23003bd6:	23035537          	lui	a0,0x23035
+23003bb0:	a807a503          	lw	a0,-1408(a5) # 42019a80 <ble_tp_task_h>
+23003bb4:	4f4080ef          	jal	ra,2300c0a8 <vTaskDelete>
             created_tp_task = 0;
-23003bda:	4201a7b7          	lui	a5,0x4201a
-            printf("Create throughput tx taskfail");
-23003bde:	b4850513          	addi	a0,a0,-1208 # 23034b48 <strtol+0x280>
-            created_tp_task = 0;
-23003be2:	a8078223          	sb	zero,-1404(a5) # 42019a84 <created_tp_task>
+23003bb8:	00040023          	sb	zero,0(s0)
 }
-23003be6:	4422                	lw	s0,8(sp)
-23003be8:	40b2                	lw	ra,12(sp)
-23003bea:	0141                	addi	sp,sp,16
-            printf("Create throughput tx taskfail");
-23003bec:	6a90406f          	j	23008a94 <iprintf>
-            printf("Create throughput tx task success");
-23003bf0:	23035537          	lui	a0,0x23035
+23003bbc:	40b2                	lw	ra,12(sp)
+23003bbe:	4422                	lw	s0,8(sp)
+23003bc0:	0141                	addi	sp,sp,16
+23003bc2:	8082                	ret
+        if (xTaskCreate(ble_tp_notify_task, (char *)"bletp", 512, NULL, 15, &ble_tp_task_h) == pdPASS) {
+23003bc4:	4201a7b7          	lui	a5,0x4201a
+23003bc8:	230355b7          	lui	a1,0x23035
+23003bcc:	23004537          	lui	a0,0x23004
+23003bd0:	a8078793          	addi	a5,a5,-1408 # 42019a80 <ble_tp_task_h>
+23003bd4:	473d                	li	a4,15
+23003bd6:	4681                	li	a3,0
+23003bd8:	20000613          	li	a2,512
+23003bdc:	b1458593          	addi	a1,a1,-1260 # 23034b14 <strtol+0x24c>
+23003be0:	cfa50513          	addi	a0,a0,-774 # 23003cfa <ble_tp_notify_task>
+23003be4:	448080ef          	jal	ra,2300c02c <xTaskCreate>
+23003be8:	87aa                	mv	a5,a0
+23003bea:	00850f63          	beq	a0,s0,23003c08 <ble_tp_notify_ccc_changed+0x98>
+            printf("Create throughput tx taskfail\r\n");
+23003bee:	23035537          	lui	a0,0x23035
+            created_tp_task = 0;
+23003bf2:	4201a7b7          	lui	a5,0x4201a
+            printf("Create throughput tx taskfail\r\n");
+23003bf6:	b4050513          	addi	a0,a0,-1216 # 23034b40 <strtol+0x278>
+            created_tp_task = 0;
+23003bfa:	a8078223          	sb	zero,-1404(a5) # 42019a84 <created_tp_task>
+}
+23003bfe:	4422                	lw	s0,8(sp)
+23003c00:	40b2                	lw	ra,12(sp)
+23003c02:	0141                	addi	sp,sp,16
+            printf("Create throughput tx taskfail\r\n");
+23003c04:	7ab0406f          	j	23008bae <puts>
+            printf("Create throughput tx task success\r\n");
+23003c08:	23035537          	lui	a0,0x23035
             created_tp_task = 1;
-23003bf4:	4201a737          	lui	a4,0x4201a
-            printf("Create throughput tx task success");
-23003bf8:	b2450513          	addi	a0,a0,-1244 # 23034b24 <strtol+0x25c>
+23003c0c:	4201a737          	lui	a4,0x4201a
+            printf("Create throughput tx task success\r\n");
+23003c10:	b1c50513          	addi	a0,a0,-1252 # 23034b1c <strtol+0x254>
             created_tp_task = 1;
-23003bfc:	a8f70223          	sb	a5,-1404(a4) # 42019a84 <created_tp_task>
-            printf("Create throughput tx task success");
-23003c00:	b7dd                	j	23003be6 <ble_tp_notify_ccc_changed+0x8e>
+23003c14:	a8f70223          	sb	a5,-1404(a4) # 42019a84 <created_tp_task>
+            printf("Create throughput tx task success\r\n");
+23003c18:	b7dd                	j	23003bfe <ble_tp_notify_ccc_changed+0x8e>
 
-23003c02 <ble_tp_connected>:
+23003c1a <ble_tp_connected>:
     if (err) {
-23003c02:	e1d1                	bnez	a1,23003c86 <ble_tp_connected+0x84>
+23003c1a:	e5d1                	bnez	a1,23003ca6 <ble_tp_connected+0x8c>
 {
-23003c04:	1141                	addi	sp,sp,-16
-23003c06:	c422                	sw	s0,8(sp)
-23003c08:	842a                	mv	s0,a0
-    printf("Tp connected");
-23003c0a:	23035537          	lui	a0,0x23035
-23003c0e:	b8c50513          	addi	a0,a0,-1140 # 23034b8c <strtol+0x2c4>
+23003c1c:	1141                	addi	sp,sp,-16
+23003c1e:	c226                	sw	s1,4(sp)
+23003c20:	84aa                	mv	s1,a0
+    printf("Tp connected\r\n");
+23003c22:	23035537          	lui	a0,0x23035
+23003c26:	b8450513          	addi	a0,a0,-1148 # 23034b84 <strtol+0x2bc>
 {
-23003c12:	c606                	sw	ra,12(sp)
-23003c14:	c226                	sw	s1,4(sp)
-    printf("Tp connected");
-23003c16:	67f040ef          	jal	ra,23008a94 <iprintf>
+23003c2a:	c606                	sw	ra,12(sp)
+23003c2c:	c422                	sw	s0,8(sp)
+    printf("Tp connected\r\n");
+23003c2e:	781040ef          	jal	ra,23008bae <puts>
     ble_tp_conn = conn;
-23003c1a:	4201a4b7          	lui	s1,0x4201a
-    ret = bt_le_set_data_len(ble_tp_conn, tx_octets, tx_time);
-23003c1e:	6605                	lui	a2,0x1
-23003c20:	0fb00593          	li	a1,251
+23003c32:	4201a437          	lui	s0,0x4201a
+23003c36:	a7c40413          	addi	s0,s0,-1412 # 42019a7c <ble_tp_conn>
+    gpio_write(LED_R_PIN, false);
+23003c3a:	4581                	li	a1,0
+23003c3c:	4565                	li	a0,25
     ble_tp_conn = conn;
-23003c24:	a7c48493          	addi	s1,s1,-1412 # 42019a7c <ble_tp_conn>
+23003c3e:	c004                	sw	s1,0(s0)
+    gpio_write(LED_R_PIN, false);
+23003c40:	072010ef          	jal	ra,23004cb2 <gpio_write>
     ret = bt_le_set_data_len(ble_tp_conn, tx_octets, tx_time);
-23003c28:	84860613          	addi	a2,a2,-1976 # 848 <__heap_min_size+0x448>
-23003c2c:	8522                	mv	a0,s0
-    ble_tp_conn = conn;
-23003c2e:	c080                	sw	s0,0(s1)
-    ret = bt_le_set_data_len(ble_tp_conn, tx_octets, tx_time);
-23003c30:	65d0d0ef          	jal	ra,23011a8c <bt_le_set_data_len>
-23003c34:	85aa                	mv	a1,a0
+23003c44:	4008                	lw	a0,0(s0)
+23003c46:	6605                	lui	a2,0x1
+23003c48:	0fb00593          	li	a1,251
+23003c4c:	84860613          	addi	a2,a2,-1976 # 848 <__heap_min_size+0x448>
+23003c50:	63d0d0ef          	jal	ra,23011a8c <bt_le_set_data_len>
+23003c54:	85aa                	mv	a1,a0
     if (!ret) {
-23003c36:	c129                	beqz	a0,23003c78 <ble_tp_connected+0x76>
-        printf("ble tp set data length failure, err: %d", ret);
-23003c38:	23035537          	lui	a0,0x23035
-23003c3c:	bbc50513          	addi	a0,a0,-1092 # 23034bbc <strtol+0x2f4>
-23003c40:	655040ef          	jal	ra,23008a94 <iprintf>
+23003c56:	c129                	beqz	a0,23003c98 <ble_tp_connected+0x7e>
+        printf("ble tp set data length failure, err: %d\r\n", ret);
+23003c58:	23035537          	lui	a0,0x23035
+23003c5c:	bb450513          	addi	a0,a0,-1100 # 23034bb4 <strtol+0x2ec>
+23003c60:	635040ef          	jal	ra,23008a94 <iprintf>
     ret = bt_gatt_exchange_mtu(ble_tp_conn, &exchg_mtu);
-23003c44:	4088                	lw	a0,0(s1)
+23003c64:	4008                	lw	a0,0(s0)
     exchg_mtu.func = ble_tp_tx_mtu_size;
-23003c46:	420185b7          	lui	a1,0x42018
-23003c4a:	230047b7          	lui	a5,0x23004
-23003c4e:	51058713          	addi	a4,a1,1296 # 42018510 <exchg_mtu>
-23003c52:	ca678793          	addi	a5,a5,-858 # 23003ca6 <ble_tp_tx_mtu_size>
+23003c66:	420185b7          	lui	a1,0x42018
+23003c6a:	230047b7          	lui	a5,0x23004
+23003c6e:	51058713          	addi	a4,a1,1296 # 42018510 <exchg_mtu>
+23003c72:	cc678793          	addi	a5,a5,-826 # 23003cc6 <ble_tp_tx_mtu_size>
     ret = bt_gatt_exchange_mtu(ble_tp_conn, &exchg_mtu);
-23003c56:	51058593          	addi	a1,a1,1296
+23003c76:	51058593          	addi	a1,a1,1296
     exchg_mtu.func = ble_tp_tx_mtu_size;
-23003c5a:	cf1c                	sw	a5,24(a4)
+23003c7a:	cf1c                	sw	a5,24(a4)
     ret = bt_gatt_exchange_mtu(ble_tp_conn, &exchg_mtu);
-23003c5c:	2d90c0ef          	jal	ra,23010734 <bt_gatt_exchange_mtu>
-23003c60:	85aa                	mv	a1,a0
+23003c7c:	2b90c0ef          	jal	ra,23010734 <bt_gatt_exchange_mtu>
+23003c80:	85aa                	mv	a1,a0
     if (!ret) {
-23003c62:	e905                	bnez	a0,23003c92 <ble_tp_connected+0x90>
+23003c82:	e905                	bnez	a0,23003cb2 <ble_tp_connected+0x98>
 }
-23003c64:	4422                	lw	s0,8(sp)
-23003c66:	40b2                	lw	ra,12(sp)
-23003c68:	4492                	lw	s1,4(sp)
-        printf("ble tp exchange mtu size pending");
-23003c6a:	23035537          	lui	a0,0x23035
-23003c6e:	be450513          	addi	a0,a0,-1052 # 23034be4 <strtol+0x31c>
+23003c84:	4422                	lw	s0,8(sp)
+23003c86:	40b2                	lw	ra,12(sp)
+23003c88:	4492                	lw	s1,4(sp)
+        printf("ble tp exchange mtu size pending\r\n");
+23003c8a:	23035537          	lui	a0,0x23035
+23003c8e:	be050513          	addi	a0,a0,-1056 # 23034be0 <strtol+0x318>
 }
-23003c72:	0141                	addi	sp,sp,16
-        printf("ble tp exchange mtu size pending");
-23003c74:	6210406f          	j	23008a94 <iprintf>
-        printf("ble tp set data length success");
-23003c78:	23035537          	lui	a0,0x23035
-23003c7c:	b9c50513          	addi	a0,a0,-1124 # 23034b9c <strtol+0x2d4>
-23003c80:	615040ef          	jal	ra,23008a94 <iprintf>
-23003c84:	b7c1                	j	23003c44 <ble_tp_connected+0x42>
-        printf("ble tp connected failure, err: %d", err);
-23003c86:	23035537          	lui	a0,0x23035
-23003c8a:	b6850513          	addi	a0,a0,-1176 # 23034b68 <strtol+0x2a0>
-23003c8e:	6070406f          	j	23008a94 <iprintf>
-}
-23003c92:	4422                	lw	s0,8(sp)
-23003c94:	40b2                	lw	ra,12(sp)
-23003c96:	4492                	lw	s1,4(sp)
-        printf("ble tp exchange mtu size failure, err: %d", ret);
+23003c92:	0141                	addi	sp,sp,16
+        printf("ble tp exchange mtu size pending\r\n");
+23003c94:	71b0406f          	j	23008bae <puts>
+        printf("ble tp set data length success\r\n");
 23003c98:	23035537          	lui	a0,0x23035
-23003c9c:	c0850513          	addi	a0,a0,-1016 # 23034c08 <strtol+0x340>
+23003c9c:	b9450513          	addi	a0,a0,-1132 # 23034b94 <strtol+0x2cc>
+23003ca0:	70f040ef          	jal	ra,23008bae <puts>
+23003ca4:	b7c1                	j	23003c64 <ble_tp_connected+0x4a>
+        printf("ble tp connected failure, err: %d\r\n", err);
+23003ca6:	23035537          	lui	a0,0x23035
+23003caa:	b6050513          	addi	a0,a0,-1184 # 23034b60 <strtol+0x298>
+23003cae:	5e70406f          	j	23008a94 <iprintf>
 }
-23003ca0:	0141                	addi	sp,sp,16
-        printf("ble tp exchange mtu size failure, err: %d", ret);
-23003ca2:	5f30406f          	j	23008a94 <iprintf>
+23003cb2:	4422                	lw	s0,8(sp)
+23003cb4:	40b2                	lw	ra,12(sp)
+23003cb6:	4492                	lw	s1,4(sp)
+        printf("ble tp exchange mtu size failure, err: %d\r\n", ret);
+23003cb8:	23035537          	lui	a0,0x23035
+23003cbc:	c0450513          	addi	a0,a0,-1020 # 23034c04 <strtol+0x33c>
+}
+23003cc0:	0141                	addi	sp,sp,16
+        printf("ble tp exchange mtu size failure, err: %d\r\n", ret);
+23003cc2:	5d30406f          	j	23008a94 <iprintf>
 
-23003ca6 <ble_tp_tx_mtu_size>:
+23003cc6 <ble_tp_tx_mtu_size>:
     if (!err) {
-23003ca6:	e585                	bnez	a1,23003cce <ble_tp_tx_mtu_size+0x28>
+23003cc6:	e585                	bnez	a1,23003cee <ble_tp_tx_mtu_size+0x28>
         tx_mtu_size = bt_gatt_get_mtu(ble_tp_conn);
-23003ca8:	4201a7b7          	lui	a5,0x4201a
-23003cac:	a7c7a503          	lw	a0,-1412(a5) # 42019a7c <ble_tp_conn>
+23003cc8:	4201a7b7          	lui	a5,0x4201a
+23003ccc:	a7c7a503          	lw	a0,-1412(a5) # 42019a7c <ble_tp_conn>
 {
-23003cb0:	1141                	addi	sp,sp,-16
-23003cb2:	c606                	sw	ra,12(sp)
+23003cd0:	1141                	addi	sp,sp,-16
+23003cd2:	c606                	sw	ra,12(sp)
         tx_mtu_size = bt_gatt_get_mtu(ble_tp_conn);
-23003cb4:	0530c0ef          	jal	ra,23010506 <bt_gatt_get_mtu>
+23003cd4:	0330c0ef          	jal	ra,23010506 <bt_gatt_get_mtu>
 }
-23003cb8:	40b2                	lw	ra,12(sp)
+23003cd8:	40b2                	lw	ra,12(sp)
         tx_mtu_size = bt_gatt_get_mtu(ble_tp_conn);
-23003cba:	85aa                	mv	a1,a0
-        printf("ble tp echange mtu size success, mtu size: %d", tx_mtu_size);
-23003cbc:	23035537          	lui	a0,0x23035
+23003cda:	85aa                	mv	a1,a0
+        printf("ble tp echange mtu size success, mtu size: %d\r\n", tx_mtu_size);
+23003cdc:	23035537          	lui	a0,0x23035
         tx_mtu_size = bt_gatt_get_mtu(ble_tp_conn);
-23003cc0:	f8b1aa23          	sw	a1,-108(gp) # 42016794 <tx_mtu_size>
-        printf("ble tp echange mtu size success, mtu size: %d", tx_mtu_size);
-23003cc4:	c3450513          	addi	a0,a0,-972 # 23034c34 <strtol+0x36c>
+23003ce0:	f8b1aa23          	sw	a1,-108(gp) # 42016794 <tx_mtu_size>
+        printf("ble tp echange mtu size success, mtu size: %d\r\n", tx_mtu_size);
+23003ce4:	c3050513          	addi	a0,a0,-976 # 23034c30 <strtol+0x368>
 }
-23003cc8:	0141                	addi	sp,sp,16
-        printf("ble tp echange mtu size success, mtu size: %d", tx_mtu_size);
-23003cca:	5cb0406f          	j	23008a94 <iprintf>
-        printf("ble tp echange mtu size failure, err: %d", err);
-23003cce:	23035537          	lui	a0,0x23035
-23003cd2:	c6450513          	addi	a0,a0,-924 # 23034c64 <strtol+0x39c>
-23003cd6:	5bf0406f          	j	23008a94 <iprintf>
+23003ce8:	0141                	addi	sp,sp,16
+        printf("ble tp echange mtu size success, mtu size: %d\r\n", tx_mtu_size);
+23003cea:	5ab0406f          	j	23008a94 <iprintf>
+        printf("ble tp echange mtu size failure, err: %d\r\n", err);
+23003cee:	23035537          	lui	a0,0x23035
+23003cf2:	c6050513          	addi	a0,a0,-928 # 23034c60 <strtol+0x398>
+23003cf6:	59f0406f          	j	23008a94 <iprintf>
 
-23003cda <ble_tp_notify_task>:
+23003cfa <ble_tp_notify_task>:
 {
-23003cda:	7169                	addi	sp,sp,-304
+23003cfa:	7169                	addi	sp,sp,-304
     u8_t data[244] = { 0x01 };
-23003cdc:	4785                	li	a5,1
-23003cde:	0f000613          	li	a2,240
-23003ce2:	4581                	li	a1,0
-23003ce4:	1008                	addi	a0,sp,32
+23003cfc:	4785                	li	a5,1
+23003cfe:	0f000613          	li	a2,240
+23003d02:	4581                	li	a1,0
+23003d04:	1008                	addi	a0,sp,32
 {
-23003ce6:	12112623          	sw	ra,300(sp)
-23003cea:	12812423          	sw	s0,296(sp)
-23003cee:	12912223          	sw	s1,292(sp)
-23003cf2:	13212023          	sw	s2,288(sp)
-23003cf6:	11312e23          	sw	s3,284(sp)
-23003cfa:	11412c23          	sw	s4,280(sp)
-23003cfe:	11512a23          	sw	s5,276(sp)
+23003d06:	12112623          	sw	ra,300(sp)
+23003d0a:	12812423          	sw	s0,296(sp)
+23003d0e:	12912223          	sw	s1,292(sp)
+23003d12:	13212023          	sw	s2,288(sp)
+23003d16:	11312e23          	sw	s3,284(sp)
+23003d1a:	11412c23          	sw	s4,280(sp)
+23003d1e:	11512a23          	sw	s5,276(sp)
     u8_t data[244] = { 0x01 };
-23003d02:	ce3e                	sw	a5,28(sp)
+23003d22:	ce3e                	sw	a5,28(sp)
     k_sem_give(&notify_poll_sem);
-23003d04:	420189b7          	lui	s3,0x42018
+23003d24:	420189b7          	lui	s3,0x42018
     u8_t data[244] = { 0x01 };
-23003d08:	d7cfc0ef          	jal	ra,23000284 <memset>
+23003d28:	d5cfc0ef          	jal	ra,23000284 <memset>
     k_sem_give(&notify_poll_sem);
-23003d0c:	55898513          	addi	a0,s3,1368 # 42018558 <notify_poll_sem>
-23003d10:	4201a937          	lui	s2,0x4201a
-23003d14:	20d090ef          	jal	ra,2300d720 <k_sem_give>
-23003d18:	a7c90913          	addi	s2,s2,-1412 # 42019a7c <ble_tp_conn>
-23003d1c:	f9418493          	addi	s1,gp,-108 # 42016794 <tx_mtu_size>
-23003d20:	9e818413          	addi	s0,gp,-1560 # 420161e8 <attrs+0xb4>
-23003d24:	01c10a93          	addi	s5,sp,28
-23003d28:	23035a37          	lui	s4,0x23035
+23003d2c:	55898513          	addi	a0,s3,1368 # 42018558 <notify_poll_sem>
+23003d30:	4201a937          	lui	s2,0x4201a
+23003d34:	1ed090ef          	jal	ra,2300d720 <k_sem_give>
+23003d38:	a7c90913          	addi	s2,s2,-1412 # 42019a7c <ble_tp_conn>
+23003d3c:	f9418493          	addi	s1,gp,-108 # 42016794 <tx_mtu_size>
+23003d40:	9e818413          	addi	s0,gp,-1560 # 420161e8 <attrs+0xb4>
+23003d44:	01c10a93          	addi	s5,sp,28
+23003d48:	23035a37          	lui	s4,0x23035
         k_sem_take(&notify_poll_sem, K_FOREVER);
-23003d2c:	55fd                	li	a1,-1
-23003d2e:	55898513          	addi	a0,s3,1368
-23003d32:	1bd090ef          	jal	ra,2300d6ee <k_sem_take>
+23003d4c:	55fd                	li	a1,-1
+23003d4e:	55898513          	addi	a0,s3,1368
+23003d52:	19d090ef          	jal	ra,2300d6ee <k_sem_take>
         err = bt_gatt_notify(ble_tp_conn, get_attr(BT_CHAR_BLE_TP_NOT_ATTR_VAL_INDEX), data, (tx_mtu_size - 3));
-23003d36:	409c                	lw	a5,0(s1)
+23003d56:	409c                	lw	a5,0(s1)
 
     params.attr = attr;
     params.data = data;
     params.len = len;
 
     return bt_gatt_notify_cb(conn, &params);
-23003d38:	00092503          	lw	a0,0(s2)
+23003d58:	00092503          	lw	a0,0(s2)
     memset(&params, 0, sizeof(params));
-23003d3c:	c802                	sw	zero,16(sp)
-23003d3e:	17f5                	addi	a5,a5,-3
+23003d5c:	c802                	sw	zero,16(sp)
+23003d5e:	17f5                	addi	a5,a5,-3
     return bt_gatt_notify_cb(conn, &params);
-23003d40:	004c                	addi	a1,sp,4
+23003d60:	004c                	addi	a1,sp,4
     params.len = len;
-23003d42:	00f11823          	sh	a5,16(sp)
+23003d62:	00f11823          	sh	a5,16(sp)
     memset(&params, 0, sizeof(params));
-23003d46:	c202                	sw	zero,4(sp)
-23003d48:	ca02                	sw	zero,20(sp)
-23003d4a:	cc02                	sw	zero,24(sp)
+23003d66:	c202                	sw	zero,4(sp)
+23003d68:	ca02                	sw	zero,20(sp)
+23003d6a:	cc02                	sw	zero,24(sp)
     params.attr = attr;
-23003d4c:	c422                	sw	s0,8(sp)
+23003d6c:	c422                	sw	s0,8(sp)
     params.data = data;
-23003d4e:	c656                	sw	s5,12(sp)
+23003d6e:	c656                	sw	s5,12(sp)
     return bt_gatt_notify_cb(conn, &params);
-23003d50:	35c0c0ef          	jal	ra,230100ac <bt_gatt_notify_cb>
+23003d70:	33c0c0ef          	jal	ra,230100ac <bt_gatt_notify_cb>
         data[0] = data[0] + 1;
-23003d54:	01c14783          	lbu	a5,28(sp)
-23003d58:	85aa                	mv	a1,a0
-        printf("ble tp send notify : %d", err);
-23003d5a:	c90a0513          	addi	a0,s4,-880 # 23034c90 <strtol+0x3c8>
+23003d74:	01c14783          	lbu	a5,28(sp)
+23003d78:	85aa                	mv	a1,a0
+        printf("ble tp send notify : %d\r\n", err);
+23003d7a:	c8ca0513          	addi	a0,s4,-884 # 23034c8c <strtol+0x3c4>
         data[0] = data[0] + 1;
-23003d5e:	0785                	addi	a5,a5,1
-23003d60:	00f10e23          	sb	a5,28(sp)
-        printf("ble tp send notify : %d", err);
-23003d64:	531040ef          	jal	ra,23008a94 <iprintf>
+23003d7e:	0785                	addi	a5,a5,1
+23003d80:	00f10e23          	sb	a5,28(sp)
+        printf("ble tp send notify : %d\r\n", err);
+23003d84:	511040ef          	jal	ra,23008a94 <iprintf>
     while (1) {
-23003d68:	b7d1                	j	23003d2c <ble_tp_notify_task+0x52>
+23003d88:	b7d1                	j	23003d4c <ble_tp_notify_task+0x52>
 
-23003d6a <ble_tp_init>:
+23003d8a <ble_tp_init>:
 /*************************************************************************
 NAME
     ble_tp_init
 */
 void ble_tp_init()
 {   printf("ble_tp_init\r\n");
-23003d6a:	23035537          	lui	a0,0x23035
-23003d6e:	1141                	addi	sp,sp,-16
-23003d70:	ca850513          	addi	a0,a0,-856 # 23034ca8 <strtol+0x3e0>
-23003d74:	c606                	sw	ra,12(sp)
-23003d76:	639040ef          	jal	ra,23008bae <puts>
+23003d8a:	23035537          	lui	a0,0x23035
+23003d8e:	1141                	addi	sp,sp,-16
+23003d90:	ca850513          	addi	a0,a0,-856 # 23034ca8 <strtol+0x3e0>
+23003d94:	c606                	sw	ra,12(sp)
+23003d96:	619040ef          	jal	ra,23008bae <puts>
 
 
     if (!isRegister) {
 
-        printf("ble_tp_init: register ble tp service");
-23003d7a:	23035537          	lui	a0,0x23035
-23003d7e:	cb850513          	addi	a0,a0,-840 # 23034cb8 <strtol+0x3f0>
-23003d82:	513040ef          	jal	ra,23008a94 <iprintf>
+        printf("ble_tp_init: register ble tp service\r\n");
+23003d9a:	23035537          	lui	a0,0x23035
+23003d9e:	cb850513          	addi	a0,a0,-840 # 23034cb8 <strtol+0x3f0>
+23003da2:	60d040ef          	jal	ra,23008bae <puts>
         // Register the throughput service  
         bt_conn_cb_register(&ble_tp_conn_callbacks);
-23003d86:	a1018513          	addi	a0,gp,-1520 # 42016210 <ble_tp_conn_callbacks>
-23003d8a:	4e20a0ef          	jal	ra,2300e26c <bt_conn_cb_register>
+23003da6:	a1018513          	addi	a0,gp,-1520 # 42016210 <ble_tp_conn_callbacks>
+23003daa:	4c20a0ef          	jal	ra,2300e26c <bt_conn_cb_register>
         // Register the throughput service
         bt_gatt_service_register(&ble_tp_server);
-23003d8e:	a3018513          	addi	a0,gp,-1488 # 42016230 <ble_tp_server>
-23003d92:	12c0c0ef          	jal	ra,2300febe <bt_gatt_service_register>
-        printf("ble_tp_init: register ble tp service done");
-23003d96:	23035537          	lui	a0,0x23035
-23003d9a:	ce050513          	addi	a0,a0,-800 # 23034ce0 <strtol+0x418>
-23003d9e:	4f7040ef          	jal	ra,23008a94 <iprintf>
+23003dae:	a3018513          	addi	a0,gp,-1488 # 42016230 <ble_tp_server>
+23003db2:	10c0c0ef          	jal	ra,2300febe <bt_gatt_service_register>
+        printf("ble_tp_init: register ble tp service done\r\n");
+23003db6:	23035537          	lui	a0,0x23035
+23003dba:	ce050513          	addi	a0,a0,-800 # 23034ce0 <strtol+0x418>
+23003dbe:	5f1040ef          	jal	ra,23008bae <puts>
         // Initialize the semaphore for notify polling  
-        printf("ble_tp_init: init notify_poll_sem");
-23003da2:	23035537          	lui	a0,0x23035
-23003da6:	d0c50513          	addi	a0,a0,-756 # 23034d0c <strtol+0x444>
-23003daa:	4eb040ef          	jal	ra,23008a94 <iprintf>
+        printf("ble_tp_init: init notify_poll_sem\r\n");
+23003dc2:	23035537          	lui	a0,0x23035
+23003dc6:	d0c50513          	addi	a0,a0,-756 # 23034d0c <strtol+0x444>
+23003dca:	5e5040ef          	jal	ra,23008bae <puts>
         k_sem_init(&notify_poll_sem, 0, 1);
     }
 }
-23003dae:	40b2                	lw	ra,12(sp)
+23003dce:	40b2                	lw	ra,12(sp)
         k_sem_init(&notify_poll_sem, 0, 1);
-23003db0:	42018537          	lui	a0,0x42018
-23003db4:	4605                	li	a2,1
-23003db6:	4581                	li	a1,0
-23003db8:	55850513          	addi	a0,a0,1368 # 42018558 <notify_poll_sem>
+23003dd0:	42018537          	lui	a0,0x42018
+23003dd4:	4605                	li	a2,1
+23003dd6:	4581                	li	a1,0
+23003dd8:	55850513          	addi	a0,a0,1368 # 42018558 <notify_poll_sem>
 }
-23003dbc:	0141                	addi	sp,sp,16
+23003ddc:	0141                	addi	sp,sp,16
         k_sem_init(&notify_poll_sem, 0, 1);
-23003dbe:	0f50906f          	j	2300d6b2 <k_sem_init>
+23003dde:	0d50906f          	j	2300d6b2 <k_sem_init>
 
-23003dc2 <bl_irq_register>:
+23003de2 <bl_irq_register>:
     *(volatile uint8_t*)(CLIC_HART0_ADDR + CLIC_INTIP + source) = 0;
 }
 
 void bl_irq_register(int irqnum, void *handler)
 {
     if(irqnum<IRQn_LAST){
-23003dc2:	04f00793          	li	a5,79
-23003dc6:	00a7c963          	blt	a5,a0,23003dd8 <bl_irq_register+0x16>
+23003de2:	04f00793          	li	a5,79
+23003de6:	00a7c963          	blt	a5,a0,23003df8 <bl_irq_register+0x16>
         __Interrupt_Handlers[irqnum] = handler;
-23003dca:	420187b7          	lui	a5,0x42018
-23003dce:	050a                	slli	a0,a0,0x2
-23003dd0:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
-23003dd4:	953e                	add	a0,a0,a5
-23003dd6:	c10c                	sw	a1,0(a0)
+23003dea:	420187b7          	lui	a5,0x42018
+23003dee:	050a                	slli	a0,a0,0x2
+23003df0:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
+23003df4:	953e                	add	a0,a0,a5
+23003df6:	c10c                	sw	a1,0(a0)
     }
 }
-23003dd8:	8082                	ret
+23003df8:	8082                	ret
 
-23003dda <bl_irq_unregister>:
+23003dfa <bl_irq_unregister>:
 
 void bl_irq_unregister(int irqnum, void *handler)
 {
     if(irqnum<IRQn_LAST){
-23003dda:	04f00793          	li	a5,79
-23003dde:	00a7ca63          	blt	a5,a0,23003df2 <bl_irq_unregister+0x18>
+23003dfa:	04f00793          	li	a5,79
+23003dfe:	00a7ca63          	blt	a5,a0,23003e12 <bl_irq_unregister+0x18>
         __Interrupt_Handlers[irqnum] = NULL;
-23003de2:	420187b7          	lui	a5,0x42018
-23003de6:	050a                	slli	a0,a0,0x2
-23003de8:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
-23003dec:	953e                	add	a0,a0,a5
-23003dee:	00052023          	sw	zero,0(a0)
+23003e02:	420187b7          	lui	a5,0x42018
+23003e06:	050a                	slli	a0,a0,0x2
+23003e08:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
+23003e0c:	953e                	add	a0,a0,a5
+23003e0e:	00052023          	sw	zero,0(a0)
     }
 }
-23003df2:	8082                	ret
+23003e12:	8082                	ret
 
-23003df4 <bl_irq_handler_get>:
+23003e14 <bl_irq_handler_get>:
 
 void bl_irq_handler_get(int irqnum, void **handler)
 {
     if(irqnum<IRQn_LAST){
-23003df4:	04f00793          	li	a5,79
-23003df8:	00a7ca63          	blt	a5,a0,23003e0c <bl_irq_handler_get+0x18>
+23003e14:	04f00793          	li	a5,79
+23003e18:	00a7ca63          	blt	a5,a0,23003e2c <bl_irq_handler_get+0x18>
         *handler = __Interrupt_Handlers[irqnum];
-23003dfc:	420187b7          	lui	a5,0x42018
-23003e00:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
-23003e04:	050a                	slli	a0,a0,0x2
-23003e06:	953e                	add	a0,a0,a5
-23003e08:	411c                	lw	a5,0(a0)
-23003e0a:	c19c                	sw	a5,0(a1)
+23003e1c:	420187b7          	lui	a5,0x42018
+23003e20:	72c78793          	addi	a5,a5,1836 # 4201872c <__Interrupt_Handlers>
+23003e24:	050a                	slli	a0,a0,0x2
+23003e26:	953e                	add	a0,a0,a5
+23003e28:	411c                	lw	a5,0(a0)
+23003e2a:	c19c                	sw	a5,0(a1)
     }
 }
-23003e0c:	8082                	ret
+23003e2c:	8082                	ret
 
-23003e0e <board_get_debug_uart_index>:
+23003e2e <board_get_debug_uart_index>:
 }
 
 __WEAK__ enum uart_index_type board_get_debug_uart_index(void)
 {
     return 0;
 }
-23003e0e:	4501                	li	a0,0
-23003e10:	8082                	ret
+23003e2e:	4501                	li	a0,0
+23003e30:	8082                	ret
 
-23003e12 <bflb_platform_printf>:
+23003e32 <bflb_platform_printf>:
 {
     struct device *uart;
     char print_buf[128];
     va_list ap;
 
     if (!uart_dbg_disable) {
-23003e12:	4201a337          	lui	t1,0x4201a
-23003e16:	a8634303          	lbu	t1,-1402(t1) # 42019a86 <uart_dbg_disable>
+23003e32:	4201a337          	lui	t1,0x4201a
+23003e36:	a8634303          	lbu	t1,-1402(t1) # 42019a86 <uart_dbg_disable>
 {
-23003e1a:	7131                	addi	sp,sp,-192
-23003e1c:	cf06                	sw	ra,156(sp)
-23003e1e:	cd22                	sw	s0,152(sp)
-23003e20:	d32e                	sw	a1,164(sp)
-23003e22:	d532                	sw	a2,168(sp)
-23003e24:	d736                	sw	a3,172(sp)
-23003e26:	d93a                	sw	a4,176(sp)
-23003e28:	db3e                	sw	a5,180(sp)
-23003e2a:	dd42                	sw	a6,184(sp)
-23003e2c:	df46                	sw	a7,188(sp)
+23003e3a:	7131                	addi	sp,sp,-192
+23003e3c:	cf06                	sw	ra,156(sp)
+23003e3e:	cd22                	sw	s0,152(sp)
+23003e40:	d32e                	sw	a1,164(sp)
+23003e42:	d532                	sw	a2,168(sp)
+23003e44:	d736                	sw	a3,172(sp)
+23003e46:	d93a                	sw	a4,176(sp)
+23003e48:	db3e                	sw	a5,180(sp)
+23003e4a:	dd42                	sw	a6,184(sp)
+23003e4c:	df46                	sw	a7,188(sp)
     if (!uart_dbg_disable) {
-23003e2e:	00030663          	beqz	t1,23003e3a <bflb_platform_printf+0x28>
+23003e4e:	00030663          	beqz	t1,23003e5a <bflb_platform_printf+0x28>
         }
 #endif
         uart = device_find("debug_log");
         device_write(uart, 0, (uint8_t *)print_buf, strlen(print_buf));
     }
 }
-23003e32:	40fa                	lw	ra,156(sp)
-23003e34:	446a                	lw	s0,152(sp)
-23003e36:	6129                	addi	sp,sp,192
-23003e38:	8082                	ret
+23003e52:	40fa                	lw	ra,156(sp)
+23003e54:	446a                	lw	s0,152(sp)
+23003e56:	6129                	addi	sp,sp,192
+23003e58:	8082                	ret
         va_start(ap, fmt);
-23003e3a:	1154                	addi	a3,sp,164
+23003e5a:	1154                	addi	a3,sp,164
         vsnprintf(print_buf, sizeof(print_buf) - 1, fmt, ap);
-23003e3c:	862a                	mv	a2,a0
-23003e3e:	07f00593          	li	a1,127
-23003e42:	0808                	addi	a0,sp,16
+23003e5c:	862a                	mv	a2,a0
+23003e5e:	07f00593          	li	a1,127
+23003e62:	0808                	addi	a0,sp,16
         va_start(ap, fmt);
-23003e44:	c636                	sw	a3,12(sp)
+23003e64:	c636                	sw	a3,12(sp)
         vsnprintf(print_buf, sizeof(print_buf) - 1, fmt, ap);
-23003e46:	5f5040ef          	jal	ra,23008c3a <vsniprintf>
+23003e66:	5d5040ef          	jal	ra,23008c3a <vsniprintf>
         uart = device_find("debug_log");
-23003e4a:	23035537          	lui	a0,0x23035
-23003e4e:	d3050513          	addi	a0,a0,-720 # 23034d30 <strtol+0x468>
-23003e52:	0c32e0ef          	jal	ra,23032714 <device_find>
-23003e56:	842a                	mv	s0,a0
+23003e6a:	23035537          	lui	a0,0x23035
+23003e6e:	d3050513          	addi	a0,a0,-720 # 23034d30 <strtol+0x468>
+23003e72:	0a32e0ef          	jal	ra,23032714 <device_find>
+23003e76:	842a                	mv	s0,a0
         device_write(uart, 0, (uint8_t *)print_buf, strlen(print_buf));
-23003e58:	0808                	addi	a0,sp,16
-23003e5a:	56b040ef          	jal	ra,23008bc4 <strlen>
-23003e5e:	86aa                	mv	a3,a0
-23003e60:	0810                	addi	a2,sp,16
-23003e62:	8522                	mv	a0,s0
-23003e64:	4581                	li	a1,0
-23003e66:	1572e0ef          	jal	ra,230327bc <device_write>
+23003e78:	0808                	addi	a0,sp,16
+23003e7a:	54b040ef          	jal	ra,23008bc4 <strlen>
+23003e7e:	86aa                	mv	a3,a0
+23003e80:	0810                	addi	a2,sp,16
+23003e82:	8522                	mv	a0,s0
+23003e84:	4581                	li	a1,0
+23003e86:	1372e0ef          	jal	ra,230327bc <device_write>
 }
-23003e6a:	40fa                	lw	ra,156(sp)
-23003e6c:	446a                	lw	s0,152(sp)
-23003e6e:	6129                	addi	sp,sp,192
-23003e70:	8082                	ret
+23003e8a:	40fa                	lw	ra,156(sp)
+23003e8c:	446a                	lw	s0,152(sp)
+23003e8e:	6129                	addi	sp,sp,192
+23003e90:	8082                	ret
 
-23003e72 <bl_show_flashinfo>:
+23003e92 <bl_show_flashinfo>:
 {
-23003e72:	7159                	addi	sp,sp,-112
-23003e74:	d686                	sw	ra,108(sp)
-23003e76:	d4a2                	sw	s0,104(sp)
+23003e92:	7159                	addi	sp,sp,-112
+23003e94:	d686                	sw	ra,108(sp)
+23003e96:	d4a2                	sw	s0,104(sp)
     uint8_t *pFlashCfg = NULL;
-23003e78:	c202                	sw	zero,4(sp)
+23003e98:	c202                	sw	zero,4(sp)
     uint32_t flashCfgLen = 0;
-23003e7a:	c402                	sw	zero,8(sp)
+23003e9a:	c402                	sw	zero,8(sp)
     flashJedecId = flash_get_jedecid();
-23003e7c:	481000ef          	jal	ra,23004afc <flash_get_jedecid>
-23003e80:	842a                	mv	s0,a0
+23003e9c:	481000ef          	jal	ra,23004b1c <flash_get_jedecid>
+23003ea0:	842a                	mv	s0,a0
     flash_get_cfg(&pFlashCfg, &flashCfgLen);
-23003e82:	002c                	addi	a1,sp,8
-23003e84:	0048                	addi	a0,sp,4
-23003e86:	49d000ef          	jal	ra,23004b22 <flash_get_cfg>
+23003ea2:	002c                	addi	a1,sp,8
+23003ea4:	0048                	addi	a0,sp,4
+23003ea6:	49d000ef          	jal	ra,23004b42 <flash_get_cfg>
     arch_memcpy((void *)&flashCfg, pFlashCfg, flashCfgLen);
-23003e8a:	4622                	lw	a2,8(sp)
-23003e8c:	4592                	lw	a1,4(sp)
-23003e8e:	0068                	addi	a0,sp,12
-23003e90:	1f010097          	auipc	ra,0x1f010
-23003e94:	5fc080e7          	jalr	1532(ra) # 4201448c <arch_memcpy>
+23003eaa:	4622                	lw	a2,8(sp)
+23003eac:	4592                	lw	a1,4(sp)
+23003eae:	0068                	addi	a0,sp,12
+23003eb0:	1f010097          	auipc	ra,0x1f010
+23003eb4:	5dc080e7          	jalr	1500(ra) # 4201448c <arch_memcpy>
     MSG("show flash cfg:\r\n");
-23003e98:	23035537          	lui	a0,0x23035
-23003e9c:	d3c50513          	addi	a0,a0,-708 # 23034d3c <strtol+0x474>
-23003ea0:	3f8d                	jal	23003e12 <bflb_platform_printf>
+23003eb8:	23035537          	lui	a0,0x23035
+23003ebc:	d3c50513          	addi	a0,a0,-708 # 23034d3c <strtol+0x474>
+23003ec0:	3f8d                	jal	23003e32 <bflb_platform_printf>
     MSG("jedec id   0x%06X\r\n", flashJedecId);
-23003ea2:	23035537          	lui	a0,0x23035
-23003ea6:	85a2                	mv	a1,s0
-23003ea8:	d5050513          	addi	a0,a0,-688 # 23034d50 <strtol+0x488>
-23003eac:	379d                	jal	23003e12 <bflb_platform_printf>
+23003ec2:	23035537          	lui	a0,0x23035
+23003ec6:	85a2                	mv	a1,s0
+23003ec8:	d5050513          	addi	a0,a0,-688 # 23034d50 <strtol+0x488>
+23003ecc:	379d                	jal	23003e32 <bflb_platform_printf>
     MSG("mid            0x%02X\r\n", flashCfg.mid);
-23003eae:	01914583          	lbu	a1,25(sp)
-23003eb2:	23035537          	lui	a0,0x23035
-23003eb6:	d6450513          	addi	a0,a0,-668 # 23034d64 <strtol+0x49c>
-23003eba:	3fa1                	jal	23003e12 <bflb_platform_printf>
+23003ece:	01914583          	lbu	a1,25(sp)
+23003ed2:	23035537          	lui	a0,0x23035
+23003ed6:	d6450513          	addi	a0,a0,-668 # 23034d64 <strtol+0x49c>
+23003eda:	3fa1                	jal	23003e32 <bflb_platform_printf>
     MSG("iomode         0x%02X\r\n", flashCfg.ioMode);
-23003ebc:	00c14583          	lbu	a1,12(sp)
-23003ec0:	23035537          	lui	a0,0x23035
-23003ec4:	d7c50513          	addi	a0,a0,-644 # 23034d7c <strtol+0x4b4>
-23003ec8:	37a9                	jal	23003e12 <bflb_platform_printf>
+23003edc:	00c14583          	lbu	a1,12(sp)
+23003ee0:	23035537          	lui	a0,0x23035
+23003ee4:	d7c50513          	addi	a0,a0,-644 # 23034d7c <strtol+0x4b4>
+23003ee8:	37a9                	jal	23003e32 <bflb_platform_printf>
     MSG("clk delay      0x%02X\r\n", flashCfg.clkDelay);
-23003eca:	00e14583          	lbu	a1,14(sp)
-23003ece:	23035537          	lui	a0,0x23035
-23003ed2:	d9450513          	addi	a0,a0,-620 # 23034d94 <strtol+0x4cc>
-23003ed6:	3f35                	jal	23003e12 <bflb_platform_printf>
+23003eea:	00e14583          	lbu	a1,14(sp)
+23003eee:	23035537          	lui	a0,0x23035
+23003ef2:	d9450513          	addi	a0,a0,-620 # 23034d94 <strtol+0x4cc>
+23003ef6:	3f35                	jal	23003e32 <bflb_platform_printf>
     MSG("clk invert     0x%02X\r\n", flashCfg.clkInvert);
-23003ed8:	00f14583          	lbu	a1,15(sp)
-23003edc:	23035537          	lui	a0,0x23035
-23003ee0:	dac50513          	addi	a0,a0,-596 # 23034dac <strtol+0x4e4>
-23003ee4:	373d                	jal	23003e12 <bflb_platform_printf>
+23003ef8:	00f14583          	lbu	a1,15(sp)
+23003efc:	23035537          	lui	a0,0x23035
+23003f00:	dac50513          	addi	a0,a0,-596 # 23034dac <strtol+0x4e4>
+23003f04:	373d                	jal	23003e32 <bflb_platform_printf>
     MSG("read reg cmd0  0x%02X\r\n", flashCfg.readRegCmd[0]);
-23003ee6:	04014583          	lbu	a1,64(sp)
-23003eea:	23035537          	lui	a0,0x23035
-23003eee:	dc450513          	addi	a0,a0,-572 # 23034dc4 <strtol+0x4fc>
-23003ef2:	3705                	jal	23003e12 <bflb_platform_printf>
+23003f06:	04014583          	lbu	a1,64(sp)
+23003f0a:	23035537          	lui	a0,0x23035
+23003f0e:	dc450513          	addi	a0,a0,-572 # 23034dc4 <strtol+0x4fc>
+23003f12:	3705                	jal	23003e32 <bflb_platform_printf>
     MSG("read reg cmd1  0x%02X\r\n", flashCfg.readRegCmd[1]);
-23003ef4:	04114583          	lbu	a1,65(sp)
-23003ef8:	23035537          	lui	a0,0x23035
-23003efc:	ddc50513          	addi	a0,a0,-548 # 23034ddc <strtol+0x514>
-23003f00:	3f09                	jal	23003e12 <bflb_platform_printf>
+23003f14:	04114583          	lbu	a1,65(sp)
+23003f18:	23035537          	lui	a0,0x23035
+23003f1c:	ddc50513          	addi	a0,a0,-548 # 23034ddc <strtol+0x514>
+23003f20:	3f09                	jal	23003e32 <bflb_platform_printf>
     MSG("write reg cmd0 0x%02X\r\n", flashCfg.writeRegCmd[0]);
-23003f02:	04414583          	lbu	a1,68(sp)
-23003f06:	23035537          	lui	a0,0x23035
-23003f0a:	df450513          	addi	a0,a0,-524 # 23034df4 <strtol+0x52c>
-23003f0e:	3711                	jal	23003e12 <bflb_platform_printf>
+23003f22:	04414583          	lbu	a1,68(sp)
+23003f26:	23035537          	lui	a0,0x23035
+23003f2a:	df450513          	addi	a0,a0,-524 # 23034df4 <strtol+0x52c>
+23003f2e:	3711                	jal	23003e32 <bflb_platform_printf>
     MSG("write reg cmd1 0x%02X\r\n", flashCfg.writeRegCmd[1]);
-23003f10:	04514583          	lbu	a1,69(sp)
-23003f14:	23035537          	lui	a0,0x23035
-23003f18:	e0c50513          	addi	a0,a0,-500 # 23034e0c <strtol+0x544>
-23003f1c:	3ddd                	jal	23003e12 <bflb_platform_printf>
+23003f30:	04514583          	lbu	a1,69(sp)
+23003f34:	23035537          	lui	a0,0x23035
+23003f38:	e0c50513          	addi	a0,a0,-500 # 23034e0c <strtol+0x544>
+23003f3c:	3ddd                	jal	23003e32 <bflb_platform_printf>
     MSG("qe write len   0x%02X\r\n", flashCfg.qeWriteRegLen);
-23003f1e:	03c14583          	lbu	a1,60(sp)
-23003f22:	23035537          	lui	a0,0x23035
-23003f26:	e2450513          	addi	a0,a0,-476 # 23034e24 <strtol+0x55c>
-23003f2a:	35e5                	jal	23003e12 <bflb_platform_printf>
+23003f3e:	03c14583          	lbu	a1,60(sp)
+23003f42:	23035537          	lui	a0,0x23035
+23003f46:	e2450513          	addi	a0,a0,-476 # 23034e24 <strtol+0x55c>
+23003f4a:	35e5                	jal	23003e32 <bflb_platform_printf>
     MSG("cread support  0x%02X\r\n", flashCfg.cReadSupport);
-23003f2c:	00d14583          	lbu	a1,13(sp)
-23003f30:	23035537          	lui	a0,0x23035
-23003f34:	e3c50513          	addi	a0,a0,-452 # 23034e3c <strtol+0x574>
-23003f38:	3de9                	jal	23003e12 <bflb_platform_printf>
+23003f4c:	00d14583          	lbu	a1,13(sp)
+23003f50:	23035537          	lui	a0,0x23035
+23003f54:	e3c50513          	addi	a0,a0,-452 # 23034e3c <strtol+0x574>
+23003f58:	3de9                	jal	23003e32 <bflb_platform_printf>
     MSG("cread code     0x%02X\r\n", flashCfg.cReadMode);
-23003f3a:	04a14583          	lbu	a1,74(sp)
-23003f3e:	23035537          	lui	a0,0x23035
-23003f42:	e5450513          	addi	a0,a0,-428 # 23034e54 <strtol+0x58c>
-23003f46:	35f1                	jal	23003e12 <bflb_platform_printf>
+23003f5a:	04a14583          	lbu	a1,74(sp)
+23003f5e:	23035537          	lui	a0,0x23035
+23003f62:	e5450513          	addi	a0,a0,-428 # 23034e54 <strtol+0x58c>
+23003f66:	35f1                	jal	23003e32 <bflb_platform_printf>
     MSG("burst wrap cmd 0x%02X\r\n", flashCfg.burstWrapCmd);
-23003f48:	04c14583          	lbu	a1,76(sp)
-23003f4c:	23035537          	lui	a0,0x23035
-23003f50:	e6c50513          	addi	a0,a0,-404 # 23034e6c <strtol+0x5a4>
-23003f54:	3d7d                	jal	23003e12 <bflb_platform_printf>
+23003f68:	04c14583          	lbu	a1,76(sp)
+23003f6c:	23035537          	lui	a0,0x23035
+23003f70:	e6c50513          	addi	a0,a0,-404 # 23034e6c <strtol+0x5a4>
+23003f74:	3d7d                	jal	23003e32 <bflb_platform_printf>
     MSG("-------------------\r\n");
-23003f56:	23035537          	lui	a0,0x23035
-23003f5a:	e8450513          	addi	a0,a0,-380 # 23034e84 <strtol+0x5bc>
-23003f5e:	3d55                	jal	23003e12 <bflb_platform_printf>
+23003f76:	23035537          	lui	a0,0x23035
+23003f7a:	e8450513          	addi	a0,a0,-380 # 23034e84 <strtol+0x5bc>
+23003f7e:	3d55                	jal	23003e32 <bflb_platform_printf>
 }
-23003f60:	50b6                	lw	ra,108(sp)
-23003f62:	5426                	lw	s0,104(sp)
-23003f64:	6165                	addi	sp,sp,112
-23003f66:	8082                	ret
+23003f80:	50b6                	lw	ra,108(sp)
+23003f82:	5426                	lw	s0,104(sp)
+23003f84:	6165                	addi	sp,sp,112
+23003f86:	8082                	ret
 
-23003f68 <bflb_platform_init>:
+23003f88 <bflb_platform_init>:
 {
-23003f68:	1141                	addi	sp,sp,-16
-23003f6a:	c606                	sw	ra,12(sp)
-23003f6c:	c226                	sw	s1,4(sp)
-23003f6e:	c422                	sw	s0,8(sp)
-23003f70:	c04a                	sw	s2,0(sp)
+23003f88:	1141                	addi	sp,sp,-16
+23003f8a:	c606                	sw	ra,12(sp)
+23003f8c:	c226                	sw	s1,4(sp)
+23003f8e:	c422                	sw	s0,8(sp)
+23003f90:	c04a                	sw	s2,0(sp)
     cpu_global_irq_disable();
-23003f72:	1f010097          	auipc	ra,0x1f010
-23003f76:	0a6080e7          	jalr	166(ra) # 42014018 <cpu_global_irq_disable>
+23003f92:	1f010097          	auipc	ra,0x1f010
+23003f96:	086080e7          	jalr	134(ra) # 42014018 <cpu_global_irq_disable>
     ret = flash_init();
-23003f7a:	1f010097          	auipc	ra,0x1f010
-23003f7e:	0b2080e7          	jalr	178(ra) # 4201402c <flash_init>
-23003f82:	84aa                	mv	s1,a0
+23003f9a:	1f010097          	auipc	ra,0x1f010
+23003f9e:	092080e7          	jalr	146(ra) # 4201402c <flash_init>
+23003fa2:	84aa                	mv	s1,a0
     board_init();
-23003f84:	2ca1                	jal	230041dc <board_init>
+23003fa4:	2ca1                	jal	230041fc <board_init>
     if (!uart_dbg_disable) {
-23003f86:	4201a7b7          	lui	a5,0x4201a
-23003f8a:	a867c783          	lbu	a5,-1402(a5) # 42019a86 <uart_dbg_disable>
-23003f8e:	cfb1                	beqz	a5,23003fea <bflb_platform_init+0x82>
+23003fa6:	4201a7b7          	lui	a5,0x4201a
+23003faa:	a867c783          	lbu	a5,-1402(a5) # 42019a86 <uart_dbg_disable>
+23003fae:	cfb1                	beqz	a5,2300400a <bflb_platform_init+0x82>
     if (!initialized) {
-23003f90:	4201a437          	lui	s0,0x4201a
-23003f94:	a8540413          	addi	s0,s0,-1403 # 42019a85 <initialized.0>
-23003f98:	00044783          	lbu	a5,0(s0)
-23003f9c:	ef95                	bnez	a5,23003fd8 <bflb_platform_init+0x70>
+23003fb0:	4201a437          	lui	s0,0x4201a
+23003fb4:	a8540413          	addi	s0,s0,-1403 # 42019a85 <initialized.0>
+23003fb8:	00044783          	lbu	a5,0(s0)
+23003fbc:	ef95                	bnez	a5,23003ff8 <bflb_platform_init+0x70>
         system_mmheap[0].addr = (uint8_t *)&__HeapBase;
-23003f9e:	4201b7b7          	lui	a5,0x4201b
+23003fbe:	4201b7b7          	lui	a5,0x4201b
         system_mmheap[0].mem_size = ((size_t)&__HeapLimit - (size_t)&__HeapBase);
-23003fa2:	420285b7          	lui	a1,0x42028
+23003fc2:	420285b7          	lui	a1,0x42028
         system_mmheap[0].addr = (uint8_t *)&__HeapBase;
-23003fa6:	a1478793          	addi	a5,a5,-1516 # 4201aa14 <__HeapBase>
-23003faa:	42018737          	lui	a4,0x42018
+23003fc6:	a1478793          	addi	a5,a5,-1516 # 4201aa14 <__HeapBase>
+23003fca:	42018737          	lui	a4,0x42018
         system_mmheap[0].mem_size = ((size_t)&__HeapLimit - (size_t)&__HeapBase);
-23003fae:	00058593          	mv	a1,a1
+23003fce:	00058593          	mv	a1,a1
         system_mmheap[0].addr = (uint8_t *)&__HeapBase;
-23003fb2:	57070913          	addi	s2,a4,1392 # 42018570 <system_mmheap>
+23003fd2:	57070913          	addi	s2,a4,1392 # 42018570 <system_mmheap>
         system_mmheap[0].mem_size = ((size_t)&__HeapLimit - (size_t)&__HeapBase);
-23003fb6:	8d9d                	sub	a1,a1,a5
+23003fd6:	8d9d                	sub	a1,a1,a5
         system_mmheap[0].addr = (uint8_t *)&__HeapBase;
-23003fb8:	00f92023          	sw	a5,0(s2)
+23003fd8:	00f92023          	sw	a5,0(s2)
         system_mmheap[0].mem_size = ((size_t)&__HeapLimit - (size_t)&__HeapBase);
-23003fbc:	00b92223          	sw	a1,4(s2)
+23003fdc:	00b92223          	sw	a1,4(s2)
         if (system_mmheap[0].mem_size > 0) {
-23003fc0:	e1a5                	bnez	a1,23004020 <bflb_platform_init+0xb8>
+23003fe0:	e1a5                	bnez	a1,23004040 <bflb_platform_init+0xb8>
         MSG("dynamic memory init success,heap size = %d Kbyte \r\n", system_mmheap[0].mem_size / 1024);
-23003fc2:	23035537          	lui	a0,0x23035
-23003fc6:	81a9                	srli	a1,a1,0xa
-23003fc8:	e9c50513          	addi	a0,a0,-356 # 23034e9c <strtol+0x5d4>
-23003fcc:	3599                	jal	23003e12 <bflb_platform_printf>
+23003fe2:	23035537          	lui	a0,0x23035
+23003fe6:	81a9                	srli	a1,a1,0xa
+23003fe8:	e9c50513          	addi	a0,a0,-356 # 23034e9c <strtol+0x5d4>
+23003fec:	3599                	jal	23003e32 <bflb_platform_printf>
         initialized = 1;
-23003fce:	4785                	li	a5,1
-23003fd0:	00f40023          	sb	a5,0(s0)
+23003fee:	4785                	li	a5,1
+23003ff0:	00f40023          	sb	a5,0(s0)
         if (ret != SUCCESS) {
-23003fd4:	e8b5                	bnez	s1,23004048 <bflb_platform_init+0xe0>
+23003ff4:	e8b5                	bnez	s1,23004068 <bflb_platform_init+0xe0>
         bl_show_flashinfo();
-23003fd6:	3d71                	jal	23003e72 <bl_show_flashinfo>
+23003ff6:	3d71                	jal	23003e92 <bl_show_flashinfo>
 }
-23003fd8:	4422                	lw	s0,8(sp)
-23003fda:	40b2                	lw	ra,12(sp)
-23003fdc:	4492                	lw	s1,4(sp)
-23003fde:	4902                	lw	s2,0(sp)
-23003fe0:	0141                	addi	sp,sp,16
+23003ff8:	4422                	lw	s0,8(sp)
+23003ffa:	40b2                	lw	ra,12(sp)
+23003ffc:	4492                	lw	s1,4(sp)
+23003ffe:	4902                	lw	s2,0(sp)
+23004000:	0141                	addi	sp,sp,16
     cpu_global_irq_enable();
-23003fe2:	1f010317          	auipc	t1,0x1f010
-23003fe6:	01e30067          	jr	30(t1) # 42014000 <cpu_global_irq_enable>
+23004002:	1f010317          	auipc	t1,0x1f010
+23004006:	ffe30067          	jr	-2(t1) # 42014000 <cpu_global_irq_enable>
         uart_register(board_get_debug_uart_index(), "debug_log");
-23003fea:	23035437          	lui	s0,0x23035
-23003fee:	3505                	jal	23003e0e <board_get_debug_uart_index>
-23003ff0:	d3040593          	addi	a1,s0,-720 # 23034d30 <strtol+0x468>
-23003ff4:	234010ef          	jal	ra,23005228 <uart_register>
+2300400a:	23035437          	lui	s0,0x23035
+2300400e:	3505                	jal	23003e2e <board_get_debug_uart_index>
+23004010:	d3040593          	addi	a1,s0,-720 # 23034d30 <strtol+0x468>
+23004014:	234010ef          	jal	ra,23005248 <uart_register>
         struct device *uart = device_find("debug_log");
-23003ff8:	d3040513          	addi	a0,s0,-720
-23003ffc:	7182e0ef          	jal	ra,23032714 <device_find>
-23004000:	842a                	mv	s0,a0
+23004018:	d3040513          	addi	a0,s0,-720
+2300401c:	6f82e0ef          	jal	ra,23032714 <device_find>
+23004020:	842a                	mv	s0,a0
         if (uart) {
-23004002:	cd09                	beqz	a0,2300401c <bflb_platform_init+0xb4>
+23004022:	cd09                	beqz	a0,2300403c <bflb_platform_init+0xb4>
             device_open(uart, DEVICE_OFLAG_STREAM_TX | DEVICE_OFLAG_INT_RX);
-23004004:	45a5                	li	a1,9
-23004006:	7602e0ef          	jal	ra,23032766 <device_open>
+23004024:	45a5                	li	a1,9
+23004026:	7402e0ef          	jal	ra,23032766 <device_open>
             device_set_callback(uart, NULL);
-2300400a:	4581                	li	a1,0
-2300400c:	8522                	mv	a0,s0
-2300400e:	7c62e0ef          	jal	ra,230327d4 <device_set_callback>
+2300402a:	4581                	li	a1,0
+2300402c:	8522                	mv	a0,s0
+2300402e:	7a62e0ef          	jal	ra,230327d4 <device_set_callback>
             device_control(uart, DEVICE_CTRL_CLR_INT, (void *)(UART_RX_FIFO_IT));
-23004012:	4621                	li	a2,8
-23004014:	4589                	li	a1,2
-23004016:	8522                	mv	a0,s0
-23004018:	7902e0ef          	jal	ra,230327a8 <device_control>
+23004032:	4621                	li	a2,8
+23004034:	4589                	li	a1,2
+23004036:	8522                	mv	a0,s0
+23004038:	7702e0ef          	jal	ra,230327a8 <device_control>
         bl_show_info();
-2300401c:	2291                	jal	23004160 <bl_show_info>
-2300401e:	bf8d                	j	23003f90 <bflb_platform_init+0x28>
+2300403c:	2291                	jal	23004180 <bl_show_info>
+2300403e:	bf8d                	j	23003fb0 <bflb_platform_init+0x28>
             mmheap_init(&mmheap_root, system_mmheap);
-23004020:	42018537          	lui	a0,0x42018
-23004024:	57070593          	addi	a1,a4,1392
-23004028:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
-2300402c:	4ab2e0ef          	jal	ra,23032cd6 <mmheap_init>
+23004040:	42018537          	lui	a0,0x42018
+23004044:	57070593          	addi	a1,a4,1392
+23004048:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
+2300404c:	48b2e0ef          	jal	ra,23032cd6 <mmheap_init>
         MSG("dynamic memory init success,heap size = %d Kbyte \r\n", system_mmheap[0].mem_size / 1024);
-23004030:	00492583          	lw	a1,4(s2)
-23004034:	23035537          	lui	a0,0x23035
-23004038:	e9c50513          	addi	a0,a0,-356 # 23034e9c <strtol+0x5d4>
-2300403c:	81a9                	srli	a1,a1,0xa
-2300403e:	3bd1                	jal	23003e12 <bflb_platform_printf>
+23004050:	00492583          	lw	a1,4(s2)
+23004054:	23035537          	lui	a0,0x23035
+23004058:	e9c50513          	addi	a0,a0,-356 # 23034e9c <strtol+0x5d4>
+2300405c:	81a9                	srli	a1,a1,0xa
+2300405e:	3bd1                	jal	23003e32 <bflb_platform_printf>
         initialized = 1;
-23004040:	4785                	li	a5,1
-23004042:	00f40023          	sb	a5,0(s0)
+23004060:	4785                	li	a5,1
+23004062:	00f40023          	sb	a5,0(s0)
         if (ret != SUCCESS) {
-23004046:	d8c1                	beqz	s1,23003fd6 <bflb_platform_init+0x6e>
+23004066:	d8c1                	beqz	s1,23003ff6 <bflb_platform_init+0x6e>
             MSG("flash init fail!!!\r\n");
-23004048:	23035537          	lui	a0,0x23035
-2300404c:	ed050513          	addi	a0,a0,-304 # 23034ed0 <strtol+0x608>
-23004050:	33c9                	jal	23003e12 <bflb_platform_printf>
-23004052:	b751                	j	23003fd6 <bflb_platform_init+0x6e>
+23004068:	23035537          	lui	a0,0x23035
+2300406c:	ed050513          	addi	a0,a0,-304 # 23034ed0 <strtol+0x608>
+23004070:	33c9                	jal	23003e32 <bflb_platform_printf>
+23004072:	b751                	j	23003ff6 <bflb_platform_init+0x6e>
 
-23004054 <bflb_platform_delay_ms>:
+23004074 <bflb_platform_delay_ms>:
     return mtimer_get_time_us();
 }
 
 void bflb_platform_delay_ms(uint32_t ms)
 {
     mtimer_delay_ms(ms);
-23004054:	46b0006f          	j	23004cbe <mtimer_delay_ms>
+23004074:	46b0006f          	j	23004cde <mtimer_delay_ms>
 
-23004058 <__errno>:
+23004078 <__errno>:
     //         extern int FreeRTOS_errno;
 
     //         return &FreeRTOS_errno;
     //     }
     // #endif
     return (int *)&_sys_errno;
-23004058:	4201a537          	lui	a0,0x4201a
+23004078:	4201a537          	lui	a0,0x4201a
 }
-2300405c:	a8850513          	addi	a0,a0,-1400 # 42019a88 <_sys_errno>
-23004060:	8082                	ret
+2300407c:	a8850513          	addi	a0,a0,-1400 # 42019a88 <_sys_errno>
+23004080:	8082                	ret
 
-23004062 <_getpid_r>:
+23004082 <_getpid_r>:
 #endif
 
 int _getpid_r(struct _reent *ptr)
 {
     return 0;
 }
-23004062:	4501                	li	a0,0
-23004064:	8082                	ret
+23004082:	4501                	li	a0,0
+23004084:	8082                	ret
 
-23004066 <_fstat_r>:
+23004086 <_fstat_r>:
 }
 
 int _fstat_r(struct _reent *ptr, int fd, struct stat *pstat)
 {
     /* return "not supported" */
     ptr->_errno = -ENOSYS;
-23004066:	fb900793          	li	a5,-71
-2300406a:	c11c                	sw	a5,0(a0)
+23004086:	fb900793          	li	a5,-71
+2300408a:	c11c                	sw	a5,0(a0)
     return -1;
 }
-2300406c:	557d                	li	a0,-1
-2300406e:	8082                	ret
+2300408c:	557d                	li	a0,-1
+2300408e:	8082                	ret
 
-23004070 <_isatty_r>:
-23004070:	fb900793          	li	a5,-71
-23004074:	c11c                	sw	a5,0(a0)
-23004076:	557d                	li	a0,-1
-23004078:	8082                	ret
+23004090 <_isatty_r>:
+23004090:	fb900793          	li	a5,-71
+23004094:	c11c                	sw	a5,0(a0)
+23004096:	557d                	li	a0,-1
+23004098:	8082                	ret
 
-2300407a <_kill_r>:
+2300409a <_kill_r>:
 }
 
 int _kill_r(struct _reent *ptr, int pid, int sig)
 {
     /* return "not supported" */
     ptr->_errno = -ENOSYS;
-2300407a:	fb900793          	li	a5,-71
-2300407e:	c11c                	sw	a5,0(a0)
+2300409a:	fb900793          	li	a5,-71
+2300409e:	c11c                	sw	a5,0(a0)
     return -1;
 }
-23004080:	557d                	li	a0,-1
-23004082:	8082                	ret
+230040a0:	557d                	li	a0,-1
+230040a2:	8082                	ret
 
-23004084 <_lseek_r>:
-23004084:	fb900793          	li	a5,-71
-23004088:	c11c                	sw	a5,0(a0)
-2300408a:	557d                	li	a0,-1
-2300408c:	8082                	ret
+230040a4 <_lseek_r>:
+230040a4:	fb900793          	li	a5,-71
+230040a8:	c11c                	sw	a5,0(a0)
+230040aa:	557d                	li	a0,-1
+230040ac:	8082                	ret
 
-2300408e <_close_r>:
+230040ae <_close_r>:
 
 int _close_r(struct _reent *ptr, int fd)
 {
 #ifndef CONF_VFS_ENABLE
     /* return "not supported" */
     ptr->_errno = -ENOSYS;
-2300408e:	fb900793          	li	a5,-71
-23004092:	c11c                	sw	a5,0(a0)
+230040ae:	fb900793          	li	a5,-71
+230040b2:	c11c                	sw	a5,0(a0)
     return -1;
 #else
     return aos_close(fd);
 #endif
 }
-23004094:	557d                	li	a0,-1
-23004096:	8082                	ret
+230040b4:	557d                	li	a0,-1
+230040b6:	8082                	ret
 
-23004098 <_read_r>:
+230040b8 <_read_r>:
 
 _ssize_t _read_r(struct _reent *ptr, int fd, void *buf, size_t nbytes)
 {
 #ifndef CONF_VFS_ENABLE
     /* return "not supported" */
     ptr->_errno = -ENOSYS;
-23004098:	fb900793          	li	a5,-71
-2300409c:	c11c                	sw	a5,0(a0)
+230040b8:	fb900793          	li	a5,-71
+230040bc:	c11c                	sw	a5,0(a0)
     _ssize_t rc;
 
     rc = aos_read(fd, buf, nbytes);
     return rc;
 #endif
 }
-2300409e:	557d                	li	a0,-1
-230040a0:	8082                	ret
+230040be:	557d                	li	a0,-1
+230040c0:	8082                	ret
 
-230040a2 <_write_r>:
+230040c2 <_write_r>:
         device_write(uart, 0, (uint8_t *)buf, nbytes);
     }
     return 0;
 #else
 #define CDC_IN_EP 0x82
     struct device *usb_fs = device_find("usb");
-230040a2:	23035537          	lui	a0,0x23035
+230040c2:	23035537          	lui	a0,0x23035
 {
-230040a6:	1141                	addi	sp,sp,-16
+230040c6:	1141                	addi	sp,sp,-16
     struct device *usb_fs = device_find("usb");
-230040a8:	ee850513          	addi	a0,a0,-280 # 23034ee8 <strtol+0x620>
+230040c8:	ee850513          	addi	a0,a0,-280 # 23034ee8 <strtol+0x620>
 {
-230040ac:	c606                	sw	ra,12(sp)
-230040ae:	c422                	sw	s0,8(sp)
-230040b0:	c226                	sw	s1,4(sp)
-230040b2:	8432                	mv	s0,a2
-230040b4:	84b6                	mv	s1,a3
+230040cc:	c606                	sw	ra,12(sp)
+230040ce:	c422                	sw	s0,8(sp)
+230040d0:	c226                	sw	s1,4(sp)
+230040d2:	8432                	mv	s0,a2
+230040d4:	84b6                	mv	s1,a3
     struct device *usb_fs = device_find("usb");
-230040b6:	65e2e0ef          	jal	ra,23032714 <device_find>
+230040d6:	63e2e0ef          	jal	ra,23032714 <device_find>
     usb_dc_ep_write(usb_fs, CDC_IN_EP, (uint8_t *)buf, nbytes, NULL);
-230040ba:	86a6                	mv	a3,s1
-230040bc:	8622                	mv	a2,s0
-230040be:	4701                	li	a4,0
-230040c0:	08200593          	li	a1,130
-230040c4:	3d3010ef          	jal	ra,23005c96 <usb_dc_ep_write>
+230040da:	86a6                	mv	a3,s1
+230040dc:	8622                	mv	a2,s0
+230040de:	4701                	li	a4,0
+230040e0:	08200593          	li	a1,130
+230040e4:	3d3010ef          	jal	ra,23005cb6 <usb_dc_ep_write>
     _ssize_t rc;
 
     rc = aos_write(fd, buf, nbytes);
     return rc;
 #endif
 }
-230040c8:	40b2                	lw	ra,12(sp)
-230040ca:	4422                	lw	s0,8(sp)
-230040cc:	4492                	lw	s1,4(sp)
-230040ce:	4501                	li	a0,0
-230040d0:	0141                	addi	sp,sp,16
-230040d2:	8082                	ret
+230040e8:	40b2                	lw	ra,12(sp)
+230040ea:	4422                	lw	s0,8(sp)
+230040ec:	4492                	lw	s1,4(sp)
+230040ee:	4501                	li	a0,0
+230040f0:	0141                	addi	sp,sp,16
+230040f2:	8082                	ret
 
-230040d4 <_malloc_r>:
+230040f4 <_malloc_r>:
 
 void *_malloc_r(struct _reent *ptr, size_t size)
 {
-230040d4:	1141                	addi	sp,sp,-16
-230040d6:	c422                	sw	s0,8(sp)
-230040d8:	842a                	mv	s0,a0
+230040f4:	1141                	addi	sp,sp,-16
+230040f6:	c422                	sw	s0,8(sp)
+230040f8:	842a                	mv	s0,a0
     void *result;
 
     result = (void *)mmheap_alloc(&mmheap_root, size);
-230040da:	42018537          	lui	a0,0x42018
-230040de:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
+230040fa:	42018537          	lui	a0,0x42018
+230040fe:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
 {
-230040e2:	c606                	sw	ra,12(sp)
+23004102:	c606                	sw	ra,12(sp)
     result = (void *)mmheap_alloc(&mmheap_root, size);
-230040e4:	0f52e0ef          	jal	ra,230329d8 <mmheap_alloc>
+23004104:	0d52e0ef          	jal	ra,230329d8 <mmheap_alloc>
     if (result == NULL) {
-230040e8:	c509                	beqz	a0,230040f2 <_malloc_r+0x1e>
+23004108:	c509                	beqz	a0,23004112 <_malloc_r+0x1e>
         ptr->_errno = -ENOMEM;
     }
 
     return result;
 }
-230040ea:	40b2                	lw	ra,12(sp)
-230040ec:	4422                	lw	s0,8(sp)
-230040ee:	0141                	addi	sp,sp,16
-230040f0:	8082                	ret
+2300410a:	40b2                	lw	ra,12(sp)
+2300410c:	4422                	lw	s0,8(sp)
+2300410e:	0141                	addi	sp,sp,16
+23004110:	8082                	ret
         ptr->_errno = -ENOMEM;
-230040f2:	57d1                	li	a5,-12
+23004112:	57d1                	li	a5,-12
 }
-230040f4:	40b2                	lw	ra,12(sp)
+23004114:	40b2                	lw	ra,12(sp)
         ptr->_errno = -ENOMEM;
-230040f6:	c01c                	sw	a5,0(s0)
+23004116:	c01c                	sw	a5,0(s0)
 }
-230040f8:	4422                	lw	s0,8(sp)
-230040fa:	0141                	addi	sp,sp,16
-230040fc:	8082                	ret
+23004118:	4422                	lw	s0,8(sp)
+2300411a:	0141                	addi	sp,sp,16
+2300411c:	8082                	ret
 
-230040fe <_realloc_r>:
+2300411e <_realloc_r>:
 
 void *_realloc_r(struct _reent *ptr, void *old, size_t newlen)
 {
-230040fe:	1141                	addi	sp,sp,-16
-23004100:	c422                	sw	s0,8(sp)
-23004102:	842a                	mv	s0,a0
+2300411e:	1141                	addi	sp,sp,-16
+23004120:	c422                	sw	s0,8(sp)
+23004122:	842a                	mv	s0,a0
     void *result;
 
     result = (void *)mmheap_realloc(&mmheap_root, old, newlen);
-23004104:	42018537          	lui	a0,0x42018
-23004108:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
+23004124:	42018537          	lui	a0,0x42018
+23004128:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
 {
-2300410c:	c606                	sw	ra,12(sp)
+2300412c:	c606                	sw	ra,12(sp)
     result = (void *)mmheap_realloc(&mmheap_root, old, newlen);
-2300410e:	1d32e0ef          	jal	ra,23032ae0 <mmheap_realloc>
+2300412e:	1b32e0ef          	jal	ra,23032ae0 <mmheap_realloc>
     if (result == NULL) {
-23004112:	c509                	beqz	a0,2300411c <_realloc_r+0x1e>
+23004132:	c509                	beqz	a0,2300413c <_realloc_r+0x1e>
         ptr->_errno = -ENOMEM;
     }
     return result;
 }
-23004114:	40b2                	lw	ra,12(sp)
-23004116:	4422                	lw	s0,8(sp)
-23004118:	0141                	addi	sp,sp,16
-2300411a:	8082                	ret
+23004134:	40b2                	lw	ra,12(sp)
+23004136:	4422                	lw	s0,8(sp)
+23004138:	0141                	addi	sp,sp,16
+2300413a:	8082                	ret
         ptr->_errno = -ENOMEM;
-2300411c:	57d1                	li	a5,-12
+2300413c:	57d1                	li	a5,-12
 }
-2300411e:	40b2                	lw	ra,12(sp)
+2300413e:	40b2                	lw	ra,12(sp)
         ptr->_errno = -ENOMEM;
-23004120:	c01c                	sw	a5,0(s0)
+23004140:	c01c                	sw	a5,0(s0)
 }
-23004122:	4422                	lw	s0,8(sp)
-23004124:	0141                	addi	sp,sp,16
-23004126:	8082                	ret
+23004142:	4422                	lw	s0,8(sp)
+23004144:	0141                	addi	sp,sp,16
+23004146:	8082                	ret
 
-23004128 <_calloc_r>:
+23004148 <_calloc_r>:
 
 void *_calloc_r(struct _reent *ptr, size_t size, size_t len)
 {
-23004128:	1141                	addi	sp,sp,-16
-2300412a:	c422                	sw	s0,8(sp)
-2300412c:	842a                	mv	s0,a0
+23004148:	1141                	addi	sp,sp,-16
+2300414a:	c422                	sw	s0,8(sp)
+2300414c:	842a                	mv	s0,a0
     void *result;
 
     result = (void *)mmheap_calloc(&mmheap_root, size, len);
-2300412e:	42018537          	lui	a0,0x42018
-23004132:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
+2300414e:	42018537          	lui	a0,0x42018
+23004152:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
 {
-23004136:	c606                	sw	ra,12(sp)
+23004156:	c606                	sw	ra,12(sp)
     result = (void *)mmheap_calloc(&mmheap_root, size, len);
-23004138:	0a92e0ef          	jal	ra,230329e0 <mmheap_calloc>
+23004158:	0892e0ef          	jal	ra,230329e0 <mmheap_calloc>
     if (result == NULL) {
-2300413c:	c509                	beqz	a0,23004146 <_calloc_r+0x1e>
+2300415c:	c509                	beqz	a0,23004166 <_calloc_r+0x1e>
         ptr->_errno = -ENOMEM;
     }
 
     return result;
 }
-2300413e:	40b2                	lw	ra,12(sp)
-23004140:	4422                	lw	s0,8(sp)
-23004142:	0141                	addi	sp,sp,16
-23004144:	8082                	ret
+2300415e:	40b2                	lw	ra,12(sp)
+23004160:	4422                	lw	s0,8(sp)
+23004162:	0141                	addi	sp,sp,16
+23004164:	8082                	ret
         ptr->_errno = -ENOMEM;
-23004146:	57d1                	li	a5,-12
+23004166:	57d1                	li	a5,-12
 }
-23004148:	40b2                	lw	ra,12(sp)
+23004168:	40b2                	lw	ra,12(sp)
         ptr->_errno = -ENOMEM;
-2300414a:	c01c                	sw	a5,0(s0)
+2300416a:	c01c                	sw	a5,0(s0)
 }
-2300414c:	4422                	lw	s0,8(sp)
-2300414e:	0141                	addi	sp,sp,16
-23004150:	8082                	ret
+2300416c:	4422                	lw	s0,8(sp)
+2300416e:	0141                	addi	sp,sp,16
+23004170:	8082                	ret
 
-23004152 <_free_r>:
+23004172 <_free_r>:
 
 void _free_r(struct _reent *ptr, void *addr)
 {
     mmheap_free(&mmheap_root, addr);
-23004152:	42018537          	lui	a0,0x42018
-23004156:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
-2300415a:	0b32e06f          	j	23032a0c <mmheap_free>
+23004172:	42018537          	lui	a0,0x42018
+23004176:	56450513          	addi	a0,a0,1380 # 42018564 <mmheap_root>
+2300417a:	0932e06f          	j	23032a0c <mmheap_free>
 
-2300415e <_exit>:
+2300417e <_exit>:
 
 /* for exit() and abort() */
 void __attribute__((noreturn))
 _exit(int status)
 {
     while (1) {
-2300415e:	a001                	j	2300415e <_exit>
+2300417e:	a001                	j	2300417e <_exit>
 
-23004160 <bl_show_info>:
+23004180 <bl_show_info>:
     system_clock_init();
     peripheral_clock_init();
 }
 
 void bl_show_info(void)
 {
-23004160:	1141                	addi	sp,sp,-16
-23004162:	c422                	sw	s0,8(sp)
+23004180:	1141                	addi	sp,sp,-16
+23004182:	c422                	sw	s0,8(sp)
     MSG("\r\n");
-23004164:	23035437          	lui	s0,0x23035
-23004168:	28440513          	addi	a0,s0,644 # 23035284 <af_pin_table+0x1e0>
+23004184:	23035437          	lui	s0,0x23035
+23004188:	28440513          	addi	a0,s0,644 # 23035284 <af_pin_table+0x1e0>
 {
-2300416c:	c606                	sw	ra,12(sp)
+2300418c:	c606                	sw	ra,12(sp)
     MSG("\r\n");
-2300416e:	3155                	jal	23003e12 <bflb_platform_printf>
+2300418e:	3155                	jal	23003e32 <bflb_platform_printf>
     MSG("  ____               __  __      _       _       _     \r\n");
-23004170:	23035537          	lui	a0,0x23035
-23004174:	eec50513          	addi	a0,a0,-276 # 23034eec <strtol+0x624>
-23004178:	3969                	jal	23003e12 <bflb_platform_printf>
+23004190:	23035537          	lui	a0,0x23035
+23004194:	eec50513          	addi	a0,a0,-276 # 23034eec <strtol+0x624>
+23004198:	3969                	jal	23003e32 <bflb_platform_printf>
     MSG(" |  _ \\             / _|/ _|    | |     | |     | |    \r\n");
-2300417a:	23035537          	lui	a0,0x23035
-2300417e:	f2850513          	addi	a0,a0,-216 # 23034f28 <strtol+0x660>
-23004182:	3941                	jal	23003e12 <bflb_platform_printf>
+2300419a:	23035537          	lui	a0,0x23035
+2300419e:	f2850513          	addi	a0,a0,-216 # 23034f28 <strtol+0x660>
+230041a2:	3941                	jal	23003e32 <bflb_platform_printf>
     MSG(" | |_) | ___  _   _| |_| |_ __ _| | ___ | | __ _| |__  \r\n");
-23004184:	23035537          	lui	a0,0x23035
-23004188:	f6450513          	addi	a0,a0,-156 # 23034f64 <strtol+0x69c>
-2300418c:	3159                	jal	23003e12 <bflb_platform_printf>
+230041a4:	23035537          	lui	a0,0x23035
+230041a8:	f6450513          	addi	a0,a0,-156 # 23034f64 <strtol+0x69c>
+230041ac:	3159                	jal	23003e32 <bflb_platform_printf>
     MSG(" |  _ < / _ \\| | | |  _|  _/ _` | |/ _ \\| |/ _` | '_ \\ \r\n");
-2300418e:	23035537          	lui	a0,0x23035
-23004192:	fa050513          	addi	a0,a0,-96 # 23034fa0 <strtol+0x6d8>
-23004196:	39b5                	jal	23003e12 <bflb_platform_printf>
+230041ae:	23035537          	lui	a0,0x23035
+230041b2:	fa050513          	addi	a0,a0,-96 # 23034fa0 <strtol+0x6d8>
+230041b6:	39b5                	jal	23003e32 <bflb_platform_printf>
     MSG(" | |_) | (_) | |_| | | | || (_| | | (_) | | (_| | |_) |\r\n");
-23004198:	23035537          	lui	a0,0x23035
-2300419c:	fdc50513          	addi	a0,a0,-36 # 23034fdc <strtol+0x714>
-230041a0:	398d                	jal	23003e12 <bflb_platform_printf>
+230041b8:	23035537          	lui	a0,0x23035
+230041bc:	fdc50513          	addi	a0,a0,-36 # 23034fdc <strtol+0x714>
+230041c0:	398d                	jal	23003e32 <bflb_platform_printf>
     MSG(" |____/ \\___/ \\__,_|_| |_| \\__,_|_|\\___/|_|\\__,_|_.__/ \r\n");
-230041a2:	23035537          	lui	a0,0x23035
-230041a6:	01850513          	addi	a0,a0,24 # 23035018 <strtol+0x750>
-230041aa:	31a5                	jal	23003e12 <bflb_platform_printf>
+230041c2:	23035537          	lui	a0,0x23035
+230041c6:	01850513          	addi	a0,a0,24 # 23035018 <strtol+0x750>
+230041ca:	31a5                	jal	23003e32 <bflb_platform_printf>
     MSG("\r\n");
-230041ac:	28440513          	addi	a0,s0,644
-230041b0:	318d                	jal	23003e12 <bflb_platform_printf>
+230041cc:	28440513          	addi	a0,s0,644
+230041d0:	318d                	jal	23003e32 <bflb_platform_printf>
     MSG("Build:%s,%s\r\n", __TIME__, __DATE__);
-230041b2:	23035537          	lui	a0,0x23035
-230041b6:	23035637          	lui	a2,0x23035
-230041ba:	230355b7          	lui	a1,0x23035
-230041be:	06c50513          	addi	a0,a0,108 # 2303506c <strtol+0x7a4>
-230041c2:	05460613          	addi	a2,a2,84 # 23035054 <strtol+0x78c>
-230041c6:	06058593          	addi	a1,a1,96 # 23035060 <strtol+0x798>
-230041ca:	31a1                	jal	23003e12 <bflb_platform_printf>
+230041d2:	23035537          	lui	a0,0x23035
+230041d6:	23035637          	lui	a2,0x23035
+230041da:	230355b7          	lui	a1,0x23035
+230041de:	06c50513          	addi	a0,a0,108 # 2303506c <strtol+0x7a4>
+230041e2:	05460613          	addi	a2,a2,84 # 23035054 <strtol+0x78c>
+230041e6:	06058593          	addi	a1,a1,96 # 23035060 <strtol+0x798>
+230041ea:	31a1                	jal	23003e32 <bflb_platform_printf>
     MSG("pwm clock:%dhz\r\n", peripheral_clock_get(PERIPHERAL_CLOCK_PWM));
     MSG("cam clock:%dM\r\n", peripheral_clock_get(PERIPHERAL_CLOCK_CAM) / 1000000);
     MSG("timer0 clock:%dM\r\n", peripheral_clock_get(PERIPHERAL_CLOCK_TIMER0) / 1000000);
     MSG("timer1 clock:%dM\r\n", peripheral_clock_get(PERIPHERAL_CLOCK_TIMER1) / 1000000);
 #endif
 }
-230041cc:	4422                	lw	s0,8(sp)
-230041ce:	40b2                	lw	ra,12(sp)
+230041ec:	4422                	lw	s0,8(sp)
+230041ee:	40b2                	lw	ra,12(sp)
     MSG("Copyright (c) 2021 Bouffalolab team\r\n");
-230041d0:	23035537          	lui	a0,0x23035
-230041d4:	07c50513          	addi	a0,a0,124 # 2303507c <strtol+0x7b4>
+230041f0:	23035537          	lui	a0,0x23035
+230041f4:	07c50513          	addi	a0,a0,124 # 2303507c <strtol+0x7b4>
 }
-230041d8:	0141                	addi	sp,sp,16
+230041f8:	0141                	addi	sp,sp,16
     MSG("Copyright (c) 2021 Bouffalolab team\r\n");
-230041da:	b925                	j	23003e12 <bflb_platform_printf>
+230041fa:	b925                	j	23003e32 <bflb_platform_printf>
 
-230041dc <board_init>:
+230041fc <board_init>:
 
 void board_init(void)
 {
-230041dc:	715d                	addi	sp,sp,-80
-230041de:	c686                	sw	ra,76(sp)
-230041e0:	c4a2                	sw	s0,72(sp)
-230041e2:	c2a6                	sw	s1,68(sp)
-230041e4:	c0ca                	sw	s2,64(sp)
-230041e6:	de4e                	sw	s3,60(sp)
-230041e8:	dc52                	sw	s4,56(sp)
-230041ea:	da56                	sw	s5,52(sp)
-230041ec:	d85a                	sw	s6,48(sp)
-230041ee:	d65e                	sw	s7,44(sp)
-230041f0:	d462                	sw	s8,40(sp)
-230041f2:	ce6e                	sw	s11,28(sp)
-230041f4:	d266                	sw	s9,36(sp)
-230041f6:	d06a                	sw	s10,32(sp)
-230041f8:	230354b7          	lui	s1,0x23035
+230041fc:	715d                	addi	sp,sp,-80
+230041fe:	c686                	sw	ra,76(sp)
+23004200:	c4a2                	sw	s0,72(sp)
+23004202:	c2a6                	sw	s1,68(sp)
+23004204:	c0ca                	sw	s2,64(sp)
+23004206:	de4e                	sw	s3,60(sp)
+23004208:	dc52                	sw	s4,56(sp)
+2300420a:	da56                	sw	s5,52(sp)
+2300420c:	d85a                	sw	s6,48(sp)
+2300420e:	d65e                	sw	s7,44(sp)
+23004210:	d462                	sw	s8,40(sp)
+23004212:	ce6e                	sw	s11,28(sp)
+23004214:	d266                	sw	s9,36(sp)
+23004216:	d06a                	sw	s10,32(sp)
+23004218:	230354b7          	lui	s1,0x23035
     system_clock_init();
-230041fc:	2cad                	jal	23004476 <system_clock_init>
+2300421c:	2cad                	jal	23004496 <system_clock_init>
     peripheral_clock_init();
-230041fe:	26a9                	jal	23004548 <peripheral_clock_init>
+2300421e:	26a9                	jal	23004568 <peripheral_clock_init>
     gpio_cfg.smtCtrl = 1;
-23004200:	0a448493          	addi	s1,s1,164 # 230350a4 <af_pin_table>
+23004220:	0a448493          	addi	s1,s1,164 # 230350a4 <af_pin_table>
     gpio_cfg.drive = 2;
-23004204:	10200793          	li	a5,258
-23004208:	00f11623          	sh	a5,12(sp)
+23004224:	10200793          	li	a5,258
+23004228:	00f11623          	sh	a5,12(sp)
     for (int i = 0; i < sizeof(af_pin_table) / sizeof(af_pin_table[0]); i++) {
-2300420c:	00448413          	addi	s0,s1,4
+2300422c:	00448413          	addi	s0,s1,4
     gpio_cfg.drive = 2;
-23004210:	0ff00793          	li	a5,255
-23004214:	03c48493          	addi	s1,s1,60
-23004218:	4501                	li	a0,0
+23004230:	0ff00793          	li	a5,255
+23004234:	03c48493          	addi	s1,s1,60
+23004238:	4501                	li	a0,0
     uint8_t hbn_gpio_mask = 0x1f;
-2300421a:	4a7d                	li	s4,31
+2300423a:	4a7d                	li	s4,31
     uint8_t hbn_aon_ie = 0;
-2300421c:	4981                	li	s3,0
+2300423c:	4981                	li	s3,0
         gpio_cfg.gpioMode = GPIO_MODE_AF;
-2300421e:	4d89                	li	s11,2
+2300423e:	4d89                	li	s11,2
         if ((af_pin_table[i].pin > GPIO_PIN_8) && (af_pin_table[i].pin < GPIO_PIN_13)) {
-23004220:	490d                	li	s2,3
+23004240:	490d                	li	s2,3
         } else if ((af_pin_table[i].func & 0xF0) == 0xF0) {
-23004222:	0f000a93          	li	s5,240
+23004242:	0f000a93          	li	s5,240
         } else if (af_pin_table[i].func == GPIO_FUN_PWM) {
-23004226:	4ba1                	li	s7,8
+23004246:	4ba1                	li	s7,8
         } else if (af_pin_table[i].func == GPIO_FUN_QDEC) {
-23004228:	4b51                	li	s6,20
+23004248:	4b51                	li	s6,20
         } else if (af_pin_table[i].func == GPIO_FUN_QDEC_LED) {
-2300422a:	0d300c13          	li	s8,211
+2300424a:	0d300c13          	li	s8,211
         gpio_cfg.gpioFun = af_pin_table[i].func;
-2300422e:	0ff7f593          	zext.b	a1,a5
+2300424e:	0ff7f593          	zext.b	a1,a5
         if ((af_pin_table[i].pin > GPIO_PIN_8) && (af_pin_table[i].pin < GPIO_PIN_13)) {
-23004232:	ff750713          	addi	a4,a0,-9
+23004252:	ff750713          	addi	a4,a0,-9
         gpio_cfg.gpioMode = GPIO_MODE_AF;
-23004236:	01b11523          	sh	s11,10(sp)
+23004256:	01b11523          	sh	s11,10(sp)
         gpio_cfg.gpioPin = af_pin_table[i].pin;
-2300423a:	00a10423          	sb	a0,8(sp)
+2300425a:	00a10423          	sb	a0,8(sp)
         gpio_cfg.gpioFun = af_pin_table[i].func;
-2300423e:	00b104a3          	sb	a1,9(sp)
+2300425e:	00b104a3          	sb	a1,9(sp)
         if ((af_pin_table[i].pin > GPIO_PIN_8) && (af_pin_table[i].pin < GPIO_PIN_13)) {
-23004242:	0ff77693          	zext.b	a3,a4
-23004246:	02d96263          	bltu	s2,a3,2300426a <board_init+0x8e>
+23004262:	0ff77693          	zext.b	a3,a4
+23004266:	02d96263          	bltu	s2,a3,2300428a <board_init+0x8e>
             if ((af_pin_table[i].func != 10) && ((af_pin_table[i].func < GPIO_FUN_GPIO_OUTPUT_UP) || (af_pin_table[i].func > GPIO_FUN_GPIO_OUTPUT_NONE)))
-2300424a:	4629                	li	a2,10
-2300424c:	06c78163          	beq	a5,a2,230042ae <board_init+0xd2>
-23004250:	f2078613          	addi	a2,a5,-224
-23004254:	0642                	slli	a2,a2,0x10
-23004256:	8241                	srli	a2,a2,0x10
-23004258:	00cdf963          	bgeu	s11,a2,2300426a <board_init+0x8e>
+2300426a:	4629                	li	a2,10
+2300426c:	06c78163          	beq	a5,a2,230042ce <board_init+0xd2>
+23004270:	f2078613          	addi	a2,a5,-224
+23004274:	0642                	slli	a2,a2,0x10
+23004276:	8241                	srli	a2,a2,0x10
+23004278:	00cdf963          	bgeu	s11,a2,2300428a <board_init+0x8e>
                 hbn_aon_ie |= (1 << (af_pin_table[i].pin - 9));
-2300425c:	4605                	li	a2,1
-2300425e:	00e61633          	sll	a2,a2,a4
-23004262:	013669b3          	or	s3,a2,s3
-23004266:	0ff9f993          	zext.b	s3,s3
+2300427c:	4605                	li	a2,1
+2300427e:	00e61633          	sll	a2,a2,a4
+23004282:	013669b3          	or	s3,a2,s3
+23004286:	0ff9f993          	zext.b	s3,s3
         if (af_pin_table[i].func == GPIO_FUN_UNUSED) {
-2300426a:	0ff00613          	li	a2,255
-2300426e:	02c78863          	beq	a5,a2,2300429e <board_init+0xc2>
+2300428a:	0ff00613          	li	a2,255
+2300428e:	02c78863          	beq	a5,a2,230042be <board_init+0xc2>
         } else if (af_pin_table[i].func == GPIO_FUN_WAKEUP) {
-23004272:	0fe00613          	li	a2,254
-23004276:	04c78e63          	beq	a5,a2,230042d2 <board_init+0xf6>
+23004292:	0fe00613          	li	a2,254
+23004296:	04c78e63          	beq	a5,a2,230042f2 <board_init+0xf6>
         } else if ((af_pin_table[i].func == GPIO_FUN_USB) || (af_pin_table[i].func == GPIO_FUN_DAC) || (af_pin_table[i].func == GPIO_FUN_ADC)) {
-2300427a:	f3078713          	addi	a4,a5,-208
-2300427e:	0742                	slli	a4,a4,0x10
-23004280:	8341                	srli	a4,a4,0x10
-23004282:	02ede663          	bltu	s11,a4,230042ae <board_init+0xd2>
+2300429a:	f3078713          	addi	a4,a5,-208
+2300429e:	0742                	slli	a4,a4,0x10
+230042a0:	8341                	srli	a4,a4,0x10
+230042a2:	02ede663          	bltu	s11,a4,230042ce <board_init+0xd2>
             gpio_cfg.gpioFun = GPIO_FUN_ANALOG;
-23004286:	47a9                	li	a5,10
-23004288:	00f104a3          	sb	a5,9(sp)
+230042a6:	47a9                	li	a5,10
+230042a8:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_ANALOG;
-2300428c:	20300793          	li	a5,515
-23004290:	00f11523          	sh	a5,10(sp)
+230042ac:	20300793          	li	a5,515
+230042b0:	00f11523          	sh	a5,10(sp)
         GLB_GPIO_Init(&gpio_cfg);
-23004294:	0028                	addi	a0,sp,8
-23004296:	1f010097          	auipc	ra,0x1f010
-2300429a:	e96080e7          	jalr	-362(ra) # 4201412c <GLB_GPIO_Init>
+230042b4:	0028                	addi	a0,sp,8
+230042b6:	1f010097          	auipc	ra,0x1f010
+230042ba:	e76080e7          	jalr	-394(ra) # 4201412c <GLB_GPIO_Init>
     for (int i = 0; i < sizeof(af_pin_table) / sizeof(af_pin_table[0]); i++) {
-2300429e:	04940963          	beq	s0,s1,230042f0 <board_init+0x114>
+230042be:	04940963          	beq	s0,s1,23004310 <board_init+0x114>
         gpio_cfg.gpioPin = af_pin_table[i].pin;
-230042a2:	00044503          	lbu	a0,0(s0)
+230042c2:	00044503          	lbu	a0,0(s0)
         gpio_cfg.gpioFun = af_pin_table[i].func;
-230042a6:	00245783          	lhu	a5,2(s0)
-230042aa:	0411                	addi	s0,s0,4
-230042ac:	b749                	j	2300422e <board_init+0x52>
+230042c6:	00245783          	lhu	a5,2(s0)
+230042ca:	0411                	addi	s0,s0,4
+230042cc:	b749                	j	2300424e <board_init+0x52>
         } else if ((af_pin_table[i].func & 0xF0) == 0xF0) {
-230042ae:	0f07f713          	andi	a4,a5,240
-230042b2:	0b570163          	beq	a4,s5,23004354 <board_init+0x178>
+230042ce:	0f07f713          	andi	a4,a5,240
+230042d2:	0b570163          	beq	a4,s5,23004374 <board_init+0x178>
         } else if (af_pin_table[i].func == GPIO_FUN_PWM) {
-230042b6:	09778163          	beq	a5,s7,23004338 <board_init+0x15c>
+230042d6:	09778163          	beq	a5,s7,23004358 <board_init+0x15c>
         } else if (af_pin_table[i].func == GPIO_FUN_QDEC) {
-230042ba:	0b678d63          	beq	a5,s6,23004374 <board_init+0x198>
+230042da:	0b678d63          	beq	a5,s6,23004394 <board_init+0x198>
         } else if (af_pin_table[i].func == GPIO_FUN_QDEC_LED) {
-230042be:	0d878263          	beq	a5,s8,23004382 <board_init+0x1a6>
+230042de:	0d878263          	beq	a5,s8,230043a2 <board_init+0x1a6>
         } else if (af_pin_table[i].func == GPIO_FUN_CLK_OUT) {
-230042c2:	e7f9                	bnez	a5,23004390 <board_init+0x1b4>
+230042e2:	e7f9                	bnez	a5,230043b0 <board_init+0x1b4>
             if (af_pin_table[i].pin % 2) {
-230042c4:	8905                	andi	a0,a0,1
-230042c6:	12050563          	beqz	a0,230043f0 <board_init+0x214>
+230042e4:	8905                	andi	a0,a0,1
+230042e6:	12050563          	beqz	a0,23004410 <board_init+0x214>
                 GLB_Set_Chip_Out_1_CLK_Sel(GLB_CHIP_CLK_OUT_I2S_REF_CLK);
-230042ca:	4505                	li	a0,1
-230042cc:	43e020ef          	jal	ra,2300670a <GLB_Set_Chip_Out_1_CLK_Sel>
-230042d0:	b7d1                	j	23004294 <board_init+0xb8>
+230042ea:	4505                	li	a0,1
+230042ec:	41e020ef          	jal	ra,2300670a <GLB_Set_Chip_Out_1_CLK_Sel>
+230042f0:	b7d1                	j	230042b4 <board_init+0xb8>
             if (af_pin_table[i].pin < GPIO_PIN_8) {
-230042d2:	479d                	li	a5,7
-230042d4:	06a7e663          	bltu	a5,a0,23004340 <board_init+0x164>
+230042f2:	479d                	li	a5,7
+230042f4:	06a7e663          	bltu	a5,a0,23004360 <board_init+0x164>
                 tmpVal = BL_RD_REG(PDS_BASE, PDS_GPIO_INT);
-230042d8:	4000e737          	lui	a4,0x4000e
-230042dc:	433c                	lw	a5,64(a4)
+230042f8:	4000e737          	lui	a4,0x4000e
+230042fc:	433c                	lw	a5,64(a4)
                 tmpVal = BL_SET_REG_BITS_VAL(tmpVal, PDS_GPIO_INT_SELECT, af_pin_table[i].pin);
-230042de:	0522                	slli	a0,a0,0x8
-230042e0:	88e7f793          	andi	a5,a5,-1906
-230042e4:	8fc9                	or	a5,a5,a0
+230042fe:	0522                	slli	a0,a0,0x8
+23004300:	88e7f793          	andi	a5,a5,-1906
+23004304:	8fc9                	or	a5,a5,a0
                 tmpVal = BL_CLR_REG_BIT(tmpVal, PDS_GPIO_INT_MASK);
-230042e6:	0407e793          	ori	a5,a5,64
+23004306:	0407e793          	ori	a5,a5,64
                 BL_WR_REG(PDS_BASE, PDS_GPIO_INT, tmpVal);
-230042ea:	c33c                	sw	a5,64(a4)
+2300430a:	c33c                	sw	a5,64(a4)
     for (int i = 0; i < sizeof(af_pin_table) / sizeof(af_pin_table[0]); i++) {
-230042ec:	fa941be3          	bne	s0,s1,230042a2 <board_init+0xc6>
+2300430c:	fa941be3          	bne	s0,s1,230042c2 <board_init+0xc6>
     tmpVal = BL_RD_REG(HBN_BASE, HBN_IRQ_MODE);
-230042f0:	4000f6b7          	lui	a3,0x4000f
-230042f4:	4adc                	lw	a5,20(a3)
+23004310:	4000f6b7          	lui	a3,0x4000f
+23004314:	4adc                	lw	a5,20(a3)
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_PIN_WAKEUP_MASK, hbn_gpio_mask);
-230042f6:	0a0e                	slli	s4,s4,0x3
+23004316:	0a0e                	slli	s4,s4,0x3
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_REG_AON_PAD_IE_SMT, hbn_aon_ie);
-230042f8:	7779                	lui	a4,0xffffe
+23004318:	7779                	lui	a4,0xffffe
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_PIN_WAKEUP_MASK, hbn_gpio_mask);
-230042fa:	f077f793          	andi	a5,a5,-249
-230042fe:	00fa67b3          	or	a5,s4,a5
+2300431a:	f077f793          	andi	a5,a5,-249
+2300431e:	00fa67b3          	or	a5,s4,a5
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_REG_AON_PAD_IE_SMT, hbn_aon_ie);
-23004302:	0ff70713          	addi	a4,a4,255 # ffffe0ff <_heap_start+0xbdfd5cff>
-23004306:	8f7d                	and	a4,a4,a5
-23004308:	00899793          	slli	a5,s3,0x8
-2300430c:	8fd9                	or	a5,a5,a4
+23004322:	0ff70713          	addi	a4,a4,255 # ffffe0ff <_heap_start+0xbdfd5cff>
+23004326:	8f7d                	and	a4,a4,a5
+23004328:	00899793          	slli	a5,s3,0x8
+2300432c:	8fd9                	or	a5,a5,a4
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_PIN_WAKEUP_MODE, HBN_GPIO_INT_TRIGGER_ASYNC_FALLING_EDGE);
-2300430e:	7741                	lui	a4,0xffff0
-23004310:	1761                	addi	a4,a4,-8
+2300432e:	7741                	lui	a4,0xffff0
+23004330:	1761                	addi	a4,a4,-8
     board_clock_init();
     board_pin_mux_init();
-23004312:	40b6                	lw	ra,76(sp)
-23004314:	4426                	lw	s0,72(sp)
+23004332:	40b6                	lw	ra,76(sp)
+23004334:	4426                	lw	s0,72(sp)
     tmpVal = BL_SET_REG_BITS_VAL(tmpVal, HBN_PIN_WAKEUP_MODE, HBN_GPIO_INT_TRIGGER_ASYNC_FALLING_EDGE);
-23004316:	8ff9                	and	a5,a5,a4
-23004318:	0047e793          	ori	a5,a5,4
+23004336:	8ff9                	and	a5,a5,a4
+23004338:	0047e793          	ori	a5,a5,4
     BL_WR_REG(HBN_BASE, HBN_IRQ_MODE, tmpVal);
-2300431c:	cadc                	sw	a5,20(a3)
-2300431e:	4496                	lw	s1,68(sp)
-23004320:	4906                	lw	s2,64(sp)
-23004322:	59f2                	lw	s3,60(sp)
-23004324:	5a62                	lw	s4,56(sp)
-23004326:	5ad2                	lw	s5,52(sp)
-23004328:	5b42                	lw	s6,48(sp)
-2300432a:	5bb2                	lw	s7,44(sp)
-2300432c:	5c22                	lw	s8,40(sp)
-2300432e:	5c92                	lw	s9,36(sp)
-23004330:	5d02                	lw	s10,32(sp)
-23004332:	4df2                	lw	s11,28(sp)
-23004334:	6161                	addi	sp,sp,80
-23004336:	8082                	ret
+2300433c:	cadc                	sw	a5,20(a3)
+2300433e:	4496                	lw	s1,68(sp)
+23004340:	4906                	lw	s2,64(sp)
+23004342:	59f2                	lw	s3,60(sp)
+23004344:	5a62                	lw	s4,56(sp)
+23004346:	5ad2                	lw	s5,52(sp)
+23004348:	5b42                	lw	s6,48(sp)
+2300434a:	5bb2                	lw	s7,44(sp)
+2300434c:	5c22                	lw	s8,40(sp)
+2300434e:	5c92                	lw	s9,36(sp)
+23004350:	5d02                	lw	s10,32(sp)
+23004352:	4df2                	lw	s11,28(sp)
+23004354:	6161                	addi	sp,sp,80
+23004356:	8082                	ret
             gpio_cfg.pullType = GPIO_PULL_DOWN;
-23004338:	4785                	li	a5,1
-2300433a:	00f105a3          	sb	a5,11(sp)
-2300433e:	bf99                	j	23004294 <board_init+0xb8>
+23004358:	4785                	li	a5,1
+2300435a:	00f105a3          	sb	a5,11(sp)
+2300435e:	bf99                	j	230042b4 <board_init+0xb8>
             } else if ((af_pin_table[i].pin > GPIO_PIN_8) && (af_pin_table[i].pin < GPIO_PIN_13)) {
-23004340:	f4d96fe3          	bltu	s2,a3,2300429e <board_init+0xc2>
+23004360:	f4d96fe3          	bltu	s2,a3,230042be <board_init+0xc2>
                 hbn_gpio_mask &= ~(1 << (af_pin_table[i].pin - 9));
-23004344:	4785                	li	a5,1
-23004346:	00e79733          	sll	a4,a5,a4
-2300434a:	fff74713          	not	a4,a4
-2300434e:	01477a33          	and	s4,a4,s4
-23004352:	b7b1                	j	2300429e <board_init+0xc2>
+23004364:	4785                	li	a5,1
+23004366:	00e79733          	sll	a4,a5,a4
+2300436a:	fff74713          	not	a4,a4
+2300436e:	01477a33          	and	s4,a4,s4
+23004372:	b7b1                	j	230042be <board_init+0xc2>
             uint8_t uart_func = af_pin_table[i].func & 0x07;
-23004354:	0075fd13          	andi	s10,a1,7
+23004374:	0075fd13          	andi	s10,a1,7
             uint8_t uart_sig = gpio_cfg.gpioPin % 8;
-23004358:	00757c93          	andi	s9,a0,7
+23004378:	00757c93          	andi	s9,a0,7
             GLB_UART_Fun_Sel((GLB_UART_SIG_Type)uart_sig, (GLB_UART_SIG_FUN_Type)uart_func);
-2300435c:	85ea                	mv	a1,s10
+2300437c:	85ea                	mv	a1,s10
             gpio_cfg.gpioFun = GPIO_FUN_UART;
-2300435e:	471d                	li	a4,7
+2300437e:	471d                	li	a4,7
             GLB_UART_Fun_Sel((GLB_UART_SIG_Type)uart_sig, (GLB_UART_SIG_FUN_Type)uart_func);
-23004360:	8566                	mv	a0,s9
+23004380:	8566                	mv	a0,s9
             gpio_cfg.gpioFun = GPIO_FUN_UART;
-23004362:	00e104a3          	sb	a4,9(sp)
+23004382:	00e104a3          	sb	a4,9(sp)
             GLB_UART_Fun_Sel((GLB_UART_SIG_Type)uart_sig, (GLB_UART_SIG_FUN_Type)uart_func);
-23004366:	526020ef          	jal	ra,2300688c <GLB_UART_Fun_Sel>
+23004386:	506020ef          	jal	ra,2300688c <GLB_UART_Fun_Sel>
             GLB_UART_Fun_Sel((GLB_UART_SIG_Type)uart_func, (GLB_UART_SIG_FUN_Type)uart_sig);
-2300436a:	85e6                	mv	a1,s9
-2300436c:	856a                	mv	a0,s10
-2300436e:	51e020ef          	jal	ra,2300688c <GLB_UART_Fun_Sel>
-23004372:	b70d                	j	23004294 <board_init+0xb8>
+2300438a:	85e6                	mv	a1,s9
+2300438c:	856a                	mv	a0,s10
+2300438e:	4fe020ef          	jal	ra,2300688c <GLB_UART_Fun_Sel>
+23004392:	b70d                	j	230042b4 <board_init+0xb8>
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004374:	20000793          	li	a5,512
+23004394:	20000793          	li	a5,512
             gpio_cfg.gpioFun = GPIO_FUN_QDEC;
-23004378:	016104a3          	sb	s6,9(sp)
+23004398:	016104a3          	sb	s6,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-2300437c:	00f11523          	sh	a5,10(sp)
-23004380:	bf11                	j	23004294 <board_init+0xb8>
+2300439c:	00f11523          	sh	a5,10(sp)
+230043a0:	bf11                	j	230042b4 <board_init+0xb8>
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-23004382:	20100793          	li	a5,513
+230043a2:	20100793          	li	a5,513
             gpio_cfg.gpioFun = GPIO_FUN_QDEC;
-23004386:	016104a3          	sb	s6,9(sp)
+230043a6:	016104a3          	sb	s6,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-2300438a:	00f11523          	sh	a5,10(sp)
-2300438e:	b719                	j	23004294 <board_init+0xb8>
+230043aa:	00f11523          	sh	a5,10(sp)
+230043ae:	b719                	j	230042b4 <board_init+0xb8>
         } else if ((af_pin_table[i].func == GPIO_FUN_GPIO_INPUT_UP) || (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_FALLING_EDGE) || (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_LOW_LEVEL)) {
-23004390:	0e300713          	li	a4,227
-23004394:	06e78263          	beq	a5,a4,230043f8 <board_init+0x21c>
-23004398:	0e700713          	li	a4,231
-2300439c:	06e78e63          	beq	a5,a4,23004418 <board_init+0x23c>
-230043a0:	0e900713          	li	a4,233
-230043a4:	06e78063          	beq	a5,a4,23004404 <board_init+0x228>
+230043b0:	0e300713          	li	a4,227
+230043b4:	06e78263          	beq	a5,a4,23004418 <board_init+0x21c>
+230043b8:	0e700713          	li	a4,231
+230043bc:	06e78e63          	beq	a5,a4,23004438 <board_init+0x23c>
+230043c0:	0e900713          	li	a4,233
+230043c4:	06e78063          	beq	a5,a4,23004424 <board_init+0x228>
         } else if ((af_pin_table[i].func == GPIO_FUN_GPIO_INPUT_DOWN) || (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_RISING_EDGE) || (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_HIGH_LEVEL)) {
-230043a8:	0e400713          	li	a4,228
-230043ac:	06e78863          	beq	a5,a4,2300441c <board_init+0x240>
-230043b0:	0e600713          	li	a4,230
-230043b4:	08e78863          	beq	a5,a4,23004444 <board_init+0x268>
-230043b8:	0e800713          	li	a4,232
-230043bc:	06e78863          	beq	a5,a4,2300442c <board_init+0x250>
+230043c8:	0e400713          	li	a4,228
+230043cc:	06e78863          	beq	a5,a4,2300443c <board_init+0x240>
+230043d0:	0e600713          	li	a4,230
+230043d4:	08e78863          	beq	a5,a4,23004464 <board_init+0x268>
+230043d8:	0e800713          	li	a4,232
+230043dc:	06e78863          	beq	a5,a4,2300444c <board_init+0x250>
         } else if (af_pin_table[i].func == GPIO_FUN_GPIO_INPUT_NONE) {
-230043c0:	0e500713          	li	a4,229
-230043c4:	08e78263          	beq	a5,a4,23004448 <board_init+0x26c>
+230043e0:	0e500713          	li	a4,229
+230043e4:	08e78263          	beq	a5,a4,23004468 <board_init+0x26c>
         } else if (af_pin_table[i].func == GPIO_FUN_GPIO_OUTPUT_UP) {
-230043c8:	0e000713          	li	a4,224
-230043cc:	08e78663          	beq	a5,a4,23004458 <board_init+0x27c>
+230043e8:	0e000713          	li	a4,224
+230043ec:	08e78663          	beq	a5,a4,23004478 <board_init+0x27c>
         } else if (af_pin_table[i].func == GPIO_FUN_GPIO_OUTPUT_DOWN) {
-230043d0:	0e100713          	li	a4,225
-230043d4:	08e78963          	beq	a5,a4,23004466 <board_init+0x28a>
+230043f0:	0e100713          	li	a4,225
+230043f4:	08e78963          	beq	a5,a4,23004486 <board_init+0x28a>
         } else if (af_pin_table[i].func == GPIO_FUN_GPIO_OUTPUT_NONE) {
-230043d8:	0e200713          	li	a4,226
-230043dc:	eae79ce3          	bne	a5,a4,23004294 <board_init+0xb8>
+230043f8:	0e200713          	li	a4,226
+230043fc:	eae79ce3          	bne	a5,a4,230042b4 <board_init+0xb8>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-230043e0:	47ad                	li	a5,11
-230043e2:	00f104a3          	sb	a5,9(sp)
+23004400:	47ad                	li	a5,11
+23004402:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-230043e6:	20100793          	li	a5,513
-230043ea:	00f11523          	sh	a5,10(sp)
-230043ee:	b55d                	j	23004294 <board_init+0xb8>
+23004406:	20100793          	li	a5,513
+2300440a:	00f11523          	sh	a5,10(sp)
+2300440e:	b55d                	j	230042b4 <board_init+0xb8>
                 GLB_Set_Chip_Out_0_CLK_Sel(GLB_CHIP_CLK_OUT_I2S_REF_CLK);
-230043f0:	4505                	li	a0,1
-230043f2:	300020ef          	jal	ra,230066f2 <GLB_Set_Chip_Out_0_CLK_Sel>
-230043f6:	bd79                	j	23004294 <board_init+0xb8>
+23004410:	4505                	li	a0,1
+23004412:	2e0020ef          	jal	ra,230066f2 <GLB_Set_Chip_Out_0_CLK_Sel>
+23004416:	bd79                	j	230042b4 <board_init+0xb8>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-230043f8:	47ad                	li	a5,11
-230043fa:	00f104a3          	sb	a5,9(sp)
+23004418:	47ad                	li	a5,11
+2300441a:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-230043fe:	00010523          	sb	zero,10(sp)
+2300441e:	00010523          	sb	zero,10(sp)
             if (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_FALLING_EDGE) {
-23004402:	bd49                	j	23004294 <board_init+0xb8>
+23004422:	bd49                	j	230042b4 <board_init+0xb8>
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004404:	4609                	li	a2,2
+23004424:	4609                	li	a2,2
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004406:	47ad                	li	a5,11
+23004426:	47ad                	li	a5,11
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004408:	4585                	li	a1,1
+23004428:	4585                	li	a1,1
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-2300440a:	00f104a3          	sb	a5,9(sp)
+2300442a:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-2300440e:	00010523          	sb	zero,10(sp)
+2300442e:	00010523          	sb	zero,10(sp)
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004412:	4ce020ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004416:	bdbd                	j	23004294 <board_init+0xb8>
+23004432:	4ae020ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004436:	bdbd                	j	230042b4 <board_init+0xb8>
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
-23004418:	4601                	li	a2,0
-2300441a:	b7f5                	j	23004406 <board_init+0x22a>
+23004438:	4601                	li	a2,0
+2300443a:	b7f5                	j	23004426 <board_init+0x22a>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-2300441c:	47ad                	li	a5,11
-2300441e:	00f104a3          	sb	a5,9(sp)
+2300443c:	47ad                	li	a5,11
+2300443e:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004422:	10000793          	li	a5,256
-23004426:	00f11523          	sh	a5,10(sp)
+23004442:	10000793          	li	a5,256
+23004446:	00f11523          	sh	a5,10(sp)
             if (af_pin_table[i].func == GPIO_FUN_GPIO_EXTI_RISING_EDGE) {
-2300442a:	b5ad                	j	23004294 <board_init+0xb8>
+2300444a:	b5ad                	j	230042b4 <board_init+0xb8>
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-2300442c:	460d                	li	a2,3
+2300444c:	460d                	li	a2,3
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-2300442e:	47ad                	li	a5,11
-23004430:	00f104a3          	sb	a5,9(sp)
+2300444e:	47ad                	li	a5,11
+23004450:	00f104a3          	sb	a5,9(sp)
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004434:	4585                	li	a1,1
+23004454:	4585                	li	a1,1
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004436:	10000793          	li	a5,256
-2300443a:	00f11523          	sh	a5,10(sp)
+23004456:	10000793          	li	a5,256
+2300445a:	00f11523          	sh	a5,10(sp)
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-2300443e:	4a2020ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004442:	bd89                	j	23004294 <board_init+0xb8>
+2300445e:	482020ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004462:	bd89                	j	230042b4 <board_init+0xb8>
                 GLB_Set_GPIO_IntMod(af_pin_table[i].pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_PULSE);
-23004444:	4605                	li	a2,1
-23004446:	b7e5                	j	2300442e <board_init+0x252>
+23004464:	4605                	li	a2,1
+23004466:	b7e5                	j	2300444e <board_init+0x252>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004448:	47ad                	li	a5,11
-2300444a:	00f104a3          	sb	a5,9(sp)
+23004468:	47ad                	li	a5,11
+2300446a:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-2300444e:	20000793          	li	a5,512
-23004452:	00f11523          	sh	a5,10(sp)
-23004456:	bd3d                	j	23004294 <board_init+0xb8>
+2300446e:	20000793          	li	a5,512
+23004472:	00f11523          	sh	a5,10(sp)
+23004476:	bd3d                	j	230042b4 <board_init+0xb8>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004458:	47ad                	li	a5,11
-2300445a:	00f104a3          	sb	a5,9(sp)
+23004478:	47ad                	li	a5,11
+2300447a:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-2300445e:	4785                	li	a5,1
-23004460:	00f10523          	sb	a5,10(sp)
+2300447e:	4785                	li	a5,1
+23004480:	00f10523          	sb	a5,10(sp)
             gpio_cfg.pullType = GPIO_PULL_UP;
-23004464:	bd05                	j	23004294 <board_init+0xb8>
+23004484:	bd05                	j	230042b4 <board_init+0xb8>
             gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004466:	47ad                	li	a5,11
-23004468:	00f104a3          	sb	a5,9(sp)
+23004486:	47ad                	li	a5,11
+23004488:	00f104a3          	sb	a5,9(sp)
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-2300446c:	10100793          	li	a5,257
-23004470:	00f11523          	sh	a5,10(sp)
-23004474:	b505                	j	23004294 <board_init+0xb8>
+2300448c:	10100793          	li	a5,257
+23004490:	00f11523          	sh	a5,10(sp)
+23004494:	b505                	j	230042b4 <board_init+0xb8>
 
-23004476 <system_clock_init>:
+23004496 <system_clock_init>:
     tmpVal &= (~(1 << BL_AHB_SLAVE1_MJPEG));
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
 }
 
 void system_clock_init(void)
 {
-23004476:	1141                	addi	sp,sp,-16
+23004496:	1141                	addi	sp,sp,-16
 #if XTAL_TYPE != EXTERNAL_XTAL_32M
     internal_rc32m_init();
     AON_Power_Off_XTAL();
 #endif
     /*select root clock*/
     GLB_Set_System_CLK(XTAL_TYPE, BSP_ROOT_CLOCK_SOURCE);
-23004478:	4591                	li	a1,4
-2300447a:	4505                	li	a0,1
+23004498:	4591                	li	a1,4
+2300449a:	4505                	li	a0,1
 {
-2300447c:	c606                	sw	ra,12(sp)
-2300447e:	c422                	sw	s0,8(sp)
+2300449c:	c606                	sw	ra,12(sp)
+2300449e:	c422                	sw	s0,8(sp)
     GLB_Set_System_CLK(XTAL_TYPE, BSP_ROOT_CLOCK_SOURCE);
-23004480:	1f010097          	auipc	ra,0x1f010
-23004484:	540080e7          	jalr	1344(ra) # 420149c0 <GLB_Set_System_CLK>
+230044a0:	1f010097          	auipc	ra,0x1f010
+230044a4:	520080e7          	jalr	1312(ra) # 420149c0 <GLB_Set_System_CLK>
 #if BSP_ROOT_CLOCK_SOURCE == ROOT_CLOCK_SOURCE_PLL_57P6M
     /* fix 57.6M */
     SystemCoreClockSet(57.6 * 1000 * 1000);
 #endif
     /*set fclk/hclk and bclk clock*/
     GLB_Set_System_CLK_Div(BSP_FCLK_DIV, BSP_BCLK_DIV);
-23004488:	4585                	li	a1,1
-2300448a:	4501                	li	a0,0
-2300448c:	1f010097          	auipc	ra,0x1f010
-23004490:	3c4080e7          	jalr	964(ra) # 42014850 <GLB_Set_System_CLK_Div>
+230044a8:	4585                	li	a1,1
+230044aa:	4501                	li	a0,0
+230044ac:	1f010097          	auipc	ra,0x1f010
+230044b0:	3a4080e7          	jalr	932(ra) # 42014850 <GLB_Set_System_CLK_Div>
 
 uint32_t system_clock_get(enum system_clock_type type)
 {
     switch (type) {
         case SYSTEM_CLOCK_ROOT_CLOCK:
             if (GLB_Get_Root_CLK_Sel() == 0) {
-23004494:	1f010097          	auipc	ra,0x1f010
-23004498:	50e080e7          	jalr	1294(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-2300449c:	c151                	beqz	a0,23004520 <system_clock_init+0xaa>
+230044b4:	1f010097          	auipc	ra,0x1f010
+230044b8:	4ee080e7          	jalr	1262(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230044bc:	c151                	beqz	a0,23004540 <system_clock_init+0xaa>
                 return 32 * 1000 * 1000;
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-2300449e:	1f010097          	auipc	ra,0x1f010
-230044a2:	504080e7          	jalr	1284(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230044a6:	4705                	li	a4,1
-230044a8:	06e50c63          	beq	a0,a4,23004520 <system_clock_init+0xaa>
+230044be:	1f010097          	auipc	ra,0x1f010
+230044c2:	4e4080e7          	jalr	1252(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230044c6:	4705                	li	a4,1
+230044c8:	06e50c63          	beq	a0,a4,23004540 <system_clock_init+0xaa>
                 return 32 * 1000 * 1000;
             else {
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-230044ac:	400007b7          	lui	a5,0x40000
-230044b0:	439c                	lw	a5,0(a5)
+230044cc:	400007b7          	lui	a5,0x40000
+230044d0:	439c                	lw	a5,0(a5)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-230044b2:	8391                	srli	a5,a5,0x4
-230044b4:	8b8d                	andi	a5,a5,3
+230044d2:	8391                	srli	a5,a5,0x4
+230044d4:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-230044b6:	cbb5                	beqz	a5,2300452a <system_clock_init+0xb4>
+230044d6:	cbb5                	beqz	a5,2300454a <system_clock_init+0xb4>
                     return 57.6 * 1000 * 1000;
                 } else if (tmpVal == 1) {
-230044b8:	08e78363          	beq	a5,a4,2300453e <system_clock_init+0xc8>
+230044d8:	08e78363          	beq	a5,a4,2300455e <system_clock_init+0xc8>
                     return 96 * 1000 * 1000;
                 } else if (tmpVal == 2) {
-230044bc:	4709                	li	a4,2
+230044dc:	4709                	li	a4,2
                     return 144 * 1000 * 1000;
                 } else {
                     return 0;
-230044be:	4401                	li	s0,0
+230044de:	4401                	li	s0,0
                 } else if (tmpVal == 2) {
-230044c0:	06e78a63          	beq	a5,a4,23004534 <system_clock_init+0xbe>
+230044e0:	06e78a63          	beq	a5,a4,23004554 <system_clock_init+0xbe>
             }
         case SYSTEM_CLOCK_FCLK:
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1);
 
         case SYSTEM_CLOCK_BCLK:
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-230044c4:	1f010097          	auipc	ra,0x1f010
-230044c8:	4f2080e7          	jalr	1266(ra) # 420149b6 <GLB_Get_HCLK_Div>
-230044cc:	0505                	addi	a0,a0,1
-230044ce:	02a45433          	divu	s0,s0,a0
-230044d2:	1f010097          	auipc	ra,0x1f010
-230044d6:	4da080e7          	jalr	1242(ra) # 420149ac <GLB_Get_BCLK_Div>
-230044da:	00150613          	addi	a2,a0,1
+230044e4:	1f010097          	auipc	ra,0x1f010
+230044e8:	4d2080e7          	jalr	1234(ra) # 420149b6 <GLB_Get_HCLK_Div>
+230044ec:	0505                	addi	a0,a0,1
+230044ee:	02a45433          	divu	s0,s0,a0
+230044f2:	1f010097          	auipc	ra,0x1f010
+230044f6:	4ba080e7          	jalr	1210(ra) # 420149ac <GLB_Get_BCLK_Div>
+230044fa:	00150613          	addi	a2,a0,1
     GLB_Set_MTimer_CLK(1, GLB_MTIMER_CLK_BCLK, mtimer_get_clk_src_div());
-230044de:	4581                	li	a1,0
-230044e0:	4505                	li	a0,1
+230044fe:	4581                	li	a1,0
+23004500:	4505                	li	a0,1
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-230044e2:	02c45433          	divu	s0,s0,a2
+23004502:	02c45433          	divu	s0,s0,a2
     return (system_clock_get(SYSTEM_CLOCK_BCLK) / 1000 / 1000 - 1);
-230044e6:	000f4637          	lui	a2,0xf4
-230044ea:	24060613          	addi	a2,a2,576 # f4240 <_heap_size+0xee640>
-230044ee:	02c45633          	divu	a2,s0,a2
+23004506:	000f4637          	lui	a2,0xf4
+2300450a:	24060613          	addi	a2,a2,576 # f4240 <_heap_size+0xee640>
+2300450e:	02c45633          	divu	a2,s0,a2
     GLB_Set_MTimer_CLK(1, GLB_MTIMER_CLK_BCLK, mtimer_get_clk_src_div());
-230044f2:	167d                	addi	a2,a2,-1
-230044f4:	2ce020ef          	jal	ra,230067c2 <GLB_Set_MTimer_CLK>
+23004512:	167d                	addi	a2,a2,-1
+23004514:	2ae020ef          	jal	ra,230067c2 <GLB_Set_MTimer_CLK>
     PDS_Set_Audio_PLL_Freq(BSP_AUDIO_PLL_CLOCK_SOURCE - ROOT_CLOCK_SOURCE_AUPLL_12288000_HZ);
-230044f8:	4511                	li	a0,4
-230044fa:	1f010097          	auipc	ra,0x1f010
-230044fe:	3ec080e7          	jalr	1004(ra) # 420148e6 <PDS_Set_Audio_PLL_Freq>
+23004518:	4511                	li	a0,4
+2300451a:	1f010097          	auipc	ra,0x1f010
+2300451e:	3cc080e7          	jalr	972(ra) # 420148e6 <PDS_Set_Audio_PLL_Freq>
     HBN_32K_Sel(HBN_32K_RC);
-23004502:	4501                	li	a0,0
-23004504:	1f010097          	auipc	ra,0x1f010
-23004508:	3a6080e7          	jalr	934(ra) # 420148aa <HBN_32K_Sel>
+23004522:	4501                	li	a0,0
+23004524:	1f010097          	auipc	ra,0x1f010
+23004528:	386080e7          	jalr	902(ra) # 420148aa <HBN_32K_Sel>
     HBN_Power_Off_Xtal_32K();
-2300450c:	1f010097          	auipc	ra,0x1f010
-23004510:	3c2080e7          	jalr	962(ra) # 420148ce <HBN_Power_Off_Xtal_32K>
+2300452c:	1f010097          	auipc	ra,0x1f010
+23004530:	3a2080e7          	jalr	930(ra) # 420148ce <HBN_Power_Off_Xtal_32K>
 }
-23004514:	4422                	lw	s0,8(sp)
-23004516:	40b2                	lw	ra,12(sp)
+23004534:	4422                	lw	s0,8(sp)
+23004536:	40b2                	lw	ra,12(sp)
     HBN_Set_XCLK_CLK_Sel(HBN_XCLK_CLK_XTAL);
-23004518:	4505                	li	a0,1
+23004538:	4505                	li	a0,1
 }
-2300451a:	0141                	addi	sp,sp,16
+2300453a:	0141                	addi	sp,sp,16
     HBN_Set_XCLK_CLK_Sel(HBN_XCLK_CLK_XTAL);
-2300451c:	4960206f          	j	230069b2 <HBN_Set_XCLK_CLK_Sel>
+2300453c:	4760206f          	j	230069b2 <HBN_Set_XCLK_CLK_Sel>
                 return 32 * 1000 * 1000;
-23004520:	01e85437          	lui	s0,0x1e85
-23004524:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-23004528:	bf71                	j	230044c4 <system_clock_init+0x4e>
+23004540:	01e85437          	lui	s0,0x1e85
+23004544:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004548:	bf71                	j	230044e4 <system_clock_init+0x4e>
                     return 57.6 * 1000 * 1000;
-2300452a:	036ef437          	lui	s0,0x36ef
-2300452e:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
-23004532:	bf49                	j	230044c4 <system_clock_init+0x4e>
+2300454a:	036ef437          	lui	s0,0x36ef
+2300454e:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
+23004552:	bf49                	j	230044e4 <system_clock_init+0x4e>
                     return 144 * 1000 * 1000;
-23004534:	08954437          	lui	s0,0x8954
-23004538:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
-2300453c:	b761                	j	230044c4 <system_clock_init+0x4e>
+23004554:	08954437          	lui	s0,0x8954
+23004558:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
+2300455c:	b761                	j	230044e4 <system_clock_init+0x4e>
                     return 96 * 1000 * 1000;
-2300453e:	05b8e437          	lui	s0,0x5b8e
-23004542:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-23004546:	bfbd                	j	230044c4 <system_clock_init+0x4e>
+2300455e:	05b8e437          	lui	s0,0x5b8e
+23004562:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004566:	bfbd                	j	230044e4 <system_clock_init+0x4e>
 
-23004548 <peripheral_clock_init>:
+23004568 <peripheral_clock_init>:
 {
-23004548:	1141                	addi	sp,sp,-16
-2300454a:	c422                	sw	s0,8(sp)
+23004568:	1141                	addi	sp,sp,-16
+2300456a:	c422                	sw	s0,8(sp)
     tmpVal = BL_RD_REG(GLB_BASE, GLB_CGEN_CFG1);
-2300454c:	40000437          	lui	s0,0x40000
-23004550:	505c                	lw	a5,36(s0)
+2300456c:	40000437          	lui	s0,0x40000
+23004570:	505c                	lw	a5,36(s0)
     tmpVal &= (~(1 << BL_AHB_SLAVE1_MJPEG));
-23004552:	8000d737          	lui	a4,0x8000d
-23004556:	f9f70713          	addi	a4,a4,-97 # 8000cf9f <_heap_start+0x3dfe4b9f>
-2300455a:	8ff9                	and	a5,a5,a4
+23004572:	8000d737          	lui	a4,0x8000d
+23004576:	f9f70713          	addi	a4,a4,-97 # 8000cf9f <_heap_start+0x3dfe4b9f>
+2300457a:	8ff9                	and	a5,a5,a4
 {
-2300455c:	c606                	sw	ra,12(sp)
-2300455e:	c226                	sw	s1,4(sp)
+2300457c:	c606                	sw	ra,12(sp)
+2300457e:	c226                	sw	s1,4(sp)
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-23004560:	d05c                	sw	a5,36(s0)
+23004580:	d05c                	sw	a5,36(s0)
     GLB_Set_UART_CLK(ENABLE, HBN_UART_CLK_96M, BSP_UART_CLOCK_DIV);
-23004562:	4601                	li	a2,0
-23004564:	4585                	li	a1,1
-23004566:	4505                	li	a0,1
+23004582:	4601                	li	a2,0
+23004584:	4585                	li	a1,1
+23004586:	4505                	li	a0,1
     tmpVal = BL_RD_REG(GLB_BASE, GLB_CGEN_CFG1);
-23004568:	5044                	lw	s1,36(s0)
+23004588:	5044                	lw	s1,36(s0)
     GLB_Set_UART_CLK(ENABLE, HBN_UART_CLK_96M, BSP_UART_CLOCK_DIV);
-2300456a:	14a020ef          	jal	ra,230066b4 <GLB_Set_UART_CLK>
+2300458a:	12a020ef          	jal	ra,230066b4 <GLB_Set_UART_CLK>
     GLB_Set_I2C_CLK(ENABLE, BSP_I2C_CLOCK_DIV);
-2300456e:	4581                	li	a1,0
-23004570:	4505                	li	a0,1
-23004572:	1ae020ef          	jal	ra,23006720 <GLB_Set_I2C_CLK>
+2300458e:	4581                	li	a1,0
+23004590:	4505                	li	a0,1
+23004592:	18e020ef          	jal	ra,23006720 <GLB_Set_I2C_CLK>
     GLB_Set_SPI_CLK(ENABLE, BSP_SPI_CLOCK_DIV);
-23004576:	4581                	li	a1,0
-23004578:	4505                	li	a0,1
-2300457a:	1e0020ef          	jal	ra,2300675a <GLB_Set_SPI_CLK>
+23004596:	4581                	li	a1,0
+23004598:	4505                	li	a0,1
+2300459a:	1c0020ef          	jal	ra,2300675a <GLB_Set_SPI_CLK>
     tmpVal |= (1 << BL_AHB_SLAVE1_TMR);
-2300457e:	002f0737          	lui	a4,0x2f0
-23004582:	8f45                	or	a4,a4,s1
+2300459e:	002f0737          	lui	a4,0x2f0
+230045a2:	8f45                	or	a4,a4,s1
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-23004584:	d058                	sw	a4,36(s0)
+230045a4:	d058                	sw	a4,36(s0)
     uint32_t tmp = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-23004586:	4000a7b7          	lui	a5,0x4000a
-2300458a:	5007a683          	lw	a3,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
+230045a6:	4000a7b7          	lui	a5,0x4000a
+230045aa:	5007a683          	lw	a3,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
     tmp = BL_SET_REG_BITS_VAL(tmp, TIMER_TCDR2, BSP_TIMER0_CLOCK_DIV);
-2300458e:	7641                	lui	a2,0xffff0
-23004590:	0ff60613          	addi	a2,a2,255 # ffff00ff <_heap_start+0xbdfc7cff>
+230045ae:	7641                	lui	a2,0xffff0
+230045b0:	0ff60613          	addi	a2,a2,255 # ffff00ff <_heap_start+0xbdfc7cff>
     tmp = BL_SET_REG_BITS_VAL(tmp, TIMER_CS_1, TIMER_CLKSRC_FCLK);
-23004594:	9acd                	andi	a3,a3,-13
+230045b4:	9acd                	andi	a3,a3,-13
     BL_WR_REG(TIMER_BASE, TIMER_TCCR, tmp);
-23004596:	50d7a023          	sw	a3,1280(a5)
+230045b6:	50d7a023          	sw	a3,1280(a5)
     tmp = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-2300459a:	5bc7a683          	lw	a3,1468(a5)
+230045ba:	5bc7a683          	lw	a3,1468(a5)
     tmp1 = BL_SET_REG_BITS_VAL(tmp1, TIMER_TCDR3, BSP_TIMER1_CLOCK_DIV);
-2300459e:	ff010537          	lui	a0,0xff010
-230045a2:	157d                	addi	a0,a0,-1
+230045be:	ff010537          	lui	a0,0xff010
+230045c2:	157d                	addi	a0,a0,-1
     tmp = BL_SET_REG_BITS_VAL(tmp, TIMER_TCDR2, BSP_TIMER0_CLOCK_DIV);
-230045a4:	8ef1                	and	a3,a3,a2
+230045c4:	8ef1                	and	a3,a3,a2
     BL_WR_REG(TIMER_BASE, TIMER_TCDR, tmp);
-230045a6:	5ad7ae23          	sw	a3,1468(a5)
+230045c6:	5ad7ae23          	sw	a3,1468(a5)
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-230045aa:	d058                	sw	a4,36(s0)
+230045ca:	d058                	sw	a4,36(s0)
     uint32_t tmp1 = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-230045ac:	5007a683          	lw	a3,1280(a5)
+230045cc:	5007a683          	lw	a3,1280(a5)
     tmpVal |= (1 << BL_AHB_SLAVE1_PWM);
-230045b0:	003f05b7          	lui	a1,0x3f0
-230045b4:	8dc5                	or	a1,a1,s1
+230045d0:	003f05b7          	lui	a1,0x3f0
+230045d4:	8dc5                	or	a1,a1,s1
     tmp1 = BL_SET_REG_BITS_VAL(tmp1, TIMER_CS_2, TIMER_CLKSRC_FCLK);
-230045b6:	f9f6f693          	andi	a3,a3,-97
+230045d6:	f9f6f693          	andi	a3,a3,-97
     BL_WR_REG(TIMER_BASE, TIMER_TCCR, tmp1);
-230045ba:	50d7a023          	sw	a3,1280(a5)
+230045da:	50d7a023          	sw	a3,1280(a5)
     tmp1 = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-230045be:	5bc7a603          	lw	a2,1468(a5)
+230045de:	5bc7a603          	lw	a2,1468(a5)
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-230045c2:	43078693          	addi	a3,a5,1072
+230045e2:	43078693          	addi	a3,a5,1072
         BL_WR_REG(PWMx, PWM_CLKDIV, BSP_PWM_CLOCK_DIV + 1);
-230045c6:	02000813          	li	a6,32
+230045e6:	02000813          	li	a6,32
     tmp1 = BL_SET_REG_BITS_VAL(tmp1, TIMER_TCDR3, BSP_TIMER1_CLOCK_DIV);
-230045ca:	8e69                	and	a2,a2,a0
+230045ea:	8e69                	and	a2,a2,a0
     BL_WR_REG(TIMER_BASE, TIMER_TCDR, tmp1);
-230045cc:	5ac7ae23          	sw	a2,1468(a5)
+230045ec:	5ac7ae23          	sw	a2,1468(a5)
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-230045d0:	d058                	sw	a4,36(s0)
+230045f0:	d058                	sw	a4,36(s0)
     uint32_t tmpwdt = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-230045d2:	5007a603          	lw	a2,1280(a5)
+230045f2:	5007a603          	lw	a2,1280(a5)
     uint32_t timeoutCnt = 160 * 1000;
-230045d6:	00027737          	lui	a4,0x27
-230045da:	10070713          	addi	a4,a4,256 # 27100 <_heap_size+0x21500>
+230045f6:	00027737          	lui	a4,0x27
+230045fa:	10070713          	addi	a4,a4,256 # 27100 <_heap_size+0x21500>
     tmpwdt = BL_SET_REG_BITS_VAL(tmpwdt, TIMER_CS_WDT, TIMER_CLKSRC_FCLK);
-230045de:	cff67613          	andi	a2,a2,-769
+230045fe:	cff67613          	andi	a2,a2,-769
     BL_WR_REG(TIMER_BASE, TIMER_TCCR, tmpwdt);
-230045e2:	50c7a023          	sw	a2,1280(a5)
+23004602:	50c7a023          	sw	a2,1280(a5)
     tmpwdt = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-230045e6:	5bc7a603          	lw	a2,1468(a5)
+23004606:	5bc7a603          	lw	a2,1468(a5)
     for (int i = 0; i < 5; i++) {
-230045ea:	4d078513          	addi	a0,a5,1232
+2300460a:	4d078513          	addi	a0,a5,1232
     tmpwdt = BL_SET_REG_BITS_VAL(tmpwdt, TIMER_WCDR, BSP_WDT_CLOCK_DIV);
-230045ee:	0622                	slli	a2,a2,0x8
-230045f0:	8221                	srli	a2,a2,0x8
+2300460e:	0622                	slli	a2,a2,0x8
+23004610:	8221                	srli	a2,a2,0x8
     BL_WR_REG(TIMER_BASE, TIMER_TCDR, tmpwdt);
-230045f2:	5ac7ae23          	sw	a2,1468(a5)
+23004612:	5ac7ae23          	sw	a2,1468(a5)
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-230045f6:	d04c                	sw	a1,36(s0)
+23004616:	d04c                	sw	a1,36(s0)
         tmp_pwm = BL_RD_REG(PWMx, PWM_CONFIG);
-230045f8:	429c                	lw	a5,0(a3)
+23004618:	429c                	lw	a5,0(a3)
         BL_WR_REG(PWMx, PWM_CONFIG, BL_SET_REG_BIT(tmp_pwm, PWM_STOP_EN));
-230045fa:	0407e793          	ori	a5,a5,64
-230045fe:	c29c                	sw	a5,0(a3)
+2300461a:	0407e793          	ori	a5,a5,64
+2300461e:	c29c                	sw	a5,0(a3)
         while (!BL_IS_REG_BIT_SET(BL_RD_REG(PWMx, PWM_CONFIG), PWM_STS_TOP)) {
-23004600:	a019                	j	23004606 <peripheral_clock_init+0xbe>
+23004620:	a019                	j	23004626 <peripheral_clock_init+0xbe>
             timeoutCnt--;
-23004602:	177d                	addi	a4,a4,-1
+23004622:	177d                	addi	a4,a4,-1
             if (timeoutCnt == 0) {
-23004604:	cf29                	beqz	a4,2300465e <peripheral_clock_init+0x116>
+23004624:	cf29                	beqz	a4,2300467e <peripheral_clock_init+0x116>
         while (!BL_IS_REG_BIT_SET(BL_RD_REG(PWMx, PWM_CONFIG), PWM_STS_TOP)) {
-23004606:	429c                	lw	a5,0(a3)
-23004608:	0807f793          	andi	a5,a5,128
-2300460c:	dbfd                	beqz	a5,23004602 <peripheral_clock_init+0xba>
+23004626:	429c                	lw	a5,0(a3)
+23004628:	0807f793          	andi	a5,a5,128
+2300462c:	dbfd                	beqz	a5,23004622 <peripheral_clock_init+0xba>
         tmp_pwm = BL_RD_REG(PWMx, PWM_CONFIG);
-2300460e:	429c                	lw	a5,0(a3)
+2300462e:	429c                	lw	a5,0(a3)
     for (int i = 0; i < 5; i++) {
-23004610:	02068693          	addi	a3,a3,32 # 4000f020 <__ram_load_addr+0x1cfd212c>
+23004630:	02068693          	addi	a3,a3,32 # 4000f020 <__ram_load_addr+0x1cfd212c>
         tmp_pwm = BL_SET_REG_BITS_VAL(tmp_pwm, PWM_REG_CLK_SEL, PWM_CLK_32K);
-23004614:	9bf1                	andi	a5,a5,-4
-23004616:	0027e793          	ori	a5,a5,2
+23004634:	9bf1                	andi	a5,a5,-4
+23004636:	0027e793          	ori	a5,a5,2
         BL_WR_REG(PWMx, PWM_CONFIG, tmp_pwm);
-2300461a:	fef6a023          	sw	a5,-32(a3)
+2300463a:	fef6a023          	sw	a5,-32(a3)
         BL_WR_REG(PWMx, PWM_CLKDIV, BSP_PWM_CLOCK_DIV + 1);
-2300461e:	fd06a823          	sw	a6,-48(a3)
+2300463e:	fd06a823          	sw	a6,-48(a3)
     for (int i = 0; i < 5; i++) {
-23004622:	fca69be3          	bne	a3,a0,230045f8 <peripheral_clock_init+0xb0>
+23004642:	fca69be3          	bne	a3,a0,23004618 <peripheral_clock_init+0xb0>
     GLB_Set_I2S_CLK(ENABLE, GLB_I2S_OUT_REF_CLK_NONE);
-23004626:	4581                	li	a1,0
-23004628:	4505                	li	a0,1
-2300462a:	01e020ef          	jal	ra,23006648 <GLB_Set_I2S_CLK>
+23004646:	4581                	li	a1,0
+23004648:	4505                	li	a0,1
+2300464a:	7ff010ef          	jal	ra,23006648 <GLB_Set_I2S_CLK>
     GLB_Set_ADC_CLK(ENABLE, GLB_ADC_CLK_XCLK, BSP_ADC_CLOCK_DIV);
-2300462e:	4601                	li	a2,0
-23004630:	4585                	li	a1,1
-23004632:	4505                	li	a0,1
-23004634:	1d8020ef          	jal	ra,2300680c <GLB_Set_ADC_CLK>
+2300464e:	4601                	li	a2,0
+23004650:	4585                	li	a1,1
+23004652:	4505                	li	a0,1
+23004654:	1b8020ef          	jal	ra,2300680c <GLB_Set_ADC_CLK>
     GLB_Set_DAC_CLK(ENABLE, GLB_DAC_CLK_AUDIO_PLL, BSP_DAC_CLOCK_DIV + 1);
-23004638:	460d                	li	a2,3
-2300463a:	4589                	li	a1,2
-2300463c:	4505                	li	a0,1
-2300463e:	20e020ef          	jal	ra,2300684c <GLB_Set_DAC_CLK>
+23004658:	460d                	li	a2,3
+2300465a:	4589                	li	a1,2
+2300465c:	4505                	li	a0,1
+2300465e:	1ee020ef          	jal	ra,2300684c <GLB_Set_DAC_CLK>
     GLB_Set_QDEC_CLK(GLB_QDEC_CLK_XCLK, BSP_QDEC_KEYSCAN_CLOCK_DIV);
-23004642:	45fd                	li	a1,31
-23004644:	4501                	li	a0,0
-23004646:	058020ef          	jal	ra,2300669e <GLB_Set_QDEC_CLK>
+23004662:	45fd                	li	a1,31
+23004664:	4501                	li	a0,0
+23004666:	038020ef          	jal	ra,2300669e <GLB_Set_QDEC_CLK>
     GLB_Set_USB_CLK(1);
-2300464a:	4505                	li	a0,1
-2300464c:	030020ef          	jal	ra,2300667c <GLB_Set_USB_CLK>
+2300466a:	4505                	li	a0,1
+2300466c:	010020ef          	jal	ra,2300667c <GLB_Set_USB_CLK>
     tmpVal |= (1 << BL_AHB_SLAVE1_DMA);
-23004650:	1f3f17b7          	lui	a5,0x1f3f1
-23004654:	0791                	addi	a5,a5,4
-23004656:	8cdd                	or	s1,s1,a5
+23004670:	1f3f17b7          	lui	a5,0x1f3f1
+23004674:	0791                	addi	a5,a5,4
+23004676:	8cdd                	or	s1,s1,a5
     BL_WR_REG(GLB_BASE, GLB_CGEN_CFG1, tmpVal);
-23004658:	400007b7          	lui	a5,0x40000
-2300465c:	d3c4                	sw	s1,36(a5)
+23004678:	400007b7          	lui	a5,0x40000
+2300467c:	d3c4                	sw	s1,36(a5)
 }
-2300465e:	40b2                	lw	ra,12(sp)
-23004660:	4422                	lw	s0,8(sp)
-23004662:	4492                	lw	s1,4(sp)
-23004664:	0141                	addi	sp,sp,16
-23004666:	8082                	ret
+2300467e:	40b2                	lw	ra,12(sp)
+23004680:	4422                	lw	s0,8(sp)
+23004682:	4492                	lw	s1,4(sp)
+23004684:	0141                	addi	sp,sp,16
+23004686:	8082                	ret
 
-23004668 <system_clock_get>:
+23004688 <system_clock_get>:
     switch (type) {
-23004668:	478d                	li	a5,3
-2300466a:	0ef50b63          	beq	a0,a5,23004760 <system_clock_get+0xf8>
+23004688:	478d                	li	a5,3
+2300468a:	0ef50b63          	beq	a0,a5,23004780 <system_clock_get+0xf8>
 {
-2300466e:	1141                	addi	sp,sp,-16
-23004670:	c422                	sw	s0,8(sp)
-23004672:	c606                	sw	ra,12(sp)
-23004674:	c226                	sw	s1,4(sp)
-23004676:	c04a                	sw	s2,0(sp)
-23004678:	842a                	mv	s0,a0
+2300468e:	1141                	addi	sp,sp,-16
+23004690:	c422                	sw	s0,8(sp)
+23004692:	c606                	sw	ra,12(sp)
+23004694:	c226                	sw	s1,4(sp)
+23004696:	c04a                	sw	s2,0(sp)
+23004698:	842a                	mv	s0,a0
     switch (type) {
-2300467a:	04a7e063          	bltu	a5,a0,230046ba <system_clock_get+0x52>
-2300467e:	4485                	li	s1,1
-23004680:	0e950563          	beq	a0,s1,2300476a <system_clock_get+0x102>
-23004684:	4909                	li	s2,2
-23004686:	05251a63          	bne	a0,s2,230046da <system_clock_get+0x72>
+2300469a:	04a7e063          	bltu	a5,a0,230046da <system_clock_get+0x52>
+2300469e:	4485                	li	s1,1
+230046a0:	0e950563          	beq	a0,s1,2300478a <system_clock_get+0x102>
+230046a4:	4909                	li	s2,2
+230046a6:	05251a63          	bne	a0,s2,230046fa <system_clock_get+0x72>
             if (GLB_Get_Root_CLK_Sel() == 0) {
-2300468a:	1f010097          	auipc	ra,0x1f010
-2300468e:	318080e7          	jalr	792(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-23004692:	cd59                	beqz	a0,23004730 <system_clock_get+0xc8>
+230046aa:	1f010097          	auipc	ra,0x1f010
+230046ae:	2f8080e7          	jalr	760(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230046b2:	cd59                	beqz	a0,23004750 <system_clock_get+0xc8>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-23004694:	1f010097          	auipc	ra,0x1f010
-23004698:	30e080e7          	jalr	782(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-2300469c:	08950a63          	beq	a0,s1,23004730 <system_clock_get+0xc8>
+230046b4:	1f010097          	auipc	ra,0x1f010
+230046b8:	2ee080e7          	jalr	750(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230046bc:	08950a63          	beq	a0,s1,23004750 <system_clock_get+0xc8>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-230046a0:	400007b7          	lui	a5,0x40000
-230046a4:	439c                	lw	a5,0(a5)
+230046c0:	400007b7          	lui	a5,0x40000
+230046c4:	439c                	lw	a5,0(a5)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-230046a6:	8391                	srli	a5,a5,0x4
-230046a8:	8b8d                	andi	a5,a5,3
+230046c6:	8391                	srli	a5,a5,0x4
+230046c8:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-230046aa:	12078363          	beqz	a5,230047d0 <system_clock_get+0x168>
+230046ca:	12078363          	beqz	a5,230047f0 <system_clock_get+0x168>
                 } else if (tmpVal == 1) {
-230046ae:	14978563          	beq	a5,s1,230047f8 <system_clock_get+0x190>
+230046ce:	14978563          	beq	a5,s1,23004818 <system_clock_get+0x190>
                 } else if (tmpVal == 2) {
-230046b2:	10878063          	beq	a5,s0,230047b2 <system_clock_get+0x14a>
+230046d2:	10878063          	beq	a5,s0,230047d2 <system_clock_get+0x14a>
                     return 0;
-230046b6:	4401                	li	s0,0
-230046b8:	a041                	j	23004738 <system_clock_get+0xd0>
+230046d6:	4401                	li	s0,0
+230046d8:	a041                	j	23004758 <system_clock_get+0xd0>
     switch (type) {
-230046ba:	4791                	li	a5,4
-230046bc:	04f50c63          	beq	a0,a5,23004714 <system_clock_get+0xac>
-230046c0:	4795                	li	a5,5
-230046c2:	04f51263          	bne	a0,a5,23004706 <system_clock_get+0x9e>
+230046da:	4791                	li	a5,4
+230046dc:	04f50c63          	beq	a0,a5,23004734 <system_clock_get+0xac>
+230046e0:	4795                	li	a5,5
+230046e2:	04f51263          	bne	a0,a5,23004726 <system_clock_get+0x9e>
             } else if (BSP_AUDIO_PLL_CLOCK_SOURCE == ROOT_CLOCK_SOURCE_AUPLL_5644800_HZ) {
                 return 5644800;
             } else if (BSP_AUDIO_PLL_CLOCK_SOURCE == ROOT_CLOCK_SOURCE_AUPLL_24576000_HZ) {
                 return 24576000;
             } else if (BSP_AUDIO_PLL_CLOCK_SOURCE == ROOT_CLOCK_SOURCE_AUPLL_24000000_HZ) {
                 return 24000000;
-230046c6:	016e3537          	lui	a0,0x16e3
-230046ca:	60050513          	addi	a0,a0,1536 # 16e3600 <_heap_size+0x16dda00>
+230046e6:	016e3537          	lui	a0,0x16e3
+230046ea:	60050513          	addi	a0,a0,1536 # 16e3600 <_heap_size+0x16dda00>
         default:
             break;
     }
 
     return 0;
 }
-230046ce:	40b2                	lw	ra,12(sp)
-230046d0:	4422                	lw	s0,8(sp)
-230046d2:	4492                	lw	s1,4(sp)
-230046d4:	4902                	lw	s2,0(sp)
-230046d6:	0141                	addi	sp,sp,16
-230046d8:	8082                	ret
+230046ee:	40b2                	lw	ra,12(sp)
+230046f0:	4422                	lw	s0,8(sp)
+230046f2:	4492                	lw	s1,4(sp)
+230046f4:	4902                	lw	s2,0(sp)
+230046f6:	0141                	addi	sp,sp,16
+230046f8:	8082                	ret
     switch (type) {
-230046da:	e515                	bnez	a0,23004706 <system_clock_get+0x9e>
+230046fa:	e515                	bnez	a0,23004726 <system_clock_get+0x9e>
             if (GLB_Get_Root_CLK_Sel() == 0) {
-230046dc:	1f010097          	auipc	ra,0x1f010
-230046e0:	2c6080e7          	jalr	710(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230046e4:	c129                	beqz	a0,23004726 <system_clock_get+0xbe>
+230046fc:	1f010097          	auipc	ra,0x1f010
+23004700:	2a6080e7          	jalr	678(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004704:	c129                	beqz	a0,23004746 <system_clock_get+0xbe>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-230046e6:	1f010097          	auipc	ra,0x1f010
-230046ea:	2bc080e7          	jalr	700(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230046ee:	02950c63          	beq	a0,s1,23004726 <system_clock_get+0xbe>
+23004706:	1f010097          	auipc	ra,0x1f010
+2300470a:	29c080e7          	jalr	668(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+2300470e:	02950c63          	beq	a0,s1,23004746 <system_clock_get+0xbe>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-230046f2:	400007b7          	lui	a5,0x40000
-230046f6:	439c                	lw	a5,0(a5)
+23004712:	400007b7          	lui	a5,0x40000
+23004716:	439c                	lw	a5,0(a5)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-230046f8:	8391                	srli	a5,a5,0x4
-230046fa:	8b8d                	andi	a5,a5,3
+23004718:	8391                	srli	a5,a5,0x4
+2300471a:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-230046fc:	cff9                	beqz	a5,230047da <system_clock_get+0x172>
+2300471c:	cff9                	beqz	a5,230047fa <system_clock_get+0x172>
                 } else if (tmpVal == 1) {
-230046fe:	10978263          	beq	a5,s1,23004802 <system_clock_get+0x19a>
+2300471e:	10978263          	beq	a5,s1,23004822 <system_clock_get+0x19a>
                 } else if (tmpVal == 2) {
-23004702:	0b278d63          	beq	a5,s2,230047bc <system_clock_get+0x154>
+23004722:	0b278d63          	beq	a5,s2,230047dc <system_clock_get+0x154>
 }
-23004706:	40b2                	lw	ra,12(sp)
-23004708:	4422                	lw	s0,8(sp)
-2300470a:	4492                	lw	s1,4(sp)
-2300470c:	4902                	lw	s2,0(sp)
+23004726:	40b2                	lw	ra,12(sp)
+23004728:	4422                	lw	s0,8(sp)
+2300472a:	4492                	lw	s1,4(sp)
+2300472c:	4902                	lw	s2,0(sp)
     return 0;
-2300470e:	4501                	li	a0,0
+2300472e:	4501                	li	a0,0
 }
-23004710:	0141                	addi	sp,sp,16
-23004712:	8082                	ret
-23004714:	40b2                	lw	ra,12(sp)
-23004716:	4422                	lw	s0,8(sp)
+23004730:	0141                	addi	sp,sp,16
+23004732:	8082                	ret
+23004734:	40b2                	lw	ra,12(sp)
+23004736:	4422                	lw	s0,8(sp)
     switch (type) {
-23004718:	6521                	lui	a0,0x8
+23004738:	6521                	lui	a0,0x8
 }
-2300471a:	4492                	lw	s1,4(sp)
-2300471c:	4902                	lw	s2,0(sp)
+2300473a:	4492                	lw	s1,4(sp)
+2300473c:	4902                	lw	s2,0(sp)
     switch (type) {
-2300471e:	d0050513          	addi	a0,a0,-768 # 7d00 <_heap_size+0x2100>
+2300473e:	d0050513          	addi	a0,a0,-768 # 7d00 <_heap_size+0x2100>
 }
-23004722:	0141                	addi	sp,sp,16
-23004724:	8082                	ret
+23004742:	0141                	addi	sp,sp,16
+23004744:	8082                	ret
                 return 32 * 1000 * 1000;
-23004726:	01e85537          	lui	a0,0x1e85
-2300472a:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-2300472e:	b745                	j	230046ce <system_clock_get+0x66>
-23004730:	01e85437          	lui	s0,0x1e85
-23004734:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004746:	01e85537          	lui	a0,0x1e85
+2300474a:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+2300474e:	b745                	j	230046ee <system_clock_get+0x66>
+23004750:	01e85437          	lui	s0,0x1e85
+23004754:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-23004738:	1f010097          	auipc	ra,0x1f010
-2300473c:	27e080e7          	jalr	638(ra) # 420149b6 <GLB_Get_HCLK_Div>
-23004740:	0505                	addi	a0,a0,1
-23004742:	02a45433          	divu	s0,s0,a0
-23004746:	1f010097          	auipc	ra,0x1f010
-2300474a:	266080e7          	jalr	614(ra) # 420149ac <GLB_Get_BCLK_Div>
-2300474e:	0505                	addi	a0,a0,1
+23004758:	1f010097          	auipc	ra,0x1f010
+2300475c:	25e080e7          	jalr	606(ra) # 420149b6 <GLB_Get_HCLK_Div>
+23004760:	0505                	addi	a0,a0,1
+23004762:	02a45433          	divu	s0,s0,a0
+23004766:	1f010097          	auipc	ra,0x1f010
+2300476a:	246080e7          	jalr	582(ra) # 420149ac <GLB_Get_BCLK_Div>
+2300476e:	0505                	addi	a0,a0,1
 }
-23004750:	40b2                	lw	ra,12(sp)
-23004752:	4492                	lw	s1,4(sp)
-23004754:	4902                	lw	s2,0(sp)
+23004770:	40b2                	lw	ra,12(sp)
+23004772:	4492                	lw	s1,4(sp)
+23004774:	4902                	lw	s2,0(sp)
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-23004756:	02a45533          	divu	a0,s0,a0
+23004776:	02a45533          	divu	a0,s0,a0
 }
-2300475a:	4422                	lw	s0,8(sp)
-2300475c:	0141                	addi	sp,sp,16
-2300475e:	8082                	ret
+2300477a:	4422                	lw	s0,8(sp)
+2300477c:	0141                	addi	sp,sp,16
+2300477e:	8082                	ret
             return 32000000;
-23004760:	01e85537          	lui	a0,0x1e85
-23004764:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004780:	01e85537          	lui	a0,0x1e85
+23004784:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
 }
-23004768:	8082                	ret
+23004788:	8082                	ret
             if (GLB_Get_Root_CLK_Sel() == 0) {
-2300476a:	1f010097          	auipc	ra,0x1f010
-2300476e:	238080e7          	jalr	568(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-23004772:	c91d                	beqz	a0,230047a8 <system_clock_get+0x140>
+2300478a:	1f010097          	auipc	ra,0x1f010
+2300478e:	218080e7          	jalr	536(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004792:	c91d                	beqz	a0,230047c8 <system_clock_get+0x140>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-23004774:	1f010097          	auipc	ra,0x1f010
-23004778:	22e080e7          	jalr	558(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-2300477c:	02850663          	beq	a0,s0,230047a8 <system_clock_get+0x140>
+23004794:	1f010097          	auipc	ra,0x1f010
+23004798:	20e080e7          	jalr	526(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+2300479c:	02850663          	beq	a0,s0,230047c8 <system_clock_get+0x140>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-23004780:	400007b7          	lui	a5,0x40000
-23004784:	439c                	lw	a5,0(a5)
+230047a0:	400007b7          	lui	a5,0x40000
+230047a4:	439c                	lw	a5,0(a5)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-23004786:	8391                	srli	a5,a5,0x4
-23004788:	8b8d                	andi	a5,a5,3
+230047a6:	8391                	srli	a5,a5,0x4
+230047a8:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-2300478a:	cfa9                	beqz	a5,230047e4 <system_clock_get+0x17c>
+230047aa:	cfa9                	beqz	a5,23004804 <system_clock_get+0x17c>
                 } else if (tmpVal == 1) {
-2300478c:	06878163          	beq	a5,s0,230047ee <system_clock_get+0x186>
+230047ac:	06878163          	beq	a5,s0,2300480e <system_clock_get+0x186>
                 } else if (tmpVal == 2) {
-23004790:	4709                	li	a4,2
+230047b0:	4709                	li	a4,2
                     return 0;
-23004792:	4401                	li	s0,0
+230047b2:	4401                	li	s0,0
                 } else if (tmpVal == 2) {
-23004794:	02e78963          	beq	a5,a4,230047c6 <system_clock_get+0x15e>
+230047b4:	02e78963          	beq	a5,a4,230047e6 <system_clock_get+0x15e>
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1);
-23004798:	1f010097          	auipc	ra,0x1f010
-2300479c:	21e080e7          	jalr	542(ra) # 420149b6 <GLB_Get_HCLK_Div>
-230047a0:	0505                	addi	a0,a0,1
-230047a2:	02a45533          	divu	a0,s0,a0
-230047a6:	b725                	j	230046ce <system_clock_get+0x66>
+230047b8:	1f010097          	auipc	ra,0x1f010
+230047bc:	1fe080e7          	jalr	510(ra) # 420149b6 <GLB_Get_HCLK_Div>
+230047c0:	0505                	addi	a0,a0,1
+230047c2:	02a45533          	divu	a0,s0,a0
+230047c6:	b725                	j	230046ee <system_clock_get+0x66>
                 return 32 * 1000 * 1000;
-230047a8:	01e85537          	lui	a0,0x1e85
-230047ac:	80050413          	addi	s0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-230047b0:	b7e5                	j	23004798 <system_clock_get+0x130>
+230047c8:	01e85537          	lui	a0,0x1e85
+230047cc:	80050413          	addi	s0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+230047d0:	b7e5                	j	230047b8 <system_clock_get+0x130>
                     return 144 * 1000 * 1000;
-230047b2:	08954437          	lui	s0,0x8954
-230047b6:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
-230047ba:	bfbd                	j	23004738 <system_clock_get+0xd0>
-230047bc:	08954537          	lui	a0,0x8954
-230047c0:	40050513          	addi	a0,a0,1024 # 8954400 <_heap_size+0x894e800>
-230047c4:	b729                	j	230046ce <system_clock_get+0x66>
-230047c6:	08954537          	lui	a0,0x8954
-230047ca:	40050413          	addi	s0,a0,1024 # 8954400 <_heap_size+0x894e800>
-230047ce:	b7e9                	j	23004798 <system_clock_get+0x130>
+230047d2:	08954437          	lui	s0,0x8954
+230047d6:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
+230047da:	bfbd                	j	23004758 <system_clock_get+0xd0>
+230047dc:	08954537          	lui	a0,0x8954
+230047e0:	40050513          	addi	a0,a0,1024 # 8954400 <_heap_size+0x894e800>
+230047e4:	b729                	j	230046ee <system_clock_get+0x66>
+230047e6:	08954537          	lui	a0,0x8954
+230047ea:	40050413          	addi	s0,a0,1024 # 8954400 <_heap_size+0x894e800>
+230047ee:	b7e9                	j	230047b8 <system_clock_get+0x130>
                     return 57.6 * 1000 * 1000;
-230047d0:	036ef437          	lui	s0,0x36ef
-230047d4:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
-230047d8:	b785                	j	23004738 <system_clock_get+0xd0>
-230047da:	036ef537          	lui	a0,0x36ef
-230047de:	80050513          	addi	a0,a0,-2048 # 36ee800 <_heap_size+0x36e8c00>
-230047e2:	b5f5                	j	230046ce <system_clock_get+0x66>
-230047e4:	036ef537          	lui	a0,0x36ef
-230047e8:	80050413          	addi	s0,a0,-2048 # 36ee800 <_heap_size+0x36e8c00>
-230047ec:	b775                	j	23004798 <system_clock_get+0x130>
+230047f0:	036ef437          	lui	s0,0x36ef
+230047f4:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
+230047f8:	b785                	j	23004758 <system_clock_get+0xd0>
+230047fa:	036ef537          	lui	a0,0x36ef
+230047fe:	80050513          	addi	a0,a0,-2048 # 36ee800 <_heap_size+0x36e8c00>
+23004802:	b5f5                	j	230046ee <system_clock_get+0x66>
+23004804:	036ef537          	lui	a0,0x36ef
+23004808:	80050413          	addi	s0,a0,-2048 # 36ee800 <_heap_size+0x36e8c00>
+2300480c:	b775                	j	230047b8 <system_clock_get+0x130>
                     return 96 * 1000 * 1000;
-230047ee:	05b8e537          	lui	a0,0x5b8e
-230047f2:	80050413          	addi	s0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-230047f6:	b74d                	j	23004798 <system_clock_get+0x130>
-230047f8:	05b8e437          	lui	s0,0x5b8e
-230047fc:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-23004800:	bf25                	j	23004738 <system_clock_get+0xd0>
-23004802:	05b8e537          	lui	a0,0x5b8e
-23004806:	80050513          	addi	a0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-2300480a:	b5d1                	j	230046ce <system_clock_get+0x66>
+2300480e:	05b8e537          	lui	a0,0x5b8e
+23004812:	80050413          	addi	s0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004816:	b74d                	j	230047b8 <system_clock_get+0x130>
+23004818:	05b8e437          	lui	s0,0x5b8e
+2300481c:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004820:	bf25                	j	23004758 <system_clock_get+0xd0>
+23004822:	05b8e537          	lui	a0,0x5b8e
+23004826:	80050513          	addi	a0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+2300482a:	b5d1                	j	230046ee <system_clock_get+0x66>
 
-2300480c <peripheral_clock_get>:
+2300482c <peripheral_clock_get>:
 uint32_t peripheral_clock_get(enum peripheral_clock_type type)
 {
     uint32_t tmpVal;
     uint32_t div;
 
     switch (type) {
-2300480c:	4795                	li	a5,5
-2300480e:	20f50263          	beq	a0,a5,23004a12 <peripheral_clock_get+0x206>
+2300482c:	4795                	li	a5,5
+2300482e:	20f50263          	beq	a0,a5,23004a32 <peripheral_clock_get+0x206>
 {
-23004812:	1141                	addi	sp,sp,-16
-23004814:	c422                	sw	s0,8(sp)
-23004816:	c606                	sw	ra,12(sp)
-23004818:	c226                	sw	s1,4(sp)
-2300481a:	c04a                	sw	s2,0(sp)
-2300481c:	842a                	mv	s0,a0
+23004832:	1141                	addi	sp,sp,-16
+23004834:	c422                	sw	s0,8(sp)
+23004836:	c606                	sw	ra,12(sp)
+23004838:	c226                	sw	s1,4(sp)
+2300483a:	c04a                	sw	s2,0(sp)
+2300483c:	842a                	mv	s0,a0
     switch (type) {
-2300481e:	04a7e063          	bltu	a5,a0,2300485e <peripheral_clock_get+0x52>
-23004822:	4789                	li	a5,2
-23004824:	1af50663          	beq	a0,a5,230049d0 <peripheral_clock_get+0x1c4>
-23004828:	08a7f163          	bgeu	a5,a0,230048aa <peripheral_clock_get+0x9e>
-2300482c:	470d                	li	a4,3
-2300482e:	16e50e63          	beq	a0,a4,230049aa <peripheral_clock_get+0x19e>
+2300483e:	04a7e063          	bltu	a5,a0,2300487e <peripheral_clock_get+0x52>
+23004842:	4789                	li	a5,2
+23004844:	1af50663          	beq	a0,a5,230049f0 <peripheral_clock_get+0x1c4>
+23004848:	08a7f163          	bgeu	a5,a0,230048ca <peripheral_clock_get+0x9e>
+2300484c:	470d                	li	a4,3
+2300484e:	16e50e63          	beq	a0,a4,230049ca <peripheral_clock_get+0x19e>
                 return system_clock_get(SYSTEM_CLOCK_XCLK) / (div + 1);
             }
 #endif
 #if defined(BSP_USING_DAC0)
         case PERIPHERAL_CLOCK_DAC:
             tmpVal = BL_RD_REG(GLB_BASE, GLB_DIG32K_WAKEUP_CTRL);
-23004832:	40000737          	lui	a4,0x40000
-23004836:	0a872503          	lw	a0,168(a4) # 400000a8 <__ram_load_addr+0x1cfc31b4>
+23004852:	40000737          	lui	a4,0x40000
+23004856:	0a872503          	lw	a0,168(a4) # 400000a8 <__ram_load_addr+0x1cfc31b4>
             div = BL_GET_REG_BITS_VAL(tmpVal, GLB_DIG_512K_DIV);
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_DIG_CLK_SRC_SEL);
-2300483a:	01c55713          	srli	a4,a0,0x1c
-2300483e:	8b0d                	andi	a4,a4,3
+2300485a:	01c55713          	srli	a4,a0,0x1c
+2300485e:	8b0d                	andi	a4,a4,3
             div = BL_GET_REG_BITS_VAL(tmpVal, GLB_DIG_512K_DIV);
-23004840:	8141                	srli	a0,a0,0x10
-23004842:	07f57513          	andi	a0,a0,127
+23004860:	8141                	srli	a0,a0,0x10
+23004862:	07f57513          	andi	a0,a0,127
             if (tmpVal == GLB_DAC_CLK_AUDIO_PLL) {
-23004846:	16f70e63          	beq	a4,a5,230049c2 <peripheral_clock_get+0x1b6>
+23004866:	16f70e63          	beq	a4,a5,230049e2 <peripheral_clock_get+0x1b6>
                 return system_clock_get(SYSTEM_CLOCK_AUPLL) / div;
             } else if (tmpVal == GLB_DAC_CLK_XCLK) {
-2300484a:	4785                	li	a5,1
-2300484c:	0af71763          	bne	a4,a5,230048fa <peripheral_clock_get+0xee>
+2300486a:	4785                	li	a5,1
+2300486c:	0af71763          	bne	a4,a5,2300491a <peripheral_clock_get+0xee>
                 return system_clock_get(SYSTEM_CLOCK_XCLK) / div;
-23004850:	01e857b7          	lui	a5,0x1e85
-23004854:	80078793          	addi	a5,a5,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-23004858:	02a7d533          	divu	a0,a5,a0
-2300485c:	a209                	j	2300495e <peripheral_clock_get+0x152>
+23004870:	01e857b7          	lui	a5,0x1e85
+23004874:	80078793          	addi	a5,a5,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004878:	02a7d533          	divu	a0,a5,a0
+2300487c:	a209                	j	2300497e <peripheral_clock_get+0x152>
     switch (type) {
-2300485e:	47a5                	li	a5,9
-23004860:	1ef50463          	beq	a0,a5,23004a48 <peripheral_clock_get+0x23c>
-23004864:	08a7f563          	bgeu	a5,a0,230048ee <peripheral_clock_get+0xe2>
-23004868:	47a9                	li	a5,10
-2300486a:	0ef51963          	bne	a0,a5,2300495c <peripheral_clock_get+0x150>
+2300487e:	47a5                	li	a5,9
+23004880:	1ef50463          	beq	a0,a5,23004a68 <peripheral_clock_get+0x23c>
+23004884:	08a7f563          	bgeu	a5,a0,2300490e <peripheral_clock_get+0xe2>
+23004888:	47a9                	li	a5,10
+2300488a:	0ef51963          	bne	a0,a5,2300497c <peripheral_clock_get+0x150>
                 return system_clock_get(SYSTEM_CLOCK_XCLK) / (div + 1);
             }
 #endif
 #if defined(BSP_USING_WDT)
         case PERIPHERAL_CLOCK_WDT:
             tmpVal = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-2300486e:	4000a7b7          	lui	a5,0x4000a
-23004872:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
+2300488e:	4000a7b7          	lui	a5,0x4000a
+23004892:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_WDT);
 
             div = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-23004876:	5bc7a503          	lw	a0,1468(a5)
+23004896:	5bc7a503          	lw	a0,1468(a5)
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_WDT);
-2300487a:	80a1                	srli	s1,s1,0x8
+2300489a:	80a1                	srli	s1,s1,0x8
             div = BL_GET_REG_BITS_VAL(div, TIMER_WCDR);
-2300487c:	8161                	srli	a0,a0,0x18
+2300489c:	8161                	srli	a0,a0,0x18
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_WDT);
-2300487e:	888d                	andi	s1,s1,3
+2300489e:	888d                	andi	s1,s1,3
             if (tmpVal == TIMER_CLKSRC_FCLK) {
                 return system_clock_get(SYSTEM_CLOCK_FCLK) / (div + 1);
-23004880:	00150413          	addi	s0,a0,1
+230048a0:	00150413          	addi	s0,a0,1
             if (tmpVal == TIMER_CLKSRC_FCLK) {
-23004884:	c8c9                	beqz	s1,23004916 <peripheral_clock_get+0x10a>
+230048a4:	c8c9                	beqz	s1,23004936 <peripheral_clock_get+0x10a>
             } else if (tmpVal == TIMER_CLKSRC_32K) {
-23004886:	4785                	li	a5,1
-23004888:	1af48a63          	beq	s1,a5,23004a3c <peripheral_clock_get+0x230>
+230048a6:	4785                	li	a5,1
+230048a8:	1af48a63          	beq	s1,a5,23004a5c <peripheral_clock_get+0x230>
                 return system_clock_get(SYSTEM_CLOCK_32K_CLK) / (div + 1);
             } else if (tmpVal == TIMER_CLKSRC_1K) {
-2300488c:	4789                	li	a5,2
-2300488e:	0cf48e63          	beq	s1,a5,2300496a <peripheral_clock_get+0x15e>
+230048ac:	4789                	li	a5,2
+230048ae:	0cf48e63          	beq	s1,a5,2300498a <peripheral_clock_get+0x15e>
         case PERIPHERAL_CLOCK_PWM:
             tmpVal = BL_RD_REG(PWM_BASE + PWM_CHANNEL_OFFSET, PWM_CONFIG);
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, PWM_REG_CLK_SEL);
             div = BL_RD_REG(PWM_BASE + PWM_CHANNEL_OFFSET, PWM_CLKDIV);
             if (tmpVal == PWM_CLK_XCLK) {
                 return system_clock_get(SYSTEM_CLOCK_XCLK) / div;
-23004892:	01e85537          	lui	a0,0x1e85
-23004896:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-2300489a:	02855533          	divu	a0,a0,s0
+230048b2:	01e85537          	lui	a0,0x1e85
+230048b6:	80050513          	addi	a0,a0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+230048ba:	02855533          	divu	a0,a0,s0
     }
 
     (void)(tmpVal);
     (void)(div);
     return 0;
 }
-2300489e:	40b2                	lw	ra,12(sp)
-230048a0:	4422                	lw	s0,8(sp)
-230048a2:	4492                	lw	s1,4(sp)
-230048a4:	4902                	lw	s2,0(sp)
-230048a6:	0141                	addi	sp,sp,16
-230048a8:	8082                	ret
+230048be:	40b2                	lw	ra,12(sp)
+230048c0:	4422                	lw	s0,8(sp)
+230048c2:	4492                	lw	s1,4(sp)
+230048c4:	4902                	lw	s2,0(sp)
+230048c6:	0141                	addi	sp,sp,16
+230048c8:	8082                	ret
     switch (type) {
-230048aa:	1a050f63          	beqz	a0,23004a68 <peripheral_clock_get+0x25c>
-230048ae:	4785                	li	a5,1
-230048b0:	0af51663          	bne	a0,a5,2300495c <peripheral_clock_get+0x150>
+230048ca:	1a050f63          	beqz	a0,23004a88 <peripheral_clock_get+0x25c>
+230048ce:	4785                	li	a5,1
+230048d0:	0af51663          	bne	a0,a5,2300497c <peripheral_clock_get+0x150>
             tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG3);
-230048b4:	40000937          	lui	s2,0x40000
-230048b8:	00c92483          	lw	s1,12(s2) # 4000000c <__ram_load_addr+0x1cfc3118>
+230048d4:	40000937          	lui	s2,0x40000
+230048d8:	00c92483          	lw	s1,12(s2) # 4000000c <__ram_load_addr+0x1cfc3118>
             div = BL_GET_REG_BITS_VAL(tmpVal, GLB_SPI_CLK_DIV);
-230048bc:	88fd                	andi	s1,s1,31
+230048dc:	88fd                	andi	s1,s1,31
             if (GLB_Get_Root_CLK_Sel() == 0) {
-230048be:	1f010097          	auipc	ra,0x1f010
-230048c2:	0e4080e7          	jalr	228(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230048c6:	c55d                	beqz	a0,23004974 <peripheral_clock_get+0x168>
+230048de:	1f010097          	auipc	ra,0x1f010
+230048e2:	0c4080e7          	jalr	196(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230048e6:	c55d                	beqz	a0,23004994 <peripheral_clock_get+0x168>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-230048c8:	1f010097          	auipc	ra,0x1f010
-230048cc:	0da080e7          	jalr	218(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230048d0:	0a850263          	beq	a0,s0,23004974 <peripheral_clock_get+0x168>
+230048e8:	1f010097          	auipc	ra,0x1f010
+230048ec:	0ba080e7          	jalr	186(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+230048f0:	0a850263          	beq	a0,s0,23004994 <peripheral_clock_get+0x168>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-230048d4:	00092783          	lw	a5,0(s2)
+230048f4:	00092783          	lw	a5,0(s2)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-230048d8:	8391                	srli	a5,a5,0x4
-230048da:	8b8d                	andi	a5,a5,3
+230048f8:	8391                	srli	a5,a5,0x4
+230048fa:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-230048dc:	1a078f63          	beqz	a5,23004a9a <peripheral_clock_get+0x28e>
+230048fc:	1a078f63          	beqz	a5,23004aba <peripheral_clock_get+0x28e>
                 } else if (tmpVal == 1) {
-230048e0:	1e878963          	beq	a5,s0,23004ad2 <peripheral_clock_get+0x2c6>
+23004900:	1e878963          	beq	a5,s0,23004af2 <peripheral_clock_get+0x2c6>
                 } else if (tmpVal == 2) {
-230048e4:	4709                	li	a4,2
-230048e6:	12e78163          	beq	a5,a4,23004a08 <peripheral_clock_get+0x1fc>
+23004904:	4709                	li	a4,2
+23004906:	12e78163          	beq	a5,a4,23004a28 <peripheral_clock_get+0x1fc>
                     return 0;
-230048ea:	4401                	li	s0,0
-230048ec:	a841                	j	2300497c <peripheral_clock_get+0x170>
+2300490a:	4401                	li	s0,0
+2300490c:	a841                	j	2300499c <peripheral_clock_get+0x170>
     switch (type) {
-230048ee:	4799                	li	a5,6
-230048f0:	12f50663          	beq	a0,a5,23004a1c <peripheral_clock_get+0x210>
-230048f4:	47a1                	li	a5,8
-230048f6:	06f51363          	bne	a0,a5,2300495c <peripheral_clock_get+0x150>
+2300490e:	4799                	li	a5,6
+23004910:	12f50663          	beq	a0,a5,23004a3c <peripheral_clock_get+0x210>
+23004914:	47a1                	li	a5,8
+23004916:	06f51363          	bne	a0,a5,2300497c <peripheral_clock_get+0x150>
             tmpVal = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-230048fa:	4000a7b7          	lui	a5,0x4000a
-230048fe:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
+2300491a:	4000a7b7          	lui	a5,0x4000a
+2300491e:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
             div = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-23004902:	5bc7a503          	lw	a0,1468(a5)
+23004922:	5bc7a503          	lw	a0,1468(a5)
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_1);
-23004906:	8089                	srli	s1,s1,0x2
+23004926:	8089                	srli	s1,s1,0x2
             div = BL_GET_REG_BITS_VAL(div, TIMER_TCDR2);
-23004908:	8121                	srli	a0,a0,0x8
-2300490a:	0ff57513          	zext.b	a0,a0
+23004928:	8121                	srli	a0,a0,0x8
+2300492a:	0ff57513          	zext.b	a0,a0
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_1);
-2300490e:	888d                	andi	s1,s1,3
+2300492e:	888d                	andi	s1,s1,3
                 return system_clock_get(SYSTEM_CLOCK_FCLK) / (div + 1);
-23004910:	00150413          	addi	s0,a0,1
+23004930:	00150413          	addi	s0,a0,1
             if (tmpVal == TIMER_CLKSRC_FCLK) {
-23004914:	f8ad                	bnez	s1,23004886 <peripheral_clock_get+0x7a>
+23004934:	f8ad                	bnez	s1,230048a6 <peripheral_clock_get+0x7a>
             if (GLB_Get_Root_CLK_Sel() == 0) {
-23004916:	1f010097          	auipc	ra,0x1f010
-2300491a:	08c080e7          	jalr	140(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-2300491e:	16050963          	beqz	a0,23004a90 <peripheral_clock_get+0x284>
+23004936:	1f010097          	auipc	ra,0x1f010
+2300493a:	06c080e7          	jalr	108(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+2300493e:	16050963          	beqz	a0,23004ab0 <peripheral_clock_get+0x284>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-23004922:	1f010097          	auipc	ra,0x1f010
-23004926:	080080e7          	jalr	128(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-2300492a:	4705                	li	a4,1
-2300492c:	16e50263          	beq	a0,a4,23004a90 <peripheral_clock_get+0x284>
+23004942:	1f010097          	auipc	ra,0x1f010
+23004946:	060080e7          	jalr	96(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+2300494a:	4705                	li	a4,1
+2300494c:	16e50263          	beq	a0,a4,23004ab0 <peripheral_clock_get+0x284>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-23004930:	400007b7          	lui	a5,0x40000
-23004934:	439c                	lw	a5,0(a5)
+23004950:	400007b7          	lui	a5,0x40000
+23004954:	439c                	lw	a5,0(a5)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-23004936:	8391                	srli	a5,a5,0x4
-23004938:	8b8d                	andi	a5,a5,3
+23004956:	8391                	srli	a5,a5,0x4
+23004958:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-2300493a:	18078763          	beqz	a5,23004ac8 <peripheral_clock_get+0x2bc>
+2300495a:	18078763          	beqz	a5,23004ae8 <peripheral_clock_get+0x2bc>
                 } else if (tmpVal == 1) {
-2300493e:	1ae78a63          	beq	a5,a4,23004af2 <peripheral_clock_get+0x2e6>
+2300495e:	1ae78a63          	beq	a5,a4,23004b12 <peripheral_clock_get+0x2e6>
                 } else if (tmpVal == 2) {
-23004942:	4709                	li	a4,2
-23004944:	18e78c63          	beq	a5,a4,23004adc <peripheral_clock_get+0x2d0>
+23004962:	4709                	li	a4,2
+23004964:	18e78c63          	beq	a5,a4,23004afc <peripheral_clock_get+0x2d0>
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1);
-23004948:	1f010097          	auipc	ra,0x1f010
-2300494c:	06e080e7          	jalr	110(ra) # 420149b6 <GLB_Get_HCLK_Div>
-23004950:	0505                	addi	a0,a0,1
-23004952:	02a4d533          	divu	a0,s1,a0
+23004968:	1f010097          	auipc	ra,0x1f010
+2300496c:	04e080e7          	jalr	78(ra) # 420149b6 <GLB_Get_HCLK_Div>
+23004970:	0505                	addi	a0,a0,1
+23004972:	02a4d533          	divu	a0,s1,a0
                 return system_clock_get(SYSTEM_CLOCK_FCLK) / (div + 1);
-23004956:	02855533          	divu	a0,a0,s0
-2300495a:	a011                	j	2300495e <peripheral_clock_get+0x152>
+23004976:	02855533          	divu	a0,a0,s0
+2300497a:	a011                	j	2300497e <peripheral_clock_get+0x152>
     switch (type) {
-2300495c:	4501                	li	a0,0
+2300497c:	4501                	li	a0,0
 }
-2300495e:	40b2                	lw	ra,12(sp)
-23004960:	4422                	lw	s0,8(sp)
-23004962:	4492                	lw	s1,4(sp)
-23004964:	4902                	lw	s2,0(sp)
-23004966:	0141                	addi	sp,sp,16
-23004968:	8082                	ret
+2300497e:	40b2                	lw	ra,12(sp)
+23004980:	4422                	lw	s0,8(sp)
+23004982:	4492                	lw	s1,4(sp)
+23004984:	4902                	lw	s2,0(sp)
+23004986:	0141                	addi	sp,sp,16
+23004988:	8082                	ret
                 return 1000 / (div + 1);
-2300496a:	3e800513          	li	a0,1000
-2300496e:	02855533          	divu	a0,a0,s0
-23004972:	b7f5                	j	2300495e <peripheral_clock_get+0x152>
+2300498a:	3e800513          	li	a0,1000
+2300498e:	02855533          	divu	a0,a0,s0
+23004992:	b7f5                	j	2300497e <peripheral_clock_get+0x152>
                 return 32 * 1000 * 1000;
-23004974:	01e85437          	lui	s0,0x1e85
-23004978:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004994:	01e85437          	lui	s0,0x1e85
+23004998:	80040413          	addi	s0,s0,-2048 # 1e84800 <_heap_size+0x1e7ec00>
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-2300497c:	1f010097          	auipc	ra,0x1f010
-23004980:	03a080e7          	jalr	58(ra) # 420149b6 <GLB_Get_HCLK_Div>
-23004984:	0505                	addi	a0,a0,1
-23004986:	02a45433          	divu	s0,s0,a0
-2300498a:	1f010097          	auipc	ra,0x1f010
-2300498e:	022080e7          	jalr	34(ra) # 420149ac <GLB_Get_BCLK_Div>
-23004992:	0505                	addi	a0,a0,1
+2300499c:	1f010097          	auipc	ra,0x1f010
+230049a0:	01a080e7          	jalr	26(ra) # 420149b6 <GLB_Get_HCLK_Div>
+230049a4:	0505                	addi	a0,a0,1
+230049a6:	02a45433          	divu	s0,s0,a0
+230049aa:	1f010097          	auipc	ra,0x1f010
+230049ae:	002080e7          	jalr	2(ra) # 420149ac <GLB_Get_BCLK_Div>
+230049b2:	0505                	addi	a0,a0,1
 }
-23004994:	40b2                	lw	ra,12(sp)
+230049b4:	40b2                	lw	ra,12(sp)
             return system_clock_get(SYSTEM_CLOCK_BCLK) / (div + 1);
-23004996:	0485                	addi	s1,s1,1
+230049b6:	0485                	addi	s1,s1,1
 }
-23004998:	4902                	lw	s2,0(sp)
+230049b8:	4902                	lw	s2,0(sp)
             return system_clock_get(SYSTEM_CLOCK_ROOT_CLOCK) / (GLB_Get_HCLK_Div() + 1) / (GLB_Get_BCLK_Div() + 1);
-2300499a:	02a45533          	divu	a0,s0,a0
+230049ba:	02a45533          	divu	a0,s0,a0
 }
-2300499e:	4422                	lw	s0,8(sp)
+230049be:	4422                	lw	s0,8(sp)
             return system_clock_get(SYSTEM_CLOCK_BCLK) / (div + 1);
-230049a0:	02955533          	divu	a0,a0,s1
+230049c0:	02955533          	divu	a0,a0,s1
 }
-230049a4:	4492                	lw	s1,4(sp)
-230049a6:	0141                	addi	sp,sp,16
-230049a8:	8082                	ret
+230049c4:	4492                	lw	s1,4(sp)
+230049c6:	0141                	addi	sp,sp,16
+230049c8:	8082                	ret
             tmpVal = BL_RD_REG(GLB_BASE, GLB_GPADC_32M_SRC_CTRL);
-230049aa:	400007b7          	lui	a5,0x40000
-230049ae:	0a47a503          	lw	a0,164(a5) # 400000a4 <__ram_load_addr+0x1cfc31b0>
+230049ca:	400007b7          	lui	a5,0x40000
+230049ce:	0a47a503          	lw	a0,164(a5) # 400000a4 <__ram_load_addr+0x1cfc31b0>
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_GPADC_32M_CLK_SEL);
-230049b2:	00755793          	srli	a5,a0,0x7
-230049b6:	8b85                	andi	a5,a5,1
+230049d2:	00755793          	srli	a5,a0,0x7
+230049d6:	8b85                	andi	a5,a5,1
             div = BL_GET_REG_BITS_VAL(tmpVal, GLB_GPADC_32M_CLK_DIV);
-230049b8:	03f57513          	andi	a0,a0,63
+230049d8:	03f57513          	andi	a0,a0,63
                 return system_clock_get(SYSTEM_CLOCK_AUPLL) / (div + 1);
-230049bc:	0505                	addi	a0,a0,1
+230049dc:	0505                	addi	a0,a0,1
             if (tmpVal == GLB_ADC_CLK_AUDIO_PLL) {
-230049be:	e80799e3          	bnez	a5,23004850 <peripheral_clock_get+0x44>
+230049de:	e80799e3          	bnez	a5,23004870 <peripheral_clock_get+0x44>
                 return system_clock_get(SYSTEM_CLOCK_AUPLL) / div;
-230049c2:	016e37b7          	lui	a5,0x16e3
-230049c6:	60078793          	addi	a5,a5,1536 # 16e3600 <_heap_size+0x16dda00>
-230049ca:	02a7d533          	divu	a0,a5,a0
-230049ce:	bf41                	j	2300495e <peripheral_clock_get+0x152>
+230049e2:	016e37b7          	lui	a5,0x16e3
+230049e6:	60078793          	addi	a5,a5,1536 # 16e3600 <_heap_size+0x16dda00>
+230049ea:	02a7d533          	divu	a0,a5,a0
+230049ee:	bf41                	j	2300497e <peripheral_clock_get+0x152>
             tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG3);
-230049d0:	40000937          	lui	s2,0x40000
-230049d4:	00c92483          	lw	s1,12(s2) # 4000000c <__ram_load_addr+0x1cfc3118>
+230049f0:	40000937          	lui	s2,0x40000
+230049f4:	00c92483          	lw	s1,12(s2) # 4000000c <__ram_load_addr+0x1cfc3118>
             div = BL_GET_REG_BITS_VAL(tmpVal, GLB_I2C_CLK_DIV);
-230049d8:	80c1                	srli	s1,s1,0x10
-230049da:	0ff4f493          	zext.b	s1,s1
+230049f8:	80c1                	srli	s1,s1,0x10
+230049fa:	0ff4f493          	zext.b	s1,s1
             if (GLB_Get_Root_CLK_Sel() == 0) {
-230049de:	1f010097          	auipc	ra,0x1f010
-230049e2:	fc4080e7          	jalr	-60(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230049e6:	d559                	beqz	a0,23004974 <peripheral_clock_get+0x168>
+230049fe:	1f010097          	auipc	ra,0x1f010
+23004a02:	fa4080e7          	jalr	-92(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004a06:	d559                	beqz	a0,23004994 <peripheral_clock_get+0x168>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-230049e8:	1f010097          	auipc	ra,0x1f010
-230049ec:	fba080e7          	jalr	-70(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-230049f0:	4705                	li	a4,1
-230049f2:	f8e501e3          	beq	a0,a4,23004974 <peripheral_clock_get+0x168>
+23004a08:	1f010097          	auipc	ra,0x1f010
+23004a0c:	f9a080e7          	jalr	-102(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004a10:	4705                	li	a4,1
+23004a12:	f8e501e3          	beq	a0,a4,23004994 <peripheral_clock_get+0x168>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-230049f6:	00092783          	lw	a5,0(s2)
+23004a16:	00092783          	lw	a5,0(s2)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-230049fa:	8391                	srli	a5,a5,0x4
-230049fc:	8b8d                	andi	a5,a5,3
+23004a1a:	8391                	srli	a5,a5,0x4
+23004a1c:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-230049fe:	cfd1                	beqz	a5,23004a9a <peripheral_clock_get+0x28e>
+23004a1e:	cfd1                	beqz	a5,23004aba <peripheral_clock_get+0x28e>
                 } else if (tmpVal == 1) {
-23004a00:	0ce78963          	beq	a5,a4,23004ad2 <peripheral_clock_get+0x2c6>
+23004a20:	0ce78963          	beq	a5,a4,23004af2 <peripheral_clock_get+0x2c6>
                 } else if (tmpVal == 2) {
-23004a04:	ee8793e3          	bne	a5,s0,230048ea <peripheral_clock_get+0xde>
+23004a24:	ee8793e3          	bne	a5,s0,2300490a <peripheral_clock_get+0xde>
                     return 144 * 1000 * 1000;
-23004a08:	08954437          	lui	s0,0x8954
-23004a0c:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
-23004a10:	b7b5                	j	2300497c <peripheral_clock_get+0x170>
+23004a28:	08954437          	lui	s0,0x8954
+23004a2c:	40040413          	addi	s0,s0,1024 # 8954400 <_heap_size+0x894e800>
+23004a30:	b7b5                	j	2300499c <peripheral_clock_get+0x170>
             return system_clock_get(SYSTEM_CLOCK_AUPLL);
-23004a12:	016e3537          	lui	a0,0x16e3
-23004a16:	60050513          	addi	a0,a0,1536 # 16e3600 <_heap_size+0x16dda00>
+23004a32:	016e3537          	lui	a0,0x16e3
+23004a36:	60050513          	addi	a0,a0,1536 # 16e3600 <_heap_size+0x16dda00>
 }
-23004a1a:	8082                	ret
+23004a3a:	8082                	ret
             tmpVal = BL_RD_REG(PWM_BASE + PWM_CHANNEL_OFFSET, PWM_CONFIG);
-23004a1c:	4000a737          	lui	a4,0x4000a
-23004a20:	43072783          	lw	a5,1072(a4) # 4000a430 <__ram_load_addr+0x1cfcd53c>
+23004a3c:	4000a737          	lui	a4,0x4000a
+23004a40:	43072783          	lw	a5,1072(a4) # 4000a430 <__ram_load_addr+0x1cfcd53c>
             div = BL_RD_REG(PWM_BASE + PWM_CHANNEL_OFFSET, PWM_CLKDIV);
-23004a24:	42072403          	lw	s0,1056(a4)
+23004a44:	42072403          	lw	s0,1056(a4)
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, PWM_REG_CLK_SEL);
-23004a28:	8b8d                	andi	a5,a5,3
+23004a48:	8b8d                	andi	a5,a5,3
             if (tmpVal == PWM_CLK_XCLK) {
-23004a2a:	e60784e3          	beqz	a5,23004892 <peripheral_clock_get+0x86>
+23004a4a:	e60784e3          	beqz	a5,230048b2 <peripheral_clock_get+0x86>
             } else if (tmpVal == PWM_CLK_BCLK) {
-23004a2e:	4705                	li	a4,1
-23004a30:	0ae78b63          	beq	a5,a4,23004ae6 <peripheral_clock_get+0x2da>
+23004a4e:	4705                	li	a4,1
+23004a50:	0ae78b63          	beq	a5,a4,23004b06 <peripheral_clock_get+0x2da>
             } else if (tmpVal == PWM_CLK_32K) {
-23004a34:	4709                	li	a4,2
+23004a54:	4709                	li	a4,2
     return 0;
-23004a36:	4501                	li	a0,0
+23004a56:	4501                	li	a0,0
             } else if (tmpVal == PWM_CLK_32K) {
-23004a38:	f2e793e3          	bne	a5,a4,2300495e <peripheral_clock_get+0x152>
+23004a58:	f2e793e3          	bne	a5,a4,2300497e <peripheral_clock_get+0x152>
                 return system_clock_get(SYSTEM_CLOCK_32K_CLK) / div;
-23004a3c:	6521                	lui	a0,0x8
-23004a3e:	d0050513          	addi	a0,a0,-768 # 7d00 <_heap_size+0x2100>
-23004a42:	02855533          	divu	a0,a0,s0
-23004a46:	bf21                	j	2300495e <peripheral_clock_get+0x152>
+23004a5c:	6521                	lui	a0,0x8
+23004a5e:	d0050513          	addi	a0,a0,-768 # 7d00 <_heap_size+0x2100>
+23004a62:	02855533          	divu	a0,a0,s0
+23004a66:	bf21                	j	2300497e <peripheral_clock_get+0x152>
             tmpVal = BL_RD_REG(TIMER_BASE, TIMER_TCCR);
-23004a48:	4000a7b7          	lui	a5,0x4000a
-23004a4c:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
+23004a68:	4000a7b7          	lui	a5,0x4000a
+23004a6c:	5007a483          	lw	s1,1280(a5) # 4000a500 <__ram_load_addr+0x1cfcd60c>
             div = BL_RD_REG(TIMER_BASE, TIMER_TCDR);
-23004a50:	5bc7a503          	lw	a0,1468(a5)
+23004a70:	5bc7a503          	lw	a0,1468(a5)
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_2);
-23004a54:	8095                	srli	s1,s1,0x5
+23004a74:	8095                	srli	s1,s1,0x5
             div = BL_GET_REG_BITS_VAL(div, TIMER_TCDR3);
-23004a56:	8141                	srli	a0,a0,0x10
-23004a58:	0ff57513          	zext.b	a0,a0
+23004a76:	8141                	srli	a0,a0,0x10
+23004a78:	0ff57513          	zext.b	a0,a0
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, TIMER_CS_2);
-23004a5c:	888d                	andi	s1,s1,3
+23004a7c:	888d                	andi	s1,s1,3
                 return system_clock_get(SYSTEM_CLOCK_FCLK) / (div + 1);
-23004a5e:	00150413          	addi	s0,a0,1
+23004a7e:	00150413          	addi	s0,a0,1
             if (tmpVal == TIMER_CLKSRC_FCLK) {
-23004a62:	e20492e3          	bnez	s1,23004886 <peripheral_clock_get+0x7a>
-23004a66:	bd45                	j	23004916 <peripheral_clock_get+0x10a>
+23004a82:	e20492e3          	bnez	s1,230048a6 <peripheral_clock_get+0x7a>
+23004a86:	bd45                	j	23004936 <peripheral_clock_get+0x10a>
             tmpVal = BL_RD_REG(HBN_BASE, HBN_GLB);
-23004a68:	4000f7b7          	lui	a5,0x4000f
-23004a6c:	5b84                	lw	s1,48(a5)
+23004a88:	4000f7b7          	lui	a5,0x4000f
+23004a8c:	5b84                	lw	s1,48(a5)
             div = BL_RD_REG(GLB_BASE, GLB_CLK_CFG2);
-23004a6e:	40000937          	lui	s2,0x40000
-23004a72:	00892503          	lw	a0,8(s2) # 40000008 <__ram_load_addr+0x1cfc3114>
+23004a8e:	40000937          	lui	s2,0x40000
+23004a92:	00892503          	lw	a0,8(s2) # 40000008 <__ram_load_addr+0x1cfc3114>
             tmpVal = BL_GET_REG_BITS_VAL(tmpVal, HBN_UART_CLK_SEL);
-23004a76:	8089                	srli	s1,s1,0x2
-23004a78:	8885                	andi	s1,s1,1
+23004a96:	8089                	srli	s1,s1,0x2
+23004a98:	8885                	andi	s1,s1,1
             div = BL_GET_REG_BITS_VAL(div, GLB_UART_CLK_DIV);
-23004a7a:	891d                	andi	a0,a0,7
+23004a9a:	891d                	andi	a0,a0,7
                 return system_clock_get(SYSTEM_CLOCK_FCLK) / (div + 1);
-23004a7c:	00150413          	addi	s0,a0,1
+23004a9c:	00150413          	addi	s0,a0,1
             if (tmpVal == HBN_UART_CLK_FCLK) {
-23004a80:	c095                	beqz	s1,23004aa4 <peripheral_clock_get+0x298>
+23004aa0:	c095                	beqz	s1,23004ac4 <peripheral_clock_get+0x298>
                 return 96000000 / (div + 1);
-23004a82:	05b8e537          	lui	a0,0x5b8e
-23004a86:	80050513          	addi	a0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-23004a8a:	02855533          	divu	a0,a0,s0
-23004a8e:	bdc1                	j	2300495e <peripheral_clock_get+0x152>
+23004aa2:	05b8e537          	lui	a0,0x5b8e
+23004aa6:	80050513          	addi	a0,a0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004aaa:	02855533          	divu	a0,a0,s0
+23004aae:	bdc1                	j	2300497e <peripheral_clock_get+0x152>
                 return 32 * 1000 * 1000;
-23004a90:	01e854b7          	lui	s1,0x1e85
-23004a94:	80048493          	addi	s1,s1,-2048 # 1e84800 <_heap_size+0x1e7ec00>
-23004a98:	bd45                	j	23004948 <peripheral_clock_get+0x13c>
+23004ab0:	01e854b7          	lui	s1,0x1e85
+23004ab4:	80048493          	addi	s1,s1,-2048 # 1e84800 <_heap_size+0x1e7ec00>
+23004ab8:	bd45                	j	23004968 <peripheral_clock_get+0x13c>
                     return 57.6 * 1000 * 1000;
-23004a9a:	036ef437          	lui	s0,0x36ef
-23004a9e:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
-23004aa2:	bde9                	j	2300497c <peripheral_clock_get+0x170>
+23004aba:	036ef437          	lui	s0,0x36ef
+23004abe:	80040413          	addi	s0,s0,-2048 # 36ee800 <_heap_size+0x36e8c00>
+23004ac2:	bde9                	j	2300499c <peripheral_clock_get+0x170>
             if (GLB_Get_Root_CLK_Sel() == 0) {
-23004aa4:	1f010097          	auipc	ra,0x1f010
-23004aa8:	efe080e7          	jalr	-258(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-23004aac:	d175                	beqz	a0,23004a90 <peripheral_clock_get+0x284>
+23004ac4:	1f010097          	auipc	ra,0x1f010
+23004ac8:	ede080e7          	jalr	-290(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004acc:	d175                	beqz	a0,23004ab0 <peripheral_clock_get+0x284>
             } else if (GLB_Get_Root_CLK_Sel() == 1)
-23004aae:	1f010097          	auipc	ra,0x1f010
-23004ab2:	ef4080e7          	jalr	-268(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
-23004ab6:	4705                	li	a4,1
-23004ab8:	fce50ce3          	beq	a0,a4,23004a90 <peripheral_clock_get+0x284>
+23004ace:	1f010097          	auipc	ra,0x1f010
+23004ad2:	ed4080e7          	jalr	-300(ra) # 420149a2 <GLB_Get_Root_CLK_Sel>
+23004ad6:	4705                	li	a4,1
+23004ad8:	fce50ce3          	beq	a0,a4,23004ab0 <peripheral_clock_get+0x284>
                 uint32_t tmpVal = BL_RD_REG(GLB_BASE, GLB_CLK_CFG0);
-23004abc:	00092783          	lw	a5,0(s2)
+23004adc:	00092783          	lw	a5,0(s2)
                 tmpVal = BL_GET_REG_BITS_VAL(tmpVal, GLB_REG_PLL_SEL);
-23004ac0:	8391                	srli	a5,a5,0x4
-23004ac2:	8b8d                	andi	a5,a5,3
+23004ae0:	8391                	srli	a5,a5,0x4
+23004ae2:	8b8d                	andi	a5,a5,3
                 if (tmpVal == 0) {
-23004ac4:	e6079de3          	bnez	a5,2300493e <peripheral_clock_get+0x132>
+23004ae4:	e6079de3          	bnez	a5,2300495e <peripheral_clock_get+0x132>
                     return 57.6 * 1000 * 1000;
-23004ac8:	036ef4b7          	lui	s1,0x36ef
-23004acc:	80048493          	addi	s1,s1,-2048 # 36ee800 <_heap_size+0x36e8c00>
-23004ad0:	bda5                	j	23004948 <peripheral_clock_get+0x13c>
+23004ae8:	036ef4b7          	lui	s1,0x36ef
+23004aec:	80048493          	addi	s1,s1,-2048 # 36ee800 <_heap_size+0x36e8c00>
+23004af0:	bda5                	j	23004968 <peripheral_clock_get+0x13c>
                     return 96 * 1000 * 1000;
-23004ad2:	05b8e437          	lui	s0,0x5b8e
-23004ad6:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-23004ada:	b54d                	j	2300497c <peripheral_clock_get+0x170>
+23004af2:	05b8e437          	lui	s0,0x5b8e
+23004af6:	80040413          	addi	s0,s0,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004afa:	b54d                	j	2300499c <peripheral_clock_get+0x170>
                     return 144 * 1000 * 1000;
-23004adc:	089544b7          	lui	s1,0x8954
-23004ae0:	40048493          	addi	s1,s1,1024 # 8954400 <_heap_size+0x894e800>
-23004ae4:	b595                	j	23004948 <peripheral_clock_get+0x13c>
+23004afc:	089544b7          	lui	s1,0x8954
+23004b00:	40048493          	addi	s1,s1,1024 # 8954400 <_heap_size+0x894e800>
+23004b04:	b595                	j	23004968 <peripheral_clock_get+0x13c>
                 return system_clock_get(SYSTEM_CLOCK_BCLK) / div;
-23004ae6:	4509                	li	a0,2
-23004ae8:	b81ff0ef          	jal	ra,23004668 <system_clock_get>
-23004aec:	02855533          	divu	a0,a0,s0
-23004af0:	b5bd                	j	2300495e <peripheral_clock_get+0x152>
+23004b06:	4509                	li	a0,2
+23004b08:	b81ff0ef          	jal	ra,23004688 <system_clock_get>
+23004b0c:	02855533          	divu	a0,a0,s0
+23004b10:	b5bd                	j	2300497e <peripheral_clock_get+0x152>
                     return 96 * 1000 * 1000;
-23004af2:	05b8e4b7          	lui	s1,0x5b8e
-23004af6:	80048493          	addi	s1,s1,-2048 # 5b8d800 <_heap_size+0x5b87c00>
-23004afa:	b5b9                	j	23004948 <peripheral_clock_get+0x13c>
+23004b12:	05b8e4b7          	lui	s1,0x5b8e
+23004b16:	80048493          	addi	s1,s1,-2048 # 5b8d800 <_heap_size+0x5b87c00>
+23004b1a:	b5b9                	j	23004968 <peripheral_clock_get+0x13c>
 
-23004afc <flash_get_jedecid>:
+23004b1c <flash_get_jedecid>:
  */
 uint32_t flash_get_jedecid(void)
 {
     uint32_t jid = 0;
 
     jid = ((g_jedec_id&0xff)<<16) + (g_jedec_id&0xff00) + ((g_jedec_id&0xff0000)>>16);
-23004afc:	4201a7b7          	lui	a5,0x4201a
-23004b00:	a907a503          	lw	a0,-1392(a5) # 42019a90 <g_jedec_id>
-23004b04:	00ff0737          	lui	a4,0xff0
-23004b08:	01051793          	slli	a5,a0,0x10
-23004b0c:	8ff9                	and	a5,a5,a4
-23004b0e:	6741                	lui	a4,0x10
-23004b10:	f0070713          	addi	a4,a4,-256 # ff00 <_heap_size+0xa300>
-23004b14:	8f69                	and	a4,a4,a0
-23004b16:	8141                	srli	a0,a0,0x10
-23004b18:	8fd9                	or	a5,a5,a4
-23004b1a:	0ff57513          	zext.b	a0,a0
+23004b1c:	4201a7b7          	lui	a5,0x4201a
+23004b20:	a907a503          	lw	a0,-1392(a5) # 42019a90 <g_jedec_id>
+23004b24:	00ff0737          	lui	a4,0xff0
+23004b28:	01051793          	slli	a5,a0,0x10
+23004b2c:	8ff9                	and	a5,a5,a4
+23004b2e:	6741                	lui	a4,0x10
+23004b30:	f0070713          	addi	a4,a4,-256 # ff00 <_heap_size+0xa300>
+23004b34:	8f69                	and	a4,a4,a0
+23004b36:	8141                	srli	a0,a0,0x10
+23004b38:	8fd9                	or	a5,a5,a4
+23004b3a:	0ff57513          	zext.b	a0,a0
     return jid;
 }
-23004b1e:	953e                	add	a0,a0,a5
-23004b20:	8082                	ret
+23004b3e:	953e                	add	a0,a0,a5
+23004b40:	8082                	ret
 
-23004b22 <flash_get_cfg>:
+23004b42 <flash_get_cfg>:
  *
  * @return BL_Err_Type
  */
 BL_Err_Type flash_get_cfg(uint8_t **cfg_addr, uint32_t *len)
 {
     *cfg_addr = (uint8_t *)&g_flash_cfg;
-23004b22:	420187b7          	lui	a5,0x42018
-23004b26:	58078793          	addi	a5,a5,1408 # 42018580 <g_flash_cfg>
-23004b2a:	c11c                	sw	a5,0(a0)
+23004b42:	420187b7          	lui	a5,0x42018
+23004b46:	58078793          	addi	a5,a5,1408 # 42018580 <g_flash_cfg>
+23004b4a:	c11c                	sw	a5,0(a0)
     *len = sizeof(SPI_Flash_Cfg_Type);
-23004b2c:	05400793          	li	a5,84
-23004b30:	c19c                	sw	a5,0(a1)
+23004b4c:	05400793          	li	a5,84
+23004b50:	c19c                	sw	a5,0(a1)
 
     return SUCCESS;
 }
-23004b32:	4501                	li	a0,0
-23004b34:	8082                	ret
+23004b52:	4501                	li	a0,0
+23004b54:	8082                	ret
 
-23004b36 <gpio_set_mode>:
+23004b56 <gpio_set_mode>:
  *
  * @param pin
  * @param mode
  */
 void gpio_set_mode(uint32_t pin, uint32_t mode)
 {
-23004b36:	1101                	addi	sp,sp,-32
+23004b56:	1101                	addi	sp,sp,-32
     GLB_GPIO_Cfg_Type gpio_cfg;
 
     gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004b38:	47ad                	li	a5,11
+23004b58:	47ad                	li	a5,11
 {
-23004b3a:	ca26                	sw	s1,20(sp)
+23004b5a:	ca26                	sw	s1,20(sp)
     gpio_cfg.gpioPin = pin;
     gpio_cfg.drive = 0;
-23004b3c:	10000713          	li	a4,256
+23004b5c:	10000713          	li	a4,256
     gpio_cfg.gpioPin = pin;
-23004b40:	0ff57493          	zext.b	s1,a0
+23004b60:	0ff57493          	zext.b	s1,a0
     gpio_cfg.gpioFun = GPIO_FUN_GPIO;
-23004b44:	00f104a3          	sb	a5,9(sp)
+23004b64:	00f104a3          	sb	a5,9(sp)
 {
-23004b48:	ce06                	sw	ra,28(sp)
-23004b4a:	cc22                	sw	s0,24(sp)
+23004b68:	ce06                	sw	ra,28(sp)
+23004b6a:	cc22                	sw	s0,24(sp)
     gpio_cfg.gpioPin = pin;
-23004b4c:	00910423          	sb	s1,8(sp)
+23004b6c:	00910423          	sb	s1,8(sp)
     gpio_cfg.drive = 0;
-23004b50:	00e11623          	sh	a4,12(sp)
+23004b70:	00e11623          	sh	a4,12(sp)
     gpio_cfg.smtCtrl = 1;
 
     switch (mode) {
-23004b54:	478d                	li	a5,3
-23004b56:	08f58363          	beq	a1,a5,23004bdc <gpio_set_mode+0xa6>
-23004b5a:	842e                	mv	s0,a1
-23004b5c:	02b7ec63          	bltu	a5,a1,23004b94 <gpio_set_mode+0x5e>
-23004b60:	4785                	li	a5,1
-23004b62:	06f58763          	beq	a1,a5,23004bd0 <gpio_set_mode+0x9a>
-23004b66:	4789                	li	a5,2
-23004b68:	02f59063          	bne	a1,a5,23004b88 <gpio_set_mode+0x52>
+23004b74:	478d                	li	a5,3
+23004b76:	08f58363          	beq	a1,a5,23004bfc <gpio_set_mode+0xa6>
+23004b7a:	842e                	mv	s0,a1
+23004b7c:	02b7ec63          	bltu	a5,a1,23004bb4 <gpio_set_mode+0x5e>
+23004b80:	4785                	li	a5,1
+23004b82:	06f58763          	beq	a1,a5,23004bf0 <gpio_set_mode+0x9a>
+23004b86:	4789                	li	a5,2
+23004b88:	02f59063          	bne	a1,a5,23004ba8 <gpio_set_mode+0x52>
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
             gpio_cfg.pullType = GPIO_PULL_UP;
             break;
 
         case GPIO_OUTPUT_PD_MODE:
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-23004b6c:	10100793          	li	a5,257
-23004b70:	00f11523          	sh	a5,10(sp)
+23004b8c:	10100793          	li	a5,257
+23004b90:	00f11523          	sh	a5,10(sp)
             }
 
             break;
     }
 
     GLB_GPIO_Init(&gpio_cfg);
-23004b74:	0028                	addi	a0,sp,8
-23004b76:	1f00f097          	auipc	ra,0x1f00f
-23004b7a:	5b6080e7          	jalr	1462(ra) # 4201412c <GLB_GPIO_Init>
+23004b94:	0028                	addi	a0,sp,8
+23004b96:	1f00f097          	auipc	ra,0x1f00f
+23004b9a:	596080e7          	jalr	1430(ra) # 4201412c <GLB_GPIO_Init>
 }
-23004b7e:	40f2                	lw	ra,28(sp)
-23004b80:	4462                	lw	s0,24(sp)
-23004b82:	44d2                	lw	s1,20(sp)
-23004b84:	6105                	addi	sp,sp,32
-23004b86:	8082                	ret
+23004b9e:	40f2                	lw	ra,28(sp)
+23004ba0:	4462                	lw	s0,24(sp)
+23004ba2:	44d2                	lw	s1,20(sp)
+23004ba4:	6105                	addi	sp,sp,32
+23004ba6:	8082                	ret
     switch (mode) {
-23004b88:	e18d                	bnez	a1,23004baa <gpio_set_mode+0x74>
+23004ba8:	e18d                	bnez	a1,23004bca <gpio_set_mode+0x74>
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-23004b8a:	20100793          	li	a5,513
-23004b8e:	00f11523          	sh	a5,10(sp)
+23004baa:	20100793          	li	a5,513
+23004bae:	00f11523          	sh	a5,10(sp)
             break;
-23004b92:	b7cd                	j	23004b74 <gpio_set_mode+0x3e>
+23004bb2:	b7cd                	j	23004b94 <gpio_set_mode+0x3e>
     switch (mode) {
-23004b94:	4795                	li	a5,5
-23004b96:	04f58063          	beq	a1,a5,23004bd6 <gpio_set_mode+0xa0>
-23004b9a:	47b9                	li	a5,14
-23004b9c:	02f59463          	bne	a1,a5,23004bc4 <gpio_set_mode+0x8e>
+23004bb4:	4795                	li	a5,5
+23004bb6:	04f58063          	beq	a1,a5,23004bf6 <gpio_set_mode+0xa0>
+23004bba:	47b9                	li	a5,14
+23004bbc:	02f59463          	bne	a1,a5,23004be4 <gpio_set_mode+0x8e>
             GLB_GPIO_Set_HZ(pin);
-23004ba0:	8526                	mv	a0,s1
-23004ba2:	1f00f097          	auipc	ra,0x1f00f
-23004ba6:	7b2080e7          	jalr	1970(ra) # 42014354 <GLB_GPIO_Set_HZ>
+23004bc0:	8526                	mv	a0,s1
+23004bc2:	1f00f097          	auipc	ra,0x1f00f
+23004bc6:	792080e7          	jalr	1938(ra) # 42014354 <GLB_GPIO_Set_HZ>
             CPU_Interrupt_Disable(GPIO_INT0_IRQn);
-23004baa:	03c00513          	li	a0,60
-23004bae:	0ff010ef          	jal	ra,230064ac <clic_disable_interrupt>
+23004bca:	03c00513          	li	a0,60
+23004bce:	0df010ef          	jal	ra,230064ac <clic_disable_interrupt>
             GLB_GPIO_IntMask(pin, MASK);
-23004bb2:	8526                	mv	a0,s1
-23004bb4:	4585                	li	a1,1
-23004bb6:	4fb010ef          	jal	ra,230068b0 <GLB_GPIO_IntMask>
+23004bd2:	8526                	mv	a0,s1
+23004bd4:	4585                	li	a1,1
+23004bd6:	4db010ef          	jal	ra,230068b0 <GLB_GPIO_IntMask>
 }
-23004bba:	40f2                	lw	ra,28(sp)
-23004bbc:	4462                	lw	s0,24(sp)
-23004bbe:	44d2                	lw	s1,20(sp)
-23004bc0:	6105                	addi	sp,sp,32
-23004bc2:	8082                	ret
+23004bda:	40f2                	lw	ra,28(sp)
+23004bdc:	4462                	lw	s0,24(sp)
+23004bde:	44d2                	lw	s1,20(sp)
+23004be0:	6105                	addi	sp,sp,32
+23004be2:	8082                	ret
     switch (mode) {
-23004bc4:	4791                	li	a5,4
-23004bc6:	02f59063          	bne	a1,a5,23004be6 <gpio_set_mode+0xb0>
+23004be4:	4791                	li	a5,4
+23004be6:	02f59063          	bne	a1,a5,23004c06 <gpio_set_mode+0xb0>
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004bca:	00011523          	sh	zero,10(sp)
+23004bea:	00011523          	sh	zero,10(sp)
             break;
-23004bce:	b75d                	j	23004b74 <gpio_set_mode+0x3e>
+23004bee:	b75d                	j	23004b94 <gpio_set_mode+0x3e>
             gpio_cfg.gpioMode = GPIO_MODE_OUTPUT;
-23004bd0:	00b11523          	sh	a1,10(sp)
+23004bf0:	00b11523          	sh	a1,10(sp)
             break;
-23004bd4:	b745                	j	23004b74 <gpio_set_mode+0x3e>
+23004bf4:	b745                	j	23004b94 <gpio_set_mode+0x3e>
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004bd6:	00e11523          	sh	a4,10(sp)
+23004bf6:	00e11523          	sh	a4,10(sp)
             break;
-23004bda:	bf69                	j	23004b74 <gpio_set_mode+0x3e>
+23004bfa:	bf69                	j	23004b94 <gpio_set_mode+0x3e>
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004bdc:	20000793          	li	a5,512
-23004be0:	00f11523          	sh	a5,10(sp)
+23004bfc:	20000793          	li	a5,512
+23004c00:	00f11523          	sh	a5,10(sp)
             break;
-23004be4:	bf41                	j	23004b74 <gpio_set_mode+0x3e>
+23004c04:	bf41                	j	23004b94 <gpio_set_mode+0x3e>
             CPU_Interrupt_Disable(GPIO_INT0_IRQn);
-23004be6:	03c00513          	li	a0,60
-23004bea:	0c3010ef          	jal	ra,230064ac <clic_disable_interrupt>
+23004c06:	03c00513          	li	a0,60
+23004c0a:	0a3010ef          	jal	ra,230064ac <clic_disable_interrupt>
             GLB_GPIO_IntMask(pin, MASK);
-23004bee:	4585                	li	a1,1
-23004bf0:	8526                	mv	a0,s1
-23004bf2:	4bf010ef          	jal	ra,230068b0 <GLB_GPIO_IntMask>
+23004c0e:	4585                	li	a1,1
+23004c10:	8526                	mv	a0,s1
+23004c12:	49f010ef          	jal	ra,230068b0 <GLB_GPIO_IntMask>
             if (mode == GPIO_ASYNC_RISING_TRIGER_INT_MODE) {
-23004bf6:	4799                	li	a5,6
+23004c16:	4799                	li	a5,6
             gpio_cfg.gpioMode = GPIO_MODE_INPUT;
-23004bf8:	00010523          	sb	zero,10(sp)
+23004c18:	00010523          	sb	zero,10(sp)
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_PULSE);
-23004bfc:	4605                	li	a2,1
+23004c1c:	4605                	li	a2,1
             if (mode == GPIO_ASYNC_RISING_TRIGER_INT_MODE) {
-23004bfe:	04f40163          	beq	s0,a5,23004c40 <gpio_set_mode+0x10a>
+23004c1e:	04f40163          	beq	s0,a5,23004c60 <gpio_set_mode+0x10a>
             else if (mode == GPIO_ASYNC_FALLING_TRIGER_INT_MODE) {
-23004c02:	479d                	li	a5,7
-23004c04:	04f40f63          	beq	s0,a5,23004c62 <gpio_set_mode+0x12c>
+23004c22:	479d                	li	a5,7
+23004c24:	04f40f63          	beq	s0,a5,23004c82 <gpio_set_mode+0x12c>
             else if (mode == GPIO_ASYNC_HIGH_LEVEL_INT_MODE) {
-23004c08:	47a1                	li	a5,8
-23004c0a:	02f40a63          	beq	s0,a5,23004c3e <gpio_set_mode+0x108>
+23004c28:	47a1                	li	a5,8
+23004c2a:	02f40a63          	beq	s0,a5,23004c5e <gpio_set_mode+0x108>
             else if (mode == GPIO_ASYNC_LOW_LEVEL_INT_MODE) {
-23004c0e:	47a5                	li	a5,9
-23004c10:	06f40163          	beq	s0,a5,23004c72 <gpio_set_mode+0x13c>
+23004c2e:	47a5                	li	a5,9
+23004c30:	06f40163          	beq	s0,a5,23004c92 <gpio_set_mode+0x13c>
             else if (mode == GPIO_SYNC_RISING_TRIGER_INT_MODE) {
-23004c14:	47a9                	li	a5,10
+23004c34:	47a9                	li	a5,10
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_POS_PULSE);
-23004c16:	4605                	li	a2,1
+23004c36:	4605                	li	a2,1
             else if (mode == GPIO_SYNC_RISING_TRIGER_INT_MODE) {
-23004c18:	02f40d63          	beq	s0,a5,23004c52 <gpio_set_mode+0x11c>
+23004c38:	02f40d63          	beq	s0,a5,23004c72 <gpio_set_mode+0x11c>
             else if (mode == GPIO_SYNC_FALLING_TRIGER_INT_MODE) {
-23004c1c:	47ad                	li	a5,11
-23004c1e:	06f40263          	beq	s0,a5,23004c82 <gpio_set_mode+0x14c>
+23004c3c:	47ad                	li	a5,11
+23004c3e:	06f40263          	beq	s0,a5,23004ca2 <gpio_set_mode+0x14c>
             else if (mode == GPIO_SYNC_HIGH_LEVEL_INT_MODE) {
-23004c22:	47b1                	li	a5,12
-23004c24:	02f40663          	beq	s0,a5,23004c50 <gpio_set_mode+0x11a>
+23004c42:	47b1                	li	a5,12
+23004c44:	02f40663          	beq	s0,a5,23004c70 <gpio_set_mode+0x11a>
             else if (mode == GPIO_SYNC_LOW_LEVEL_INT_MODE) {
-23004c28:	47b5                	li	a5,13
-23004c2a:	f4f41ae3          	bne	s0,a5,23004b7e <gpio_set_mode+0x48>
+23004c48:	47b5                	li	a5,13
+23004c4a:	f4f41ae3          	bne	s0,a5,23004b9e <gpio_set_mode+0x48>
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004c2e:	4609                	li	a2,2
-23004c30:	4581                	li	a1,0
-23004c32:	8526                	mv	a0,s1
+23004c4e:	4609                	li	a2,2
+23004c50:	4581                	li	a1,0
+23004c52:	8526                	mv	a0,s1
                 gpio_cfg.pullType = GPIO_PULL_UP;
-23004c34:	000105a3          	sb	zero,11(sp)
+23004c54:	000105a3          	sb	zero,11(sp)
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004c38:	4a9010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c3c:	bf25                	j	23004b74 <gpio_set_mode+0x3e>
+23004c58:	489010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004c5c:	bf25                	j	23004b94 <gpio_set_mode+0x3e>
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c3e:	460d                	li	a2,3
+23004c5e:	460d                	li	a2,3
                 gpio_cfg.pullType = GPIO_PULL_DOWN;
-23004c40:	4785                	li	a5,1
+23004c60:	4785                	li	a5,1
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c42:	4585                	li	a1,1
-23004c44:	8526                	mv	a0,s1
+23004c62:	4585                	li	a1,1
+23004c64:	8526                	mv	a0,s1
                 gpio_cfg.pullType = GPIO_PULL_DOWN;
-23004c46:	00f105a3          	sb	a5,11(sp)
+23004c66:	00f105a3          	sb	a5,11(sp)
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c4a:	497010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c4e:	b71d                	j	23004b74 <gpio_set_mode+0x3e>
+23004c6a:	477010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004c6e:	b71d                	j	23004b94 <gpio_set_mode+0x3e>
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c50:	460d                	li	a2,3
+23004c70:	460d                	li	a2,3
                 gpio_cfg.pullType = GPIO_PULL_DOWN;
-23004c52:	4785                	li	a5,1
+23004c72:	4785                	li	a5,1
                 GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c54:	4581                	li	a1,0
-23004c56:	8526                	mv	a0,s1
-                gpio_cfg.pullType = GPIO_PULL_DOWN;
-23004c58:	00f105a3          	sb	a5,11(sp)
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
-23004c5c:	485010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c60:	bf11                	j	23004b74 <gpio_set_mode+0x3e>
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
-23004c62:	4601                	li	a2,0
-23004c64:	4585                	li	a1,1
-23004c66:	8526                	mv	a0,s1
-                gpio_cfg.pullType = GPIO_PULL_UP;
-23004c68:	000105a3          	sb	zero,11(sp)
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
-23004c6c:	475010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c70:	b711                	j	23004b74 <gpio_set_mode+0x3e>
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
-23004c72:	4609                	li	a2,2
-23004c74:	4585                	li	a1,1
+23004c74:	4581                	li	a1,0
 23004c76:	8526                	mv	a0,s1
-                gpio_cfg.pullType = GPIO_PULL_UP;
-23004c78:	000105a3          	sb	zero,11(sp)
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
+                gpio_cfg.pullType = GPIO_PULL_DOWN;
+23004c78:	00f105a3          	sb	a5,11(sp)
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_POS_LEVEL);
 23004c7c:	465010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c80:	bdd5                	j	23004b74 <gpio_set_mode+0x3e>
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
+23004c80:	bf11                	j	23004b94 <gpio_set_mode+0x3e>
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
 23004c82:	4601                	li	a2,0
-23004c84:	4581                	li	a1,0
+23004c84:	4585                	li	a1,1
 23004c86:	8526                	mv	a0,s1
                 gpio_cfg.pullType = GPIO_PULL_UP;
 23004c88:	000105a3          	sb	zero,11(sp)
-                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
 23004c8c:	455010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
-23004c90:	b5d5                	j	23004b74 <gpio_set_mode+0x3e>
+23004c90:	b711                	j	23004b94 <gpio_set_mode+0x3e>
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
+23004c92:	4609                	li	a2,2
+23004c94:	4585                	li	a1,1
+23004c96:	8526                	mv	a0,s1
+                gpio_cfg.pullType = GPIO_PULL_UP;
+23004c98:	000105a3          	sb	zero,11(sp)
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_ASYNC, GLB_GPIO_INT_TRIG_NEG_LEVEL);
+23004c9c:	445010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004ca0:	bdd5                	j	23004b94 <gpio_set_mode+0x3e>
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
+23004ca2:	4601                	li	a2,0
+23004ca4:	4581                	li	a1,0
+23004ca6:	8526                	mv	a0,s1
+                gpio_cfg.pullType = GPIO_PULL_UP;
+23004ca8:	000105a3          	sb	zero,11(sp)
+                GLB_Set_GPIO_IntMod(pin, GLB_GPIO_INT_CONTROL_SYNC, GLB_GPIO_INT_TRIG_NEG_PULSE);
+23004cac:	435010ef          	jal	ra,230068e0 <GLB_Set_GPIO_IntMod>
+23004cb0:	b5d5                	j	23004b94 <gpio_set_mode+0x3e>
 
-23004c92 <gpio_write>:
+23004cb2 <gpio_write>:
  * @param pin
  * @param value
  */
 void gpio_write(uint32_t pin, uint32_t value)
 {
     uint32_t tmp = BL_RD_REG(GLB_BASE, GLB_GPIO_OUTPUT);
-23004c92:	400007b7          	lui	a5,0x40000
-23004c96:	1887a703          	lw	a4,392(a5) # 40000188 <__ram_load_addr+0x1cfc3294>
+23004cb2:	400007b7          	lui	a5,0x40000
+23004cb6:	1887a703          	lw	a4,392(a5) # 40000188 <__ram_load_addr+0x1cfc3294>
 
     if (value)
         tmp |= (1 << pin);
-23004c9a:	4785                	li	a5,1
-23004c9c:	00a797b3          	sll	a5,a5,a0
+23004cba:	4785                	li	a5,1
+23004cbc:	00a797b3          	sll	a5,a5,a0
     if (value)
-23004ca0:	c599                	beqz	a1,23004cae <gpio_write+0x1c>
+23004cc0:	c599                	beqz	a1,23004cce <gpio_write+0x1c>
         tmp |= (1 << pin);
-23004ca2:	8fd9                	or	a5,a5,a4
+23004cc2:	8fd9                	or	a5,a5,a4
     else
         tmp &= ~(1 << pin);
 
     BL_WR_REG(GLB_BASE, GLB_GPIO_OUTPUT, tmp);
-23004ca4:	40000737          	lui	a4,0x40000
-23004ca8:	18f72423          	sw	a5,392(a4) # 40000188 <__ram_load_addr+0x1cfc3294>
+23004cc4:	40000737          	lui	a4,0x40000
+23004cc8:	18f72423          	sw	a5,392(a4) # 40000188 <__ram_load_addr+0x1cfc3294>
 }
-23004cac:	8082                	ret
+23004ccc:	8082                	ret
         tmp &= ~(1 << pin);
-23004cae:	fff7c793          	not	a5,a5
-23004cb2:	8ff9                	and	a5,a5,a4
+23004cce:	fff7c793          	not	a5,a5
+23004cd2:	8ff9                	and	a5,a5,a4
     BL_WR_REG(GLB_BASE, GLB_GPIO_OUTPUT, tmp);
-23004cb4:	40000737          	lui	a4,0x40000
-23004cb8:	18f72423          	sw	a5,392(a4) # 40000188 <__ram_load_addr+0x1cfc3294>
+23004cd4:	40000737          	lui	a4,0x40000
+23004cd8:	18f72423          	sw	a5,392(a4) # 40000188 <__ram_load_addr+0x1cfc3294>
 }
-23004cbc:	8082                	ret
+23004cdc:	8082                	ret
 
-23004cbe <mtimer_delay_ms>:
+23004cde <mtimer_delay_ms>:
  * @brief
  *
  * @param time
  */
 void mtimer_delay_ms(uint32_t time)
 {
-23004cbe:	7179                	addi	sp,sp,-48
+23004cde:	7179                	addi	sp,sp,-48
     uint64_t cnt = 0;
     uint32_t clock = SystemCoreClockGet();
-23004cc0:	4000f7b7          	lui	a5,0x4000f
+23004ce0:	4000f7b7          	lui	a5,0x4000f
 {
-23004cc4:	cc52                	sw	s4,24(sp)
-23004cc6:	ca56                	sw	s5,20(sp)
+23004ce4:	cc52                	sw	s4,24(sp)
+23004ce6:	ca56                	sw	s5,20(sp)
     uint32_t clock = SystemCoreClockGet();
-23004cc8:	1087aa03          	lw	s4,264(a5) # 4000f108 <__ram_load_addr+0x1cfd2214>
+23004ce8:	1087aa03          	lw	s4,264(a5) # 4000f108 <__ram_load_addr+0x1cfd2214>
 {
-23004ccc:	d606                	sw	ra,44(sp)
-23004cce:	d422                	sw	s0,40(sp)
-23004cd0:	d226                	sw	s1,36(sp)
-23004cd2:	d04a                	sw	s2,32(sp)
-23004cd4:	ce4e                	sw	s3,28(sp)
-23004cd6:	c85a                	sw	s6,16(sp)
-23004cd8:	c65e                	sw	s7,12(sp)
-23004cda:	8aaa                	mv	s5,a0
+23004cec:	d606                	sw	ra,44(sp)
+23004cee:	d422                	sw	s0,40(sp)
+23004cf0:	d226                	sw	s1,36(sp)
+23004cf2:	d04a                	sw	s2,32(sp)
+23004cf4:	ce4e                	sw	s3,28(sp)
+23004cf6:	c85a                	sw	s6,16(sp)
+23004cf8:	c65e                	sw	s7,12(sp)
+23004cfa:	8aaa                	mv	s5,a0
         tmpValLow = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME);
-23004cdc:	0200c7b7          	lui	a5,0x200c
-23004ce0:	ff87a503          	lw	a0,-8(a5) # 200bff8 <_heap_size+0x20063f8>
+23004cfc:	0200c7b7          	lui	a5,0x200c
+23004d00:	ff87a503          	lw	a0,-8(a5) # 200bff8 <_heap_size+0x20063f8>
         tmpValHigh = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME + 4);
-23004ce4:	ffc7a583          	lw	a1,-4(a5)
+23004d04:	ffc7a583          	lw	a1,-4(a5)
         tmpValHigh1 = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME + 4);
-23004ce8:	ffc7a703          	lw	a4,-4(a5)
+23004d08:	ffc7a703          	lw	a4,-4(a5)
     } while (tmpValHigh != tmpValHigh1);
-23004cec:	fee59ae3          	bne	a1,a4,23004ce0 <mtimer_delay_ms+0x22>
+23004d0c:	fee59ae3          	bne	a1,a4,23004d00 <mtimer_delay_ms+0x22>
 
     while (mtimer_get_time_ms() - startTime < time) {
         cnt++;
 
         /* assume BFLB_BSP_Get_Time_Ms take 32 cycles*/
         if (cnt > (time * (clock >> (10 + 5))) * 2) {
-23004cf0:	00fa5a13          	srli	s4,s4,0xf
-23004cf4:	035a0a33          	mul	s4,s4,s5
+23004d10:	00fa5a13          	srli	s4,s4,0xf
+23004d14:	035a0a33          	mul	s4,s4,s5
     return mtimer_get_time_us() / 1000;
-23004cf8:	3e800613          	li	a2,1000
-23004cfc:	4681                	li	a3,0
-23004cfe:	b95fb0ef          	jal	ra,23000892 <__udivdi3>
-23004d02:	892a                	mv	s2,a0
-23004d04:	84ae                	mv	s1,a1
+23004d18:	3e800613          	li	a2,1000
+23004d1c:	4681                	li	a3,0
+23004d1e:	b75fb0ef          	jal	ra,23000892 <__udivdi3>
+23004d22:	892a                	mv	s2,a0
+23004d24:	84ae                	mv	s1,a1
     while (mtimer_get_time_ms() - startTime < time) {
-23004d06:	4981                	li	s3,0
+23004d26:	4981                	li	s3,0
     uint64_t cnt = 0;
-23004d08:	4b01                	li	s6,0
-23004d0a:	4b81                	li	s7,0
+23004d28:	4b01                	li	s6,0
+23004d2a:	4b81                	li	s7,0
         tmpValLow = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME);
-23004d0c:	0200c437          	lui	s0,0x200c
+23004d2c:	0200c437          	lui	s0,0x200c
         if (cnt > (time * (clock >> (10 + 5))) * 2) {
-23004d10:	0a06                	slli	s4,s4,0x1
+23004d30:	0a06                	slli	s4,s4,0x1
         tmpValLow = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME);
-23004d12:	ff842503          	lw	a0,-8(s0) # 200bff8 <_heap_size+0x20063f8>
+23004d32:	ff842503          	lw	a0,-8(s0) # 200bff8 <_heap_size+0x20063f8>
         tmpValHigh = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME + 4);
-23004d16:	ffc42583          	lw	a1,-4(s0)
+23004d36:	ffc42583          	lw	a1,-4(s0)
         tmpValHigh1 = *(volatile uint32_t *)(CLIC_CTRL_ADDR + CLIC_MTIME + 4);
-23004d1a:	ffc42783          	lw	a5,-4(s0)
+23004d3a:	ffc42783          	lw	a5,-4(s0)
     } while (tmpValHigh != tmpValHigh1);
-23004d1e:	fef59ae3          	bne	a1,a5,23004d12 <mtimer_delay_ms+0x54>
+23004d3e:	fef59ae3          	bne	a1,a5,23004d32 <mtimer_delay_ms+0x54>
     return mtimer_get_time_us() / 1000;
-23004d22:	3e800613          	li	a2,1000
-23004d26:	4681                	li	a3,0
-23004d28:	b6bfb0ef          	jal	ra,23000892 <__udivdi3>
+23004d42:	3e800613          	li	a2,1000
+23004d46:	4681                	li	a3,0
+23004d48:	b4bfb0ef          	jal	ra,23000892 <__udivdi3>
     while (mtimer_get_time_ms() - startTime < time) {
-23004d2c:	41250733          	sub	a4,a0,s2
+23004d4c:	41250733          	sub	a4,a0,s2
         cnt++;
-23004d30:	001b0793          	addi	a5,s6,1
+23004d50:	001b0793          	addi	a5,s6,1
     while (mtimer_get_time_ms() - startTime < time) {
-23004d34:	00e53533          	sltu	a0,a0,a4
-23004d38:	8d85                	sub	a1,a1,s1
+23004d54:	00e53533          	sltu	a0,a0,a4
+23004d58:	8d85                	sub	a1,a1,s1
         cnt++;
-23004d3a:	0167bb33          	sltu	s6,a5,s6
+23004d5a:	0167bb33          	sltu	s6,a5,s6
     while (mtimer_get_time_ms() - startTime < time) {
-23004d3e:	40a58533          	sub	a0,a1,a0
+23004d5e:	40a58533          	sub	a0,a1,a0
         cnt++;
-23004d42:	9bda                	add	s7,s7,s6
+23004d62:	9bda                	add	s7,s7,s6
     while (mtimer_get_time_ms() - startTime < time) {
-23004d44:	00a99963          	bne	s3,a0,23004d56 <mtimer_delay_ms+0x98>
-23004d48:	01577763          	bgeu	a4,s5,23004d56 <mtimer_delay_ms+0x98>
+23004d64:	00a99963          	bne	s3,a0,23004d76 <mtimer_delay_ms+0x98>
+23004d68:	01577763          	bgeu	a4,s5,23004d76 <mtimer_delay_ms+0x98>
         cnt++;
-23004d4c:	8b3e                	mv	s6,a5
+23004d6c:	8b3e                	mv	s6,a5
         if (cnt > (time * (clock >> (10 + 5))) * 2) {
-23004d4e:	000b9463          	bnez	s7,23004d56 <mtimer_delay_ms+0x98>
-23004d52:	fcfa70e3          	bgeu	s4,a5,23004d12 <mtimer_delay_ms+0x54>
+23004d6e:	000b9463          	bnez	s7,23004d76 <mtimer_delay_ms+0x98>
+23004d72:	fcfa70e3          	bgeu	s4,a5,23004d32 <mtimer_delay_ms+0x54>
             break;
         }
     }
 }
-23004d56:	50b2                	lw	ra,44(sp)
-23004d58:	5422                	lw	s0,40(sp)
-23004d5a:	5492                	lw	s1,36(sp)
-23004d5c:	5902                	lw	s2,32(sp)
-23004d5e:	49f2                	lw	s3,28(sp)
-23004d60:	4a62                	lw	s4,24(sp)
-23004d62:	4ad2                	lw	s5,20(sp)
-23004d64:	4b42                	lw	s6,16(sp)
-23004d66:	4bb2                	lw	s7,12(sp)
-23004d68:	6145                	addi	sp,sp,48
-23004d6a:	8082                	ret
+23004d76:	50b2                	lw	ra,44(sp)
+23004d78:	5422                	lw	s0,40(sp)
+23004d7a:	5492                	lw	s1,36(sp)
+23004d7c:	5902                	lw	s2,32(sp)
+23004d7e:	49f2                	lw	s3,28(sp)
+23004d80:	4a62                	lw	s4,24(sp)
+23004d82:	4ad2                	lw	s5,20(sp)
+23004d84:	4b42                	lw	s6,16(sp)
+23004d86:	4bb2                	lw	s7,12(sp)
+23004d88:	6145                	addi	sp,sp,48
+23004d8a:	8082                	ret
 
-23004d6c <uart_open>:
+23004d8c <uart_open>:
  * @param dev
  * @param oflag
  * @return int
  */
 int uart_open(struct device *dev, uint16_t oflag)
 {
-23004d6c:	7179                	addi	sp,sp,-48
-23004d6e:	d606                	sw	ra,44(sp)
-23004d70:	d422                	sw	s0,40(sp)
-23004d72:	d226                	sw	s1,36(sp)
-23004d74:	842a                	mv	s0,a0
+23004d8c:	7179                	addi	sp,sp,-48
+23004d8e:	d606                	sw	ra,44(sp)
+23004d90:	d422                	sw	s0,40(sp)
+23004d92:	d226                	sw	s1,36(sp)
+23004d94:	842a                	mv	s0,a0
     uart_device_t *uart_device = (uart_device_t *)dev;
     UART_FifoCfg_Type fifoCfg = { 0 };
     UART_CFG_Type uart_cfg = { 0 };
 
     /* disable all interrupt */
     UART_IntMask(uart_device->id, UART_INT_ALL, MASK);
-23004d76:	03c54503          	lbu	a0,60(a0)
-23004d7a:	4605                	li	a2,1
+23004d96:	03c54503          	lbu	a0,60(a0)
+23004d9a:	4605                	li	a2,1
 {
-23004d7c:	84ae                	mv	s1,a1
+23004d9c:	84ae                	mv	s1,a1
     UART_IntMask(uart_device->id, UART_INT_ALL, MASK);
-23004d7e:	45a5                	li	a1,9
+23004d9e:	45a5                	li	a1,9
     UART_FifoCfg_Type fifoCfg = { 0 };
-23004d80:	c402                	sw	zero,8(sp)
+23004da0:	c402                	sw	zero,8(sp)
     UART_CFG_Type uart_cfg = { 0 };
-23004d82:	c602                	sw	zero,12(sp)
-23004d84:	c802                	sw	zero,16(sp)
-23004d86:	ca02                	sw	zero,20(sp)
-23004d88:	cc02                	sw	zero,24(sp)
-23004d8a:	ce02                	sw	zero,28(sp)
+23004da2:	c602                	sw	zero,12(sp)
+23004da4:	c802                	sw	zero,16(sp)
+23004da6:	ca02                	sw	zero,20(sp)
+23004da8:	cc02                	sw	zero,24(sp)
+23004daa:	ce02                	sw	zero,28(sp)
     UART_IntMask(uart_device->id, UART_INT_ALL, MASK);
-23004d8c:	194020ef          	jal	ra,23006f20 <UART_IntMask>
+23004dac:	174020ef          	jal	ra,23006f20 <UART_IntMask>
     /* disable uart before config */
     UART_Disable(uart_device->id, UART_TXRX);
-23004d90:	03c44503          	lbu	a0,60(s0)
-23004d94:	4589                	li	a1,2
-23004d96:	0ac020ef          	jal	ra,23006e42 <UART_Disable>
+23004db0:	03c44503          	lbu	a0,60(s0)
+23004db4:	4589                	li	a1,2
+23004db6:	08c020ef          	jal	ra,23006e42 <UART_Disable>
 
     uint32_t uart_clk = peripheral_clock_get(PERIPHERAL_CLOCK_UART);
-23004d9a:	4501                	li	a0,0
-23004d9c:	a71ff0ef          	jal	ra,2300480c <peripheral_clock_get>
+23004dba:	4501                	li	a0,0
+23004dbc:	a71ff0ef          	jal	ra,2300482c <peripheral_clock_get>
     uart_cfg.baudRate = uart_device->baudrate;
     uart_cfg.dataBits = uart_device->databits;
     uart_cfg.stopBits = uart_device->stopbits;
     uart_cfg.parity = uart_device->parity;
-23004da0:	04644703          	lbu	a4,70(s0)
+23004dc0:	04644703          	lbu	a4,70(s0)
     uart_cfg.baudRate = uart_device->baudrate;
-23004da4:	4030                	lw	a2,64(s0)
+23004dc4:	4030                	lw	a2,64(s0)
     uart_cfg.dataBits = uart_device->databits;
-23004da6:	04445683          	lhu	a3,68(s0)
+23004dc6:	04445683          	lhu	a3,68(s0)
     uint32_t uart_clk = peripheral_clock_get(PERIPHERAL_CLOCK_UART);
-23004daa:	87aa                	mv	a5,a0
+23004dca:	87aa                	mv	a5,a0
     uart_cfg.rxLinMode = UART_RX_LINMODE_ENABLE;
     uart_cfg.txBreakBitCnt = UART_TX_BREAKBIT_CNT;
     uart_cfg.rxDeglitch = ENABLE;
 
     /* uart init with default configuration */
     UART_Init(uart_device->id, &uart_cfg);
-23004dac:	03c44503          	lbu	a0,60(s0)
-23004db0:	006c                	addi	a1,sp,12
+23004dcc:	03c44503          	lbu	a0,60(s0)
+23004dd0:	006c                	addi	a1,sp,12
     uart_cfg.uartClk = uart_clk;
-23004db2:	c63e                	sw	a5,12(sp)
+23004dd2:	c63e                	sw	a5,12(sp)
     uart_cfg.rxDeglitch = ENABLE;
-23004db4:	4785                	li	a5,1
+23004dd4:	4785                	li	a5,1
     uart_cfg.parity = uart_device->parity;
-23004db6:	00e10b23          	sb	a4,22(sp)
+23004dd6:	00e10b23          	sb	a4,22(sp)
     uart_cfg.rxDeglitch = ENABLE;
-23004dba:	cc3e                	sw	a5,24(sp)
+23004dda:	cc3e                	sw	a5,24(sp)
     uart_cfg.baudRate = uart_device->baudrate;
-23004dbc:	c832                	sw	a2,16(sp)
+23004ddc:	c832                	sw	a2,16(sp)
     uart_cfg.dataBits = uart_device->databits;
-23004dbe:	00d11a23          	sh	a3,20(sp)
+23004dde:	00d11a23          	sh	a3,20(sp)
     uart_cfg.ctsFlowControl = UART_CTS_FLOWCONTROL_ENABLE;
-23004dc2:	00010ba3          	sb	zero,23(sp)
+23004de2:	00010ba3          	sb	zero,23(sp)
     uart_cfg.rxLinMode = UART_RX_LINMODE_ENABLE;
-23004dc6:	00011e23          	sh	zero,28(sp)
+23004de6:	00011e23          	sh	zero,28(sp)
     uart_cfg.byteBitInverse = UART_MSB_FIRST_ENABLE;
-23004dca:	00010f23          	sb	zero,30(sp)
+23004dea:	00010f23          	sb	zero,30(sp)
     UART_Init(uart_device->id, &uart_cfg);
-23004dce:	6b9010ef          	jal	ra,23006c86 <UART_Init>
+23004dee:	699010ef          	jal	ra,23006c86 <UART_Init>
 
     /* Enable tx free run mode */
     UART_TxFreeRun(uart_device->id, ENABLE);
-23004dd2:	03c44503          	lbu	a0,60(s0)
-23004dd6:	4585                	li	a1,1
-23004dd8:	0de020ef          	jal	ra,23006eb6 <UART_TxFreeRun>
+23004df2:	03c44503          	lbu	a0,60(s0)
+23004df6:	4585                	li	a1,1
+23004df8:	0be020ef          	jal	ra,23006eb6 <UART_TxFreeRun>
     /*set de-glitch function cycle count value*/
     UART_SetDeglitchCount(uart_device->id, 2);
-23004ddc:	03c44503          	lbu	a0,60(s0)
-23004de0:	4589                	li	a1,2
-23004de2:	0b2020ef          	jal	ra,23006e94 <UART_SetDeglitchCount>
+23004dfc:	03c44503          	lbu	a0,60(s0)
+23004e00:	4589                	li	a1,2
+23004e02:	092020ef          	jal	ra,23006e94 <UART_SetDeglitchCount>
 
     /* Set rx time-out value */
     UART_SetRxTimeoutValue(uart_device->id, UART_DEFAULT_RTO_TIMEOUT);
-23004de6:	03c44503          	lbu	a0,60(s0)
-23004dea:	06400593          	li	a1,100
-23004dee:	086020ef          	jal	ra,23006e74 <UART_SetRxTimeoutValue>
+23004e06:	03c44503          	lbu	a0,60(s0)
+23004e0a:	06400593          	li	a1,100
+23004e0e:	066020ef          	jal	ra,23006e74 <UART_SetRxTimeoutValue>
 
     fifoCfg.txFifoDmaThreshold = uart_device->fifo_threshold;
-23004df2:	04744783          	lbu	a5,71(s0)
+23004e12:	04744783          	lbu	a5,71(s0)
     fifoCfg.txFifoDmaEnable = DISABLE;
-23004df6:	00011523          	sh	zero,10(sp)
+23004e16:	00011523          	sh	zero,10(sp)
     fifoCfg.rxFifoDmaThreshold = uart_device->fifo_threshold;
     fifoCfg.rxFifoDmaEnable = DISABLE;
 
     if (oflag & DEVICE_OFLAG_STREAM_TX) {
     }
     if ((oflag & DEVICE_OFLAG_INT_TX) || (oflag & DEVICE_OFLAG_INT_RX)) {
-23004dfa:	00c4f713          	andi	a4,s1,12
+23004e1a:	00c4f713          	andi	a4,s1,12
     fifoCfg.txFifoDmaThreshold = uart_device->fifo_threshold;
-23004dfe:	00f10423          	sb	a5,8(sp)
+23004e1e:	00f10423          	sb	a5,8(sp)
     fifoCfg.rxFifoDmaThreshold = uart_device->fifo_threshold;
-23004e02:	00f104a3          	sb	a5,9(sp)
+23004e22:	00f104a3          	sb	a5,9(sp)
 #ifdef BSP_USING_UART0
         if (uart_device->id == UART0_ID)
-23004e06:	03c44503          	lbu	a0,60(s0)
+23004e26:	03c44503          	lbu	a0,60(s0)
     if ((oflag & DEVICE_OFLAG_INT_TX) || (oflag & DEVICE_OFLAG_INT_RX)) {
-23004e0a:	c709                	beqz	a4,23004e14 <uart_open+0xa8>
+23004e2a:	c709                	beqz	a4,23004e34 <uart_open+0xa8>
         if (uart_device->id == UART0_ID)
-23004e0c:	cd15                	beqz	a0,23004e48 <uart_open+0xdc>
+23004e2c:	cd15                	beqz	a0,23004e68 <uart_open+0xdc>
             Interrupt_Handler_Register(UART0_IRQn, UART0_IRQ);
 #endif
 #ifdef BSP_USING_UART1
         if (uart_device->id == UART1_ID)
-23004e0e:	4785                	li	a5,1
-23004e10:	04f50963          	beq	a0,a5,23004e62 <uart_open+0xf6>
+23004e2e:	4785                	li	a5,1
+23004e30:	04f50963          	beq	a0,a5,23004e82 <uart_open+0xf6>
             Interrupt_Handler_Register(UART1_IRQn, UART1_IRQ);
 #endif
     }
     if (oflag & DEVICE_OFLAG_DMA_TX) {
-23004e14:	0104f793          	andi	a5,s1,16
-23004e18:	c781                	beqz	a5,23004e20 <uart_open+0xb4>
+23004e34:	0104f793          	andi	a5,s1,16
+23004e38:	c781                	beqz	a5,23004e40 <uart_open+0xb4>
         fifoCfg.txFifoDmaEnable = ENABLE;
-23004e1a:	4785                	li	a5,1
-23004e1c:	00f10523          	sb	a5,10(sp)
+23004e3a:	4785                	li	a5,1
+23004e3c:	00f10523          	sb	a5,10(sp)
     }
     if (oflag & DEVICE_OFLAG_DMA_RX) {
-23004e20:	0204f493          	andi	s1,s1,32
-23004e24:	c481                	beqz	s1,23004e2c <uart_open+0xc0>
+23004e40:	0204f493          	andi	s1,s1,32
+23004e44:	c481                	beqz	s1,23004e4c <uart_open+0xc0>
         fifoCfg.rxFifoDmaEnable = ENABLE;
-23004e26:	4785                	li	a5,1
-23004e28:	00f105a3          	sb	a5,11(sp)
+23004e46:	4785                	li	a5,1
+23004e48:	00f105a3          	sb	a5,11(sp)
     }
 
     UART_FifoConfig(uart_device->id, &fifoCfg);
-23004e2c:	002c                	addi	a1,sp,8
-23004e2e:	777010ef          	jal	ra,23006da4 <UART_FifoConfig>
+23004e4c:	002c                	addi	a1,sp,8
+23004e4e:	757010ef          	jal	ra,23006da4 <UART_FifoConfig>
     /* enable uart */
     UART_Enable(uart_device->id, UART_TXRX);
-23004e32:	03c44503          	lbu	a0,60(s0)
-23004e36:	4589                	li	a1,2
-23004e38:	7d5010ef          	jal	ra,23006e0c <UART_Enable>
+23004e52:	03c44503          	lbu	a0,60(s0)
+23004e56:	4589                	li	a1,2
+23004e58:	7b5010ef          	jal	ra,23006e0c <UART_Enable>
     return 0;
 }
-23004e3c:	50b2                	lw	ra,44(sp)
-23004e3e:	5422                	lw	s0,40(sp)
-23004e40:	5492                	lw	s1,36(sp)
-23004e42:	4501                	li	a0,0
-23004e44:	6145                	addi	sp,sp,48
-23004e46:	8082                	ret
+23004e5c:	50b2                	lw	ra,44(sp)
+23004e5e:	5422                	lw	s0,40(sp)
+23004e60:	5492                	lw	s1,36(sp)
+23004e62:	4501                	li	a0,0
+23004e64:	6145                	addi	sp,sp,48
+23004e66:	8082                	ret
             Interrupt_Handler_Register(UART0_IRQn, UART0_IRQ);
-23004e48:	230055b7          	lui	a1,0x23005
-23004e4c:	02d00513          	li	a0,45
-23004e50:	3ec58593          	addi	a1,a1,1004 # 230053ec <UART0_IRQ>
-23004e54:	62e010ef          	jal	ra,23006482 <Interrupt_Handler_Register>
+23004e68:	230055b7          	lui	a1,0x23005
+23004e6c:	02d00513          	li	a0,45
+23004e70:	40c58593          	addi	a1,a1,1036 # 2300540c <UART0_IRQ>
+23004e74:	60e010ef          	jal	ra,23006482 <Interrupt_Handler_Register>
         if (uart_device->id == UART1_ID)
-23004e58:	03c44503          	lbu	a0,60(s0)
-23004e5c:	4785                	li	a5,1
-23004e5e:	faf51be3          	bne	a0,a5,23004e14 <uart_open+0xa8>
+23004e78:	03c44503          	lbu	a0,60(s0)
+23004e7c:	4785                	li	a5,1
+23004e7e:	faf51be3          	bne	a0,a5,23004e34 <uart_open+0xa8>
             Interrupt_Handler_Register(UART1_IRQn, UART1_IRQ);
-23004e62:	230055b7          	lui	a1,0x23005
-23004e66:	02e00513          	li	a0,46
-23004e6a:	3e658593          	addi	a1,a1,998 # 230053e6 <UART1_IRQ>
-23004e6e:	614010ef          	jal	ra,23006482 <Interrupt_Handler_Register>
+23004e82:	230055b7          	lui	a1,0x23005
+23004e86:	02e00513          	li	a0,46
+23004e8a:	40658593          	addi	a1,a1,1030 # 23005406 <UART1_IRQ>
+23004e8e:	5f4010ef          	jal	ra,23006482 <Interrupt_Handler_Register>
     UART_FifoConfig(uart_device->id, &fifoCfg);
-23004e72:	03c44503          	lbu	a0,60(s0)
-23004e76:	bf79                	j	23004e14 <uart_open+0xa8>
+23004e92:	03c44503          	lbu	a0,60(s0)
+23004e96:	bf79                	j	23004e34 <uart_open+0xa8>
 
-23004e78 <uart_close>:
+23004e98 <uart_close>:
  *
  * @param dev
  * @return int
  */
 int uart_close(struct device *dev)
 {
-23004e78:	1141                	addi	sp,sp,-16
-23004e7a:	c422                	sw	s0,8(sp)
-23004e7c:	c606                	sw	ra,12(sp)
-23004e7e:	842a                	mv	s0,a0
+23004e98:	1141                	addi	sp,sp,-16
+23004e9a:	c422                	sw	s0,8(sp)
+23004e9c:	c606                	sw	ra,12(sp)
+23004e9e:	842a                	mv	s0,a0
     uart_device_t *uart_device = (uart_device_t *)dev;
 
     UART_Disable(uart_device->id, UART_TXRX);
-23004e80:	03c54503          	lbu	a0,60(a0)
-23004e84:	4589                	li	a1,2
-23004e86:	7bd010ef          	jal	ra,23006e42 <UART_Disable>
+23004ea0:	03c54503          	lbu	a0,60(a0)
+23004ea4:	4589                	li	a1,2
+23004ea6:	79d010ef          	jal	ra,23006e42 <UART_Disable>
     if (uart_device->id == 0) {
-23004e8a:	03c44783          	lbu	a5,60(s0)
-23004e8e:	cb89                	beqz	a5,23004ea0 <uart_close+0x28>
+23004eaa:	03c44783          	lbu	a5,60(s0)
+23004eae:	cb89                	beqz	a5,23004ec0 <uart_close+0x28>
         GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART0);
     } else if (uart_device->id == 1) {
-23004e90:	4705                	li	a4,1
-23004e92:	00e78f63          	beq	a5,a4,23004eb0 <uart_close+0x38>
+23004eb0:	4705                	li	a4,1
+23004eb2:	00e78f63          	beq	a5,a4,23004ed0 <uart_close+0x38>
         GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART1);
     }
     return 0;
-}
-23004e96:	40b2                	lw	ra,12(sp)
-23004e98:	4422                	lw	s0,8(sp)
-23004e9a:	4501                	li	a0,0
-23004e9c:	0141                	addi	sp,sp,16
-23004e9e:	8082                	ret
-        GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART0);
-23004ea0:	4541                	li	a0,16
-23004ea2:	0db010ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
-}
-23004ea6:	40b2                	lw	ra,12(sp)
-23004ea8:	4422                	lw	s0,8(sp)
-23004eaa:	4501                	li	a0,0
-23004eac:	0141                	addi	sp,sp,16
-23004eae:	8082                	ret
-        GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART1);
-23004eb0:	4545                	li	a0,17
-23004eb2:	0cb010ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
 }
 23004eb6:	40b2                	lw	ra,12(sp)
 23004eb8:	4422                	lw	s0,8(sp)
 23004eba:	4501                	li	a0,0
 23004ebc:	0141                	addi	sp,sp,16
 23004ebe:	8082                	ret
+        GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART0);
+23004ec0:	4541                	li	a0,16
+23004ec2:	0bb010ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
+}
+23004ec6:	40b2                	lw	ra,12(sp)
+23004ec8:	4422                	lw	s0,8(sp)
+23004eca:	4501                	li	a0,0
+23004ecc:	0141                	addi	sp,sp,16
+23004ece:	8082                	ret
+        GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_UART1);
+23004ed0:	4545                	li	a0,17
+23004ed2:	0ab010ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
+}
+23004ed6:	40b2                	lw	ra,12(sp)
+23004ed8:	4422                	lw	s0,8(sp)
+23004eda:	4501                	li	a0,0
+23004edc:	0141                	addi	sp,sp,16
+23004ede:	8082                	ret
 
-23004ec0 <uart_control>:
+23004ee0 <uart_control>:
  * @param cmd
  * @param args
  * @return int
  */
 int uart_control(struct device *dev, int cmd, void *args)
 {
-23004ec0:	7139                	addi	sp,sp,-64
-23004ec2:	dc22                	sw	s0,56(sp)
-23004ec4:	de06                	sw	ra,60(sp)
-23004ec6:	da26                	sw	s1,52(sp)
-23004ec8:	d84a                	sw	s2,48(sp)
-23004eca:	d64e                	sw	s3,44(sp)
-23004ecc:	d452                	sw	s4,40(sp)
+23004ee0:	7139                	addi	sp,sp,-64
+23004ee2:	dc22                	sw	s0,56(sp)
+23004ee4:	de06                	sw	ra,60(sp)
+23004ee6:	da26                	sw	s1,52(sp)
+23004ee8:	d84a                	sw	s2,48(sp)
+23004eea:	d64e                	sw	s3,44(sp)
+23004eec:	d452                	sw	s4,40(sp)
     uart_device_t *uart_device = (uart_device_t *)dev;
 
     switch (cmd) {
-23004ece:	47a9                	li	a5,10
+23004eee:	47a9                	li	a5,10
 {
-23004ed0:	842a                	mv	s0,a0
+23004ef0:	842a                	mv	s0,a0
     switch (cmd) {
-23004ed2:	22f58063          	beq	a1,a5,230050f2 <uart_control+0x232>
-23004ed6:	08b7cb63          	blt	a5,a1,23004f6c <uart_control+0xac>
-23004eda:	4795                	li	a5,5
-23004edc:	18f58163          	beq	a1,a5,2300505e <uart_control+0x19e>
-23004ee0:	84b2                	mv	s1,a2
-23004ee2:	06b7d863          	bge	a5,a1,23004f52 <uart_control+0x92>
-23004ee6:	47a1                	li	a5,8
-23004ee8:	16f58863          	beq	a1,a5,23005058 <uart_control+0x198>
-23004eec:	47a5                	li	a5,9
-23004eee:	00f59c63          	bne	a1,a5,23004f06 <uart_control+0x46>
+23004ef2:	22f58063          	beq	a1,a5,23005112 <uart_control+0x232>
+23004ef6:	08b7cb63          	blt	a5,a1,23004f8c <uart_control+0xac>
+23004efa:	4795                	li	a5,5
+23004efc:	18f58163          	beq	a1,a5,2300507e <uart_control+0x19e>
+23004f00:	84b2                	mv	s1,a2
+23004f02:	06b7d863          	bge	a5,a1,23004f72 <uart_control+0x92>
+23004f06:	47a1                	li	a5,8
+23004f08:	16f58863          	beq	a1,a5,23005078 <uart_control+0x198>
+23004f0c:	47a5                	li	a5,9
+23004f0e:	00f59c63          	bne	a1,a5,23004f26 <uart_control+0x46>
             break;
         case DEVICE_CTRL_ATTACH_TX_DMA /* constant-expression */:
             uart_device->tx_dma = (struct device *)args;
             break;
         case DEVICE_CTRL_ATTACH_RX_DMA /* constant-expression */:
             uart_device->rx_dma = (struct device *)args;
-23004ef2:	c470                	sw	a2,76(s0)
+23004f12:	c470                	sw	a2,76(s0)
             return UART_RxFifoClear(uart_device->id);
         default:
             break;
     }
 
     return 0;
-23004ef4:	4501                	li	a0,0
+23004f14:	4501                	li	a0,0
 }
-23004ef6:	50f2                	lw	ra,60(sp)
-23004ef8:	5462                	lw	s0,56(sp)
-23004efa:	54d2                	lw	s1,52(sp)
-23004efc:	5942                	lw	s2,48(sp)
-23004efe:	59b2                	lw	s3,44(sp)
-23004f00:	5a22                	lw	s4,40(sp)
-23004f02:	6121                	addi	sp,sp,64
-23004f04:	8082                	ret
+23004f16:	50f2                	lw	ra,60(sp)
+23004f18:	5462                	lw	s0,56(sp)
+23004f1a:	54d2                	lw	s1,52(sp)
+23004f1c:	5942                	lw	s2,48(sp)
+23004f1e:	59b2                	lw	s3,44(sp)
+23004f20:	5a22                	lw	s4,40(sp)
+23004f22:	6121                	addi	sp,sp,64
+23004f24:	8082                	ret
     switch (cmd) {
-23004f06:	4799                	li	a5,6
-23004f08:	4501                	li	a0,0
-23004f0a:	fef596e3          	bne	a1,a5,23004ef6 <uart_control+0x36>
+23004f26:	4799                	li	a5,6
+23004f28:	4501                	li	a0,0
+23004f2a:	fef596e3          	bne	a1,a5,23004f16 <uart_control+0x36>
             uint32_t uart_clk = peripheral_clock_get(PERIPHERAL_CLOCK_UART);
-23004f0e:	8ffff0ef          	jal	ra,2300480c <peripheral_clock_get>
+23004f2e:	8ffff0ef          	jal	ra,2300482c <peripheral_clock_get>
             uart_cfg.parity = cfg->parity;
-23004f12:	0064c783          	lbu	a5,6(s1)
+23004f32:	0064c783          	lbu	a5,6(s1)
             uint32_t uart_clk = peripheral_clock_get(PERIPHERAL_CLOCK_UART);
-23004f16:	862a                	mv	a2,a0
+23004f36:	862a                	mv	a2,a0
             uart_cfg.baudRate = cfg->baudrate;
-23004f18:	4094                	lw	a3,0(s1)
+23004f38:	4094                	lw	a3,0(s1)
             uart_cfg.dataBits = cfg->databits;
-23004f1a:	0044d703          	lhu	a4,4(s1)
+23004f3a:	0044d703          	lhu	a4,4(s1)
             UART_Init(uart_device->id, &uart_cfg);
-23004f1e:	03c44503          	lbu	a0,60(s0)
-23004f22:	006c                	addi	a1,sp,12
+23004f3e:	03c44503          	lbu	a0,60(s0)
+23004f42:	006c                	addi	a1,sp,12
             uart_cfg.parity = cfg->parity;
-23004f24:	00f10b23          	sb	a5,22(sp)
+23004f44:	00f10b23          	sb	a5,22(sp)
             uart_cfg.rxDeglitch = ENABLE;
-23004f28:	4785                	li	a5,1
+23004f48:	4785                	li	a5,1
             uart_cfg.uartClk = uart_clk;
-23004f2a:	c632                	sw	a2,12(sp)
+23004f4a:	c632                	sw	a2,12(sp)
             uart_cfg.baudRate = cfg->baudrate;
-23004f2c:	c836                	sw	a3,16(sp)
+23004f4c:	c836                	sw	a3,16(sp)
             uart_cfg.dataBits = cfg->databits;
-23004f2e:	00e11a23          	sh	a4,20(sp)
+23004f4e:	00e11a23          	sh	a4,20(sp)
             uart_cfg.rxDeglitch = ENABLE;
-23004f32:	cc3e                	sw	a5,24(sp)
+23004f52:	cc3e                	sw	a5,24(sp)
             uart_cfg.ctsFlowControl = UART_CTS_FLOWCONTROL_ENABLE;
-23004f34:	00010ba3          	sb	zero,23(sp)
+23004f54:	00010ba3          	sb	zero,23(sp)
             uart_cfg.rxLinMode = UART_RX_LINMODE_ENABLE;
-23004f38:	00011e23          	sh	zero,28(sp)
+23004f58:	00011e23          	sh	zero,28(sp)
             uart_cfg.byteBitInverse = UART_MSB_FIRST_ENABLE;
-23004f3c:	00010f23          	sb	zero,30(sp)
+23004f5c:	00010f23          	sb	zero,30(sp)
             UART_Init(uart_device->id, &uart_cfg);
-23004f40:	547010ef          	jal	ra,23006c86 <UART_Init>
+23004f60:	527010ef          	jal	ra,23006c86 <UART_Init>
             UART_SetDeglitchCount(uart_device->id, 2);
-23004f44:	03c44503          	lbu	a0,60(s0)
-23004f48:	4589                	li	a1,2
-23004f4a:	74b010ef          	jal	ra,23006e94 <UART_SetDeglitchCount>
+23004f64:	03c44503          	lbu	a0,60(s0)
+23004f68:	4589                	li	a1,2
+23004f6a:	72b010ef          	jal	ra,23006e94 <UART_SetDeglitchCount>
     return 0;
-23004f4e:	4501                	li	a0,0
-23004f50:	b75d                	j	23004ef6 <uart_control+0x36>
+23004f6e:	4501                	li	a0,0
+23004f70:	b75d                	j	23004f16 <uart_control+0x36>
     switch (cmd) {
-23004f52:	4789                	li	a5,2
-23004f54:	14f58063          	beq	a1,a5,23005094 <uart_control+0x1d4>
-23004f58:	4791                	li	a5,4
-23004f5a:	02f59963          	bne	a1,a5,23004f8c <uart_control+0xcc>
+23004f72:	4789                	li	a5,2
+23004f74:	14f58063          	beq	a1,a5,230050b4 <uart_control+0x1d4>
+23004f78:	4791                	li	a5,4
+23004f7a:	02f59963          	bne	a1,a5,23004fac <uart_control+0xcc>
             UART_Enable(uart_device->id, UART_TXRX);
-23004f5e:	03c54503          	lbu	a0,60(a0)
-23004f62:	4589                	li	a1,2
-23004f64:	6a9010ef          	jal	ra,23006e0c <UART_Enable>
+23004f7e:	03c54503          	lbu	a0,60(a0)
+23004f82:	4589                	li	a1,2
+23004f84:	689010ef          	jal	ra,23006e0c <UART_Enable>
     return 0;
-23004f68:	4501                	li	a0,0
+23004f88:	4501                	li	a0,0
             break;
-23004f6a:	b771                	j	23004ef6 <uart_control+0x36>
+23004f8a:	b771                	j	23004f16 <uart_control+0x36>
     switch (cmd) {
-23004f6c:	47c1                	li	a5,16
-23004f6e:	16f58863          	beq	a1,a5,230050de <uart_control+0x21e>
-23004f72:	06b7d363          	bge	a5,a1,23004fd8 <uart_control+0x118>
-23004f76:	47c9                	li	a5,18
-23004f78:	16f58863          	beq	a1,a5,230050e8 <uart_control+0x228>
-23004f7c:	47cd                	li	a5,19
-23004f7e:	04f59563          	bne	a1,a5,23004fc8 <uart_control+0x108>
+23004f8c:	47c1                	li	a5,16
+23004f8e:	16f58863          	beq	a1,a5,230050fe <uart_control+0x21e>
+23004f92:	06b7d363          	bge	a5,a1,23004ff8 <uart_control+0x118>
+23004f96:	47c9                	li	a5,18
+23004f98:	16f58863          	beq	a1,a5,23005108 <uart_control+0x228>
+23004f9c:	47cd                	li	a5,19
+23004f9e:	04f59563          	bne	a1,a5,23004fe8 <uart_control+0x108>
             return UART_RxFifoClear(uart_device->id);
-23004f82:	03c54503          	lbu	a0,60(a0)
-23004f86:	77b010ef          	jal	ra,23006f00 <UART_RxFifoClear>
-23004f8a:	b7b5                	j	23004ef6 <uart_control+0x36>
+23004fa2:	03c54503          	lbu	a0,60(a0)
+23004fa6:	75b010ef          	jal	ra,23006f00 <UART_RxFifoClear>
+23004faa:	b7b5                	j	23004f16 <uart_control+0x36>
     switch (cmd) {
-23004f8c:	4785                	li	a5,1
-23004f8e:	0cf59363          	bne	a1,a5,23005054 <uart_control+0x194>
+23004fac:	4785                	li	a5,1
+23004fae:	0cf59363          	bne	a1,a5,23005074 <uart_control+0x194>
             uint32_t offset = __builtin_ctz((uint32_t)args);
-23004f92:	8532                	mv	a0,a2
-23004f94:	8c3fb0ef          	jal	ra,23000856 <__ctzsi2>
-23004f98:	892a                	mv	s2,a0
+23004fb2:	8532                	mv	a0,a2
+23004fb4:	8a3fb0ef          	jal	ra,23000856 <__ctzsi2>
+23004fb8:	892a                	mv	s2,a0
             while (offset < 9) {
-23004f9a:	47a1                	li	a5,8
+23004fba:	47a1                	li	a5,8
             UART_Enable(uart_device->id, UART_TXRX);
-23004f9c:	03c44503          	lbu	a0,60(s0)
+23004fbc:	03c44503          	lbu	a0,60(s0)
             while (offset < 9) {
-23004fa0:	0927cc63          	blt	a5,s2,23005038 <uart_control+0x178>
+23004fc0:	0927cc63          	blt	a5,s2,23005058 <uart_control+0x178>
                 if ((uint32_t)args & (1 << offset)) {
-23004fa4:	4a05                	li	s4,1
+23004fc4:	4a05                	li	s4,1
             while (offset < 9) {
-23004fa6:	49a5                	li	s3,9
-23004fa8:	a021                	j	23004fb0 <uart_control+0xf0>
+23004fc6:	49a5                	li	s3,9
+23004fc8:	a021                	j	23004fd0 <uart_control+0xf0>
                 offset++;
-23004faa:	0905                	addi	s2,s2,1
+23004fca:	0905                	addi	s2,s2,1
             while (offset < 9) {
-23004fac:	09390663          	beq	s2,s3,23005038 <uart_control+0x178>
+23004fcc:	09390663          	beq	s2,s3,23005058 <uart_control+0x178>
                 if ((uint32_t)args & (1 << offset)) {
-23004fb0:	012a17b3          	sll	a5,s4,s2
-23004fb4:	8fe5                	and	a5,a5,s1
-23004fb6:	dbf5                	beqz	a5,23004faa <uart_control+0xea>
+23004fd0:	012a17b3          	sll	a5,s4,s2
+23004fd4:	8fe5                	and	a5,a5,s1
+23004fd6:	dbf5                	beqz	a5,23004fca <uart_control+0xea>
                     UART_IntMask(uart_device->id, offset, UNMASK);
-23004fb8:	0ff97593          	zext.b	a1,s2
-23004fbc:	4601                	li	a2,0
-23004fbe:	763010ef          	jal	ra,23006f20 <UART_IntMask>
+23004fd8:	0ff97593          	zext.b	a1,s2
+23004fdc:	4601                	li	a2,0
+23004fde:	743010ef          	jal	ra,23006f20 <UART_IntMask>
             if (uart_device->id == UART0_ID)
-23004fc2:	03c44503          	lbu	a0,60(s0)
-23004fc6:	b7d5                	j	23004faa <uart_control+0xea>
+23004fe2:	03c44503          	lbu	a0,60(s0)
+23004fe6:	b7d5                	j	23004fca <uart_control+0xea>
     switch (cmd) {
-23004fc8:	47c5                	li	a5,17
-23004fca:	08f59563          	bne	a1,a5,23005054 <uart_control+0x194>
+23004fe8:	47c5                	li	a5,17
+23004fea:	08f59563          	bne	a1,a5,23005074 <uart_control+0x194>
             return UART_GetRxFifoCount(uart_device->id);
-23004fce:	03c54503          	lbu	a0,60(a0)
-23004fd2:	040020ef          	jal	ra,23007012 <UART_GetRxFifoCount>
-23004fd6:	b705                	j	23004ef6 <uart_control+0x36>
+23004fee:	03c54503          	lbu	a0,60(a0)
+23004ff2:	020020ef          	jal	ra,23007012 <UART_GetRxFifoCount>
+23004ff6:	b705                	j	23004f16 <uart_control+0x36>
     switch (cmd) {
-23004fd8:	47b1                	li	a5,12
-23004fda:	08f58963          	beq	a1,a5,2300506c <uart_control+0x1ac>
-23004fde:	47b5                	li	a5,13
-23004fe0:	02f59663          	bne	a1,a5,2300500c <uart_control+0x14c>
+23004ff8:	47b1                	li	a5,12
+23004ffa:	08f58963          	beq	a1,a5,2300508c <uart_control+0x1ac>
+23004ffe:	47b5                	li	a5,13
+23005000:	02f59663          	bne	a1,a5,2300502c <uart_control+0x14c>
             uint32_t tmpVal = BL_RD_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0);
-23004fe4:	03c54783          	lbu	a5,60(a0)
-23004fe8:	4000a737          	lui	a4,0x4000a
-23004fec:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
-23004ff0:	07a2                	slli	a5,a5,0x8
-23004ff2:	97ba                	add	a5,a5,a4
-23004ff4:	4394                	lw	a3,0(a5)
+23005004:	03c54783          	lbu	a5,60(a0)
+23005008:	4000a737          	lui	a4,0x4000a
+2300500c:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
+23005010:	07a2                	slli	a5,a5,0x8
+23005012:	97ba                	add	a5,a5,a4
+23005014:	4394                	lw	a3,0(a5)
             dev->oflag |= DEVICE_OFLAG_DMA_RX;
-23004ff6:	01e55703          	lhu	a4,30(a0)
+23005016:	01e55703          	lhu	a4,30(a0)
     return 0;
-23004ffa:	4501                	li	a0,0
+2300501a:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, UART_DMA_RX_EN);
-23004ffc:	0026e693          	ori	a3,a3,2
+2300501c:	0026e693          	ori	a3,a3,2
             BL_WR_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0, tmpVal);
-23005000:	c394                	sw	a3,0(a5)
+23005020:	c394                	sw	a3,0(a5)
             dev->oflag |= DEVICE_OFLAG_DMA_RX;
-23005002:	02076793          	ori	a5,a4,32
-23005006:	00f41f23          	sh	a5,30(s0)
+23005022:	02076793          	ori	a5,a4,32
+23005026:	00f41f23          	sh	a5,30(s0)
             break;
-2300500a:	b5f5                	j	23004ef6 <uart_control+0x36>
+2300502a:	b5f5                	j	23004f16 <uart_control+0x36>
     switch (cmd) {
-2300500c:	47ad                	li	a5,11
-2300500e:	04f59363          	bne	a1,a5,23005054 <uart_control+0x194>
+2300502c:	47ad                	li	a5,11
+2300502e:	04f59363          	bne	a1,a5,23005074 <uart_control+0x194>
             uint32_t tmpVal = BL_RD_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0);
-23005012:	03c54783          	lbu	a5,60(a0)
-23005016:	4000a737          	lui	a4,0x4000a
-2300501a:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
-2300501e:	07a2                	slli	a5,a5,0x8
-23005020:	97ba                	add	a5,a5,a4
-23005022:	4394                	lw	a3,0(a5)
+23005032:	03c54783          	lbu	a5,60(a0)
+23005036:	4000a737          	lui	a4,0x4000a
+2300503a:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
+2300503e:	07a2                	slli	a5,a5,0x8
+23005040:	97ba                	add	a5,a5,a4
+23005042:	4394                	lw	a3,0(a5)
             dev->oflag &= ~DEVICE_OFLAG_DMA_RX;
-23005024:	01e55703          	lhu	a4,30(a0)
-    return 0;
-23005028:	4501                	li	a0,0
-            tmpVal = BL_CLR_REG_BIT(tmpVal, UART_DMA_RX_EN);
-2300502a:	9af5                	andi	a3,a3,-3
-            BL_WR_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0, tmpVal);
-2300502c:	c394                	sw	a3,0(a5)
-            dev->oflag &= ~DEVICE_OFLAG_DMA_RX;
-2300502e:	fdf77793          	andi	a5,a4,-33
-23005032:	00f41f23          	sh	a5,30(s0)
-            break;
-23005036:	b5c1                	j	23004ef6 <uart_control+0x36>
-            if (uart_device->id == UART0_ID)
-23005038:	c911                	beqz	a0,2300504c <uart_control+0x18c>
-            else if (uart_device->id == UART1_ID)
-2300503a:	4785                	li	a5,1
-2300503c:	00f51c63          	bne	a0,a5,23005054 <uart_control+0x194>
-                CPU_Interrupt_Enable(UART1_IRQn);
-23005040:	02e00513          	li	a0,46
-23005044:	456010ef          	jal	ra,2300649a <clic_enable_interrupt>
+23005044:	01e55703          	lhu	a4,30(a0)
     return 0;
 23005048:	4501                	li	a0,0
-2300504a:	b575                	j	23004ef6 <uart_control+0x36>
-                CPU_Interrupt_Enable(UART0_IRQn);
-2300504c:	02d00513          	li	a0,45
-23005050:	44a010ef          	jal	ra,2300649a <clic_enable_interrupt>
-    return 0;
-23005054:	4501                	li	a0,0
-23005056:	b545                	j	23004ef6 <uart_control+0x36>
-            uart_device->tx_dma = (struct device *)args;
-23005058:	c430                	sw	a2,72(s0)
-    return 0;
-2300505a:	4501                	li	a0,0
+            tmpVal = BL_CLR_REG_BIT(tmpVal, UART_DMA_RX_EN);
+2300504a:	9af5                	andi	a3,a3,-3
+            BL_WR_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0, tmpVal);
+2300504c:	c394                	sw	a3,0(a5)
+            dev->oflag &= ~DEVICE_OFLAG_DMA_RX;
+2300504e:	fdf77793          	andi	a5,a4,-33
+23005052:	00f41f23          	sh	a5,30(s0)
             break;
-2300505c:	bd69                	j	23004ef6 <uart_control+0x36>
-            UART_Disable(uart_device->id, UART_TXRX);
-2300505e:	03c54503          	lbu	a0,60(a0)
-23005062:	4589                	li	a1,2
-23005064:	5df010ef          	jal	ra,23006e42 <UART_Disable>
+23005056:	b5c1                	j	23004f16 <uart_control+0x36>
+            if (uart_device->id == UART0_ID)
+23005058:	c911                	beqz	a0,2300506c <uart_control+0x18c>
+            else if (uart_device->id == UART1_ID)
+2300505a:	4785                	li	a5,1
+2300505c:	00f51c63          	bne	a0,a5,23005074 <uart_control+0x194>
+                CPU_Interrupt_Enable(UART1_IRQn);
+23005060:	02e00513          	li	a0,46
+23005064:	436010ef          	jal	ra,2300649a <clic_enable_interrupt>
     return 0;
 23005068:	4501                	li	a0,0
-            break;
-2300506a:	b571                	j	23004ef6 <uart_control+0x36>
-            uint32_t tmpVal = BL_RD_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0);
-2300506c:	03c54783          	lbu	a5,60(a0)
-23005070:	4000a737          	lui	a4,0x4000a
-23005074:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
-23005078:	07a2                	slli	a5,a5,0x8
-2300507a:	97ba                	add	a5,a5,a4
-2300507c:	4394                	lw	a3,0(a5)
-            dev->oflag |= DEVICE_OFLAG_DMA_TX;
-2300507e:	01e55703          	lhu	a4,30(a0)
+2300506a:	b575                	j	23004f16 <uart_control+0x36>
+                CPU_Interrupt_Enable(UART0_IRQn);
+2300506c:	02d00513          	li	a0,45
+23005070:	42a010ef          	jal	ra,2300649a <clic_enable_interrupt>
     return 0;
-23005082:	4501                	li	a0,0
+23005074:	4501                	li	a0,0
+23005076:	b545                	j	23004f16 <uart_control+0x36>
+            uart_device->tx_dma = (struct device *)args;
+23005078:	c430                	sw	a2,72(s0)
+    return 0;
+2300507a:	4501                	li	a0,0
+            break;
+2300507c:	bd69                	j	23004f16 <uart_control+0x36>
+            UART_Disable(uart_device->id, UART_TXRX);
+2300507e:	03c54503          	lbu	a0,60(a0)
+23005082:	4589                	li	a1,2
+23005084:	5bf010ef          	jal	ra,23006e42 <UART_Disable>
+    return 0;
+23005088:	4501                	li	a0,0
+            break;
+2300508a:	b571                	j	23004f16 <uart_control+0x36>
+            uint32_t tmpVal = BL_RD_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0);
+2300508c:	03c54783          	lbu	a5,60(a0)
+23005090:	4000a737          	lui	a4,0x4000a
+23005094:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
+23005098:	07a2                	slli	a5,a5,0x8
+2300509a:	97ba                	add	a5,a5,a4
+2300509c:	4394                	lw	a3,0(a5)
+            dev->oflag |= DEVICE_OFLAG_DMA_TX;
+2300509e:	01e55703          	lhu	a4,30(a0)
+    return 0;
+230050a2:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, UART_DMA_TX_EN);
-23005084:	0016e693          	ori	a3,a3,1
+230050a4:	0016e693          	ori	a3,a3,1
             BL_WR_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0, tmpVal);
-23005088:	c394                	sw	a3,0(a5)
+230050a8:	c394                	sw	a3,0(a5)
             dev->oflag |= DEVICE_OFLAG_DMA_TX;
-2300508a:	01076793          	ori	a5,a4,16
-2300508e:	00f41f23          	sh	a5,30(s0)
+230050aa:	01076793          	ori	a5,a4,16
+230050ae:	00f41f23          	sh	a5,30(s0)
             break;
-23005092:	b595                	j	23004ef6 <uart_control+0x36>
+230050b2:	b595                	j	23004f16 <uart_control+0x36>
             uint32_t offset = __builtin_ctz((uint32_t)args);
-23005094:	8532                	mv	a0,a2
-23005096:	fc0fb0ef          	jal	ra,23000856 <__ctzsi2>
-2300509a:	892a                	mv	s2,a0
+230050b4:	8532                	mv	a0,a2
+230050b6:	fa0fb0ef          	jal	ra,23000856 <__ctzsi2>
+230050ba:	892a                	mv	s2,a0
             while (offset < 9) {
-2300509c:	47a1                	li	a5,8
+230050bc:	47a1                	li	a5,8
             UART_Enable(uart_device->id, UART_TXRX);
-2300509e:	03c44503          	lbu	a0,60(s0)
+230050be:	03c44503          	lbu	a0,60(s0)
             while (offset < 9) {
-230050a2:	0327c463          	blt	a5,s2,230050ca <uart_control+0x20a>
+230050c2:	0327c463          	blt	a5,s2,230050ea <uart_control+0x20a>
                 if ((uint32_t)args & (1 << offset)) {
-230050a6:	4a05                	li	s4,1
+230050c6:	4a05                	li	s4,1
             while (offset < 9) {
-230050a8:	49a5                	li	s3,9
-230050aa:	a021                	j	230050b2 <uart_control+0x1f2>
+230050c8:	49a5                	li	s3,9
+230050ca:	a021                	j	230050d2 <uart_control+0x1f2>
                 offset++;
-230050ac:	0905                	addi	s2,s2,1
+230050cc:	0905                	addi	s2,s2,1
             while (offset < 9) {
-230050ae:	01390e63          	beq	s2,s3,230050ca <uart_control+0x20a>
+230050ce:	01390e63          	beq	s2,s3,230050ea <uart_control+0x20a>
                 if ((uint32_t)args & (1 << offset)) {
-230050b2:	012a17b3          	sll	a5,s4,s2
-230050b6:	8fe5                	and	a5,a5,s1
-230050b8:	dbf5                	beqz	a5,230050ac <uart_control+0x1ec>
+230050d2:	012a17b3          	sll	a5,s4,s2
+230050d6:	8fe5                	and	a5,a5,s1
+230050d8:	dbf5                	beqz	a5,230050cc <uart_control+0x1ec>
                     UART_IntMask(uart_device->id, offset, MASK);
-230050ba:	0ff97593          	zext.b	a1,s2
-230050be:	4605                	li	a2,1
-230050c0:	661010ef          	jal	ra,23006f20 <UART_IntMask>
+230050da:	0ff97593          	zext.b	a1,s2
+230050de:	4605                	li	a2,1
+230050e0:	641010ef          	jal	ra,23006f20 <UART_IntMask>
             if (uart_device->id == UART0_ID)
-230050c4:	03c44503          	lbu	a0,60(s0)
-230050c8:	b7d5                	j	230050ac <uart_control+0x1ec>
-230050ca:	c539                	beqz	a0,23005118 <uart_control+0x258>
+230050e4:	03c44503          	lbu	a0,60(s0)
+230050e8:	b7d5                	j	230050cc <uart_control+0x1ec>
+230050ea:	c539                	beqz	a0,23005138 <uart_control+0x258>
             else if (uart_device->id == UART1_ID)
-230050cc:	4785                	li	a5,1
-230050ce:	f8f513e3          	bne	a0,a5,23005054 <uart_control+0x194>
+230050ec:	4785                	li	a5,1
+230050ee:	f8f513e3          	bne	a0,a5,23005074 <uart_control+0x194>
                 CPU_Interrupt_Disable(UART1_IRQn);
-230050d2:	02e00513          	li	a0,46
-230050d6:	3d6010ef          	jal	ra,230064ac <clic_disable_interrupt>
+230050f2:	02e00513          	li	a0,46
+230050f6:	3b6010ef          	jal	ra,230064ac <clic_disable_interrupt>
     return 0;
-230050da:	4501                	li	a0,0
-230050dc:	bd29                	j	23004ef6 <uart_control+0x36>
+230050fa:	4501                	li	a0,0
+230050fc:	bd29                	j	23004f16 <uart_control+0x36>
             return UART_GetTxFifoCount(uart_device->id);
-230050de:	03c54503          	lbu	a0,60(a0)
-230050e2:	717010ef          	jal	ra,23006ff8 <UART_GetTxFifoCount>
-230050e6:	bd01                	j	23004ef6 <uart_control+0x36>
+230050fe:	03c54503          	lbu	a0,60(a0)
+23005102:	6f7010ef          	jal	ra,23006ff8 <UART_GetTxFifoCount>
+23005106:	bd01                	j	23004f16 <uart_control+0x36>
             return UART_TxFifoClear(uart_device->id);
-230050e8:	03c54503          	lbu	a0,60(a0)
-230050ec:	5f5010ef          	jal	ra,23006ee0 <UART_TxFifoClear>
-230050f0:	b519                	j	23004ef6 <uart_control+0x36>
+23005108:	03c54503          	lbu	a0,60(a0)
+2300510c:	5d5010ef          	jal	ra,23006ee0 <UART_TxFifoClear>
+23005110:	b519                	j	23004f16 <uart_control+0x36>
             uint32_t tmpVal = BL_RD_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0);
-230050f2:	03c54783          	lbu	a5,60(a0)
-230050f6:	4000a737          	lui	a4,0x4000a
-230050fa:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
-230050fe:	07a2                	slli	a5,a5,0x8
-23005100:	97ba                	add	a5,a5,a4
-23005102:	4394                	lw	a3,0(a5)
+23005112:	03c54783          	lbu	a5,60(a0)
+23005116:	4000a737          	lui	a4,0x4000a
+2300511a:	08070713          	addi	a4,a4,128 # 4000a080 <__ram_load_addr+0x1cfcd18c>
+2300511e:	07a2                	slli	a5,a5,0x8
+23005120:	97ba                	add	a5,a5,a4
+23005122:	4394                	lw	a3,0(a5)
             dev->oflag &= ~DEVICE_OFLAG_DMA_TX;
-23005104:	01e55703          	lhu	a4,30(a0)
+23005124:	01e55703          	lhu	a4,30(a0)
     return 0;
-23005108:	4501                	li	a0,0
+23005128:	4501                	li	a0,0
             tmpVal = BL_CLR_REG_BIT(tmpVal, UART_DMA_TX_EN);
-2300510a:	9af9                	andi	a3,a3,-2
+2300512a:	9af9                	andi	a3,a3,-2
             BL_WR_REG(UART0_BASE + uart_device->id * 0x100, UART_FIFO_CONFIG_0, tmpVal);
-2300510c:	c394                	sw	a3,0(a5)
+2300512c:	c394                	sw	a3,0(a5)
             dev->oflag &= ~DEVICE_OFLAG_DMA_TX;
-2300510e:	fef77793          	andi	a5,a4,-17
-23005112:	00f41f23          	sh	a5,30(s0)
+2300512e:	fef77793          	andi	a5,a4,-17
+23005132:	00f41f23          	sh	a5,30(s0)
             break;
-23005116:	b3c5                	j	23004ef6 <uart_control+0x36>
+23005136:	b3c5                	j	23004f16 <uart_control+0x36>
                 CPU_Interrupt_Disable(UART0_IRQn);
-23005118:	02d00513          	li	a0,45
-2300511c:	390010ef          	jal	ra,230064ac <clic_disable_interrupt>
+23005138:	02d00513          	li	a0,45
+2300513c:	370010ef          	jal	ra,230064ac <clic_disable_interrupt>
     return 0;
-23005120:	4501                	li	a0,0
-23005122:	bbd1                	j	23004ef6 <uart_control+0x36>
+23005140:	4501                	li	a0,0
+23005142:	bbd1                	j	23004f16 <uart_control+0x36>
 
-23005124 <uart_write>:
+23005144 <uart_write>:
  */
 int uart_write(struct device *dev, uint32_t pos, const void *buffer, uint32_t size)
 {
     int ret = 0;
     uart_device_t *uart_device = (uart_device_t *)dev;
     if (dev->oflag & DEVICE_OFLAG_DMA_TX) {
-23005124:	01e55783          	lhu	a5,30(a0)
+23005144:	01e55783          	lhu	a5,30(a0)
 {
-23005128:	1141                	addi	sp,sp,-16
-2300512a:	c606                	sw	ra,12(sp)
-2300512c:	c422                	sw	s0,8(sp)
-2300512e:	c226                	sw	s1,4(sp)
+23005148:	1141                	addi	sp,sp,-16
+2300514a:	c606                	sw	ra,12(sp)
+2300514c:	c422                	sw	s0,8(sp)
+2300514e:	c226                	sw	s1,4(sp)
     if (dev->oflag & DEVICE_OFLAG_DMA_TX) {
-23005130:	0107f713          	andi	a4,a5,16
+23005150:	0107f713          	andi	a4,a5,16
 {
-23005134:	85b2                	mv	a1,a2
+23005154:	85b2                	mv	a1,a2
     if (dev->oflag & DEVICE_OFLAG_DMA_TX) {
-23005136:	c705                	beqz	a4,2300515e <uart_write+0x3a>
+23005156:	c705                	beqz	a4,2300517e <uart_write+0x3a>
         struct device *dma_ch = (struct device *)uart_device->tx_dma;
-23005138:	4524                	lw	s1,72(a0)
+23005158:	4524                	lw	s1,72(a0)
         if (!dma_ch)
-2300513a:	c4ad                	beqz	s1,230051a4 <uart_write+0x80>
+2300515a:	c4ad                	beqz	s1,230051c4 <uart_write+0x80>
             return -1;
 
         if (uart_device->id == 0) {
-2300513c:	03c54783          	lbu	a5,60(a0)
+2300515c:	03c54783          	lbu	a5,60(a0)
             ret = dma_reload(dma_ch, (uint32_t)buffer, (uint32_t)DMA_ADDR_UART0_TDR, size);
-23005140:	4000a637          	lui	a2,0x4000a
-23005144:	08860613          	addi	a2,a2,136 # 4000a088 <__ram_load_addr+0x1cfcd194>
+23005160:	4000a637          	lui	a2,0x4000a
+23005164:	08860613          	addi	a2,a2,136 # 4000a088 <__ram_load_addr+0x1cfcd194>
         if (uart_device->id == 0) {
-23005148:	cf8d                	beqz	a5,23005182 <uart_write+0x5e>
+23005168:	cf8d                	beqz	a5,230051a2 <uart_write+0x5e>
             dma_channel_start(dma_ch);
         } else if (uart_device->id == 1) {
-2300514a:	4705                	li	a4,1
+2300516a:	4705                	li	a4,1
     int ret = 0;
-2300514c:	4401                	li	s0,0
+2300516c:	4401                	li	s0,0
         } else if (uart_device->id == 1) {
-2300514e:	02e78663          	beq	a5,a4,2300517a <uart_write+0x56>
+2300516e:	02e78663          	beq	a5,a4,2300519a <uart_write+0x56>
         return ret;
     } else if (dev->oflag & DEVICE_OFLAG_INT_TX) {
         return -2;
     } else
         return UART_SendData(uart_device->id, (uint8_t *)buffer, size);
 }
-23005152:	40b2                	lw	ra,12(sp)
-23005154:	8522                	mv	a0,s0
-23005156:	4422                	lw	s0,8(sp)
-23005158:	4492                	lw	s1,4(sp)
-2300515a:	0141                	addi	sp,sp,16
-2300515c:	8082                	ret
+23005172:	40b2                	lw	ra,12(sp)
+23005174:	8522                	mv	a0,s0
+23005176:	4422                	lw	s0,8(sp)
+23005178:	4492                	lw	s1,4(sp)
+2300517a:	0141                	addi	sp,sp,16
+2300517c:	8082                	ret
     } else if (dev->oflag & DEVICE_OFLAG_INT_TX) {
-2300515e:	8b91                	andi	a5,a5,4
-23005160:	e3a1                	bnez	a5,230051a0 <uart_write+0x7c>
+2300517e:	8b91                	andi	a5,a5,4
+23005180:	e3a1                	bnez	a5,230051c0 <uart_write+0x7c>
         return UART_SendData(uart_device->id, (uint8_t *)buffer, size);
-23005162:	03c54503          	lbu	a0,60(a0)
-23005166:	8636                	mv	a2,a3
-23005168:	603010ef          	jal	ra,23006f6a <UART_SendData>
-2300516c:	842a                	mv	s0,a0
+23005182:	03c54503          	lbu	a0,60(a0)
+23005186:	8636                	mv	a2,a3
+23005188:	5e3010ef          	jal	ra,23006f6a <UART_SendData>
+2300518c:	842a                	mv	s0,a0
 }
-2300516e:	40b2                	lw	ra,12(sp)
-23005170:	8522                	mv	a0,s0
-23005172:	4422                	lw	s0,8(sp)
-23005174:	4492                	lw	s1,4(sp)
-23005176:	0141                	addi	sp,sp,16
-23005178:	8082                	ret
+2300518e:	40b2                	lw	ra,12(sp)
+23005190:	8522                	mv	a0,s0
+23005192:	4422                	lw	s0,8(sp)
+23005194:	4492                	lw	s1,4(sp)
+23005196:	0141                	addi	sp,sp,16
+23005198:	8082                	ret
             ret = dma_reload(dma_ch, (uint32_t)buffer, (uint32_t)DMA_ADDR_UART1_TDR, size);
-2300517a:	4000a637          	lui	a2,0x4000a
-2300517e:	18860613          	addi	a2,a2,392 # 4000a188 <__ram_load_addr+0x1cfcd294>
-23005182:	8526                	mv	a0,s1
-23005184:	491020ef          	jal	ra,23007e14 <dma_reload>
-23005188:	842a                	mv	s0,a0
+2300519a:	4000a637          	lui	a2,0x4000a
+2300519e:	18860613          	addi	a2,a2,392 # 4000a188 <__ram_load_addr+0x1cfcd294>
+230051a2:	8526                	mv	a0,s1
+230051a4:	471020ef          	jal	ra,23007e14 <dma_reload>
+230051a8:	842a                	mv	s0,a0
             dma_channel_start(dma_ch);
-2300518a:	4601                	li	a2,0
-2300518c:	8526                	mv	a0,s1
-2300518e:	45c5                	li	a1,17
-23005190:	6182d0ef          	jal	ra,230327a8 <device_control>
+230051aa:	4601                	li	a2,0
+230051ac:	8526                	mv	a0,s1
+230051ae:	45c5                	li	a1,17
+230051b0:	5f82d0ef          	jal	ra,230327a8 <device_control>
 }
-23005194:	40b2                	lw	ra,12(sp)
-23005196:	8522                	mv	a0,s0
-23005198:	4422                	lw	s0,8(sp)
-2300519a:	4492                	lw	s1,4(sp)
-2300519c:	0141                	addi	sp,sp,16
-2300519e:	8082                	ret
+230051b4:	40b2                	lw	ra,12(sp)
+230051b6:	8522                	mv	a0,s0
+230051b8:	4422                	lw	s0,8(sp)
+230051ba:	4492                	lw	s1,4(sp)
+230051bc:	0141                	addi	sp,sp,16
+230051be:	8082                	ret
         return -2;
-230051a0:	5479                	li	s0,-2
-230051a2:	bf45                	j	23005152 <uart_write+0x2e>
+230051c0:	5479                	li	s0,-2
+230051c2:	bf45                	j	23005172 <uart_write+0x2e>
             return -1;
-230051a4:	547d                	li	s0,-1
-230051a6:	b775                	j	23005152 <uart_write+0x2e>
+230051c4:	547d                	li	s0,-1
+230051c6:	b775                	j	23005172 <uart_write+0x2e>
 
-230051a8 <uart_read>:
+230051c8 <uart_read>:
  */
 int uart_read(struct device *dev, uint32_t pos, void *buffer, uint32_t size)
 {
     int ret = -1;
     uart_device_t *uart_device = (uart_device_t *)dev;
     if (dev->oflag & DEVICE_OFLAG_DMA_RX) {
-230051a8:	01e55783          	lhu	a5,30(a0)
+230051c8:	01e55783          	lhu	a5,30(a0)
 {
-230051ac:	1141                	addi	sp,sp,-16
-230051ae:	c606                	sw	ra,12(sp)
-230051b0:	c422                	sw	s0,8(sp)
-230051b2:	c226                	sw	s1,4(sp)
+230051cc:	1141                	addi	sp,sp,-16
+230051ce:	c606                	sw	ra,12(sp)
+230051d0:	c422                	sw	s0,8(sp)
+230051d2:	c226                	sw	s1,4(sp)
     if (dev->oflag & DEVICE_OFLAG_DMA_RX) {
-230051b4:	0207f813          	andi	a6,a5,32
-230051b8:	02080563          	beqz	a6,230051e2 <uart_read+0x3a>
+230051d4:	0207f813          	andi	a6,a5,32
+230051d8:	02080563          	beqz	a6,23005202 <uart_read+0x3a>
         struct device *dma_ch = (struct device *)uart_device->rx_dma;
-230051bc:	4564                	lw	s1,76(a0)
+230051dc:	4564                	lw	s1,76(a0)
         if (!dma_ch)
-230051be:	c0bd                	beqz	s1,23005224 <uart_read+0x7c>
+230051de:	c0bd                	beqz	s1,23005244 <uart_read+0x7c>
             return -1;
 
         if (uart_device->id == 0) {
-230051c0:	03c54783          	lbu	a5,60(a0)
+230051e0:	03c54783          	lbu	a5,60(a0)
             ret = dma_reload(dma_ch, (uint32_t)DMA_ADDR_UART0_RDR, (uint32_t)buffer, size);
-230051c4:	4000a5b7          	lui	a1,0x4000a
-230051c8:	08c58593          	addi	a1,a1,140 # 4000a08c <__ram_load_addr+0x1cfcd198>
+230051e4:	4000a5b7          	lui	a1,0x4000a
+230051e8:	08c58593          	addi	a1,a1,140 # 4000a08c <__ram_load_addr+0x1cfcd198>
         if (uart_device->id == 0) {
-230051cc:	cb9d                	beqz	a5,23005202 <uart_read+0x5a>
+230051ec:	cb9d                	beqz	a5,23005222 <uart_read+0x5a>
             dma_channel_start(dma_ch);
         } else if (uart_device->id == 1) {
-230051ce:	4705                	li	a4,1
+230051ee:	4705                	li	a4,1
             return -1;
-230051d0:	547d                	li	s0,-1
+230051f0:	547d                	li	s0,-1
         } else if (uart_device->id == 1) {
-230051d2:	02e78463          	beq	a5,a4,230051fa <uart_read+0x52>
+230051f2:	02e78463          	beq	a5,a4,2300521a <uart_read+0x52>
     } else if (dev->oflag & DEVICE_OFLAG_INT_RX) {
         return -2;
     } else {
         return UART_ReceiveData(uart_device->id, (uint8_t *)buffer, size);
     }
 }
-230051d6:	40b2                	lw	ra,12(sp)
-230051d8:	8522                	mv	a0,s0
-230051da:	4422                	lw	s0,8(sp)
-230051dc:	4492                	lw	s1,4(sp)
-230051de:	0141                	addi	sp,sp,16
-230051e0:	8082                	ret
+230051f6:	40b2                	lw	ra,12(sp)
+230051f8:	8522                	mv	a0,s0
+230051fa:	4422                	lw	s0,8(sp)
+230051fc:	4492                	lw	s1,4(sp)
+230051fe:	0141                	addi	sp,sp,16
+23005200:	8082                	ret
     } else if (dev->oflag & DEVICE_OFLAG_INT_RX) {
-230051e2:	8ba1                	andi	a5,a5,8
-230051e4:	ef95                	bnez	a5,23005220 <uart_read+0x78>
+23005202:	8ba1                	andi	a5,a5,8
+23005204:	ef95                	bnez	a5,23005240 <uart_read+0x78>
 }
-230051e6:	4422                	lw	s0,8(sp)
-230051e8:	40b2                	lw	ra,12(sp)
-230051ea:	4492                	lw	s1,4(sp)
+23005206:	4422                	lw	s0,8(sp)
+23005208:	40b2                	lw	ra,12(sp)
+2300520a:	4492                	lw	s1,4(sp)
         return UART_ReceiveData(uart_device->id, (uint8_t *)buffer, size);
-230051ec:	03c54503          	lbu	a0,60(a0)
-230051f0:	85b2                	mv	a1,a2
-230051f2:	8636                	mv	a2,a3
+2300520c:	03c54503          	lbu	a0,60(a0)
+23005210:	85b2                	mv	a1,a2
+23005212:	8636                	mv	a2,a3
 }
-230051f4:	0141                	addi	sp,sp,16
+23005214:	0141                	addi	sp,sp,16
         return UART_ReceiveData(uart_device->id, (uint8_t *)buffer, size);
-230051f6:	5c70106f          	j	23006fbc <UART_ReceiveData>
+23005216:	5a70106f          	j	23006fbc <UART_ReceiveData>
             ret = dma_reload(dma_ch, (uint32_t)DMA_ADDR_UART1_RDR, (uint32_t)buffer, size);
-230051fa:	4000a5b7          	lui	a1,0x4000a
-230051fe:	18c58593          	addi	a1,a1,396 # 4000a18c <__ram_load_addr+0x1cfcd298>
-23005202:	8526                	mv	a0,s1
-23005204:	411020ef          	jal	ra,23007e14 <dma_reload>
-23005208:	842a                	mv	s0,a0
+2300521a:	4000a5b7          	lui	a1,0x4000a
+2300521e:	18c58593          	addi	a1,a1,396 # 4000a18c <__ram_load_addr+0x1cfcd298>
+23005222:	8526                	mv	a0,s1
+23005224:	3f1020ef          	jal	ra,23007e14 <dma_reload>
+23005228:	842a                	mv	s0,a0
             dma_channel_start(dma_ch);
-2300520a:	4601                	li	a2,0
-2300520c:	8526                	mv	a0,s1
-2300520e:	45c5                	li	a1,17
-23005210:	5982d0ef          	jal	ra,230327a8 <device_control>
+2300522a:	4601                	li	a2,0
+2300522c:	8526                	mv	a0,s1
+2300522e:	45c5                	li	a1,17
+23005230:	5782d0ef          	jal	ra,230327a8 <device_control>
 }
-23005214:	40b2                	lw	ra,12(sp)
-23005216:	8522                	mv	a0,s0
-23005218:	4422                	lw	s0,8(sp)
-2300521a:	4492                	lw	s1,4(sp)
-2300521c:	0141                	addi	sp,sp,16
-2300521e:	8082                	ret
+23005234:	40b2                	lw	ra,12(sp)
+23005236:	8522                	mv	a0,s0
+23005238:	4422                	lw	s0,8(sp)
+2300523a:	4492                	lw	s1,4(sp)
+2300523c:	0141                	addi	sp,sp,16
+2300523e:	8082                	ret
         return -2;
-23005220:	5479                	li	s0,-2
-23005222:	bf55                	j	230051d6 <uart_read+0x2e>
+23005240:	5479                	li	s0,-2
+23005242:	bf55                	j	230051f6 <uart_read+0x2e>
             return -1;
-23005224:	547d                	li	s0,-1
-23005226:	bf45                	j	230051d6 <uart_read+0x2e>
+23005244:	547d                	li	s0,-1
+23005246:	bf45                	j	230051f6 <uart_read+0x2e>
 
-23005228 <uart_register>:
+23005248 <uart_register>:
     if (UART_MAX_INDEX == 0)
         return -DEVICE_EINVAL;
 
     dev = &(uartx_device[index].parent);
 
     dev->open = uart_open;
-23005228:	00251793          	slli	a5,a0,0x2
-2300522c:	97aa                	add	a5,a5,a0
-2300522e:	0792                	slli	a5,a5,0x4
-23005230:	a3c18513          	addi	a0,gp,-1476 # 4201623c <uartx_device>
-23005234:	953e                	add	a0,a0,a5
-23005236:	230057b7          	lui	a5,0x23005
-2300523a:	d6c78793          	addi	a5,a5,-660 # 23004d6c <uart_open>
-2300523e:	d11c                	sw	a5,32(a0)
+23005248:	00251793          	slli	a5,a0,0x2
+2300524c:	97aa                	add	a5,a5,a0
+2300524e:	0792                	slli	a5,a5,0x4
+23005250:	a3c18513          	addi	a0,gp,-1476 # 4201623c <uartx_device>
+23005254:	953e                	add	a0,a0,a5
+23005256:	230057b7          	lui	a5,0x23005
+2300525a:	d8c78793          	addi	a5,a5,-628 # 23004d8c <uart_open>
+2300525e:	d11c                	sw	a5,32(a0)
     dev->close = uart_close;
-23005240:	230057b7          	lui	a5,0x23005
-23005244:	e7878793          	addi	a5,a5,-392 # 23004e78 <uart_close>
-23005248:	d15c                	sw	a5,36(a0)
+23005260:	230057b7          	lui	a5,0x23005
+23005264:	e9878793          	addi	a5,a5,-360 # 23004e98 <uart_close>
+23005268:	d15c                	sw	a5,36(a0)
     dev->control = uart_control;
-2300524a:	230057b7          	lui	a5,0x23005
-2300524e:	ec078793          	addi	a5,a5,-320 # 23004ec0 <uart_control>
-23005252:	d51c                	sw	a5,40(a0)
+2300526a:	230057b7          	lui	a5,0x23005
+2300526e:	ee078793          	addi	a5,a5,-288 # 23004ee0 <uart_control>
+23005272:	d51c                	sw	a5,40(a0)
     dev->write = uart_write;
-23005254:	230057b7          	lui	a5,0x23005
-23005258:	12478793          	addi	a5,a5,292 # 23005124 <uart_write>
-2300525c:	d55c                	sw	a5,44(a0)
+23005274:	230057b7          	lui	a5,0x23005
+23005278:	14478793          	addi	a5,a5,324 # 23005144 <uart_write>
+2300527c:	d55c                	sw	a5,44(a0)
     dev->read = uart_read;
-2300525e:	230057b7          	lui	a5,0x23005
-23005262:	1a878793          	addi	a5,a5,424 # 230051a8 <uart_read>
-23005266:	d91c                	sw	a5,48(a0)
+2300527e:	230057b7          	lui	a5,0x23005
+23005282:	1c878793          	addi	a5,a5,456 # 230051c8 <uart_read>
+23005286:	d91c                	sw	a5,48(a0)
 
     dev->type = DEVICE_CLASS_UART;
-23005268:	4789                	li	a5,2
-2300526a:	00f50ea3          	sb	a5,29(a0)
+23005288:	4789                	li	a5,2
+2300528a:	00f50ea3          	sb	a5,29(a0)
     dev->handle = NULL;
-2300526e:	02052c23          	sw	zero,56(a0)
+2300528e:	02052c23          	sw	zero,56(a0)
 
     return device_register(dev, name);
-23005272:	44a2d06f          	j	230326bc <device_register>
+23005292:	42a2d06f          	j	230326bc <device_register>
 
-23005276 <uart_isr>:
+23005296 <uart_isr>:
  * @brief
  *
  * @param handle
  */
 void uart_isr(uart_device_t *handle)
 {
-23005276:	7135                	addi	sp,sp,-160
-23005278:	cd22                	sw	s0,152(sp)
-2300527a:	c74e                	sw	s3,140(sp)
-2300527c:	cf06                	sw	ra,156(sp)
-2300527e:	cb26                	sw	s1,148(sp)
-23005280:	c94a                	sw	s2,144(sp)
+23005296:	7135                	addi	sp,sp,-160
+23005298:	cd22                	sw	s0,152(sp)
+2300529a:	c74e                	sw	s3,140(sp)
+2300529c:	cf06                	sw	ra,156(sp)
+2300529e:	cb26                	sw	s1,148(sp)
+230052a0:	c94a                	sw	s2,144(sp)
     uint32_t tmpVal = 0;
     uint32_t maskVal = 0;
     uint32_t UARTx = (UART0_BASE + handle->id * 0x100);
-23005282:	03c54903          	lbu	s2,60(a0)
+230052a2:	03c54903          	lbu	s2,60(a0)
 
     tmpVal = BL_RD_REG(UARTx, UART_INT_STS);
-23005286:	4000a7b7          	lui	a5,0x4000a
-2300528a:	02078693          	addi	a3,a5,32 # 4000a020 <__ram_load_addr+0x1cfcd12c>
+230052a6:	4000a7b7          	lui	a5,0x4000a
+230052aa:	02078693          	addi	a3,a5,32 # 4000a020 <__ram_load_addr+0x1cfcd12c>
     uint32_t UARTx = (UART0_BASE + handle->id * 0x100);
-2300528e:	0922                	slli	s2,s2,0x8
+230052ae:	0922                	slli	s2,s2,0x8
     maskVal = BL_RD_REG(UARTx, UART_INT_MASK);
-23005290:	02478713          	addi	a4,a5,36
+230052b0:	02478713          	addi	a4,a5,36
     tmpVal = BL_RD_REG(UARTx, UART_INT_STS);
-23005294:	96ca                	add	a3,a3,s2
+230052b4:	96ca                	add	a3,a3,s2
     maskVal = BL_RD_REG(UARTx, UART_INT_MASK);
-23005296:	974a                	add	a4,a4,s2
+230052b6:	974a                	add	a4,a4,s2
 
     if (!handle->parent.callback)
-23005298:	03452803          	lw	a6,52(a0)
+230052b8:	03452803          	lw	a6,52(a0)
     tmpVal = BL_RD_REG(UARTx, UART_INT_STS);
-2300529c:	4280                	lw	s0,0(a3)
+230052bc:	4280                	lw	s0,0(a3)
     maskVal = BL_RD_REG(UARTx, UART_INT_MASK);
-2300529e:	00072983          	lw	s3,0(a4)
+230052be:	00072983          	lw	s3,0(a4)
     if (!handle->parent.callback)
-230052a2:	0e080063          	beqz	a6,23005382 <uart_isr+0x10c>
+230052c2:	0e080063          	beqz	a6,230053a2 <uart_isr+0x10c>
         return;
 
     /* Length of uart tx data transfer arrived interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_UTX_END_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_UTX_END_MASK)) {
-230052a6:	00147713          	andi	a4,s0,1
-230052aa:	84aa                	mv	s1,a0
-230052ac:	cf09                	beqz	a4,230052c6 <uart_isr+0x50>
-230052ae:	0019f713          	andi	a4,s3,1
-230052b2:	eb11                	bnez	a4,230052c6 <uart_isr+0x50>
+230052c6:	00147713          	andi	a4,s0,1
+230052ca:	84aa                	mv	s1,a0
+230052cc:	cf09                	beqz	a4,230052e6 <uart_isr+0x50>
+230052ce:	0019f713          	andi	a4,s3,1
+230052d2:	eb11                	bnez	a4,230052e6 <uart_isr+0x50>
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x1);
-230052b4:	02878793          	addi	a5,a5,40
-230052b8:	97ca                	add	a5,a5,s2
-230052ba:	4705                	li	a4,1
-230052bc:	c398                	sw	a4,0(a5)
+230052d4:	02878793          	addi	a5,a5,40
+230052d8:	97ca                	add	a5,a5,s2
+230052da:	4705                	li	a4,1
+230052dc:	c398                	sw	a4,0(a5)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_TX_END);
-230052be:	4681                	li	a3,0
-230052c0:	4601                	li	a2,0
-230052c2:	4581                	li	a1,0
-230052c4:	9802                	jalr	a6
+230052de:	4681                	li	a3,0
+230052e0:	4601                	li	a2,0
+230052e2:	4581                	li	a1,0
+230052e4:	9802                	jalr	a6
     }
 
     /* Length of uart rx data transfer arrived interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_URX_END_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_URX_END_MASK)) {
-230052c6:	00247793          	andi	a5,s0,2
-230052ca:	c385                	beqz	a5,230052ea <uart_isr+0x74>
-230052cc:	0029f793          	andi	a5,s3,2
-230052d0:	ef89                	bnez	a5,230052ea <uart_isr+0x74>
+230052e6:	00247793          	andi	a5,s0,2
+230052ea:	c385                	beqz	a5,2300530a <uart_isr+0x74>
+230052ec:	0029f793          	andi	a5,s3,2
+230052f0:	ef89                	bnez	a5,2300530a <uart_isr+0x74>
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x2);
-230052d2:	4000a7b7          	lui	a5,0x4000a
+230052f2:	4000a7b7          	lui	a5,0x4000a
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_END);
-230052d6:	58d8                	lw	a4,52(s1)
+230052f6:	58d8                	lw	a4,52(s1)
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x2);
-230052d8:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
-230052dc:	97ca                	add	a5,a5,s2
-230052de:	4689                	li	a3,2
-230052e0:	c394                	sw	a3,0(a5)
+230052f8:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
+230052fc:	97ca                	add	a5,a5,s2
+230052fe:	4689                	li	a3,2
+23005300:	c394                	sw	a3,0(a5)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_END);
-230052e2:	4601                	li	a2,0
-230052e4:	4581                	li	a1,0
-230052e6:	8526                	mv	a0,s1
-230052e8:	9702                	jalr	a4
+23005302:	4601                	li	a2,0
+23005304:	4581                	li	a1,0
+23005306:	8526                	mv	a0,s1
+23005308:	9702                	jalr	a4
     }
 
     /* Tx fifo ready interrupt,auto-cleared when data is pushed */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_UTX_FIFO_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_UTX_FIFO_MASK)) {
-230052ea:	00447793          	andi	a5,s0,4
-230052ee:	cb91                	beqz	a5,23005302 <uart_isr+0x8c>
-230052f0:	0049f793          	andi	a5,s3,4
-230052f4:	e799                	bnez	a5,23005302 <uart_isr+0x8c>
+2300530a:	00447793          	andi	a5,s0,4
+2300530e:	cb91                	beqz	a5,23005322 <uart_isr+0x8c>
+23005310:	0049f793          	andi	a5,s3,4
+23005314:	e799                	bnez	a5,23005322 <uart_isr+0x8c>
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_TX_FIFO);
-230052f6:	58dc                	lw	a5,52(s1)
-230052f8:	4685                	li	a3,1
-230052fa:	4601                	li	a2,0
-230052fc:	4581                	li	a1,0
-230052fe:	8526                	mv	a0,s1
-23005300:	9782                	jalr	a5
+23005316:	58dc                	lw	a5,52(s1)
+23005318:	4685                	li	a3,1
+2300531a:	4601                	li	a2,0
+2300531c:	4581                	li	a1,0
+2300531e:	8526                	mv	a0,s1
+23005320:	9782                	jalr	a5
     }
 
     /* Rx fifo ready interrupt,auto-cleared when data is popped */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_URX_FIFO_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_URX_FIFO_MASK)) {
-23005302:	00847793          	andi	a5,s0,8
-23005306:	c781                	beqz	a5,2300530e <uart_isr+0x98>
-23005308:	0089f793          	andi	a5,s3,8
-2300530c:	c3d1                	beqz	a5,23005390 <uart_isr+0x11a>
+23005322:	00847793          	andi	a5,s0,8
+23005326:	c781                	beqz	a5,2300532e <uart_isr+0x98>
+23005328:	0089f793          	andi	a5,s3,8
+2300532c:	c3d1                	beqz	a5,230053b0 <uart_isr+0x11a>
             handle->parent.callback(&handle->parent, &buffer[0], len, UART_EVENT_RX_FIFO);
         }
     }
 
     /* Rx time-out interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_URX_RTO_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_URX_RTO_MASK)) {
-2300530e:	01047793          	andi	a5,s0,16
-23005312:	c781                	beqz	a5,2300531a <uart_isr+0xa4>
-23005314:	0109f793          	andi	a5,s3,16
-23005318:	cfd1                	beqz	a5,230053b4 <uart_isr+0x13e>
+2300532e:	01047793          	andi	a5,s0,16
+23005332:	c781                	beqz	a5,2300533a <uart_isr+0xa4>
+23005334:	0109f793          	andi	a5,s3,16
+23005338:	cfd1                	beqz	a5,230053d4 <uart_isr+0x13e>
             handle->parent.callback(&handle->parent, &buffer[0], len, UART_EVENT_RTO);
         }
     }
 
     /* Rx parity check error interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_URX_PCE_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_URX_PCE_MASK)) {
-2300531a:	02047793          	andi	a5,s0,32
-2300531e:	c39d                	beqz	a5,23005344 <uart_isr+0xce>
-23005320:	0209f793          	andi	a5,s3,32
-23005324:	e385                	bnez	a5,23005344 <uart_isr+0xce>
+2300533a:	02047793          	andi	a5,s0,32
+2300533e:	c39d                	beqz	a5,23005364 <uart_isr+0xce>
+23005340:	0209f793          	andi	a5,s3,32
+23005344:	e385                	bnez	a5,23005364 <uart_isr+0xce>
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x20);
-23005326:	4000a7b7          	lui	a5,0x4000a
-2300532a:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
+23005346:	4000a7b7          	lui	a5,0x4000a
+2300534a:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_PCE);
-2300532e:	58d8                	lw	a4,52(s1)
+2300534e:	58d8                	lw	a4,52(s1)
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x20);
-23005330:	993e                	add	s2,s2,a5
-23005332:	02000793          	li	a5,32
-23005336:	00f92023          	sw	a5,0(s2)
+23005350:	993e                	add	s2,s2,a5
+23005352:	02000793          	li	a5,32
+23005356:	00f92023          	sw	a5,0(s2)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_PCE);
-2300533a:	4695                	li	a3,5
-2300533c:	4601                	li	a2,0
-2300533e:	4581                	li	a1,0
-23005340:	8526                	mv	a0,s1
-23005342:	9702                	jalr	a4
+2300535a:	4695                	li	a3,5
+2300535c:	4601                	li	a2,0
+2300535e:	4581                	li	a1,0
+23005360:	8526                	mv	a0,s1
+23005362:	9702                	jalr	a4
     }
 
     /* Tx fifo overflow/underflow error interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_UTX_FER_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_UTX_FER_MASK)) {
-23005344:	04047793          	andi	a5,s0,64
-23005348:	cb91                	beqz	a5,2300535c <uart_isr+0xe6>
-2300534a:	0409f793          	andi	a5,s3,64
-2300534e:	e799                	bnez	a5,2300535c <uart_isr+0xe6>
+23005364:	04047793          	andi	a5,s0,64
+23005368:	cb91                	beqz	a5,2300537c <uart_isr+0xe6>
+2300536a:	0409f793          	andi	a5,s3,64
+2300536e:	e799                	bnez	a5,2300537c <uart_isr+0xe6>
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_TX_FER);
-23005350:	58dc                	lw	a5,52(s1)
-23005352:	4699                	li	a3,6
-23005354:	4601                	li	a2,0
-23005356:	4581                	li	a1,0
-23005358:	8526                	mv	a0,s1
-2300535a:	9782                	jalr	a5
+23005370:	58dc                	lw	a5,52(s1)
+23005372:	4699                	li	a3,6
+23005374:	4601                	li	a2,0
+23005376:	4581                	li	a1,0
+23005378:	8526                	mv	a0,s1
+2300537a:	9782                	jalr	a5
     }
 
     /* Rx fifo overflow/underflow error interrupt */
     if (BL_IS_REG_BIT_SET(tmpVal, UART_URX_FER_INT) && !BL_IS_REG_BIT_SET(maskVal, UART_CR_URX_FER_MASK)) {
-2300535c:	08047413          	andi	s0,s0,128
-23005360:	c00d                	beqz	s0,23005382 <uart_isr+0x10c>
-23005362:	0809f993          	andi	s3,s3,128
-23005366:	00099e63          	bnez	s3,23005382 <uart_isr+0x10c>
+2300537c:	08047413          	andi	s0,s0,128
+23005380:	c00d                	beqz	s0,230053a2 <uart_isr+0x10c>
+23005382:	0809f993          	andi	s3,s3,128
+23005386:	00099e63          	bnez	s3,230053a2 <uart_isr+0x10c>
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_FER);
     }
 }
-2300536a:	446a                	lw	s0,152(sp)
+2300538a:	446a                	lw	s0,152(sp)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_FER);
-2300536c:	58dc                	lw	a5,52(s1)
+2300538c:	58dc                	lw	a5,52(s1)
 }
-2300536e:	40fa                	lw	ra,156(sp)
-23005370:	494a                	lw	s2,144(sp)
-23005372:	49ba                	lw	s3,140(sp)
+2300538e:	40fa                	lw	ra,156(sp)
+23005390:	494a                	lw	s2,144(sp)
+23005392:	49ba                	lw	s3,140(sp)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_FER);
-23005374:	8526                	mv	a0,s1
+23005394:	8526                	mv	a0,s1
 }
-23005376:	44da                	lw	s1,148(sp)
+23005396:	44da                	lw	s1,148(sp)
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_FER);
-23005378:	469d                	li	a3,7
-2300537a:	4601                	li	a2,0
-2300537c:	4581                	li	a1,0
+23005398:	469d                	li	a3,7
+2300539a:	4601                	li	a2,0
+2300539c:	4581                	li	a1,0
 }
-2300537e:	610d                	addi	sp,sp,160
+2300539e:	610d                	addi	sp,sp,160
         handle->parent.callback(&handle->parent, NULL, 0, UART_EVENT_RX_FER);
-23005380:	8782                	jr	a5
+230053a0:	8782                	jr	a5
 }
-23005382:	40fa                	lw	ra,156(sp)
-23005384:	446a                	lw	s0,152(sp)
-23005386:	44da                	lw	s1,148(sp)
-23005388:	494a                	lw	s2,144(sp)
-2300538a:	49ba                	lw	s3,140(sp)
-2300538c:	610d                	addi	sp,sp,160
-2300538e:	8082                	ret
+230053a2:	40fa                	lw	ra,156(sp)
+230053a4:	446a                	lw	s0,152(sp)
+230053a6:	44da                	lw	s1,148(sp)
+230053a8:	494a                	lw	s2,144(sp)
+230053aa:	49ba                	lw	s3,140(sp)
+230053ac:	610d                	addi	sp,sp,160
+230053ae:	8082                	ret
         uint8_t len = UART_ReceiveData(handle->id, buffer, UART_FIFO_MAX_LEN);
-23005390:	03c4c503          	lbu	a0,60(s1)
-23005394:	08000613          	li	a2,128
-23005398:	858a                	mv	a1,sp
-2300539a:	423010ef          	jal	ra,23006fbc <UART_ReceiveData>
+230053b0:	03c4c503          	lbu	a0,60(s1)
+230053b4:	08000613          	li	a2,128
+230053b8:	858a                	mv	a1,sp
+230053ba:	403010ef          	jal	ra,23006fbc <UART_ReceiveData>
         if (len) {
-2300539e:	0ff57793          	zext.b	a5,a0
-230053a2:	d7b5                	beqz	a5,2300530e <uart_isr+0x98>
+230053be:	0ff57793          	zext.b	a5,a0
+230053c2:	d7b5                	beqz	a5,2300532e <uart_isr+0x98>
             handle->parent.callback(&handle->parent, &buffer[0], len, UART_EVENT_RX_FIFO);
-230053a4:	58dc                	lw	a5,52(s1)
-230053a6:	0ff57613          	zext.b	a2,a0
-230053aa:	468d                	li	a3,3
-230053ac:	858a                	mv	a1,sp
-230053ae:	8526                	mv	a0,s1
-230053b0:	9782                	jalr	a5
-230053b2:	bfb1                	j	2300530e <uart_isr+0x98>
+230053c4:	58dc                	lw	a5,52(s1)
+230053c6:	0ff57613          	zext.b	a2,a0
+230053ca:	468d                	li	a3,3
+230053cc:	858a                	mv	a1,sp
+230053ce:	8526                	mv	a0,s1
+230053d0:	9782                	jalr	a5
+230053d2:	bfb1                	j	2300532e <uart_isr+0x98>
         BL_WR_REG(UARTx, UART_INT_CLEAR, 0x10);
-230053b4:	4000a7b7          	lui	a5,0x4000a
-230053b8:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
-230053bc:	97ca                	add	a5,a5,s2
-230053be:	4741                	li	a4,16
-230053c0:	c398                	sw	a4,0(a5)
+230053d4:	4000a7b7          	lui	a5,0x4000a
+230053d8:	02878793          	addi	a5,a5,40 # 4000a028 <__ram_load_addr+0x1cfcd134>
+230053dc:	97ca                	add	a5,a5,s2
+230053de:	4741                	li	a4,16
+230053e0:	c398                	sw	a4,0(a5)
         uint8_t len = UART_ReceiveData(handle->id, buffer, UART_FIFO_MAX_LEN);
-230053c2:	03c4c503          	lbu	a0,60(s1)
-230053c6:	08000613          	li	a2,128
-230053ca:	858a                	mv	a1,sp
-230053cc:	3f1010ef          	jal	ra,23006fbc <UART_ReceiveData>
+230053e2:	03c4c503          	lbu	a0,60(s1)
+230053e6:	08000613          	li	a2,128
+230053ea:	858a                	mv	a1,sp
+230053ec:	3d1010ef          	jal	ra,23006fbc <UART_ReceiveData>
         if (len) {
-230053d0:	0ff57793          	zext.b	a5,a0
-230053d4:	d3b9                	beqz	a5,2300531a <uart_isr+0xa4>
+230053f0:	0ff57793          	zext.b	a5,a0
+230053f4:	d3b9                	beqz	a5,2300533a <uart_isr+0xa4>
             handle->parent.callback(&handle->parent, &buffer[0], len, UART_EVENT_RTO);
-230053d6:	58dc                	lw	a5,52(s1)
-230053d8:	0ff57613          	zext.b	a2,a0
-230053dc:	4691                	li	a3,4
-230053de:	858a                	mv	a1,sp
-230053e0:	8526                	mv	a0,s1
-230053e2:	9782                	jalr	a5
-230053e4:	bf1d                	j	2300531a <uart_isr+0xa4>
+230053f6:	58dc                	lw	a5,52(s1)
+230053f8:	0ff57613          	zext.b	a2,a0
+230053fc:	4691                	li	a3,4
+230053fe:	858a                	mv	a1,sp
+23005400:	8526                	mv	a0,s1
+23005402:	9782                	jalr	a5
+23005404:	bf1d                	j	2300533a <uart_isr+0xa4>
 
-230053e6 <UART1_IRQ>:
+23005406 <UART1_IRQ>:
  * @brief
  *
  */
 void UART1_IRQ(void)
 {
     uart_isr(&uartx_device[UART1_INDEX]);
-230053e6:	a8c18513          	addi	a0,gp,-1396 # 4201628c <uartx_device+0x50>
-230053ea:	b571                	j	23005276 <uart_isr>
+23005406:	a8c18513          	addi	a0,gp,-1396 # 4201628c <uartx_device+0x50>
+2300540a:	b571                	j	23005296 <uart_isr>
 
-230053ec <UART0_IRQ>:
+2300540c <UART0_IRQ>:
     uart_isr(&uartx_device[UART0_INDEX]);
-230053ec:	a3c18513          	addi	a0,gp,-1476 # 4201623c <uartx_device>
-230053f0:	b559                	j	23005276 <uart_isr>
+2300540c:	a3c18513          	addi	a0,gp,-1476 # 4201623c <uartx_device>
+23005410:	b559                	j	23005296 <uart_isr>
 
-230053f2 <usb_control>:
+23005412 <usb_control>:
  */
 int usb_control(struct device *dev, int cmd, void *args)
 {
     struct usb_dc_device *usb_device = (struct usb_dc_device *)dev;
 
     switch (cmd) {
-230053f2:	47c5                	li	a5,17
-230053f4:	0ef58063          	beq	a1,a5,230054d4 <usb_control+0xe2>
+23005412:	47c5                	li	a5,17
+23005414:	0ef58063          	beq	a1,a5,230054f4 <usb_control+0xe2>
 {
-230053f8:	1101                	addi	sp,sp,-32
-230053fa:	cc22                	sw	s0,24(sp)
-230053fc:	ce06                	sw	ra,28(sp)
-230053fe:	ca26                	sw	s1,20(sp)
-23005400:	c84a                	sw	s2,16(sp)
-23005402:	c64e                	sw	s3,12(sp)
-23005404:	c452                	sw	s4,8(sp)
-23005406:	8432                	mv	s0,a2
+23005418:	1101                	addi	sp,sp,-32
+2300541a:	cc22                	sw	s0,24(sp)
+2300541c:	ce06                	sw	ra,28(sp)
+2300541e:	ca26                	sw	s1,20(sp)
+23005420:	c84a                	sw	s2,16(sp)
+23005422:	c64e                	sw	s3,12(sp)
+23005424:	c452                	sw	s4,8(sp)
+23005426:	8432                	mv	s0,a2
     switch (cmd) {
-23005408:	02b7db63          	bge	a5,a1,2300543e <usb_control+0x4c>
-2300540c:	47d1                	li	a5,20
-2300540e:	0cf58e63          	beq	a1,a5,230054ea <usb_control+0xf8>
-23005412:	08b7da63          	bge	a5,a1,230054a6 <usb_control+0xb4>
-23005416:	47d5                	li	a5,21
-23005418:	0cf58e63          	beq	a1,a5,230054f4 <usb_control+0x102>
-2300541c:	47d9                	li	a5,22
-2300541e:	00f59763          	bne	a1,a5,2300542c <usb_control+0x3a>
+23005428:	02b7db63          	bge	a5,a1,2300545e <usb_control+0x4c>
+2300542c:	47d1                	li	a5,20
+2300542e:	0cf58e63          	beq	a1,a5,2300550a <usb_control+0xf8>
+23005432:	08b7da63          	bge	a5,a1,230054c6 <usb_control+0xb4>
+23005436:	47d5                	li	a5,21
+23005438:	0cf58e63          	beq	a1,a5,23005514 <usb_control+0x102>
+2300543c:	47d9                	li	a5,22
+2300543e:	00f59763          	bne	a1,a5,2300544c <usb_control+0x3a>
         case DEVICE_CTRL_USB_DC_SET_TX_DMA /* constant-expression */:
             USB_Set_EPx_TX_DMA_Interface_Config(((uint32_t)args) & 0x7f, ENABLE);
             break;
 
         case DEVICE_CTRL_USB_DC_SET_RX_DMA /* constant-expression */:
             USB_Set_EPx_RX_DMA_Interface_Config(((uint32_t)args) & 0x7f, ENABLE);
-23005422:	4585                	li	a1,1
-23005424:	07f67513          	andi	a0,a2,127
-23005428:	720020ef          	jal	ra,23007b48 <USB_Set_EPx_RX_DMA_Interface_Config>
+23005442:	4585                	li	a1,1
+23005444:	07f67513          	andi	a0,a2,127
+23005448:	700020ef          	jal	ra,23007b48 <USB_Set_EPx_RX_DMA_Interface_Config>
 
         default:
             break;
     }
 
     return 0;
-2300542c:	4501                	li	a0,0
+2300544c:	4501                	li	a0,0
 }
-2300542e:	40f2                	lw	ra,28(sp)
-23005430:	4462                	lw	s0,24(sp)
-23005432:	44d2                	lw	s1,20(sp)
-23005434:	4942                	lw	s2,16(sp)
-23005436:	49b2                	lw	s3,12(sp)
-23005438:	4a22                	lw	s4,8(sp)
-2300543a:	6105                	addi	sp,sp,32
-2300543c:	8082                	ret
+2300544e:	40f2                	lw	ra,28(sp)
+23005450:	4462                	lw	s0,24(sp)
+23005452:	44d2                	lw	s1,20(sp)
+23005454:	4942                	lw	s2,16(sp)
+23005456:	49b2                	lw	s3,12(sp)
+23005458:	4a22                	lw	s4,8(sp)
+2300545a:	6105                	addi	sp,sp,32
+2300545c:	8082                	ret
     switch (cmd) {
-2300543e:	47a1                	li	a5,8
-23005440:	0cf58163          	beq	a1,a5,23005502 <usb_control+0x110>
-23005444:	00b7df63          	bge	a5,a1,23005462 <usb_control+0x70>
-23005448:	47a5                	li	a5,9
-2300544a:	0cf58063          	beq	a1,a5,2300550a <usb_control+0x118>
-2300544e:	47c1                	li	a5,16
-23005450:	fcf59ee3          	bne	a1,a5,2300542c <usb_control+0x3a>
+2300545e:	47a1                	li	a5,8
+23005460:	0cf58163          	beq	a1,a5,23005522 <usb_control+0x110>
+23005464:	00b7df63          	bge	a5,a1,23005482 <usb_control+0x70>
+23005468:	47a5                	li	a5,9
+2300546a:	0cf58063          	beq	a1,a5,2300552a <usb_control+0x118>
+2300546e:	47c1                	li	a5,16
+23005470:	fcf59ee3          	bne	a1,a5,2300544c <usb_control+0x3a>
             USB_Set_EPx_Status(USB_EP_GET_IDX(((uint32_t)args) & 0x7f), USB_EP_STATUS_ACK);
-23005454:	4581                	li	a1,0
-23005456:	07f67513          	andi	a0,a2,127
-2300545a:	1c8020ef          	jal	ra,23007622 <USB_Set_EPx_Status>
+23005474:	4581                	li	a1,0
+23005476:	07f67513          	andi	a0,a2,127
+2300547a:	1a8020ef          	jal	ra,23007622 <USB_Set_EPx_Status>
             return 0;
-2300545e:	4501                	li	a0,0
-23005460:	b7f9                	j	2300542e <usb_control+0x3c>
+2300547e:	4501                	li	a0,0
+23005480:	b7f9                	j	2300544e <usb_control+0x3c>
     switch (cmd) {
-23005462:	4785                	li	a5,1
-23005464:	0af58763          	beq	a1,a5,23005512 <usb_control+0x120>
-23005468:	4789                	li	a5,2
-2300546a:	fcf591e3          	bne	a1,a5,2300542c <usb_control+0x3a>
+23005482:	4785                	li	a5,1
+23005484:	0af58763          	beq	a1,a5,23005532 <usb_control+0x120>
+23005488:	4789                	li	a5,2
+2300548a:	fcf591e3          	bne	a1,a5,2300544c <usb_control+0x3a>
             uint32_t offset = __builtin_ctz((uint32_t)args);
-2300546e:	8532                	mv	a0,a2
-23005470:	be6fb0ef          	jal	ra,23000856 <__ctzsi2>
+2300548e:	8532                	mv	a0,a2
+23005490:	bc6fb0ef          	jal	ra,23000856 <__ctzsi2>
             while (offset < 24) {
-23005474:	47dd                	li	a5,23
+23005494:	47dd                	li	a5,23
             uint32_t offset = __builtin_ctz((uint32_t)args);
-23005476:	84aa                	mv	s1,a0
+23005496:	84aa                	mv	s1,a0
             while (offset < 24) {
-23005478:	faa7cae3          	blt	a5,a0,2300542c <usb_control+0x3a>
+23005498:	faa7cae3          	blt	a5,a0,2300544c <usb_control+0x3a>
                 if ((uint32_t)args & (1 << offset)) {
-2300547c:	4a05                	li	s4,1
+2300549c:	4a05                	li	s4,1
             while (offset < 24) {
-2300547e:	49e1                	li	s3,24
-23005480:	a021                	j	23005488 <usb_control+0x96>
+2300549e:	49e1                	li	s3,24
+230054a0:	a021                	j	230054a8 <usb_control+0x96>
                 offset++;
-23005482:	0485                	addi	s1,s1,1
+230054a2:	0485                	addi	s1,s1,1
             while (offset < 24) {
-23005484:	fb3484e3          	beq	s1,s3,2300542c <usb_control+0x3a>
+230054a4:	fb3484e3          	beq	s1,s3,2300544c <usb_control+0x3a>
                 if ((uint32_t)args & (1 << offset)) {
-23005488:	009a17b3          	sll	a5,s4,s1
-2300548c:	8fe1                	and	a5,a5,s0
-2300548e:	dbf5                	beqz	a5,23005482 <usb_control+0x90>
+230054a8:	009a17b3          	sll	a5,s4,s1
+230054ac:	8fe1                	and	a5,a5,s0
+230054ae:	dbf5                	beqz	a5,230054a2 <usb_control+0x90>
                     USB_IntEn(offset, DISABLE);
-23005490:	0ff4f913          	zext.b	s2,s1
-23005494:	4581                	li	a1,0
-23005496:	854a                	mv	a0,s2
-23005498:	2a0020ef          	jal	ra,23007738 <USB_IntEn>
+230054b0:	0ff4f913          	zext.b	s2,s1
+230054b4:	4581                	li	a1,0
+230054b6:	854a                	mv	a0,s2
+230054b8:	280020ef          	jal	ra,23007738 <USB_IntEn>
                     USB_IntMask(offset, MASK);
-2300549c:	4585                	li	a1,1
-2300549e:	854a                	mv	a0,s2
-230054a0:	2e8020ef          	jal	ra,23007788 <USB_IntMask>
-230054a4:	bff9                	j	23005482 <usb_control+0x90>
+230054bc:	4585                	li	a1,1
+230054be:	854a                	mv	a0,s2
+230054c0:	2c8020ef          	jal	ra,23007788 <USB_IntMask>
+230054c4:	bff9                	j	230054a2 <usb_control+0x90>
     switch (cmd) {
-230054a6:	47c9                	li	a5,18
-230054a8:	00f58a63          	beq	a1,a5,230054bc <usb_control+0xca>
-230054ac:	47cd                	li	a5,19
-230054ae:	f6f59fe3          	bne	a1,a5,2300542c <usb_control+0x3a>
+230054c6:	47c9                	li	a5,18
+230054c8:	00f58a63          	beq	a1,a5,230054dc <usb_control+0xca>
+230054cc:	47cd                	li	a5,19
+230054ce:	f6f59fe3          	bne	a1,a5,2300544c <usb_control+0x3a>
             return USB_Get_EPx_TX_FIFO_CNT(((uint32_t)args) & 0x7f);
-230054b2:	07f67513          	andi	a0,a2,127
-230054b6:	007020ef          	jal	ra,23007cbc <USB_Get_EPx_TX_FIFO_CNT>
-230054ba:	bf95                	j	2300542e <usb_control+0x3c>
+230054d2:	07f67513          	andi	a0,a2,127
+230054d6:	7e6020ef          	jal	ra,23007cbc <USB_Get_EPx_TX_FIFO_CNT>
+230054da:	bf95                	j	2300544e <usb_control+0x3c>
             tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-230054bc:	400006b7          	lui	a3,0x40000
-230054c0:	2286a783          	lw	a5,552(a3) # 40000228 <__ram_load_addr+0x1cfc3334>
+230054dc:	400006b7          	lui	a3,0x40000
+230054e0:	2286a783          	lw	a5,552(a3) # 40000228 <__ram_load_addr+0x1cfc3334>
             tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ENUM, 0);
-230054c4:	fff00737          	lui	a4,0xfff00
-230054c8:	177d                	addi	a4,a4,-1
-230054ca:	8ff9                	and	a5,a5,a4
+230054e4:	fff00737          	lui	a4,0xfff00
+230054e8:	177d                	addi	a4,a4,-1
+230054ea:	8ff9                	and	a5,a5,a4
             BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230054cc:	22f6a423          	sw	a5,552(a3)
+230054ec:	22f6a423          	sw	a5,552(a3)
             return 0;
-230054d0:	4501                	li	a0,0
-230054d2:	bfb1                	j	2300542e <usb_control+0x3c>
+230054f0:	4501                	li	a0,0
+230054f2:	bfb1                	j	2300544e <usb_control+0x3c>
             tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-230054d4:	40000737          	lui	a4,0x40000
-230054d8:	22872783          	lw	a5,552(a4) # 40000228 <__ram_load_addr+0x1cfc3334>
+230054f4:	40000737          	lui	a4,0x40000
+230054f8:	22872783          	lw	a5,552(a4) # 40000228 <__ram_load_addr+0x1cfc3334>
             tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ENUM, 1);
-230054dc:	001006b7          	lui	a3,0x100
+230054fc:	001006b7          	lui	a3,0x100
             return 0;
-230054e0:	4501                	li	a0,0
+23005500:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ENUM, 1);
-230054e2:	8fd5                	or	a5,a5,a3
+23005502:	8fd5                	or	a5,a5,a3
             BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230054e4:	22f72423          	sw	a5,552(a4)
+23005504:	22f72423          	sw	a5,552(a4)
 }
-230054e8:	8082                	ret
+23005508:	8082                	ret
             return USB_Get_EPx_RX_FIFO_CNT(((uint32_t)args) & 0x7f);
-230054ea:	07f67513          	andi	a0,a2,127
-230054ee:	073020ef          	jal	ra,23007d60 <USB_Get_EPx_RX_FIFO_CNT>
-230054f2:	bf35                	j	2300542e <usb_control+0x3c>
+2300550a:	07f67513          	andi	a0,a2,127
+2300550e:	053020ef          	jal	ra,23007d60 <USB_Get_EPx_RX_FIFO_CNT>
+23005512:	bf35                	j	2300544e <usb_control+0x3c>
             USB_Set_EPx_TX_DMA_Interface_Config(((uint32_t)args) & 0x7f, ENABLE);
-230054f4:	4585                	li	a1,1
-230054f6:	07f67513          	andi	a0,a2,127
-230054fa:	4da020ef          	jal	ra,230079d4 <USB_Set_EPx_TX_DMA_Interface_Config>
+23005514:	4585                	li	a1,1
+23005516:	07f67513          	andi	a0,a2,127
+2300551a:	4ba020ef          	jal	ra,230079d4 <USB_Set_EPx_TX_DMA_Interface_Config>
     return 0;
-230054fe:	4501                	li	a0,0
+2300551e:	4501                	li	a0,0
             break;
-23005500:	b73d                	j	2300542e <usb_control+0x3c>
+23005520:	b73d                	j	2300544e <usb_control+0x3c>
             usb_device->tx_dma = (struct device *)args;
-23005502:	14c52023          	sw	a2,320(a0)
+23005522:	14c52023          	sw	a2,320(a0)
     return 0;
-23005506:	4501                	li	a0,0
+23005526:	4501                	li	a0,0
             break;
-23005508:	b71d                	j	2300542e <usb_control+0x3c>
+23005528:	b71d                	j	2300544e <usb_control+0x3c>
             usb_device->rx_dma = (struct device *)args;
-2300550a:	14c52223          	sw	a2,324(a0)
+2300552a:	14c52223          	sw	a2,324(a0)
     return 0;
-2300550e:	4501                	li	a0,0
+2300552e:	4501                	li	a0,0
             break;
-23005510:	bf39                	j	2300542e <usb_control+0x3c>
+23005530:	bf39                	j	2300544e <usb_control+0x3c>
             uint32_t offset = __builtin_ctz((uint32_t)args);
-23005512:	8532                	mv	a0,a2
-23005514:	b42fb0ef          	jal	ra,23000856 <__ctzsi2>
+23005532:	8532                	mv	a0,a2
+23005534:	b22fb0ef          	jal	ra,23000856 <__ctzsi2>
             while (offset < 24) {
-23005518:	47dd                	li	a5,23
+23005538:	47dd                	li	a5,23
             uint32_t offset = __builtin_ctz((uint32_t)args);
-2300551a:	84aa                	mv	s1,a0
+2300553a:	84aa                	mv	s1,a0
                 if ((uint32_t)args & (1 << offset)) {
-2300551c:	4a05                	li	s4,1
+2300553c:	4a05                	li	s4,1
             while (offset < 24) {
-2300551e:	49e1                	li	s3,24
-23005520:	00a7d663          	bge	a5,a0,2300552c <usb_control+0x13a>
-23005524:	b721                	j	2300542c <usb_control+0x3a>
+2300553e:	49e1                	li	s3,24
+23005540:	00a7d663          	bge	a5,a0,2300554c <usb_control+0x13a>
+23005544:	b721                	j	2300544c <usb_control+0x3a>
                 offset++;
-23005526:	0485                	addi	s1,s1,1
+23005546:	0485                	addi	s1,s1,1
             while (offset < 24) {
-23005528:	f13482e3          	beq	s1,s3,2300542c <usb_control+0x3a>
+23005548:	f13482e3          	beq	s1,s3,2300544c <usb_control+0x3a>
                 if ((uint32_t)args & (1 << offset)) {
-2300552c:	009a17b3          	sll	a5,s4,s1
-23005530:	8fe1                	and	a5,a5,s0
-23005532:	dbf5                	beqz	a5,23005526 <usb_control+0x134>
+2300554c:	009a17b3          	sll	a5,s4,s1
+23005550:	8fe1                	and	a5,a5,s0
+23005552:	dbf5                	beqz	a5,23005546 <usb_control+0x134>
                     USB_IntEn(offset, ENABLE);
-23005534:	0ff4f913          	zext.b	s2,s1
-23005538:	4585                	li	a1,1
-2300553a:	854a                	mv	a0,s2
-2300553c:	1fc020ef          	jal	ra,23007738 <USB_IntEn>
+23005554:	0ff4f913          	zext.b	s2,s1
+23005558:	4585                	li	a1,1
+2300555a:	854a                	mv	a0,s2
+2300555c:	1dc020ef          	jal	ra,23007738 <USB_IntEn>
                     USB_IntMask(offset, UNMASK);
-23005540:	4581                	li	a1,0
-23005542:	854a                	mv	a0,s2
-23005544:	244020ef          	jal	ra,23007788 <USB_IntMask>
-23005548:	bff9                	j	23005526 <usb_control+0x134>
+23005560:	4581                	li	a1,0
+23005562:	854a                	mv	a0,s2
+23005564:	224020ef          	jal	ra,23007788 <USB_IntMask>
+23005568:	bff9                	j	23005546 <usb_control+0x134>
 
-2300554a <usb_write>:
+2300556a <usb_write>:
 
 int usb_write(struct device *dev, uint32_t pos, const void *buffer, uint32_t size)
 {
-2300554a:	1101                	addi	sp,sp,-32
-2300554c:	ca26                	sw	s1,20(sp)
+2300556a:	1101                	addi	sp,sp,-32
+2300556c:	ca26                	sw	s1,20(sp)
     struct usb_dc_device *usb_device = (struct usb_dc_device *)dev;
     uint8_t ep_idx = USB_EP_GET_IDX(pos);
 
     if (usb_device->in_ep[ep_idx].ep_cfg.ep_type == USBD_EP_TYPE_ISOC) {
-2300554e:	07f5f493          	andi	s1,a1,127
-23005552:	00448793          	addi	a5,s1,4
-23005556:	0792                	slli	a5,a5,0x4
-23005558:	97aa                	add	a5,a5,a0
+2300556e:	07f5f493          	andi	s1,a1,127
+23005572:	00448793          	addi	a5,s1,4
+23005576:	0792                	slli	a5,a5,0x4
+23005578:	97aa                	add	a5,a5,a0
 {
-2300555a:	ce06                	sw	ra,28(sp)
-2300555c:	cc22                	sw	s0,24(sp)
-2300555e:	c84a                	sw	s2,16(sp)
-23005560:	c64e                	sw	s3,12(sp)
+2300557a:	ce06                	sw	ra,28(sp)
+2300557c:	cc22                	sw	s0,24(sp)
+2300557e:	c84a                	sw	s2,16(sp)
+23005580:	c64e                	sw	s3,12(sp)
     if (usb_device->in_ep[ep_idx].ep_cfg.ep_type == USBD_EP_TYPE_ISOC) {
-23005562:	00c7c703          	lbu	a4,12(a5)
-23005566:	4785                	li	a5,1
-23005568:	06f71963          	bne	a4,a5,230055da <usb_write+0x90>
+23005582:	00c7c703          	lbu	a4,12(a5)
+23005586:	4785                	li	a5,1
+23005588:	06f71963          	bne	a4,a5,230055fa <usb_write+0x90>
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x10;
 
         dma_channel_stop(usb_device->tx_dma);
-2300556c:	892a                	mv	s2,a0
-2300556e:	14052503          	lw	a0,320(a0)
-23005572:	89b2                	mv	s3,a2
-23005574:	45c9                	li	a1,18
-23005576:	4601                	li	a2,0
-23005578:	8436                	mv	s0,a3
-2300557a:	22e2d0ef          	jal	ra,230327a8 <device_control>
+2300558c:	892a                	mv	s2,a0
+2300558e:	14052503          	lw	a0,320(a0)
+23005592:	89b2                	mv	s3,a2
+23005594:	45c9                	li	a1,18
+23005596:	4601                	li	a2,0
+23005598:	8436                	mv	s0,a3
+2300559a:	20e2d0ef          	jal	ra,230327a8 <device_control>
         usb_lli_list.src_addr = (uint32_t)buffer;
-2300557e:	42018637          	lui	a2,0x42018
-23005582:	71c60793          	addi	a5,a2,1820 # 4201871c <usb_lli_list>
+2300559e:	42018637          	lui	a2,0x42018
+230055a2:	71c60793          	addi	a5,a2,1820 # 4201871c <usb_lli_list>
         usb_lli_list.dst_addr = usb_ep_addr;
         usb_lli_list.cfg.bits.TransferSize = size;
-23005586:	47d8                	lw	a4,12(a5)
-23005588:	01441693          	slli	a3,s0,0x14
-2300558c:	82d1                	srli	a3,a3,0x14
-2300558e:	04003437          	lui	s0,0x4003
-23005592:	8ec1                	or	a3,a3,s0
-23005594:	f3fe4437          	lui	s0,0xf3fe4
-23005598:	8c79                	and	s0,s0,a4
+230055a6:	47d8                	lw	a4,12(a5)
+230055a8:	01441693          	slli	a3,s0,0x14
+230055ac:	82d1                	srli	a3,a3,0x14
+230055ae:	04003437          	lui	s0,0x4003
+230055b2:	8ec1                	or	a3,a3,s0
+230055b4:	f3fe4437          	lui	s0,0xf3fe4
+230055b8:	8c79                	and	s0,s0,a4
         usb_lli_list.cfg.bits.DI = 0;
         usb_lli_list.cfg.bits.SI = 1;
         usb_lli_list.cfg.bits.SBSize = DMA_BURST_INCR16;
         usb_lli_list.cfg.bits.DBSize = DMA_BURST_INCR1;
         dma_channel_update(usb_device->tx_dma, (void *)((uint32_t)&usb_lli_list));
-2300559a:	14092503          	lw	a0,320(s2)
+230055ba:	14092503          	lw	a0,320(s2)
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x10;
-2300559e:	4000e5b7          	lui	a1,0x4000e
+230055be:	4000e5b7          	lui	a1,0x4000e
         usb_lli_list.cfg.bits.TransferSize = size;
-230055a2:	8ec1                	or	a3,a3,s0
+230055c2:	8ec1                	or	a3,a3,s0
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x10;
-230055a4:	b0858593          	addi	a1,a1,-1272 # 4000db08 <__ram_load_addr+0x1cfd0c14>
-230055a8:	0492                	slli	s1,s1,0x4
-230055aa:	94ae                	add	s1,s1,a1
+230055c4:	b0858593          	addi	a1,a1,-1272 # 4000db08 <__ram_load_addr+0x1cfd0c14>
+230055c8:	0492                	slli	s1,s1,0x4
+230055ca:	94ae                	add	s1,s1,a1
         dma_channel_update(usb_device->tx_dma, (void *)((uint32_t)&usb_lli_list));
-230055ac:	71c60613          	addi	a2,a2,1820
-230055b0:	45cd                	li	a1,19
+230055cc:	71c60613          	addi	a2,a2,1820
+230055d0:	45cd                	li	a1,19
         usb_lli_list.cfg.bits.TransferSize = size;
-230055b2:	c7d4                	sw	a3,12(a5)
+230055d2:	c7d4                	sw	a3,12(a5)
         usb_lli_list.src_addr = (uint32_t)buffer;
-230055b4:	0137a023          	sw	s3,0(a5)
+230055d4:	0137a023          	sw	s3,0(a5)
         usb_lli_list.dst_addr = usb_ep_addr;
-230055b8:	c3c4                	sw	s1,4(a5)
+230055d8:	c3c4                	sw	s1,4(a5)
         dma_channel_update(usb_device->tx_dma, (void *)((uint32_t)&usb_lli_list));
-230055ba:	1ee2d0ef          	jal	ra,230327a8 <device_control>
+230055da:	1ce2d0ef          	jal	ra,230327a8 <device_control>
         dma_channel_start(usb_device->tx_dma);
-230055be:	14092503          	lw	a0,320(s2)
-230055c2:	4601                	li	a2,0
-230055c4:	45c5                	li	a1,17
-230055c6:	1e22d0ef          	jal	ra,230327a8 <device_control>
+230055de:	14092503          	lw	a0,320(s2)
+230055e2:	4601                	li	a2,0
+230055e4:	45c5                	li	a1,17
+230055e6:	1c22d0ef          	jal	ra,230327a8 <device_control>
         return 0;
     } else {
     }
 
     return -1;
 }
-230055ca:	40f2                	lw	ra,28(sp)
-230055cc:	4462                	lw	s0,24(sp)
-230055ce:	44d2                	lw	s1,20(sp)
-230055d0:	4942                	lw	s2,16(sp)
-230055d2:	49b2                	lw	s3,12(sp)
+230055ea:	40f2                	lw	ra,28(sp)
+230055ec:	4462                	lw	s0,24(sp)
+230055ee:	44d2                	lw	s1,20(sp)
+230055f0:	4942                	lw	s2,16(sp)
+230055f2:	49b2                	lw	s3,12(sp)
         return 0;
-230055d4:	4501                	li	a0,0
+230055f4:	4501                	li	a0,0
 }
-230055d6:	6105                	addi	sp,sp,32
-230055d8:	8082                	ret
-230055da:	40f2                	lw	ra,28(sp)
-230055dc:	4462                	lw	s0,24(sp)
-230055de:	44d2                	lw	s1,20(sp)
-230055e0:	4942                	lw	s2,16(sp)
-230055e2:	49b2                	lw	s3,12(sp)
+230055f6:	6105                	addi	sp,sp,32
+230055f8:	8082                	ret
+230055fa:	40f2                	lw	ra,28(sp)
+230055fc:	4462                	lw	s0,24(sp)
+230055fe:	44d2                	lw	s1,20(sp)
+23005600:	4942                	lw	s2,16(sp)
+23005602:	49b2                	lw	s3,12(sp)
     return -1;
-230055e4:	557d                	li	a0,-1
+23005604:	557d                	li	a0,-1
 }
-230055e6:	6105                	addi	sp,sp,32
-230055e8:	8082                	ret
+23005606:	6105                	addi	sp,sp,32
+23005608:	8082                	ret
 
-230055ea <usb_read>:
+2300560a <usb_read>:
 
 int usb_read(struct device *dev, uint32_t pos, void *buffer, uint32_t size)
 {
-230055ea:	1101                	addi	sp,sp,-32
-230055ec:	c84a                	sw	s2,16(sp)
+2300560a:	1101                	addi	sp,sp,-32
+2300560c:	c84a                	sw	s2,16(sp)
     struct usb_dc_device *usb_device = (struct usb_dc_device *)dev;
     uint8_t ep_idx = USB_EP_GET_IDX(pos);
 
     if (usb_device->out_ep[ep_idx].ep_cfg.ep_type == USBD_EP_TYPE_ISOC) {
-230055ee:	07f5f913          	andi	s2,a1,127
-230055f2:	00c90713          	addi	a4,s2,12
-230055f6:	0712                	slli	a4,a4,0x4
+2300560e:	07f5f913          	andi	s2,a1,127
+23005612:	00c90713          	addi	a4,s2,12
+23005616:	0712                	slli	a4,a4,0x4
 {
-230055f8:	ce06                	sw	ra,28(sp)
-230055fa:	cc22                	sw	s0,24(sp)
-230055fc:	ca26                	sw	s1,20(sp)
-230055fe:	c64e                	sw	s3,12(sp)
+23005618:	ce06                	sw	ra,28(sp)
+2300561a:	cc22                	sw	s0,24(sp)
+2300561c:	ca26                	sw	s1,20(sp)
+2300561e:	c64e                	sw	s3,12(sp)
     if (usb_device->out_ep[ep_idx].ep_cfg.ep_type == USBD_EP_TYPE_ISOC) {
-23005600:	972a                	add	a4,a4,a0
-23005602:	00c74703          	lbu	a4,12(a4)
-23005606:	4785                	li	a5,1
-23005608:	06f71d63          	bne	a4,a5,23005682 <usb_read+0x98>
+23005620:	972a                	add	a4,a4,a0
+23005622:	00c74703          	lbu	a4,12(a4)
+23005626:	4785                	li	a5,1
+23005628:	06f71d63          	bne	a4,a5,230056a2 <usb_read+0x98>
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x1c;
 
         dma_channel_stop(usb_device->tx_dma);
-2300560c:	84aa                	mv	s1,a0
-2300560e:	14052503          	lw	a0,320(a0)
-23005612:	89b2                	mv	s3,a2
-23005614:	45c9                	li	a1,18
-23005616:	4601                	li	a2,0
-23005618:	8436                	mv	s0,a3
-2300561a:	18e2d0ef          	jal	ra,230327a8 <device_control>
+2300562c:	84aa                	mv	s1,a0
+2300562e:	14052503          	lw	a0,320(a0)
+23005632:	89b2                	mv	s3,a2
+23005634:	45c9                	li	a1,18
+23005636:	4601                	li	a2,0
+23005638:	8436                	mv	s0,a3
+2300563a:	16e2d0ef          	jal	ra,230327a8 <device_control>
         usb_lli_list.src_addr = usb_ep_addr;
-2300561e:	42018637          	lui	a2,0x42018
-23005622:	71c60713          	addi	a4,a2,1820 # 4201871c <usb_lli_list>
+2300563e:	42018637          	lui	a2,0x42018
+23005642:	71c60713          	addi	a4,a2,1820 # 4201871c <usb_lli_list>
         usb_lli_list.dst_addr = (uint32_t)buffer;
         usb_lli_list.cfg.bits.TransferSize = size;
-23005626:	474c                	lw	a1,12(a4)
-23005628:	01441693          	slli	a3,s0,0x14
-2300562c:	82d1                	srli	a3,a3,0x14
-2300562e:	08018437          	lui	s0,0x8018
+23005646:	474c                	lw	a1,12(a4)
+23005648:	01441693          	slli	a3,s0,0x14
+2300564c:	82d1                	srli	a3,a3,0x14
+2300564e:	08018437          	lui	s0,0x8018
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x1c;
-23005632:	00391793          	slli	a5,s2,0x3
+23005652:	00391793          	slli	a5,s2,0x3
         usb_lli_list.cfg.bits.TransferSize = size;
-23005636:	8ec1                	or	a3,a3,s0
-23005638:	f3fe4437          	lui	s0,0xf3fe4
-2300563c:	8c6d                	and	s0,s0,a1
+23005656:	8ec1                	or	a3,a3,s0
+23005658:	f3fe4437          	lui	s0,0xf3fe4
+2300565c:	8c6d                	and	s0,s0,a1
         usb_lli_list.cfg.bits.DI = 1;
         usb_lli_list.cfg.bits.SI = 0;
         usb_lli_list.cfg.bits.SBSize = DMA_BURST_INCR1;
         usb_lli_list.cfg.bits.DBSize = DMA_BURST_INCR16;
         dma_channel_update(usb_device->rx_dma, (void *)((uint32_t)&usb_lli_list));
-2300563e:	1444a503          	lw	a0,324(s1)
+2300565e:	1444a503          	lw	a0,324(s1)
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x1c;
-23005642:	412787b3          	sub	a5,a5,s2
-23005646:	4000e5b7          	lui	a1,0x4000e
+23005662:	412787b3          	sub	a5,a5,s2
+23005666:	4000e5b7          	lui	a1,0x4000e
         usb_lli_list.cfg.bits.TransferSize = size;
-2300564a:	8ec1                	or	a3,a3,s0
+2300566a:	8ec1                	or	a3,a3,s0
         uint32_t usb_ep_addr = USB_BASE + 0x308 + ep_idx * 0x1c;
-2300564c:	b0858593          	addi	a1,a1,-1272 # 4000db08 <__ram_load_addr+0x1cfd0c14>
-23005650:	078a                	slli	a5,a5,0x2
-23005652:	97ae                	add	a5,a5,a1
+2300566c:	b0858593          	addi	a1,a1,-1272 # 4000db08 <__ram_load_addr+0x1cfd0c14>
+23005670:	078a                	slli	a5,a5,0x2
+23005672:	97ae                	add	a5,a5,a1
         dma_channel_update(usb_device->rx_dma, (void *)((uint32_t)&usb_lli_list));
-23005654:	71c60613          	addi	a2,a2,1820
-23005658:	45cd                	li	a1,19
+23005674:	71c60613          	addi	a2,a2,1820
+23005678:	45cd                	li	a1,19
         usb_lli_list.cfg.bits.TransferSize = size;
-2300565a:	c754                	sw	a3,12(a4)
+2300567a:	c754                	sw	a3,12(a4)
         usb_lli_list.dst_addr = (uint32_t)buffer;
-2300565c:	01372223          	sw	s3,4(a4)
+2300567c:	01372223          	sw	s3,4(a4)
         usb_lli_list.src_addr = usb_ep_addr;
-23005660:	c31c                	sw	a5,0(a4)
+23005680:	c31c                	sw	a5,0(a4)
         dma_channel_update(usb_device->rx_dma, (void *)((uint32_t)&usb_lli_list));
-23005662:	1462d0ef          	jal	ra,230327a8 <device_control>
+23005682:	1262d0ef          	jal	ra,230327a8 <device_control>
         dma_channel_start(usb_device->rx_dma);
-23005666:	1444a503          	lw	a0,324(s1)
-2300566a:	4601                	li	a2,0
-2300566c:	45c5                	li	a1,17
-2300566e:	13a2d0ef          	jal	ra,230327a8 <device_control>
+23005686:	1444a503          	lw	a0,324(s1)
+2300568a:	4601                	li	a2,0
+2300568c:	45c5                	li	a1,17
+2300568e:	11a2d0ef          	jal	ra,230327a8 <device_control>
         return 0;
     } else {
     }
 
     return -1;
 }
-23005672:	40f2                	lw	ra,28(sp)
-23005674:	4462                	lw	s0,24(sp)
-23005676:	44d2                	lw	s1,20(sp)
-23005678:	4942                	lw	s2,16(sp)
-2300567a:	49b2                	lw	s3,12(sp)
+23005692:	40f2                	lw	ra,28(sp)
+23005694:	4462                	lw	s0,24(sp)
+23005696:	44d2                	lw	s1,20(sp)
+23005698:	4942                	lw	s2,16(sp)
+2300569a:	49b2                	lw	s3,12(sp)
         return 0;
-2300567c:	4501                	li	a0,0
+2300569c:	4501                	li	a0,0
 }
-2300567e:	6105                	addi	sp,sp,32
-23005680:	8082                	ret
-23005682:	40f2                	lw	ra,28(sp)
-23005684:	4462                	lw	s0,24(sp)
-23005686:	44d2                	lw	s1,20(sp)
-23005688:	4942                	lw	s2,16(sp)
-2300568a:	49b2                	lw	s3,12(sp)
+2300569e:	6105                	addi	sp,sp,32
+230056a0:	8082                	ret
+230056a2:	40f2                	lw	ra,28(sp)
+230056a4:	4462                	lw	s0,24(sp)
+230056a6:	44d2                	lw	s1,20(sp)
+230056a8:	4942                	lw	s2,16(sp)
+230056aa:	49b2                	lw	s3,12(sp)
     return -1;
-2300568c:	557d                	li	a0,-1
+230056ac:	557d                	li	a0,-1
 }
-2300568e:	6105                	addi	sp,sp,32
-23005690:	8082                	ret
+230056ae:	6105                	addi	sp,sp,32
+230056b0:	8082                	ret
 
-23005692 <usb_open>:
+230056b2 <usb_open>:
 {
-23005692:	1101                	addi	sp,sp,-32
-23005694:	cc22                	sw	s0,24(sp)
+230056b2:	1101                	addi	sp,sp,-32
+230056b4:	cc22                	sw	s0,24(sp)
     tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-23005696:	40000437          	lui	s0,0x40000
-2300569a:	22842783          	lw	a5,552(s0) # 40000228 <__ram_load_addr+0x1cfc3334>
+230056b6:	40000437          	lui	s0,0x40000
+230056ba:	22842783          	lw	a5,552(s0) # 40000228 <__ram_load_addr+0x1cfc3334>
     tmpVal = BL_CLR_REG_BIT(tmpVal, GLB_PU_USB);
-2300569e:	ff800737          	lui	a4,0xff800
-230056a2:	177d                	addi	a4,a4,-1
+230056be:	ff800737          	lui	a4,0xff800
+230056c2:	177d                	addi	a4,a4,-1
 {
-230056a4:	ce06                	sw	ra,28(sp)
-230056a6:	ca26                	sw	s1,20(sp)
-230056a8:	c84a                	sw	s2,16(sp)
+230056c4:	ce06                	sw	ra,28(sp)
+230056c6:	ca26                	sw	s1,20(sp)
+230056c8:	c84a                	sw	s2,16(sp)
     tmpVal = BL_CLR_REG_BIT(tmpVal, GLB_PU_USB);
-230056aa:	8ff9                	and	a5,a5,a4
+230056ca:	8ff9                	and	a5,a5,a4
     USB_Config_Type usbCfg = { 0 };
-230056ac:	c402                	sw	zero,8(sp)
-230056ae:	00011623          	sh	zero,12(sp)
+230056cc:	c402                	sw	zero,8(sp)
+230056ce:	00011623          	sh	zero,12(sp)
     BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230056b2:	22f42423          	sw	a5,552(s0)
+230056d2:	22f42423          	sw	a5,552(s0)
     mtimer_delay_ms(10);
-230056b6:	4529                	li	a0,10
-230056b8:	e06ff0ef          	jal	ra,23004cbe <mtimer_delay_ms>
+230056d6:	4529                	li	a0,10
+230056d8:	e06ff0ef          	jal	ra,23004cde <mtimer_delay_ms>
     tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-230056bc:	22842703          	lw	a4,552(s0)
+230056dc:	22842703          	lw	a4,552(s0)
     tmpVal = BL_SET_REG_BIT(tmpVal, GLB_PU_USB);
-230056c0:	00800637          	lui	a2,0x800
+230056e0:	00800637          	lui	a2,0x800
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_PU_USB, 0);
-230056c4:	ff7006b7          	lui	a3,0xff700
+230056e4:	ff7006b7          	lui	a3,0xff700
     tmpVal = BL_SET_REG_BIT(tmpVal, GLB_PU_USB);
-230056c8:	8f51                	or	a4,a4,a2
+230056e8:	8f51                	or	a4,a4,a2
     BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230056ca:	22e42423          	sw	a4,552(s0)
+230056ea:	22e42423          	sw	a4,552(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-230056ce:	22842703          	lw	a4,552(s0)
+230056ee:	22842703          	lw	a4,552(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_PU_USB, 0);
-230056d2:	16fd                	addi	a3,a3,-1
+230056f2:	16fd                	addi	a3,a3,-1
     CPU_Interrupt_Disable(USB_IRQn);
-230056d4:	02500513          	li	a0,37
+230056f4:	02500513          	li	a0,37
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_PU_USB, 0);
-230056d8:	8f75                	and	a4,a4,a3
+230056f8:	8f75                	and	a4,a4,a3
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230056da:	22e42423          	sw	a4,552(s0)
+230056fa:	22e42423          	sw	a4,552(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR_CONFIG);
-230056de:	22c42703          	lw	a4,556(s0)
+230056fe:	22c42703          	lw	a4,556(s0)
     usbCfg.SoftwareCtrl = 1;
-230056e2:	4485                	li	s1,1
+23005702:	4485                	li	s1,1
     BL_WR_REG(USB_BASE, USB_INT_EN, 0);
-230056e4:	4000e937          	lui	s2,0x4000e
+23005704:	4000e937          	lui	s2,0x4000e
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_BD_VTH, 7);
-230056e8:	07076713          	ori	a4,a4,112
+23005708:	07076713          	ori	a4,a4,112
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR_CONFIG, tmpVal);
-230056ec:	22e42623          	sw	a4,556(s0)
+2300570c:	22e42623          	sw	a4,556(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-230056f0:	22842783          	lw	a5,552(s0)
+23005710:	22842783          	lw	a5,552(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_PU_USB, 1);
-230056f4:	ffbef737          	lui	a4,0xffbef
-230056f8:	88f70713          	addi	a4,a4,-1905 # ffbee88f <_heap_start+0xbdbc648f>
-230056fc:	8fd1                	or	a5,a5,a2
+23005714:	ffbef737          	lui	a4,0xffbef
+23005718:	88f70713          	addi	a4,a4,-1905 # ffbee88f <_heap_start+0xbdbc648f>
+2300571c:	8fd1                	or	a5,a5,a2
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-230056fe:	22f42423          	sw	a5,552(s0)
+2300571e:	22f42423          	sw	a5,552(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-23005702:	22842783          	lw	a5,552(s0)
+23005722:	22842783          	lw	a5,552(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ROUT_NMOS, 3);
-23005706:	8ff9                	and	a5,a5,a4
-23005708:	00200737          	lui	a4,0x200
-2300570c:	33070713          	addi	a4,a4,816 # 200330 <_heap_size+0x1fa730>
-23005710:	8fd9                	or	a5,a5,a4
+23005726:	8ff9                	and	a5,a5,a4
+23005728:	00200737          	lui	a4,0x200
+2300572c:	33070713          	addi	a4,a4,816 # 200330 <_heap_size+0x1fa730>
+23005730:	8fd9                	or	a5,a5,a4
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-23005712:	22f42423          	sw	a5,552(s0)
+23005732:	22f42423          	sw	a5,552(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR_CONFIG);
-23005716:	22c42783          	lw	a5,556(s0)
+23005736:	22c42783          	lw	a5,556(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_V_HYS_M, 2);
-2300571a:	88889737          	lui	a4,0x88889
-2300571e:	f8070713          	addi	a4,a4,-128 # 88888f80 <_heap_start+0x46860b80>
-23005722:	8ff9                	and	a5,a5,a4
-23005724:	22225737          	lui	a4,0x22225
-23005728:	09a70713          	addi	a4,a4,154 # 2222509a <_heap_size+0x2221f49a>
-2300572c:	8fd9                	or	a5,a5,a4
+2300573a:	88889737          	lui	a4,0x88889
+2300573e:	f8070713          	addi	a4,a4,-128 # 88888f80 <_heap_start+0x46860b80>
+23005742:	8ff9                	and	a5,a5,a4
+23005744:	22225737          	lui	a4,0x22225
+23005748:	09a70713          	addi	a4,a4,154 # 2222509a <_heap_size+0x2221f49a>
+2300574c:	8fd9                	or	a5,a5,a4
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR_CONFIG, tmpVal);
-2300572e:	22f42623          	sw	a5,556(s0)
+2300574e:	22f42623          	sw	a5,556(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR_CONFIG);
-23005732:	22c42783          	lw	a5,556(s0)
+23005752:	22c42783          	lw	a5,556(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ENUM, 1);
-23005736:	00100737          	lui	a4,0x100
+23005756:	00100737          	lui	a4,0x100
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_BD_VTH, 7);
-2300573a:	0707e793          	ori	a5,a5,112
+2300575a:	0707e793          	ori	a5,a5,112
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR_CONFIG, tmpVal);
-2300573e:	22f42623          	sw	a5,556(s0)
+2300575e:	22f42623          	sw	a5,556(s0)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-23005742:	22842783          	lw	a5,552(s0)
+23005762:	22842783          	lw	a5,552(s0)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_ENUM, 1);
-23005746:	8fd9                	or	a5,a5,a4
+23005766:	8fd9                	or	a5,a5,a4
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-23005748:	22f42423          	sw	a5,552(s0)
+23005768:	22f42423          	sw	a5,552(s0)
     CPU_Interrupt_Disable(USB_IRQn);
-2300574c:	561000ef          	jal	ra,230064ac <clic_disable_interrupt>
+2300576c:	541000ef          	jal	ra,230064ac <clic_disable_interrupt>
     usbCfg.EnumOutEn = ENABLE;
-23005750:	004007b7          	lui	a5,0x400
+23005770:	004007b7          	lui	a5,0x400
     USB_Set_Config(DISABLE, &usbCfg);
-23005754:	002c                	addi	a1,sp,8
+23005774:	002c                	addi	a1,sp,8
     usbCfg.EnumOutEn = ENABLE;
-23005756:	10178793          	addi	a5,a5,257 # 400101 <_heap_size+0x3fa501>
+23005776:	10178793          	addi	a5,a5,257 # 400101 <_heap_size+0x3fa501>
     USB_Set_Config(DISABLE, &usbCfg);
-2300575a:	4501                	li	a0,0
+2300577a:	4501                	li	a0,0
     usbCfg.EnumOutEn = ENABLE;
-2300575c:	c43e                	sw	a5,8(sp)
+2300577c:	c43e                	sw	a5,8(sp)
     usbCfg.SoftwareCtrl = 1;
-2300575e:	00911623          	sh	s1,12(sp)
+2300577e:	00911623          	sh	s1,12(sp)
     USB_Set_Config(DISABLE, &usbCfg);
-23005762:	1b1010ef          	jal	ra,23007112 <USB_Set_Config>
+23005782:	191010ef          	jal	ra,23007112 <USB_Set_Config>
     usb_fs_device.out_ep[0].ep_ena = 1U;
-23005766:	420187b7          	lui	a5,0x42018
+23005786:	420187b7          	lui	a5,0x42018
     usb_fs_device.out_ep[0].ep_cfg.ep_mps = USB_CTRL_EP_MPS;
-2300576a:	04000713          	li	a4,64
+2300578a:	04000713          	li	a4,64
     usb_fs_device.out_ep[0].ep_ena = 1U;
-2300576e:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+2300578e:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
     BL_WR_REG(USB_BASE, USB_INT_EN, 0);
-23005772:	82092023          	sw	zero,-2016(s2) # 4000d820 <__ram_load_addr+0x1cfd092c>
+23005792:	82092023          	sw	zero,-2016(s2) # 4000d820 <__ram_load_addr+0x1cfd092c>
     usb_fs_device.out_ep[0].ep_cfg.ep_mps = USB_CTRL_EP_MPS;
-23005776:	0ce79523          	sh	a4,202(a5)
+23005796:	0ce79523          	sh	a4,202(a5)
     usb_fs_device.in_ep[0].ep_cfg.ep_mps = USB_CTRL_EP_MPS;
-2300577a:	04e79523          	sh	a4,74(a5)
+2300579a:	04e79523          	sh	a4,74(a5)
     usb_fs_device.out_ep[0].ep_ena = 1U;
-2300577e:	0c978023          	sb	s1,192(a5)
+2300579e:	0c978023          	sb	s1,192(a5)
     usb_fs_device.in_ep[0].ep_ena = 1U;
-23005782:	04978023          	sb	s1,64(a5)
+230057a2:	04978023          	sb	s1,64(a5)
     usb_fs_device.out_ep[0].ep_cfg.ep_type = USBD_EP_TYPE_CTRL;
-23005786:	0c078623          	sb	zero,204(a5)
+230057a6:	0c078623          	sb	zero,204(a5)
     usb_fs_device.in_ep[0].ep_cfg.ep_type = USBD_EP_TYPE_CTRL;
-2300578a:	04078623          	sb	zero,76(a5)
+230057aa:	04078623          	sb	zero,76(a5)
     USB_IntEn(USB_INT_RESET, ENABLE);          //1
-2300578e:	4585                	li	a1,1
-23005790:	4505                	li	a0,1
-23005792:	7a7010ef          	jal	ra,23007738 <USB_IntEn>
-    USB_IntEn(USB_INT_EP0_SETUP_DONE, ENABLE); //5
-23005796:	4585                	li	a1,1
-23005798:	4515                	li	a0,5
-2300579a:	79f010ef          	jal	ra,23007738 <USB_IntEn>
-    USB_IntEn(USB_INT_EP0_IN_DONE, ENABLE);    //7
-2300579e:	4585                	li	a1,1
-230057a0:	451d                	li	a0,7
-230057a2:	797010ef          	jal	ra,23007738 <USB_IntEn>
-    USB_IntEn(USB_INT_EP0_OUT_DONE, ENABLE);   //9
-230057a6:	4585                	li	a1,1
-230057a8:	4525                	li	a0,9
-230057aa:	78f010ef          	jal	ra,23007738 <USB_IntEn>
-    USB_IntEn(USB_INT_RESET_END, ENABLE);      //27
 230057ae:	4585                	li	a1,1
-230057b0:	456d                	li	a0,27
+230057b0:	4505                	li	a0,1
 230057b2:	787010ef          	jal	ra,23007738 <USB_IntEn>
+    USB_IntEn(USB_INT_EP0_SETUP_DONE, ENABLE); //5
+230057b6:	4585                	li	a1,1
+230057b8:	4515                	li	a0,5
+230057ba:	77f010ef          	jal	ra,23007738 <USB_IntEn>
+    USB_IntEn(USB_INT_EP0_IN_DONE, ENABLE);    //7
+230057be:	4585                	li	a1,1
+230057c0:	451d                	li	a0,7
+230057c2:	777010ef          	jal	ra,23007738 <USB_IntEn>
+    USB_IntEn(USB_INT_EP0_OUT_DONE, ENABLE);   //9
+230057c6:	4585                	li	a1,1
+230057c8:	4525                	li	a0,9
+230057ca:	76f010ef          	jal	ra,23007738 <USB_IntEn>
+    USB_IntEn(USB_INT_RESET_END, ENABLE);      //27
+230057ce:	4585                	li	a1,1
+230057d0:	456d                	li	a0,27
+230057d2:	767010ef          	jal	ra,23007738 <USB_IntEn>
     BL_WR_REG(USB_BASE, USB_INT_MASK, 0xffffffff);
-230057b6:	57fd                	li	a5,-1
-230057b8:	82f92423          	sw	a5,-2008(s2)
+230057d6:	57fd                	li	a5,-1
+230057d8:	82f92423          	sw	a5,-2008(s2)
     USB_IntMask(USB_INT_RESET, UNMASK);          //1
-230057bc:	4581                	li	a1,0
-230057be:	4505                	li	a0,1
-230057c0:	7c9010ef          	jal	ra,23007788 <USB_IntMask>
-    USB_IntMask(USB_INT_EP0_SETUP_DONE, UNMASK); //5
-230057c4:	4581                	li	a1,0
-230057c6:	4515                	li	a0,5
-230057c8:	7c1010ef          	jal	ra,23007788 <USB_IntMask>
-    USB_IntMask(USB_INT_EP0_IN_DONE, UNMASK);    //7
-230057cc:	4581                	li	a1,0
-230057ce:	451d                	li	a0,7
-230057d0:	7b9010ef          	jal	ra,23007788 <USB_IntMask>
-    USB_IntMask(USB_INT_EP0_OUT_DONE, UNMASK);   //9
-230057d4:	4581                	li	a1,0
-230057d6:	4525                	li	a0,9
-230057d8:	7b1010ef          	jal	ra,23007788 <USB_IntMask>
-    USB_IntMask(USB_INT_RESET_END, UNMASK);      //27
 230057dc:	4581                	li	a1,0
-230057de:	456d                	li	a0,27
+230057de:	4505                	li	a0,1
 230057e0:	7a9010ef          	jal	ra,23007788 <USB_IntMask>
+    USB_IntMask(USB_INT_EP0_SETUP_DONE, UNMASK); //5
+230057e4:	4581                	li	a1,0
+230057e6:	4515                	li	a0,5
+230057e8:	7a1010ef          	jal	ra,23007788 <USB_IntMask>
+    USB_IntMask(USB_INT_EP0_IN_DONE, UNMASK);    //7
+230057ec:	4581                	li	a1,0
+230057ee:	451d                	li	a0,7
+230057f0:	799010ef          	jal	ra,23007788 <USB_IntMask>
+    USB_IntMask(USB_INT_EP0_OUT_DONE, UNMASK);   //9
+230057f4:	4581                	li	a1,0
+230057f6:	4525                	li	a0,9
+230057f8:	791010ef          	jal	ra,23007788 <USB_IntMask>
+    USB_IntMask(USB_INT_RESET_END, UNMASK);      //27
+230057fc:	4581                	li	a1,0
+230057fe:	456d                	li	a0,27
+23005800:	789010ef          	jal	ra,23007788 <USB_IntMask>
     USB_Clr_IntStatus(USB_INT_ALL);
-230057e4:	02000513          	li	a0,32
-230057e8:	01c020ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005804:	02000513          	li	a0,32
+23005808:	7fd010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
     Interrupt_Handler_Register(USB_IRQn, USB_FS_IRQ);
-230057ec:	230065b7          	lui	a1,0x23006
-230057f0:	05058593          	addi	a1,a1,80 # 23006050 <USB_FS_IRQ>
-230057f4:	02500513          	li	a0,37
-230057f8:	48b000ef          	jal	ra,23006482 <Interrupt_Handler_Register>
+2300580c:	230065b7          	lui	a1,0x23006
+23005810:	07058593          	addi	a1,a1,112 # 23006070 <USB_FS_IRQ>
+23005814:	02500513          	li	a0,37
+23005818:	46b000ef          	jal	ra,23006482 <Interrupt_Handler_Register>
     CPU_Interrupt_Enable(USB_IRQn);
-230057fc:	02500513          	li	a0,37
-23005800:	49b000ef          	jal	ra,2300649a <clic_enable_interrupt>
+2300581c:	02500513          	li	a0,37
+23005820:	47b000ef          	jal	ra,2300649a <clic_enable_interrupt>
     USB_Enable();
-23005804:	0e9010ef          	jal	ra,230070ec <USB_Enable>
+23005824:	0c9010ef          	jal	ra,230070ec <USB_Enable>
 }
-23005808:	40f2                	lw	ra,28(sp)
-2300580a:	4462                	lw	s0,24(sp)
-2300580c:	44d2                	lw	s1,20(sp)
-2300580e:	4942                	lw	s2,16(sp)
-23005810:	4501                	li	a0,0
-23005812:	6105                	addi	sp,sp,32
-23005814:	8082                	ret
+23005828:	40f2                	lw	ra,28(sp)
+2300582a:	4462                	lw	s0,24(sp)
+2300582c:	44d2                	lw	s1,20(sp)
+2300582e:	4942                	lw	s2,16(sp)
+23005830:	4501                	li	a0,0
+23005832:	6105                	addi	sp,sp,32
+23005834:	8082                	ret
 
-23005816 <usb_close>:
+23005836 <usb_close>:
 {
-23005816:	1141                	addi	sp,sp,-16
+23005836:	1141                	addi	sp,sp,-16
     CPU_Interrupt_Disable(USB_IRQn);
-23005818:	02500513          	li	a0,37
+23005838:	02500513          	li	a0,37
 {
-2300581c:	c606                	sw	ra,12(sp)
+2300583c:	c606                	sw	ra,12(sp)
     CPU_Interrupt_Disable(USB_IRQn);
-2300581e:	48f000ef          	jal	ra,230064ac <clic_disable_interrupt>
+2300583e:	46f000ef          	jal	ra,230064ac <clic_disable_interrupt>
     USB_IntMask(USB_INT_LPM_WAKEUP, MASK);
-23005822:	4585                	li	a1,1
-23005824:	4571                	li	a0,28
-23005826:	763010ef          	jal	ra,23007788 <USB_IntMask>
+23005842:	4585                	li	a1,1
+23005844:	4571                	li	a0,28
+23005846:	743010ef          	jal	ra,23007788 <USB_IntMask>
     USB_IntMask(USB_INT_LPM_PACKET, MASK);
-2300582a:	4585                	li	a1,1
-2300582c:	4575                	li	a0,29
-2300582e:	75b010ef          	jal	ra,23007788 <USB_IntMask>
+2300584a:	4585                	li	a1,1
+2300584c:	4575                	li	a0,29
+2300584e:	73b010ef          	jal	ra,23007788 <USB_IntMask>
     USB_Disable();
-23005832:	0cf010ef          	jal	ra,23007100 <USB_Disable>
+23005852:	0af010ef          	jal	ra,23007100 <USB_Disable>
     USB_Clr_IntStatus(USB_INT_ALL);
-23005836:	02000513          	li	a0,32
-2300583a:	7cb010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005856:	02000513          	li	a0,32
+2300585a:	7ab010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
     tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-2300583e:	400007b7          	lui	a5,0x40000
-23005842:	2287a703          	lw	a4,552(a5) # 40000228 <__ram_load_addr+0x1cfc3334>
+2300585e:	400007b7          	lui	a5,0x40000
+23005862:	2287a703          	lw	a4,552(a5) # 40000228 <__ram_load_addr+0x1cfc3334>
     tmpVal = BL_CLR_REG_BIT(tmpVal, GLB_PU_USB);
-23005846:	ff8006b7          	lui	a3,0xff800
-2300584a:	16fd                	addi	a3,a3,-1
-2300584c:	8f75                	and	a4,a4,a3
+23005866:	ff8006b7          	lui	a3,0xff800
+2300586a:	16fd                	addi	a3,a3,-1
+2300586c:	8f75                	and	a4,a4,a3
     BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-2300584e:	22e7a423          	sw	a4,552(a5)
+2300586e:	22e7a423          	sw	a4,552(a5)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR);
-23005852:	2287a703          	lw	a4,552(a5)
+23005872:	2287a703          	lw	a4,552(a5)
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_PU_USB, 0);
-23005856:	ff7006b7          	lui	a3,0xff700
-2300585a:	16fd                	addi	a3,a3,-1
-2300585c:	8f75                	and	a4,a4,a3
+23005876:	ff7006b7          	lui	a3,0xff700
+2300587a:	16fd                	addi	a3,a3,-1
+2300587c:	8f75                	and	a4,a4,a3
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR, tmpVal);
-2300585e:	22e7a423          	sw	a4,552(a5)
+2300587e:	22e7a423          	sw	a4,552(a5)
         tmpVal = BL_RD_REG(GLB_BASE, GLB_USB_XCVR_CONFIG);
-23005862:	22c7a703          	lw	a4,556(a5)
+23005882:	22c7a703          	lw	a4,556(a5)
     GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_USB);
-23005866:	4571                	li	a0,28
+23005886:	4571                	li	a0,28
         tmpVal = BL_SET_REG_BITS_VAL(tmpVal, GLB_USB_BD_VTH, 7);
-23005868:	07076713          	ori	a4,a4,112
+23005888:	07076713          	ori	a4,a4,112
         BL_WR_REG(GLB_BASE, GLB_USB_XCVR_CONFIG, tmpVal);
-2300586c:	22e7a623          	sw	a4,556(a5)
+2300588c:	22e7a623          	sw	a4,556(a5)
     GLB_AHB_Slave1_Reset(BL_AHB_SLAVE1_USB);
-23005870:	70d000ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
+23005890:	6ed000ef          	jal	ra,2300677c <GLB_AHB_Slave1_Reset>
 }
-23005874:	40b2                	lw	ra,12(sp)
-23005876:	4501                	li	a0,0
-23005878:	0141                	addi	sp,sp,16
-2300587a:	8082                	ret
+23005894:	40b2                	lw	ra,12(sp)
+23005896:	4501                	li	a0,0
+23005898:	0141                	addi	sp,sp,16
+2300589a:	8082                	ret
 
-2300587c <usb_dc_register>:
+2300589c <usb_dc_register>:
         return -DEVICE_EINVAL;
     }
 
     dev = &(usb_fs_device.parent);
 
     dev->open = usb_open;
-2300587c:	42018537          	lui	a0,0x42018
-23005880:	23005737          	lui	a4,0x23005
-23005884:	5d450793          	addi	a5,a0,1492 # 420185d4 <usb_fs_device>
-23005888:	69270713          	addi	a4,a4,1682 # 23005692 <usb_open>
-2300588c:	d398                	sw	a4,32(a5)
+2300589c:	42018537          	lui	a0,0x42018
+230058a0:	23005737          	lui	a4,0x23005
+230058a4:	5d450793          	addi	a5,a0,1492 # 420185d4 <usb_fs_device>
+230058a8:	6b270713          	addi	a4,a4,1714 # 230056b2 <usb_open>
+230058ac:	d398                	sw	a4,32(a5)
     dev->close = usb_close;
-2300588e:	23006737          	lui	a4,0x23006
-23005892:	81670713          	addi	a4,a4,-2026 # 23005816 <usb_close>
-23005896:	d3d8                	sw	a4,36(a5)
+230058ae:	23006737          	lui	a4,0x23006
+230058b2:	83670713          	addi	a4,a4,-1994 # 23005836 <usb_close>
+230058b6:	d3d8                	sw	a4,36(a5)
     dev->control = usb_control;
-23005898:	23005737          	lui	a4,0x23005
-2300589c:	3f270713          	addi	a4,a4,1010 # 230053f2 <usb_control>
-230058a0:	d798                	sw	a4,40(a5)
+230058b8:	23005737          	lui	a4,0x23005
+230058bc:	41270713          	addi	a4,a4,1042 # 23005412 <usb_control>
+230058c0:	d798                	sw	a4,40(a5)
     dev->write = usb_write;
-230058a2:	23005737          	lui	a4,0x23005
-230058a6:	54a70713          	addi	a4,a4,1354 # 2300554a <usb_write>
-230058aa:	d7d8                	sw	a4,44(a5)
+230058c2:	23005737          	lui	a4,0x23005
+230058c6:	56a70713          	addi	a4,a4,1386 # 2300556a <usb_write>
+230058ca:	d7d8                	sw	a4,44(a5)
     dev->read = usb_read;
-230058ac:	23005737          	lui	a4,0x23005
-230058b0:	5ea70713          	addi	a4,a4,1514 # 230055ea <usb_read>
-230058b4:	db98                	sw	a4,48(a5)
+230058cc:	23005737          	lui	a4,0x23005
+230058d0:	60a70713          	addi	a4,a4,1546 # 2300560a <usb_read>
+230058d4:	db98                	sw	a4,48(a5)
 
     dev->type = DEVICE_CLASS_USB;
-230058b6:	4731                	li	a4,12
+230058d6:	4731                	li	a4,12
     dev->handle = NULL;
 
     return device_register(dev, name);
-230058b8:	5d450513          	addi	a0,a0,1492
+230058d8:	5d450513          	addi	a0,a0,1492
     dev->type = DEVICE_CLASS_USB;
-230058bc:	00e78ea3          	sb	a4,29(a5)
+230058dc:	00e78ea3          	sb	a4,29(a5)
     dev->handle = NULL;
-230058c0:	0207ac23          	sw	zero,56(a5)
+230058e0:	0207ac23          	sw	zero,56(a5)
     return device_register(dev, name);
-230058c4:	5f92c06f          	j	230326bc <device_register>
+230058e4:	5d92c06f          	j	230326bc <device_register>
 
-230058c8 <usb_dc_set_dev_address>:
+230058e8 <usb_dc_set_dev_address>:
  * @param[in] addr Device address
  *
  * @return 0 on success, negative errno code on fail.
  */
 int usb_dc_set_dev_address(const uint8_t addr)
 {
-230058c8:	1141                	addi	sp,sp,-16
-230058ca:	c606                	sw	ra,12(sp)
+230058e8:	1141                	addi	sp,sp,-16
+230058ea:	c606                	sw	ra,12(sp)
     USB_Set_Device_Addr(addr);
-230058cc:	0d9010ef          	jal	ra,230071a4 <USB_Set_Device_Addr>
+230058ec:	0b9010ef          	jal	ra,230071a4 <USB_Set_Device_Addr>
     return 0;
 }
-230058d0:	40b2                	lw	ra,12(sp)
-230058d2:	4501                	li	a0,0
-230058d4:	0141                	addi	sp,sp,16
-230058d6:	8082                	ret
+230058f0:	40b2                	lw	ra,12(sp)
+230058f2:	4501                	li	a0,0
+230058f4:	0141                	addi	sp,sp,16
+230058f6:	8082                	ret
 
-230058d8 <usb_dc_ep_open>:
+230058f8 <usb_dc_ep_open>:
 int usb_dc_ep_open(struct device *dev, const struct usb_dc_ep_cfg *ep_cfg)
 {
     uint8_t ep;
     EP_Config_Type epCfg;
 
     if (!ep_cfg) {
-230058d8:	10058563          	beqz	a1,230059e2 <usb_dc_ep_open+0x10a>
+230058f8:	10058563          	beqz	a1,23005a02 <usb_dc_ep_open+0x10a>
 {
-230058dc:	1101                	addi	sp,sp,-32
-230058de:	cc22                	sw	s0,24(sp)
-230058e0:	ce06                	sw	ra,28(sp)
-230058e2:	ca26                	sw	s1,20(sp)
-230058e4:	c84a                	sw	s2,16(sp)
+230058fc:	1101                	addi	sp,sp,-32
+230058fe:	cc22                	sw	s0,24(sp)
+23005900:	ce06                	sw	ra,28(sp)
+23005902:	ca26                	sw	s1,20(sp)
+23005904:	c84a                	sw	s2,16(sp)
         return -1;
     }
 
     ep = ep_cfg->ep_addr;
-230058e6:	0005c783          	lbu	a5,0(a1)
+23005906:	0005c783          	lbu	a5,0(a1)
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
 
     USB_DC_LOG_DBG("%s ep %x, mps %d, type %d\r\n", __func__, ep, ep_cfg->ep_mps, ep_cfg->ep_type);
 
     if (ep_idx == 0) {
         return 0;
-230058ea:	4501                	li	a0,0
+2300590a:	4501                	li	a0,0
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
-230058ec:	07f7f413          	andi	s0,a5,127
+2300590c:	07f7f413          	andi	s0,a5,127
     if (ep_idx == 0) {
-230058f0:	c435                	beqz	s0,2300595c <usb_dc_ep_open+0x84>
+23005910:	c435                	beqz	s0,2300597c <usb_dc_ep_open+0x84>
     }
 
     if (USB_EP_DIR_IS_OUT(ep)) {
-230058f2:	01879493          	slli	s1,a5,0x18
-230058f6:	84e1                	srai	s1,s1,0x18
+23005912:	01879493          	slli	s1,a5,0x18
+23005916:	84e1                	srai	s1,s1,0x18
         epCfg.dir = EP_OUT;
         epCfg.EPMaxPacketSize = ep_cfg->ep_mps;
-230058f8:	0025d703          	lhu	a4,2(a1)
+23005918:	0025d703          	lhu	a4,2(a1)
         usb_fs_device.out_ep[ep_idx].ep_cfg.ep_mps = ep_cfg->ep_mps;
-230058fc:	42018937          	lui	s2,0x42018
+2300591c:	42018937          	lui	s2,0x42018
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005900:	0604c463          	bltz	s1,23005968 <usb_dc_ep_open+0x90>
+23005920:	0604c463          	bltz	s1,23005988 <usb_dc_ep_open+0x90>
         usb_fs_device.out_ep[ep_idx].ep_cfg.ep_mps = ep_cfg->ep_mps;
-23005904:	00c40793          	addi	a5,s0,12
-23005908:	5d490913          	addi	s2,s2,1492 # 420185d4 <usb_fs_device>
-2300590c:	0792                	slli	a5,a5,0x4
-2300590e:	97ca                	add	a5,a5,s2
-23005910:	00e79523          	sh	a4,10(a5)
+23005924:	00c40793          	addi	a5,s0,12
+23005928:	5d490913          	addi	s2,s2,1492 # 420185d4 <usb_fs_device>
+2300592c:	0792                	slli	a5,a5,0x4
+2300592e:	97ca                	add	a5,a5,s2
+23005930:	00e79523          	sh	a4,10(a5)
         usb_fs_device.out_ep[ep_idx].ep_cfg.ep_type = ep_cfg->ep_type;
-23005914:	0045c683          	lbu	a3,4(a1)
+23005934:	0045c683          	lbu	a3,4(a1)
         epCfg.dir = EP_OUT;
-23005918:	4609                	li	a2,2
+23005938:	4609                	li	a2,2
         epCfg.EPMaxPacketSize = ep_cfg->ep_mps;
-2300591a:	00e11623          	sh	a4,12(sp)
+2300593a:	00e11623          	sh	a4,12(sp)
         epCfg.dir = EP_OUT;
-2300591e:	00c10723          	sb	a2,14(sp)
+2300593e:	00c10723          	sb	a2,14(sp)
         usb_fs_device.out_ep[ep_idx].ep_cfg.ep_type = ep_cfg->ep_type;
-23005922:	00d78623          	sb	a3,12(a5)
+23005942:	00d78623          	sb	a3,12(a5)
         epCfg.EPMaxPacketSize = ep_cfg->ep_mps;
         usb_fs_device.in_ep[ep_idx].ep_cfg.ep_mps = ep_cfg->ep_mps;
         usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type = ep_cfg->ep_type;
     }
 
     switch (ep_cfg->ep_type) {
-23005926:	0045c783          	lbu	a5,4(a1)
-2300592a:	4709                	li	a4,2
-2300592c:	06e78463          	beq	a5,a4,23005994 <usb_dc_ep_open+0xbc>
-23005930:	08f76e63          	bltu	a4,a5,230059cc <usb_dc_ep_open+0xf4>
-23005934:	c3dd                	beqz	a5,230059da <usb_dc_ep_open+0x102>
+23005946:	0045c783          	lbu	a5,4(a1)
+2300594a:	4709                	li	a4,2
+2300594c:	06e78463          	beq	a5,a4,230059b4 <usb_dc_ep_open+0xbc>
+23005950:	08f76e63          	bltu	a4,a5,230059ec <usb_dc_ep_open+0xf4>
+23005954:	c3dd                	beqz	a5,230059fa <usb_dc_ep_open+0x102>
         case USBD_EP_TYPE_CTRL:
             epCfg.type = USB_DC_EP_TYPE_CTRL;
             break;
 
         case USBD_EP_TYPE_ISOC:
             epCfg.type = USB_DC_EP_TYPE_ISOC;
-23005936:	00e107a3          	sb	a4,15(sp)
+23005956:	00e107a3          	sb	a4,15(sp)
 
         default:
             return -1;
     }
 
     USB_Set_EPx_Config(ep_idx, &epCfg);
-2300593a:	006c                	addi	a1,sp,12
-2300593c:	8522                	mv	a0,s0
-2300593e:	6f5010ef          	jal	ra,23007832 <USB_Set_EPx_Config>
+2300595a:	006c                	addi	a1,sp,12
+2300595c:	8522                	mv	a0,s0
+2300595e:	6d5010ef          	jal	ra,23007832 <USB_Set_EPx_Config>
 
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005942:	0604c263          	bltz	s1,230059a6 <usb_dc_ep_open+0xce>
+23005962:	0604c263          	bltz	s1,230059c6 <usb_dc_ep_open+0xce>
         /* Clear NAK and enable ep */
         USB_Set_EPx_Status(USB_EP_GET_IDX(ep), USB_EP_STATUS_ACK);
-23005946:	8522                	mv	a0,s0
-23005948:	4581                	li	a1,0
+23005966:	8522                	mv	a0,s0
+23005968:	4581                	li	a1,0
         usb_fs_device.out_ep[ep_idx].ep_ena = 1U;
-2300594a:	0431                	addi	s0,s0,12
+2300596a:	0431                	addi	s0,s0,12
         USB_Set_EPx_Status(USB_EP_GET_IDX(ep), USB_EP_STATUS_ACK);
-2300594c:	4d7010ef          	jal	ra,23007622 <USB_Set_EPx_Status>
+2300596c:	4b7010ef          	jal	ra,23007622 <USB_Set_EPx_Status>
         usb_fs_device.out_ep[ep_idx].ep_ena = 1U;
-23005950:	0412                	slli	s0,s0,0x4
-23005952:	944a                	add	s0,s0,s2
-23005954:	4785                	li	a5,1
-23005956:	00f40023          	sb	a5,0(s0)
+23005970:	0412                	slli	s0,s0,0x4
+23005972:	944a                	add	s0,s0,s2
+23005974:	4785                	li	a5,1
+23005976:	00f40023          	sb	a5,0(s0)
         //USB_Set_EPx_Status(USB_EP_GET_IDX(ep), USB_EP_STATUS_ACK);
         USB_Set_EPx_Status(USB_EP_GET_IDX(ep), USB_EP_STATUS_NACK);
         usb_fs_device.in_ep[ep_idx].ep_ena = 1U;
     }
 
     return 0;
-2300595a:	4501                	li	a0,0
+2300597a:	4501                	li	a0,0
 }
-2300595c:	40f2                	lw	ra,28(sp)
-2300595e:	4462                	lw	s0,24(sp)
-23005960:	44d2                	lw	s1,20(sp)
-23005962:	4942                	lw	s2,16(sp)
-23005964:	6105                	addi	sp,sp,32
-23005966:	8082                	ret
+2300597c:	40f2                	lw	ra,28(sp)
+2300597e:	4462                	lw	s0,24(sp)
+23005980:	44d2                	lw	s1,20(sp)
+23005982:	4942                	lw	s2,16(sp)
+23005984:	6105                	addi	sp,sp,32
+23005986:	8082                	ret
         usb_fs_device.in_ep[ep_idx].ep_cfg.ep_mps = ep_cfg->ep_mps;
-23005968:	00440793          	addi	a5,s0,4
-2300596c:	5d490913          	addi	s2,s2,1492
-23005970:	0792                	slli	a5,a5,0x4
-23005972:	97ca                	add	a5,a5,s2
-23005974:	00e79523          	sh	a4,10(a5)
+23005988:	00440793          	addi	a5,s0,4
+2300598c:	5d490913          	addi	s2,s2,1492
+23005990:	0792                	slli	a5,a5,0x4
+23005992:	97ca                	add	a5,a5,s2
+23005994:	00e79523          	sh	a4,10(a5)
         usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type = ep_cfg->ep_type;
-23005978:	0045c683          	lbu	a3,4(a1)
+23005998:	0045c683          	lbu	a3,4(a1)
         epCfg.dir = EP_IN;
-2300597c:	4605                	li	a2,1
+2300599c:	4605                	li	a2,1
         epCfg.EPMaxPacketSize = ep_cfg->ep_mps;
-2300597e:	00e11623          	sh	a4,12(sp)
+2300599e:	00e11623          	sh	a4,12(sp)
         epCfg.dir = EP_IN;
-23005982:	00c10723          	sb	a2,14(sp)
+230059a2:	00c10723          	sb	a2,14(sp)
         usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type = ep_cfg->ep_type;
-23005986:	00d78623          	sb	a3,12(a5)
+230059a6:	00d78623          	sb	a3,12(a5)
     switch (ep_cfg->ep_type) {
-2300598a:	0045c783          	lbu	a5,4(a1)
-2300598e:	4709                	li	a4,2
-23005990:	fae790e3          	bne	a5,a4,23005930 <usb_dc_ep_open+0x58>
+230059aa:	0045c783          	lbu	a5,4(a1)
+230059ae:	4709                	li	a4,2
+230059b0:	fae790e3          	bne	a5,a4,23005950 <usb_dc_ep_open+0x58>
             epCfg.type = USB_DC_EP_TYPE_BULK;
-23005994:	4791                	li	a5,4
+230059b4:	4791                	li	a5,4
     USB_Set_EPx_Config(ep_idx, &epCfg);
-23005996:	006c                	addi	a1,sp,12
-23005998:	8522                	mv	a0,s0
+230059b6:	006c                	addi	a1,sp,12
+230059b8:	8522                	mv	a0,s0
             epCfg.type = USB_DC_EP_TYPE_BULK;
-2300599a:	00f107a3          	sb	a5,15(sp)
+230059ba:	00f107a3          	sb	a5,15(sp)
     USB_Set_EPx_Config(ep_idx, &epCfg);
-2300599e:	695010ef          	jal	ra,23007832 <USB_Set_EPx_Config>
+230059be:	675010ef          	jal	ra,23007832 <USB_Set_EPx_Config>
     if (USB_EP_DIR_IS_OUT(ep)) {
-230059a2:	fa04d2e3          	bgez	s1,23005946 <usb_dc_ep_open+0x6e>
+230059c2:	fa04d2e3          	bgez	s1,23005966 <usb_dc_ep_open+0x6e>
         USB_Set_EPx_Status(USB_EP_GET_IDX(ep), USB_EP_STATUS_NACK);
-230059a6:	8522                	mv	a0,s0
-230059a8:	4585                	li	a1,1
-230059aa:	479010ef          	jal	ra,23007622 <USB_Set_EPx_Status>
+230059c6:	8522                	mv	a0,s0
+230059c8:	4585                	li	a1,1
+230059ca:	459010ef          	jal	ra,23007622 <USB_Set_EPx_Status>
         usb_fs_device.in_ep[ep_idx].ep_ena = 1U;
-230059ae:	00440793          	addi	a5,s0,4
-230059b2:	0792                	slli	a5,a5,0x4
-230059b4:	00f90433          	add	s0,s2,a5
-230059b8:	4785                	li	a5,1
-230059ba:	00f40023          	sb	a5,0(s0)
+230059ce:	00440793          	addi	a5,s0,4
+230059d2:	0792                	slli	a5,a5,0x4
+230059d4:	00f90433          	add	s0,s2,a5
+230059d8:	4785                	li	a5,1
+230059da:	00f40023          	sb	a5,0(s0)
 }
-230059be:	40f2                	lw	ra,28(sp)
-230059c0:	4462                	lw	s0,24(sp)
-230059c2:	44d2                	lw	s1,20(sp)
-230059c4:	4942                	lw	s2,16(sp)
+230059de:	40f2                	lw	ra,28(sp)
+230059e0:	4462                	lw	s0,24(sp)
+230059e2:	44d2                	lw	s1,20(sp)
+230059e4:	4942                	lw	s2,16(sp)
     return 0;
-230059c6:	4501                	li	a0,0
+230059e6:	4501                	li	a0,0
 }
-230059c8:	6105                	addi	sp,sp,32
-230059ca:	8082                	ret
+230059e8:	6105                	addi	sp,sp,32
+230059ea:	8082                	ret
     switch (ep_cfg->ep_type) {
-230059cc:	470d                	li	a4,3
-230059ce:	557d                	li	a0,-1
-230059d0:	f8e796e3          	bne	a5,a4,2300595c <usb_dc_ep_open+0x84>
+230059ec:	470d                	li	a4,3
+230059ee:	557d                	li	a0,-1
+230059f0:	f8e796e3          	bne	a5,a4,2300597c <usb_dc_ep_open+0x84>
             epCfg.type = USB_DC_EP_TYPE_INTR;
-230059d4:	000107a3          	sb	zero,15(sp)
+230059f4:	000107a3          	sb	zero,15(sp)
             break;
-230059d8:	b78d                	j	2300593a <usb_dc_ep_open+0x62>
+230059f8:	b78d                	j	2300595a <usb_dc_ep_open+0x62>
             epCfg.type = USB_DC_EP_TYPE_CTRL;
-230059da:	4795                	li	a5,5
-230059dc:	00f107a3          	sb	a5,15(sp)
+230059fa:	4795                	li	a5,5
+230059fc:	00f107a3          	sb	a5,15(sp)
             break;
-230059e0:	bfa9                	j	2300593a <usb_dc_ep_open+0x62>
+23005a00:	bfa9                	j	2300595a <usb_dc_ep_open+0x62>
         return -1;
-230059e2:	557d                	li	a0,-1
+23005a02:	557d                	li	a0,-1
 }
-230059e4:	8082                	ret
+23005a04:	8082                	ret
 
-230059e6 <usb_dc_ep_close>:
+23005a06 <usb_dc_ep_close>:
 
 int usb_dc_ep_close(const uint8_t ep)
 {
     return 0;
 }
-230059e6:	4501                	li	a0,0
-230059e8:	8082                	ret
+23005a06:	4501                	li	a0,0
+23005a08:	8082                	ret
 
-230059ea <usb_dc_ep_set_stall>:
+23005a0a <usb_dc_ep_set_stall>:
 int usb_dc_ep_set_stall(const uint8_t ep)
 {
     uint32_t tmpVal = 0;
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
 
     if (USB_EP_DIR_IS_OUT(ep)) {
-230059ea:	01851793          	slli	a5,a0,0x18
-230059ee:	87e1                	srai	a5,a5,0x18
+23005a0a:	01851793          	slli	a5,a0,0x18
+23005a0e:	87e1                	srai	a5,a5,0x18
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
-230059f0:	07f57513          	andi	a0,a0,127
+23005a10:	07f57513          	andi	a0,a0,127
     if (USB_EP_DIR_IS_OUT(ep)) {
-230059f4:	0807cf63          	bltz	a5,23005a92 <usb_dc_ep_set_stall+0xa8>
+23005a14:	0807cf63          	bltz	a5,23005ab2 <usb_dc_ep_set_stall+0xa8>
         usb_fs_device.out_ep[ep_idx].is_stalled = 1U;
-230059f8:	00c50793          	addi	a5,a0,12
+23005a18:	00c50793          	addi	a5,a0,12
     } else {
         usb_fs_device.in_ep[ep_idx].is_stalled = 1U;
-230059fc:	00479713          	slli	a4,a5,0x4
-23005a00:	420187b7          	lui	a5,0x42018
-23005a04:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
-23005a08:	97ba                	add	a5,a5,a4
-23005a0a:	4705                	li	a4,1
-23005a0c:	c3d8                	sw	a4,4(a5)
+23005a1c:	00479713          	slli	a4,a5,0x4
+23005a20:	420187b7          	lui	a5,0x42018
+23005a24:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+23005a28:	97ba                	add	a5,a5,a4
+23005a2a:	4705                	li	a4,1
+23005a2c:	c3d8                	sw	a4,4(a5)
     }
 
     switch (ep_idx) {
-23005a0e:	4791                	li	a5,4
-23005a10:	08f50f63          	beq	a0,a5,23005aae <usb_dc_ep_set_stall+0xc4>
-23005a14:	04a7e263          	bltu	a5,a0,23005a58 <usb_dc_ep_set_stall+0x6e>
-23005a18:	4789                	li	a5,2
-23005a1a:	0af50e63          	beq	a0,a5,23005ad6 <usb_dc_ep_set_stall+0xec>
-23005a1e:	00a7ff63          	bgeu	a5,a0,23005a3c <usb_dc_ep_set_stall+0x52>
-23005a22:	478d                	li	a5,3
-23005a24:	00f51a63          	bne	a0,a5,23005a38 <usb_dc_ep_set_stall+0x4e>
+23005a2e:	4791                	li	a5,4
+23005a30:	08f50f63          	beq	a0,a5,23005ace <usb_dc_ep_set_stall+0xc4>
+23005a34:	04a7e263          	bltu	a5,a0,23005a78 <usb_dc_ep_set_stall+0x6e>
+23005a38:	4789                	li	a5,2
+23005a3a:	0af50e63          	beq	a0,a5,23005af6 <usb_dc_ep_set_stall+0xec>
+23005a3e:	00a7ff63          	bgeu	a5,a0,23005a5c <usb_dc_ep_set_stall+0x52>
+23005a42:	478d                	li	a5,3
+23005a44:	00f51a63          	bne	a0,a5,23005a58 <usb_dc_ep_set_stall+0x4e>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP2_CONFIG);
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP2_STALL);
             BL_WR_REG(USB_BASE, USB_EP2_CONFIG, tmpVal);
             break;
         case 3:
             tmpVal = BL_RD_REG(USB_BASE, USB_EP3_CONFIG);
-23005a28:	4000e737          	lui	a4,0x4000e
-23005a2c:	84872783          	lw	a5,-1976(a4) # 4000d848 <__ram_load_addr+0x1cfd0954>
+23005a48:	4000e737          	lui	a4,0x4000e
+23005a4c:	84872783          	lw	a5,-1976(a4) # 4000d848 <__ram_load_addr+0x1cfd0954>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP3_STALL);
-23005a30:	66c1                	lui	a3,0x10
-23005a32:	8fd5                	or	a5,a5,a3
+23005a50:	66c1                	lui	a3,0x10
+23005a52:	8fd5                	or	a5,a5,a3
             BL_WR_REG(USB_BASE, USB_EP3_CONFIG, tmpVal);
-23005a34:	84f72423          	sw	a5,-1976(a4)
+23005a54:	84f72423          	sw	a5,-1976(a4)
 
         default:
             break;
     }
     return 0;
 }
-23005a38:	4501                	li	a0,0
-23005a3a:	8082                	ret
+23005a58:	4501                	li	a0,0
+23005a5a:	8082                	ret
     switch (ep_idx) {
-23005a3c:	c55d                	beqz	a0,23005aea <usb_dc_ep_set_stall+0x100>
-23005a3e:	4785                	li	a5,1
-23005a40:	fef51ce3          	bne	a0,a5,23005a38 <usb_dc_ep_set_stall+0x4e>
+23005a5c:	c55d                	beqz	a0,23005b0a <usb_dc_ep_set_stall+0x100>
+23005a5e:	4785                	li	a5,1
+23005a60:	fef51ce3          	bne	a0,a5,23005a58 <usb_dc_ep_set_stall+0x4e>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP1_CONFIG);
-23005a44:	4000e737          	lui	a4,0x4000e
-23005a48:	84072783          	lw	a5,-1984(a4) # 4000d840 <__ram_load_addr+0x1cfd094c>
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP1_STALL);
-23005a4c:	66c1                	lui	a3,0x10
-}
-23005a4e:	4501                	li	a0,0
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP1_STALL);
-23005a50:	8fd5                	or	a5,a5,a3
-            BL_WR_REG(USB_BASE, USB_EP1_CONFIG, tmpVal);
-23005a52:	84f72023          	sw	a5,-1984(a4)
-}
-23005a56:	8082                	ret
-    switch (ep_idx) {
-23005a58:	4799                	li	a5,6
-23005a5a:	06f50463          	beq	a0,a5,23005ac2 <usb_dc_ep_set_stall+0xd8>
-23005a5e:	479d                	li	a5,7
-23005a60:	00f51c63          	bne	a0,a5,23005a78 <usb_dc_ep_set_stall+0x8e>
-            tmpVal = BL_RD_REG(USB_BASE, USB_EP7_CONFIG);
 23005a64:	4000e737          	lui	a4,0x4000e
-23005a68:	85872783          	lw	a5,-1960(a4) # 4000d858 <__ram_load_addr+0x1cfd0964>
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP7_STALL);
+23005a68:	84072783          	lw	a5,-1984(a4) # 4000d840 <__ram_load_addr+0x1cfd094c>
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP1_STALL);
 23005a6c:	66c1                	lui	a3,0x10
 }
 23005a6e:	4501                	li	a0,0
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP7_STALL);
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP1_STALL);
 23005a70:	8fd5                	or	a5,a5,a3
-            BL_WR_REG(USB_BASE, USB_EP7_CONFIG, tmpVal);
-23005a72:	84f72c23          	sw	a5,-1960(a4)
+            BL_WR_REG(USB_BASE, USB_EP1_CONFIG, tmpVal);
+23005a72:	84f72023          	sw	a5,-1984(a4)
 }
 23005a76:	8082                	ret
     switch (ep_idx) {
-23005a78:	4795                	li	a5,5
-23005a7a:	faf51fe3          	bne	a0,a5,23005a38 <usb_dc_ep_set_stall+0x4e>
-            tmpVal = BL_RD_REG(USB_BASE, USB_EP5_CONFIG);
-23005a7e:	4000e737          	lui	a4,0x4000e
-23005a82:	85072783          	lw	a5,-1968(a4) # 4000d850 <__ram_load_addr+0x1cfd095c>
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP5_STALL);
-23005a86:	66c1                	lui	a3,0x10
+23005a78:	4799                	li	a5,6
+23005a7a:	06f50463          	beq	a0,a5,23005ae2 <usb_dc_ep_set_stall+0xd8>
+23005a7e:	479d                	li	a5,7
+23005a80:	00f51c63          	bne	a0,a5,23005a98 <usb_dc_ep_set_stall+0x8e>
+            tmpVal = BL_RD_REG(USB_BASE, USB_EP7_CONFIG);
+23005a84:	4000e737          	lui	a4,0x4000e
+23005a88:	85872783          	lw	a5,-1960(a4) # 4000d858 <__ram_load_addr+0x1cfd0964>
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP7_STALL);
+23005a8c:	66c1                	lui	a3,0x10
 }
-23005a88:	4501                	li	a0,0
-            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP5_STALL);
-23005a8a:	8fd5                	or	a5,a5,a3
-            BL_WR_REG(USB_BASE, USB_EP5_CONFIG, tmpVal);
-23005a8c:	84f72823          	sw	a5,-1968(a4)
+23005a8e:	4501                	li	a0,0
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP7_STALL);
+23005a90:	8fd5                	or	a5,a5,a3
+            BL_WR_REG(USB_BASE, USB_EP7_CONFIG, tmpVal);
+23005a92:	84f72c23          	sw	a5,-1960(a4)
 }
-23005a90:	8082                	ret
-        usb_fs_device.in_ep[ep_idx].is_stalled = 1U;
-23005a92:	00450793          	addi	a5,a0,4
-23005a96:	00479713          	slli	a4,a5,0x4
-23005a9a:	420187b7          	lui	a5,0x42018
-23005a9e:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
-23005aa2:	97ba                	add	a5,a5,a4
-23005aa4:	4705                	li	a4,1
-23005aa6:	c3d8                	sw	a4,4(a5)
+23005a96:	8082                	ret
     switch (ep_idx) {
-23005aa8:	4791                	li	a5,4
-23005aaa:	f6f515e3          	bne	a0,a5,23005a14 <usb_dc_ep_set_stall+0x2a>
+23005a98:	4795                	li	a5,5
+23005a9a:	faf51fe3          	bne	a0,a5,23005a58 <usb_dc_ep_set_stall+0x4e>
+            tmpVal = BL_RD_REG(USB_BASE, USB_EP5_CONFIG);
+23005a9e:	4000e737          	lui	a4,0x4000e
+23005aa2:	85072783          	lw	a5,-1968(a4) # 4000d850 <__ram_load_addr+0x1cfd095c>
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP5_STALL);
+23005aa6:	66c1                	lui	a3,0x10
+}
+23005aa8:	4501                	li	a0,0
+            tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP5_STALL);
+23005aaa:	8fd5                	or	a5,a5,a3
+            BL_WR_REG(USB_BASE, USB_EP5_CONFIG, tmpVal);
+23005aac:	84f72823          	sw	a5,-1968(a4)
+}
+23005ab0:	8082                	ret
+        usb_fs_device.in_ep[ep_idx].is_stalled = 1U;
+23005ab2:	00450793          	addi	a5,a0,4
+23005ab6:	00479713          	slli	a4,a5,0x4
+23005aba:	420187b7          	lui	a5,0x42018
+23005abe:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+23005ac2:	97ba                	add	a5,a5,a4
+23005ac4:	4705                	li	a4,1
+23005ac6:	c3d8                	sw	a4,4(a5)
+    switch (ep_idx) {
+23005ac8:	4791                	li	a5,4
+23005aca:	f6f515e3          	bne	a0,a5,23005a34 <usb_dc_ep_set_stall+0x2a>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP4_CONFIG);
-23005aae:	4000e737          	lui	a4,0x4000e
-23005ab2:	84c72783          	lw	a5,-1972(a4) # 4000d84c <__ram_load_addr+0x1cfd0958>
+23005ace:	4000e737          	lui	a4,0x4000e
+23005ad2:	84c72783          	lw	a5,-1972(a4) # 4000d84c <__ram_load_addr+0x1cfd0958>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP4_STALL);
-23005ab6:	66c1                	lui	a3,0x10
+23005ad6:	66c1                	lui	a3,0x10
 }
-23005ab8:	4501                	li	a0,0
+23005ad8:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP4_STALL);
-23005aba:	8fd5                	or	a5,a5,a3
+23005ada:	8fd5                	or	a5,a5,a3
             BL_WR_REG(USB_BASE, USB_EP4_CONFIG, tmpVal);
-23005abc:	84f72623          	sw	a5,-1972(a4)
+23005adc:	84f72623          	sw	a5,-1972(a4)
 }
-23005ac0:	8082                	ret
+23005ae0:	8082                	ret
             tmpVal = BL_RD_REG(USB_BASE, USB_EP6_CONFIG);
-23005ac2:	4000e737          	lui	a4,0x4000e
-23005ac6:	85472783          	lw	a5,-1964(a4) # 4000d854 <__ram_load_addr+0x1cfd0960>
+23005ae2:	4000e737          	lui	a4,0x4000e
+23005ae6:	85472783          	lw	a5,-1964(a4) # 4000d854 <__ram_load_addr+0x1cfd0960>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP6_STALL);
-23005aca:	66c1                	lui	a3,0x10
+23005aea:	66c1                	lui	a3,0x10
 }
-23005acc:	4501                	li	a0,0
+23005aec:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP6_STALL);
-23005ace:	8fd5                	or	a5,a5,a3
+23005aee:	8fd5                	or	a5,a5,a3
             BL_WR_REG(USB_BASE, USB_EP6_CONFIG, tmpVal);
-23005ad0:	84f72a23          	sw	a5,-1964(a4)
+23005af0:	84f72a23          	sw	a5,-1964(a4)
 }
-23005ad4:	8082                	ret
+23005af4:	8082                	ret
             tmpVal = BL_RD_REG(USB_BASE, USB_EP2_CONFIG);
-23005ad6:	4000e737          	lui	a4,0x4000e
-23005ada:	84472783          	lw	a5,-1980(a4) # 4000d844 <__ram_load_addr+0x1cfd0950>
+23005af6:	4000e737          	lui	a4,0x4000e
+23005afa:	84472783          	lw	a5,-1980(a4) # 4000d844 <__ram_load_addr+0x1cfd0950>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP2_STALL);
-23005ade:	66c1                	lui	a3,0x10
+23005afe:	66c1                	lui	a3,0x10
 }
-23005ae0:	4501                	li	a0,0
+23005b00:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP2_STALL);
-23005ae2:	8fd5                	or	a5,a5,a3
+23005b02:	8fd5                	or	a5,a5,a3
             BL_WR_REG(USB_BASE, USB_EP2_CONFIG, tmpVal);
-23005ae4:	84f72223          	sw	a5,-1980(a4)
+23005b04:	84f72223          	sw	a5,-1980(a4)
 }
-23005ae8:	8082                	ret
+23005b08:	8082                	ret
             tmpVal = BL_RD_REG(USB_BASE, USB_CONFIG);
-23005aea:	4000e737          	lui	a4,0x4000e
-23005aee:	80072783          	lw	a5,-2048(a4) # 4000d800 <__ram_load_addr+0x1cfd090c>
+23005b0a:	4000e737          	lui	a4,0x4000e
+23005b0e:	80072783          	lw	a5,-2048(a4) # 4000d800 <__ram_load_addr+0x1cfd090c>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_USB_EP0_SW_STALL);
-23005af2:	010006b7          	lui	a3,0x1000
+23005b12:	010006b7          	lui	a3,0x1000
 }
-23005af6:	4501                	li	a0,0
+23005b16:	4501                	li	a0,0
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_USB_EP0_SW_STALL);
-23005af8:	8fd5                	or	a5,a5,a3
+23005b18:	8fd5                	or	a5,a5,a3
             BL_WR_REG(USB_BASE, USB_CONFIG, tmpVal);
-23005afa:	80f72023          	sw	a5,-2048(a4)
+23005b1a:	80f72023          	sw	a5,-2048(a4)
 }
-23005afe:	8082                	ret
+23005b1e:	8082                	ret
 
-23005b00 <usb_dc_ep_clear_stall>:
+23005b20 <usb_dc_ep_clear_stall>:
  */
 int usb_dc_ep_clear_stall(const uint8_t ep)
 {
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
     uint32_t tmpVal = 0;
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005b00:	01851793          	slli	a5,a0,0x18
-23005b04:	87e1                	srai	a5,a5,0x18
+23005b20:	01851793          	slli	a5,a0,0x18
+23005b24:	87e1                	srai	a5,a5,0x18
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
-23005b06:	07f57513          	andi	a0,a0,127
+23005b26:	07f57513          	andi	a0,a0,127
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005b0a:	0a07cc63          	bltz	a5,23005bc2 <usb_dc_ep_clear_stall+0xc2>
+23005b2a:	0a07cc63          	bltz	a5,23005be2 <usb_dc_ep_clear_stall+0xc2>
         usb_fs_device.out_ep[ep_idx].is_stalled = 0;
-23005b0e:	00c50793          	addi	a5,a0,12
+23005b2e:	00c50793          	addi	a5,a0,12
     } else {
         usb_fs_device.in_ep[ep_idx].is_stalled = 0;
-23005b12:	00479713          	slli	a4,a5,0x4
-23005b16:	420187b7          	lui	a5,0x42018
-23005b1a:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
-23005b1e:	97ba                	add	a5,a5,a4
-23005b20:	0007a223          	sw	zero,4(a5)
+23005b32:	00479713          	slli	a4,a5,0x4
+23005b36:	420187b7          	lui	a5,0x42018
+23005b3a:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+23005b3e:	97ba                	add	a5,a5,a4
+23005b40:	0007a223          	sw	zero,4(a5)
     }
     switch (ep_idx) {
-23005b24:	4791                	li	a5,4
-23005b26:	0af50c63          	beq	a0,a5,23005bde <usb_dc_ep_clear_stall+0xde>
-23005b2a:	04a7e763          	bltu	a5,a0,23005b78 <usb_dc_ep_clear_stall+0x78>
-23005b2e:	4789                	li	a5,2
-23005b30:	0ef50363          	beq	a0,a5,23005c16 <usb_dc_ep_clear_stall+0x116>
-23005b34:	478d                	li	a5,3
-23005b36:	02f51063          	bne	a0,a5,23005b56 <usb_dc_ep_clear_stall+0x56>
+23005b44:	4791                	li	a5,4
+23005b46:	0af50c63          	beq	a0,a5,23005bfe <usb_dc_ep_clear_stall+0xde>
+23005b4a:	04a7e763          	bltu	a5,a0,23005b98 <usb_dc_ep_clear_stall+0x78>
+23005b4e:	4789                	li	a5,2
+23005b50:	0ef50363          	beq	a0,a5,23005c36 <usb_dc_ep_clear_stall+0x116>
+23005b54:	478d                	li	a5,3
+23005b56:	02f51063          	bne	a0,a5,23005b76 <usb_dc_ep_clear_stall+0x56>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP2_NACK);
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP2_STALL);
             BL_WR_REG(USB_BASE, USB_EP2_CONFIG, tmpVal);
             break;
         case 3:
             tmpVal = BL_RD_REG(USB_BASE, USB_EP3_CONFIG);
-23005b3a:	4000e6b7          	lui	a3,0x4000e
-23005b3e:	8486a783          	lw	a5,-1976(a3) # 4000d848 <__ram_load_addr+0x1cfd0954>
+23005b5a:	4000e6b7          	lui	a3,0x4000e
+23005b5e:	8486a783          	lw	a5,-1976(a3) # 4000d848 <__ram_load_addr+0x1cfd0954>
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP3_RDY);
             tmpVal = BL_SET_REG_BIT(tmpVal, USB_CR_EP3_NACK);
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP3_STALL);
-23005b42:	7741                	lui	a4,0xffff0
-23005b44:	177d                	addi	a4,a4,-1
-23005b46:	8ff9                	and	a5,a5,a4
-23005b48:	00060737          	lui	a4,0x60
-23005b4c:	8fd9                	or	a5,a5,a4
+23005b62:	7741                	lui	a4,0xffff0
+23005b64:	177d                	addi	a4,a4,-1
+23005b66:	8ff9                	and	a5,a5,a4
+23005b68:	00060737          	lui	a4,0x60
+23005b6c:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP3_CONFIG, tmpVal);
-23005b4e:	84f6a423          	sw	a5,-1976(a3)
+23005b6e:	84f6a423          	sw	a5,-1976(a3)
 
         default:
             break;
     }
     return 0;
 }
-23005b52:	4501                	li	a0,0
-23005b54:	8082                	ret
+23005b72:	4501                	li	a0,0
+23005b74:	8082                	ret
     switch (ep_idx) {
-23005b56:	4785                	li	a5,1
-23005b58:	fef51de3          	bne	a0,a5,23005b52 <usb_dc_ep_clear_stall+0x52>
+23005b76:	4785                	li	a5,1
+23005b78:	fef51de3          	bne	a0,a5,23005b72 <usb_dc_ep_clear_stall+0x52>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP1_CONFIG);
-23005b5c:	4000e6b7          	lui	a3,0x4000e
-23005b60:	8406a783          	lw	a5,-1984(a3) # 4000d840 <__ram_load_addr+0x1cfd094c>
+23005b7c:	4000e6b7          	lui	a3,0x4000e
+23005b80:	8406a783          	lw	a5,-1984(a3) # 4000d840 <__ram_load_addr+0x1cfd094c>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP1_STALL);
-23005b64:	7741                	lui	a4,0xffff0
-23005b66:	177d                	addi	a4,a4,-1
-23005b68:	8ff9                	and	a5,a5,a4
-23005b6a:	00060737          	lui	a4,0x60
-23005b6e:	8fd9                	or	a5,a5,a4
+23005b84:	7741                	lui	a4,0xffff0
+23005b86:	177d                	addi	a4,a4,-1
+23005b88:	8ff9                	and	a5,a5,a4
+23005b8a:	00060737          	lui	a4,0x60
+23005b8e:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP1_CONFIG, tmpVal);
-23005b70:	84f6a023          	sw	a5,-1984(a3)
+23005b90:	84f6a023          	sw	a5,-1984(a3)
 }
-23005b74:	4501                	li	a0,0
-23005b76:	8082                	ret
+23005b94:	4501                	li	a0,0
+23005b96:	8082                	ret
     switch (ep_idx) {
-23005b78:	4799                	li	a5,6
-23005b7a:	08f50063          	beq	a0,a5,23005bfa <usb_dc_ep_clear_stall+0xfa>
-23005b7e:	479d                	li	a5,7
-23005b80:	02f51063          	bne	a0,a5,23005ba0 <usb_dc_ep_clear_stall+0xa0>
+23005b98:	4799                	li	a5,6
+23005b9a:	08f50063          	beq	a0,a5,23005c1a <usb_dc_ep_clear_stall+0xfa>
+23005b9e:	479d                	li	a5,7
+23005ba0:	02f51063          	bne	a0,a5,23005bc0 <usb_dc_ep_clear_stall+0xa0>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP7_CONFIG);
-23005b84:	4000e6b7          	lui	a3,0x4000e
-23005b88:	8586a783          	lw	a5,-1960(a3) # 4000d858 <__ram_load_addr+0x1cfd0964>
+23005ba4:	4000e6b7          	lui	a3,0x4000e
+23005ba8:	8586a783          	lw	a5,-1960(a3) # 4000d858 <__ram_load_addr+0x1cfd0964>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP7_STALL);
-23005b8c:	7741                	lui	a4,0xffff0
-23005b8e:	177d                	addi	a4,a4,-1
-23005b90:	8ff9                	and	a5,a5,a4
-23005b92:	00060737          	lui	a4,0x60
-23005b96:	8fd9                	or	a5,a5,a4
+23005bac:	7741                	lui	a4,0xffff0
+23005bae:	177d                	addi	a4,a4,-1
+23005bb0:	8ff9                	and	a5,a5,a4
+23005bb2:	00060737          	lui	a4,0x60
+23005bb6:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP7_CONFIG, tmpVal);
-23005b98:	84f6ac23          	sw	a5,-1960(a3)
+23005bb8:	84f6ac23          	sw	a5,-1960(a3)
 }
-23005b9c:	4501                	li	a0,0
-23005b9e:	8082                	ret
+23005bbc:	4501                	li	a0,0
+23005bbe:	8082                	ret
     switch (ep_idx) {
-23005ba0:	4795                	li	a5,5
-23005ba2:	faf518e3          	bne	a0,a5,23005b52 <usb_dc_ep_clear_stall+0x52>
+23005bc0:	4795                	li	a5,5
+23005bc2:	faf518e3          	bne	a0,a5,23005b72 <usb_dc_ep_clear_stall+0x52>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP5_CONFIG);
-23005ba6:	4000e6b7          	lui	a3,0x4000e
-23005baa:	8506a783          	lw	a5,-1968(a3) # 4000d850 <__ram_load_addr+0x1cfd095c>
+23005bc6:	4000e6b7          	lui	a3,0x4000e
+23005bca:	8506a783          	lw	a5,-1968(a3) # 4000d850 <__ram_load_addr+0x1cfd095c>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP5_STALL);
-23005bae:	7741                	lui	a4,0xffff0
-23005bb0:	177d                	addi	a4,a4,-1
-23005bb2:	8ff9                	and	a5,a5,a4
-23005bb4:	00060737          	lui	a4,0x60
-23005bb8:	8fd9                	or	a5,a5,a4
+23005bce:	7741                	lui	a4,0xffff0
+23005bd0:	177d                	addi	a4,a4,-1
+23005bd2:	8ff9                	and	a5,a5,a4
+23005bd4:	00060737          	lui	a4,0x60
+23005bd8:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP5_CONFIG, tmpVal);
-23005bba:	84f6a823          	sw	a5,-1968(a3)
+23005bda:	84f6a823          	sw	a5,-1968(a3)
 }
-23005bbe:	4501                	li	a0,0
-23005bc0:	8082                	ret
+23005bde:	4501                	li	a0,0
+23005be0:	8082                	ret
         usb_fs_device.in_ep[ep_idx].is_stalled = 0;
-23005bc2:	00450793          	addi	a5,a0,4
-23005bc6:	00479713          	slli	a4,a5,0x4
-23005bca:	420187b7          	lui	a5,0x42018
-23005bce:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
-23005bd2:	97ba                	add	a5,a5,a4
-23005bd4:	0007a223          	sw	zero,4(a5)
+23005be2:	00450793          	addi	a5,a0,4
+23005be6:	00479713          	slli	a4,a5,0x4
+23005bea:	420187b7          	lui	a5,0x42018
+23005bee:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+23005bf2:	97ba                	add	a5,a5,a4
+23005bf4:	0007a223          	sw	zero,4(a5)
     switch (ep_idx) {
-23005bd8:	4791                	li	a5,4
-23005bda:	f4f518e3          	bne	a0,a5,23005b2a <usb_dc_ep_clear_stall+0x2a>
+23005bf8:	4791                	li	a5,4
+23005bfa:	f4f518e3          	bne	a0,a5,23005b4a <usb_dc_ep_clear_stall+0x2a>
             tmpVal = BL_RD_REG(USB_BASE, USB_EP4_CONFIG);
-23005bde:	4000e6b7          	lui	a3,0x4000e
-23005be2:	84c6a783          	lw	a5,-1972(a3) # 4000d84c <__ram_load_addr+0x1cfd0958>
+23005bfe:	4000e6b7          	lui	a3,0x4000e
+23005c02:	84c6a783          	lw	a5,-1972(a3) # 4000d84c <__ram_load_addr+0x1cfd0958>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP4_STALL);
-23005be6:	7741                	lui	a4,0xffff0
-23005be8:	177d                	addi	a4,a4,-1
-23005bea:	8ff9                	and	a5,a5,a4
-23005bec:	00060737          	lui	a4,0x60
-23005bf0:	8fd9                	or	a5,a5,a4
+23005c06:	7741                	lui	a4,0xffff0
+23005c08:	177d                	addi	a4,a4,-1
+23005c0a:	8ff9                	and	a5,a5,a4
+23005c0c:	00060737          	lui	a4,0x60
+23005c10:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP4_CONFIG, tmpVal);
-23005bf2:	84f6a623          	sw	a5,-1972(a3)
+23005c12:	84f6a623          	sw	a5,-1972(a3)
 }
-23005bf6:	4501                	li	a0,0
-23005bf8:	8082                	ret
+23005c16:	4501                	li	a0,0
+23005c18:	8082                	ret
             tmpVal = BL_RD_REG(USB_BASE, USB_EP6_CONFIG);
-23005bfa:	4000e6b7          	lui	a3,0x4000e
-23005bfe:	8546a783          	lw	a5,-1964(a3) # 4000d854 <__ram_load_addr+0x1cfd0960>
+23005c1a:	4000e6b7          	lui	a3,0x4000e
+23005c1e:	8546a783          	lw	a5,-1964(a3) # 4000d854 <__ram_load_addr+0x1cfd0960>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP6_STALL);
-23005c02:	7741                	lui	a4,0xffff0
-23005c04:	177d                	addi	a4,a4,-1
-23005c06:	8ff9                	and	a5,a5,a4
-23005c08:	00060737          	lui	a4,0x60
-23005c0c:	8fd9                	or	a5,a5,a4
+23005c22:	7741                	lui	a4,0xffff0
+23005c24:	177d                	addi	a4,a4,-1
+23005c26:	8ff9                	and	a5,a5,a4
+23005c28:	00060737          	lui	a4,0x60
+23005c2c:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP6_CONFIG, tmpVal);
-23005c0e:	84f6aa23          	sw	a5,-1964(a3)
+23005c2e:	84f6aa23          	sw	a5,-1964(a3)
 }
-23005c12:	4501                	li	a0,0
-23005c14:	8082                	ret
+23005c32:	4501                	li	a0,0
+23005c34:	8082                	ret
             tmpVal = BL_RD_REG(USB_BASE, USB_EP2_CONFIG);
-23005c16:	4000e6b7          	lui	a3,0x4000e
-23005c1a:	8446a783          	lw	a5,-1980(a3) # 4000d844 <__ram_load_addr+0x1cfd0950>
+23005c36:	4000e6b7          	lui	a3,0x4000e
+23005c3a:	8446a783          	lw	a5,-1980(a3) # 4000d844 <__ram_load_addr+0x1cfd0950>
             tmpVal = BL_CLR_REG_BIT(tmpVal, USB_CR_EP2_STALL);
-23005c1e:	7741                	lui	a4,0xffff0
-23005c20:	177d                	addi	a4,a4,-1
-23005c22:	8ff9                	and	a5,a5,a4
-23005c24:	00060737          	lui	a4,0x60
-23005c28:	8fd9                	or	a5,a5,a4
+23005c3e:	7741                	lui	a4,0xffff0
+23005c40:	177d                	addi	a4,a4,-1
+23005c42:	8ff9                	and	a5,a5,a4
+23005c44:	00060737          	lui	a4,0x60
+23005c48:	8fd9                	or	a5,a5,a4
             BL_WR_REG(USB_BASE, USB_EP2_CONFIG, tmpVal);
-23005c2a:	84f6a223          	sw	a5,-1980(a3)
+23005c4a:	84f6a223          	sw	a5,-1980(a3)
 }
-23005c2e:	4501                	li	a0,0
-23005c30:	8082                	ret
+23005c4e:	4501                	li	a0,0
+23005c50:	8082                	ret
 
-23005c32 <usb_dc_ep_is_stalled>:
+23005c52 <usb_dc_ep_is_stalled>:
  */
 int usb_dc_ep_is_stalled(struct device *dev, const uint8_t ep, uint8_t *stalled)
 {
     uint8_t ep_idx = USB_EP_GET_IDX(ep);
 
     if (!stalled) {
-23005c32:	c225                	beqz	a2,23005c92 <usb_dc_ep_is_stalled+0x60>
+23005c52:	c225                	beqz	a2,23005cb2 <usb_dc_ep_is_stalled+0x60>
 {
-23005c34:	1141                	addi	sp,sp,-16
-23005c36:	c226                	sw	s1,4(sp)
-23005c38:	07f5f493          	andi	s1,a1,127
+23005c54:	1141                	addi	sp,sp,-16
+23005c56:	c226                	sw	s1,4(sp)
+23005c58:	07f5f493          	andi	s1,a1,127
         return -1;
     }
 
     *stalled = 0U;
 
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005c3c:	05e2                	slli	a1,a1,0x18
+23005c5c:	05e2                	slli	a1,a1,0x18
 {
-23005c3e:	c422                	sw	s0,8(sp)
-23005c40:	c606                	sw	ra,12(sp)
+23005c5e:	c422                	sw	s0,8(sp)
+23005c60:	c606                	sw	ra,12(sp)
     *stalled = 0U;
-23005c42:	00060023          	sb	zero,0(a2) # 800000 <_heap_size+0x7fa400>
+23005c62:	00060023          	sb	zero,0(a2) # 800000 <_heap_size+0x7fa400>
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005c46:	85e1                	srai	a1,a1,0x18
-23005c48:	8432                	mv	s0,a2
+23005c66:	85e1                	srai	a1,a1,0x18
+23005c68:	8432                	mv	s0,a2
         if ((USB_Get_EPx_Status(ep_idx) & USB_EP_STATUS_STALL) && usb_fs_device.out_ep[ep_idx].is_stalled) {
-23005c4a:	8526                	mv	a0,s1
+23005c6a:	8526                	mv	a0,s1
     if (USB_EP_DIR_IS_OUT(ep)) {
-23005c4c:	0205c863          	bltz	a1,23005c7c <usb_dc_ep_is_stalled+0x4a>
+23005c6c:	0205c863          	bltz	a1,23005c9c <usb_dc_ep_is_stalled+0x4a>
         if ((USB_Get_EPx_Status(ep_idx) & USB_EP_STATUS_STALL) && usb_fs_device.out_ep[ep_idx].is_stalled) {
-23005c50:	219010ef          	jal	ra,23007668 <USB_Get_EPx_Status>
-23005c54:	8909                	andi	a0,a0,2
-23005c56:	cd09                	beqz	a0,23005c70 <usb_dc_ep_is_stalled+0x3e>
-23005c58:	04b1                	addi	s1,s1,12
-23005c5a:	420187b7          	lui	a5,0x42018
-23005c5e:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
-23005c62:	0492                	slli	s1,s1,0x4
-23005c64:	94be                	add	s1,s1,a5
-23005c66:	40dc                	lw	a5,4(s1)
-23005c68:	c781                	beqz	a5,23005c70 <usb_dc_ep_is_stalled+0x3e>
+23005c70:	1f9010ef          	jal	ra,23007668 <USB_Get_EPx_Status>
+23005c74:	8909                	andi	a0,a0,2
+23005c76:	cd09                	beqz	a0,23005c90 <usb_dc_ep_is_stalled+0x3e>
+23005c78:	04b1                	addi	s1,s1,12
+23005c7a:	420187b7          	lui	a5,0x42018
+23005c7e:	5d478793          	addi	a5,a5,1492 # 420185d4 <usb_fs_device>
+23005c82:	0492                	slli	s1,s1,0x4
+23005c84:	94be                	add	s1,s1,a5
+23005c86:	40dc                	lw	a5,4(s1)
+23005c88:	c781                	beqz	a5,23005c90 <usb_dc_ep_is_stalled+0x3e>
             *stalled = 1U;
-23005c6a:	4785                	li	a5,1
-23005c6c:	00f40023          	sb	a5,0(s0)
+23005c8a:	4785                	li	a5,1
+23005c8c:	00f40023          	sb	a5,0(s0)
             *stalled = 1U;
         }
     }
 
     return 0;
 }
-23005c70:	40b2                	lw	ra,12(sp)
-23005c72:	4422                	lw	s0,8(sp)
-23005c74:	4492                	lw	s1,4(sp)
+23005c90:	40b2                	lw	ra,12(sp)
+23005c92:	4422                	lw	s0,8(sp)
+23005c94:	4492                	lw	s1,4(sp)
     return 0;
-23005c76:	4501                	li	a0,0
+23005c96:	4501                	li	a0,0
 }
-23005c78:	0141                	addi	sp,sp,16
-23005c7a:	8082                	ret
+23005c98:	0141                	addi	sp,sp,16
+23005c9a:	8082                	ret
         if ((USB_Get_EPx_Status(ep_idx) & USB_EP_STATUS_STALL) && usb_fs_device.in_ep[ep_idx].is_stalled) {
-23005c7c:	1ed010ef          	jal	ra,23007668 <USB_Get_EPx_Status>
-23005c80:	8909                	andi	a0,a0,2
-23005c82:	0491                	addi	s1,s1,4
-23005c84:	f979                	bnez	a0,23005c5a <usb_dc_ep_is_stalled+0x28>
+23005c9c:	1cd010ef          	jal	ra,23007668 <USB_Get_EPx_Status>
+23005ca0:	8909                	andi	a0,a0,2
+23005ca2:	0491                	addi	s1,s1,4
+23005ca4:	f979                	bnez	a0,23005c7a <usb_dc_ep_is_stalled+0x28>
 }
-23005c86:	40b2                	lw	ra,12(sp)
-23005c88:	4422                	lw	s0,8(sp)
-23005c8a:	4492                	lw	s1,4(sp)
+23005ca6:	40b2                	lw	ra,12(sp)
+23005ca8:	4422                	lw	s0,8(sp)
+23005caa:	4492                	lw	s1,4(sp)
     return 0;
-23005c8c:	4501                	li	a0,0
+23005cac:	4501                	li	a0,0
 }
-23005c8e:	0141                	addi	sp,sp,16
-23005c90:	8082                	ret
+23005cae:	0141                	addi	sp,sp,16
+23005cb0:	8082                	ret
         return -1;
-23005c92:	557d                	li	a0,-1
+23005cb2:	557d                	li	a0,-1
 }
-23005c94:	8082                	ret
+23005cb4:	8082                	ret
 
-23005c96 <usb_dc_ep_write>:
+23005cb6 <usb_dc_ep_write>:
     uint32_t ep_tx_fifo_addr;
 
     ep_idx = USB_EP_GET_IDX(ep);
 
     /* Check if IN ep */
     if (USB_EP_GET_DIR(ep) != USB_EP_DIR_IN) {
-23005c96:	01859793          	slli	a5,a1,0x18
-23005c9a:	87e1                	srai	a5,a5,0x18
-23005c9c:	1207d263          	bgez	a5,23005dc0 <usb_dc_ep_write+0x12a>
+23005cb6:	01859793          	slli	a5,a1,0x18
+23005cba:	87e1                	srai	a5,a5,0x18
+23005cbc:	1207d263          	bgez	a5,23005de0 <usb_dc_ep_write+0x12a>
 {
-23005ca0:	7179                	addi	sp,sp,-48
-23005ca2:	d226                	sw	s1,36(sp)
+23005cc0:	7179                	addi	sp,sp,-48
+23005cc2:	d226                	sw	s1,36(sp)
     ep_idx = USB_EP_GET_IDX(ep);
-23005ca4:	07f5f493          	andi	s1,a1,127
+23005cc4:	07f5f493          	andi	s1,a1,127
 {
-23005ca8:	ce4e                	sw	s3,28(sp)
-23005caa:	c462                	sw	s8,8(sp)
+23005cc8:	ce4e                	sw	s3,28(sp)
+23005cca:	c462                	sw	s8,8(sp)
                usb_fs_device.in_ep[ep_idx].ep_ena) {
-23005cac:	420189b7          	lui	s3,0x42018
-23005cb0:	00448c13          	addi	s8,s1,4
-23005cb4:	5d498993          	addi	s3,s3,1492 # 420185d4 <usb_fs_device>
-23005cb8:	004c1793          	slli	a5,s8,0x4
+23005ccc:	420189b7          	lui	s3,0x42018
+23005cd0:	00448c13          	addi	s8,s1,4
+23005cd4:	5d498993          	addi	s3,s3,1492 # 420185d4 <usb_fs_device>
+23005cd8:	004c1793          	slli	a5,s8,0x4
 {
-23005cbc:	cc52                	sw	s4,24(sp)
-23005cbe:	d606                	sw	ra,44(sp)
-23005cc0:	d422                	sw	s0,40(sp)
-23005cc2:	d04a                	sw	s2,32(sp)
-23005cc4:	ca56                	sw	s5,20(sp)
-23005cc6:	c85a                	sw	s6,16(sp)
-23005cc8:	c65e                	sw	s7,12(sp)
-23005cca:	c266                	sw	s9,4(sp)
+23005cdc:	cc52                	sw	s4,24(sp)
+23005cde:	d606                	sw	ra,44(sp)
+23005ce0:	d422                	sw	s0,40(sp)
+23005ce2:	d04a                	sw	s2,32(sp)
+23005ce4:	ca56                	sw	s5,20(sp)
+23005ce6:	c85a                	sw	s6,16(sp)
+23005ce8:	c65e                	sw	s7,12(sp)
+23005cea:	c266                	sw	s9,4(sp)
                usb_fs_device.in_ep[ep_idx].ep_ena) {
-23005ccc:	97ce                	add	a5,a5,s3
+23005cec:	97ce                	add	a5,a5,s3
     } else if ((USB_EP_DIR_IS_IN(ep)) &&
-23005cce:	0007c783          	lbu	a5,0(a5)
-23005cd2:	8a2e                	mv	s4,a1
+23005cee:	0007c783          	lbu	a5,0(a5)
+23005cf2:	8a2e                	mv	s4,a1
         return -USB_DC_EP_DIR_ERR;
     }
 
     /* Check if ep enabled */
     if (!usb_ep_is_enabled(ep)) {
         return -USB_DC_EP_EN_ERR;
-23005cd4:	5579                	li	a0,-2
+23005cf4:	5579                	li	a0,-2
     } else if ((USB_EP_DIR_IS_IN(ep)) &&
-23005cd6:	ef91                	bnez	a5,23005cf2 <usb_dc_ep_write+0x5c>
+23005cf6:	ef91                	bnez	a5,23005d12 <usb_dc_ep_write+0x5c>
     if (ret_bytes) {
         *ret_bytes = data_len;
     }
 
     return USB_DC_OK;
 }
-23005cd8:	50b2                	lw	ra,44(sp)
-23005cda:	5422                	lw	s0,40(sp)
-23005cdc:	5492                	lw	s1,36(sp)
-23005cde:	5902                	lw	s2,32(sp)
-23005ce0:	49f2                	lw	s3,28(sp)
-23005ce2:	4a62                	lw	s4,24(sp)
-23005ce4:	4ad2                	lw	s5,20(sp)
-23005ce6:	4b42                	lw	s6,16(sp)
-23005ce8:	4bb2                	lw	s7,12(sp)
-23005cea:	4c22                	lw	s8,8(sp)
-23005cec:	4c92                	lw	s9,4(sp)
-23005cee:	6145                	addi	sp,sp,48
-23005cf0:	8082                	ret
-23005cf2:	01000437          	lui	s0,0x1000
-23005cf6:	8b32                	mv	s6,a2
-23005cf8:	8ab6                	mv	s5,a3
-23005cfa:	8bba                	mv	s7,a4
+23005cf8:	50b2                	lw	ra,44(sp)
+23005cfa:	5422                	lw	s0,40(sp)
+23005cfc:	5492                	lw	s1,36(sp)
+23005cfe:	5902                	lw	s2,32(sp)
+23005d00:	49f2                	lw	s3,28(sp)
+23005d02:	4a62                	lw	s4,24(sp)
+23005d04:	4ad2                	lw	s5,20(sp)
+23005d06:	4b42                	lw	s6,16(sp)
+23005d08:	4bb2                	lw	s7,12(sp)
+23005d0a:	4c22                	lw	s8,8(sp)
+23005d0c:	4c92                	lw	s9,4(sp)
+23005d0e:	6145                	addi	sp,sp,48
+23005d10:	8082                	ret
+23005d12:	01000437          	lui	s0,0x1000
+23005d16:	8b32                	mv	s6,a2
+23005d18:	8ab6                	mv	s5,a3
+23005d1a:	8bba                	mv	s7,a4
     if (!data && data_len) {
-23005cfc:	147d                	addi	s0,s0,-1
-23005cfe:	c651                	beqz	a2,23005d8a <usb_dc_ep_write+0xf4>
+23005d1c:	147d                	addi	s0,s0,-1
+23005d1e:	c651                	beqz	a2,23005daa <usb_dc_ep_write+0xf4>
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005d00:	004c1913          	slli	s2,s8,0x4
-23005d04:	994e                	add	s2,s2,s3
-23005d06:	4c85                	li	s9,1
-23005d08:	a031                	j	23005d14 <usb_dc_ep_write+0x7e>
-23005d0a:	00c94783          	lbu	a5,12(s2)
-23005d0e:	01978863          	beq	a5,s9,23005d1e <usb_dc_ep_write+0x88>
+23005d20:	004c1913          	slli	s2,s8,0x4
+23005d24:	994e                	add	s2,s2,s3
+23005d26:	4c85                	li	s9,1
+23005d28:	a031                	j	23005d34 <usb_dc_ep_write+0x7e>
+23005d2a:	00c94783          	lbu	a5,12(s2)
+23005d2e:	01978863          	beq	a5,s9,23005d3e <usb_dc_ep_write+0x88>
         if (!timeout) {
-23005d12:	c44d                	beqz	s0,23005dbc <usb_dc_ep_write+0x126>
+23005d32:	c44d                	beqz	s0,23005ddc <usb_dc_ep_write+0x126>
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005d14:	8526                	mv	a0,s1
-23005d16:	688010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005d34:	8526                	mv	a0,s1
+23005d36:	668010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
         if (!timeout) {
-23005d1a:	147d                	addi	s0,s0,-1
+23005d3a:	147d                	addi	s0,s0,-1
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.in_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005d1c:	d57d                	beqz	a0,23005d0a <usb_dc_ep_write+0x74>
+23005d3c:	d57d                	beqz	a0,23005d2a <usb_dc_ep_write+0x74>
     if (!data_len) {
-23005d1e:	060a8063          	beqz	s5,23005d7e <usb_dc_ep_write+0xe8>
+23005d3e:	060a8063          	beqz	s5,23005d9e <usb_dc_ep_write+0xe8>
     if (data_len > usb_fs_device.in_ep[ep_idx].ep_cfg.ep_mps) {
-23005d22:	004c1793          	slli	a5,s8,0x4
-23005d26:	97ce                	add	a5,a5,s3
-23005d28:	00a7d403          	lhu	s0,10(a5)
-23005d2c:	008af363          	bgeu	s5,s0,23005d32 <usb_dc_ep_write+0x9c>
-23005d30:	8456                	mv	s0,s5
+23005d42:	004c1793          	slli	a5,s8,0x4
+23005d46:	97ce                	add	a5,a5,s3
+23005d48:	00a7d403          	lhu	s0,10(a5)
+23005d4c:	008af363          	bgeu	s5,s0,23005d52 <usb_dc_ep_write+0x9c>
+23005d50:	8456                	mv	s0,s5
         if (avail_space >= usb_fs_device.in_ep[ep_idx].ep_cfg.ep_mps) {
-23005d32:	0c12                	slli	s8,s8,0x4
-23005d34:	99e2                	add	s3,s3,s8
+23005d52:	0c12                	slli	s8,s8,0x4
+23005d54:	99e2                	add	s3,s3,s8
         uint32_t avail_space = USB_Get_EPx_TX_FIFO_CNT(ep_idx);
-23005d36:	8526                	mv	a0,s1
-23005d38:	785010ef          	jal	ra,23007cbc <USB_Get_EPx_TX_FIFO_CNT>
+23005d56:	8526                	mv	a0,s1
+23005d58:	765010ef          	jal	ra,23007cbc <USB_Get_EPx_TX_FIFO_CNT>
         if (avail_space >= usb_fs_device.in_ep[ep_idx].ep_cfg.ep_mps) {
-23005d3c:	00a9d783          	lhu	a5,10(s3)
-23005d40:	fef56be3          	bltu	a0,a5,23005d36 <usb_dc_ep_write+0xa0>
+23005d5c:	00a9d783          	lhu	a5,10(s3)
+23005d60:	fef56be3          	bltu	a0,a5,23005d56 <usb_dc_ep_write+0xa0>
     ep_tx_fifo_addr = USB_BASE + USB_EP0_TX_FIFO_WDATA_OFFSET + ep_idx * 0x10;
-23005d44:	4000e7b7          	lui	a5,0x4000e
-23005d48:	00449913          	slli	s2,s1,0x4
-23005d4c:	90878793          	addi	a5,a5,-1784 # 4000d908 <__ram_load_addr+0x1cfd0a14>
+23005d64:	4000e7b7          	lui	a5,0x4000e
+23005d68:	00449913          	slli	s2,s1,0x4
+23005d6c:	90878793          	addi	a5,a5,-1784 # 4000d908 <__ram_load_addr+0x1cfd0a14>
     if ((data_len == 1) && (ep_idx == 0)) {
-23005d50:	4705                	li	a4,1
+23005d70:	4705                	li	a4,1
     ep_tx_fifo_addr = USB_BASE + USB_EP0_TX_FIFO_WDATA_OFFSET + ep_idx * 0x10;
-23005d52:	993e                	add	s2,s2,a5
+23005d72:	993e                	add	s2,s2,a5
     if ((data_len == 1) && (ep_idx == 0)) {
-23005d54:	04e40e63          	beq	s0,a4,23005db0 <usb_dc_ep_write+0x11a>
+23005d74:	04e40e63          	beq	s0,a4,23005dd0 <usb_dc_ep_write+0x11a>
     } else if (ep_idx == 0) {
-23005d58:	c0a9                	beqz	s1,23005d9a <usb_dc_ep_write+0x104>
+23005d78:	c0a9                	beqz	s1,23005dba <usb_dc_ep_write+0x104>
     memcopy_to_fifo((void *)ep_tx_fifo_addr, (uint8_t *)data, data_len);
-23005d5a:	8622                	mv	a2,s0
-23005d5c:	85da                	mv	a1,s6
-23005d5e:	854a                	mv	a0,s2
+23005d7a:	8622                	mv	a2,s0
+23005d7c:	85da                	mv	a1,s6
+23005d7e:	854a                	mv	a0,s2
     if (USB_EP_GET_IDX(ep) != 0)
-23005d60:	f7fa7a13          	andi	s4,s4,-129
+23005d80:	f7fa7a13          	andi	s4,s4,-129
     memcopy_to_fifo((void *)ep_tx_fifo_addr, (uint8_t *)data, data_len);
-23005d64:	06e2d0ef          	jal	ra,23032dd2 <memcopy_to_fifo>
+23005d84:	04e2d0ef          	jal	ra,23032dd2 <memcopy_to_fifo>
     if (USB_EP_GET_IDX(ep) != 0)
-23005d68:	000a0563          	beqz	s4,23005d72 <usb_dc_ep_write+0xdc>
+23005d88:	000a0563          	beqz	s4,23005d92 <usb_dc_ep_write+0xdc>
         USB_Set_EPx_Rdy(USB_EP_GET_IDX(ep));
-23005d6c:	8526                	mv	a0,s1
-23005d6e:	52c010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
+23005d8c:	8526                	mv	a0,s1
+23005d8e:	50c010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
     if (ret_bytes) {
-23005d72:	000b8a63          	beqz	s7,23005d86 <usb_dc_ep_write+0xf0>
+23005d92:	000b8a63          	beqz	s7,23005da6 <usb_dc_ep_write+0xf0>
         *ret_bytes = data_len;
-23005d76:	008ba023          	sw	s0,0(s7)
+23005d96:	008ba023          	sw	s0,0(s7)
     return USB_DC_OK;
-23005d7a:	4501                	li	a0,0
-23005d7c:	bfb1                	j	23005cd8 <usb_dc_ep_write+0x42>
+23005d9a:	4501                	li	a0,0
+23005d9c:	bfb1                	j	23005cf8 <usb_dc_ep_write+0x42>
         if ((USB_EP_GET_IDX(ep) != 0)) {
-23005d7e:	f7fa7a13          	andi	s4,s4,-129
-23005d82:	000a1763          	bnez	s4,23005d90 <usb_dc_ep_write+0xfa>
+23005d9e:	f7fa7a13          	andi	s4,s4,-129
+23005da2:	000a1763          	bnez	s4,23005db0 <usb_dc_ep_write+0xfa>
             return USB_DC_OK;
-23005d86:	4501                	li	a0,0
-23005d88:	bf81                	j	23005cd8 <usb_dc_ep_write+0x42>
+23005da6:	4501                	li	a0,0
+23005da8:	bf81                	j	23005cf8 <usb_dc_ep_write+0x42>
     if (!data && data_len) {
-23005d8a:	dabd                	beqz	a3,23005d00 <usb_dc_ep_write+0x6a>
+23005daa:	dabd                	beqz	a3,23005d20 <usb_dc_ep_write+0x6a>
         return -USB_DC_ADDR_ERR;
-23005d8c:	5571                	li	a0,-4
-23005d8e:	b7a9                	j	23005cd8 <usb_dc_ep_write+0x42>
+23005dac:	5571                	li	a0,-4
+23005dae:	b7a9                	j	23005cf8 <usb_dc_ep_write+0x42>
             USB_Set_EPx_Rdy(USB_EP_GET_IDX(ep));
-23005d90:	8526                	mv	a0,s1
-23005d92:	508010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
+23005db0:	8526                	mv	a0,s1
+23005db2:	4e8010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
             return USB_DC_OK;
-23005d96:	4501                	li	a0,0
-23005d98:	b781                	j	23005cd8 <usb_dc_ep_write+0x42>
+23005db6:	4501                	li	a0,0
+23005db8:	b781                	j	23005cf8 <usb_dc_ep_write+0x42>
         USB_Set_EPx_Xfer_Size(EP_ID0, 64);
-23005d9a:	04000593          	li	a1,64
-23005d9e:	4501                	li	a0,0
-23005da0:	420010ef          	jal	ra,230071c0 <USB_Set_EPx_Xfer_Size>
+23005dba:	04000593          	li	a1,64
+23005dbe:	4501                	li	a0,0
+23005dc0:	400010ef          	jal	ra,230071c0 <USB_Set_EPx_Xfer_Size>
     memcopy_to_fifo((void *)ep_tx_fifo_addr, (uint8_t *)data, data_len);
-23005da4:	8622                	mv	a2,s0
-23005da6:	85da                	mv	a1,s6
-23005da8:	854a                	mv	a0,s2
-23005daa:	0282d0ef          	jal	ra,23032dd2 <memcopy_to_fifo>
+23005dc4:	8622                	mv	a2,s0
+23005dc6:	85da                	mv	a1,s6
+23005dc8:	854a                	mv	a0,s2
+23005dca:	0082d0ef          	jal	ra,23032dd2 <memcopy_to_fifo>
     if (USB_EP_GET_IDX(ep) != 0)
-23005dae:	b7d1                	j	23005d72 <usb_dc_ep_write+0xdc>
+23005dce:	b7d1                	j	23005d92 <usb_dc_ep_write+0xdc>
     if ((data_len == 1) && (ep_idx == 0)) {
-23005db0:	f4cd                	bnez	s1,23005d5a <usb_dc_ep_write+0xc4>
+23005dd0:	f4cd                	bnez	s1,23005d7a <usb_dc_ep_write+0xc4>
         USB_Set_EPx_Xfer_Size(EP_ID0, 1);
-23005db2:	4585                	li	a1,1
-23005db4:	4501                	li	a0,0
-23005db6:	40a010ef          	jal	ra,230071c0 <USB_Set_EPx_Xfer_Size>
-23005dba:	b7ed                	j	23005da4 <usb_dc_ep_write+0x10e>
+23005dd2:	4585                	li	a1,1
+23005dd4:	4501                	li	a0,0
+23005dd6:	3ea010ef          	jal	ra,230071c0 <USB_Set_EPx_Xfer_Size>
+23005dda:	b7ed                	j	23005dc4 <usb_dc_ep_write+0x10e>
             return -USB_DC_EP_TIMEOUT_ERR;
-23005dbc:	5575                	li	a0,-3
-23005dbe:	bf29                	j	23005cd8 <usb_dc_ep_write+0x42>
+23005ddc:	5575                	li	a0,-3
+23005dde:	bf29                	j	23005cf8 <usb_dc_ep_write+0x42>
         return -USB_DC_EP_DIR_ERR;
-23005dc0:	557d                	li	a0,-1
+23005de0:	557d                	li	a0,-1
 }
-23005dc2:	8082                	ret
+23005de2:	8082                	ret
 
-23005dc4 <usb_dc_ep_read>:
+23005de4 <usb_dc_ep_read>:
     uint32_t read_count;
     uint32_t ep_rx_fifo_addr;
     uint32_t timeout = 0x00FFFFFF;
 
     /* Check if OUT ep */
     if (USB_EP_GET_DIR(ep) != USB_EP_DIR_OUT) {
-23005dc4:	01859793          	slli	a5,a1,0x18
-23005dc8:	87e1                	srai	a5,a5,0x18
-23005dca:	0a07cb63          	bltz	a5,23005e80 <usb_dc_ep_read+0xbc>
+23005de4:	01859793          	slli	a5,a1,0x18
+23005de8:	87e1                	srai	a5,a5,0x18
+23005dea:	0a07cb63          	bltz	a5,23005ea0 <usb_dc_ep_read+0xbc>
 {
-23005dce:	1101                	addi	sp,sp,-32
-23005dd0:	c84a                	sw	s2,16(sp)
+23005dee:	1101                	addi	sp,sp,-32
+23005df0:	c84a                	sw	s2,16(sp)
         usb_fs_device.out_ep[ep_idx].ep_ena) {
-23005dd2:	00c58793          	addi	a5,a1,12
-23005dd6:	42018937          	lui	s2,0x42018
+23005df2:	00c58793          	addi	a5,a1,12
+23005df6:	42018937          	lui	s2,0x42018
 {
-23005dda:	c256                	sw	s5,4(sp)
+23005dfa:	c256                	sw	s5,4(sp)
         usb_fs_device.out_ep[ep_idx].ep_ena) {
-23005ddc:	5d490913          	addi	s2,s2,1492 # 420185d4 <usb_fs_device>
-23005de0:	8aba                	mv	s5,a4
-23005de2:	00479713          	slli	a4,a5,0x4
+23005dfc:	5d490913          	addi	s2,s2,1492 # 420185d4 <usb_fs_device>
+23005e00:	8aba                	mv	s5,a4
+23005e02:	00479713          	slli	a4,a5,0x4
 {
-23005de6:	ca26                	sw	s1,20(sp)
-23005de8:	ce06                	sw	ra,28(sp)
-23005dea:	cc22                	sw	s0,24(sp)
-23005dec:	c64e                	sw	s3,12(sp)
-23005dee:	c452                	sw	s4,8(sp)
-23005df0:	c05a                	sw	s6,0(sp)
+23005e06:	ca26                	sw	s1,20(sp)
+23005e08:	ce06                	sw	ra,28(sp)
+23005e0a:	cc22                	sw	s0,24(sp)
+23005e0c:	c64e                	sw	s3,12(sp)
+23005e0e:	c452                	sw	s4,8(sp)
+23005e10:	c05a                	sw	s6,0(sp)
         usb_fs_device.out_ep[ep_idx].ep_ena) {
-23005df2:	974a                	add	a4,a4,s2
+23005e12:	974a                	add	a4,a4,s2
     if ((USB_EP_DIR_IS_OUT(ep)) &&
-23005df4:	00074703          	lbu	a4,0(a4) # 60000 <_heap_size+0x5a400>
-23005df8:	84ae                	mv	s1,a1
+23005e14:	00074703          	lbu	a4,0(a4) # 60000 <_heap_size+0x5a400>
+23005e18:	84ae                	mv	s1,a1
     }
 
     /* Check if ep enabled */
     if (!usb_ep_is_enabled(ep)) {
         USB_DC_LOG_ERR("Not enabled endpoint\r\n");
         return -USB_DC_EP_EN_ERR;
-23005dfa:	5579                	li	a0,-2
+23005e1a:	5579                	li	a0,-2
     if ((USB_EP_DIR_IS_OUT(ep)) &&
-23005dfc:	eb19                	bnez	a4,23005e12 <usb_dc_ep_read+0x4e>
+23005e1c:	eb19                	bnez	a4,23005e32 <usb_dc_ep_read+0x4e>
     if (read_bytes) {
         *read_bytes = read_count;
     }
 
     return USB_DC_OK;
 }
-23005dfe:	40f2                	lw	ra,28(sp)
-23005e00:	4462                	lw	s0,24(sp)
-23005e02:	44d2                	lw	s1,20(sp)
-23005e04:	4942                	lw	s2,16(sp)
-23005e06:	49b2                	lw	s3,12(sp)
-23005e08:	4a22                	lw	s4,8(sp)
-23005e0a:	4a92                	lw	s5,4(sp)
-23005e0c:	4b02                	lw	s6,0(sp)
-23005e0e:	6105                	addi	sp,sp,32
-23005e10:	8082                	ret
-23005e12:	01000437          	lui	s0,0x1000
-23005e16:	8a32                	mv	s4,a2
-23005e18:	8b36                	mv	s6,a3
+23005e1e:	40f2                	lw	ra,28(sp)
+23005e20:	4462                	lw	s0,24(sp)
+23005e22:	44d2                	lw	s1,20(sp)
+23005e24:	4942                	lw	s2,16(sp)
+23005e26:	49b2                	lw	s3,12(sp)
+23005e28:	4a22                	lw	s4,8(sp)
+23005e2a:	4a92                	lw	s5,4(sp)
+23005e2c:	4b02                	lw	s6,0(sp)
+23005e2e:	6105                	addi	sp,sp,32
+23005e30:	8082                	ret
+23005e32:	01000437          	lui	s0,0x1000
+23005e36:	8a32                	mv	s4,a2
+23005e38:	8b36                	mv	s6,a3
     if (!data && data_len) {
-23005e1a:	147d                	addi	s0,s0,-1
-23005e1c:	ca29                	beqz	a2,23005e6e <usb_dc_ep_read+0xaa>
+23005e3a:	147d                	addi	s0,s0,-1
+23005e3c:	ca29                	beqz	a2,23005e8e <usb_dc_ep_read+0xaa>
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.out_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005e1e:	0792                	slli	a5,a5,0x4
-23005e20:	993e                	add	s2,s2,a5
-23005e22:	4985                	li	s3,1
-23005e24:	a031                	j	23005e30 <usb_dc_ep_read+0x6c>
-23005e26:	00c94783          	lbu	a5,12(s2)
-23005e2a:	01378863          	beq	a5,s3,23005e3a <usb_dc_ep_read+0x76>
+23005e3e:	0792                	slli	a5,a5,0x4
+23005e40:	993e                	add	s2,s2,a5
+23005e42:	4985                	li	s3,1
+23005e44:	a031                	j	23005e50 <usb_dc_ep_read+0x6c>
+23005e46:	00c94783          	lbu	a5,12(s2)
+23005e4a:	01378863          	beq	a5,s3,23005e5a <usb_dc_ep_read+0x76>
         if (!timeout) {
-23005e2e:	c439                	beqz	s0,23005e7c <usb_dc_ep_read+0xb8>
+23005e4e:	c439                	beqz	s0,23005e9c <usb_dc_ep_read+0xb8>
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.out_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005e30:	8526                	mv	a0,s1
-23005e32:	56c010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005e50:	8526                	mv	a0,s1
+23005e52:	54c010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
         if (!timeout) {
-23005e36:	147d                	addi	s0,s0,-1
+23005e56:	147d                	addi	s0,s0,-1
     while (!USB_Is_EPx_RDY_Free(ep_idx) && (usb_fs_device.out_ep[ep_idx].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005e38:	d57d                	beqz	a0,23005e26 <usb_dc_ep_read+0x62>
+23005e58:	d57d                	beqz	a0,23005e46 <usb_dc_ep_read+0x62>
             USB_Set_EPx_Rdy(USB_EP_GET_IDX(ep));
-23005e3a:	8526                	mv	a0,s1
+23005e5a:	8526                	mv	a0,s1
     if (!data_len) {
-23005e3c:	000b1363          	bnez	s6,23005e42 <usb_dc_ep_read+0x7e>
+23005e5c:	000b1363          	bnez	s6,23005e62 <usb_dc_ep_read+0x7e>
         if ((USB_EP_GET_IDX(ep) != 0)) {
-23005e40:	e895                	bnez	s1,23005e74 <usb_dc_ep_read+0xb0>
+23005e60:	e895                	bnez	s1,23005e94 <usb_dc_ep_read+0xb0>
     read_count = USB_Get_EPx_RX_FIFO_CNT(ep_idx);
-23005e42:	71f010ef          	jal	ra,23007d60 <USB_Get_EPx_RX_FIFO_CNT>
+23005e62:	6ff010ef          	jal	ra,23007d60 <USB_Get_EPx_RX_FIFO_CNT>
     read_count = MIN(read_count, data_len);
-23005e46:	03656263          	bltu	a0,s6,23005e6a <usb_dc_ep_read+0xa6>
+23005e66:	03656263          	bltu	a0,s6,23005e8a <usb_dc_ep_read+0xa6>
     fifocopy_to_mem((void *)ep_rx_fifo_addr, data, read_count);
-23005e4a:	4000e537          	lui	a0,0x4000e
+23005e6a:	4000e537          	lui	a0,0x4000e
     ep_rx_fifo_addr = (USB_BASE + USB_EP0_RX_FIFO_RDATA_OFFSET + ep_idx * 0x10);
-23005e4e:	0492                	slli	s1,s1,0x4
+23005e6e:	0492                	slli	s1,s1,0x4
     fifocopy_to_mem((void *)ep_rx_fifo_addr, data, read_count);
-23005e50:	90c50513          	addi	a0,a0,-1780 # 4000d90c <__ram_load_addr+0x1cfd0a18>
-23005e54:	9526                	add	a0,a0,s1
-23005e56:	865a                	mv	a2,s6
-23005e58:	85d2                	mv	a1,s4
-23005e5a:	78d2c0ef          	jal	ra,23032de6 <fifocopy_to_mem>
+23005e70:	90c50513          	addi	a0,a0,-1780 # 4000d90c <__ram_load_addr+0x1cfd0a18>
+23005e74:	9526                	add	a0,a0,s1
+23005e76:	865a                	mv	a2,s6
+23005e78:	85d2                	mv	a1,s4
+23005e7a:	76d2c0ef          	jal	ra,23032de6 <fifocopy_to_mem>
     return USB_DC_OK;
-23005e5e:	4501                	li	a0,0
+23005e7e:	4501                	li	a0,0
     if (read_bytes) {
-23005e60:	f80a8fe3          	beqz	s5,23005dfe <usb_dc_ep_read+0x3a>
+23005e80:	f80a8fe3          	beqz	s5,23005e1e <usb_dc_ep_read+0x3a>
         *read_bytes = read_count;
-23005e64:	016aa023          	sw	s6,0(s5)
-23005e68:	bf59                	j	23005dfe <usb_dc_ep_read+0x3a>
+23005e84:	016aa023          	sw	s6,0(s5)
+23005e88:	bf59                	j	23005e1e <usb_dc_ep_read+0x3a>
     read_count = MIN(read_count, data_len);
-23005e6a:	8b2a                	mv	s6,a0
-23005e6c:	bff9                	j	23005e4a <usb_dc_ep_read+0x86>
+23005e8a:	8b2a                	mv	s6,a0
+23005e8c:	bff9                	j	23005e6a <usb_dc_ep_read+0x86>
     if (!data && data_len) {
-23005e6e:	dac5                	beqz	a3,23005e1e <usb_dc_ep_read+0x5a>
+23005e8e:	dac5                	beqz	a3,23005e3e <usb_dc_ep_read+0x5a>
         return -USB_DC_ADDR_ERR;
-23005e70:	5571                	li	a0,-4
-23005e72:	b771                	j	23005dfe <usb_dc_ep_read+0x3a>
+23005e90:	5571                	li	a0,-4
+23005e92:	b771                	j	23005e1e <usb_dc_ep_read+0x3a>
             USB_Set_EPx_Rdy(USB_EP_GET_IDX(ep));
-23005e74:	426010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
+23005e94:	406010ef          	jal	ra,2300729a <USB_Set_EPx_Rdy>
             return USB_DC_OK;
-23005e78:	4501                	li	a0,0
-23005e7a:	b751                	j	23005dfe <usb_dc_ep_read+0x3a>
+23005e98:	4501                	li	a0,0
+23005e9a:	b751                	j	23005e1e <usb_dc_ep_read+0x3a>
             return -USB_DC_EP_TIMEOUT_ERR;
-23005e7c:	5575                	li	a0,-3
-23005e7e:	b741                	j	23005dfe <usb_dc_ep_read+0x3a>
+23005e9c:	5575                	li	a0,-3
+23005e9e:	b741                	j	23005e1e <usb_dc_ep_read+0x3a>
         return -USB_DC_EP_DIR_ERR;
-23005e80:	557d                	li	a0,-1
+23005ea0:	557d                	li	a0,-1
 }
-23005e82:	8082                	ret
+23005ea2:	8082                	ret
 
-23005e84 <usb_dc_isr>:
+23005ea4 <usb_dc_isr>:
  * @brief
  *
  * @param device
  */
 void usb_dc_isr(usb_dc_device_t *device)
 {
-23005e84:	1101                	addi	sp,sp,-32
-23005e86:	cc22                	sw	s0,24(sp)
-23005e88:	c64e                	sw	s3,12(sp)
-23005e8a:	c452                	sw	s4,8(sp)
-23005e8c:	ce06                	sw	ra,28(sp)
-23005e8e:	ca26                	sw	s1,20(sp)
-23005e90:	c84a                	sw	s2,16(sp)
-23005e92:	c256                	sw	s5,4(sp)
-23005e94:	89aa                	mv	s3,a0
-23005e96:	440d                	li	s0,3
+23005ea4:	1101                	addi	sp,sp,-32
+23005ea6:	cc22                	sw	s0,24(sp)
+23005ea8:	c64e                	sw	s3,12(sp)
+23005eaa:	c452                	sw	s4,8(sp)
+23005eac:	ce06                	sw	ra,28(sp)
+23005eae:	ca26                	sw	s1,20(sp)
+23005eb0:	c84a                	sw	s2,16(sp)
+23005eb2:	c256                	sw	s5,4(sp)
+23005eb4:	89aa                	mv	s3,a0
+23005eb6:	440d                	li	s0,3
 
     /* EP1_DONE -> EP2_DONE -> ...... -> EP7_DONE*/
     for (USB_INT_Type epint = USB_INT_EP1_DONE; epint <= USB_INT_EP7_DONE; epint += 2) {
         if (USB_Get_IntStatus(epint)) {
             epnum = (epint - USB_INT_EP0_OUT_CMD) >> 1;
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->out_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005e98:	4a05                	li	s4,1
-23005e9a:	a029                	j	23005ea4 <usb_dc_isr+0x20>
+23005eb8:	4a05                	li	s4,1
+23005eba:	a029                	j	23005ec4 <usb_dc_isr+0x20>
     for (USB_INT_Type epint = USB_INT_EP1_DONE; epint <= USB_INT_EP7_DONE; epint += 2) {
-23005e9c:	0409                	addi	s0,s0,2
-23005e9e:	47c5                	li	a5,17
-23005ea0:	04f40863          	beq	s0,a5,23005ef0 <usb_dc_isr+0x6c>
-23005ea4:	00840493          	addi	s1,s0,8 # 1000008 <_heap_size+0xffa408>
-23005ea8:	0ff4f493          	zext.b	s1,s1
+23005ebc:	0409                	addi	s0,s0,2
+23005ebe:	47c5                	li	a5,17
+23005ec0:	04f40863          	beq	s0,a5,23005f10 <usb_dc_isr+0x6c>
+23005ec4:	00840493          	addi	s1,s0,8 # 1000008 <_heap_size+0xffa408>
+23005ec8:	0ff4f493          	zext.b	s1,s1
         if (USB_Get_IntStatus(epint)) {
-23005eac:	8526                	mv	a0,s1
-23005eae:	12b010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005eb2:	d56d                	beqz	a0,23005e9c <usb_dc_isr+0x18>
+23005ecc:	8526                	mv	a0,s1
+23005ece:	10b010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005ed2:	d56d                	beqz	a0,23005ebc <usb_dc_isr+0x18>
             epnum = (epint - USB_INT_EP0_OUT_CMD) >> 1;
-23005eb4:	40145913          	srai	s2,s0,0x1
+23005ed4:	40145913          	srai	s2,s0,0x1
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->out_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005eb8:	0ff97513          	zext.b	a0,s2
-23005ebc:	4e2010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
-23005ec0:	00c90793          	addi	a5,s2,12
-23005ec4:	872a                	mv	a4,a0
-23005ec6:	0792                	slli	a5,a5,0x4
+23005ed8:	0ff97513          	zext.b	a0,s2
+23005edc:	4c2010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005ee0:	00c90793          	addi	a5,s2,12
+23005ee4:	872a                	mv	a4,a0
+23005ee6:	0792                	slli	a5,a5,0x4
                 USB_DC_LOG_ERR("ep%d out busy\r\n", epnum);
                 continue;
             }
             USB_Clr_IntStatus(epint);
-23005ec8:	8526                	mv	a0,s1
+23005ee8:	8526                	mv	a0,s1
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->out_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005eca:	97ce                	add	a5,a5,s3
-23005ecc:	e709                	bnez	a4,23005ed6 <usb_dc_isr+0x52>
-23005ece:	00c7c783          	lbu	a5,12(a5)
-23005ed2:	fd4795e3          	bne	a5,s4,23005e9c <usb_dc_isr+0x18>
+23005eea:	97ce                	add	a5,a5,s3
+23005eec:	e709                	bnez	a4,23005ef6 <usb_dc_isr+0x52>
+23005eee:	00c7c783          	lbu	a5,12(a5)
+23005ef2:	fd4795e3          	bne	a5,s4,23005ebc <usb_dc_isr+0x18>
             USB_Clr_IntStatus(epint);
-23005ed6:	12f010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005ef6:	10f010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
             device->parent.callback(&device->parent, (void *)((uint32_t)USB_SET_EP_OUT(epnum)), 0, USB_DC_EVENT_EP_OUT_NOTIFY);
-23005eda:	0349a783          	lw	a5,52(s3)
-23005ede:	46c5                	li	a3,17
-23005ee0:	4601                	li	a2,0
-23005ee2:	85ca                	mv	a1,s2
-23005ee4:	854e                	mv	a0,s3
-23005ee6:	9782                	jalr	a5
+23005efa:	0349a783          	lw	a5,52(s3)
+23005efe:	46c5                	li	a3,17
+23005f00:	4601                	li	a2,0
+23005f02:	85ca                	mv	a1,s2
+23005f04:	854e                	mv	a0,s3
+23005f06:	9782                	jalr	a5
     for (USB_INT_Type epint = USB_INT_EP1_DONE; epint <= USB_INT_EP7_DONE; epint += 2) {
-23005ee8:	0409                	addi	s0,s0,2
-23005eea:	47c5                	li	a5,17
-23005eec:	faf41ce3          	bne	s0,a5,23005ea4 <usb_dc_isr+0x20>
-23005ef0:	4409                	li	s0,2
+23005f08:	0409                	addi	s0,s0,2
+23005f0a:	47c5                	li	a5,17
+23005f0c:	faf41ce3          	bne	s0,a5,23005ec4 <usb_dc_isr+0x20>
+23005f10:	4409                	li	s0,2
 
     /* EP1_CMD -> EP2_CMD -> ...... -> EP7_CMD*/
     for (USB_INT_Type epint = USB_INT_EP1_CMD; epint <= USB_INT_EP7_CMD; epint += 2) {
         if (USB_Get_IntStatus(epint)) {
             epnum = (epint - USB_INT_EP0_OUT_CMD) >> 1;
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->in_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005ef2:	4a85                	li	s5,1
-23005ef4:	a029                	j	23005efe <usb_dc_isr+0x7a>
+23005f12:	4a85                	li	s5,1
+23005f14:	a029                	j	23005f1e <usb_dc_isr+0x7a>
     for (USB_INT_Type epint = USB_INT_EP1_CMD; epint <= USB_INT_EP7_CMD; epint += 2) {
-23005ef6:	0409                	addi	s0,s0,2
-23005ef8:	47c1                	li	a5,16
-23005efa:	04f40963          	beq	s0,a5,23005f4c <usb_dc_isr+0xc8>
-23005efe:	00840493          	addi	s1,s0,8
-23005f02:	0ff4f493          	zext.b	s1,s1
+23005f16:	0409                	addi	s0,s0,2
+23005f18:	47c1                	li	a5,16
+23005f1a:	04f40963          	beq	s0,a5,23005f6c <usb_dc_isr+0xc8>
+23005f1e:	00840493          	addi	s1,s0,8
+23005f22:	0ff4f493          	zext.b	s1,s1
         if (USB_Get_IntStatus(epint)) {
-23005f06:	8526                	mv	a0,s1
-23005f08:	0d1010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005f0c:	d56d                	beqz	a0,23005ef6 <usb_dc_isr+0x72>
+23005f26:	8526                	mv	a0,s1
+23005f28:	0b1010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005f2c:	d56d                	beqz	a0,23005f16 <usb_dc_isr+0x72>
             epnum = (epint - USB_INT_EP0_OUT_CMD) >> 1;
-23005f0e:	40145913          	srai	s2,s0,0x1
-23005f12:	0ff97a13          	zext.b	s4,s2
+23005f2e:	40145913          	srai	s2,s0,0x1
+23005f32:	0ff97a13          	zext.b	s4,s2
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->in_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005f16:	8552                	mv	a0,s4
-23005f18:	486010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
-23005f1c:	0911                	addi	s2,s2,4
-23005f1e:	87aa                	mv	a5,a0
-23005f20:	0912                	slli	s2,s2,0x4
+23005f36:	8552                	mv	a0,s4
+23005f38:	466010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005f3c:	0911                	addi	s2,s2,4
+23005f3e:	87aa                	mv	a5,a0
+23005f40:	0912                	slli	s2,s2,0x4
                 USB_DC_LOG_DBG("ep%d in busy\r\n", epnum);
                 continue;
             }
             USB_Clr_IntStatus(epint);
-23005f22:	8526                	mv	a0,s1
+23005f42:	8526                	mv	a0,s1
             if (!USB_Is_EPx_RDY_Free(epnum) && (device->in_ep[epnum].ep_cfg.ep_type != USBD_EP_TYPE_ISOC)) {
-23005f24:	994e                	add	s2,s2,s3
-23005f26:	e789                	bnez	a5,23005f30 <usb_dc_isr+0xac>
-23005f28:	00c94783          	lbu	a5,12(s2)
-23005f2c:	fd5795e3          	bne	a5,s5,23005ef6 <usb_dc_isr+0x72>
+23005f44:	994e                	add	s2,s2,s3
+23005f46:	e789                	bnez	a5,23005f50 <usb_dc_isr+0xac>
+23005f48:	00c94783          	lbu	a5,12(s2)
+23005f4c:	fd5795e3          	bne	a5,s5,23005f16 <usb_dc_isr+0x72>
             USB_Clr_IntStatus(epint);
-23005f30:	0d5010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005f50:	0b5010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
             device->parent.callback(&device->parent, (void *)((uint32_t)USB_SET_EP_IN(epnum)), 0, USB_DC_EVENT_EP_IN_NOTIFY);
-23005f34:	0349a783          	lw	a5,52(s3)
-23005f38:	46c1                	li	a3,16
-23005f3a:	4601                	li	a2,0
-23005f3c:	080a6593          	ori	a1,s4,128
-23005f40:	854e                	mv	a0,s3
-23005f42:	9782                	jalr	a5
+23005f54:	0349a783          	lw	a5,52(s3)
+23005f58:	46c1                	li	a3,16
+23005f5a:	4601                	li	a2,0
+23005f5c:	080a6593          	ori	a1,s4,128
+23005f60:	854e                	mv	a0,s3
+23005f62:	9782                	jalr	a5
     for (USB_INT_Type epint = USB_INT_EP1_CMD; epint <= USB_INT_EP7_CMD; epint += 2) {
-23005f44:	0409                	addi	s0,s0,2
-23005f46:	47c1                	li	a5,16
-23005f48:	faf41be3          	bne	s0,a5,23005efe <usb_dc_isr+0x7a>
+23005f64:	0409                	addi	s0,s0,2
+23005f66:	47c1                	li	a5,16
+23005f68:	faf41be3          	bne	s0,a5,23005f1e <usb_dc_isr+0x7a>
         }
     }
 
     /* EP0 setup done */
     if (USB_Get_IntStatus(USB_INT_EP0_SETUP_DONE)) {
-23005f4c:	4515                	li	a0,5
-23005f4e:	08b010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005f52:	cd11                	beqz	a0,23005f6e <usb_dc_isr+0xea>
+23005f6c:	4515                	li	a0,5
+23005f6e:	06b010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005f72:	cd11                	beqz	a0,23005f8e <usb_dc_isr+0xea>
         if (!USB_Is_EPx_RDY_Free(0)) {
-23005f54:	4501                	li	a0,0
-23005f56:	448010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
-23005f5a:	e93d                	bnez	a0,23005fd0 <usb_dc_isr+0x14c>
+23005f74:	4501                	li	a0,0
+23005f76:	428010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005f7a:	e93d                	bnez	a0,23005ff0 <usb_dc_isr+0x14c>
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_ERROR);
         USB_Clr_IntStatus(USB_INT_ERROR);
         return;
     }
 #endif
 }
-23005f5c:	40f2                	lw	ra,28(sp)
-23005f5e:	4462                	lw	s0,24(sp)
-23005f60:	44d2                	lw	s1,20(sp)
-23005f62:	4942                	lw	s2,16(sp)
-23005f64:	49b2                	lw	s3,12(sp)
-23005f66:	4a22                	lw	s4,8(sp)
-23005f68:	4a92                	lw	s5,4(sp)
-23005f6a:	6105                	addi	sp,sp,32
-23005f6c:	8082                	ret
+23005f7c:	40f2                	lw	ra,28(sp)
+23005f7e:	4462                	lw	s0,24(sp)
+23005f80:	44d2                	lw	s1,20(sp)
+23005f82:	4942                	lw	s2,16(sp)
+23005f84:	49b2                	lw	s3,12(sp)
+23005f86:	4a22                	lw	s4,8(sp)
+23005f88:	4a92                	lw	s5,4(sp)
+23005f8a:	6105                	addi	sp,sp,32
+23005f8c:	8082                	ret
     if (USB_Get_IntStatus(USB_INT_EP0_IN_DONE)) {
-23005f6e:	451d                	li	a0,7
-23005f70:	069010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005f74:	c105                	beqz	a0,23005f94 <usb_dc_isr+0x110>
+23005f8e:	451d                	li	a0,7
+23005f90:	049010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005f94:	c105                	beqz	a0,23005fb4 <usb_dc_isr+0x110>
         if (!USB_Is_EPx_RDY_Free(0)) {
-23005f76:	4501                	li	a0,0
-23005f78:	426010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
-23005f7c:	d165                	beqz	a0,23005f5c <usb_dc_isr+0xd8>
+23005f96:	4501                	li	a0,0
+23005f98:	406010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23005f9c:	d165                	beqz	a0,23005f7c <usb_dc_isr+0xd8>
         USB_Clr_IntStatus(USB_INT_EP0_IN_DONE);
-23005f7e:	451d                	li	a0,7
-23005f80:	085010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005f9e:	451d                	li	a0,7
+23005fa0:	065010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         device->parent.callback(&device->parent, (void *)0x80, 0, USB_DC_EVENT_EP0_IN_NOTIFY);
-23005f84:	0349a783          	lw	a5,52(s3)
-23005f88:	854e                	mv	a0,s3
-23005f8a:	46b9                	li	a3,14
-23005f8c:	4601                	li	a2,0
-23005f8e:	08000593          	li	a1,128
-23005f92:	a881                	j	23005fe2 <usb_dc_isr+0x15e>
+23005fa4:	0349a783          	lw	a5,52(s3)
+23005fa8:	854e                	mv	a0,s3
+23005faa:	46b9                	li	a3,14
+23005fac:	4601                	li	a2,0
+23005fae:	08000593          	li	a1,128
+23005fb2:	a881                	j	23006002 <usb_dc_isr+0x15e>
     if (USB_Get_IntStatus(USB_INT_EP0_OUT_DONE)) {
-23005f94:	4525                	li	a0,9
-23005f96:	043010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005f9a:	e125                	bnez	a0,23005ffa <usb_dc_isr+0x176>
+23005fb4:	4525                	li	a0,9
+23005fb6:	023010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005fba:	e125                	bnez	a0,2300601a <usb_dc_isr+0x176>
     if (USB_Get_IntStatus(USB_INT_SOF)) {
-23005f9c:	03d010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005fa0:	ed3d                	bnez	a0,2300601e <usb_dc_isr+0x19a>
+23005fbc:	01d010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005fc0:	ed3d                	bnez	a0,2300603e <usb_dc_isr+0x19a>
     if (USB_Get_IntStatus(USB_INT_RESET)) {
-23005fa2:	4505                	li	a0,1
-23005fa4:	035010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005fa8:	ed49                	bnez	a0,23006042 <usb_dc_isr+0x1be>
+23005fc2:	4505                	li	a0,1
+23005fc4:	015010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005fc8:	ed49                	bnez	a0,23006062 <usb_dc_isr+0x1be>
     if (USB_Get_IntStatus(USB_INT_RESET_END)) {
-23005faa:	456d                	li	a0,27
-23005fac:	02d010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005fb0:	e13d                	bnez	a0,23006016 <usb_dc_isr+0x192>
+23005fca:	456d                	li	a0,27
+23005fcc:	00d010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005fd0:	e13d                	bnez	a0,23006036 <usb_dc_isr+0x192>
     if (USB_Get_IntStatus(USB_INT_VBUS_TGL)) {
-23005fb2:	4509                	li	a0,2
-23005fb4:	025010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
-23005fb8:	d155                	beqz	a0,23005f5c <usb_dc_isr+0xd8>
+23005fd2:	4509                	li	a0,2
+23005fd4:	005010ef          	jal	ra,230077d8 <USB_Get_IntStatus>
+23005fd8:	d155                	beqz	a0,23005f7c <usb_dc_isr+0xd8>
 }
-23005fba:	4462                	lw	s0,24(sp)
-23005fbc:	40f2                	lw	ra,28(sp)
-23005fbe:	44d2                	lw	s1,20(sp)
-23005fc0:	4942                	lw	s2,16(sp)
-23005fc2:	49b2                	lw	s3,12(sp)
-23005fc4:	4a22                	lw	s4,8(sp)
-23005fc6:	4a92                	lw	s5,4(sp)
+23005fda:	4462                	lw	s0,24(sp)
+23005fdc:	40f2                	lw	ra,28(sp)
+23005fde:	44d2                	lw	s1,20(sp)
+23005fe0:	4942                	lw	s2,16(sp)
+23005fe2:	49b2                	lw	s3,12(sp)
+23005fe4:	4a22                	lw	s4,8(sp)
+23005fe6:	4a92                	lw	s5,4(sp)
         USB_Clr_IntStatus(USB_INT_VBUS_TGL);
-23005fc8:	4509                	li	a0,2
+23005fe8:	4509                	li	a0,2
 }
-23005fca:	6105                	addi	sp,sp,32
+23005fea:	6105                	addi	sp,sp,32
         USB_Clr_IntStatus(USB_INT_VBUS_TGL);
-23005fcc:	0390106f          	j	23007804 <USB_Clr_IntStatus>
+23005fec:	0190106f          	j	23007804 <USB_Clr_IntStatus>
         USB_Clr_IntStatus(USB_INT_EP0_SETUP_DONE);
-23005fd0:	4515                	li	a0,5
-23005fd2:	033010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23005ff0:	4515                	li	a0,5
+23005ff2:	013010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_SETUP_NOTIFY);
-23005fd6:	0349a783          	lw	a5,52(s3)
-23005fda:	854e                	mv	a0,s3
-23005fdc:	46b5                	li	a3,13
-23005fde:	4601                	li	a2,0
-23005fe0:	4581                	li	a1,0
+23005ff6:	0349a783          	lw	a5,52(s3)
+23005ffa:	854e                	mv	a0,s3
+23005ffc:	46b5                	li	a3,13
+23005ffe:	4601                	li	a2,0
+23006000:	4581                	li	a1,0
         device->parent.callback(&device->parent, (void *)0x80, 0, USB_DC_EVENT_EP0_IN_NOTIFY);
-23005fe2:	9782                	jalr	a5
+23006002:	9782                	jalr	a5
 }
-23005fe4:	4462                	lw	s0,24(sp)
-23005fe6:	40f2                	lw	ra,28(sp)
-23005fe8:	44d2                	lw	s1,20(sp)
-23005fea:	4942                	lw	s2,16(sp)
-23005fec:	49b2                	lw	s3,12(sp)
-23005fee:	4a22                	lw	s4,8(sp)
-23005ff0:	4a92                	lw	s5,4(sp)
+23006004:	4462                	lw	s0,24(sp)
+23006006:	40f2                	lw	ra,28(sp)
+23006008:	44d2                	lw	s1,20(sp)
+2300600a:	4942                	lw	s2,16(sp)
+2300600c:	49b2                	lw	s3,12(sp)
+2300600e:	4a22                	lw	s4,8(sp)
+23006010:	4a92                	lw	s5,4(sp)
         USB_Set_EPx_Rdy(EP_ID0);
-23005ff2:	4501                	li	a0,0
+23006012:	4501                	li	a0,0
 }
-23005ff4:	6105                	addi	sp,sp,32
+23006014:	6105                	addi	sp,sp,32
         USB_Set_EPx_Rdy(EP_ID0);
-23005ff6:	2a40106f          	j	2300729a <USB_Set_EPx_Rdy>
+23006016:	2840106f          	j	2300729a <USB_Set_EPx_Rdy>
         if (!USB_Is_EPx_RDY_Free(0)) {
-23005ffa:	4501                	li	a0,0
-23005ffc:	3a2010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
-23006000:	dd31                	beqz	a0,23005f5c <usb_dc_isr+0xd8>
+2300601a:	4501                	li	a0,0
+2300601c:	382010ef          	jal	ra,2300739e <USB_Is_EPx_RDY_Free>
+23006020:	dd31                	beqz	a0,23005f7c <usb_dc_isr+0xd8>
         USB_Clr_IntStatus(USB_INT_EP0_OUT_DONE);
-23006002:	4525                	li	a0,9
-23006004:	001010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23006022:	4525                	li	a0,9
+23006024:	7e0010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         device->parent.callback(&device->parent, (void *)0x00, 0, USB_DC_EVENT_EP0_OUT_NOTIFY);
-23006008:	0349a783          	lw	a5,52(s3)
-2300600c:	854e                	mv	a0,s3
-2300600e:	46bd                	li	a3,15
-23006010:	4601                	li	a2,0
-23006012:	4581                	li	a1,0
-23006014:	b7f9                	j	23005fe2 <usb_dc_isr+0x15e>
+23006028:	0349a783          	lw	a5,52(s3)
+2300602c:	854e                	mv	a0,s3
+2300602e:	46bd                	li	a3,15
+23006030:	4601                	li	a2,0
+23006032:	4581                	li	a1,0
+23006034:	b7f9                	j	23006002 <usb_dc_isr+0x15e>
         USB_Clr_IntStatus(USB_INT_RESET_END);
-23006016:	456d                	li	a0,27
-23006018:	7ec010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23006036:	456d                	li	a0,27
+23006038:	7cc010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         USB_Set_EPx_Rdy(EP_ID0);
-2300601c:	b7e1                	j	23005fe4 <usb_dc_isr+0x160>
+2300603c:	b7e1                	j	23006004 <usb_dc_isr+0x160>
         USB_Clr_IntStatus(USB_INT_SOF);
-2300601e:	4501                	li	a0,0
-23006020:	7e4010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+2300603e:	4501                	li	a0,0
+23006040:	7c4010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_SOF);
-23006024:	0349a783          	lw	a5,52(s3)
-23006028:	4689                	li	a3,2
+23006044:	0349a783          	lw	a5,52(s3)
+23006048:	4689                	li	a3,2
 }
-2300602a:	4462                	lw	s0,24(sp)
-2300602c:	40f2                	lw	ra,28(sp)
-2300602e:	44d2                	lw	s1,20(sp)
-23006030:	4942                	lw	s2,16(sp)
-23006032:	4a22                	lw	s4,8(sp)
-23006034:	4a92                	lw	s5,4(sp)
+2300604a:	4462                	lw	s0,24(sp)
+2300604c:	40f2                	lw	ra,28(sp)
+2300604e:	44d2                	lw	s1,20(sp)
+23006050:	4942                	lw	s2,16(sp)
+23006052:	4a22                	lw	s4,8(sp)
+23006054:	4a92                	lw	s5,4(sp)
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_RESET);
-23006036:	854e                	mv	a0,s3
+23006056:	854e                	mv	a0,s3
 }
-23006038:	49b2                	lw	s3,12(sp)
+23006058:	49b2                	lw	s3,12(sp)
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_RESET);
-2300603a:	4601                	li	a2,0
-2300603c:	4581                	li	a1,0
+2300605a:	4601                	li	a2,0
+2300605c:	4581                	li	a1,0
 }
-2300603e:	6105                	addi	sp,sp,32
+2300605e:	6105                	addi	sp,sp,32
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_RESET);
-23006040:	8782                	jr	a5
+23006060:	8782                	jr	a5
         USB_Clr_IntStatus(USB_INT_RESET);
-23006042:	4505                	li	a0,1
-23006044:	7c0010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
+23006062:	4505                	li	a0,1
+23006064:	7a0010ef          	jal	ra,23007804 <USB_Clr_IntStatus>
         device->parent.callback(&device->parent, NULL, 0, USB_DC_EVENT_RESET);
-23006048:	0349a783          	lw	a5,52(s3)
-2300604c:	4685                	li	a3,1
-2300604e:	bff1                	j	2300602a <usb_dc_isr+0x1a6>
+23006068:	0349a783          	lw	a5,52(s3)
+2300606c:	4685                	li	a3,1
+2300606e:	bff1                	j	2300604a <usb_dc_isr+0x1a6>
 
-23006050 <USB_FS_IRQ>:
+23006070 <USB_FS_IRQ>:
  * @brief
  *
  */
 void USB_FS_IRQ(void)
 {
     usb_dc_isr(&usb_fs_device);
-23006050:	42018537          	lui	a0,0x42018
-23006054:	5d450513          	addi	a0,a0,1492 # 420185d4 <usb_fs_device>
-23006058:	b535                	j	23005e84 <usb_dc_isr>
+23006070:	42018537          	lui	a0,0x42018
+23006074:	5d450513          	addi	a0,a0,1492 # 420185d4 <usb_fs_device>
+23006078:	b535                	j	23005ea4 <usb_dc_isr>
 
-2300605a <start_load>:
+2300607a <start_load>:
 //extern uint32_t __copy_table_end__;
 //extern uint32_t __zero_table_start__;
 //extern uint32_t __zero_table_end__;
 
 void start_load(void)
 {
-2300605a:	1141                	addi	sp,sp,-16
+2300607a:	1141                	addi	sp,sp,-16
 
     /* Copy ITCM code */
     pSrc = &__itcm_load_addr;
     pDest = &__tcm_code_start__;
 
     for (; pDest < &__tcm_code_end__;) {
-2300605c:	42014537          	lui	a0,0x42014
-23006060:	420157b7          	lui	a5,0x42015
+2300607c:	42014537          	lui	a0,0x42014
+23006080:	420157b7          	lui	a5,0x42015
 {
-23006064:	c606                	sw	ra,12(sp)
+23006084:	c606                	sw	ra,12(sp)
     for (; pDest < &__tcm_code_end__;) {
-23006066:	00050713          	mv	a4,a0
-2300606a:	b1c78793          	addi	a5,a5,-1252 # 42014b1c <cmd_data>
-2300606e:	00f77f63          	bgeu	a4,a5,2300608c <start_load+0x32>
+23006086:	00050713          	mv	a4,a0
+2300608a:	b1c78793          	addi	a5,a5,-1252 # 42014b1c <cmd_data>
+2300608e:	00f77f63          	bgeu	a4,a5,230060ac <start_load+0x32>
         *pDest++ = *pSrc++;
-23006072:	fff78613          	addi	a2,a5,-1
-23006076:	8e19                	sub	a2,a2,a4
-23006078:	9a71                	andi	a2,a2,-4
-2300607a:	2303c5b7          	lui	a1,0x2303c
-2300607e:	0611                	addi	a2,a2,4
-23006080:	3b458593          	addi	a1,a1,948 # 2303c3b4 <__itcm_load_addr>
-23006084:	00050513          	mv	a0,a0
-23006088:	751010ef          	jal	ra,23007fd8 <memcpy>
+23006092:	fff78613          	addi	a2,a5,-1
+23006096:	8e19                	sub	a2,a2,a4
+23006098:	9a71                	andi	a2,a2,-4
+2300609a:	2303c5b7          	lui	a1,0x2303c
+2300609e:	0611                	addi	a2,a2,4
+230060a0:	3b458593          	addi	a1,a1,948 # 2303c3b4 <__itcm_load_addr>
+230060a4:	00050513          	mv	a0,a0
+230060a8:	731010ef          	jal	ra,23007fd8 <memcpy>
 
     /* Copy DTCM code */
     pSrc = &__dtcm_load_addr;
     pDest = &__tcm_data_start__;
 
     for (; pDest < &__tcm_data_end__;) {
-2300608c:	42015537          	lui	a0,0x42015
-23006090:	420157b7          	lui	a5,0x42015
-23006094:	b1c50713          	addi	a4,a0,-1252 # 42014b1c <cmd_data>
-23006098:	b4078793          	addi	a5,a5,-1216 # 42014b40 <__tcm_data_end__>
-2300609c:	00f77f63          	bgeu	a4,a5,230060ba <start_load+0x60>
+230060ac:	42015537          	lui	a0,0x42015
+230060b0:	420157b7          	lui	a5,0x42015
+230060b4:	b1c50713          	addi	a4,a0,-1252 # 42014b1c <cmd_data>
+230060b8:	b4078793          	addi	a5,a5,-1216 # 42014b40 <__tcm_data_end__>
+230060bc:	00f77f63          	bgeu	a4,a5,230060da <start_load+0x60>
         *pDest++ = *pSrc++;
-230060a0:	fff78613          	addi	a2,a5,-1
-230060a4:	8e19                	sub	a2,a2,a4
-230060a6:	9a71                	andi	a2,a2,-4
-230060a8:	2303d5b7          	lui	a1,0x2303d
-230060ac:	0611                	addi	a2,a2,4
-230060ae:	ed058593          	addi	a1,a1,-304 # 2303ced0 <__dtcm_load_addr>
-230060b2:	b1c50513          	addi	a0,a0,-1252
-230060b6:	723010ef          	jal	ra,23007fd8 <memcpy>
+230060c0:	fff78613          	addi	a2,a5,-1
+230060c4:	8e19                	sub	a2,a2,a4
+230060c6:	9a71                	andi	a2,a2,-4
+230060c8:	2303d5b7          	lui	a1,0x2303d
+230060cc:	0611                	addi	a2,a2,4
+230060ce:	ed058593          	addi	a1,a1,-304 # 2303ced0 <__dtcm_load_addr>
+230060d2:	b1c50513          	addi	a0,a0,-1252
+230060d6:	703010ef          	jal	ra,23007fd8 <memcpy>
 
     /* BF Add system RAM data copy */
     pSrc = &__system_ram_load_addr;
     pDest = &__system_ram_data_start__;
 
     for (; pDest < &__system_ram_data_end__;) {
-230060ba:	42016537          	lui	a0,0x42016
-230060be:	420167b7          	lui	a5,0x42016
-230060c2:	00050713          	mv	a4,a0
-230060c6:	00078793          	mv	a5,a5
-230060ca:	00f77f63          	bgeu	a4,a5,230060e8 <start_load+0x8e>
+230060da:	42016537          	lui	a0,0x42016
+230060de:	420167b7          	lui	a5,0x42016
+230060e2:	00050713          	mv	a4,a0
+230060e6:	00078793          	mv	a5,a5
+230060ea:	00f77f63          	bgeu	a4,a5,23006108 <start_load+0x8e>
         *pDest++ = *pSrc++;
-230060ce:	fff78613          	addi	a2,a5,-1 # 42015fff <__StackLimit+0xfff>
-230060d2:	8e19                	sub	a2,a2,a4
-230060d4:	9a71                	andi	a2,a2,-4
-230060d6:	2303d5b7          	lui	a1,0x2303d
-230060da:	0611                	addi	a2,a2,4
-230060dc:	ef458593          	addi	a1,a1,-268 # 2303cef4 <__ram_load_addr>
-230060e0:	00050513          	mv	a0,a0
-230060e4:	6f5010ef          	jal	ra,23007fd8 <memcpy>
+230060ee:	fff78613          	addi	a2,a5,-1 # 42015fff <__StackLimit+0xfff>
+230060f2:	8e19                	sub	a2,a2,a4
+230060f4:	9a71                	andi	a2,a2,-4
+230060f6:	2303d5b7          	lui	a1,0x2303d
+230060fa:	0611                	addi	a2,a2,4
+230060fc:	ef458593          	addi	a1,a1,-268 # 2303cef4 <__ram_load_addr>
+23006100:	00050513          	mv	a0,a0
+23006104:	6d5010ef          	jal	ra,23007fd8 <memcpy>
 
     /* BF Add OCARAM data copy */
     pSrc = &__ram_load_addr;
     pDest = &__ram_data_start__;
 
     for (; pDest < &__ram_data_end__;) {
-230060e8:	42016537          	lui	a0,0x42016
-230060ec:	00050713          	mv	a4,a0
-230060f0:	00418793          	addi	a5,gp,4 # 42016804 <recv_fifo>
-230060f4:	00f77f63          	bgeu	a4,a5,23006112 <start_load+0xb8>
+23006108:	42016537          	lui	a0,0x42016
+2300610c:	00050713          	mv	a4,a0
+23006110:	00418793          	addi	a5,gp,4 # 42016804 <recv_fifo>
+23006114:	00f77f63          	bgeu	a4,a5,23006132 <start_load+0xb8>
         *pDest++ = *pSrc++;
-230060f8:	fff78613          	addi	a2,a5,-1
-230060fc:	8e19                	sub	a2,a2,a4
-230060fe:	9a71                	andi	a2,a2,-4
-23006100:	2303d5b7          	lui	a1,0x2303d
-23006104:	0611                	addi	a2,a2,4
-23006106:	ef458593          	addi	a1,a1,-268 # 2303cef4 <__ram_load_addr>
-2300610a:	00050513          	mv	a0,a0
-2300610e:	6cb010ef          	jal	ra,23007fd8 <memcpy>
+23006118:	fff78613          	addi	a2,a5,-1
+2300611c:	8e19                	sub	a2,a2,a4
+2300611e:	9a71                	andi	a2,a2,-4
+23006120:	2303d5b7          	lui	a1,0x2303d
+23006124:	0611                	addi	a2,a2,4
+23006126:	ef458593          	addi	a1,a1,-268 # 2303cef4 <__ram_load_addr>
+2300612a:	00050513          	mv	a0,a0
+2300612e:	6ab010ef          	jal	ra,23007fd8 <memcpy>
      *
      *  Both addresses must be aligned to 4 bytes boundary.
      */
     pDest = &__bss_start__;
 
     for (; pDest < &__bss_end__;) {
-23006112:	4201b7b7          	lui	a5,0x4201b
-23006116:	17018713          	addi	a4,gp,368 # 42016970 <ble_init_stack.4>
-2300611a:	a1478793          	addi	a5,a5,-1516 # 4201aa14 <__HeapBase>
-2300611e:	00f77e63          	bgeu	a4,a5,2300613a <start_load+0xe0>
+23006132:	4201b7b7          	lui	a5,0x4201b
+23006136:	17018713          	addi	a4,gp,368 # 42016970 <ble_init_stack.4>
+2300613a:	a1478793          	addi	a5,a5,-1516 # 4201aa14 <__HeapBase>
+2300613e:	00f77e63          	bgeu	a4,a5,2300615a <start_load+0xe0>
         *pDest++ = 0ul;
-23006122:	fff78613          	addi	a2,a5,-1
+23006142:	fff78613          	addi	a2,a5,-1
     }
 
 #endif
-23006126:	40b2                	lw	ra,12(sp)
+23006146:	40b2                	lw	ra,12(sp)
         *pDest++ = 0ul;
-23006128:	8e19                	sub	a2,a2,a4
-2300612a:	9a71                	andi	a2,a2,-4
-2300612c:	0611                	addi	a2,a2,4
-2300612e:	4581                	li	a1,0
-23006130:	17018513          	addi	a0,gp,368 # 42016970 <ble_init_stack.4>
-23006134:	0141                	addi	sp,sp,16
+23006148:	8e19                	sub	a2,a2,a4
+2300614a:	9a71                	andi	a2,a2,-4
+2300614c:	0611                	addi	a2,a2,4
+2300614e:	4581                	li	a1,0
+23006150:	17018513          	addi	a0,gp,368 # 42016970 <ble_init_stack.4>
+23006154:	0141                	addi	sp,sp,16
         *pDest++ = 0ul;
-23006136:	94efa06f          	j	23000284 <memset>
-2300613a:	40b2                	lw	ra,12(sp)
-2300613c:	0141                	addi	sp,sp,16
-2300613e:	8082                	ret
+23006156:	92efa06f          	j	23000284 <memset>
+2300615a:	40b2                	lw	ra,12(sp)
+2300615c:	0141                	addi	sp,sp,16
+2300615e:	8082                	ret
 
-23006140 <Trap_Handler>:
+23006160 <Trap_Handler>:
     unsigned long cause;
     unsigned long epc;
     unsigned long tval;
     uint8_t isecall = 0;
 
     MSG("Trap_Handler\r\n");
-23006140:	23035537          	lui	a0,0x23035
+23006160:	23035537          	lui	a0,0x23035
 {
-23006144:	1141                	addi	sp,sp,-16
+23006164:	1141                	addi	sp,sp,-16
     MSG("Trap_Handler\r\n");
-23006146:	0e050513          	addi	a0,a0,224 # 230350e0 <af_pin_table+0x3c>
+23006166:	0e050513          	addi	a0,a0,224 # 230350e0 <af_pin_table+0x3c>
 {
-2300614a:	c606                	sw	ra,12(sp)
-2300614c:	c422                	sw	s0,8(sp)
-2300614e:	c226                	sw	s1,4(sp)
+2300616a:	c606                	sw	ra,12(sp)
+2300616c:	c422                	sw	s0,8(sp)
+2300616e:	c226                	sw	s1,4(sp)
     MSG("Trap_Handler\r\n");
-23006150:	cc3fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006170:	cc3fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
 
     cause = read_csr(mcause);
-23006154:	34202473          	csrr	s0,mcause
+23006174:	34202473          	csrr	s0,mcause
     MSG("mcause=%08x\r\n", (uint32_t)cause);
-23006158:	23035537          	lui	a0,0x23035
-2300615c:	85a2                	mv	a1,s0
-2300615e:	0f050513          	addi	a0,a0,240 # 230350f0 <af_pin_table+0x4c>
-23006162:	cb1fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006178:	23035537          	lui	a0,0x23035
+2300617c:	85a2                	mv	a1,s0
+2300617e:	0f050513          	addi	a0,a0,240 # 230350f0 <af_pin_table+0x4c>
+23006182:	cb1fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     epc = read_csr(mepc);
-23006166:	341024f3          	csrr	s1,mepc
+23006186:	341024f3          	csrr	s1,mepc
     MSG("mepc:%08x\r\n", (uint32_t)epc);
-2300616a:	23035537          	lui	a0,0x23035
-2300616e:	85a6                	mv	a1,s1
-23006170:	10050513          	addi	a0,a0,256 # 23035100 <af_pin_table+0x5c>
-23006174:	c9ffd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300618a:	23035537          	lui	a0,0x23035
+2300618e:	85a6                	mv	a1,s1
+23006190:	10050513          	addi	a0,a0,256 # 23035100 <af_pin_table+0x5c>
+23006194:	c9ffd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     tval = read_csr(mtval);
-23006178:	343025f3          	csrr	a1,mtval
+23006198:	343025f3          	csrr	a1,mtval
     MSG("mtval:%08x\r\n", (uint32_t)tval);
-2300617c:	23035537          	lui	a0,0x23035
-23006180:	10c50513          	addi	a0,a0,268 # 2303510c <af_pin_table+0x68>
-23006184:	c8ffd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300619c:	23035537          	lui	a0,0x23035
+230061a0:	10c50513          	addi	a0,a0,268 # 2303510c <af_pin_table+0x68>
+230061a4:	c8ffd0ef          	jal	ra,23003e32 <bflb_platform_printf>
 
     cause = (cause & 0x3ff);
-23006188:	3ff47593          	andi	a1,s0,1023
+230061a8:	3ff47593          	andi	a1,s0,1023
 
     switch (cause) {
-2300618c:	4795                	li	a5,5
-2300618e:	08f58463          	beq	a1,a5,23006216 <Trap_Handler+0xd6>
-23006192:	02b7ef63          	bltu	a5,a1,230061d0 <Trap_Handler+0x90>
-23006196:	478d                	li	a5,3
-23006198:	08f58663          	beq	a1,a5,23006224 <Trap_Handler+0xe4>
-2300619c:	3fc47413          	andi	s0,s0,1020
-230061a0:	c819                	beqz	s0,230061b6 <Trap_Handler+0x76>
-230061a2:	4791                	li	a5,4
-230061a4:	08f59763          	bne	a1,a5,23006232 <Trap_Handler+0xf2>
+230061ac:	4795                	li	a5,5
+230061ae:	08f58463          	beq	a1,a5,23006236 <Trap_Handler+0xd6>
+230061b2:	02b7ef63          	bltu	a5,a1,230061f0 <Trap_Handler+0x90>
+230061b6:	478d                	li	a5,3
+230061b8:	08f58663          	beq	a1,a5,23006244 <Trap_Handler+0xe4>
+230061bc:	3fc47413          	andi	s0,s0,1020
+230061c0:	c819                	beqz	s0,230061d6 <Trap_Handler+0x76>
+230061c2:	4791                	li	a5,4
+230061c4:	08f59763          	bne	a1,a5,23006252 <Trap_Handler+0xf2>
         case 3:
             MSG("Breakpoint\r\n");
             break;
 
         case 4:
             MSG("Load address misaligned\r\n");
-230061a8:	23035537          	lui	a0,0x23035
-230061ac:	16050513          	addi	a0,a0,352 # 23035160 <af_pin_table+0xbc>
-230061b0:	c63fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230061c8:	23035537          	lui	a0,0x23035
+230061cc:	16050513          	addi	a0,a0,352 # 23035160 <af_pin_table+0xbc>
+230061d0:	c63fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
             write_csr(mepc, epc);
             break;
     }
 
     if (!isecall) {
         while (1)
-230061b4:	a001                	j	230061b4 <Trap_Handler+0x74>
+230061d4:	a001                	j	230061d4 <Trap_Handler+0x74>
     switch (cause) {
-230061b6:	4785                	li	a5,1
-230061b8:	08f58763          	beq	a1,a5,23006246 <Trap_Handler+0x106>
-230061bc:	4789                	li	a5,2
-230061be:	06f59a63          	bne	a1,a5,23006232 <Trap_Handler+0xf2>
+230061d6:	4785                	li	a5,1
+230061d8:	08f58763          	beq	a1,a5,23006266 <Trap_Handler+0x106>
+230061dc:	4789                	li	a5,2
+230061de:	06f59a63          	bne	a1,a5,23006252 <Trap_Handler+0xf2>
             MSG("Illegal instruction\r\n");
-230061c2:	23035537          	lui	a0,0x23035
-230061c6:	13850513          	addi	a0,a0,312 # 23035138 <af_pin_table+0x94>
-230061ca:	c49fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230061e2:	23035537          	lui	a0,0x23035
+230061e6:	13850513          	addi	a0,a0,312 # 23035138 <af_pin_table+0x94>
+230061ea:	c49fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-230061ce:	b7dd                	j	230061b4 <Trap_Handler+0x74>
+230061ee:	b7dd                	j	230061d4 <Trap_Handler+0x74>
     switch (cause) {
-230061d0:	47a1                	li	a5,8
-230061d2:	08f58163          	beq	a1,a5,23006254 <Trap_Handler+0x114>
-230061d6:	02b7f363          	bgeu	a5,a1,230061fc <Trap_Handler+0xbc>
-230061da:	47ad                	li	a5,11
-230061dc:	04f59b63          	bne	a1,a5,23006232 <Trap_Handler+0xf2>
+230061f0:	47a1                	li	a5,8
+230061f2:	08f58163          	beq	a1,a5,23006274 <Trap_Handler+0x114>
+230061f6:	02b7f363          	bgeu	a5,a1,2300621c <Trap_Handler+0xbc>
+230061fa:	47ad                	li	a5,11
+230061fc:	04f59b63          	bne	a1,a5,23006252 <Trap_Handler+0xf2>
             MSG("Environment call from M-mode\r\n");
-230061e0:	23035537          	lui	a0,0x23035
-230061e4:	1ec50513          	addi	a0,a0,492 # 230351ec <af_pin_table+0x148>
-230061e8:	c2bfd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006200:	23035537          	lui	a0,0x23035
+23006204:	1ec50513          	addi	a0,a0,492 # 230351ec <af_pin_table+0x148>
+23006208:	c2bfd0ef          	jal	ra,23003e32 <bflb_platform_printf>
             epc += 4;
-230061ec:	0491                	addi	s1,s1,4
+2300620c:	0491                	addi	s1,s1,4
             write_csr(mepc, epc);
-230061ee:	34149073          	csrw	mepc,s1
+2300620e:	34149073          	csrw	mepc,s1
             ;
     }
 }
-230061f2:	40b2                	lw	ra,12(sp)
-230061f4:	4422                	lw	s0,8(sp)
-230061f6:	4492                	lw	s1,4(sp)
-230061f8:	0141                	addi	sp,sp,16
-230061fa:	8082                	ret
+23006212:	40b2                	lw	ra,12(sp)
+23006214:	4422                	lw	s0,8(sp)
+23006216:	4492                	lw	s1,4(sp)
+23006218:	0141                	addi	sp,sp,16
+2300621a:	8082                	ret
     switch (cause) {
-230061fc:	4799                	li	a5,6
-230061fe:	06f58563          	beq	a1,a5,23006268 <Trap_Handler+0x128>
-23006202:	479d                	li	a5,7
-23006204:	02f59763          	bne	a1,a5,23006232 <Trap_Handler+0xf2>
+2300621c:	4799                	li	a5,6
+2300621e:	06f58563          	beq	a1,a5,23006288 <Trap_Handler+0x128>
+23006222:	479d                	li	a5,7
+23006224:	02f59763          	bne	a1,a5,23006252 <Trap_Handler+0xf2>
             MSG("Store/AMO access fault\r\n");
-23006208:	23035537          	lui	a0,0x23035
-2300620c:	1b050513          	addi	a0,a0,432 # 230351b0 <af_pin_table+0x10c>
-23006210:	c03fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006228:	23035537          	lui	a0,0x23035
+2300622c:	1b050513          	addi	a0,a0,432 # 230351b0 <af_pin_table+0x10c>
+23006230:	c03fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-23006214:	b745                	j	230061b4 <Trap_Handler+0x74>
+23006234:	b745                	j	230061d4 <Trap_Handler+0x74>
             MSG("Load access fault\r\n");
-23006216:	23035537          	lui	a0,0x23035
-2300621a:	17c50513          	addi	a0,a0,380 # 2303517c <af_pin_table+0xd8>
-2300621e:	bf5fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006236:	23035537          	lui	a0,0x23035
+2300623a:	17c50513          	addi	a0,a0,380 # 2303517c <af_pin_table+0xd8>
+2300623e:	bf5fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-23006222:	bf49                	j	230061b4 <Trap_Handler+0x74>
+23006242:	bf49                	j	230061d4 <Trap_Handler+0x74>
             MSG("Breakpoint\r\n");
-23006224:	23035537          	lui	a0,0x23035
-23006228:	15050513          	addi	a0,a0,336 # 23035150 <af_pin_table+0xac>
-2300622c:	be7fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006244:	23035537          	lui	a0,0x23035
+23006248:	15050513          	addi	a0,a0,336 # 23035150 <af_pin_table+0xac>
+2300624c:	be7fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-23006230:	b751                	j	230061b4 <Trap_Handler+0x74>
+23006250:	b751                	j	230061d4 <Trap_Handler+0x74>
             MSG("Cause num=%d\r\n", (uint32_t)cause);
-23006232:	23035537          	lui	a0,0x23035
-23006236:	20c50513          	addi	a0,a0,524 # 2303520c <af_pin_table+0x168>
-2300623a:	bd9fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006252:	23035537          	lui	a0,0x23035
+23006256:	20c50513          	addi	a0,a0,524 # 2303520c <af_pin_table+0x168>
+2300625a:	bd9fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
             epc += 4;
-2300623e:	0491                	addi	s1,s1,4
+2300625e:	0491                	addi	s1,s1,4
             write_csr(mepc, epc);
-23006240:	34149073          	csrw	mepc,s1
+23006260:	34149073          	csrw	mepc,s1
     if (!isecall) {
-23006244:	bf85                	j	230061b4 <Trap_Handler+0x74>
+23006264:	bf85                	j	230061d4 <Trap_Handler+0x74>
             MSG("Instruction access fault\r\n");
-23006246:	23035537          	lui	a0,0x23035
-2300624a:	11c50513          	addi	a0,a0,284 # 2303511c <af_pin_table+0x78>
-2300624e:	bc5fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006266:	23035537          	lui	a0,0x23035
+2300626a:	11c50513          	addi	a0,a0,284 # 2303511c <af_pin_table+0x78>
+2300626e:	bc5fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-23006252:	b78d                	j	230061b4 <Trap_Handler+0x74>
+23006272:	b78d                	j	230061d4 <Trap_Handler+0x74>
             MSG("Environment call from U-mode\r\n");
-23006254:	23035537          	lui	a0,0x23035
-23006258:	1cc50513          	addi	a0,a0,460 # 230351cc <af_pin_table+0x128>
-2300625c:	bb7fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006274:	23035537          	lui	a0,0x23035
+23006278:	1cc50513          	addi	a0,a0,460 # 230351cc <af_pin_table+0x128>
+2300627c:	bb7fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
             epc += 4;
-23006260:	0491                	addi	s1,s1,4
+23006280:	0491                	addi	s1,s1,4
             write_csr(mepc, epc);
-23006262:	34149073          	csrw	mepc,s1
+23006282:	34149073          	csrw	mepc,s1
     if (!isecall) {
-23006266:	b7b9                	j	230061b4 <Trap_Handler+0x74>
+23006286:	b7b9                	j	230061d4 <Trap_Handler+0x74>
             MSG("Store/AMO address misaligned\r\n");
-23006268:	23035537          	lui	a0,0x23035
-2300626c:	19050513          	addi	a0,a0,400 # 23035190 <af_pin_table+0xec>
-23006270:	ba3fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23006288:	23035537          	lui	a0,0x23035
+2300628c:	19050513          	addi	a0,a0,400 # 23035190 <af_pin_table+0xec>
+23006290:	ba3fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!isecall) {
-23006274:	b781                	j	230061b4 <Trap_Handler+0x74>
+23006294:	b781                	j	230061d4 <Trap_Handler+0x74>
 
-23006276 <Interrupt_Handler>:
+23006296 <Interrupt_Handler>:
 
 void Interrupt_Handler(void)
 {
-23006276:	7179                	addi	sp,sp,-48
+23006296:	7179                	addi	sp,sp,-48
     pFunc interruptFun;
     uint32_t num = 0;
     volatile uint32_t ulMEPC = 0UL, ulMCAUSE = 0UL;
-23006278:	cc02                	sw	zero,24(sp)
+23006298:	cc02                	sw	zero,24(sp)
 {
-2300627a:	d606                	sw	ra,44(sp)
-2300627c:	d422                	sw	s0,40(sp)
+2300629a:	d606                	sw	ra,44(sp)
+2300629c:	d422                	sw	s0,40(sp)
     volatile uint32_t ulMEPC = 0UL, ulMCAUSE = 0UL;
-2300627e:	ce02                	sw	zero,28(sp)
+2300629e:	ce02                	sw	zero,28(sp)
 
     /* Store a few register values that might be useful when determining why this
     function was called. */
     __asm volatile("csrr %0, mepc"
-23006280:	341027f3          	csrr	a5,mepc
-23006284:	cc3e                	sw	a5,24(sp)
+230062a0:	341027f3          	csrr	a5,mepc
+230062a4:	cc3e                	sw	a5,24(sp)
                    : "=r"(ulMEPC));
     __asm volatile("csrr %0, mcause"
-23006286:	342027f3          	csrr	a5,mcause
-2300628a:	ce3e                	sw	a5,28(sp)
+230062a6:	342027f3          	csrr	a5,mcause
+230062aa:	ce3e                	sw	a5,28(sp)
                    : "=r"(ulMCAUSE));
 
     if ((ulMCAUSE & 0x80000000) == 0) {
-2300628c:	47f2                	lw	a5,28(sp)
-2300628e:	0207d663          	bgez	a5,230062ba <Interrupt_Handler+0x44>
+230062ac:	47f2                	lw	a5,28(sp)
+230062ae:	0207d663          	bgez	a5,230062da <Interrupt_Handler+0x44>
         /*Exception*/
         MSG("Exception should not be here\r\n");
     } else {
         num = ulMCAUSE & 0x3FF;
-23006292:	4472                	lw	s0,28(sp)
+230062b2:	4472                	lw	s0,28(sp)
 
         if (num < IRQn_LAST) {
-23006294:	04f00793          	li	a5,79
+230062b4:	04f00793          	li	a5,79
         num = ulMCAUSE & 0x3FF;
-23006298:	3ff47593          	andi	a1,s0,1023
+230062b8:	3ff47593          	andi	a1,s0,1023
         if (num < IRQn_LAST) {
-2300629c:	02b7e863          	bltu	a5,a1,230062cc <Interrupt_Handler+0x56>
+230062bc:	02b7e863          	bltu	a5,a1,230062ec <Interrupt_Handler+0x56>
             interruptFun = __Interrupt_Handlers[num];
-230062a0:	42018737          	lui	a4,0x42018
-230062a4:	00259793          	slli	a5,a1,0x2
-230062a8:	72c70713          	addi	a4,a4,1836 # 4201872c <__Interrupt_Handlers>
-230062ac:	97ba                	add	a5,a5,a4
-230062ae:	439c                	lw	a5,0(a5)
+230062c0:	42018737          	lui	a4,0x42018
+230062c4:	00259793          	slli	a5,a1,0x2
+230062c8:	72c70713          	addi	a4,a4,1836 # 4201872c <__Interrupt_Handlers>
+230062cc:	97ba                	add	a5,a5,a4
+230062ce:	439c                	lw	a5,0(a5)
 
             if (NULL != interruptFun) {
-230062b0:	c79d                	beqz	a5,230062de <Interrupt_Handler+0x68>
+230062d0:	c79d                	beqz	a5,230062fe <Interrupt_Handler+0x68>
             }
         } else {
             MSG("Unexpected interrupt num:%d\r\n", (unsigned int)num);
         }
     }
 }
-230062b2:	5422                	lw	s0,40(sp)
-230062b4:	50b2                	lw	ra,44(sp)
-230062b6:	6145                	addi	sp,sp,48
+230062d2:	5422                	lw	s0,40(sp)
+230062d4:	50b2                	lw	ra,44(sp)
+230062d6:	6145                	addi	sp,sp,48
                 interruptFun();
-230062b8:	8782                	jr	a5
+230062d8:	8782                	jr	a5
 }
-230062ba:	5422                	lw	s0,40(sp)
-230062bc:	50b2                	lw	ra,44(sp)
+230062da:	5422                	lw	s0,40(sp)
+230062dc:	50b2                	lw	ra,44(sp)
         MSG("Exception should not be here\r\n");
-230062be:	23035537          	lui	a0,0x23035
-230062c2:	21c50513          	addi	a0,a0,540 # 2303521c <af_pin_table+0x178>
-}
-230062c6:	6145                	addi	sp,sp,48
-        MSG("Exception should not be here\r\n");
-230062c8:	b4bfd06f          	j	23003e12 <bflb_platform_printf>
-}
-230062cc:	5422                	lw	s0,40(sp)
-230062ce:	50b2                	lw	ra,44(sp)
-            MSG("Unexpected interrupt num:%d\r\n", (unsigned int)num);
-230062d0:	23035537          	lui	a0,0x23035
-230062d4:	28850513          	addi	a0,a0,648 # 23035288 <af_pin_table+0x1e4>
-}
-230062d8:	6145                	addi	sp,sp,48
-            MSG("Unexpected interrupt num:%d\r\n", (unsigned int)num);
-230062da:	b39fd06f          	j	23003e12 <bflb_platform_printf>
-                MSG("Interrupt num:%d IRQHandler not installed\r\n", (unsigned int)num);
 230062de:	23035537          	lui	a0,0x23035
-230062e2:	23c50513          	addi	a0,a0,572 # 2303523c <af_pin_table+0x198>
-230062e6:	c62e                	sw	a1,12(sp)
-                if (num >= IRQ_NUM_BASE) {
-230062e8:	3f047413          	andi	s0,s0,1008
+230062e2:	21c50513          	addi	a0,a0,540 # 2303521c <af_pin_table+0x178>
+}
+230062e6:	6145                	addi	sp,sp,48
+        MSG("Exception should not be here\r\n");
+230062e8:	b4bfd06f          	j	23003e32 <bflb_platform_printf>
+}
+230062ec:	5422                	lw	s0,40(sp)
+230062ee:	50b2                	lw	ra,44(sp)
+            MSG("Unexpected interrupt num:%d\r\n", (unsigned int)num);
+230062f0:	23035537          	lui	a0,0x23035
+230062f4:	28850513          	addi	a0,a0,648 # 23035288 <af_pin_table+0x1e4>
+}
+230062f8:	6145                	addi	sp,sp,48
+            MSG("Unexpected interrupt num:%d\r\n", (unsigned int)num);
+230062fa:	b39fd06f          	j	23003e32 <bflb_platform_printf>
                 MSG("Interrupt num:%d IRQHandler not installed\r\n", (unsigned int)num);
-230062ec:	b27fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230062fe:	23035537          	lui	a0,0x23035
+23006302:	23c50513          	addi	a0,a0,572 # 2303523c <af_pin_table+0x198>
+23006306:	c62e                	sw	a1,12(sp)
                 if (num >= IRQ_NUM_BASE) {
-230062f0:	45b2                	lw	a1,12(sp)
-230062f2:	e011                	bnez	s0,230062f6 <Interrupt_Handler+0x80>
+23006308:	3f047413          	andi	s0,s0,1008
+                MSG("Interrupt num:%d IRQHandler not installed\r\n", (unsigned int)num);
+2300630c:	b27fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
+                if (num >= IRQ_NUM_BASE) {
+23006310:	45b2                	lw	a1,12(sp)
+23006312:	e011                	bnez	s0,23006316 <Interrupt_Handler+0x80>
                 while (1)
-230062f4:	a001                	j	230062f4 <Interrupt_Handler+0x7e>
+23006314:	a001                	j	23006314 <Interrupt_Handler+0x7e>
                     MSG("Peripheral Interrupt num:%d \r\n", (unsigned int)num - IRQ_NUM_BASE);
-230062f6:	23035537          	lui	a0,0x23035
-230062fa:	15c1                	addi	a1,a1,-16
-230062fc:	26850513          	addi	a0,a0,616 # 23035268 <af_pin_table+0x1c4>
-23006300:	b13fd0ef          	jal	ra,23003e12 <bflb_platform_printf>
-23006304:	bfc5                	j	230062f4 <Interrupt_Handler+0x7e>
+23006316:	23035537          	lui	a0,0x23035
+2300631a:	15c1                	addi	a1,a1,-16
+2300631c:	26850513          	addi	a0,a0,616 # 23035268 <af_pin_table+0x1c4>
+23006320:	b13fd0ef          	jal	ra,23003e32 <bflb_platform_printf>
+23006324:	bfc5                	j	23006314 <Interrupt_Handler+0x7e>
 
-23006306 <Interrupt_Handler_Stub>:
+23006326 <Interrupt_Handler_Stub>:
 {
     Trap_Handler();
 }
 
 void __IRQ Interrupt_Handler_Stub(void)
 {
-23006306:	7175                	addi	sp,sp,-144
-23006308:	c706                	sw	ra,140(sp)
-2300630a:	c516                	sw	t0,136(sp)
-2300630c:	c31a                	sw	t1,132(sp)
-2300630e:	c11e                	sw	t2,128(sp)
-23006310:	deaa                	sw	a0,124(sp)
-23006312:	dcae                	sw	a1,120(sp)
-23006314:	dab2                	sw	a2,116(sp)
-23006316:	d8b6                	sw	a3,112(sp)
-23006318:	d6ba                	sw	a4,108(sp)
-2300631a:	d4be                	sw	a5,104(sp)
-2300631c:	d2c2                	sw	a6,100(sp)
-2300631e:	d0c6                	sw	a7,96(sp)
-23006320:	cef2                	sw	t3,92(sp)
-23006322:	ccf6                	sw	t4,88(sp)
-23006324:	cafa                	sw	t5,84(sp)
-23006326:	c8fe                	sw	t6,80(sp)
-23006328:	e682                	fsw	ft0,76(sp)
-2300632a:	e486                	fsw	ft1,72(sp)
-2300632c:	e28a                	fsw	ft2,68(sp)
-2300632e:	e08e                	fsw	ft3,64(sp)
-23006330:	fe12                	fsw	ft4,60(sp)
-23006332:	fc16                	fsw	ft5,56(sp)
-23006334:	fa1a                	fsw	ft6,52(sp)
-23006336:	f81e                	fsw	ft7,48(sp)
-23006338:	f62a                	fsw	fa0,44(sp)
-2300633a:	f42e                	fsw	fa1,40(sp)
-2300633c:	f232                	fsw	fa2,36(sp)
-2300633e:	f036                	fsw	fa3,32(sp)
-23006340:	ee3a                	fsw	fa4,28(sp)
-23006342:	ec3e                	fsw	fa5,24(sp)
-23006344:	ea42                	fsw	fa6,20(sp)
-23006346:	e846                	fsw	fa7,16(sp)
-23006348:	e672                	fsw	ft8,12(sp)
-2300634a:	e476                	fsw	ft9,8(sp)
-2300634c:	e27a                	fsw	ft10,4(sp)
-2300634e:	e07e                	fsw	ft11,0(sp)
+23006326:	7175                	addi	sp,sp,-144
+23006328:	c706                	sw	ra,140(sp)
+2300632a:	c516                	sw	t0,136(sp)
+2300632c:	c31a                	sw	t1,132(sp)
+2300632e:	c11e                	sw	t2,128(sp)
+23006330:	deaa                	sw	a0,124(sp)
+23006332:	dcae                	sw	a1,120(sp)
+23006334:	dab2                	sw	a2,116(sp)
+23006336:	d8b6                	sw	a3,112(sp)
+23006338:	d6ba                	sw	a4,108(sp)
+2300633a:	d4be                	sw	a5,104(sp)
+2300633c:	d2c2                	sw	a6,100(sp)
+2300633e:	d0c6                	sw	a7,96(sp)
+23006340:	cef2                	sw	t3,92(sp)
+23006342:	ccf6                	sw	t4,88(sp)
+23006344:	cafa                	sw	t5,84(sp)
+23006346:	c8fe                	sw	t6,80(sp)
+23006348:	e682                	fsw	ft0,76(sp)
+2300634a:	e486                	fsw	ft1,72(sp)
+2300634c:	e28a                	fsw	ft2,68(sp)
+2300634e:	e08e                	fsw	ft3,64(sp)
+23006350:	fe12                	fsw	ft4,60(sp)
+23006352:	fc16                	fsw	ft5,56(sp)
+23006354:	fa1a                	fsw	ft6,52(sp)
+23006356:	f81e                	fsw	ft7,48(sp)
+23006358:	f62a                	fsw	fa0,44(sp)
+2300635a:	f42e                	fsw	fa1,40(sp)
+2300635c:	f232                	fsw	fa2,36(sp)
+2300635e:	f036                	fsw	fa3,32(sp)
+23006360:	ee3a                	fsw	fa4,28(sp)
+23006362:	ec3e                	fsw	fa5,24(sp)
+23006364:	ea42                	fsw	fa6,20(sp)
+23006366:	e846                	fsw	fa7,16(sp)
+23006368:	e672                	fsw	ft8,12(sp)
+2300636a:	e476                	fsw	ft9,8(sp)
+2300636c:	e27a                	fsw	ft10,4(sp)
+2300636e:	e07e                	fsw	ft11,0(sp)
     Interrupt_Handler();
-23006350:	371d                	jal	23006276 <Interrupt_Handler>
+23006370:	371d                	jal	23006296 <Interrupt_Handler>
 }
-23006352:	40ba                	lw	ra,140(sp)
-23006354:	42aa                	lw	t0,136(sp)
-23006356:	431a                	lw	t1,132(sp)
-23006358:	438a                	lw	t2,128(sp)
-2300635a:	5576                	lw	a0,124(sp)
-2300635c:	55e6                	lw	a1,120(sp)
-2300635e:	5656                	lw	a2,116(sp)
-23006360:	56c6                	lw	a3,112(sp)
-23006362:	5736                	lw	a4,108(sp)
-23006364:	57a6                	lw	a5,104(sp)
-23006366:	5816                	lw	a6,100(sp)
-23006368:	5886                	lw	a7,96(sp)
-2300636a:	4e76                	lw	t3,92(sp)
-2300636c:	4ee6                	lw	t4,88(sp)
-2300636e:	4f56                	lw	t5,84(sp)
-23006370:	4fc6                	lw	t6,80(sp)
-23006372:	6036                	flw	ft0,76(sp)
-23006374:	60a6                	flw	ft1,72(sp)
-23006376:	6116                	flw	ft2,68(sp)
-23006378:	6186                	flw	ft3,64(sp)
-2300637a:	7272                	flw	ft4,60(sp)
-2300637c:	72e2                	flw	ft5,56(sp)
-2300637e:	7352                	flw	ft6,52(sp)
-23006380:	73c2                	flw	ft7,48(sp)
-23006382:	7532                	flw	fa0,44(sp)
-23006384:	75a2                	flw	fa1,40(sp)
-23006386:	7612                	flw	fa2,36(sp)
-23006388:	7682                	flw	fa3,32(sp)
-2300638a:	6772                	flw	fa4,28(sp)
-2300638c:	67e2                	flw	fa5,24(sp)
-2300638e:	6852                	flw	fa6,20(sp)
-23006390:	68c2                	flw	fa7,16(sp)
-23006392:	6e32                	flw	ft8,12(sp)
-23006394:	6ea2                	flw	ft9,8(sp)
-23006396:	6f12                	flw	ft10,4(sp)
-23006398:	6f82                	flw	ft11,0(sp)
-2300639a:	6149                	addi	sp,sp,144
-2300639c:	30200073          	mret
-	...
+23006372:	40ba                	lw	ra,140(sp)
+23006374:	42aa                	lw	t0,136(sp)
+23006376:	431a                	lw	t1,132(sp)
+23006378:	438a                	lw	t2,128(sp)
+2300637a:	5576                	lw	a0,124(sp)
+2300637c:	55e6                	lw	a1,120(sp)
+2300637e:	5656                	lw	a2,116(sp)
+23006380:	56c6                	lw	a3,112(sp)
+23006382:	5736                	lw	a4,108(sp)
+23006384:	57a6                	lw	a5,104(sp)
+23006386:	5816                	lw	a6,100(sp)
+23006388:	5886                	lw	a7,96(sp)
+2300638a:	4e76                	lw	t3,92(sp)
+2300638c:	4ee6                	lw	t4,88(sp)
+2300638e:	4f56                	lw	t5,84(sp)
+23006390:	4fc6                	lw	t6,80(sp)
+23006392:	6036                	flw	ft0,76(sp)
+23006394:	60a6                	flw	ft1,72(sp)
+23006396:	6116                	flw	ft2,68(sp)
+23006398:	6186                	flw	ft3,64(sp)
+2300639a:	7272                	flw	ft4,60(sp)
+2300639c:	72e2                	flw	ft5,56(sp)
+2300639e:	7352                	flw	ft6,52(sp)
+230063a0:	73c2                	flw	ft7,48(sp)
+230063a2:	7532                	flw	fa0,44(sp)
+230063a4:	75a2                	flw	fa1,40(sp)
+230063a6:	7612                	flw	fa2,36(sp)
+230063a8:	7682                	flw	fa3,32(sp)
+230063aa:	6772                	flw	fa4,28(sp)
+230063ac:	67e2                	flw	fa5,24(sp)
+230063ae:	6852                	flw	fa6,20(sp)
+230063b0:	68c2                	flw	fa7,16(sp)
+230063b2:	6e32                	flw	ft8,12(sp)
+230063b4:	6ea2                	flw	ft9,8(sp)
+230063b6:	6f12                	flw	ft10,4(sp)
+230063b8:	6f82                	flw	ft11,0(sp)
+230063ba:	6149                	addi	sp,sp,144
+230063bc:	30200073          	mret
 
 230063c0 <Trap_Handler_Stub>:
 {
@@ -11488,7 +11499,7 @@ void __IRQ Interrupt_Handler_Stub(void)
 23006406:	e27a                	fsw	ft10,4(sp)
 23006408:	e07e                	fsw	ft11,0(sp)
     Trap_Handler();
-2300640a:	d37ff0ef          	jal	ra,23006140 <Trap_Handler>
+2300640a:	d57ff0ef          	jal	ra,23006160 <Trap_Handler>
 }
 2300640e:	40ba                	lw	ra,140(sp)
 23006410:	42aa                	lw	t0,136(sp)
@@ -11531,7 +11542,7 @@ void __IRQ Interrupt_Handler_Stub(void)
 	...
 
 2300647e <FreeRTOS_Interrupt_Handler>:
-2300647e:	df9ff06f          	j	23006276 <Interrupt_Handler>
+2300647e:	e19ff06f          	j	23006296 <Interrupt_Handler>
 
 23006482 <Interrupt_Handler_Register>:
     Interrupt_Handler();
@@ -16119,12 +16130,12 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23007fc4 <malloc>:
 23007fc4:	85aa                	mv	a1,a0
 23007fc6:	f981a503          	lw	a0,-104(gp) # 42016798 <_impure_ptr>
-23007fca:	90afc06f          	j	230040d4 <_malloc_r>
+23007fca:	92afc06f          	j	230040f4 <_malloc_r>
 
 23007fce <free>:
 23007fce:	85aa                	mv	a1,a0
 23007fd0:	f981a503          	lw	a0,-104(gp) # 42016798 <_impure_ptr>
-23007fd4:	97efc06f          	j	23004152 <_free_r>
+23007fd4:	99efc06f          	j	23004172 <_free_r>
 
 23007fd8 <memcpy>:
 23007fd8:	00a5c7b3          	xor	a5,a1,a0
@@ -17292,7 +17303,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23008bb8:	862e                	mv	a2,a1
 23008bba:	85aa                	mv	a1,a0
 23008bbc:	f981a503          	lw	a0,-104(gp) # 42016798 <_impure_ptr>
-23008bc0:	d3efb06f          	j	230040fe <_realloc_r>
+23008bc0:	d5efb06f          	j	2300411e <_realloc_r>
 
 23008bc4 <strlen>:
 23008bc4:	87aa                	mv	a5,a0
@@ -17481,7 +17492,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23008d8a:	04440793          	addi	a5,s0,68
 23008d8e:	00f58563          	beq	a1,a5,23008d98 <__swsetup_r+0x8a>
 23008d92:	854a                	mv	a0,s2
-23008d94:	bbefb0ef          	jal	ra,23004152 <_free_r>
+23008d94:	bdefb0ef          	jal	ra,23004172 <_free_r>
 23008d98:	02042a23          	sw	zero,52(s0)
 23008d9c:	00c45783          	lhu	a5,12(s0)
 23008da0:	00042223          	sw	zero,4(s0)
@@ -18870,7 +18881,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23009c3a:	04440793          	addi	a5,s0,68
 23009c3e:	00f58563          	beq	a1,a5,23009c48 <__sflush_r+0xae>
 23009c42:	8526                	mv	a0,s1
-23009c44:	d0efa0ef          	jal	ra,23004152 <_free_r>
+23009c44:	d2efa0ef          	jal	ra,23004172 <_free_r>
 23009c48:	02042a23          	sw	zero,52(s0)
 23009c4c:	bf95                	j	23009bc0 <__sflush_r+0x26>
 23009c4e:	500c                	lw	a1,32(s0)
@@ -19022,7 +19033,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23009dd0:	c422                	sw	s0,8(sp)
 23009dd2:	c606                	sw	ra,12(sp)
 23009dd4:	07448593          	addi	a1,s1,116
-23009dd8:	afcfa0ef          	jal	ra,230040d4 <_malloc_r>
+23009dd8:	b1cfa0ef          	jal	ra,230040f4 <_malloc_r>
 23009ddc:	842a                	mv	s0,a0
 23009dde:	cd01                	beqz	a0,23009df6 <__sfmoreglue+0x3a>
 23009de0:	00052023          	sw	zero,0(a0)
@@ -19216,7 +19227,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 23009fac:	40000793          	li	a5,1024
 23009fb0:	a00d                	j	23009fd2 <__swhatbuf_r+0x4c>
 23009fb2:	0030                	addi	a2,sp,8
-23009fb4:	8b2fa0ef          	jal	ra,23004066 <_fstat_r>
+23009fb4:	8d2fa0ef          	jal	ra,23004086 <_fstat_r>
 23009fb8:	fe0543e3          	bltz	a0,23009f9e <__swhatbuf_r+0x18>
 23009fbc:	4732                	lw	a4,12(sp)
 23009fbe:	67bd                	lui	a5,0xf
@@ -19264,7 +19275,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300a018:	45a2                	lw	a1,8(sp)
 2300a01a:	84aa                	mv	s1,a0
 2300a01c:	854a                	mv	a0,s2
-2300a01e:	8b6fa0ef          	jal	ra,230040d4 <_malloc_r>
+2300a01e:	8d6fa0ef          	jal	ra,230040f4 <_malloc_r>
 2300a022:	ed01                	bnez	a0,2300a03a <__smakebuf_r+0x58>
 2300a024:	00c41783          	lh	a5,12(s0)
 2300a028:	2007f713          	andi	a4,a5,512
@@ -19287,7 +19298,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300a05c:	cf91                	beqz	a5,2300a078 <__smakebuf_r+0x96>
 2300a05e:	00e41583          	lh	a1,14(s0)
 2300a062:	854a                	mv	a0,s2
-2300a064:	80cfa0ef          	jal	ra,23004070 <_isatty_r>
+2300a064:	82cfa0ef          	jal	ra,23004090 <_isatty_r>
 2300a068:	c901                	beqz	a0,2300a078 <__smakebuf_r+0x96>
 2300a06a:	00c45783          	lhu	a5,12(s0)
 2300a06e:	9bf1                	andi	a5,a5,-4
@@ -19374,7 +19385,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300a140:	060a                	slli	a2,a2,0x2
 2300a142:	4585                	li	a1,1
 2300a144:	8522                	mv	a0,s0
-2300a146:	fe3f90ef          	jal	ra,23004128 <_calloc_r>
+2300a146:	802fa0ef          	jal	ra,23004148 <_calloc_r>
 2300a14a:	c105                	beqz	a0,2300a16a <_Balloc+0x92>
 2300a14c:	c144                	sw	s1,4(a0)
 2300a14e:	01252423          	sw	s2,8(a0)
@@ -19382,7 +19393,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300a154:	02100613          	li	a2,33
 2300a158:	4591                	li	a1,4
 2300a15a:	8522                	mv	a0,s0
-2300a15c:	fcdf90ef          	jal	ra,23004128 <_calloc_r>
+2300a15c:	fedf90ef          	jal	ra,23004148 <_calloc_r>
 2300a160:	505c                	lw	a5,36(s0)
 2300a162:	00a92623          	sw	a0,12(s2)
 2300a166:	47dc                	lw	a5,12(a5)
@@ -20203,7 +20214,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300a9c4:	c3d1                	beqz	a5,2300aa48 <__ssputs_r+0xd6>
 2300a9c6:	85a6                	mv	a1,s1
 2300a9c8:	855a                	mv	a0,s6
-2300a9ca:	f0af90ef          	jal	ra,230040d4 <_malloc_r>
+2300a9ca:	f2af90ef          	jal	ra,230040f4 <_malloc_r>
 2300a9ce:	892a                	mv	s2,a0
 2300a9d0:	e50d                	bnez	a0,2300a9fa <__ssputs_r+0x88>
 2300a9d2:	47b1                	li	a5,12
@@ -20252,12 +20263,12 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300aa46:	b745                	j	2300a9e6 <__ssputs_r+0x74>
 2300aa48:	8626                	mv	a2,s1
 2300aa4a:	855a                	mv	a0,s6
-2300aa4c:	eb2f90ef          	jal	ra,230040fe <_realloc_r>
+2300aa4c:	ed2f90ef          	jal	ra,2300411e <_realloc_r>
 2300aa50:	892a                	mv	s2,a0
 2300aa52:	f161                	bnez	a0,2300aa12 <__ssputs_r+0xa0>
 2300aa54:	480c                	lw	a1,16(s0)
 2300aa56:	855a                	mv	a0,s6
-2300aa58:	efaf90ef          	jal	ra,23004152 <_free_r>
+2300aa58:	f1af90ef          	jal	ra,23004172 <_free_r>
 2300aa5c:	bf9d                	j	2300a9d2 <__ssputs_r+0x60>
 
 2300aa5e <_svfiprintf_r>:
@@ -20283,7 +20294,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300aa88:	499c                	lw	a5,16(a1)
 2300aa8a:	ef9d                	bnez	a5,2300aac8 <_svfiprintf_r+0x6a>
 2300aa8c:	04000593          	li	a1,64
-2300aa90:	e44f90ef          	jal	ra,230040d4 <_malloc_r>
+2300aa90:	e64f90ef          	jal	ra,230040f4 <_malloc_r>
 2300aa94:	00a92023          	sw	a0,0(s2)
 2300aa98:	00a92823          	sw	a0,16(s2)
 2300aa9c:	e115                	bnez	a0,2300aac0 <_svfiprintf_r+0x62>
@@ -20788,7 +20799,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300afec:	842e                	mv	s0,a1
 2300afee:	00e59583          	lh	a1,14(a1)
 2300aff2:	c606                	sw	ra,12(sp)
-2300aff4:	8a4f90ef          	jal	ra,23004098 <_read_r>
+2300aff4:	8c4f90ef          	jal	ra,230040b8 <_read_r>
 2300aff8:	00054963          	bltz	a0,2300b00a <__sread+0x22>
 2300affc:	487c                	lw	a5,84(s0)
 2300affe:	97aa                	add	a5,a5,a0
@@ -20821,7 +20832,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b038:	00e59583          	lh	a1,14(a1)
 2300b03c:	4689                	li	a3,2
 2300b03e:	4601                	li	a2,0
-2300b040:	844f90ef          	jal	ra,23004084 <_lseek_r>
+2300b040:	864f90ef          	jal	ra,230040a4 <_lseek_r>
 2300b044:	00c45783          	lhu	a5,12(s0)
 2300b048:	777d                	lui	a4,0xfffff
 2300b04a:	177d                	addi	a4,a4,-1
@@ -20837,7 +20848,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b062:	8526                	mv	a0,s1
 2300b064:	44d2                	lw	s1,20(sp)
 2300b066:	6105                	addi	sp,sp,32
-2300b068:	83af906f          	j	230040a2 <_write_r>
+2300b068:	85af906f          	j	230040c2 <_write_r>
 
 2300b06c <__sseek>:
 2300b06c:	1141                	addi	sp,sp,-16
@@ -20845,7 +20856,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b070:	842e                	mv	s0,a1
 2300b072:	00e59583          	lh	a1,14(a1)
 2300b076:	c606                	sw	ra,12(sp)
-2300b078:	80cf90ef          	jal	ra,23004084 <_lseek_r>
+2300b078:	82cf90ef          	jal	ra,230040a4 <_lseek_r>
 2300b07c:	57fd                	li	a5,-1
 2300b07e:	00c45703          	lhu	a4,12(s0)
 2300b082:	00f51b63          	bne	a0,a5,2300b098 <__sseek+0x2c>
@@ -20865,7 +20876,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 
 2300b0a4 <__sclose>:
 2300b0a4:	00e59583          	lh	a1,14(a1)
-2300b0a8:	fe7f806f          	j	2300408e <_close_r>
+2300b0a8:	806f906f          	j	230040ae <_close_r>
 
 2300b0ac <__ascii_wctomb>:
 2300b0ac:	cd91                	beqz	a1,2300b0c8 <__ascii_wctomb+0x1c>
@@ -20952,7 +20963,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b176:	c606                	sw	ra,12(sp)
 2300b178:	20bd                	jal	2300b1e6 <raise>
 2300b17a:	4505                	li	a0,1
-2300b17c:	fe3f80ef          	jal	ra,2300415e <_exit>
+2300b17c:	802f90ef          	jal	ra,2300417e <_exit>
 
 2300b180 <_raise_r>:
 2300b180:	1101                	addi	sp,sp,-32
@@ -20977,14 +20988,14 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b1aa:	ef09                	bnez	a4,2300b1c4 <_raise_r+0x44>
 2300b1ac:	8522                	mv	a0,s0
 2300b1ae:	c632                	sw	a2,12(sp)
-2300b1b0:	eb3f80ef          	jal	ra,23004062 <_getpid_r>
+2300b1b0:	ed3f80ef          	jal	ra,23004082 <_getpid_r>
 2300b1b4:	85aa                	mv	a1,a0
 2300b1b6:	8522                	mv	a0,s0
 2300b1b8:	4462                	lw	s0,24(sp)
 2300b1ba:	4632                	lw	a2,12(sp)
 2300b1bc:	40f2                	lw	ra,28(sp)
 2300b1be:	6105                	addi	sp,sp,32
-2300b1c0:	ebbf806f          	j	2300407a <_kill_r>
+2300b1c0:	edbf806f          	j	2300409a <_kill_r>
 2300b1c4:	4685                	li	a3,1
 2300b1c6:	4501                	li	a0,0
 2300b1c8:	fcd706e3          	beq	a4,a3,2300b194 <_raise_r+0x14>
@@ -21181,7 +21192,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
     (void)xTaskResumeAll();
 2300b2fa:	7d5000ef          	jal	ra,2300c2ce <xTaskResumeAll>
             vApplicationMallocFailedHook();
-2300b2fe:	d32f80ef          	jal	ra,23003830 <vApplicationMallocFailedHook>
+2300b2fe:	d72f80ef          	jal	ra,23003870 <vApplicationMallocFailedHook>
 2300b302:	4481                	li	s1,0
 }
 2300b304:	40f2                	lw	ra,28(sp)
@@ -21205,7 +21216,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b322:	4054                	lw	a3,4(s0)
 2300b324:	bf79                	j	2300b2c2 <pvPortMalloc+0x84>
     configASSERT(pxEnd);
-2300b326:	cd2f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b326:	d12f80ef          	jal	ra,23003838 <vAssertCalled>
 2300b32a:	bf05                	j	2300b25a <pvPortMalloc+0x1c>
 
 2300b32c <vPortFree>:
@@ -21229,7 +21240,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
         configASSERT(pxLink->pxNextFreeBlock == NULL);
 2300b34c:	ff052683          	lw	a3,-16(a0)
 2300b350:	ce85                	beqz	a3,2300b388 <vPortFree+0x5c>
-2300b352:	ca6f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b352:	ce6f80ef          	jal	ra,23003838 <vAssertCalled>
         if ((pxLink->xBlockSize & xBlockAllocatedBit) != 0) {
 2300b356:	ff442703          	lw	a4,-12(s0)
 2300b35a:	409c                	lw	a5,0(s1)
@@ -21245,7 +21256,7 @@ int dma_reload(struct device *dev, uint32_t src_addr, uint32_t dst_addr, uint32_
 2300b36e:	0141                	addi	sp,sp,16
 2300b370:	8082                	ret
         configASSERT((pxLink->xBlockSize & xBlockAllocatedBit) != 0);
-2300b372:	c86f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b372:	cc6f80ef          	jal	ra,23003838 <vAssertCalled>
         configASSERT(pxLink->pxNextFreeBlock == NULL);
 2300b376:	ff042783          	lw	a5,-16(s0)
 2300b37a:	ffe1                	bnez	a5,2300b352 <vPortFree+0x26>
@@ -21317,7 +21328,7 @@ void vPortDefineHeapRegions(const HeapRegion_t *const pxHeapRegions)
 2300b3ea:	89aa                	mv	s3,a0
     configASSERT(pxEnd == NULL);
 2300b3ec:	c3f1                	beqz	a5,2300b4b0 <vPortDefineHeapRegions+0xe6>
-2300b3ee:	c0af80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b3ee:	c4af80ef          	jal	ra,23003838 <vAssertCalled>
 
     pxHeapRegion = &(pxHeapRegions[xDefinedRegions]);
 
@@ -21451,12 +21462,12 @@ void vPortDefineHeapRegions(const HeapRegion_t *const pxHeapRegions)
             configASSERT(xAddress > (size_t)pxEnd);
 2300b496:	873e                	mv	a4,a5
 2300b498:	f927ece3          	bltu	a5,s2,2300b430 <vPortDefineHeapRegions+0x66>
-2300b49c:	b5cf80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b49c:	b9cf80ef          	jal	ra,23003838 <vAssertCalled>
         pxPreviousFreeBlock = pxEnd;
 2300b4a0:	000b2703          	lw	a4,0(s6)
 2300b4a4:	b771                	j	2300b430 <vPortDefineHeapRegions+0x66>
             configASSERT(pxEnd != NULL);
-2300b4a6:	b52f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b4a6:	b92f80ef          	jal	ra,23003838 <vAssertCalled>
             configASSERT(xAddress > (size_t)pxEnd);
 2300b4aa:	000b2783          	lw	a5,0(s6)
 2300b4ae:	b7e5                	j	2300b496 <vPortDefineHeapRegions+0xcc>
@@ -21470,7 +21481,7 @@ void vPortDefineHeapRegions(const HeapRegion_t *const pxHeapRegions)
 2300b4bc:	4201a7b7          	lui	a5,0x4201a
 2300b4c0:	aa07a023          	sw	zero,-1376(a5) # 42019aa0 <xFreeBytesRemaining>
     configASSERT(xTotalHeapSize);
-2300b4c4:	b34f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b4c4:	b74f80ef          	jal	ra,23003838 <vAssertCalled>
 2300b4c8:	b76d                	j	2300b472 <vPortDefineHeapRegions+0xa8>
 
 2300b4ca <prvAddCurrentTaskToDelayedList>:
@@ -21661,7 +21672,7 @@ void vTaskSwitchContext(void)
 2300b5c8:	00092503          	lw	a0,0(s2)
 2300b5cc:	00092583          	lw	a1,0(s2)
 2300b5d0:	03458593          	addi	a1,a1,52
-2300b5d4:	a36f80ef          	jal	ra,2300380a <vApplicationStackOverflowHook>
+2300b5d4:	a76f80ef          	jal	ra,2300384a <vApplicationStackOverflowHook>
         taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
 2300b5d8:	4201a7b7          	lui	a5,0x4201a
 2300b5dc:	acc7a503          	lw	a0,-1332(a5) # 42019acc <uxTopReadyPriority>
@@ -21698,7 +21709,7 @@ void vTaskSwitchContext(void)
 2300b62a:	6105                	addi	sp,sp,32
 2300b62c:	8082                	ret
         taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
-2300b62e:	9caf80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b62e:	a0af80ef          	jal	ra,23003838 <vAssertCalled>
 2300b632:	bfc1                	j	2300b602 <vTaskSwitchContext.part.0+0x70>
 2300b634:	43dc                	lw	a5,4(a5)
 2300b636:	c35c                	sw	a5,4(a4)
@@ -21907,7 +21918,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300b7b8:	03678063          	beq	a5,s6,2300b7d8 <prvIdleTask+0xc4>
             configASSERT(pxTCB->ucStaticallyAllocated == tskSTATICALLY_ALLOCATED_STACK_AND_TCB);
 2300b7bc:	f9778ce3          	beq	a5,s7,2300b754 <prvIdleTask+0x40>
-2300b7c0:	838f80ef          	jal	ra,230037f8 <vAssertCalled>
+2300b7c0:	878f80ef          	jal	ra,23003838 <vAssertCalled>
         while (uxDeletedTasksWaitingCleanUp > (UBaseType_t)0U) {
 2300b7c4:	409c                	lw	a5,0(s1)
 2300b7c6:	fbc9                	bnez	a5,2300b758 <prvIdleTask+0x44>
@@ -22133,7 +22144,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 }
 2300b98c:	b57d                	j	2300b83a <xTaskIncrementTick+0x40>
             taskSWITCH_DELAYED_LISTS();
-2300b98e:	e6bf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300b98e:	eabf70ef          	jal	ra,23003838 <vAssertCalled>
 2300b992:	bfb5                	j	2300b90e <xTaskIncrementTick+0x114>
                     xNextTaskUnblockTime = portMAX_DELAY; /*lint !e961 MISRA exception as the casts are only redundant for some ports. */
 2300b994:	57fd                	li	a5,-1
@@ -22180,7 +22191,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300b9d8:	af3ff06f          	j	2300b4ca <prvAddCurrentTaskToDelayedList>
 2300b9dc:	c62a                	sw	a0,12(sp)
     configASSERT(pxEventList);
-2300b9de:	e1bf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300b9de:	e5bf70ef          	jal	ra,23003838 <vAssertCalled>
 2300b9e2:	4532                	lw	a0,12(sp)
 2300b9e4:	bff1                	j	2300b9c0 <vTaskPlaceOnEventList+0xa>
 
@@ -22217,7 +22228,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300ba12:	ab9ff06f          	j	2300b4ca <prvAddCurrentTaskToDelayedList>
 2300ba16:	c62a                	sw	a0,12(sp)
     configASSERT(pxEventList);
-2300ba18:	de1f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300ba18:	e21f70ef          	jal	ra,23003838 <vAssertCalled>
 2300ba1c:	4532                	lw	a0,12(sp)
 2300ba1e:	bfd9                	j	2300b9f4 <vTaskPlaceOnEventListRestricted+0xe>
 
@@ -22291,7 +22302,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300baac:	082010ef          	jal	ra,2300cb2e <vListInsertEnd>
 2300bab0:	b7e9                	j	2300ba7a <xTaskRemoveFromEventList+0x5a>
     configASSERT(pxUnblockedTCB);
-2300bab2:	d47f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bab2:	d87f70ef          	jal	ra,23003838 <vAssertCalled>
 2300bab6:	bfa5                	j	2300ba2e <xTaskRemoveFromEventList+0xe>
 
 2300bab8 <vTaskInternalSetTimeOutState>:
@@ -22467,7 +22478,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300bbda:	842a                	mv	s0,a0
         configASSERT(pxTCB == pxCurrentTCB);
 2300bbdc:	00a78463          	beq	a5,a0,2300bbe4 <xTaskPriorityDisinherit+0x1c>
-2300bbe0:	c19f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bbe0:	c59f70ef          	jal	ra,23003838 <vAssertCalled>
         configASSERT(pxTCB->uxMutexesHeld);
 2300bbe4:	487c                	lw	a5,84(s0)
 2300bbe6:	cf91                	beqz	a5,2300bc02 <xTaskPriorityDisinherit+0x3a>
@@ -22491,7 +22502,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300bbfe:	0141                	addi	sp,sp,16
 2300bc00:	8082                	ret
         configASSERT(pxTCB->uxMutexesHeld);
-2300bc02:	bf7f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bc02:	c37f70ef          	jal	ra,23003838 <vAssertCalled>
         (pxTCB->uxMutexesHeld)--;
 2300bc06:	487c                	lw	a5,84(s0)
         if (pxTCB->uxPriority != pxTCB->uxBasePriority) {
@@ -22608,7 +22619,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300bcd8:	ff2794e3          	bne	a5,s2,2300bcc0 <vTaskPriorityDisinheritAfterTimeout+0x22>
 2300bcdc:	b7f5                	j	2300bcc8 <vTaskPriorityDisinheritAfterTimeout+0x2a>
         configASSERT(pxTCB->uxMutexesHeld);
-2300bcde:	b1bf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bcde:	b5bf70ef          	jal	ra,23003838 <vAssertCalled>
         if (pxTCB->uxBasePriority < uxHighestPriorityWaitingTask) {
 2300bce2:	05042903          	lw	s2,80(s0)
 2300bce6:	fc997ae3          	bgeu	s2,s1,2300bcba <vTaskPriorityDisinheritAfterTimeout+0x1c>
@@ -22674,7 +22685,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
                     prvAddTaskToReadyList(pxTCB);
 2300bd5e:	5d10006f          	j	2300cb2e <vListInsertEnd>
                 configASSERT(pxTCB != pxCurrentTCB);
-2300bd62:	a97f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bd62:	ad7f70ef          	jal	ra,23003838 <vAssertCalled>
                 uxPriorityUsedOnEntry = pxTCB->uxPriority;
 2300bd66:	545c                	lw	a5,44(s0)
 2300bd68:	bf49                	j	2300bcfa <vTaskPriorityDisinheritAfterTimeout+0x5c>
@@ -22955,14 +22966,14 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
         prvAddNewTaskToReadyList(pxNewTCB);
 2300bf7a:	a829                	j	2300bf94 <xTaskCreateStatic+0x70>
     configASSERT(pxTaskBuffer != NULL);
-2300bf7c:	87df70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bf7c:	8bdf70ef          	jal	ra,23003838 <vAssertCalled>
         volatile size_t xSize = sizeof(StaticTask_t);
 2300bf80:	06000793          	li	a5,96
 2300bf84:	c63e                	sw	a5,12(sp)
         configASSERT(xSize == sizeof(TCB_t));
 2300bf86:	4732                	lw	a4,12(sp)
 2300bf88:	00f70463          	beq	a4,a5,2300bf90 <xTaskCreateStatic+0x6c>
-2300bf8c:	86df70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bf8c:	8adf70ef          	jal	ra,23003838 <vAssertCalled>
         (void)xSize; /* Prevent lint warning when configASSERT() is not used. */
 2300bf90:	47b2                	lw	a5,12(sp)
 {
@@ -22979,14 +22990,14 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300bfa4:	6145                	addi	sp,sp,48
 2300bfa6:	8082                	ret
         configASSERT(xSize == sizeof(TCB_t));
-2300bfa8:	851f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bfa8:	891f70ef          	jal	ra,23003838 <vAssertCalled>
         (void)xSize; /* Prevent lint warning when configASSERT() is not used. */
 2300bfac:	47b2                	lw	a5,12(sp)
     if ((pxTaskBuffer != NULL) && (puxStackBuffer != NULL)) {
 2300bfae:	f4cd                	bnez	s1,2300bf58 <xTaskCreateStatic+0x34>
 2300bfb0:	b7cd                	j	2300bf92 <xTaskCreateStatic+0x6e>
     configASSERT(puxStackBuffer != NULL);
-2300bfb2:	847f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300bfb2:	887f70ef          	jal	ra,23003838 <vAssertCalled>
 2300bfb6:	bf41                	j	2300bf46 <xTaskCreateStatic+0x22>
 
 2300bfb8 <vTaskStartScheduler>:
@@ -23003,7 +23014,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
         StackType_t *pxIdleTaskStackBuffer = NULL;
 2300bfc4:	c402                	sw	zero,8(sp)
         vApplicationGetIdleTaskMemory(&pxIdleTaskTCBBuffer, &pxIdleTaskStackBuffer, &ulIdleTaskStackSize);
-2300bfc6:	87df70ef          	jal	ra,23003842 <vApplicationGetIdleTaskMemory>
+2300bfc6:	8bdf70ef          	jal	ra,23003882 <vApplicationGetIdleTaskMemory>
         xIdleTaskHandle = xTaskCreateStatic(prvIdleTask,
 2300bfca:	4812                	lw	a6,4(sp)
 2300bfcc:	47a2                	lw	a5,8(sp)
@@ -23051,7 +23062,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300c024:	40f2                	lw	ra,28(sp)
 2300c026:	6105                	addi	sp,sp,32
         configASSERT(xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY);
-2300c028:	fd0f706f          	j	230037f8 <vAssertCalled>
+2300c028:	811f706f          	j	23003838 <vAssertCalled>
 
 2300c02c <xTaskCreate>:
 {
@@ -23206,7 +23217,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
             configASSERT(pxTCB->ucStaticallyAllocated == tskSTATICALLY_ALLOCATED_STACK_AND_TCB);
 2300c13e:	4789                	li	a5,2
 2300c140:	04f68763          	beq	a3,a5,2300c18e <vTaskDelete+0xe6>
-2300c144:	eb4f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c144:	ef4f70ef          	jal	ra,23003838 <vAssertCalled>
     if (listLIST_IS_EMPTY(pxDelayedTaskList) != pdFALSE) {
 2300c148:	4201a7b7          	lui	a5,0x4201a
 2300c14c:	ab478793          	addi	a5,a5,-1356 # 42019ab4 <pxDelayedTaskList>
@@ -23302,7 +23313,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300c204:	928ff0ef          	jal	ra,2300b32c <vPortFree>
 2300c208:	b759                	j	2300c18e <vTaskDelete+0xe6>
             configASSERT(uxSchedulerSuspended == 0);
-2300c20a:	deef70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c20a:	e2ef70ef          	jal	ra,23003838 <vAssertCalled>
             portYIELD_WITHIN_API();
 2300c20e:	00000073          	ecall
             mtCOVERAGE_TEST_MARKER();
@@ -23386,7 +23397,7 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300c2a8:	6105                	addi	sp,sp,32
 2300c2aa:	8082                	ret
     configASSERT(pxTCB);
-2300c2ac:	d4cf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c2ac:	d8cf70ef          	jal	ra,23003838 <vAssertCalled>
 2300c2b0:	bf95                	j	2300c224 <eTaskGetState+0x10>
             if (listLIST_ITEM_CONTAINER(&(pxTCB->xEventListItem)) == NULL) {
 2300c2b2:	549c                	lw	a5,40(s1)
@@ -23578,13 +23589,13 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300c44e:	6145                	addi	sp,sp,48
 2300c450:	8082                	ret
     configASSERT(uxSchedulerSuspended);
-2300c452:	ba6f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c452:	be6f70ef          	jal	ra,23003838 <vAssertCalled>
 2300c456:	bd69                	j	2300c2f0 <xTaskResumeAll+0x22>
                         xTicksToNextUnblockTime = (TickType_t)1;
 2300c458:	4405                	li	s0,1
 2300c45a:	bf6d                	j	2300c414 <xTaskResumeAll+0x146>
                     configASSERT(xNextTaskUnblockTime >= xTickCount);
-2300c45c:	b9cf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c45c:	bdcf70ef          	jal	ra,23003838 <vAssertCalled>
 2300c460:	bf49                	j	2300c3f2 <xTaskResumeAll+0x124>
                     taskYIELD_IF_USING_PREEMPTION();
 2300c462:	00000073          	ecall
@@ -23709,10 +23720,10 @@ static void prvInitialiseNewTask(TaskFunction_t pxTaskCode,
 2300c532:	4901                	li	s2,0
 2300c534:	b779                	j	2300c4c2 <xTaskCheckForTimeOut+0x42>
     configASSERT(pxTimeOut);
-2300c536:	ac2f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c536:	b02f70ef          	jal	ra,23003838 <vAssertCalled>
     configASSERT(pxTicksToWait);
 2300c53a:	fca1                	bnez	s1,2300c492 <xTaskCheckForTimeOut+0x12>
-2300c53c:	abcf70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c53c:	afcf70ef          	jal	ra,23003838 <vAssertCalled>
 2300c540:	bf89                	j	2300c492 <xTaskCheckForTimeOut+0x12>
             *pxTicksToWait = 0;
 2300c542:	0004a023          	sw	zero,0(s1)
@@ -23834,7 +23845,7 @@ static void prvCheckForValidListAndQueue(void)
             StackType_t *pxTimerTaskStackBuffer = NULL;
 2300c5fc:	c402                	sw	zero,8(sp)
             vApplicationGetTimerTaskMemory(&pxTimerTaskTCBBuffer, &pxTimerTaskStackBuffer, &ulTimerTaskStackSize);
-2300c5fe:	a60f70ef          	jal	ra,2300385e <vApplicationGetTimerTaskMemory>
+2300c5fe:	aa0f70ef          	jal	ra,2300389e <vApplicationGetTimerTaskMemory>
             xTimerTaskHandle = xTaskCreateStatic(prvTimerTask,
 2300c602:	47a2                	lw	a5,8(sp)
 2300c604:	4812                	lw	a6,4(sp)
@@ -23858,7 +23869,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c62e:	6105                	addi	sp,sp,32
 2300c630:	8082                	ret
     configASSERT(xReturn);
-2300c632:	9c6f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c632:	a06f70ef          	jal	ra,23003838 <vAssertCalled>
 }
 2300c636:	40f2                	lw	ra,28(sp)
     configASSERT(xReturn);
@@ -23926,7 +23937,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c6a2:	6105                	addi	sp,sp,32
 2300c6a4:	8082                	ret
     configASSERT((xTimerPeriodInTicks > 0));
-2300c6a6:	952f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c6a6:	992f70ef          	jal	ra,23003838 <vAssertCalled>
 2300c6aa:	b7c1                	j	2300c66a <xTimerCreate+0x2c>
 
 2300c6ac <xTimerGenericCommand>:
@@ -23994,7 +24005,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c71c:	c632                	sw	a2,12(sp)
 2300c71e:	c42e                	sw	a1,8(sp)
     configASSERT(xTimer);
-2300c720:	8d8f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c720:	918f70ef          	jal	ra,23003838 <vAssertCalled>
 2300c724:	4632                	lw	a2,12(sp)
 2300c726:	45a2                	lw	a1,8(sp)
 2300c728:	bf61                	j	2300c6c0 <xTimerGenericCommand+0x14>
@@ -24091,7 +24102,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c7c0:	eedff0ef          	jal	ra,2300c6ac <xTimerGenericCommand>
                 configASSERT(xResult);
 2300c7c4:	f95d                	bnez	a0,2300c77a <prvSwitchTimerLists+0x34>
-2300c7c6:	832f70ef          	jal	ra,230037f8 <vAssertCalled>
+2300c7c6:	872f70ef          	jal	ra,23003838 <vAssertCalled>
 2300c7ca:	bf45                	j	2300c77a <prvSwitchTimerLists+0x34>
 
 2300c7cc <prvTimerTask>:
@@ -24273,7 +24284,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c91a:	d93ff0ef          	jal	ra,2300c6ac <xTimerGenericCommand>
                             configASSERT(xResult);
 2300c91e:	f915                	bnez	a0,2300c852 <prvTimerTask+0x86>
-2300c920:	ed9f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300c920:	f19f60ef          	jal	ra,23003838 <vAssertCalled>
 2300c924:	b73d                	j	2300c852 <prvTimerTask+0x86>
             switch (xMessage.xMessageID) {
 2300c926:	09378b63          	beq	a5,s3,2300c9bc <prvTimerTask+0x1f0>
@@ -24290,7 +24301,7 @@ static void prvCheckForValidListAndQueue(void)
 2300c940:	cc1c                	sw	a5,24(s0)
                     configASSERT((pxTimer->xTimerPeriodInTicks > 0));
 2300c942:	f7a5                	bnez	a5,2300c8aa <prvTimerTask+0xde>
-2300c944:	eb5f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300c944:	ef5f60ef          	jal	ra,23003838 <vAssertCalled>
                     (void)prvInsertTimerInActiveList(pxTimer, (xTimeNow + pxTimer->xTimerPeriodInTicks), xTimeNow, xTimeNow);
 2300c948:	4c1c                	lw	a5,24(s0)
     listSET_LIST_ITEM_OWNER(&(pxTimer->xTimerListItem), pxTimer);
@@ -24418,7 +24429,7 @@ static void prvCheckForValidListAndQueue(void)
 2300ca3a:	c73ff0ef          	jal	ra,2300c6ac <xTimerGenericCommand>
             configASSERT(xResult);
 2300ca3e:	f945                	bnez	a0,2300c9ee <prvTimerTask+0x222>
-2300ca40:	db9f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ca40:	df9f60ef          	jal	ra,23003838 <vAssertCalled>
 2300ca44:	b76d                	j	2300c9ee <prvTimerTask+0x222>
             vListInsert(pxOverflowTimerList, &(pxTimer->xTimerListItem));
 2300ca46:	000d2503          	lw	a0,0(s10)
@@ -24461,7 +24472,7 @@ void *pvTimerGetTimerID(const TimerHandle_t xTimer)
 2300ca6a:	0141                	addi	sp,sp,16
 2300ca6c:	8082                	ret
     configASSERT(xTimer);
-2300ca6e:	d8bf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ca6e:	dcbf60ef          	jal	ra,23003838 <vAssertCalled>
 2300ca72:	b7e5                	j	2300ca5a <pvTimerGetTimerID+0xa>
 
 2300ca74 <vPortSetupTimerInterrupt>:
@@ -24597,7 +24608,7 @@ BaseType_t xPortStartScheduler(void)
 2300cb0a:	6105                	addi	sp,sp,32
 2300cb0c:	8082                	ret
         configASSERT((xISRStackTop & portBYTE_ALIGNMENT_MASK) == 0);
-2300cb0e:	cebf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cb0e:	d2bf60ef          	jal	ra,23003838 <vAssertCalled>
 2300cb12:	bfe1                	j	2300caea <xPortStartScheduler+0x18>
 
 2300cb14 <vListInitialise>:
@@ -25163,7 +25174,7 @@ static void prvUnlockQueue(Queue_t *const pxQueue)
 2300cd8c:	0141                	addi	sp,sp,16
 2300cd8e:	8082                	ret
     configASSERT(pxQueue);
-2300cd90:	a69f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cd90:	aa9f60ef          	jal	ra,23003838 <vAssertCalled>
 2300cd94:	bfbd                	j	2300cd12 <xQueueGenericReset+0xe>
 
 2300cd96 <xQueueGenericCreateStatic>:
@@ -25193,7 +25204,7 @@ static void prvUnlockQueue(Queue_t *const pxQueue)
         configASSERT(xSize == sizeof(Queue_t));
 2300cdbe:	4732                	lw	a4,12(sp)
 2300cdc0:	00f70463          	beq	a4,a5,2300cdc8 <xQueueGenericCreateStatic+0x32>
-2300cdc4:	a35f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cdc4:	a75f60ef          	jal	ra,23003838 <vAssertCalled>
         (void)xSize; /* Keeps lint quiet when configASSERT() is not defined. */
 2300cdc8:	47b2                	lw	a5,12(sp)
     if (pxNewQueue != NULL) {
@@ -25228,17 +25239,17 @@ static void prvUnlockQueue(Queue_t *const pxQueue)
 2300cdfc:	8922                	mv	s2,s0
 2300cdfe:	bfd9                	j	2300cdd4 <xQueueGenericCreateStatic+0x3e>
     configASSERT(uxQueueLength > (UBaseType_t)0);
-2300ce00:	9f9f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ce00:	a39f60ef          	jal	ra,23003838 <vAssertCalled>
     configASSERT(pxStaticQueue != NULL);
 2300ce04:	f45d                	bnez	s0,2300cdb2 <xQueueGenericCreateStatic+0x1c>
 2300ce06:	a029                	j	2300ce10 <xQueueGenericCreateStatic+0x7a>
     configASSERT(!((pucQueueStorage == NULL) && (uxItemSize != 0)));
 2300ce08:	d8c5                	beqz	s1,2300cdb8 <xQueueGenericCreateStatic+0x22>
     configASSERT(!((pucQueueStorage != NULL) && (uxItemSize == 0)));
-2300ce0a:	9eff60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ce0a:	a2ff60ef          	jal	ra,23003838 <vAssertCalled>
 2300ce0e:	b76d                	j	2300cdb8 <xQueueGenericCreateStatic+0x22>
     configASSERT(pxStaticQueue != NULL);
-2300ce10:	9e9f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ce10:	a29f60ef          	jal	ra,23003838 <vAssertCalled>
 2300ce14:	bf79                	j	2300cdb2 <xQueueGenericCreateStatic+0x1c>
 
 2300ce16 <xQueueGenericCreate>:
@@ -25290,7 +25301,7 @@ static void prvUnlockQueue(Queue_t *const pxQueue)
 2300ce66:	6105                	addi	sp,sp,32
 2300ce68:	8082                	ret
     configASSERT(uxQueueLength > (UBaseType_t)0);
-2300ce6a:	98ff60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ce6a:	9cff60ef          	jal	ra,23003838 <vAssertCalled>
     if (uxItemSize == (UBaseType_t)0) {
 2300ce6e:	fc0910e3          	bnez	s2,2300ce2e <xQueueGenericCreate+0x18>
     pxNewQueue = (Queue_t *)pvPortMalloc(sizeof(Queue_t) + xQueueSizeInBytes); /*lint !e9087 !e9079 see comment above. */
@@ -25360,16 +25371,16 @@ static void prvUnlockQueue(Queue_t *const pxQueue)
 2300cede:	0141                	addi	sp,sp,16
 2300cee0:	8082                	ret
     configASSERT(uxMaxCount != 0);
-2300cee2:	917f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cee2:	957f60ef          	jal	ra,23003838 <vAssertCalled>
     configASSERT(uxInitialCount <= uxMaxCount);
 2300cee6:	00091563          	bnez	s2,2300cef0 <xQueueCreateCountingSemaphore+0x58>
     configASSERT(uxQueueLength > (UBaseType_t)0);
-2300ceea:	90ff60ef          	jal	ra,230037f8 <vAssertCalled>
+2300ceea:	94ff60ef          	jal	ra,23003838 <vAssertCalled>
 2300ceee:	bf7d                	j	2300ceac <xQueueCreateCountingSemaphore+0x14>
     configASSERT(uxInitialCount <= uxMaxCount);
-2300cef0:	909f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cef0:	949f60ef          	jal	ra,23003838 <vAssertCalled>
     configASSERT(uxQueueLength > (UBaseType_t)0);
-2300cef4:	905f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300cef4:	945f60ef          	jal	ra,23003838 <vAssertCalled>
 2300cef8:	bf55                	j	2300ceac <xQueueCreateCountingSemaphore+0x14>
 
 2300cefa <xQueueGenericSend>:
@@ -25532,12 +25543,12 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d016:	5c58                	lw	a4,60(s0)
 2300d018:	4785                	li	a5,1
 2300d01a:	f0f704e3          	beq	a4,a5,2300cf22 <xQueueGenericSend+0x28>
-2300d01e:	fdaf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d01e:	81bf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d022:	b701                	j	2300cf22 <xQueueGenericSend+0x28>
     configASSERT(!((pvItemToQueue == NULL) && (pxQueue->uxItemSize != (UBaseType_t)0U)));
 2300d024:	403c                	lw	a5,64(s0)
 2300d026:	ee078be3          	beqz	a5,2300cf1c <xQueueGenericSend+0x22>
-2300d02a:	fcef60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d02a:	80ff60ef          	jal	ra,23003838 <vAssertCalled>
 2300d02e:	b5fd                	j	2300cf1c <xQueueGenericSend+0x22>
                     taskEXIT_CRITICAL();
 2300d030:	d77fe0ef          	jal	ra,2300bda6 <vTaskExitCritical>
@@ -25553,10 +25564,10 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d042:	4501                	li	a0,0
 2300d044:	b759                	j	2300cfca <xQueueGenericSend+0xd0>
     configASSERT(pxQueue);
-2300d046:	fb2f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d046:	ff2f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d04a:	b5f9                	j	2300cf18 <xQueueGenericSend+0x1e>
         configASSERT(!((xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED) && (xTicksToWait != 0)));
-2300d04c:	facf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d04c:	fecf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d050:	bdf9                	j	2300cf2e <xQueueGenericSend+0x34>
 
 2300d052 <xQueueGenericSendFromISR>:
@@ -25633,7 +25644,7 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
     configASSERT(!((pvItemToQueue == NULL) && (pxQueue->uxItemSize != (UBaseType_t)0U)));
 2300d0cc:	403c                	lw	a5,64(s0)
 2300d0ce:	dfd9                	beqz	a5,2300d06c <xQueueGenericSendFromISR+0x1a>
-2300d0d0:	f28f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d0d0:	f68f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d0d4:	bf61                	j	2300d06c <xQueueGenericSendFromISR+0x1a>
                     if (listLIST_IS_EMPTY(&(pxQueue->xTasksWaitingToReceive)) == pdFALSE) {
 2300d0d6:	505c                	lw	a5,36(s0)
@@ -25650,10 +25661,10 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d0e8:	6105                	addi	sp,sp,32
 2300d0ea:	8082                	ret
     configASSERT(pxQueue);
-2300d0ec:	f0cf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d0ec:	f4cf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d0f0:	bfad                	j	2300d06a <xQueueGenericSendFromISR+0x18>
     configASSERT(!((xCopyPosition == queueOVERWRITE) && (pxQueue->uxLength != 1)));
-2300d0f2:	f06f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d0f2:	f46f60ef          	jal	ra,23003838 <vAssertCalled>
         if ((pxQueue->uxMessagesWaiting < pxQueue->uxLength) || (xCopyPosition == queueOVERWRITE)) {
 2300d0f6:	5c1c                	lw	a5,56(s0)
 2300d0f8:	bf71                	j	2300d094 <xQueueGenericSendFromISR+0x42>
@@ -25795,13 +25806,13 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
     configASSERT(!(((pvBuffer) == NULL) && ((pxQueue)->uxItemSize != (UBaseType_t)0U)));
 2300d202:	403c                	lw	a5,64(s0)
 2300d204:	f20785e3          	beqz	a5,2300d12e <xQueueReceive+0x1c>
-2300d208:	df0f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d208:	e30f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d20c:	b70d                	j	2300d12e <xQueueReceive+0x1c>
     configASSERT((pxQueue));
-2300d20e:	deaf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d20e:	e2af60ef          	jal	ra,23003838 <vAssertCalled>
 2300d212:	bf21                	j	2300d12a <xQueueReceive+0x18>
         configASSERT(!((xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED) && (xTicksToWait != 0)));
-2300d214:	de4f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d214:	e24f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d218:	b70d                	j	2300d13a <xQueueReceive+0x28>
     if (pxQueue->uxItemSize != (UBaseType_t)0) {
 2300d21a:	4030                	lw	a2,64(s0)
@@ -26001,7 +26012,7 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d378:	6121                	addi	sp,sp,64
 2300d37a:	8082                	ret
     configASSERT(pxQueue->uxItemSize == 0);
-2300d37c:	c7cf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d37c:	cbcf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d380:	b709                	j	2300d282 <xQueueSemaphoreTake+0x1c>
                         taskENTER_CRITICAL();
 2300d382:	a03fe0ef          	jal	ra,2300bd84 <vTaskEnterCritical>
@@ -26023,10 +26034,10 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d39a:	a0dfe0ef          	jal	ra,2300bda6 <vTaskExitCritical>
 2300d39e:	b7f1                	j	2300d36a <xQueueSemaphoreTake+0x104>
         configASSERT(!((xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED) && (xTicksToWait != 0)));
-2300d3a0:	c58f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d3a0:	c98f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d3a4:	b5ed                	j	2300d28e <xQueueSemaphoreTake+0x28>
     configASSERT((pxQueue));
-2300d3a6:	c52f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d3a6:	c92f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d3aa:	bdc9                	j	2300d27c <xQueueSemaphoreTake+0x16>
                         taskENTER_CRITICAL();
 2300d3ac:	9d9fe0ef          	jal	ra,2300bd84 <vTaskEnterCritical>
@@ -26052,7 +26063,7 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d3d6:	00000073          	ecall
 2300d3da:	bf2d                	j	2300d314 <xQueueSemaphoreTake+0xae>
                         configASSERT(xInheritanceOccurred == pdFALSE);
-2300d3dc:	c1cf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d3dc:	c5cf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d3e0:	b7cd                	j	2300d3c2 <xQueueSemaphoreTake+0x15c>
                         pxQueue->u.xSemaphore.xMutexHolder = pvTaskIncrementMutexHeldCount();
 2300d3e2:	968ff0ef          	jal	ra,2300c54a <pvTaskIncrementMutexHeldCount>
@@ -26080,7 +26091,7 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d404:	0141                	addi	sp,sp,16
 2300d406:	8082                	ret
     configASSERT(xQueue);
-2300d408:	bf0f60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d408:	c30f60ef          	jal	ra,23003838 <vAssertCalled>
 2300d40c:	b7e5                	j	2300d3f4 <uxQueueMessagesWaiting+0xa>
 
 2300d40e <vQueueDelete>:
@@ -26130,7 +26141,7 @@ static BaseType_t prvIsQueueFull(const Queue_t *pxQueue)
 2300d44a:	c62a                	sw	a0,12(sp)
 2300d44c:	ce06                	sw	ra,28(sp)
     configASSERT(pxQueue);
-2300d44e:	baaf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d44e:	beaf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d452:	4532                	lw	a0,12(sp)
     for (ux = (UBaseType_t)0U; ux < (UBaseType_t)configQUEUE_REGISTRY_SIZE; ux++) {
 2300d454:	420197b7          	lui	a5,0x42019
@@ -26358,7 +26369,7 @@ static inline void sys_dlist_init(sys_dlist_t *list)
 2300d57a:	0141                	addi	sp,sp,16
 2300d57c:	8082                	ret
     BT_ASSERT(queue->hdl != NULL);
-2300d57e:	a7af60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d57e:	abaf60ef          	jal	ra,23003838 <vAssertCalled>
     sys_dlist_init(&queue->poll_events);
 2300d582:	00440793          	addi	a5,s0,4
 }
@@ -26398,7 +26409,7 @@ void k_queue_append(struct k_queue *queue, void *data)
     BT_ASSERT(ret == pdPASS);
 2300d5a6:	4785                	li	a5,1
 2300d5a8:	00f50463          	beq	a0,a5,2300d5b0 <k_queue_append+0x1e>
-2300d5ac:	a4cf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d5ac:	a8cf60ef          	jal	ra,23003838 <vAssertCalled>
     k_queue_insert(queue, NULL, data);
 }
 2300d5b0:	40f2                	lw	ra,28(sp)
@@ -26449,12 +26460,12 @@ void k_queue_free(struct k_queue *queue)
 }
 2300d5e8:	0141                	addi	sp,sp,16
         BT_ERR("Queue is NULL\n");
-2300d5ea:	829f606f          	j	23003e12 <bflb_platform_printf>
+2300d5ea:	849f606f          	j	23003e32 <bflb_platform_printf>
 2300d5ee:	230365b7          	lui	a1,0x23036
 2300d5f2:	23035537          	lui	a0,0x23035
 2300d5f6:	84858593          	addi	a1,a1,-1976 # 23035848 <__func__.5>
 2300d5fa:	7ec50513          	addi	a0,a0,2028 # 230357ec <_ctype_+0x114>
-2300d5fe:	815f606f          	j	23003e12 <bflb_platform_printf>
+2300d5fe:	835f606f          	j	23003e32 <bflb_platform_printf>
 
 2300d602 <k_queue_prepend>:
 2300d602:	4108                	lw	a0,0(a0)
@@ -26468,7 +26479,7 @@ void k_queue_free(struct k_queue *queue)
 2300d612:	8e9ff0ef          	jal	ra,2300cefa <xQueueGenericSend>
 2300d616:	4785                	li	a5,1
 2300d618:	00f50463          	beq	a0,a5,2300d620 <k_queue_prepend+0x1e>
-2300d61c:	9dcf60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d61c:	a1cf60ef          	jal	ra,23003838 <vAssertCalled>
 2300d620:	40f2                	lw	ra,28(sp)
 2300d622:	6105                	addi	sp,sp,32
 2300d624:	8082                	ret
@@ -26500,7 +26511,7 @@ void k_queue_append_list(struct k_queue *queue, void *head, void *tail)
 2300d642:	8b9ff0ef          	jal	ra,2300cefa <xQueueGenericSend>
     BT_ASSERT(ret == pdPASS);
 2300d646:	01250463          	beq	a0,s2,2300d64e <k_queue_append_list+0x28>
-2300d64a:	9aef60ef          	jal	ra,230037f8 <vAssertCalled>
+2300d64a:	9eef60ef          	jal	ra,23003838 <vAssertCalled>
     for (buf_tail = (struct net_buf *)head; buf_tail; buf_tail = buf_tail->frags) {
 2300d64e:	4000                	lw	s0,0(s0)
 2300d650:	f465                	bnez	s0,2300d638 <k_queue_append_list+0x12>
@@ -26624,7 +26635,7 @@ int k_sem_init(struct k_sem *sem, unsigned int initial_count, unsigned int limit
 2300d6da:	23036537          	lui	a0,0x23036
 2300d6de:	80450513          	addi	a0,a0,-2044 # 23035804 <_ctype_+0x12c>
 2300d6e2:	83c58593          	addi	a1,a1,-1988 # 2303583c <__func__.4>
-2300d6e6:	f2cf60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300d6e6:	f4cf60ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EINVAL;
 2300d6ea:	5529                	li	a0,-22
 2300d6ec:	b7cd                	j	2300d6ce <k_sem_init+0x1c>
@@ -26700,7 +26711,7 @@ int k_sem_give(struct k_sem *sem)
 2300d746:	23036537          	lui	a0,0x23036
 2300d74a:	80450513          	addi	a0,a0,-2044 # 23035804 <_ctype_+0x12c>
 2300d74e:	83058593          	addi	a1,a1,-2000 # 23035830 <__func__.3>
-2300d752:	ec0f60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300d752:	ee0f60ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EINVAL;
 2300d756:	5529                	li	a0,-22
 2300d758:	b7d5                	j	2300d73c <k_sem_give+0x1c>
@@ -26738,7 +26749,7 @@ int k_sem_delete(struct k_sem *sem)
 2300d77e:	23036537          	lui	a0,0x23036
 2300d782:	80450513          	addi	a0,a0,-2044 # 23035804 <_ctype_+0x12c>
 2300d786:	82058593          	addi	a1,a1,-2016 # 23035820 <__func__.2>
-2300d78a:	e88f60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300d78a:	ea8f60ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EINVAL;
 2300d78e:	5529                	li	a0,-22
 2300d790:	b7cd                	j	2300d772 <k_sem_delete+0x18>
@@ -26878,7 +26889,7 @@ long long k_now_ms(void)
 2300d83c:	c632                	sw	a2,12(sp)
 2300d83e:	c42e                	sw	a1,8(sp)
     BT_ASSERT(timer != NULL);
-2300d840:	fb9f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d840:	ff9f50ef          	jal	ra,23003838 <vAssertCalled>
 2300d844:	46b2                	lw	a3,12(sp)
 2300d846:	4722                	lw	a4,8(sp)
 2300d848:	bfc9                	j	2300d81a <k_timer_init+0xe>
@@ -26887,7 +26898,7 @@ long long k_now_ms(void)
 2300d84c:	40f2                	lw	ra,28(sp)
 2300d84e:	6105                	addi	sp,sp,32
     BT_ASSERT(timer->timer.hdl != NULL);
-2300d850:	fa9f506f          	j	230037f8 <vAssertCalled>
+2300d850:	fe9f506f          	j	23003838 <vAssertCalled>
 
 2300d854 <k_timer_get_id>:
     return pvTimerGetTimerID((TimerHandle_t)hdl);
@@ -26926,7 +26937,7 @@ long long k_now_ms(void)
     BT_ASSERT(ret == pdPASS);
 2300d88e:	4785                	li	a5,1
 2300d890:	00f50463          	beq	a0,a5,2300d898 <k_timer_start+0x40>
-2300d894:	f65f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d894:	fa5f50ef          	jal	ra,23003838 <vAssertCalled>
     ret = xTimerStart(timer->timer.hdl, 0);
 2300d898:	4000                	lw	s0,0(s0)
 2300d89a:	f57fd0ef          	jal	ra,2300b7f0 <xTaskGetTickCount>
@@ -26950,9 +26961,9 @@ long long k_now_ms(void)
 2300d8c0:	4492                	lw	s1,4(sp)
 2300d8c2:	0141                	addi	sp,sp,16
     BT_ASSERT(ret == pdPASS);
-2300d8c4:	f35f506f          	j	230037f8 <vAssertCalled>
+2300d8c4:	f75f506f          	j	23003838 <vAssertCalled>
     BT_ASSERT(timer != NULL);
-2300d8c8:	f31f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d8c8:	f71f50ef          	jal	ra,23003838 <vAssertCalled>
 2300d8cc:	bf69                	j	2300d866 <k_timer_start+0xe>
 
 2300d8ce <k_timer_reset>:
@@ -26983,10 +26994,10 @@ long long k_now_ms(void)
 2300d8fa:	40f2                	lw	ra,28(sp)
 2300d8fc:	6105                	addi	sp,sp,32
     BT_ASSERT(ret == pdPASS);
-2300d8fe:	efbf506f          	j	230037f8 <vAssertCalled>
+2300d8fe:	f3bf506f          	j	23003838 <vAssertCalled>
 2300d902:	c62a                	sw	a0,12(sp)
     BT_ASSERT(timer != NULL);
-2300d904:	ef5f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d904:	f35f50ef          	jal	ra,23003838 <vAssertCalled>
 2300d908:	4532                	lw	a0,12(sp)
 2300d90a:	b7f1                	j	2300d8d6 <k_timer_reset+0x8>
 
@@ -27013,10 +27024,10 @@ long long k_now_ms(void)
 2300d92c:	40f2                	lw	ra,28(sp)
 2300d92e:	6105                	addi	sp,sp,32
     BT_ASSERT(ret == pdPASS);
-2300d930:	ec9f506f          	j	230037f8 <vAssertCalled>
+2300d930:	f09f506f          	j	23003838 <vAssertCalled>
 2300d934:	c62a                	sw	a0,12(sp)
     BT_ASSERT(timer != NULL);
-2300d936:	ec3f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d936:	f03f50ef          	jal	ra,23003838 <vAssertCalled>
 2300d93a:	4532                	lw	a0,12(sp)
 2300d93c:	bfd9                	j	2300d912 <k_timer_stop+0x6>
 
@@ -27043,10 +27054,10 @@ long long k_now_ms(void)
 2300d95e:	40f2                	lw	ra,28(sp)
 2300d960:	6105                	addi	sp,sp,32
     BT_ASSERT(ret == pdPASS);
-2300d962:	e97f506f          	j	230037f8 <vAssertCalled>
+2300d962:	ed7f506f          	j	23003838 <vAssertCalled>
 2300d966:	c62a                	sw	a0,12(sp)
     BT_ASSERT(timer != NULL);
-2300d968:	e91f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300d968:	ed1f50ef          	jal	ra,23003838 <vAssertCalled>
 2300d96c:	4532                	lw	a0,12(sp)
 2300d96e:	bfd9                	j	2300d944 <k_timer_delete+0x6>
 
@@ -27341,7 +27352,7 @@ static inline int bt_addr_le_to_str(const bt_addr_le_t *addr, char *str,
 2300db50:	23036537          	lui	a0,0x23036
 2300db54:	8bc58593          	addi	a1,a1,-1860 # 230358bc <__func__.0>
 2300db58:	89850513          	addi	a0,a0,-1896 # 23035898 <hex.3+0x14>
-2300db5c:	ab6f60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300db5c:	ad6f60ef          	jal	ra,23003e32 <bflb_platform_printf>
 2300db60:	5429                	li	s0,-22
 2300db62:	b7c5                	j	2300db42 <hci_driver_send+0x1c>
 
@@ -27720,7 +27731,7 @@ static inline void bt_buf_set_type(struct net_buf *buf, enum bt_buf_type type)
 2300dd5c:	23036537          	lui	a0,0x23036
 2300dd60:	ae860613          	addi	a2,a2,-1304 # 23035ae8 <__func__.6>
 2300dd64:	8e050513          	addi	a0,a0,-1824 # 230358e0 <drv+0x14>
-2300dd68:	8aaf60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300dd68:	8caf60ef          	jal	ra,23003e32 <bflb_platform_printf>
         key = irq_lock();
 2300dd6c:	a8dff0ef          	jal	ra,2300d7f8 <irq_lock>
             (*pending_no_cb)--;
@@ -27737,7 +27748,7 @@ static inline void bt_buf_set_type(struct net_buf *buf, enum bt_buf_type type)
 2300dd82:	23036537          	lui	a0,0x23036
 2300dd86:	ae860613          	addi	a2,a2,-1304 # 23035ae8 <__func__.6>
 2300dd8a:	8e050513          	addi	a0,a0,-1824 # 230358e0 <drv+0x14>
-2300dd8e:	884f60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300dd8e:	8a4f60ef          	jal	ra,23003e32 <bflb_platform_printf>
         key = irq_lock();
 2300dd92:	a67ff0ef          	jal	ra,2300d7f8 <irq_lock>
     return list->head;
@@ -27994,7 +28005,7 @@ static void conn_cleanup(struct bt_conn *conn)
 2300df0e:	ab860613          	addi	a2,a2,-1352 # 23035ab8 <__func__.0>
 2300df12:	55fd                	li	a1,-1
 2300df14:	90850513          	addi	a0,a0,-1784 # 23035908 <drv+0x3c>
-2300df18:	efbf50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300df18:	f1bf50ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2300df1c:	b749                	j	2300de9e <create_frag+0x2c>
 
@@ -28566,7 +28577,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e2e4:	23036537          	lui	a0,0x23036
 2300e2e8:	b0468693          	addi	a3,a3,-1276 # 23035b04 <__func__.8>
 2300e2ec:	9ec50513          	addi	a0,a0,-1556 # 230359ec <drv+0x120>
-2300e2f0:	b23f50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e2f0:	b43f50ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2300e2f4:	4422                	lw	s0,8(sp)
 2300e2f6:	40b2                	lw	ra,12(sp)
@@ -28624,7 +28635,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e360:	b0460613          	addi	a2,a2,-1276 # 23035b04 <__func__.8>
 2300e364:	85ca                	mv	a1,s2
 2300e366:	9c850513          	addi	a0,a0,-1592 # 230359c8 <drv+0xfc>
-2300e36a:	aa9f50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e36a:	ac9f50ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!conn->rx_len) {
 2300e36e:	00e45783          	lhu	a5,14(s0)
 2300e372:	d3c9                	beqz	a5,2300e2f4 <bt_conn_recv+0x78>
@@ -28664,7 +28675,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e3a8:	23036537          	lui	a0,0x23036
 2300e3ac:	b0458593          	addi	a1,a1,-1276 # 23035b04 <__func__.8>
 2300e3b0:	93450513          	addi	a0,a0,-1740 # 23035934 <drv+0x68>
-2300e3b4:	a5ff50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e3b4:	a7ff50ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!conn->rx_len) {
 2300e3b8:	00e45783          	lhu	a5,14(s0)
 2300e3bc:	ee078ce3          	beqz	a5,2300e2b4 <bt_conn_recv+0x38>
@@ -28680,7 +28691,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e3d0:	23036537          	lui	a0,0x23036
 2300e3d4:	b0458593          	addi	a1,a1,-1276 # 23035b04 <__func__.8>
 2300e3d8:	97c50513          	addi	a0,a0,-1668 # 2303597c <drv+0xb0>
-2300e3dc:	a37f50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e3dc:	a57f50ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!conn->rx_len) {
 2300e3e0:	00e45783          	lhu	a5,14(s0)
 2300e3e4:	f00788e3          	beqz	a5,2300e2f4 <bt_conn_recv+0x78>
@@ -28699,7 +28710,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e3fc:	23036537          	lui	a0,0x23036
 2300e400:	b0458593          	addi	a1,a1,-1276 # 23035b04 <__func__.8>
 2300e404:	95850513          	addi	a0,a0,-1704 # 23035958 <drv+0x8c>
-2300e408:	a0bf50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e408:	a2bf50ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!conn->rx_len) {
 2300e40c:	00e45783          	lhu	a5,14(s0)
 2300e410:	ee0782e3          	beqz	a5,2300e2f4 <bt_conn_recv+0x78>
@@ -28709,7 +28720,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e41a:	23036537          	lui	a0,0x23036
 2300e41e:	b0458593          	addi	a1,a1,-1276 # 23035b04 <__func__.8>
 2300e422:	99850513          	addi	a0,a0,-1640 # 23035998 <drv+0xcc>
-2300e426:	9edf50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e426:	a0df50ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!conn->rx_len) {
 2300e42a:	00e45783          	lhu	a5,14(s0)
 2300e42e:	ec0783e3          	beqz	a5,2300e2f4 <bt_conn_recv+0x78>
@@ -28914,7 +28925,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e5a4:	842a                	mv	s0,a0
     BT_ASSERT(buf);
 2300e5a6:	f539                	bnez	a0,2300e4f4 <bt_conn_process_tx+0x16>
-2300e5a8:	a50f50ef          	jal	ra,230037f8 <vAssertCalled>
+2300e5a8:	a90f50ef          	jal	ra,23003838 <vAssertCalled>
     if (buf->len <= conn_mtu(conn)) {
 2300e5ac:	00c05783          	lhu	a5,12(zero) # c <__metal_chicken_bit+0xc>
 2300e5b0:	9002                	ebreak
@@ -28999,7 +29010,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e644:	23036537          	lui	a0,0x23036
 2300e648:	af458593          	addi	a1,a1,-1292 # 23035af4 <__func__.7>
 2300e64c:	a1050513          	addi	a0,a0,-1520 # 23035a10 <drv+0x144>
-2300e650:	fc2f50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e650:	fe2f50ef          	jal	ra,23003e32 <bflb_platform_printf>
         net_buf_unref(buf);
 2300e654:	8526                	mv	a0,s1
 2300e656:	79d0b0ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -29011,7 +29022,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e664:	23036537          	lui	a0,0x23036
 2300e668:	af458593          	addi	a1,a1,-1292 # 23035af4 <__func__.7>
 2300e66c:	a4c50513          	addi	a0,a0,-1460 # 23035a4c <drv+0x180>
-2300e670:	fa2f50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e670:	fc2f50ef          	jal	ra,23003e32 <bflb_platform_printf>
             net_buf_unref(buf);
 2300e674:	8526                	mv	a0,s1
 2300e676:	77d0b0ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -29034,7 +29045,7 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit, bool val)
 2300e69a:	23036537          	lui	a0,0x23036
 2300e69e:	af458593          	addi	a1,a1,-1292 # 23035af4 <__func__.7>
 2300e6a2:	a2850513          	addi	a0,a0,-1496 # 23035a28 <drv+0x15c>
-2300e6a6:	f6cf50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300e6a6:	f8cf50ef          	jal	ra,23003e32 <bflb_platform_printf>
             net_buf_unref(buf);
 2300e6aa:	8526                	mv	a0,s1
 2300e6ac:	7470b0ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -29257,7 +29268,7 @@ static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 }
 2300e886:	6105                	addi	sp,sp,32
             BT_WARN("no valid (%u) state was set", state);
-2300e888:	d8af506f          	j	23003e12 <bflb_platform_printf>
+2300e888:	daaf506f          	j	23003e32 <bflb_platform_printf>
     switch (conn->state) {
 2300e88c:	4711                	li	a4,4
 2300e88e:	04e79163          	bne	a5,a4,2300e8d0 <bt_conn_set_state+0x102>
@@ -29342,7 +29353,7 @@ static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 }
 2300e934:	6105                	addi	sp,sp,32
         BT_WARN("no transition");
-2300e936:	cdcf506f          	j	23003e12 <bflb_platform_printf>
+2300e936:	cfcf506f          	j	23003e32 <bflb_platform_printf>
                 k_delayed_work_cancel(&conn->update_work);
 2300e93a:	04c50513          	addi	a0,a0,76
 2300e93e:	4c60c0ef          	jal	ra,2301ae04 <k_delayed_work_cancel>
@@ -30221,7 +30232,7 @@ static inline void bt_addr_le_copy(bt_addr_le_t *dst, const bt_addr_le_t *src)
 2300ef8a:	ab860613          	addi	a2,a2,-1352 # 23035ab8 <__func__.0>
 2300ef8e:	85a6                	mv	a1,s1
 2300ef90:	90850513          	addi	a0,a0,-1784 # 23035908 <drv+0x3c>
-2300ef94:	e7ff40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300ef94:	e9ff40ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2300ef98:	bfc9                	j	2300ef6a <bt_conn_create_pdu_timeout+0x24>
 
@@ -30876,7 +30887,7 @@ static void gatt_mtu_rsp(struct bt_conn *conn, u8_t err, const void *pdu,
 2300f3b2:	23036537          	lui	a0,0x23036
 2300f3b6:	b1450513          	addi	a0,a0,-1260 # 23035b14 <__func__.8+0x10>
 2300f3ba:	c6058593          	addi	a1,a1,-928 # 23035c60 <__func__.10>
-2300f3be:	a55f40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300f3be:	a75f40ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2300f3c2:	40f2                	lw	ra,28(sp)
 2300f3c4:	4462                	lw	s0,24(sp)
@@ -31237,7 +31248,7 @@ static void gatt_write_ccc_rsp(struct bt_conn *conn, u8_t err,
 }
 2300f644:	6121                	addi	sp,sp,64
             BT_ERR("unable to save SC: no cfg left");
-2300f646:	fccf406f          	j	23003e12 <bflb_platform_printf>
+2300f646:	fecf406f          	j	23003e32 <bflb_platform_printf>
     return memcmp(a, b, sizeof(*a));
 2300f64a:	8526                	mv	a0,s1
 2300f64c:	461d                	li	a2,7
@@ -31522,7 +31533,7 @@ static inline u16_t sys_get_le16(const u8_t src[2])
 2300f884:	23036537          	lui	a0,0x23036
 2300f888:	b6c50513          	addi	a0,a0,-1172 # 23035b6c <__func__.8+0x68>
 2300f88c:	c8858593          	addi	a1,a1,-888 # 23035c88 <__func__.13>
-2300f890:	d82f40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300f890:	da2f40ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_GATT_ERR(BT_ATT_ERR_INSUFFICIENT_RESOURCES);
 2300f894:	553d                	li	a0,-17
 2300f896:	b7b1                	j	2300f7e2 <bt_gatt_attr_write_ccc+0x70>
@@ -31663,7 +31674,7 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 2300f98a:	c6c60613          	addi	a2,a2,-916 # 23035c6c <__func__.11>
 2300f98e:	85a2                	mv	a1,s0
 2300f990:	b8c50513          	addi	a0,a0,-1140 # 23035b8c <__func__.8+0x88>
-2300f994:	c7ef40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300f994:	c9ef40ef          	jal	ra,23003e32 <bflb_platform_printf>
 2300f998:	bfd9                	j	2300f96e <gatt_write_ccc.constprop.0+0x6e>
         err = bt_att_send(conn, buf, NULL, NULL);
 2300f99a:	4681                	li	a3,0
@@ -31907,14 +31918,14 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 2300fb56:	c6c60613          	addi	a2,a2,-916 # 23035c6c <__func__.11>
 2300fb5a:	85a2                	mv	a1,s0
 2300fb5c:	b8c50513          	addi	a0,a0,-1140 # 23035b8c <__func__.8+0x88>
-2300fb60:	ab2f40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300fb60:	ad2f40ef          	jal	ra,23003e32 <bflb_platform_printf>
 2300fb64:	b7d9                	j	2300fb2a <gatt_indicate+0x78>
         BT_WARN("No buffer available to send indication");
 2300fb66:	230365b7          	lui	a1,0x23036
 2300fb6a:	23036537          	lui	a0,0x23036
 2300fb6e:	c7858593          	addi	a1,a1,-904 # 23035c78 <__func__.12>
 2300fb72:	bac50513          	addi	a0,a0,-1108 # 23035bac <__func__.8+0xa8>
-2300fb76:	a9cf40ef          	jal	ra,23003e12 <bflb_platform_printf>
+2300fb76:	abcf40ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOMEM;
 2300fb7a:	5451                	li	s0,-12
 2300fb7c:	b77d                	j	2300fb2a <gatt_indicate+0x78>
@@ -32480,7 +32491,7 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 2300fffe:	23036537          	lui	a0,0x23036
 23010002:	bdc50513          	addi	a0,a0,-1060 # 23035bdc <__func__.8+0xd8>
 23010006:	ca060613          	addi	a2,a2,-864 # 23035ca0 <__func__.14>
-2301000a:	e09f30ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301000a:	e29f30ef          	jal	ra,23003e32 <bflb_platform_printf>
             return -EINVAL;
 2301000e:	5529                	li	a0,-22
 23010010:	a83d                	j	2301004e <bt_gatt_service_register+0x190>
@@ -33358,7 +33369,7 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 23010698:	c54c8613          	addi	a2,s9,-940 # 23035c54 <__func__.1>
 2301069c:	85a2                	mv	a1,s0
 2301069e:	c04c0513          	addi	a0,s8,-1020 # 23035c04 <__func__.8+0x100>
-230106a2:	f70f30ef          	jal	ra,23003e12 <bflb_platform_printf>
+230106a2:	f90f30ef          	jal	ra,23003e32 <bflb_platform_printf>
                 continue;
 230106a6:	bfb1                	j	23010602 <update_ccc+0x86>
 230106a8:	8522                	mv	a0,s0
@@ -33420,7 +33431,7 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 23010722:	23036537          	lui	a0,0x23036
 23010726:	c4858593          	addi	a1,a1,-952 # 23035c48 <__func__.0>
 2301072a:	c2050513          	addi	a0,a0,-992 # 23035c20 <__func__.8+0x11c>
-2301072e:	ee4f30ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301072e:	f04f30ef          	jal	ra,23003e32 <bflb_platform_printf>
 23010732:	b7d5                	j	23010716 <update_ccc+0x19a>
 
 23010734 <bt_gatt_exchange_mtu>:
@@ -33483,7 +33494,7 @@ static int gatt_write_ccc(struct bt_conn *conn, u16_t handle, u16_t value,
 2301079e:	85a2                	mv	a1,s0
 230107a0:	b8c50513          	addi	a0,a0,-1140 # 23035b8c <__func__.8+0x88>
 230107a4:	c6c60613          	addi	a2,a2,-916 # 23035c6c <__func__.11>
-230107a8:	e6af30ef          	jal	ra,23003e12 <bflb_platform_printf>
+230107a8:	e8af30ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 230107ac:	40b2                	lw	ra,12(sp)
 230107ae:	8522                	mv	a0,s0
@@ -34160,7 +34171,7 @@ static void le_dhkey_complete(struct net_buf *buf)
 23010bf6:	0007c583          	lbu	a1,0(a5)
 23010bfa:	44c60613          	addi	a2,a2,1100 # 2303644c <__func__.11>
 23010bfe:	d9450513          	addi	a0,a0,-620 # 23035d94 <attr__2_gap_svc+0x8c>
-23010c02:	a10f306f          	j	23003e12 <bflb_platform_printf>
+23010c02:	a30f306f          	j	23003e32 <bflb_platform_printf>
 
 23010c06 <le_pkey_complete>:
 {
@@ -34273,7 +34284,7 @@ static void le_dhkey_complete(struct net_buf *buf)
 }
 23010ce2:	0141                	addi	sp,sp,16
         BT_ERR("Unable to lookup conn for handle %u", handle);
-23010ce4:	92ef306f          	j	23003e12 <bflb_platform_printf>
+23010ce4:	94ef306f          	j	23003e32 <bflb_platform_printf>
 
 23010ce8 <le_conn_update_complete>:
 {
@@ -34385,7 +34396,7 @@ static void le_dhkey_complete(struct net_buf *buf)
 }
 23010db6:	6105                	addi	sp,sp,32
         BT_ERR("Unable to lookup conn for handle %u", handle);
-23010db8:	85af306f          	j	23003e12 <bflb_platform_printf>
+23010db8:	87af306f          	j	23003e32 <bflb_platform_printf>
 
 23010dbc <hci_num_completed_packets>:
 {
@@ -34542,7 +34553,7 @@ static void le_dhkey_complete(struct net_buf *buf)
                 BT_ERR("packets count mismatch");
 23010ec4:	464c0593          	addi	a1,s8,1124 # 23036464 <__func__.12>
 23010ec8:	e14c8513          	addi	a0,s9,-492 # 23035e14 <attr__2_gap_svc+0x10c>
-23010ecc:	f47f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23010ecc:	f67f20ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_conn_unref(conn);
 23010ed0:	8522                	mv	a0,s0
 23010ed2:	d15fd0ef          	jal	ra,2300ebe6 <bt_conn_unref>
@@ -34571,7 +34582,7 @@ static void le_dhkey_complete(struct net_buf *buf)
 23010f00:	464c0613          	addi	a2,s8,1124
 23010f04:	85a6                	mv	a1,s1
 23010f06:	df0d0513          	addi	a0,s10,-528 # 23035df0 <attr__2_gap_svc+0xe8>
-23010f0a:	f09f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23010f0a:	f29f20ef          	jal	ra,23003e32 <bflb_platform_printf>
             continue;
 23010f0e:	b7e1                	j	23010ed6 <hci_num_completed_packets+0x11a>
 
@@ -34632,7 +34643,7 @@ static void hci_cmd_done(u16_t opcode, u8_t status, struct net_buf *buf)
 }
 23010f64:	6105                	addi	sp,sp,32
         BT_WARN("opcode 0x%04x pool id %u pool %p != &hci_cmd_pool %p",
-23010f66:	eadf206f          	j	23003e12 <bflb_platform_printf>
+23010f66:	ecdf206f          	j	23003e32 <bflb_platform_printf>
     if (cmd(buf)->opcode != opcode) {
 23010f6a:	8522                	mv	a0,s0
 23010f6c:	4a2090ef          	jal	ra,2301a40e <net_buf_id>
@@ -34653,7 +34664,7 @@ static void hci_cmd_done(u16_t opcode, u8_t status, struct net_buf *buf)
 23010f9a:	62068693          	addi	a3,a3,1568 # 23036620 <__func__.36>
 23010f9e:	85ca                	mv	a1,s2
 23010fa0:	e7050513          	addi	a0,a0,-400 # 23035e70 <attr__2_gap_svc+0x168>
-23010fa4:	e6ff20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23010fa4:	e8ff20ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (cmd(buf)->state && !status) {
 23010fa8:	8522                	mv	a0,s0
 23010faa:	464090ef          	jal	ra,2301a40e <net_buf_id>
@@ -34902,7 +34913,7 @@ static void send_cmd(void)
 23011126:	23036537          	lui	a0,0x23036
 2301112a:	63058593          	addi	a1,a1,1584 # 23036630 <__func__.37>
 2301112e:	eac50513          	addi	a0,a0,-340 # 23035eac <attr__2_gap_svc+0x1a4>
-23011132:	ce1f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011132:	d01f20ef          	jal	ra,23003e32 <bflb_platform_printf>
         net_buf_unref(bt_dev.sent_cmd);
 23011136:	0a442503          	lw	a0,164(s0)
 2301113a:	4b8090ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -34941,7 +34952,7 @@ static void send_cmd(void)
 2301116a:	23036537          	lui	a0,0x23036
 2301116e:	63060613          	addi	a2,a2,1584 # 23036630 <__func__.37>
 23011172:	8e050513          	addi	a0,a0,-1824 # 230358e0 <drv+0x14>
-23011176:	c9df20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011176:	cbdf20ef          	jal	ra,23003e32 <bflb_platform_printf>
         k_sem_give(&bt_dev.ncmd_sem);
 2301117a:	854a                	mv	a0,s2
 2301117c:	da4fc0ef          	jal	ra,2300d720 <k_sem_give>
@@ -34980,7 +34991,7 @@ static void send_cmd(void)
 230111ca:	84aa                	mv	s1,a0
     BT_ASSERT(buf);
 230111cc:	f131                	bnez	a0,23011110 <send_cmd+0x12>
-230111ce:	e2af20ef          	jal	ra,230037f8 <vAssertCalled>
+230111ce:	e6af20ef          	jal	ra,23003838 <vAssertCalled>
 230111d2:	bf3d                	j	23011110 <send_cmd+0x12>
 
 230111d4 <update_sec_level.part.0>:
@@ -35033,7 +35044,7 @@ static void update_sec_level(struct bt_conn *conn)
 23011230:	23036537          	lui	a0,0x23036
 23011234:	58858593          	addi	a1,a1,1416 # 23036588 <__func__.26>
 23011238:	ed050513          	addi	a0,a0,-304 # 23035ed0 <attr__2_gap_svc+0x1c8>
-2301123c:	bd7f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301123c:	bf7f20ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_conn_disconnect(conn, BT_HCI_ERR_AUTH_FAIL);
 23011240:	8522                	mv	a0,s0
 }
@@ -35139,7 +35150,7 @@ static void update_sec_level(struct bt_conn *conn)
 }
 23011302:	0141                	addi	sp,sp,16
         BT_ERR("Unable to look up conn with handle %u", handle);
-23011304:	b0ff206f          	j	23003e12 <bflb_platform_printf>
+23011304:	b2ff206f          	j	23003e32 <bflb_platform_printf>
         conn->sec_level = BT_SECURITY_L1;
 23011308:	009404a3          	sb	s1,9(s0)
     bt_l2cap_encrypt_change(conn, evt->status);
@@ -35253,7 +35264,7 @@ static void update_sec_level(struct bt_conn *conn)
 }
 230113da:	0141                	addi	sp,sp,16
         BT_ERR("Unable to look up conn with handle %u", handle);
-230113dc:	a37f206f          	j	23003e12 <bflb_platform_printf>
+230113dc:	a57f206f          	j	23003e32 <bflb_platform_printf>
     bt_l2cap_encrypt_change(conn, evt->status);
 230113e0:	00094783          	lbu	a5,0(s2)
 230113e4:	bf49                	j	23011376 <hci_encrypt_change+0x64>
@@ -35538,7 +35549,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 }
 23011620:	0141                	addi	sp,sp,16
         BT_ERR("Unable to lookup conn for handle %u", handle);
-23011622:	ff0f206f          	j	23003e12 <bflb_platform_printf>
+23011622:	811f206f          	j	23003e32 <bflb_platform_printf>
 
 23011626 <hci_le_meta_event>:
 {
@@ -35612,7 +35623,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 }
 2301169e:	0141                	addi	sp,sp,16
             BT_ERR("Too small (%u bytes) event 0x%02x",
-230116a0:	f72f206f          	j	23003e12 <bflb_platform_printf>
+230116a0:	f92f206f          	j	23003e32 <bflb_platform_printf>
 230116a4:	00c45903          	lhu	s2,12(s0)
     BT_WARN("Unhandled event 0x%02x len %u: %s", event,
 230116a8:	4408                	lw	a0,8(s0)
@@ -35636,7 +35647,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 }
 230116ce:	0141                	addi	sp,sp,16
     BT_WARN("Unhandled event 0x%02x len %u: %s", event,
-230116d0:	f42f206f          	j	23003e12 <bflb_platform_printf>
+230116d0:	f62f206f          	j	23003e32 <bflb_platform_printf>
 
 230116d4 <bt_hci_cmd_create>:
 {
@@ -35779,7 +35790,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 }
 230117d6:	0141                	addi	sp,sp,16
         BT_ERR("Unable to allocate buffer");
-230117d8:	e3af206f          	j	23003e12 <bflb_platform_printf>
+230117d8:	e5af206f          	j	23003e32 <bflb_platform_printf>
 
 230117dc <le_conn_param_req>:
     struct bt_hci_evt_le_conn_param_req *evt = (void *)buf->data;
@@ -35931,7 +35942,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 23011918:	85a2                	mv	a1,s0
 2301191a:	dc450513          	addi	a0,a0,-572 # 23035dc4 <attr__2_gap_svc+0xbc>
 2301191e:	4fc60613          	addi	a2,a2,1276 # 230364fc <__func__.19>
-23011922:	cf0f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011922:	d10f20ef          	jal	ra,23003e32 <bflb_platform_printf>
         le_conn_param_neg_reply(handle, BT_HCI_ERR_UNKNOWN_CONN_ID);
 23011926:	8522                	mv	a0,s0
 23011928:	4589                	li	a1,2
@@ -36072,13 +36083,13 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 }
 23011a50:	6105                	addi	sp,sp,32
         BT_ERR("Unable to lookup conn for handle %u", handle);
-23011a52:	bc0f206f          	j	23003e12 <bflb_platform_printf>
+23011a52:	be0f206f          	j	23003e32 <bflb_platform_printf>
         BT_ERR("Out of command buffers");
 23011a56:	230365b7          	lui	a1,0x23036
 23011a5a:	23036537          	lui	a0,0x23036
 23011a5e:	53c58593          	addi	a1,a1,1340 # 2303653c <__func__.22>
 23011a62:	f9850513          	addi	a0,a0,-104 # 23035f98 <attr__2_gap_svc+0x290>
-23011a66:	bacf20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011a66:	bccf20ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23011a6a:	b761                	j	230119f2 <le_ltk_request+0xb8>
         BT_ERR("Out of command buffers");
@@ -36086,7 +36097,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 23011a70:	23036537          	lui	a0,0x23036
 23011a74:	52858593          	addi	a1,a1,1320 # 23036528 <__func__.21>
 23011a78:	f9850513          	addi	a0,a0,-104 # 23035f98 <attr__2_gap_svc+0x290>
-23011a7c:	b96f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011a7c:	bb6f20ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23011a80:	bf8d                	j	230119f2 <le_ltk_request+0xb8>
 
@@ -36169,7 +36180,7 @@ static void id_create(u8_t id, bt_addr_le_t *addr, u8_t *irk)
 23011b0a:	23036537          	lui	a0,0x23036
 23011b0e:	fb850513          	addi	a0,a0,-72 # 23035fb8 <attr__2_gap_svc+0x2b0>
 23011b12:	5fc58593          	addi	a1,a1,1532 # 230365fc <__func__.34>
-23011b16:	afcf20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011b16:	b1cf20ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOBUFS;
 23011b1a:	fc900513          	li	a0,-55
 23011b1e:	bfe9                	j	23011af8 <bt_le_set_data_len+0x6c>
@@ -36476,7 +36487,7 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011d40:	23036537          	lui	a0,0x23036
 23011d44:	5c860613          	addi	a2,a2,1480 # 230365c8 <__func__.29>
 23011d48:	05450513          	addi	a0,a0,84 # 23036054 <attr__2_gap_svc+0x34c>
-23011d4c:	8c6f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011d4c:	8e6f20ef          	jal	ra,23003e32 <bflb_platform_printf>
             net_buf_unref(buf);
 23011d50:	8522                	mv	a0,s0
 23011d52:	0a1080ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -36494,7 +36505,7 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011d68:	23036537          	lui	a0,0x23036
 23011d6c:	5c068693          	addi	a3,a3,1472 # 230365c0 <__func__.28>
 23011d70:	00050513          	mv	a0,a0
-23011d74:	89ef20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011d74:	8bef20ef          	jal	ra,23003e32 <bflb_platform_printf>
         net_buf_unref(buf);
 23011d78:	8522                	mv	a0,s0
 23011d7a:	079080ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -36509,10 +36520,10 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011d88:	0141                	addi	sp,sp,16
 23011d8a:	8082                	ret
     BT_ASSERT(buf->len >= sizeof(*hdr));
-23011d8c:	a6df10ef          	jal	ra,230037f8 <vAssertCalled>
+23011d8c:	aadf10ef          	jal	ra,23003838 <vAssertCalled>
 23011d90:	b5c9                	j	23011c52 <bt_recv+0x24>
     BT_ASSERT(!bt_hci_evt_is_prio(hdr->evt));
-23011d92:	a67f10ef          	jal	ra,230037f8 <vAssertCalled>
+23011d92:	aa7f10ef          	jal	ra,23003838 <vAssertCalled>
 23011d96:	230367b7          	lui	a5,0x23036
 23011d9a:	6d478793          	addi	a5,a5,1748 # 230366d4 <normal_events>
     handle_event(hdr->evt, buf, normal_events, ARRAY_SIZE(normal_events));
@@ -36526,14 +36537,14 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011dac:	4595                	li	a1,5
 23011dae:	bf81                	j	23011cfe <bt_recv+0xd0>
     BT_ASSERT(buf->len >= sizeof(*hdr));
-23011db0:	a49f10ef          	jal	ra,230037f8 <vAssertCalled>
+23011db0:	a89f10ef          	jal	ra,23003838 <vAssertCalled>
 23011db4:	bf09                	j	23011cc6 <bt_recv+0x98>
             BT_ERR("Too small (%u bytes) event 0x%02x",
 23011db6:	230366b7          	lui	a3,0x23036
 23011dba:	23036537          	lui	a0,0x23036
 23011dbe:	48068693          	addi	a3,a3,1152 # 23036480 <__func__.13>
 23011dc2:	f2850513          	addi	a0,a0,-216 # 23035f28 <attr__2_gap_svc+0x220>
-23011dc6:	84cf20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011dc6:	86cf20ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 23011dca:	bfb9                	j	23011d28 <bt_recv+0xfa>
 23011dcc:	00c45903          	lhu	s2,12(s0)
@@ -36548,7 +36559,7 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011de6:	864a                	mv	a2,s2
 23011de8:	85a6                	mv	a1,s1
 23011dea:	f5050513          	addi	a0,a0,-176 # 23035f50 <attr__2_gap_svc+0x248>
-23011dee:	824f20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011dee:	844f20ef          	jal	ra,23003e32 <bflb_platform_printf>
 23011df2:	bf1d                	j	23011d28 <bt_recv+0xfa>
         BT_ERR("Unable to find conn for handle %u", acl(buf)->handle);
 23011df4:	01645583          	lhu	a1,22(s0)
@@ -36556,7 +36567,7 @@ static inline bool bt_hci_evt_is_prio(u8_t evt)
 23011dfc:	23036537          	lui	a0,0x23036
 23011e00:	5c060613          	addi	a2,a2,1472 # 230365c0 <__func__.28>
 23011e04:	02c50513          	addi	a0,a0,44 # 2303602c <attr__2_gap_svc+0x324>
-23011e08:	80af20ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011e08:	82af20ef          	jal	ra,23003e32 <bflb_platform_printf>
         net_buf_unref(buf);
 23011e0c:	8522                	mv	a0,s0
 23011e0e:	7e4080ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -36609,7 +36620,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
                 BT_WARN("Unexpected k_poll event state %u", ev->state);
 23011e62:	61090613          	addi	a2,s2,1552 # 23036610 <__func__.35>
 23011e66:	07048513          	addi	a0,s1,112 # 23036070 <attr__2_gap_svc+0x368>
-23011e6a:	fa9f10ef          	jal	ra,23003e12 <bflb_platform_printf>
+23011e6a:	fc9f10ef          	jal	ra,23003e32 <bflb_platform_printf>
     for (int ii = 0; ii < total_evt_array_cnt; ev++, ii++) {
 23011e6e:	0b05                	addi	s6,s6,1
 23011e70:	4799                	li	a5,6
@@ -36718,7 +36729,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 23011f32:	2f7080ef          	jal	ra,2301aa28 <k_poll>
         BT_ASSERT(err == 0);
 23011f36:	c119                	beqz	a0,23011f3c <bt_co_thread+0x52>
-23011f38:	8c1f10ef          	jal	ra,230037f8 <vAssertCalled>
+23011f38:	901f10ef          	jal	ra,23003838 <vAssertCalled>
         process_events(events, ev_count, EV_COUNT);
 23011f3c:	85a6                	mv	a1,s1
 23011f3e:	e5018513          	addi	a0,gp,-432 # 42016650 <events.9>
@@ -36851,7 +36862,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 23012040:	1e9080ef          	jal	ra,2301aa28 <k_poll>
         BT_ASSERT(err == 0);
 23012044:	d155                	beqz	a0,23011fe8 <bt_hci_cmd_send_sync+0x9c>
-23012046:	fb2f10ef          	jal	ra,230037f8 <vAssertCalled>
+23012046:	ff2f10ef          	jal	ra,23003838 <vAssertCalled>
         if (to_process)
 2301204a:	00414783          	lbu	a5,4(sp)
 2301204e:	d3c5                	beqz	a5,23011fee <bt_hci_cmd_send_sync+0xa2>
@@ -36970,9 +36981,9 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 2301214e:	63c60613          	addi	a2,a2,1596 # 2303663c <__func__.39>
 23012152:	85ea                	mv	a1,s10
 23012154:	09850513          	addi	a0,a0,152 # 23036098 <attr__2_gap_svc+0x390>
-23012158:	cbbf10ef          	jal	ra,23003e12 <bflb_platform_printf>
+23012158:	cdbf10ef          	jal	ra,23003e32 <bflb_platform_printf>
                 BT_ASSERT(err == 0);
-2301215c:	e9cf10ef          	jal	ra,230037f8 <vAssertCalled>
+2301215c:	edcf10ef          	jal	ra,23003838 <vAssertCalled>
         net_buf_unref(buf);
 23012160:	8526                	mv	a0,s1
                 err = -ETIME;
@@ -37750,7 +37761,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 23012788:	4a060613          	addi	a2,a2,1184 # 230364a0 <__func__.15>
 2301278c:	85ca                	mv	a1,s2
 2301278e:	0e450513          	addi	a0,a0,228 # 230360e4 <attr__2_gap_svc+0x3dc>
-23012792:	e80f10ef          	jal	ra,23003e12 <bflb_platform_printf>
+23012792:	ea0f10ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23012796:	b7b5                	j	23012702 <enh_conn_complete+0x1b0>
     if (IS_ENABLED(CONFIG_BT_PERIPHERAL) &&
@@ -37794,7 +37805,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 230127ea:	23036537          	lui	a0,0x23036
 230127ee:	0c450513          	addi	a0,a0,196 # 230360c4 <attr__2_gap_svc+0x3bc>
 230127f2:	4a060613          	addi	a2,a2,1184 # 230364a0 <__func__.15>
-230127f6:	e1cf10ef          	jal	ra,23003e12 <bflb_platform_printf>
+230127f6:	e3cf10ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_conn_unref(conn);
 230127fa:	8522                	mv	a0,s0
 }
@@ -38484,7 +38495,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 }
 23012e80:	6125                	addi	sp,sp,96
             BT_ERR("Unexpected end of buffer");
-23012e82:	f91f006f          	j	23003e12 <bflb_platform_printf>
+23012e82:	fb1f006f          	j	23003e32 <bflb_platform_printf>
 
 23012e86 <set_ad>:
 {
@@ -38621,7 +38632,7 @@ static void process_events(struct k_poll_event *ev, int count, int total_evt_arr
 23012f7e:	23036537          	lui	a0,0x23036
 23012f82:	13050513          	addi	a0,a0,304 # 23036130 <attr__2_gap_svc+0x428>
 23012f86:	67c58593          	addi	a1,a1,1660 # 2303667c <__func__.8>
-23012f8a:	e89f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23012f8a:	ea9f00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     return -EINVAL;
 23012f8e:	5529                	li	a0,-22
 }
@@ -39041,7 +39052,7 @@ void bt_id_add(struct bt_keys *keys)
 2301325e:	23036537          	lui	a0,0x23036
 23013262:	5f058593          	addi	a1,a1,1520 # 230365f0 <__func__.33>
 23013266:	1dc50513          	addi	a0,a0,476 # 230361dc <attr__2_gap_svc+0x4d4>
-2301326a:	ba9f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301326a:	bc9f00ef          	jal	ra,23003e32 <bflb_platform_printf>
         goto done;
 2301326e:	b779                	j	230131fc <bt_id_add.part.0+0x112>
     buf = bt_hci_cmd_create(BT_HCI_OP_LE_SET_ADDR_RES_ENABLE, 1);
@@ -39072,7 +39083,7 @@ void bt_id_add(struct bt_keys *keys)
 230132a6:	23036537          	lui	a0,0x23036
 230132aa:	5f040593          	addi	a1,s0,1520 # 230365f0 <__func__.33>
 230132ae:	17c50513          	addi	a0,a0,380 # 2303617c <attr__2_gap_svc+0x474>
-230132b2:	b61f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230132b2:	b81f00ef          	jal	ra,23003e32 <bflb_platform_printf>
         err = bt_hci_cmd_send_sync(BT_HCI_OP_LE_CLEAR_RL, NULL, NULL);
 230132b6:	6509                	lui	a0,0x2
 230132b8:	4601                	li	a2,0
@@ -39100,14 +39111,14 @@ void bt_id_add(struct bt_keys *keys)
 230132e6:	23036537          	lui	a0,0x23036
 230132ea:	5dc58593          	addi	a1,a1,1500 # 230365dc <__func__.32>
 230132ee:	20450513          	addi	a0,a0,516 # 23036204 <attr__2_gap_svc+0x4fc>
-230132f2:	b21f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230132f2:	b41f00ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (err) {
 230132f6:	b719                	j	230131fc <bt_id_add.part.0+0x112>
             BT_ERR("Failed to clear resolution list");
 230132f8:	23036537          	lui	a0,0x23036
 230132fc:	5f040593          	addi	a1,s0,1520
 23013300:	1b450513          	addi	a0,a0,436 # 230361b4 <attr__2_gap_svc+0x4ac>
-23013304:	b0ff00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013304:	b2ff00ef          	jal	ra,23003e32 <bflb_platform_printf>
             goto done;
 23013308:	bdd5                	j	230131fc <bt_id_add.part.0+0x112>
         BT_ERR("Failed to set privacy mode");
@@ -39115,7 +39126,7 @@ void bt_id_add(struct bt_keys *keys)
 2301330e:	23036537          	lui	a0,0x23036
 23013312:	5f058593          	addi	a1,a1,1520 # 230365f0 <__func__.33>
 23013316:	23450513          	addi	a0,a0,564 # 23036234 <attr__2_gap_svc+0x52c>
-2301331a:	af9f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301331a:	b19f00ef          	jal	ra,23003e32 <bflb_platform_printf>
         goto done;
 2301331e:	bdf9                	j	230131fc <bt_id_add.part.0+0x112>
             BT_WARN("Failed to disable address resolution");
@@ -39123,7 +39134,7 @@ void bt_id_add(struct bt_keys *keys)
 23013324:	23036537          	lui	a0,0x23036
 23013328:	5f058593          	addi	a1,a1,1520 # 230365f0 <__func__.33>
 2301332c:	15050513          	addi	a0,a0,336 # 23036150 <attr__2_gap_svc+0x448>
-23013330:	ae3f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013330:	b03f00ef          	jal	ra,23003e32 <bflb_platform_printf>
             goto done;
 23013334:	b5e1                	j	230131fc <bt_id_add.part.0+0x112>
 
@@ -39323,7 +39334,7 @@ void bt_id_del(struct bt_keys *keys)
 230134d6:	23036537          	lui	a0,0x23036
 230134da:	5d058593          	addi	a1,a1,1488 # 230365d0 <__func__.31>
 230134de:	28c50513          	addi	a0,a0,652 # 2303628c <attr__2_gap_svc+0x584>
-230134e2:	931f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230134e2:	951f00ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (bt_dev.le.rl_entries) {
 230134e6:	0914c783          	lbu	a5,145(s1)
 230134ea:	d3d1                	beqz	a5,2301346e <bt_id_del.part.0+0x11a>
@@ -39363,7 +39374,7 @@ void bt_id_del(struct bt_keys *keys)
 23013530:	23036537          	lui	a0,0x23036
 23013534:	5d060613          	addi	a2,a2,1488 # 230365d0 <__func__.31>
 23013538:	25850513          	addi	a0,a0,600 # 23036258 <attr__2_gap_svc+0x550>
-2301353c:	8d7f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301353c:	8f7f00ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (bt_dev.le.rl_entries) {
 23013540:	0914c783          	lbu	a5,145(s1)
 23013544:	d78d                	beqz	a5,2301346e <bt_id_del.part.0+0x11a>
@@ -39448,7 +39459,7 @@ void bt_id_del(struct bt_keys *keys)
 230135d4:	842a                	mv	s0,a0
     BT_ASSERT(bt_buf_get_type(buf) == BT_BUF_EVT);
 230135d6:	00f70463          	beq	a4,a5,230135de <bt_recv_prio+0x1a>
-230135da:	a1ef00ef          	jal	ra,230037f8 <vAssertCalled>
+230135da:	a5ef00ef          	jal	ra,23003838 <vAssertCalled>
     BT_ASSERT(buf->len >= sizeof(*hdr));
 230135de:	00c45703          	lhu	a4,12(s0)
 230135e2:	4785                	li	a5,1
@@ -39469,7 +39480,7 @@ void bt_id_del(struct bt_keys *keys)
 23013608:	8ff9                	and	a5,a5,a4
 2301360a:	e789                	bnez	a5,23013614 <bt_recv_prio+0x50>
     BT_ASSERT(bt_hci_evt_is_prio(hdr->evt));
-2301360c:	9ecf00ef          	jal	ra,230037f8 <vAssertCalled>
+2301360c:	a2cf00ef          	jal	ra,23003838 <vAssertCalled>
     handle_event(hdr->evt, buf, prio_events, ARRAY_SIZE(prio_events));
 23013610:	00094483          	lbu	s1,0(s2)
         if (handler->event != event) {
@@ -39531,10 +39542,10 @@ void bt_id_del(struct bt_keys *keys)
 23013682:	864a                	mv	a2,s2
 23013684:	85a6                	mv	a1,s1
 23013686:	f5050513          	addi	a0,a0,-176 # 23035f50 <attr__2_gap_svc+0x248>
-2301368a:	f88f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301368a:	fa8f00ef          	jal	ra,23003e32 <bflb_platform_printf>
 2301368e:	b77d                	j	2301363c <bt_recv_prio+0x78>
     BT_ASSERT(buf->len >= sizeof(*hdr));
-23013690:	968f00ef          	jal	ra,230037f8 <vAssertCalled>
+23013690:	9a8f00ef          	jal	ra,23003838 <vAssertCalled>
 23013694:	bf91                	j	230135e8 <bt_recv_prio+0x24>
             BT_ERR("Too small (%u bytes) event 0x%02x",
 23013696:	230366b7          	lui	a3,0x23036
@@ -39542,7 +39553,7 @@ void bt_id_del(struct bt_keys *keys)
 2301369e:	48068693          	addi	a3,a3,1152 # 23036480 <__func__.13>
 230136a2:	8626                	mv	a2,s1
 230136a4:	f2850513          	addi	a0,a0,-216 # 23035f28 <attr__2_gap_svc+0x220>
-230136a8:	f6af00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230136a8:	f8af00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 230136ac:	bf41                	j	2301363c <bt_recv_prio+0x78>
 
@@ -39704,7 +39715,7 @@ void bt_id_del(struct bt_keys *keys)
 23013824:	23036537          	lui	a0,0x23036
 23013828:	2f850513          	addi	a0,a0,760 # 230362f8 <attr__2_gap_svc+0x5f0>
 2301382c:	44060613          	addi	a2,a2,1088 # 23036440 <__func__.10>
-23013830:	de2f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013830:	e02f00ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 23013834:	40b2                	lw	ra,12(sp)
 23013836:	8522                	mv	a0,s0
@@ -39721,7 +39732,7 @@ void bt_id_del(struct bt_keys *keys)
 2301384c:	23036537          	lui	a0,0x23036
 23013850:	44058593          	addi	a1,a1,1088 # 23036440 <__func__.10>
 23013854:	2b850513          	addi	a0,a0,696 # 230362b8 <attr__2_gap_svc+0x5b0>
-23013858:	dbaf00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013858:	ddaf00ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENODEV;
 2301385c:	5435                	li	s0,-19
 2301385e:	b751                	j	230137e2 <bt_enable+0x110>
@@ -39790,7 +39801,7 @@ void bt_id_del(struct bt_keys *keys)
 230138e2:	23036537          	lui	a0,0x23036
 230138e6:	31c50513          	addi	a0,a0,796 # 2303631c <attr__2_gap_svc+0x614>
 230138ea:	66c58593          	addi	a1,a1,1644 # 2303666c <__func__.6>
-230138ee:	d24f00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230138ee:	d44f00ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 230138f2:	50b2                	lw	ra,44(sp)
 230138f4:	5422                	lw	s0,40(sp)
@@ -40457,7 +40468,7 @@ static inline u64_t sys_get_le64(const u8_t src[8])
 23013eb6:	23036537          	lui	a0,0x23036
 23013eba:	65c58593          	addi	a1,a1,1628 # 2303665c <__func__.42>
 23013ebe:	37c50513          	addi	a0,a0,892 # 2303637c <attr__2_gap_svc+0x674>
-23013ec2:	f51ef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013ec2:	f71ef0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return err;
 23013ec6:	bc5d                	j	2301397c <init_work+0x18>
 23013ec8:	20e00713          	li	a4,526
@@ -40469,7 +40480,7 @@ static inline u64_t sys_get_le64(const u8_t src[8])
 23013ed6:	23036537          	lui	a0,0x23036
 23013eda:	65458593          	addi	a1,a1,1620 # 23036654 <__func__.41>
 23013ede:	35050513          	addi	a0,a0,848 # 23036350 <attr__2_gap_svc+0x648>
-23013ee2:	f31ef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23013ee2:	f51ef0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENODEV;
 23013ee6:	5435                	li	s0,-19
 23013ee8:	bc51                	j	2301397c <init_work+0x18>
@@ -41272,7 +41283,7 @@ int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
 230143ea:	23036537          	lui	a0,0x23036
 230143ee:	43058593          	addi	a1,a1,1072 # 23036430 <__func__.0>
 230143f2:	3cc50513          	addi	a0,a0,972 # 230363cc <attr__2_gap_svc+0x6c4>
-230143f6:	a1def0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230143f6:	a3def0ef          	jal	ra,23003e32 <bflb_platform_printf>
 230143fa:	fdf00593          	li	a1,-33
 230143fe:	8522                	mv	a0,s0
 23014400:	727050ef          	jal	ra,2301a326 <atomic_and>
@@ -41288,7 +41299,7 @@ int bt_pub_key_gen(struct bt_pub_key_cb *new_cb)
 23014412:	23036537          	lui	a0,0x23036
 23014416:	43058593          	addi	a1,a1,1072 # 23036430 <__func__.0>
 2301441a:	3a450513          	addi	a0,a0,932 # 230363a4 <attr__2_gap_svc+0x69c>
-2301441e:	9f5ef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301441e:	a15ef0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOTSUP;
 23014422:	fdd00913          	li	s2,-35
 23014426:	bf61                	j	230143be <bt_pub_key_gen+0x4e>
@@ -41596,7 +41607,7 @@ void hci_release_conn_related_cmd(void)
 2301460c:	55c60613          	addi	a2,a2,1372 # 2303655c <__func__.24>
 23014610:	85ca                	mv	a1,s2
 23014612:	efc50513          	addi	a0,a0,-260 # 23035efc <attr__2_gap_svc+0x1f4>
-23014616:	ffcef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23014616:	81def0ef          	jal	ra,23003e32 <bflb_platform_printf>
         goto advertise;
 2301461a:	bf7d                	j	230145d8 <hci_disconn_complete+0x70>
 
@@ -41918,7 +41929,7 @@ static void l2cap_connected(struct bt_l2cap_chan *chan)
 {
 230147e6:	c606                	sw	ra,12(sp)
     BT_ERR("No available L2CAP context for conn %p", conn);
-230147e8:	e2aef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230147e8:	e4aef0ef          	jal	ra,23003e32 <bflb_platform_printf>
 
     return -ENOMEM;
 }
@@ -42062,7 +42073,7 @@ static void l2cap_connected(struct bt_l2cap_chan *chan)
 230148ca:	23036537          	lui	a0,0x23036
 230148ce:	74c50513          	addi	a0,a0,1868 # 2303674c <prio_events+0x50>
 230148d2:	b7858593          	addi	a1,a1,-1160 # 23036b78 <__func__.19>
-230148d6:	d3cef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230148d6:	d5cef0ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 230148da:	40b2                	lw	ra,12(sp)
 230148dc:	4422                	lw	s0,8(sp)
@@ -42261,7 +42272,7 @@ static void l2cap_connected(struct bt_l2cap_chan *chan)
 }
 23014a4c:	6145                	addi	sp,sp,48
         BT_ERR("Unable to allocate buffer for op 0x%02x", code);
-23014a4e:	bc4ef06f          	j	23003e12 <bflb_platform_printf>
+23014a4e:	be4ef06f          	j	23003e32 <bflb_platform_printf>
 
 23014a52 <l2cap_chan_send_credits.isra.0>:
 static void l2cap_chan_send_credits(struct bt_l2cap_le_chan *chan,
@@ -42424,7 +42435,7 @@ static void l2cap_chan_send_credits(struct bt_l2cap_le_chan *chan,
 }
 23014b78:	6105                	addi	sp,sp,32
         BT_ERR("Unable to allocate buffer for op 0x%02x", code);
-23014b7a:	a98ef06f          	j	23003e12 <bflb_platform_printf>
+23014b7a:	ab8ef06f          	j	23003e32 <bflb_platform_printf>
 
 23014b7e <l2cap_le_conn_req>:
 {
@@ -42574,7 +42585,7 @@ static void l2cap_chan_send_credits(struct bt_l2cap_le_chan *chan,
 23014c9e:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
 23014ca2:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 23014ca6:	45d1                	li	a1,20
-23014ca8:	96aef0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23014ca8:	98aef0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOMEM;
 23014cac:	5551                	li	a0,-12
 23014cae:	bfd1                	j	23014c82 <l2cap_le_conn_req+0x104>
@@ -43070,7 +43081,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 {
 23015036:	c606                	sw	ra,12(sp)
     BT_ERR("chan %p timeout", chan);
-23015038:	ddbee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015038:	dfbee0ef          	jal	ra,23003e32 <bflb_platform_printf>
     bt_l2cap_chan_remove(chan->chan.conn, &chan->chan);
 2301503c:	ff042503          	lw	a0,-16(s0)
 23015040:	85a6                	mv	a1,s1
@@ -43384,7 +43395,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015224:	23036537          	lui	a0,0x23036
 23015228:	7dc50513          	addi	a0,a0,2012 # 230367dc <prio_events+0xe0>
 2301522c:	af860613          	addi	a2,a2,-1288 # 23036af8 <__func__.11>
-23015230:	be3ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015230:	c03ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 23015234:	4422                	lw	s0,8(sp)
 23015236:	40b2                	lw	ra,12(sp)
@@ -43432,7 +43443,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 2301527c:	23036537          	lui	a0,0x23036
 23015280:	7b850513          	addi	a0,a0,1976 # 230367b8 <prio_events+0xbc>
 23015284:	af858593          	addi	a1,a1,-1288 # 23036af8 <__func__.11>
-23015288:	b8bee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015288:	babee0ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2301528c:	4422                	lw	s0,8(sp)
 2301528e:	40b2                	lw	ra,12(sp)
@@ -43599,7 +43610,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 230153c0:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
 230153c4:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 230153c8:	45c9                	li	a1,18
-230153ca:	a49ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230153ca:	a69ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOMEM;
 230153ce:	5551                	li	a0,-12
 230153d0:	bfc9                	j	230153a2 <bt_l2cap_update_conn_param+0xe8>
@@ -43762,7 +43773,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 230154ca:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
 230154ce:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 230154d2:	4599                	li	a1,6
-230154d4:	93fee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230154d4:	95fee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOMEM;
 230154d8:	5551                	li	a0,-12
 230154da:	b7f9                	j	230154a8 <bt_l2cap_chan_disconnect+0xd4>
@@ -43895,7 +43906,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 230155c4:	23037537          	lui	a0,0x23037
 230155c8:	b4c58593          	addi	a1,a1,-1204 # 23036b4c <__func__.17>
 230155cc:	82450513          	addi	a0,a0,-2012 # 23036824 <prio_events+0x128>
-230155d0:	843ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230155d0:	863ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_l2cap_chan_disconnect(&chan->chan);
 230155d4:	8522                	mv	a0,s0
 }
@@ -43922,7 +43933,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015606:	23037537          	lui	a0,0x23037
 2301560a:	b3460613          	addi	a2,a2,-1228 # 23036b34 <__func__.16>
 2301560e:	84050513          	addi	a0,a0,-1984 # 23036840 <prio_events+0x144>
-23015612:	801ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015612:	821ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
             bt_l2cap_chan_disconnect(&chan->chan);
 23015616:	8522                	mv	a0,s0
 23015618:	dbdff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44075,7 +44086,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
         BT_ERR("No credits to receive packet");
 2301572e:	850b0513          	addi	a0,s6,-1968 # 23036850 <prio_events+0x154>
 23015732:	b64a8593          	addi	a1,s5,-1180 # 23036b64 <__func__.18>
-23015736:	edcee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015736:	efcee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_l2cap_chan_disconnect(&chan->chan);
 2301573a:	854a                	mv	a0,s2
 2301573c:	c99ff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44110,7 +44121,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 2301576e:	85aa                	mv	a1,a0
 23015770:	b64a8613          	addi	a2,s5,-1180
 23015774:	840d0513          	addi	a0,s10,-1984 # 23036840 <prio_events+0x144>
-23015778:	e9aee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015778:	ebaee0ef          	jal	ra,23003e32 <bflb_platform_printf>
             bt_l2cap_chan_disconnect(&chan->chan);
 2301577c:	854a                	mv	a0,s2
 2301577e:	c57ff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44118,7 +44129,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
         BT_ERR("Invalid SDU length");
 23015784:	874b8513          	addi	a0,s7,-1932 # 23036874 <prio_events+0x178>
 23015788:	b64a8593          	addi	a1,s5,-1180
-2301578c:	e86ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301578c:	ea6ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_l2cap_chan_disconnect(&chan->chan);
 23015790:	854a                	mv	a0,s2
 23015792:	c43ff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44132,7 +44143,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
             BT_ERR("Unable to allocate buffer for SDU");
 230157a2:	890c0513          	addi	a0,s8,-1904 # 23036890 <prio_events+0x194>
 230157a6:	b64a8593          	addi	a1,s5,-1180
-230157aa:	e68ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230157aa:	e88ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
             bt_l2cap_chan_disconnect(&chan->chan);
 230157ae:	854a                	mv	a0,s2
 230157b0:	c25ff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44298,7 +44309,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015908:	23037537          	lui	a0,0x23037
 2301590c:	be068693          	addi	a3,a3,-1056 # 23036be0 <__func__.8>
 23015910:	8dc50513          	addi	a0,a0,-1828 # 230368dc <prio_events+0x1e0>
-23015914:	cfeee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015914:	d1eee0ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 23015918:	50f2                	lw	ra,60(sp)
 2301591a:	5462                	lw	s0,56(sp)
@@ -44631,7 +44642,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015bce:	23037537          	lui	a0,0x23037
 23015bd2:	be058593          	addi	a1,a1,-1056 # 23036be0 <__func__.8>
 23015bd6:	8b850513          	addi	a0,a0,-1864 # 230368b8 <prio_events+0x1bc>
-23015bda:	a38ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015bda:	a58ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 23015bde:	bb2d                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Invalid ident value in L2CAP PDU");
@@ -44639,7 +44650,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015be4:	23037537          	lui	a0,0x23037
 23015be8:	be058593          	addi	a1,a1,-1056 # 23036be0 <__func__.8>
 23015bec:	90450513          	addi	a0,a0,-1788 # 23036904 <prio_events+0x208>
-23015bf0:	a22ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015bf0:	a42ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 23015bf4:	b315                	j	23015918 <l2cap_recv+0x162>
     chan = l2cap_remove_ident(conn, ident);
@@ -44657,7 +44668,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015c10:	23037537          	lui	a0,0x23037
 23015c14:	b8858593          	addi	a1,a1,-1144 # 23036b88 <__func__.2>
 23015c18:	a1850513          	addi	a0,a0,-1512 # 23036a18 <prio_events+0x31c>
-23015c1c:	9f6ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015c1c:	a16ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015c20:	b9e5                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Too small LE conn req packet size");
@@ -44665,7 +44676,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015c26:	23037537          	lui	a0,0x23037
 23015c2a:	ba458593          	addi	a1,a1,-1116 # 23036ba4 <__func__.4>
 23015c2e:	95050513          	addi	a0,a0,-1712 # 23036950 <prio_events+0x254>
-23015c32:	9e0ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015c32:	a00ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015c36:	b1cd                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Too small LE conn update param req");
@@ -44673,7 +44684,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015c3c:	23037537          	lui	a0,0x23037
 23015c40:	adc58593          	addi	a1,a1,-1316 # 23036adc <__func__.1>
 23015c44:	a5850513          	addi	a0,a0,-1448 # 23036a58 <prio_events+0x35c>
-23015c48:	9caee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015c48:	9eaee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015c4c:	b1f1                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Too small LE conn req packet size");
@@ -44681,7 +44692,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015c52:	23037537          	lui	a0,0x23037
 23015c56:	bc058593          	addi	a1,a1,-1088 # 23036bc0 <__func__.6>
 23015c5a:	95050513          	addi	a0,a0,-1712 # 23036950 <prio_events+0x254>
-23015c5e:	9b4ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015c5e:	9d4ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015c62:	b95d                	j	23015918 <l2cap_recv+0x162>
     if (buf->len < sizeof(*rsp)) {
@@ -44692,7 +44703,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015c6e:	23037537          	lui	a0,0x23037
 23015c72:	bcc58593          	addi	a1,a1,-1076 # 23036bcc <__func__.7>
 23015c76:	92c50513          	addi	a0,a0,-1748 # 2303692c <prio_events+0x230>
-23015c7a:	998ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015c7a:	9b8ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015c7e:	b969                	j	23015918 <l2cap_recv+0x162>
     if (buf->len < sizeof(*rsp)) {
@@ -44760,7 +44771,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015cfc:	bb460613          	addi	a2,a2,-1100 # 23036bb4 <__func__.5>
 23015d00:	85d2                	mv	a1,s4
 23015d02:	9c450513          	addi	a0,a0,-1596 # 230369c4 <prio_events+0x2c8>
-23015d06:	90cee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015d06:	92cee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015d0a:	b139                	j	23015918 <l2cap_recv+0x162>
             BT_WARN("Unknown L2CAP PDU code 0x%02x", hdr->code);
@@ -44768,7 +44779,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015d10:	23037537          	lui	a0,0x23037
 23015d14:	be060613          	addi	a2,a2,-1056 # 23036be0 <__func__.8>
 23015d18:	a8450513          	addi	a0,a0,-1404 # 23036a84 <prio_events+0x388>
-23015d1c:	8f6ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015d1c:	916ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
             l2cap_send_reject(chan->conn, hdr->ident,
 23015d20:	0014c583          	lbu	a1,1(s1)
 23015d24:	0009a503          	lw	a0,0(s3)
@@ -44834,7 +44845,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015d9c:	23037537          	lui	a0,0x23037
 23015da0:	bc058593          	addi	a1,a1,-1088 # 23036bc0 <__func__.6>
 23015da4:	97850513          	addi	a0,a0,-1672 # 23036978 <prio_events+0x27c>
-23015da8:	86aee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015da8:	88aee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015dac:	b6b5                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Too small LE disconn rsp packet size");
@@ -44842,7 +44853,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015db2:	23037537          	lui	a0,0x23037
 23015db6:	b9458593          	addi	a1,a1,-1132 # 23036b94 <__func__.3>
 23015dba:	9ec50513          	addi	a0,a0,-1556 # 230369ec <prio_events+0x2f0>
-23015dbe:	854ee0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015dbe:	874ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015dc2:	be99                	j	23015918 <l2cap_recv+0x162>
         l2cap_send_reject(conn, ident, BT_L2CAP_REJ_NOT_UNDERSTOOD,
@@ -44904,7 +44915,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015e26:	23037537          	lui	a0,0x23037
 23015e2a:	bb458593          	addi	a1,a1,-1100 # 23036bb4 <__func__.5>
 23015e2e:	99c50513          	addi	a0,a0,-1636 # 2303699c <prio_events+0x2a0>
-23015e32:	fe1ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015e32:	800ee0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015e36:	b4cd                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Credits overflow");
@@ -44912,7 +44923,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015e3c:	23037537          	lui	a0,0x23037
 23015e40:	b8858593          	addi	a1,a1,-1144 # 23036b88 <__func__.2>
 23015e44:	a4050513          	addi	a0,a0,-1472 # 23036a40 <prio_events+0x344>
-23015e48:	fcbed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015e48:	febed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         bt_l2cap_chan_disconnect(chan);
 23015e4c:	8522                	mv	a0,s0
 23015e4e:	d86ff0ef          	jal	ra,230153d4 <bt_l2cap_chan_disconnect>
@@ -44963,7 +44974,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015ea4:	23037537          	lui	a0,0x23037
 23015ea8:	b8858593          	addi	a1,a1,-1144 # 23036b88 <__func__.2>
 23015eac:	aa850513          	addi	a0,a0,-1368 # 23036aa8 <prio_events+0x3ac>
-23015eb0:	f63ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015eb0:	f83ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return;
 23015eb4:	b495                	j	23015918 <l2cap_recv+0x162>
         data.scid = req->scid;
@@ -45037,7 +45048,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015f2c:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 23015f30:	459d                	li	a1,7
 23015f32:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
-23015f36:	edded0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015f36:	efded0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!buf) {
 23015f3a:	baf9                	j	23015918 <l2cap_recv+0x162>
         BT_ERR("Unable to allocate buffer for op 0x%02x", code);
@@ -45046,7 +45057,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015f44:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 23015f48:	45cd                	li	a1,19
 23015f4a:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
-23015f4e:	ec5ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015f4e:	ee5ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!buf) {
 23015f52:	b2d9                	j	23015918 <l2cap_recv+0x162>
         rsp->result = sys_cpu_to_le16(BT_L2CAP_LE_ERR_PSM_NOT_SUPP);
@@ -45087,7 +45098,7 @@ static inline size_t net_buf_frags_len(struct net_buf *buf)
 23015f98:	b1c60613          	addi	a2,a2,-1252 # 23036b1c <__func__.14>
 23015f9c:	45d5                	li	a1,21
 23015f9e:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
-23015fa2:	e71ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23015fa2:	e91ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!buf) {
 23015fa6:	ba8d                	j	23015918 <l2cap_recv+0x162>
                 chan->chan.required_sec_level = BT_SECURITY_L3;
@@ -46098,7 +46109,7 @@ static u8_t display_passkey(struct bt_smp *smp)
     if (atomic_test_and_clear_bit(smp->flags, SMP_FLAG_USER) ||
 2301662c:	09c40493          	addi	s1,s0,156
     BT_ERR("reason 0x%x", req->reason);
-23016630:	fe2ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016630:	803ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
     old = atomic_and(ATOMIC_ELEM(target, bit), ~mask);
 23016634:	dff00593          	li	a1,-513
 23016638:	8526                	mv	a0,s1
@@ -46170,7 +46181,7 @@ static u8_t display_passkey(struct bt_smp *smp)
 230166b0:	c606                	sw	ra,12(sp)
 230166b2:	c226                	sw	s1,4(sp)
     BT_ERR("SMP Timeout");
-230166b4:	f5eed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230166b4:	f7eed0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (atomic_test_bit(smp->flags, SMP_FLAG_KEYS_DISTR) &&
 230166b8:	f1840493          	addi	s1,s0,-232
     atomic_val_t val = atomic_get(ATOMIC_ELEM(target, bit));
@@ -46252,7 +46263,7 @@ static u8_t display_passkey(struct bt_smp *smp)
 23016750:	23037537          	lui	a0,0x23037
 23016754:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 23016758:	17460613          	addi	a2,a2,372 # 23037174 <__func__.8>
-2301675c:	eb6ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301675c:	ed6ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23016760:	4521                	li	a0,8
 23016762:	bfd9                	j	23016738 <smp_ident_info+0x50>
@@ -46312,7 +46323,7 @@ static u8_t display_passkey(struct bt_smp *smp)
 230167ca:	23037537          	lui	a0,0x23037
 230167ce:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 230167d2:	14c60613          	addi	a2,a2,332 # 2303714c <__func__.6>
-230167d6:	e3ced0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230167d6:	e5ced0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 230167da:	4521                	li	a0,8
 230167dc:	bfd9                	j	230167b2 <smp_encrypt_info+0x4e>
@@ -46352,7 +46363,7 @@ static u8_t display_passkey(struct bt_smp *smp)
 2301681a:	23037537          	lui	a0,0x23037
 2301681e:	c8c50513          	addi	a0,a0,-884 # 23036c8c <uuid128_base+0x90>
 23016822:	10c60613          	addi	a2,a2,268 # 2303710c <__func__.3>
-23016826:	deced0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016826:	e0ced0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 2301682a:	4521                	li	a0,8
 }
@@ -46369,7 +46380,7 @@ static u8_t display_passkey(struct bt_smp *smp)
 2301683e:	23037537          	lui	a0,0x23037
 23016842:	c5850513          	addi	a0,a0,-936 # 23036c58 <uuid128_base+0x5c>
 23016846:	10c58593          	addi	a1,a1,268 # 2303710c <__func__.3>
-2301684a:	dc8ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301684a:	de8ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return BT_SMP_ERR_UNSPECIFIED;
 2301684e:	4521                	li	a0,8
 23016850:	bff1                	j	2301682c <legacy_request_tk+0x4e>
@@ -46596,7 +46607,7 @@ static void bt_smp_disconnected(struct bt_l2cap_chan *chan)
 {
 230169a2:	c606                	sw	ra,12(sp)
     BT_ERR("No available SMP context for conn %p", conn);
-230169a4:	c6eed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230169a4:	c8eed0ef          	jal	ra,23003e32 <bflb_platform_printf>
 
     return -ENOMEM;
 }
@@ -47047,7 +47058,7 @@ static inline void bt_l2cap_send(struct bt_conn *conn, u16_t cid,
 23016cdc:	23037637          	lui	a2,0x23037
 23016ce0:	d3850513          	addi	a0,a0,-712 # 23036d38 <uuid128_base+0x13c>
 23016ce4:	09060613          	addi	a2,a2,144 # 23037090 <__func__.14>
-23016ce8:	92aed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016ce8:	94aed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         smp_error(smp, BT_SMP_ERR_CMD_NOTSUPP);
 23016cec:	459d                	li	a1,7
 23016cee:	854e                	mv	a0,s3
@@ -47067,7 +47078,7 @@ static inline void bt_l2cap_send(struct bt_conn *conn, u16_t cid,
 23016d0a:	23037537          	lui	a0,0x23037
 23016d0e:	09058593          	addi	a1,a1,144 # 23037090 <__func__.14>
 23016d12:	cdc50513          	addi	a0,a0,-804 # 23036cdc <uuid128_base+0xe0>
-23016d16:	8fced0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016d16:	91ced0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 23016d1a:	bfe9                	j	23016cf4 <bt_smp_recv+0xb0>
         BT_ERR("Invalid len %u for code 0x%02x", buf->len, hdr->code);
@@ -47075,7 +47086,7 @@ static inline void bt_l2cap_send(struct bt_conn *conn, u16_t cid,
 23016d20:	230376b7          	lui	a3,0x23037
 23016d24:	d7c50513          	addi	a0,a0,-644 # 23036d7c <uuid128_base+0x180>
 23016d28:	09068693          	addi	a3,a3,144 # 23037090 <__func__.14>
-23016d2c:	8e6ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016d2c:	906ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         smp_error(smp, BT_SMP_ERR_INVALID_PARAMS);
 23016d30:	45a9                	li	a1,10
 23016d32:	854e                	mv	a0,s3
@@ -47087,7 +47098,7 @@ static inline void bt_l2cap_send(struct bt_conn *conn, u16_t cid,
 23016d3e:	23037537          	lui	a0,0x23037
 23016d42:	09060613          	addi	a2,a2,144 # 23037090 <__func__.14>
 23016d46:	d0050513          	addi	a0,a0,-768 # 23036d00 <uuid128_base+0x104>
-23016d4a:	8c8ed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016d4a:	8e8ed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 23016d4e:	b75d                	j	23016cf4 <bt_smp_recv+0xb0>
         BT_WARN("Unexpected SMP code 0x%02x", hdr->code);
@@ -47096,7 +47107,7 @@ static inline void bt_l2cap_send(struct bt_conn *conn, u16_t cid,
 23016d58:	23037537          	lui	a0,0x23037
 23016d5c:	09060613          	addi	a2,a2,144 # 23037090 <__func__.14>
 23016d60:	d5850513          	addi	a0,a0,-680 # 23036d58 <uuid128_base+0x15c>
-23016d64:	8aeed0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23016d64:	8ceed0ef          	jal	ra,23003e32 <bflb_platform_printf>
         if (hdr->code != BT_SMP_CMD_PAIRING_FAIL) {
 23016d68:	000a4703          	lbu	a4,0(s4)
 23016d6c:	4795                	li	a5,5
@@ -48387,7 +48398,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017790:	23037537          	lui	a0,0x23037
 23017794:	0fc58593          	addi	a1,a1,252 # 230370fc <__func__.22>
 23017798:	da450513          	addi	a0,a0,-604 # 23036da4 <uuid128_base+0x1a8>
-2301779c:	e76ec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301779c:	e96ec0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOTCONN;
 230177a0:	fc700a93          	li	s5,-57
 230177a4:	bfbd                	j	23017722 <smp_send_pairing_req+0x136>
@@ -48534,7 +48545,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 230178ba:	07860613          	addi	a2,a2,120 # 23037078 <__func__.13>
 230178be:	85ca                	mv	a1,s2
 230178c0:	dc850513          	addi	a0,a0,-568 # 23036dc8 <uuid128_base+0x1cc>
-230178c4:	d4eec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230178c4:	d6eec0ef          	jal	ra,23003e32 <bflb_platform_printf>
         goto pair;
 230178c8:	b7c9                	j	2301788a <smp_security_request+0xd2>
 
@@ -48781,7 +48792,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017ae8:	23037537          	lui	a0,0x23037
 23017aec:	e0050513          	addi	a0,a0,-512 # 23036e00 <uuid128_base+0x204>
 23017af0:	04c60613          	addi	a2,a2,76 # 2303704c <__func__.11>
-23017af4:	b1eec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017af4:	b3eec0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return BT_SMP_ERR_UNSPECIFIED;
 23017af8:	4521                	li	a0,8
 23017afa:	b521                	j	23017902 <bt_smp_distribute_keys+0x38>
@@ -48790,7 +48801,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017b00:	23037537          	lui	a0,0x23037
 23017b04:	e7c50513          	addi	a0,a0,-388 # 23036e7c <uuid128_base+0x280>
 23017b08:	04c58593          	addi	a1,a1,76 # 2303704c <__func__.11>
-23017b0c:	b06ec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017b0c:	b26ec0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23017b10:	4521                	li	a0,8
 23017b12:	bbc5                	j	23017902 <bt_smp_distribute_keys+0x38>
@@ -48806,7 +48817,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017b26:	23037537          	lui	a0,0x23037
 23017b2a:	03458593          	addi	a1,a1,52 # 23037034 <__func__.10>
 23017b2e:	e1c50513          	addi	a0,a0,-484 # 23036e1c <uuid128_base+0x220>
-23017b32:	ae0ec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017b32:	b00ec0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 23017b36:	b3c9                	j	230178f8 <bt_smp_distribute_keys+0x2e>
             BT_ERR("Unable to allocate Master Ident buffer");
@@ -48814,7 +48825,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017b3c:	23037537          	lui	a0,0x23037
 23017b40:	03458593          	addi	a1,a1,52 # 23037034 <__func__.10>
 23017b44:	e4c50513          	addi	a0,a0,-436 # 23036e4c <uuid128_base+0x250>
-23017b48:	acaec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017b48:	aeaec0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 23017b4c:	b375                	j	230178f8 <bt_smp_distribute_keys+0x2e>
 
@@ -49043,7 +49054,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017ce4:	23037537          	lui	a0,0x23037
 23017ce8:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 23017cec:	06460613          	addi	a2,a2,100 # 23037064 <__func__.12>
-23017cf0:	922ec0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017cf0:	942ec0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23017cf4:	4521                	li	a0,8
 23017cf6:	b765                	j	23017c9e <smp_signing_info+0x46>
@@ -49175,7 +49186,7 @@ static bool sec_level_reachable(struct bt_conn *conn)
 23017e16:	23037537          	lui	a0,0x23037
 23017e1a:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 23017e1e:	16060613          	addi	a2,a2,352 # 23037160 <__func__.7>
-23017e22:	ff1eb0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017e22:	810ec0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23017e26:	4521                	li	a0,8
 23017e28:	bf31                	j	23017d44 <smp_master_ident+0x4c>
@@ -49359,7 +49370,7 @@ static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 23017fd8:	23037537          	lui	a0,0x23037
 23017fdc:	18440613          	addi	a2,s0,388 # 23037184 <__func__.9>
 23017fe0:	eac50513          	addi	a0,a0,-340 # 23036eac <uuid128_base+0x2b0>
-23017fe4:	e2feb0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017fe4:	e4feb0ef          	jal	ra,23003e32 <bflb_platform_printf>
         BT_ERR(" for %s", bt_addr_le_str(&conn->le.dst));
 23017fe8:	07090513          	addi	a0,s2,112
 23017fec:	a4df50ef          	jal	ra,2300da38 <bt_addr_le_str_real>
@@ -49367,7 +49378,7 @@ static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 23017ff2:	23037537          	lui	a0,0x23037
 23017ff6:	ec850513          	addi	a0,a0,-312 # 23036ec8 <uuid128_base+0x2cc>
 23017ffa:	18440613          	addi	a2,s0,388
-23017ffe:	e15eb0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23017ffe:	e35eb0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return BT_SMP_ERR_INVALID_PARAMS;
 23018002:	4529                	li	a0,10
 23018004:	b551                	j	23017e88 <smp_ident_addr_info+0x5e>
@@ -49379,7 +49390,7 @@ static inline bool bt_addr_le_is_identity(const bt_addr_le_t *addr)
 23018012:	23037537          	lui	a0,0x23037
 23018016:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 2301801a:	18460613          	addi	a2,a2,388 # 23037184 <__func__.9>
-2301801e:	df5eb0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301801e:	e15eb0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23018022:	4521                	li	a0,8
 23018024:	b595                	j	23017e88 <smp_ident_addr_info+0x5e>
@@ -49915,7 +49926,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23018408:	23037537          	lui	a0,0x23037
 2301840c:	02058593          	addi	a1,a1,32 # 23037020 <__func__.0>
 23018410:	ed850513          	addi	a0,a0,-296 # 23036ed8 <uuid128_base+0x2dc>
-23018414:	9ffeb06f          	j	23003e12 <bflb_platform_printf>
+23018414:	a1feb06f          	j	23003e32 <bflb_platform_printf>
                 smp_error(smp, err);
 23018418:	85aa                	mv	a1,a0
 2301841a:	8522                	mv	a0,s0
@@ -50426,7 +50437,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23018868:	23037537          	lui	a0,0x23037
 2301886c:	ef850513          	addi	a0,a0,-264 # 23036ef8 <uuid128_base+0x2fc>
 23018870:	0d858593          	addi	a1,a1,216 # 230370d8 <__func__.20>
-23018874:	d9eeb0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23018874:	dbeeb0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return err;
 23018878:	556d                	li	a0,-5
 2301887a:	b7c9                	j	2301883c <smp_sign_buf+0x14e>
@@ -51240,7 +51251,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23018f96:	23037537          	lui	a0,0x23037
 23018f9a:	12058593          	addi	a1,a1,288 # 23037120 <__func__.4>
 23018f9e:	f1450513          	addi	a0,a0,-236 # 23036f14 <uuid128_base+0x318>
-23018fa2:	e71ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23018fa2:	e91ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
             return BT_SMP_ERR_UNSPECIFIED;
 23018fa6:	44a1                	li	s1,8
 23018fa8:	bb8d                	j	23018d1a <smp_pairing_random+0x5a>
@@ -52020,7 +52031,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 230195ea:	23037537          	lui	a0,0x23037
 230195ee:	0fc58593          	addi	a1,a1,252 # 230370fc <__func__.22>
 230195f2:	da450513          	addi	a0,a0,-604 # 23036da4 <uuid128_base+0x1a8>
-230195f6:	81dea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230195f6:	83dea0ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (!smp) {
 230195fa:	b5e9                	j	230194c4 <bt_smp_request_ltk+0x60>
         enc_size = conn->le.keys->enc_size;
@@ -52187,7 +52198,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019764:	23037537          	lui	a0,0x23037
 23019768:	f6050513          	addi	a0,a0,-160 # 23036f60 <uuid128_base+0x364>
 2301976c:	0e860613          	addi	a2,a2,232 # 230370e8 <__func__.21>
-23019770:	ea2ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23019770:	ec2ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EIO;
 23019774:	556d                	li	a0,-5
 23019776:	bfd9                	j	2301974c <bt_smp_sign_verify+0xe2>
@@ -52199,7 +52210,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019784:	23037537          	lui	a0,0x23037
 23019788:	f8850513          	addi	a0,a0,-120 # 23036f88 <uuid128_base+0x38c>
 2301978c:	0e860613          	addi	a2,a2,232 # 230370e8 <__func__.21>
-23019790:	e82ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23019790:	ea2ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EBADMSG;
 23019794:	fb300513          	li	a0,-77
 23019798:	bf55                	j	2301974c <bt_smp_sign_verify+0xe2>
@@ -52211,7 +52222,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 230197a6:	23037537          	lui	a0,0x23037
 230197aa:	f3850513          	addi	a0,a0,-200 # 23036f38 <uuid128_base+0x33c>
 230197ae:	0e860613          	addi	a2,a2,232 # 230370e8 <__func__.21>
-230197b2:	e60ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230197b2:	e80ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOENT;
 230197b6:	5579                	li	a0,-2
 230197b8:	bf51                	j	2301974c <bt_smp_sign_verify+0xe2>
@@ -52287,7 +52298,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019840:	23037537          	lui	a0,0x23037
 23019844:	f6050513          	addi	a0,a0,-160 # 23036f60 <uuid128_base+0x364>
 23019848:	0c060613          	addi	a2,a2,192 # 230370c0 <__func__.19>
-2301984c:	dc6ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301984c:	de6ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -EIO;
 23019850:	556d                	li	a0,-5
 23019852:	bfd9                	j	23019828 <bt_smp_sign+0x6e>
@@ -52299,7 +52310,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019860:	23037537          	lui	a0,0x23037
 23019864:	fb050513          	addi	a0,a0,-80 # 23036fb0 <uuid128_base+0x3b4>
 23019868:	0c060613          	addi	a2,a2,192 # 230370c0 <__func__.19>
-2301986c:	da6ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301986c:	dc6ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         return -ENOENT;
 23019870:	5579                	li	a0,-2
 23019872:	bf5d                	j	23019828 <bt_smp_sign+0x6e>
@@ -52521,7 +52532,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019a24:	23037537          	lui	a0,0x23037
 23019a28:	0fc58593          	addi	a1,a1,252 # 230370fc <__func__.22>
 23019a2c:	da450513          	addi	a0,a0,-604 # 23036da4 <uuid128_base+0x1a8>
-23019a30:	be2ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23019a30:	c02ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
                 return -ENOTCONN;
 23019a34:	fc700493          	li	s1,-57
 23019a38:	bf25                	j	23019970 <bt_smp_start_security+0xfc>
@@ -52696,7 +52707,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 23019ba6:	23037537          	lui	a0,0x23037
 23019baa:	c3850513          	addi	a0,a0,-968 # 23036c38 <uuid128_base+0x3c>
 23019bae:	0ac60613          	addi	a2,a2,172 # 230370ac <__func__.17>
-23019bb2:	a60ea0ef          	jal	ra,23003e12 <bflb_platform_printf>
+23019bb2:	a80ea0ef          	jal	ra,23003e32 <bflb_platform_printf>
         smp_error(smp, BT_SMP_ERR_UNSPECIFIED);
 23019bb6:	8522                	mv	a0,s0
 }
@@ -52725,7 +52736,7 @@ static u8_t smp_public_key_slave(struct bt_smp *smp)
 }
 23019be4:	6105                	addi	sp,sp,32
         BT_ERR("Unable to find SMP channel");
-23019be6:	a2cea06f          	j	23003e12 <bflb_platform_printf>
+23019be6:	a4cea06f          	j	23003e32 <bflb_platform_printf>
 
 23019bea <bt_smp_init>:
 #endif
@@ -56972,7 +56983,7 @@ void bl_trigger_queued_msg()
 2301b50c:	842a                	mv	s0,a0
         BT_ASSERT(msg);
 2301b50e:	f529                	bnez	a0,2301b458 <bl_trigger_queued_msg+0x16>
-2301b510:	ae8e80ef          	jal	ra,230037f8 <vAssertCalled>
+2301b510:	b28e80ef          	jal	ra,23003838 <vAssertCalled>
 2301b514:	b791                	j	2301b458 <bl_trigger_queued_msg+0x16>
 
     } while (buf);
@@ -57172,7 +57183,7 @@ static void bl_onchiphci_rx_packet_handler(uint8_t pkt_type, uint16_t src_id, ui
 2301b65c:	6145                	addi	sp,sp,48
 2301b65e:	8082                	ret
     BT_ASSERT(rx_msg);
-2301b660:	998e80ef          	jal	ra,230037f8 <vAssertCalled>
+2301b660:	9d8e80ef          	jal	ra,23003838 <vAssertCalled>
     rx_msg->pkt_type = pkt_type;
 2301b664:	00000023          	sb	zero,0(zero) # 0 <__metal_chicken_bit>
 2301b668:	9002                	ebreak
@@ -57349,7 +57360,7 @@ static struct bt_att *att_chan_get(struct bt_conn *conn)
 2301b754:	23037537          	lui	a0,0x23037
 2301b758:	2e450513          	addi	a0,a0,740 # 230372e4 <net_buf_fixed_cb+0xc>
 2301b75c:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
-2301b760:	eb2e80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301b760:	ed2e80ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2301b764:	4401                	li	s0,0
 }
@@ -57363,7 +57374,7 @@ static struct bt_att *att_chan_get(struct bt_conn *conn)
 2301b774:	23037537          	lui	a0,0x23037
 2301b778:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
 2301b77c:	31c50513          	addi	a0,a0,796 # 2303731c <net_buf_fixed_cb+0x44>
-2301b780:	e92e80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301b780:	eb2e80ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2301b784:	4401                	li	s0,0
 2301b786:	b7c1                	j	2301b746 <att_chan_get+0x28>
@@ -57372,7 +57383,7 @@ static struct bt_att *att_chan_get(struct bt_conn *conn)
 2301b78c:	23037537          	lui	a0,0x23037
 2301b790:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
 2301b794:	2f850513          	addi	a0,a0,760 # 230372f8 <net_buf_fixed_cb+0x20>
-2301b798:	e7ae80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301b798:	e9ae80ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2301b79c:	b76d                	j	2301b746 <att_chan_get+0x28>
 
@@ -57974,7 +57985,7 @@ void bt_att_mtu_changed(struct bt_l2cap_chan *chan, u16_t mtu)
 2301bbec:	4f860613          	addi	a2,a2,1272 # 230374f8 <__func__.2>
 2301bbf0:	85a6                	mv	a1,s1
 2301bbf2:	37050513          	addi	a0,a0,880 # 23037370 <net_buf_fixed_cb+0x98>
-2301bbf6:	a1ce80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301bbf6:	a3ce80ef          	jal	ra,23003e32 <bflb_platform_printf>
     data->group = NULL;
 2301bbfa:	00042423          	sw	zero,8(s0)
 2301bbfe:	b711                	j	2301bb02 <find_type_cb+0x36>
@@ -57984,7 +57995,7 @@ void bt_att_mtu_changed(struct bt_l2cap_chan *chan, u16_t mtu)
 2301bc08:	23037537          	lui	a0,0x23037
 2301bc0c:	4f860613          	addi	a2,a2,1272 # 230374f8 <__func__.2>
 2301bc10:	34850513          	addi	a0,a0,840 # 23037348 <net_buf_fixed_cb+0x70>
-2301bc14:	9fee80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301bc14:	a1ee80ef          	jal	ra,23003e32 <bflb_platform_printf>
     data->group = NULL;
 2301bc18:	00042423          	sw	zero,8(s0)
 2301bc1c:	b5dd                	j	2301bb02 <find_type_cb+0x36>
@@ -58216,7 +58227,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301bd88:	23037537          	lui	a0,0x23037
 2301bd8c:	39850513          	addi	a0,a0,920 # 23037398 <net_buf_fixed_cb+0xc0>
 2301bd90:	53c60613          	addi	a2,a2,1340 # 2303753c <__func__.6>
-2301bd94:	87ee80ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301bd94:	89ee80ef          	jal	ra,23003e32 <bflb_platform_printf>
 
     return -ENOMEM;
 }
@@ -58581,7 +58592,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301c020:	23037537          	lui	a0,0x23037
 2301c024:	52058593          	addi	a1,a1,1312 # 23037520 <__func__.4>
 2301c028:	3c450513          	addi	a0,a0,964 # 230373c4 <net_buf_fixed_cb+0xec>
-2301c02c:	de7e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c02c:	e07e70ef          	jal	ra,23003e32 <bflb_platform_printf>
         goto process;
 2301c030:	bf61                	j	2301bfc8 <att_handle_rsp+0x5c>
 
@@ -58856,7 +58867,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301c224:	23037537          	lui	a0,0x23037
 2301c228:	3e450513          	addi	a0,a0,996 # 230373e4 <net_buf_fixed_cb+0x10c>
 2301c22c:	4d458593          	addi	a1,a1,1236 # 230374d4 <__func__.1>
-2301c230:	be3e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c230:	c03e70ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2301c234:	4422                	lw	s0,8(sp)
 2301c236:	40b2                	lw	ra,12(sp)
@@ -59094,7 +59105,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 {
 2301c3c6:	c606                	sw	ra,12(sp)
     BT_ERR("ATT Timeout");
-2301c3c8:	a4be70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c3c8:	a6be70ef          	jal	ra,23003e32 <bflb_platform_printf>
     att_reset(att);
 2301c3cc:	f5840513          	addi	a0,s0,-168
 2301c3d0:	ee1ff0ef          	jal	ra,2301c2b0 <att_reset>
@@ -59164,7 +59175,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301c436:	23037537          	lui	a0,0x23037
 2301c43a:	4ec58593          	addi	a1,a1,1260 # 230374ec <__func__.10>
 2301c43e:	40c50513          	addi	a0,a0,1036 # 2303740c <net_buf_fixed_cb+0x134>
-2301c442:	9d1e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c442:	9f1e70ef          	jal	ra,23003e32 <bflb_platform_printf>
             net_buf_unref(buf);
 2301c446:	8526                	mv	a0,s1
 2301c448:	9aafe0ef          	jal	ra,2301a5f2 <net_buf_unref>
@@ -59405,7 +59416,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301c600:	23037537          	lui	a0,0x23037
 2301c604:	55c68693          	addi	a3,a3,1372 # 2303755c <__func__.9>
 2301c608:	42850513          	addi	a0,a0,1064 # 23037428 <net_buf_fixed_cb+0x150>
-2301c60c:	807e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c60c:	827e70ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2301c610:	4401                	li	s0,0
 2301c612:	b7e9                	j	2301c5dc <bt_att_create_pdu+0x4e>
@@ -59415,7 +59426,7 @@ static int bt_att_accept(struct bt_conn *conn, struct bt_l2cap_chan **chan)
 2301c61c:	55c60613          	addi	a2,a2,1372 # 2303755c <__func__.9>
 2301c620:	85ca                	mv	a1,s2
 2301c622:	77050513          	addi	a0,a0,1904 # 23036770 <prio_events+0x74>
-2301c626:	fece70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c626:	80de70ef          	jal	ra,23003e32 <bflb_platform_printf>
         return NULL;
 2301c62a:	bf4d                	j	2301c5dc <bt_att_create_pdu+0x4e>
 
@@ -59726,7 +59737,7 @@ static void send_err_rsp(struct bt_conn *conn, u8_t req, u16_t handle,
 2301c83a:	23037537          	lui	a0,0x23037
 2301c83e:	45450513          	addi	a0,a0,1108 # 23037454 <net_buf_fixed_cb+0x17c>
 2301c842:	53058593          	addi	a1,a1,1328 # 23037530 <__func__.5>
-2301c846:	dcce70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c846:	dece70ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2301c84a:	40f2                	lw	ra,28(sp)
 2301c84c:	4462                	lw	s0,24(sp)
@@ -59742,7 +59753,7 @@ static void send_err_rsp(struct bt_conn *conn, u8_t req, u16_t handle,
 2301c862:	53068693          	addi	a3,a3,1328 # 23037530 <__func__.5>
 2301c866:	8642                	mv	a2,a6
 2301c868:	d7c50513          	addi	a0,a0,-644 # 23036d7c <uuid128_base+0x180>
-2301c86c:	da6e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c86c:	dc6e70ef          	jal	ra,23003e32 <bflb_platform_printf>
     if (handler->type == ATT_REQUEST && err) {
 2301c870:	0024c703          	lbu	a4,2(s1)
 2301c874:	4785                	li	a5,1
@@ -59774,7 +59785,7 @@ static void send_err_rsp(struct bt_conn *conn, u8_t req, u16_t handle,
 2301c8a8:	47850513          	addi	a0,a0,1144 # 23037478 <net_buf_fixed_cb+0x1a0>
 2301c8ac:	53060613          	addi	a2,a2,1328 # 23037530 <__func__.5>
 2301c8b0:	85c2                	mv	a1,a6
-2301c8b2:	d60e70ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301c8b2:	d80e70ef          	jal	ra,23003e32 <bflb_platform_printf>
         if (att_op_get_type(hdr->code) != ATT_COMMAND) {
 2301c8b6:	0009c403          	lbu	s0,0(s3)
 2301c8ba:	8522                	mv	a0,s0
@@ -60765,7 +60776,7 @@ static u8_t att_write_rsp(struct bt_conn *conn, u8_t req, u8_t rsp,
 2301cf8c:	23037537          	lui	a0,0x23037
 2301cf90:	49850513          	addi	a0,a0,1176 # 23037498 <net_buf_fixed_cb+0x1c0>
 2301cf94:	50858593          	addi	a1,a1,1288 # 23037508 <__func__.3>
-2301cf98:	e7be60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301cf98:	e9be60ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2301cf9c:	40f2                	lw	ra,28(sp)
 2301cf9e:	4462                	lw	s0,24(sp)
@@ -60969,7 +60980,7 @@ u16_t bt_att_get_mtu(struct bt_conn *conn)
 2301d0d0:	23037537          	lui	a0,0x23037
 2301d0d4:	2e450513          	addi	a0,a0,740 # 230372e4 <net_buf_fixed_cb+0xc>
 2301d0d8:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
-2301d0dc:	d37e60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301d0dc:	d57e60ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2301d0e0:	40b2                	lw	ra,12(sp)
 2301d0e2:	4422                	lw	s0,8(sp)
@@ -60983,7 +60994,7 @@ u16_t bt_att_get_mtu(struct bt_conn *conn)
 2301d0ee:	23037537          	lui	a0,0x23037
 2301d0f2:	31c50513          	addi	a0,a0,796 # 2303731c <net_buf_fixed_cb+0x44>
 2301d0f6:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
-2301d0fa:	d19e60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301d0fa:	d39e60ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 2301d0fe:	4501                	li	a0,0
 2301d100:	b7d1                	j	2301d0c4 <bt_att_get_mtu+0x2c>
@@ -60992,7 +61003,7 @@ u16_t bt_att_get_mtu(struct bt_conn *conn)
 2301d106:	23037537          	lui	a0,0x23037
 2301d10a:	2f850513          	addi	a0,a0,760 # 230372f8 <net_buf_fixed_cb+0x20>
 2301d10e:	54c58593          	addi	a1,a1,1356 # 2303754c <__func__.8>
-2301d112:	d01e60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301d112:	d21e60ef          	jal	ra,23003e32 <bflb_platform_printf>
         return 0;
 2301d116:	4501                	li	a0,0
 2301d118:	b775                	j	2301d0c4 <bt_att_get_mtu+0x2c>
@@ -62545,7 +62556,7 @@ static void usbd_cdc_acm_bulk_out(uint8_t ep)
         MSG("Read DATA Packet failed\r\n");
 2301dc4a:	23037537          	lui	a0,0x23037
 2301dc4e:	76c50513          	addi	a0,a0,1900 # 2303776c <sbox+0x100>
-2301dc52:	9c0e60ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301dc52:	9e0e60ef          	jal	ra,23003e32 <bflb_platform_printf>
         usbd_ep_set_stall(ep);
 2301dc56:	854a                	mv	a0,s2
 2301dc58:	28c5                	jal	2301dd48 <usbd_ep_set_stall>
@@ -62648,7 +62659,7 @@ struct device *usb_dc_init(void)
 {
 2301dcfc:	c606                	sw	ra,12(sp)
     usb_dc_register(USB_INDEX, "usb");
-2301dcfe:	b7fe70ef          	jal	ra,2300587c <usb_dc_register>
+2301dcfe:	b9fe70ef          	jal	ra,2300589c <usb_dc_register>
     usb = device_find("usb");
 2301dd02:	ee840513          	addi	a0,s0,-280
 2301dd06:	20f140ef          	jal	ra,23032714 <device_find>
@@ -62680,7 +62691,7 @@ struct device *usb_dc_init(void)
 int usbd_set_address(const uint8_t addr)
 {
     return usb_dc_set_dev_address(addr);
-2301dd32:	b97e706f          	j	230058c8 <usb_dc_set_dev_address>
+2301dd32:	bb7e706f          	j	230058e8 <usb_dc_set_dev_address>
 
 2301dd36 <usbd_ep_open>:
 }
@@ -62693,28 +62704,28 @@ int usbd_ep_open(const struct usbd_endpoint_cfg *ep_cfg)
 2301dd3a:	85aa                	mv	a1,a0
     return usb_dc_ep_open(usb, (const struct usb_dc_ep_cfg *)ep_cfg);
 2301dd3c:	b487a503          	lw	a0,-1208(a5) # 42019b48 <usb>
-2301dd40:	b99e706f          	j	230058d8 <usb_dc_ep_open>
+2301dd40:	bb9e706f          	j	230058f8 <usb_dc_ep_open>
 
 2301dd44 <usbd_ep_close>:
 }
 int usbd_ep_close(const uint8_t ep)
 {
     return usb_dc_ep_close(ep);
-2301dd44:	ca3e706f          	j	230059e6 <usb_dc_ep_close>
+2301dd44:	cc3e706f          	j	23005a06 <usb_dc_ep_close>
 
 2301dd48 <usbd_ep_set_stall>:
 }
 int usbd_ep_set_stall(const uint8_t ep)
 {
     return usb_dc_ep_set_stall(ep);
-2301dd48:	ca3e706f          	j	230059ea <usb_dc_ep_set_stall>
+2301dd48:	cc3e706f          	j	23005a0a <usb_dc_ep_set_stall>
 
 2301dd4c <usbd_ep_clear_stall>:
 }
 int usbd_ep_clear_stall(const uint8_t ep)
 {
     return usb_dc_ep_clear_stall(ep);
-2301dd4c:	db5e706f          	j	23005b00 <usb_dc_ep_clear_stall>
+2301dd4c:	dd5e706f          	j	23005b20 <usb_dc_ep_clear_stall>
 
 2301dd50 <usbd_ep_is_stalled>:
 }
@@ -62730,7 +62741,7 @@ int usbd_ep_is_stalled(const uint8_t ep, uint8_t *stalled)
 2301dd5a:	862e                	mv	a2,a1
     return usb_dc_ep_is_stalled(usb, ep, stalled);
 2301dd5c:	85be                	mv	a1,a5
-2301dd5e:	ed5e706f          	j	23005c32 <usb_dc_ep_is_stalled>
+2301dd5e:	ef5e706f          	j	23005c52 <usb_dc_ep_is_stalled>
 
 2301dd62 <usbd_ep_write>:
 }
@@ -62749,7 +62760,7 @@ int usbd_ep_write(const uint8_t ep, const uint8_t *data, uint32_t data_len, uint
 2301dd6e:	86b2                	mv	a3,a2
 2301dd70:	862e                	mv	a2,a1
 2301dd72:	85be                	mv	a1,a5
-2301dd74:	f23e706f          	j	23005c96 <usb_dc_ep_write>
+2301dd74:	f43e706f          	j	23005cb6 <usb_dc_ep_write>
 
 2301dd78 <usbd_ep_read>:
 }
@@ -62768,7 +62779,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 2301dd84:	86b2                	mv	a3,a2
 2301dd86:	862e                	mv	a2,a1
 2301dd88:	85be                	mv	a1,a5
-2301dd8a:	83ae806f          	j	23005dc4 <usb_dc_ep_read>
+2301dd8a:	85ae806f          	j	23005de4 <usb_dc_ep_read>
 
 2301dd8e <bt_hcionchip_recv>:
 2301dd8e:	77fd                	lui	a5,0xfffff
@@ -63527,13 +63538,13 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 2301e58c:	bc090613          	addi	a2,s2,-1088 # 23037bc0 <__func__.3>
 2301e590:	ae050513          	addi	a0,a0,-1312 # 23037ae0 <hci_onchip_default_state+0x2cc>
 2301e594:	c606                	sw	ra,12(sp)
-2301e596:	87de50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301e596:	89de50ef          	jal	ra,23003e32 <bflb_platform_printf>
 2301e59a:	23038537          	lui	a0,0x23038
 2301e59e:	bc090693          	addi	a3,s2,-1088
 2301e5a2:	8626                	mv	a2,s1
 2301e5a4:	85a2                	mv	a1,s0
 2301e5a6:	b0c50513          	addi	a0,a0,-1268 # 23037b0c <hci_onchip_default_state+0x2f8>
-2301e5aa:	869e50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301e5aa:	889e50ef          	jal	ra,23003e32 <bflb_platform_printf>
 2301e5ae:	42015737          	lui	a4,0x42015
 2301e5b2:	b3c70793          	addi	a5,a4,-1220 # 42014b3c <ble_dbg_assert_block>
 2301e5b6:	439c                	lw	a5,0(a5)
@@ -63561,7 +63572,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 2301e5e4:	b3850513          	addi	a0,a0,-1224 # 23037b38 <hci_onchip_default_state+0x324>
 2301e5e8:	d606                	sw	ra,44(sp)
 2301e5ea:	c636                	sw	a3,12(sp)
-2301e5ec:	827e50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301e5ec:	847e50ef          	jal	ra,23003e32 <bflb_platform_printf>
 2301e5f0:	4732                	lw	a4,12(sp)
 2301e5f2:	23038537          	lui	a0,0x23038
 2301e5f6:	bac98793          	addi	a5,s3,-1108
@@ -63569,7 +63580,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 2301e5fc:	8626                	mv	a2,s1
 2301e5fe:	85a2                	mv	a1,s0
 2301e600:	b6450513          	addi	a0,a0,-1180 # 23037b64 <hci_onchip_default_state+0x350>
-2301e604:	80fe50ef          	jal	ra,23003e12 <bflb_platform_printf>
+2301e604:	82fe50ef          	jal	ra,23003e32 <bflb_platform_printf>
 2301e608:	42015737          	lui	a4,0x42015
 2301e60c:	b3c70793          	addi	a5,a4,-1220 # 42014b3c <ble_dbg_assert_block>
 2301e610:	439c                	lw	a5,0(a5)
@@ -79584,7 +79595,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 230296b8:	8626                	mv	a2,s1
 230296ba:	6d8a0593          	addi	a1,s4,1752
 230296be:	64050513          	addi	a0,a0,1600 # 23039640 <TASK_DESC_LLC+0xb4>
-230296c2:	f50da0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230296c2:	f70da0ef          	jal	ra,23003e32 <bflb_platform_printf>
 230296c6:	4201b537          	lui	a0,0x4201b
 230296ca:	99050513          	addi	a0,a0,-1648 # 4201a990 <lld_evt_env>
 230296ce:	1cd110ef          	jal	ra,2303b09a <ble_co_list_size>
@@ -79593,7 +79604,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 230296d8:	6d8a0693          	addi	a3,s4,1752
 230296dc:	6d8a0593          	addi	a1,s4,1752
 230296e0:	68450513          	addi	a0,a0,1668 # 23039684 <TASK_DESC_LLC+0xf8>
-230296e4:	f2eda0ef          	jal	ra,23003e12 <bflb_platform_printf>
+230296e4:	f4eda0ef          	jal	ra,23003e32 <bflb_platform_printf>
 230296e8:	07445783          	lhu	a5,116(s0)
 230296ec:	05c00713          	li	a4,92
 230296f0:	07b44603          	lbu	a2,123(s0)
@@ -79609,7 +79620,7 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 23029716:	06c2                	slli	a3,a3,0x10
 23029718:	82c1                	srli	a3,a3,0x10
 2302971a:	82a1                	srli	a3,a3,0x8
-2302971c:	ef6da0ef          	jal	ra,23003e12 <bflb_platform_printf>
+2302971c:	f16da0ef          	jal	ra,23003e32 <bflb_platform_printf>
 23029720:	07a44583          	lbu	a1,122(s0)
 23029724:	e0b4fde3          	bgeu	s1,a1,2302953e <lld_evt_end+0xa0>
 23029728:	6685                	lui	a3,0x1
@@ -92652,27 +92663,27 @@ int usbd_ep_read(const uint8_t ep, uint8_t *data, uint32_t max_data_len, uint32_
 2303261c:	450d                	li	a0,3
 2303261e:	4037c483          	lbu	s1,1027(a5) # 2800403 <_heap_size+0x27fa803>
 23032622:	c602                	sw	zero,12(sp)
-23032624:	fd0d10ef          	jal	ra,23003df4 <bl_irq_handler_get>
+23032624:	ff0d10ef          	jal	ra,23003e14 <bl_irq_handler_get>
 23032628:	45b2                	lw	a1,12(sp)
 2303262a:	0ff4f493          	zext.b	s1,s1
 2303262e:	c581                	beqz	a1,23032636 <rf702_rf_init+0x46>
 23032630:	450d                	li	a0,3
-23032632:	fa8d10ef          	jal	ra,23003dda <bl_irq_unregister>
+23032632:	fc8d10ef          	jal	ra,23003dfa <bl_irq_unregister>
 23032636:	23032937          	lui	s2,0x23032
 2303263a:	10c90593          	addi	a1,s2,268 # 2303210c <rf702_full_calibration>
 2303263e:	450d                	li	a0,3
-23032640:	f82d10ef          	jal	ra,23003dc2 <bl_irq_register>
+23032640:	fa2d10ef          	jal	ra,23003de2 <bl_irq_register>
 23032644:	028007b7          	lui	a5,0x2800
 23032648:	4705                	li	a4,1
 2303264a:	40e781a3          	sb	a4,1027(a5) # 2800403 <_heap_size+0x27fa803>
 2303264e:	10c90593          	addi	a1,s2,268
 23032652:	00e781a3          	sb	a4,3(a5)
 23032656:	450d                	li	a0,3
-23032658:	f82d10ef          	jal	ra,23003dda <bl_irq_unregister>
+23032658:	fa2d10ef          	jal	ra,23003dfa <bl_irq_unregister>
 2303265c:	45b2                	lw	a1,12(sp)
 2303265e:	c581                	beqz	a1,23032666 <rf702_rf_init+0x76>
 23032660:	450d                	li	a0,3
-23032662:	f60d10ef          	jal	ra,23003dc2 <bl_irq_register>
+23032662:	f80d10ef          	jal	ra,23003de2 <bl_irq_register>
 23032666:	028007b7          	lui	a5,0x2800
 2303266a:	409781a3          	sb	s1,1027(a5) # 2800403 <_heap_size+0x27fa803>
 2303266e:	30099073          	csrw	mstatus,s3
@@ -94036,7 +94047,7 @@ __weak void usbd_cdc_acm_set_dtr(bool dtr)
 23032e50:	2303a537          	lui	a0,0x2303a
 23032e54:	51050513          	addi	a0,a0,1296 # 2303a510 <tx_pwr_table_9dBm+0x118>
 23032e58:	85be                	mv	a1,a5
-23032e5a:	fb9d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23032e5a:	fd9d00ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 23032e5e:	40b2                	lw	ra,12(sp)
 23032e60:	4422                	lw	s0,8(sp)
@@ -94273,13 +94284,13 @@ static void usbd_send_to_host(uint16_t len)
             USBD_LOG_ERR("USB write zlp failed\r\n");
 23032fd0:	2303a537          	lui	a0,0x2303a
 23032fd4:	55050513          	addi	a0,a0,1360 # 2303a550 <tx_pwr_table_9dBm+0x158>
-23032fd8:	e3bd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23032fd8:	e5bd00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 23032fdc:	bfd9                	j	23032fb2 <usbd_send_to_host.constprop.0+0x50>
             USBD_LOG_ERR("USB write data failed\r\n");
 23032fde:	2303a537          	lui	a0,0x2303a
 23032fe2:	53850513          	addi	a0,a0,1336 # 2303a538 <tx_pwr_table_9dBm+0x140>
-23032fe6:	e2dd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23032fe6:	e4dd00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return;
 23032fea:	b7e1                	j	23032fb2 <usbd_send_to_host.constprop.0+0x50>
 
@@ -94376,7 +94387,7 @@ static bool usbd_setup_request_handler(struct usb_setup_packet *setup, uint8_t *
             USBD_LOG_ERR("Handler Error %d\r\n", type);
 23033090:	2303a537          	lui	a0,0x2303a
 23033094:	69c50513          	addi	a0,a0,1692 # 2303a69c <tx_pwr_table_9dBm+0x2a4>
-23033098:	d7bd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033098:	d9bd00ef          	jal	ra,23003e32 <bflb_platform_printf>
     USBD_LOG_INFO("Setup: "
 2303309c:	00695783          	lhu	a5,6(s2)
 230330a0:	00495703          	lhu	a4,4(s2)
@@ -94385,7 +94396,7 @@ static bool usbd_setup_request_handler(struct usb_setup_packet *setup, uint8_t *
 230330ac:	00094583          	lbu	a1,0(s2)
 230330b0:	2303a537          	lui	a0,0x2303a
 230330b4:	6b050513          	addi	a0,a0,1712 # 2303a6b0 <tx_pwr_table_9dBm+0x2b8>
-230330b8:	d5bd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230330b8:	d7bd00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return false;
 230330bc:	4501                	li	a0,0
 }
@@ -94490,7 +94501,7 @@ static bool usbd_setup_request_handler(struct usb_setup_packet *setup, uint8_t *
                     USBD_LOG_INFO("GET MS OS 2.0 Descriptor\r\n");
 23033192:	2303a537          	lui	a0,0x2303a
 23033196:	75450513          	addi	a0,a0,1876 # 2303a754 <tx_pwr_table_9dBm+0x35c>
-2303319a:	c79d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2303319a:	c99d00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     *data = (uint8_t *)msosv2_desc->compat_id;
 2303319e:	401c                	lw	a5,0(s0)
     return true;
@@ -94533,7 +94544,7 @@ static bool usbd_setup_request_handler(struct usb_setup_packet *setup, uint8_t *
                     USBD_LOG_ERR("unknown vendor code\r\n");
 230331f0:	2303a537          	lui	a0,0x2303a
 230331f4:	73c50513          	addi	a0,a0,1852 # 2303a73c <tx_pwr_table_9dBm+0x344>
-230331f8:	c1bd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230331f8:	c3bd00ef          	jal	ra,23003e32 <bflb_platform_printf>
             USBD_LOG_ERR("Handler Error %d\r\n", type);
 230331fc:	4589                	li	a1,2
 230331fe:	bd49                	j	23033090 <usbd_setup_request_handler.constprop.0+0xa4>
@@ -94591,7 +94602,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
             USBD_LOG_ERR("Illegal device req 0x%02x\r\n", setup->bRequest);
 2303324c:	2303a537          	lui	a0,0x2303a
 23033250:	60050513          	addi	a0,a0,1536 # 2303a600 <tx_pwr_table_9dBm+0x208>
-23033254:	bbfd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033254:	bdfd00ef          	jal	ra,23003e32 <bflb_platform_printf>
     return ret;
 23033258:	bd1d                	j	2303308e <usbd_setup_request_handler.constprop.0+0xa2>
     switch (setup->bRequest) {
@@ -94629,7 +94640,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
 230332a6:	2303a537          	lui	a0,0x2303a
 230332aa:	85a2                	mv	a1,s0
 230332ac:	65c50513          	addi	a0,a0,1628 # 2303a65c <tx_pwr_table_9dBm+0x264>
-230332b0:	b63d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230332b0:	b83d00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     usbd_ep_clear_stall(ep);
 230332b4:	8522                	mv	a0,s0
 230332b6:	a97ea0ef          	jal	ra,2301dd4c <usbd_ep_clear_stall>
@@ -94664,7 +94675,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
             USBD_LOG_ERR("Illegal ep req 0x%02x\r\n", setup->bRequest);
 230332e6:	2303a537          	lui	a0,0x2303a
 230332ea:	68450513          	addi	a0,a0,1668 # 2303a684 <tx_pwr_table_9dBm+0x28c>
-230332ee:	b25d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230332ee:	b45d00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return false;
 230332f2:	bb71                	j	2303308e <usbd_setup_request_handler.constprop.0+0xa2>
     if (!is_device_configured() ||
@@ -94713,7 +94724,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
                     USBD_LOG_INFO("get Compat id properties\r\n");
 2303335a:	2303a537          	lui	a0,0x2303a
 2303335e:	72050513          	addi	a0,a0,1824 # 2303a720 <tx_pwr_table_9dBm+0x328>
-23033362:	ab1d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033362:	ad1d00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     *data = (uint8_t *)msosv1_desc->comp_id_property;
 23033366:	401c                	lw	a5,0(s0)
     return true;
@@ -94731,7 +94742,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
                     USBD_LOG_INFO("get Compat ID\r\n");
 2303337a:	2303a537          	lui	a0,0x2303a
 2303337e:	71050513          	addi	a0,a0,1808 # 2303a710 <tx_pwr_table_9dBm+0x318>
-23033382:	a91d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033382:	ab1d00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     *data = (uint8_t *)msosv1_desc->compat_id;
 23033386:	401c                	lw	a5,0(s0)
     return true;
@@ -94820,7 +94831,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
 2303342e:	2303a537          	lui	a0,0x2303a
 23033432:	85a2                	mv	a1,s0
 23033434:	67050513          	addi	a0,a0,1648 # 2303a670 <tx_pwr_table_9dBm+0x278>
-23033438:	9dbd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033438:	9fbd00ef          	jal	ra,23003e32 <bflb_platform_printf>
                     usbd_ep_set_stall(ep);
 2303343c:	8522                	mv	a0,s0
 2303343e:	90bea0ef          	jal	ra,2301dd48 <usbd_ep_set_stall>
@@ -94906,7 +94917,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
 230334d8:	8a0d                	andi	a2,a2,3
 230334da:	00c10e23          	sb	a2,28(sp)
     USBD_LOG_INFO("Open endpoint:0x%x type:%u mps:%u\r\n",
-230334de:	935d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230334de:	955d00ef          	jal	ra,23003e32 <bflb_platform_printf>
     usbd_ep_open(&ep_cfg);
 230334e2:	0828                	addi	a0,sp,24
 230334e4:	853ea0ef          	jal	ra,2301dd36 <usbd_ep_open>
@@ -95051,7 +95062,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
             USBD_LOG_ERR("Illegal interface req 0x%02x\r\n", setup->bRequest);
 230335d4:	2303a537          	lui	a0,0x2303a
 230335d8:	63c50513          	addi	a0,a0,1596 # 2303a63c <tx_pwr_table_9dBm+0x244>
-230335dc:	837d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230335dc:	857d00ef          	jal	ra,23003e32 <bflb_platform_printf>
             return false;
 230335e0:	b47d                	j	2303308e <usbd_setup_request_handler.constprop.0+0xa2>
     ep_cfg.ep_type = ep_desc->bmAttributes & USBD_EP_TYPE_MASK;
@@ -95065,7 +95076,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
     USBD_LOG_INFO("Close endpoint:0x%x type:%u\r\n",
 230335f0:	61cb8513          	addi	a0,s7,1564 # 2303a61c <tx_pwr_table_9dBm+0x224>
 230335f4:	c62e                	sw	a1,12(sp)
-230335f6:	81dd00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230335f6:	83dd00ef          	jal	ra,23003e32 <bflb_platform_printf>
     usbd_ep_close(ep_cfg.ep_addr);
 230335fa:	45b2                	lw	a1,12(sp)
 230335fc:	852e                	mv	a0,a1
@@ -95099,7 +95110,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
         USBD_LOG_INFO("read MS OS 2.0 descriptor string\r\n");
 23033634:	2303a537          	lui	a0,0x2303a
 23033638:	56850513          	addi	a0,a0,1384 # 2303a568 <tx_pwr_table_9dBm+0x170>
-2303363c:	fd6d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2303363c:	ff6d00ef          	jal	ra,23003e32 <bflb_platform_printf>
         if (!msosv1_desc) {
 23033640:	4201a7b7          	lui	a5,0x4201a
 23033644:	b9c7a783          	lw	a5,-1124(a5) # 42019b9c <msosv1_desc>
@@ -95129,7 +95140,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
     ep_cfg.ep_type = ep_desc->bmAttributes & USBD_EP_TYPE_MASK;
 23033676:	00c10e23          	sb	a2,28(sp)
     USBD_LOG_INFO("Open endpoint:0x%x type:%u mps:%u\r\n",
-2303367a:	f98d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2303367a:	fb8d00ef          	jal	ra,23003e32 <bflb_platform_printf>
     usbd_ep_open(&ep_cfg);
 2303367e:	0828                	addi	a0,sp,24
 23033680:	eb6ea0ef          	jal	ra,2301dd36 <usbd_ep_open>
@@ -95140,13 +95151,13 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
         USBD_LOG_ERR("descriptor <type:%x,index:%x> not found!\r\n", type, index);
 2303368a:	2303a537          	lui	a0,0x2303a
 2303368e:	77050513          	addi	a0,a0,1904 # 2303a770 <tx_pwr_table_9dBm+0x378>
-23033692:	f80d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033692:	fa0d00ef          	jal	ra,23003e32 <bflb_platform_printf>
     return ret;
 23033696:	bae5                	j	2303308e <usbd_setup_request_handler.constprop.0+0xa2>
         USBD_LOG_INFO("read BOS descriptor string\r\n");
 23033698:	2303a537          	lui	a0,0x2303a
 2303369c:	58c50513          	addi	a0,a0,1420 # 2303a58c <tx_pwr_table_9dBm+0x194>
-230336a0:	f72d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230336a0:	f92d00ef          	jal	ra,23003e32 <bflb_platform_printf>
         if (!bos_desc) {
 230336a4:	4201a7b7          	lui	a5,0x4201a
 230336a8:	b947a783          	lw	a5,-1132(a5) # 42019b94 <bos_desc>
@@ -95166,7 +95177,7 @@ static void usbd_class_event_notify_handler(uint8_t event, void *arg)
         USBD_LOG_ERR("Device not configured - invalid configuration\r\n");
 230336c0:	2303a537          	lui	a0,0x2303a
 230336c4:	5ac50513          	addi	a0,a0,1452 # 2303a5ac <tx_pwr_table_9dBm+0x1b4>
-230336c8:	f4ad00ef          	jal	ra,23003e12 <bflb_platform_printf>
+230336c8:	f6ad00ef          	jal	ra,23003e32 <bflb_platform_printf>
         return true;
 230336cc:	b575                	j	23033578 <usbd_setup_request_handler.constprop.0+0x58c>
             *len = (p[CONF_DESC_wTotalLength]) |
@@ -95440,7 +95451,7 @@ void usbd_event_notify_handler(uint8_t event, void *arg)
 }
 230338bc:	6145                	addi	sp,sp,48
             USBD_LOG_ERR("USB unknown event: %d\r\n", event);
-230338be:	d54d006f          	j	23003e12 <bflb_platform_printf>
+230338be:	d74d006f          	j	23003e32 <bflb_platform_printf>
     if (usbd_core_cfg.ep0_data_buf_residue != 0 || usbd_core_cfg.zlp_flag == true) {
 230338c2:	420197b7          	lui	a5,0x42019
 230338c6:	75878793          	addi	a5,a5,1880 # 42019758 <usbd_core_cfg>
@@ -95471,7 +95482,7 @@ void usbd_event_notify_handler(uint8_t event, void *arg)
             USBD_LOG_ERR("Read DATA Packet failed\r\n");
 230338fc:	23037537          	lui	a0,0x23037
 23033900:	76c50513          	addi	a0,a0,1900 # 2303776c <sbox+0x100>
-23033904:	d0ed00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033904:	d2ed00ef          	jal	ra,23003e32 <bflb_platform_printf>
             usbd_ep_set_stall(USB_CONTROL_IN_EP0);
 23033908:	08000513          	li	a0,128
 2303390c:	c3cea0ef          	jal	ra,2301dd48 <usbd_ep_set_stall>
@@ -95479,13 +95490,13 @@ void usbd_event_notify_handler(uint8_t event, void *arg)
         USBD_LOG_ERR("ep0_data_buf_residue is not zero\r\n");
 23033912:	2303b537          	lui	a0,0x2303b
 23033916:	82050513          	addi	a0,a0,-2016 # 2303a820 <tx_pwr_table_9dBm+0x428>
-2303391a:	cf8d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2303391a:	d18d00ef          	jal	ra,23003e32 <bflb_platform_printf>
 2303391e:	bd85                	j	2303378e <usbd_event_notify_handler+0xaa>
         USBD_LOG_ERR("usbd_setup_request_handler failed\r\n");
 23033920:	2303a537          	lui	a0,0x2303a
 23033924:	7d450513          	addi	a0,a0,2004 # 2303a7d4 <tx_pwr_table_9dBm+0x3dc>
             USBD_LOG_ERR("Request buffer too small\r\n");
-23033928:	cead00ef          	jal	ra,23003e12 <bflb_platform_printf>
+23033928:	d0ad00ef          	jal	ra,23003e32 <bflb_platform_printf>
 }
 2303392c:	5422                	lw	s0,40(sp)
 2303392e:	50b2                	lw	ra,44(sp)
@@ -95509,7 +95520,7 @@ void usbd_event_notify_handler(uint8_t event, void *arg)
             USBD_LOG_ERR("usbd_setup_request_handler1 failed\r\n");
 23033954:	2303a537          	lui	a0,0x2303a
 23033958:	7f850513          	addi	a0,a0,2040 # 2303a7f8 <tx_pwr_table_9dBm+0x400>
-2303395c:	cb6d00ef          	jal	ra,23003e12 <bflb_platform_printf>
+2303395c:	cd6d00ef          	jal	ra,23003e32 <bflb_platform_printf>
             usbd_ep_set_stall(USB_CONTROL_IN_EP0);
 23033960:	08000513          	li	a0,128
 23033964:	be4ea0ef          	jal	ra,2301dd48 <usbd_ep_set_stall>
@@ -97033,7 +97044,7 @@ void shell_init(void)
 230344a6:	f3dff0ef          	jal	ra,230343e2 <shell_set_prompt>
         shell->shell_printf = shell_printf;
 230344aa:	230047b7          	lui	a5,0x23004
-230344ae:	e1278793          	addi	a5,a5,-494 # 23003e12 <bflb_platform_printf>
+230344ae:	e3278793          	addi	a5,a5,-462 # 23003e32 <bflb_platform_printf>
     shell_set_print(bflb_platform_printf);
 230344b2:	40b2                	lw	ra,12(sp)
         shell->shell_printf = shell_printf;
@@ -97327,7 +97338,7 @@ void shell_init(void)
 230347a4:	00d7fc63          	bgeu	a5,a3,230347bc <_strtol_l.constprop.0+0x2e>
 230347a8:	1141                	addi	sp,sp,-16
 230347aa:	c606                	sw	ra,12(sp)
-230347ac:	8adcf0ef          	jal	ra,23004058 <__errno>
+230347ac:	8cdcf0ef          	jal	ra,23004078 <__errno>
 230347b0:	40b2                	lw	ra,12(sp)
 230347b2:	47d9                	li	a5,22
 230347b4:	c11c                	sw	a5,0(a0)
@@ -97496,353 +97507,355 @@ void shell_init(void)
 23034980:	6f48                	flw	fa0,28(a4)
 23034982:	000d6b6f          	jal	s6,2310a982 <__ram_load_addr+0xcda8e>
 23034986:	0000                	unimp
-23034988:	4c42                	lw	s8,16(sp)
-2303498a:	545f 5345 5f54      	0x5f545345545f
-23034990:	3130                	fld	fa2,96(a0)
-23034992:	0000                	unimp
-23034994:	6f4e                	flw	ft10,208(sp)
-23034996:	61632077          	0x61632077
-2303499a:	206e                	fld	ft0,216(sp)
-2303499c:	7375                	lui	t1,0xffffd
-2303499e:	2065                	jal	23034a46 <strtol+0x17e>
-230349a0:	7270                	flw	fa2,100(a2)
-230349a2:	6e69                	lui	t3,0x1a
-230349a4:	6674                	flw	fa3,76(a2)
-230349a6:	202c                	fld	fa1,64(s0)
-230349a8:	7570                	flw	fa2,108(a0)
-230349aa:	7374                	flw	fa3,100(a4)
-230349ac:	6f20                	flw	fs0,88(a4)
-230349ae:	206e                	fld	ft0,216(sp)
-230349b0:	7375                	lui	t1,0xffffd
-230349b2:	5f62                	lw	t5,56(sp)
-230349b4:	5f636463          	bltu	t1,s6,23034f9c <strtol+0x6d4>
-230349b8:	6361                	lui	t1,0x18
-230349ba:	2e6d                	jal	23034d74 <strtol+0x4ac>
-230349bc:	000d                	c.nop	3
-230349be:	0000                	unimp
-230349c0:	696e695b          	0x696e695b
-230349c4:	5d74                	lw	a3,124(a0)
-230349c6:	6720                	flw	fs0,72(a4)
-230349c8:	6970                	flw	fa2,84(a0)
-230349ca:	6573206f          	j	23067820 <__ram_load_addr+0x2a92c>
-230349ce:	2074                	fld	fa3,192(s0)
-230349d0:	6f6d                	lui	t5,0x1b
-230349d2:	6564                	flw	fs1,76(a0)
-230349d4:	6320                	flw	fs0,64(a4)
-230349d6:	6c706d6f          	jal	s10,2303b89c <ble_ke_event_callback_set+0x3e>
-230349da:	7465                	lui	s0,0xffff9
-230349dc:	2e65                	jal	23034d94 <strtol+0x4cc>
-230349de:	000d                	c.nop	3
-230349e0:	5d534f5b          	0x5d534f5b
-230349e4:	6220                	flw	fs0,64(a2)
-230349e6:	656c                	flw	fa1,76(a0)
-230349e8:	695f 696e 5f74      	0x5f74696e695f
-230349ee:	6174                	flw	fa3,68(a0)
-230349f0:	2e2e6b73          	csrrsi	s6,0x2e2,28
-230349f4:	2e2e                	fld	ft8,200(sp)
-230349f6:	0d2e                	slli	s10,s10,0xb
+23034988:	6f4e                	flw	ft10,208(sp)
+2303498a:	61632077          	0x61632077
+2303498e:	206e                	fld	ft0,216(sp)
+23034990:	7375                	lui	t1,0xffffd
+23034992:	2065                	jal	23034a3a <strtol+0x172>
+23034994:	7270                	flw	fa2,100(a2)
+23034996:	6e69                	lui	t3,0x1a
+23034998:	6674                	flw	fa3,76(a2)
+2303499a:	202c                	fld	fa1,64(s0)
+2303499c:	7570                	flw	fa2,108(a0)
+2303499e:	7374                	flw	fa3,100(a4)
+230349a0:	6f20                	flw	fs0,88(a4)
+230349a2:	206e                	fld	ft0,216(sp)
+230349a4:	7375                	lui	t1,0xffffd
+230349a6:	5f62                	lw	t5,56(sp)
+230349a8:	5f636463          	bltu	t1,s6,23034f90 <strtol+0x6c8>
+230349ac:	6361                	lui	t1,0x18
+230349ae:	2e6d                	jal	23034d68 <strtol+0x4a0>
+230349b0:	000d                	c.nop	3
+230349b2:	0000                	unimp
+230349b4:	696e695b          	0x696e695b
+230349b8:	5d74                	lw	a3,124(a0)
+230349ba:	6720                	flw	fs0,72(a4)
+230349bc:	6970                	flw	fa2,84(a0)
+230349be:	6573206f          	j	23067814 <__ram_load_addr+0x2a920>
+230349c2:	2074                	fld	fa3,192(s0)
+230349c4:	6f6d                	lui	t5,0x1b
+230349c6:	6564                	flw	fs1,76(a0)
+230349c8:	6320                	flw	fs0,64(a4)
+230349ca:	6c706d6f          	jal	s10,2303b890 <ble_ke_event_callback_set+0x32>
+230349ce:	7465                	lui	s0,0xffff9
+230349d0:	2e65                	jal	23034d88 <strtol+0x4c0>
+230349d2:	000d                	c.nop	3
+230349d4:	5d534f5b          	0x5d534f5b
+230349d8:	6220                	flw	fs0,64(a2)
+230349da:	656c                	flw	fa1,76(a0)
+230349dc:	695f 696e 5f74      	0x5f74696e695f
+230349e2:	6174                	flw	fa3,68(a0)
+230349e4:	2e2e6b73          	csrrsi	s6,0x2e2,28
+230349e8:	2e2e                	fld	ft8,200(sp)
+230349ea:	0d2e                	slli	s10,s10,0xb
+230349ec:	0000                	unimp
+230349ee:	0000                	unimp
+230349f0:	6c62                	flw	fs8,24(sp)
+230349f2:	5f65                	li	t5,-7
+230349f4:	6e69                	lui	t3,0x1a
+230349f6:	7469                	lui	s0,0xffffa
 230349f8:	0000                	unimp
 230349fa:	0000                	unimp
-230349fc:	6c62                	flw	fs8,24(sp)
-230349fe:	5f65                	li	t5,-7
-23034a00:	6e69                	lui	t3,0x1a
-23034a02:	7469                	lui	s0,0xffffa
-23034a04:	0000                	unimp
-23034a06:	0000                	unimp
-23034a08:	65736163          	bltu	t1,s7,2303504a <strtol+0x782>
-23034a0c:	7320                	flw	fs0,96(a4)
-23034a0e:	6375                	lui	t1,0x1d
-23034a10:	73736563          	bltu	t1,s7,2303513a <af_pin_table+0x96>
-23034a14:	0a0d                	addi	s4,s4,3
-23034a16:	0000                	unimp
-23034a18:	6572                	flw	fa0,28(sp)
-23034a1a:	76696563          	bltu	s2,t1,23035184 <af_pin_table+0xe0>
-23034a1e:	2065                	jal	23034ac6 <strtol+0x1fe>
-23034a20:	666d6f63          	bltu	s10,t1,2303509e <strtol+0x7d6>
-23034a24:	7269                	lui	tp,0xffffa
-23034a26:	616d                	addi	sp,sp,240
-23034a28:	6974                	flw	fa3,84(a0)
-23034a2a:	202c6e6f          	jal	t3,230fac2c <__ram_load_addr+0xbdd38>
-23034a2e:	7265                	lui	tp,0xffff9
-23034a30:	3a72                	fld	fs4,312(sp)
-23034a32:	6425                	lui	s0,0x9
-23034a34:	0000                	unimp
-23034a36:	0000                	unimp
-23034a38:	7054                	flw	fa3,36(s0)
-23034a3a:	6420                	flw	fs0,72(s0)
-23034a3c:	7369                	lui	t1,0xffffa
-23034a3e:	6e6e6f63          	bltu	t3,t1,2303513c <af_pin_table+0x98>
-23034a42:	6365                	lui	t1,0x19
-23034a44:	6574                	flw	fa3,76(a0)
-23034a46:	0064                	addi	s1,sp,12
-23034a48:	6544                	flw	fs1,12(a0)
-23034a4a:	656c                	flw	fa1,76(a0)
-23034a4c:	6574                	flw	fa3,76(a0)
-23034a4e:	7420                	flw	fs0,104(s0)
-23034a50:	7268                	flw	fa0,100(a2)
-23034a52:	6867756f          	jal	a0,230ac0d8 <__ram_load_addr+0x6f1e4>
-23034a56:	7570                	flw	fa2,108(a0)
-23034a58:	2074                	fld	fa3,192(s0)
-23034a5a:	7874                	flw	fa3,116(s0)
-23034a5c:	7420                	flw	fs0,104(s0)
-23034a5e:	7361                	lui	t1,0xffff8
-23034a60:	0000006b          	0x6b
-23034a64:	6c62                	flw	fs8,24(sp)
-23034a66:	2065                	jal	23034b0e <strtol+0x246>
-23034a68:	7074                	flw	fa3,100(s0)
-23034a6a:	7320                	flw	fs0,96(a4)
-23034a6c:	6e65                	lui	t3,0x19
-23034a6e:	2064                	fld	fs1,192(s0)
-23034a70:	6e69                	lui	t3,0x1a
-23034a72:	6164                	flw	fs1,68(a0)
-23034a74:	6374                	flw	fa3,68(a4)
-23034a76:	7461                	lui	s0,0xffff8
-23034a78:	3a65                	jal	23034430 <shell_set_print>
-23034a7a:	2520                	fld	fs0,72(a0)
-23034a7c:	0064                	addi	s1,sp,12
-23034a7e:	0000                	unimp
-23034a80:	6572                	flw	fa0,28(sp)
-23034a82:	64207663          	bgeu	zero,sp,230350ce <af_pin_table+0x2a>
-23034a86:	7461                	lui	s0,0xffff8
-23034a88:	2061                	jal	23034b10 <strtol+0x248>
-23034a8a:	656c                	flw	fa1,76(a0)
-23034a8c:	3d6e                	fld	fs10,248(sp)
-23034a8e:	6425                	lui	s0,0x9
-23034a90:	202c                	fld	fa1,64(s0)
-23034a92:	7366666f          	jal	a2,2309b1c8 <__ram_load_addr+0x5e2d4>
-23034a96:	7465                	lui	s0,0xffff9
-23034a98:	253d                	jal	230350c6 <af_pin_table+0x22>
-23034a9a:	2c64                	fld	fs1,216(s0)
-23034a9c:	6620                	flw	fs0,72(a2)
-23034a9e:	616c                	flw	fa1,68(a0)
-23034aa0:	64253d67          	0x64253d67
-23034aa4:	0000                	unimp
-23034aa6:	0000                	unimp
-23034aa8:	6572                	flw	fa0,28(sp)
-23034aaa:	64207663          	bgeu	zero,sp,230350f6 <af_pin_table+0x52>
-23034aae:	7461                	lui	s0,0xffff8
-23034ab0:	3a61                	jal	23034448 <shell_init>
-23034ab2:	7325                	lui	t1,0xfffe9
-23034ab4:	0000                	unimp
-23034ab6:	0000                	unimp
-23034ab8:	6572                	flw	fa0,28(sp)
-23034aba:	70207663          	bgeu	zero,sp,230351c6 <af_pin_table+0x122>
-23034abe:	6572                	flw	fa0,28(sp)
-23034ac0:	6170                	flw	fa2,68(a0)
-23034ac2:	6572                	flw	fa0,28(sp)
-23034ac4:	7720                	flw	fs0,104(a4)
-23034ac6:	6972                	flw	fs2,28(sp)
-23034ac8:	6574                	flw	fa3,76(a0)
-23034aca:	7220                	flw	fs0,96(a2)
-23034acc:	7165                	addi	sp,sp,-400
-23034ace:	6575                	lui	a0,0x1d
-23034ad0:	00007473          	csrrci	s0,ustatus,0
-23034ad4:	6572                	flw	fa0,28(sp)
-23034ad6:	77207663          	bgeu	zero,s2,23035242 <af_pin_table+0x19e>
-23034ada:	6972                	flw	fs2,28(sp)
-23034adc:	6574                	flw	fa3,76(a0)
-23034ade:	6320                	flw	fs0,64(a4)
-23034ae0:	616d6d6f          	jal	s10,2310b0f6 <__ram_load_addr+0xce202>
-23034ae4:	646e                	flw	fs0,216(sp)
-23034ae6:	0000                	unimp
-23034ae8:	6572                	flw	fa0,28(sp)
-23034aea:	77207663          	bgeu	zero,s2,23035256 <af_pin_table+0x1b2>
-23034aee:	6972                	flw	fs2,28(sp)
-23034af0:	6574                	flw	fa3,76(a0)
-23034af2:	7220                	flw	fs0,96(a2)
-23034af4:	7165                	addi	sp,sp,-400
-23034af6:	6575                	lui	a0,0x1d
-23034af8:	2f207473          	csrrci	s0,0x2f2,0
-23034afc:	6520                	flw	fs0,72(a0)
-23034afe:	6578                	flw	fa4,76(a0)
-23034b00:	65747563          	bgeu	s0,s7,2303514a <af_pin_table+0xa6>
-23034b04:	7720                	flw	fs0,104(a4)
-23034b06:	6972                	flw	fs2,28(sp)
-23034b08:	6574                	flw	fa3,76(a0)
-23034b0a:	0000                	unimp
-23034b0c:	3a636363          	bltu	t1,t1,23034eb2 <strtol+0x5ea>
-23034b10:	6176                	flw	ft2,92(sp)
-23034b12:	756c                	flw	fa1,108(a0)
-23034b14:	3d65                	jal	230349cc <strtol+0x104>
-23034b16:	5d64255b          	0x5d64255b
+230349fc:	65736163          	bltu	t1,s7,2303503e <strtol+0x776>
+23034a00:	7320                	flw	fs0,96(a4)
+23034a02:	6375                	lui	t1,0x1d
+23034a04:	73736563          	bltu	t1,s7,2303512e <af_pin_table+0x8a>
+23034a08:	0a0d                	addi	s4,s4,3
+23034a0a:	0000                	unimp
+23034a0c:	6572                	flw	fa0,28(sp)
+23034a0e:	76696563          	bltu	s2,t1,23035178 <af_pin_table+0xd4>
+23034a12:	2065                	jal	23034aba <strtol+0x1f2>
+23034a14:	666d6f63          	bltu	s10,t1,23035092 <strtol+0x7ca>
+23034a18:	7269                	lui	tp,0xffffa
+23034a1a:	616d                	addi	sp,sp,240
+23034a1c:	6974                	flw	fa3,84(a0)
+23034a1e:	202c6e6f          	jal	t3,230fac20 <__ram_load_addr+0xbdd2c>
+23034a22:	7265                	lui	tp,0xffff9
+23034a24:	3a72                	fld	fs4,312(sp)
+23034a26:	6425                	lui	s0,0x9
+23034a28:	0a0d                	addi	s4,s4,3
+23034a2a:	0000                	unimp
+23034a2c:	6c62                	flw	fs8,24(sp)
+23034a2e:	2065                	jal	23034ad6 <strtol+0x20e>
+23034a30:	7074                	flw	fa3,100(s0)
+23034a32:	7320                	flw	fs0,96(a4)
+23034a34:	6e65                	lui	t3,0x19
+23034a36:	2064                	fld	fs1,192(s0)
+23034a38:	6e69                	lui	t3,0x1a
+23034a3a:	6164                	flw	fs1,68(a0)
+23034a3c:	6374                	flw	fa3,68(a4)
+23034a3e:	7461                	lui	s0,0xffff8
+23034a40:	3a65                	jal	230343f8 <shell_set_prompt+0x16>
+23034a42:	2520                	fld	fs0,72(a0)
+23034a44:	0d64                	addi	s1,sp,668
+23034a46:	000a                	c.slli	zero,0x2
+23034a48:	7054                	flw	fa3,36(s0)
+23034a4a:	6420                	flw	fs0,72(s0)
+23034a4c:	7369                	lui	t1,0xffffa
+23034a4e:	6e6e6f63          	bltu	t3,t1,2303514c <af_pin_table+0xa8>
+23034a52:	6365                	lui	t1,0x19
+23034a54:	6574                	flw	fa3,76(a0)
+23034a56:	0d64                	addi	s1,sp,668
+23034a58:	0000                	unimp
+23034a5a:	0000                	unimp
+23034a5c:	6544                	flw	fs1,12(a0)
+23034a5e:	656c                	flw	fa1,76(a0)
+23034a60:	6574                	flw	fa3,76(a0)
+23034a62:	7420                	flw	fs0,104(s0)
+23034a64:	7268                	flw	fa0,100(a2)
+23034a66:	6867756f          	jal	a0,230ac0ec <__ram_load_addr+0x6f1f8>
+23034a6a:	7570                	flw	fa2,108(a0)
+23034a6c:	2074                	fld	fa3,192(s0)
+23034a6e:	7874                	flw	fa3,116(s0)
+23034a70:	7420                	flw	fs0,104(s0)
+23034a72:	7361                	lui	t1,0xffff8
+23034a74:	00000d6b          	0xd6b
+23034a78:	6572                	flw	fa0,28(sp)
+23034a7a:	64207663          	bgeu	zero,sp,230350c6 <af_pin_table+0x22>
+23034a7e:	7461                	lui	s0,0xffff8
+23034a80:	2061                	jal	23034b08 <strtol+0x240>
+23034a82:	656c                	flw	fa1,76(a0)
+23034a84:	3d6e                	fld	fs10,248(sp)
+23034a86:	6425                	lui	s0,0x9
+23034a88:	202c                	fld	fa1,64(s0)
+23034a8a:	7366666f          	jal	a2,2309b1c0 <__ram_load_addr+0x5e2cc>
+23034a8e:	7465                	lui	s0,0xffff9
+23034a90:	253d                	jal	230350be <af_pin_table+0x1a>
+23034a92:	2c64                	fld	fs1,216(s0)
+23034a94:	6620                	flw	fs0,72(a2)
+23034a96:	616c                	flw	fa1,68(a0)
+23034a98:	64253d67          	0x64253d67
+23034a9c:	0a0d                	addi	s4,s4,3
+23034a9e:	0000                	unimp
+23034aa0:	6572                	flw	fa0,28(sp)
+23034aa2:	64207663          	bgeu	zero,sp,230350ee <af_pin_table+0x4a>
+23034aa6:	7461                	lui	s0,0xffff8
+23034aa8:	3a61                	jal	23034440 <shell_set_print+0x10>
+23034aaa:	7325                	lui	t1,0xfffe9
+23034aac:	0a0d                	addi	s4,s4,3
+23034aae:	0000                	unimp
+23034ab0:	6572                	flw	fa0,28(sp)
+23034ab2:	70207663          	bgeu	zero,sp,230351be <af_pin_table+0x11a>
+23034ab6:	6572                	flw	fa0,28(sp)
+23034ab8:	6170                	flw	fa2,68(a0)
+23034aba:	6572                	flw	fa0,28(sp)
+23034abc:	7720                	flw	fs0,104(a4)
+23034abe:	6972                	flw	fs2,28(sp)
+23034ac0:	6574                	flw	fa3,76(a0)
+23034ac2:	7220                	flw	fs0,96(a2)
+23034ac4:	7165                	addi	sp,sp,-400
+23034ac6:	6575                	lui	a0,0x1d
+23034ac8:	000d7473          	csrrci	s0,ustatus,26
+23034acc:	6572                	flw	fa0,28(sp)
+23034ace:	77207663          	bgeu	zero,s2,2303523a <af_pin_table+0x196>
+23034ad2:	6972                	flw	fs2,28(sp)
+23034ad4:	6574                	flw	fa3,76(a0)
+23034ad6:	6320                	flw	fs0,64(a4)
+23034ad8:	616d6d6f          	jal	s10,2310b0ee <__ram_load_addr+0xce1fa>
+23034adc:	646e                	flw	fs0,216(sp)
+23034ade:	000d                	c.nop	3
+23034ae0:	6572                	flw	fa0,28(sp)
+23034ae2:	77207663          	bgeu	zero,s2,2303524e <af_pin_table+0x1aa>
+23034ae6:	6972                	flw	fs2,28(sp)
+23034ae8:	6574                	flw	fa3,76(a0)
+23034aea:	7220                	flw	fs0,96(a2)
+23034aec:	7165                	addi	sp,sp,-400
+23034aee:	6575                	lui	a0,0x1d
+23034af0:	2f207473          	csrrci	s0,0x2f2,0
+23034af4:	6520                	flw	fs0,72(a0)
+23034af6:	6578                	flw	fa4,76(a0)
+23034af8:	65747563          	bgeu	s0,s7,23035142 <af_pin_table+0x9e>
+23034afc:	7720                	flw	fs0,104(a4)
+23034afe:	6972                	flw	fs2,28(sp)
+23034b00:	6574                	flw	fa3,76(a0)
+23034b02:	000d                	c.nop	3
+23034b04:	3a636363          	bltu	t1,t1,23034eaa <strtol+0x5e2>
+23034b08:	6176                	flw	ft2,92(sp)
+23034b0a:	756c                	flw	fa1,108(a0)
+23034b0c:	3d65                	jal	230349c4 <strtol+0xfc>
+23034b0e:	5d64255b          	0x5d64255b
+23034b12:	0000                	unimp
+23034b14:	6c62                	flw	fs8,24(sp)
+23034b16:	7465                	lui	s0,0xffff9
+23034b18:	0070                	addi	a2,sp,12
 23034b1a:	0000                	unimp
-23034b1c:	6c62                	flw	fs8,24(sp)
-23034b1e:	7465                	lui	s0,0xffff9
-23034b20:	0070                	addi	a2,sp,12
-23034b22:	0000                	unimp
-23034b24:	61657243          	fmadd.s	ft4,fa0,fs6,fa2
-23034b28:	6574                	flw	fa3,76(a0)
-23034b2a:	7420                	flw	fs0,104(s0)
-23034b2c:	7268                	flw	fa0,100(a2)
-23034b2e:	6867756f          	jal	a0,230ac1b4 <__ram_load_addr+0x6f2c0>
-23034b32:	7570                	flw	fa2,108(a0)
-23034b34:	2074                	fld	fa3,192(s0)
-23034b36:	7874                	flw	fa3,116(s0)
-23034b38:	7420                	flw	fs0,104(s0)
-23034b3a:	7361                	lui	t1,0xffff8
-23034b3c:	7573206b          	0x7573206b
-23034b40:	73656363          	bltu	a0,s6,23035266 <af_pin_table+0x1c2>
-23034b44:	00000073          	ecall
-23034b48:	61657243          	fmadd.s	ft4,fa0,fs6,fa2
-23034b4c:	6574                	flw	fa3,76(a0)
-23034b4e:	7420                	flw	fs0,104(s0)
-23034b50:	7268                	flw	fa0,100(a2)
-23034b52:	6867756f          	jal	a0,230ac1d8 <__ram_load_addr+0x6f2e4>
-23034b56:	7570                	flw	fa2,108(a0)
-23034b58:	2074                	fld	fa3,192(s0)
-23034b5a:	7874                	flw	fa3,116(s0)
-23034b5c:	7420                	flw	fs0,104(s0)
-23034b5e:	7361                	lui	t1,0xffff8
-23034b60:	6961666b          	0x6961666b
-23034b64:	006c                	addi	a1,sp,12
-23034b66:	0000                	unimp
-23034b68:	6c62                	flw	fs8,24(sp)
-23034b6a:	2065                	jal	23034c12 <strtol+0x34a>
-23034b6c:	7074                	flw	fa3,100(s0)
-23034b6e:	6320                	flw	fs0,64(a4)
-23034b70:	656e6e6f          	jal	t3,2311b1c6 <__ram_load_addr+0xde2d2>
-23034b74:	64657463          	bgeu	a0,t1,230351bc <af_pin_table+0x118>
-23034b78:	6620                	flw	fs0,72(a2)
-23034b7a:	6961                	lui	s2,0x18
-23034b7c:	756c                	flw	fa1,108(a0)
-23034b7e:	6572                	flw	fa0,28(sp)
-23034b80:	202c                	fld	fa1,64(s0)
-23034b82:	7265                	lui	tp,0xffff9
-23034b84:	3a72                	fld	fs4,312(sp)
-23034b86:	2520                	fld	fs0,72(a0)
-23034b88:	0064                	addi	s1,sp,12
-23034b8a:	0000                	unimp
-23034b8c:	7054                	flw	fa3,36(s0)
-23034b8e:	6320                	flw	fs0,64(a4)
-23034b90:	656e6e6f          	jal	t3,2311b1e6 <__ram_load_addr+0xde2f2>
-23034b94:	64657463          	bgeu	a0,t1,230351dc <af_pin_table+0x138>
-23034b98:	0000                	unimp
-23034b9a:	0000                	unimp
-23034b9c:	6c62                	flw	fs8,24(sp)
-23034b9e:	2065                	jal	23034c46 <strtol+0x37e>
-23034ba0:	7074                	flw	fa3,100(s0)
-23034ba2:	7320                	flw	fs0,96(a4)
-23034ba4:	7465                	lui	s0,0xffff9
-23034ba6:	6420                	flw	fs0,72(s0)
-23034ba8:	7461                	lui	s0,0xffff8
-23034baa:	2061                	jal	23034c32 <strtol+0x36a>
-23034bac:	656c                	flw	fa1,76(a0)
-23034bae:	676e                	flw	fa4,216(sp)
-23034bb0:	6874                	flw	fa3,84(s0)
-23034bb2:	7320                	flw	fs0,96(a4)
-23034bb4:	6375                	lui	t1,0x1d
-23034bb6:	73736563          	bltu	t1,s7,230352e0 <dma_channel_base+0x28>
-23034bba:	0000                	unimp
-23034bbc:	6c62                	flw	fs8,24(sp)
-23034bbe:	2065                	jal	23034c66 <strtol+0x39e>
-23034bc0:	7074                	flw	fa3,100(s0)
-23034bc2:	7320                	flw	fs0,96(a4)
-23034bc4:	7465                	lui	s0,0xffff9
-23034bc6:	6420                	flw	fs0,72(s0)
-23034bc8:	7461                	lui	s0,0xffff8
-23034bca:	2061                	jal	23034c52 <strtol+0x38a>
-23034bcc:	656c                	flw	fa1,76(a0)
-23034bce:	676e                	flw	fa4,216(sp)
-23034bd0:	6874                	flw	fa3,84(s0)
-23034bd2:	6620                	flw	fs0,72(a2)
-23034bd4:	6961                	lui	s2,0x18
-23034bd6:	756c                	flw	fa1,108(a0)
-23034bd8:	6572                	flw	fa0,28(sp)
-23034bda:	202c                	fld	fa1,64(s0)
-23034bdc:	7265                	lui	tp,0xffff9
-23034bde:	3a72                	fld	fs4,312(sp)
-23034be0:	2520                	fld	fs0,72(a0)
-23034be2:	0064                	addi	s1,sp,12
-23034be4:	6c62                	flw	fs8,24(sp)
-23034be6:	2065                	jal	23034c8e <strtol+0x3c6>
-23034be8:	7074                	flw	fa3,100(s0)
-23034bea:	6520                	flw	fs0,72(a0)
-23034bec:	6378                	flw	fa4,68(a4)
-23034bee:	6168                	flw	fa0,68(a0)
-23034bf0:	676e                	flw	fa4,216(sp)
-23034bf2:	2065                	jal	23034c9a <strtol+0x3d2>
-23034bf4:	746d                	lui	s0,0xffffb
-23034bf6:	2075                	jal	23034ca2 <strtol+0x3da>
-23034bf8:	657a6973          	csrrsi	s2,0x657,20
-23034bfc:	7020                	flw	fs0,96(s0)
-23034bfe:	6e65                	lui	t3,0x19
-23034c00:	6964                	flw	fs1,84(a0)
-23034c02:	676e                	flw	fa4,216(sp)
-23034c04:	0000                	unimp
-23034c06:	0000                	unimp
-23034c08:	6c62                	flw	fs8,24(sp)
-23034c0a:	2065                	jal	23034cb2 <strtol+0x3ea>
-23034c0c:	7074                	flw	fa3,100(s0)
-23034c0e:	6520                	flw	fs0,72(a0)
-23034c10:	6378                	flw	fa4,68(a4)
-23034c12:	6168                	flw	fa0,68(a0)
-23034c14:	676e                	flw	fa4,216(sp)
-23034c16:	2065                	jal	23034cbe <strtol+0x3f6>
-23034c18:	746d                	lui	s0,0xffffb
-23034c1a:	2075                	jal	23034cc6 <strtol+0x3fe>
-23034c1c:	657a6973          	csrrsi	s2,0x657,20
-23034c20:	6620                	flw	fs0,72(a2)
-23034c22:	6961                	lui	s2,0x18
-23034c24:	756c                	flw	fa1,108(a0)
-23034c26:	6572                	flw	fa0,28(sp)
-23034c28:	202c                	fld	fa1,64(s0)
-23034c2a:	7265                	lui	tp,0xffff9
-23034c2c:	3a72                	fld	fs4,312(sp)
-23034c2e:	2520                	fld	fs0,72(a0)
-23034c30:	0064                	addi	s1,sp,12
-23034c32:	0000                	unimp
-23034c34:	6c62                	flw	fs8,24(sp)
-23034c36:	2065                	jal	23034cde <strtol+0x416>
-23034c38:	7074                	flw	fa3,100(s0)
-23034c3a:	6520                	flw	fs0,72(a0)
-23034c3c:	6e616863          	bltu	sp,t1,2303532c <dma_channel_base+0x74>
-23034c40:	6d206567          	0x6d206567
-23034c44:	7574                	flw	fa3,108(a0)
-23034c46:	7320                	flw	fs0,96(a4)
-23034c48:	7a69                	lui	s4,0xffffa
-23034c4a:	2065                	jal	23034cf2 <strtol+0x42a>
-23034c4c:	63637573          	csrrci	a0,0x636,6
-23034c50:	7365                	lui	t1,0xffff9
-23034c52:	6d202c73          	csrr	s8,0x6d2
-23034c56:	7574                	flw	fa3,108(a0)
-23034c58:	7320                	flw	fs0,96(a4)
-23034c5a:	7a69                	lui	s4,0xffffa
-23034c5c:	3a65                	jal	23034614 <_strtoll_l.constprop.0+0x4c>
-23034c5e:	2520                	fld	fs0,72(a0)
-23034c60:	0064                	addi	s1,sp,12
-23034c62:	0000                	unimp
-23034c64:	6c62                	flw	fs8,24(sp)
-23034c66:	2065                	jal	23034d0e <strtol+0x446>
-23034c68:	7074                	flw	fa3,100(s0)
-23034c6a:	6520                	flw	fs0,72(a0)
-23034c6c:	6e616863          	bltu	sp,t1,2303535c <dma_channel_base+0xa4>
-23034c70:	6d206567          	0x6d206567
-23034c74:	7574                	flw	fa3,108(a0)
-23034c76:	7320                	flw	fs0,96(a4)
-23034c78:	7a69                	lui	s4,0xffffa
-23034c7a:	2065                	jal	23034d22 <strtol+0x45a>
-23034c7c:	6166                	flw	ft2,88(sp)
-23034c7e:	6c69                	lui	s8,0x1a
-23034c80:	7275                	lui	tp,0xffffd
-23034c82:	2c65                	jal	23034f3a <strtol+0x672>
-23034c84:	6520                	flw	fs0,72(a0)
-23034c86:	7272                	flw	ft4,60(sp)
-23034c88:	203a                	fld	ft0,392(sp)
-23034c8a:	6425                	lui	s0,0x9
-23034c8c:	0000                	unimp
-23034c8e:	0000                	unimp
-23034c90:	6c62                	flw	fs8,24(sp)
-23034c92:	2065                	jal	23034d3a <strtol+0x472>
-23034c94:	7074                	flw	fa3,100(s0)
-23034c96:	7320                	flw	fs0,96(a4)
-23034c98:	6e65                	lui	t3,0x19
-23034c9a:	2064                	fld	fs1,192(s0)
-23034c9c:	6f6e                	flw	ft10,216(sp)
-23034c9e:	6974                	flw	fa3,84(a0)
-23034ca0:	7966                	flw	fs2,120(sp)
-23034ca2:	3a20                	fld	fs0,112(a2)
-23034ca4:	2520                	fld	fs0,72(a0)
-23034ca6:	0064                	addi	s1,sp,12
+23034b1c:	61657243          	fmadd.s	ft4,fa0,fs6,fa2
+23034b20:	6574                	flw	fa3,76(a0)
+23034b22:	7420                	flw	fs0,104(s0)
+23034b24:	7268                	flw	fa0,100(a2)
+23034b26:	6867756f          	jal	a0,230ac1ac <__ram_load_addr+0x6f2b8>
+23034b2a:	7570                	flw	fa2,108(a0)
+23034b2c:	2074                	fld	fa3,192(s0)
+23034b2e:	7874                	flw	fa3,116(s0)
+23034b30:	7420                	flw	fs0,104(s0)
+23034b32:	7361                	lui	t1,0xffff8
+23034b34:	7573206b          	0x7573206b
+23034b38:	73656363          	bltu	a0,s6,2303525e <af_pin_table+0x1ba>
+23034b3c:	00000d73          	0xd73
+23034b40:	61657243          	fmadd.s	ft4,fa0,fs6,fa2
+23034b44:	6574                	flw	fa3,76(a0)
+23034b46:	7420                	flw	fs0,104(s0)
+23034b48:	7268                	flw	fa0,100(a2)
+23034b4a:	6867756f          	jal	a0,230ac1d0 <__ram_load_addr+0x6f2dc>
+23034b4e:	7570                	flw	fa2,108(a0)
+23034b50:	2074                	fld	fa3,192(s0)
+23034b52:	7874                	flw	fa3,116(s0)
+23034b54:	7420                	flw	fs0,104(s0)
+23034b56:	7361                	lui	t1,0xffff8
+23034b58:	6961666b          	0x6961666b
+23034b5c:	0d6c                	addi	a1,sp,668
+23034b5e:	0000                	unimp
+23034b60:	6c62                	flw	fs8,24(sp)
+23034b62:	2065                	jal	23034c0a <strtol+0x342>
+23034b64:	7074                	flw	fa3,100(s0)
+23034b66:	6320                	flw	fs0,64(a4)
+23034b68:	656e6e6f          	jal	t3,2311b1be <__ram_load_addr+0xde2ca>
+23034b6c:	64657463          	bgeu	a0,t1,230351b4 <af_pin_table+0x110>
+23034b70:	6620                	flw	fs0,72(a2)
+23034b72:	6961                	lui	s2,0x18
+23034b74:	756c                	flw	fa1,108(a0)
+23034b76:	6572                	flw	fa0,28(sp)
+23034b78:	202c                	fld	fa1,64(s0)
+23034b7a:	7265                	lui	tp,0xffff9
+23034b7c:	3a72                	fld	fs4,312(sp)
+23034b7e:	2520                	fld	fs0,72(a0)
+23034b80:	0d64                	addi	s1,sp,668
+23034b82:	000a                	c.slli	zero,0x2
+23034b84:	7054                	flw	fa3,36(s0)
+23034b86:	6320                	flw	fs0,64(a4)
+23034b88:	656e6e6f          	jal	t3,2311b1de <__ram_load_addr+0xde2ea>
+23034b8c:	64657463          	bgeu	a0,t1,230351d4 <af_pin_table+0x130>
+23034b90:	000d                	c.nop	3
+23034b92:	0000                	unimp
+23034b94:	6c62                	flw	fs8,24(sp)
+23034b96:	2065                	jal	23034c3e <strtol+0x376>
+23034b98:	7074                	flw	fa3,100(s0)
+23034b9a:	7320                	flw	fs0,96(a4)
+23034b9c:	7465                	lui	s0,0xffff9
+23034b9e:	6420                	flw	fs0,72(s0)
+23034ba0:	7461                	lui	s0,0xffff8
+23034ba2:	2061                	jal	23034c2a <strtol+0x362>
+23034ba4:	656c                	flw	fa1,76(a0)
+23034ba6:	676e                	flw	fa4,216(sp)
+23034ba8:	6874                	flw	fa3,84(s0)
+23034baa:	7320                	flw	fs0,96(a4)
+23034bac:	6375                	lui	t1,0x1d
+23034bae:	73736563          	bltu	t1,s7,230352d8 <dma_channel_base+0x20>
+23034bb2:	000d                	c.nop	3
+23034bb4:	6c62                	flw	fs8,24(sp)
+23034bb6:	2065                	jal	23034c5e <strtol+0x396>
+23034bb8:	7074                	flw	fa3,100(s0)
+23034bba:	7320                	flw	fs0,96(a4)
+23034bbc:	7465                	lui	s0,0xffff9
+23034bbe:	6420                	flw	fs0,72(s0)
+23034bc0:	7461                	lui	s0,0xffff8
+23034bc2:	2061                	jal	23034c4a <strtol+0x382>
+23034bc4:	656c                	flw	fa1,76(a0)
+23034bc6:	676e                	flw	fa4,216(sp)
+23034bc8:	6874                	flw	fa3,84(s0)
+23034bca:	6620                	flw	fs0,72(a2)
+23034bcc:	6961                	lui	s2,0x18
+23034bce:	756c                	flw	fa1,108(a0)
+23034bd0:	6572                	flw	fa0,28(sp)
+23034bd2:	202c                	fld	fa1,64(s0)
+23034bd4:	7265                	lui	tp,0xffff9
+23034bd6:	3a72                	fld	fs4,312(sp)
+23034bd8:	2520                	fld	fs0,72(a0)
+23034bda:	0d64                	addi	s1,sp,668
+23034bdc:	000a                	c.slli	zero,0x2
+23034bde:	0000                	unimp
+23034be0:	6c62                	flw	fs8,24(sp)
+23034be2:	2065                	jal	23034c8a <strtol+0x3c2>
+23034be4:	7074                	flw	fa3,100(s0)
+23034be6:	6520                	flw	fs0,72(a0)
+23034be8:	6378                	flw	fa4,68(a4)
+23034bea:	6168                	flw	fa0,68(a0)
+23034bec:	676e                	flw	fa4,216(sp)
+23034bee:	2065                	jal	23034c96 <strtol+0x3ce>
+23034bf0:	746d                	lui	s0,0xffffb
+23034bf2:	2075                	jal	23034c9e <strtol+0x3d6>
+23034bf4:	657a6973          	csrrsi	s2,0x657,20
+23034bf8:	7020                	flw	fs0,96(s0)
+23034bfa:	6e65                	lui	t3,0x19
+23034bfc:	6964                	flw	fs1,84(a0)
+23034bfe:	676e                	flw	fa4,216(sp)
+23034c00:	000d                	c.nop	3
+23034c02:	0000                	unimp
+23034c04:	6c62                	flw	fs8,24(sp)
+23034c06:	2065                	jal	23034cae <strtol+0x3e6>
+23034c08:	7074                	flw	fa3,100(s0)
+23034c0a:	6520                	flw	fs0,72(a0)
+23034c0c:	6378                	flw	fa4,68(a4)
+23034c0e:	6168                	flw	fa0,68(a0)
+23034c10:	676e                	flw	fa4,216(sp)
+23034c12:	2065                	jal	23034cba <strtol+0x3f2>
+23034c14:	746d                	lui	s0,0xffffb
+23034c16:	2075                	jal	23034cc2 <strtol+0x3fa>
+23034c18:	657a6973          	csrrsi	s2,0x657,20
+23034c1c:	6620                	flw	fs0,72(a2)
+23034c1e:	6961                	lui	s2,0x18
+23034c20:	756c                	flw	fa1,108(a0)
+23034c22:	6572                	flw	fa0,28(sp)
+23034c24:	202c                	fld	fa1,64(s0)
+23034c26:	7265                	lui	tp,0xffff9
+23034c28:	3a72                	fld	fs4,312(sp)
+23034c2a:	2520                	fld	fs0,72(a0)
+23034c2c:	0d64                	addi	s1,sp,668
+23034c2e:	000a                	c.slli	zero,0x2
+23034c30:	6c62                	flw	fs8,24(sp)
+23034c32:	2065                	jal	23034cda <strtol+0x412>
+23034c34:	7074                	flw	fa3,100(s0)
+23034c36:	6520                	flw	fs0,72(a0)
+23034c38:	6e616863          	bltu	sp,t1,23035328 <dma_channel_base+0x70>
+23034c3c:	6d206567          	0x6d206567
+23034c40:	7574                	flw	fa3,108(a0)
+23034c42:	7320                	flw	fs0,96(a4)
+23034c44:	7a69                	lui	s4,0xffffa
+23034c46:	2065                	jal	23034cee <strtol+0x426>
+23034c48:	63637573          	csrrci	a0,0x636,6
+23034c4c:	7365                	lui	t1,0xffff9
+23034c4e:	6d202c73          	csrr	s8,0x6d2
+23034c52:	7574                	flw	fa3,108(a0)
+23034c54:	7320                	flw	fs0,96(a4)
+23034c56:	7a69                	lui	s4,0xffffa
+23034c58:	3a65                	jal	23034610 <_strtoll_l.constprop.0+0x48>
+23034c5a:	2520                	fld	fs0,72(a0)
+23034c5c:	0d64                	addi	s1,sp,668
+23034c5e:	000a                	c.slli	zero,0x2
+23034c60:	6c62                	flw	fs8,24(sp)
+23034c62:	2065                	jal	23034d0a <strtol+0x442>
+23034c64:	7074                	flw	fa3,100(s0)
+23034c66:	6520                	flw	fs0,72(a0)
+23034c68:	6e616863          	bltu	sp,t1,23035358 <dma_channel_base+0xa0>
+23034c6c:	6d206567          	0x6d206567
+23034c70:	7574                	flw	fa3,108(a0)
+23034c72:	7320                	flw	fs0,96(a4)
+23034c74:	7a69                	lui	s4,0xffffa
+23034c76:	2065                	jal	23034d1e <strtol+0x456>
+23034c78:	6166                	flw	ft2,88(sp)
+23034c7a:	6c69                	lui	s8,0x1a
+23034c7c:	7275                	lui	tp,0xffffd
+23034c7e:	2c65                	jal	23034f36 <strtol+0x66e>
+23034c80:	6520                	flw	fs0,72(a0)
+23034c82:	7272                	flw	ft4,60(sp)
+23034c84:	203a                	fld	ft0,392(sp)
+23034c86:	6425                	lui	s0,0x9
+23034c88:	0a0d                	addi	s4,s4,3
+23034c8a:	0000                	unimp
+23034c8c:	6c62                	flw	fs8,24(sp)
+23034c8e:	2065                	jal	23034d36 <strtol+0x46e>
+23034c90:	7074                	flw	fa3,100(s0)
+23034c92:	7320                	flw	fs0,96(a4)
+23034c94:	6e65                	lui	t3,0x19
+23034c96:	2064                	fld	fs1,192(s0)
+23034c98:	6f6e                	flw	ft10,216(sp)
+23034c9a:	6974                	flw	fa3,84(a0)
+23034c9c:	7966                	flw	fs2,120(sp)
+23034c9e:	3a20                	fld	fs0,112(a2)
+23034ca0:	2520                	fld	fs0,72(a0)
+23034ca2:	0d64                	addi	s1,sp,668
+23034ca4:	000a                	c.slli	zero,0x2
+23034ca6:	0000                	unimp
 23034ca8:	6c62                	flw	fs8,24(sp)
 23034caa:	5f65                	li	t5,-7
 23034cac:	7074                	flw	fa3,100(s0)
@@ -97864,7 +97877,7 @@ void shell_init(void)
 23034cd4:	7320                	flw	fs0,96(a4)
 23034cd6:	7265                	lui	tp,0xffff9
 23034cd8:	6976                	flw	fs2,92(sp)
-23034cda:	00006563          	bltu	zero,zero,23034ce4 <strtol+0x41c>
+23034cda:	000d6563          	bltu	s10,zero,23034ce4 <strtol+0x41c>
 23034cde:	0000                	unimp
 23034ce0:	6c62                	flw	fs8,24(sp)
 23034ce2:	5f65                	li	t5,-7
@@ -97882,7 +97895,7 @@ void shell_init(void)
 23034cfe:	7265                	lui	tp,0xffff9
 23034d00:	6976                	flw	fs2,92(sp)
 23034d02:	64206563          	bltu	zero,sp,2303534c <dma_channel_base+0x94>
-23034d06:	00656e6f          	jal	t3,2308ad0c <__ram_load_addr+0x4de18>
+23034d06:	0d656e6f          	jal	t3,2308addc <__ram_load_addr+0x4dee8>
 23034d0a:	0000                	unimp
 23034d0c:	6c62                	flw	fs8,24(sp)
 23034d0e:	5f65                	li	t5,-7
@@ -97895,7 +97908,7 @@ void shell_init(void)
 23034d20:	6974                	flw	fa3,84(a0)
 23034d22:	7966                	flw	fs2,120(sp)
 23034d24:	705f 6c6f 5f6c      	0x5f6c6c6f705f
-23034d2a:	006d6573          	csrrsi	a0,0x6,26
+23034d2a:	0d6d6573          	csrrsi	a0,0xd6,26
 23034d2e:	0000                	unimp
 23034d30:	6564                	flw	fs1,76(a0)
 23034d32:	7562                	flw	fa0,56(sp)
@@ -98232,14 +98245,13 @@ void shell_init(void)
 23035052:	0000                	unimp
 23035054:	614d                	addi	sp,sp,176
 23035056:	2079                	jal	230350e4 <af_pin_table+0x40>
-23035058:	3532                	fld	fa0,296(sp)
+23035058:	3632                	fld	fa2,296(sp)
 2303505a:	3220                	fld	fs0,96(a2)
 2303505c:	3230                	fld	fa2,96(a2)
 2303505e:	0035                	c.nop	13
 23035060:	3931                	jal	23034c7c <strtol+0x3b4>
-23035062:	303a                	fld	ft0,424(sp)
-23035064:	3a39                	jal	23034982 <strtol+0xba>
-23035066:	3835                	jal	230348a2 <_strtol_l.constprop.0+0x114>
+23035062:	323a                	fld	ft4,424(sp)
+23035064:	36333a33          	0x36333a33
 23035068:	0000                	unimp
 2303506a:	0000                	unimp
 2303506c:	7542                	flw	fa0,48(sp)

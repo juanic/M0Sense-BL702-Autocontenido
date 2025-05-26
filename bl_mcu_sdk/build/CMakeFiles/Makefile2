@@ -236,14 +236,14 @@ samples/ble_peripheral/clean: libraries/usb_stdio/clean
 # Target rules for target samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir
 
 # All Build rule for target.
-samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/common/CMakeFiles/common.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/freertos/CMakeFiles/freertos.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/ble/CMakeFiles/ble.dir/all
-samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/shell/CMakeFiles/shell.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/shell/CMakeFiles/shell.dir/all
 samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/mbedtls/CMakeFiles/mbedtls.dir/all
+samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/all: libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all
 	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=71,72,73,74,75 "Built target ble_peripheral_bl702.elf"
@@ -457,8 +457,8 @@ libraries/shell/CMakeFiles/shell.dir/clean:
 # All Build rule for target.
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/common/CMakeFiles/common.dir/all
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/bl702_driver/CMakeFiles/bl702_driver.dir/all
-libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/shell/CMakeFiles/shell.dir/all
 libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/usb_stack/CMakeFiles/usb_stack.dir/all
+libraries/usb_stdio/CMakeFiles/usb_stdio.dir/all: libraries/shell/CMakeFiles/shell.dir/all
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build.make libraries/usb_stdio/CMakeFiles/usb_stdio.dir/depend
 	$(MAKE) $(MAKESILENT) -f libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build.make libraries/usb_stdio/CMakeFiles/usb_stdio.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles --progress-num=99,100 "Built target usb_stdio"

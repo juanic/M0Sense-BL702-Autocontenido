@@ -21,7 +21,7 @@
  *
  */
 #include "bflb_platform.h"
-#include "hal_uart.h"
+//#include "hal_uart.h"
 #include <FreeRTOS.h>
 #include "semphr.h"
 #include "bluetooth.h"
@@ -137,10 +137,10 @@ int ble_start_adv(void)
         .interval_max = BT_GAP_ADV_FAST_INT_MAX_3,
     };
 
-    char *adv_name = "BL_TEST_01"; // This name must be the same as adv_name in ble_central
+    //char *adv_name = "BL_TEST_01"; // This name must be the same as adv_name in ble_central
     struct bt_data adv_data[] = {
         BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_NO_BREDR | BT_LE_AD_GENERAL)),
-        BT_DATA(BT_DATA_NAME_COMPLETE, adv_name, strlen(adv_name)),
+        //BT_DATA(BT_DATA_NAME_COMPLETE, adv_name, strlen(adv_name)),
     };
 
     return bt_le_adv_start(&adv_param, adv_data, ARRAY_SIZE(adv_data), NULL, 0);
@@ -227,8 +227,8 @@ int main(void)
     vTaskStartScheduler();
 
     BL_CASE_SUCCESS;
+
     while (1) {
         bflb_platform_delay_ms(100);
-        
     }
 }

@@ -75,4 +75,16 @@ samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/ble_peripheral_tp
  D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/ble/ble_stack/port/include/config.h \
  D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/ble/ble_stack/common/log.h \
  D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/bsp_common/platform/bflb_platform.h \
- D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/usb_stdio/usb_stdio.h
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/usb_stdio/usb_stdio.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/ble_peripheral/io_def.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/hal_drv/inc/hal_gpio.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/hal_drv/inc/hal_common.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/std_drv/inc/bl702_common.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/regs/bl702.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/drivers/bl702_driver/startup/system_bl702.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/common/device/drv_device.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/common/list/drv_list.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/board/bl702/bl702_config.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/board/bl702/bl702_iot/peripheral_config.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/board/bl702/bl702_iot/clock_config.h \
+ D\:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/bsp/board/bl702/bl702_iot/pinmux_config.h

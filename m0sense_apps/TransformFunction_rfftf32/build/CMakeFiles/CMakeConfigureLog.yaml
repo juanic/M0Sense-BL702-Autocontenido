@@ -444,3 +444,226 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine versión 16.4.0+e901037fe para .NET Framework
+      Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+      
+      Compilación iniciada a las 26/5/2025 18:02:16.
+      Proyecto "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdC\\.\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilación del proyecto terminada "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:29.72
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/3.27.0-rc4/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) Build Engine versión 16.4.0+e901037fe para .NET Framework
+      Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+      
+      Compilación iniciada a las 26/5/2025 18:02:49.
+      Proyecto "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\.\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilación del proyecto terminada "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\3.27.0-rc4\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:19.95
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/3.27.0-rc4/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-r1hfif"
+      binary: "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-r1hfif"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-r1hfif'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_7d409.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine versión 16.4.0+e901037fe para .NET Framework
+        Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+        
+        Compilación iniciada a las 26/5/2025 18:03:23.
+        Proyecto "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r1hfif\\cmTC_7d409.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_7d409.dir\\Debug\\".
+          Creando directorio "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r1hfif\\Debug\\".
+          Creando directorio "cmTC_7d409.dir\\Debug\\cmTC_7d409.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_7d409.dir\\Debug\\cmTC_7d409.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7d409.dir\\Debug\\\\" /Fd"cmTC_7d409.dir\\Debug\\vc142.pdb" /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.24.28316 para x64
+          CMakeCCompilerABI.c
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7d409.dir\\Debug\\\\" /Fd"cmTC_7d409.dir\\Debug\\vc142.pdb" /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r1hfif\\Debug\\cmTC_7d409.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-r1hfif/Debug/cmTC_7d409.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-r1hfif/Debug/cmTC_7d409.lib" /MACHINE:X64  /machine:x64 cmTC_7d409.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_7d409.vcxproj -> D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r1hfif\\Debug\\cmTC_7d409.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_7d409.dir\\Debug\\cmTC_7d409.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_7d409.dir\\Debug\\cmTC_7d409.tlog\\cmTC_7d409.lastbuildstate".
+        Compilación del proyecto terminada "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-r1hfif\\cmTC_7d409.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:07.35
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-mnffr4"
+      binary: "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-mnffr4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-mnffr4'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_2d4a2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Microsoft (R) Build Engine versión 16.4.0+e901037fe para .NET Framework
+        Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+        
+        Compilación iniciada a las 26/5/2025 18:03:33.
+        Proyecto "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnffr4\\cmTC_2d4a2.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_2d4a2.dir\\Debug\\".
+          Creando directorio "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnffr4\\Debug\\".
+          Creando directorio "cmTC_2d4a2.dir\\Debug\\cmTC_2d4a2.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_2d4a2.dir\\Debug\\cmTC_2d4a2.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2d4a2.dir\\Debug\\\\" /Fd"cmTC_2d4a2.dir\\Debug\\vc142.pdb" /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.24.28316 para x64
+          CMakeCXXCompilerABI.cpp
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2d4a2.dir\\Debug\\\\" /Fd"cmTC_2d4a2.dir\\Debug\\vc142.pdb" /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.24.28314\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnffr4\\Debug\\cmTC_2d4a2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-mnffr4/Debug/cmTC_2d4a2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/TransformFunction_rfftf32/build/CMakeFiles/CMakeScratch/TryCompile-mnffr4/Debug/cmTC_2d4a2.lib" /MACHINE:X64  /machine:x64 cmTC_2d4a2.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_2d4a2.vcxproj -> D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnffr4\\Debug\\cmTC_2d4a2.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_2d4a2.dir\\Debug\\cmTC_2d4a2.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_2d4a2.dir\\Debug\\cmTC_2d4a2.tlog\\cmTC_2d4a2.lastbuildstate".
+        Compilación del proyecto terminada "D:\\Documentos\\REPOS\\Github\\M0Sense-BL702-Autocontenido\\m0sense_apps\\TransformFunction_rfftf32\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mnffr4\\cmTC_2d4a2.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:09.65
+        
+      exitCode: 0
+...
