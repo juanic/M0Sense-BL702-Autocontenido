@@ -15,7 +15,7 @@
 ########################
 
 //No help, variable specified on the command line.
-APP:UNINITIALIZED=ble_peripheral
+APP:UNINITIALIZED=ble_peripheral_NUS
 
 //No help, variable specified on the command line.
 APP_DIR:UNINITIALIZED=../m0sense_apps

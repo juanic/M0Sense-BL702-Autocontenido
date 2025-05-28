@@ -40,7 +40,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/compiler_flags.cmake"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/riscv64-unknown-elf-gcc.cmake"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/tools.cmake"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/ble_peripheral/CMakeLists.txt"
+  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/ble_peripheral_NUS/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -52,7 +52,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "samples/ble_peripheral/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "samples/ble_peripheral_NUS/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/common/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/bl702_driver/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/freertos/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -65,7 +65,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/DependInfo.cmake"
+  "samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/DependInfo.cmake"
   "libraries/common/CMakeFiles/common.dir/DependInfo.cmake"
   "libraries/bl702_driver/CMakeFiles/bl702_driver.dir/DependInfo.cmake"
   "libraries/freertos/CMakeFiles/freertos.dir/DependInfo.cmake"

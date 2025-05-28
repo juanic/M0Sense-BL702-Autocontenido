@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ble_peripheral_bl702.elf
+# Target rules for targets named ble_peripheral_NUS_bl702.elf
 
 # Build rule for target.
-ble_peripheral_bl702.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble_peripheral_bl702.elf
-.PHONY : ble_peripheral_bl702.elf
+ble_peripheral_NUS_bl702.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble_peripheral_NUS_bl702.elf
+.PHONY : ble_peripheral_NUS_bl702.elf
 
 # fast build rule for target.
-ble_peripheral_bl702.elf/fast:
-	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build.make samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir/build
-.PHONY : ble_peripheral_bl702.elf/fast
+ble_peripheral_NUS_bl702.elf/fast:
+	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/build.make samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/build
+.PHONY : ble_peripheral_NUS_bl702.elf/fast
 
 #=============================================================================
 # Target rules for targets named common
@@ -243,7 +243,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bl702_driver"
 	@echo "... ble"
-	@echo "... ble_peripheral_bl702.elf"
+	@echo "... ble_peripheral_NUS_bl702.elf"
 	@echo "... common"
 	@echo "... freertos"
 	@echo "... mbedtls"

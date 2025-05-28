@@ -1,8 +1,8 @@
 D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles/edit_cache.dir
 D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/CMakeFiles/rebuild_cache.dir
-D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral/CMakeFiles/ble_peripheral_bl702.elf.dir
-D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral/CMakeFiles/edit_cache.dir
-D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral/CMakeFiles/rebuild_cache.dir
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral_NUS/CMakeFiles/edit_cache.dir
+D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/samples/ble_peripheral_NUS/CMakeFiles/rebuild_cache.dir
 D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/libraries/common/CMakeFiles/common.dir
 D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/libraries/common/CMakeFiles/edit_cache.dir
 D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/build/libraries/common/CMakeFiles/rebuild_cache.dir
