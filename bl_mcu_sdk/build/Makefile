@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ble_peripheral_NUS_bl702.elf
+# Target rules for targets named audio_fft_display_bl702.elf
 
 # Build rule for target.
-ble_peripheral_NUS_bl702.elf: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble_peripheral_NUS_bl702.elf
-.PHONY : ble_peripheral_NUS_bl702.elf
+audio_fft_display_bl702.elf: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 audio_fft_display_bl702.elf
+.PHONY : audio_fft_display_bl702.elf
 
 # fast build rule for target.
-ble_peripheral_NUS_bl702.elf/fast:
-	$(MAKE) $(MAKESILENT) -f samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/build.make samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/build
-.PHONY : ble_peripheral_NUS_bl702.elf/fast
+audio_fft_display_bl702.elf/fast:
+	$(MAKE) $(MAKESILENT) -f samples/audio_fft_display/CMakeFiles/audio_fft_display_bl702.elf.dir/build.make samples/audio_fft_display/CMakeFiles/audio_fft_display_bl702.elf.dir/build
+.PHONY : audio_fft_display_bl702.elf/fast
 
 #=============================================================================
 # Target rules for targets named common
@@ -156,43 +156,17 @@ bl702_driver/fast:
 .PHONY : bl702_driver/fast
 
 #=============================================================================
-# Target rules for targets named freertos
+# Target rules for targets named nmsis
 
 # Build rule for target.
-freertos: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freertos
-.PHONY : freertos
+nmsis: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nmsis
+.PHONY : nmsis
 
 # fast build rule for target.
-freertos/fast:
-	$(MAKE) $(MAKESILENT) -f libraries/freertos/CMakeFiles/freertos.dir/build.make libraries/freertos/CMakeFiles/freertos.dir/build
-.PHONY : freertos/fast
-
-#=============================================================================
-# Target rules for targets named ble
-
-# Build rule for target.
-ble: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ble
-.PHONY : ble
-
-# fast build rule for target.
-ble/fast:
-	$(MAKE) $(MAKESILENT) -f libraries/ble/CMakeFiles/ble.dir/build.make libraries/ble/CMakeFiles/ble.dir/build
-.PHONY : ble/fast
-
-#=============================================================================
-# Target rules for targets named mbedtls
-
-# Build rule for target.
-mbedtls: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mbedtls
-.PHONY : mbedtls
-
-# fast build rule for target.
-mbedtls/fast:
-	$(MAKE) $(MAKESILENT) -f libraries/mbedtls/CMakeFiles/mbedtls.dir/build.make libraries/mbedtls/CMakeFiles/mbedtls.dir/build
-.PHONY : mbedtls/fast
+nmsis/fast:
+	$(MAKE) $(MAKESILENT) -f libraries/nmsis/CMakeFiles/nmsis.dir/build.make libraries/nmsis/CMakeFiles/nmsis.dir/build
+.PHONY : nmsis/fast
 
 #=============================================================================
 # Target rules for targets named usb_stack
@@ -241,12 +215,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... audio_fft_display_bl702.elf"
 	@echo "... bl702_driver"
-	@echo "... ble"
-	@echo "... ble_peripheral_NUS_bl702.elf"
 	@echo "... common"
-	@echo "... freertos"
-	@echo "... mbedtls"
+	@echo "... nmsis"
 	@echo "... shell"
 	@echo "... usb_stack"
 	@echo "... usb_stdio"

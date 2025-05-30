@@ -34,31 +34,7 @@ typedef struct {
 uint16_t color_back =  0x0000;
 uint16_t color_font =  0xffff;
 
-static const note_t chromatic_notes[] = {
-    {"C0", 16.35}, {"C#0", 17.32}, {"D0", 18.35}, {"D#0", 19.45}, {"E0", 20.60}, {"F0", 21.83}, {"F#0", 23.12}, {"G0", 24.50}, {"G#0", 25.96}, {"A0", 27.50}, {"A#0", 29.14}, {"B0", 30.87},
-    {"C1", 32.70}, {"C#1", 34.65}, {"D1", 36.71}, {"D#1", 38.89}, {"E1", 41.20}, {"F1", 43.65}, {"F#1", 46.25}, {"G1", 49.00}, {"G#1", 51.91}, {"A1", 55.00}, {"A#1", 58.27}, {"B1", 61.74},
-    {"C2", 65.41}, {"C#2", 69.30}, {"D2", 73.42}, {"D#2", 77.78}, {"E2", 82.41}, {"F2", 87.31}, {"F#2", 92.50}, {"G2", 98.00}, {"G#2", 103.83}, {"A2", 110.00}, {"A#2", 116.54}, {"B2", 123.47},
-    {"C3", 130.81}, {"C#3", 138.59}, {"D3", 146.83}, {"D#3", 155.56}, {"E3", 164.81}, {"F3", 174.61}, {"F#3", 185.00}, {"G3", 196.00}, {"G#3", 207.65}, {"A3", 220.00}, {"A#3", 233.08}, {"B3", 246.94},
-    {"C4", 261.63}, {"C#4", 277.18}, {"D4", 293.66}, {"D#4", 311.13}, {"E4", 329.63}, {"F4", 349.23}, {"F#4", 369.99}, {"G4", 392.00}, {"G#4", 415.30}, {"A4", 440.00}, {"A#4", 466.16}, {"B4", 493.88},
-    {"C5", 523.25}, {"C#5", 554.37}, {"D5", 587.33}, {"D#5", 622.25}, {"E5", 659.25}, {"F5", 698.46}, {"F#5", 739.99}, {"G5", 783.99}, {"G#5", 830.61}, {"A5", 880.00}, {"A#5", 932.33}, {"B5", 987.77},
-    {"C6", 1046.50}, {"C#6", 1108.73}, {"D6", 1174.66}, {"D#6", 1244.51}, {"E6", 1318.51}, {"F6", 1396.91}, {"F#6", 1479.98}, {"G6", 1567.98}, {"G#6", 1661.22}, {"A6", 1760.00}, {"A#6", 1864.66}, {"B6", 1975.53},
-    {"C7", 2093.00}, {"C#7", 2217.46}, {"D7", 2349.32}, {"D#7", 2489.02}, {"E7", 2637.02}, {"F7", 2793.83}, {"F#7", 2959.96}, {"G7", 3135.96}, {"G#7", 3322.44}, {"A7", 3520.00}, {"A#7", 3729.31}, {"B7", 3951.07}
-};
-#define NUM_CHROMATIC_NOTES (sizeof(chromatic_notes)/sizeof(chromatic_notes[0]))
 
-const char* freq_to_note(float freq, float* diff_hz) {
-    float min_diff = 1e6f;
-    int min_idx = 0;
-    for (int i = 0; i < NUM_CHROMATIC_NOTES; i++) {
-        float d = fabsf(freq - chromatic_notes[i].freq);
-        if (d < min_diff) {
-            min_diff = d;
-            min_idx = i;
-        }
-    }
-    if (diff_hz) *diff_hz = freq - chromatic_notes[min_idx].freq;
-    return chromatic_notes[min_idx].name;
-}
 
 void lcd_fill_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
     for (uint16_t i = 0; i < height; i++) {
@@ -71,7 +47,7 @@ void draw_frequency_spectrum(float32_t* fft_output, int fft_size, uint16_t color
     int graph_y = 10;        // Reservamos las primeras 10 filas para el texto de la frecuencia pico
     int graph_width = 160;   // Ancho de la pantalla LCD
     int graph_height = 60;   // Altura para la grafica (160x60)
-    int bar_width = 2// graph_width / (fft_size / 2);  // Ancho de cada barra
+    int bar_width = 2;// graph_width / (fft_size / 2);  // Ancho de cada barra
 
     // Limpia la región donde se dibujará el espectro
     lcd_fill_rect(graph_x, graph_y, graph_width, graph_height, color_back);
@@ -97,6 +73,88 @@ void draw_frequency_spectrum(float32_t* fft_output, int fft_size, uint16_t color
     }
 }
 
+// Área del espectrograma actualizada para usar la pantalla completa de 160x80
+#define SPEC_X        0
+#define SPEC_Y_START  0
+#define SPEC_WIDTH    160
+#define SPEC_HEIGHT   80
+
+static int spectrogram_y = SPEC_Y_START;
+
+// Escala de color: de azul a celeste, verde, amarillo, naranja y rojo.
+static uint16_t map_intensity_to_color(int intensity) {
+    // Se definen los puntos de control (stops) en intensidad y sus colores correspondientes (en RGB 8 bits)
+    const int stops[6] = {0, 51, 102, 153, 204, 255};
+    const int r_vals[6] = {0,   0,   0, 255, 255, 255};
+    const int g_vals[6] = {0, 255, 255, 255, 128,   0};
+    const int b_vals[6] = {255, 255,   0,   0,   0,   0};
+
+    // Se asegura que intensity esté entre 0 y 255
+    if (intensity < 0)
+        intensity = 0;
+    if (intensity > 255)
+        intensity = 255;
+
+    int idx = 0;
+    for (int i = 0; i < 5; i++) {
+        if (intensity >= stops[i] && intensity <= stops[i+1]) {
+            idx = i;
+            break;
+        }
+    }
+    int start = stops[idx], end = stops[idx+1];
+    float fraction = (float)(intensity - start) / (end - start);
+    int r = r_vals[idx] + (int)((r_vals[idx+1] - r_vals[idx]) * fraction);
+    int g = g_vals[idx] + (int)((g_vals[idx+1] - g_vals[idx]) * fraction);
+    int b = b_vals[idx] + (int)((b_vals[idx+1] - b_vals[idx]) * fraction);
+    // Conversión de RGB 8 bits a RGB565
+    uint16_t color = ((r >> 3) << 11) | ((g >> 2) << 5) | (b >> 3);
+    return color;
+}
+
+/// Función para dibujar una fila del espectrograma con velocidad reducida a la mitad
+void draw_spectrogram_row(float32_t* fft_output, int fft_size) {
+    int num_bins = fft_size / 2;  // Número de bandas de frecuencia
+    // 🧹 Borrar la fila actual antes de escribir sobre ella
+    lcd_fill_rect(SPEC_X, spectrogram_y, SPEC_WIDTH, 2, color_back);
+    for (int x = 0; x < SPEC_WIDTH; x++) {
+        int start_bin = x * num_bins / SPEC_WIDTH;
+        int end_bin = (x + 1) * num_bins / SPEC_WIDTH;
+        float magnitude_avg = 0.0f;
+        int count = 0;
+        for (int i = start_bin; i < end_bin; i++) {
+            float real = fft_output[2 * i];
+            float imag = fft_output[2 * i + 1];
+            float mag = sqrtf(real * real + imag * imag);
+            magnitude_avg += mag;
+            count++;
+        }
+        if (count > 0) {
+            magnitude_avg /= count;
+        }
+        // Se escala la magnitud para obtener un valor de intensidad de 0 a 255.
+        int intensity = (int)(magnitude_avg / 500.0f * 255);
+        if (intensity > 255) intensity = 255;
+        
+        // Se mapea la intensidad a un color según la escala definida
+        uint16_t pixel_color = map_intensity_to_color(intensity);
+        
+        // Dibuja el píxel en la posición (x, spectrogram_y)
+        lcd_fill_rect(SPEC_X + x, spectrogram_y, 1, 1, pixel_color);
+    }
+    
+    // Se incrementa la fila en cada llamada (velocidad de barrido anterior)
+    spectrogram_y++;
+    
+    // Al llegar al final del área se borra la pantalla y se reinicia la posición
+    if (spectrogram_y >= (SPEC_Y_START + SPEC_HEIGHT)) {
+        //lcd_fill_rect(SPEC_X, SPEC_Y_START, SPEC_WIDTH, SPEC_HEIGHT, color_back);
+        spectrogram_y = SPEC_Y_START;
+    }
+}
+
+
+
 void dma_ch0_irq_callback(struct device* dev, void* args, uint32_t size, uint32_t state)
 {
     int16_t* adc_buffer = raw_adc_buffer[pingpong_idx];
@@ -104,19 +162,11 @@ void dma_ch0_irq_callback(struct device* dev, void* args, uint32_t size, uint32_
     device_read(device_find("adc"), 0, raw_adc_buffer[pingpong_idx],
                 sizeof(raw_adc_buffer[0]) / sizeof(uint8_t)); /* size need convert to uint8_t*/
 
-    /* min: 6339, max: 9165 mid: 7752 */
     uint32_t res_all = 0;
     for (int i = 0; i < SAMPLE_COUNT; i++) {
         adc_buffer[i] = (((uint32_t*)adc_buffer)[i] & 0xffff) >> 2;
         res_all += (uint32_t)adc_buffer[i];
     }
-    /*
-    for (int i = 0; i < SAMPLE_COUNT; i++) {
-        adc_buffer[i] -= res_all / SAMPLE_COUNT;
-        adc_buffer[i] <<= 6;
-        printf("%5d", adc_buffer[i]);
-        printf(i % 16 == 15 ? "\r\n" : ", ");
-    }*/
     // Conversión a float32_t para FFT
     for (int i = 0; i < FFT_SIZE; i++) {
         fft_input[i] = (float32_t)adc_buffer[i];
@@ -127,32 +177,8 @@ void dma_ch0_irq_callback(struct device* dev, void* args, uint32_t size, uint32_
     riscv_rfft_fast_init_f32(&S, FFT_SIZE);
     riscv_rfft_fast_f32(&S, fft_input, fft_output, 0);
 
-    // Buscar el máximo del espectro y mostrar la frecuencia correspondiente
-    float max_magnitude = 0.0f;
-    int max_index = 0;
-    for (int i = 1; i < FFT_SIZE / 2; i++) { // Ignora DC (i=0)
-        float real = fft_output[2 * i];
-        float imag = fft_output[2 * i + 1];
-        float mag = sqrtf(real * real + imag * imag);
-        if (mag > max_magnitude) {
-            max_magnitude = mag;
-            max_index = i;
-        }
-    }
-    // Calcular la frecuencia pico
-    float fs = 16000.0f; // Frecuencia de muestreo en Hz
-    float freq = (max_index * fs) / FFT_SIZE;
-
-    float diff_hz;
-    const char* note = freq_to_note(freq, &diff_hz);
-
-    // Mostrar la frecuencia pico en la parte superior (línea 0)
-    char peak_str[32];
-    sprintf(peak_str, "Peak: %.2f Hz", freq);
-    lcd_draw_str_ascii16(0, 0, color_font, color_back, peak_str, strlen(peak_str));
-
-    // Dibuja el espectro en un área de 160x70 a partir de Y=10
-    draw_frequency_spectrum(fft_output, FFT_SIZE, color_font);
+    // Se dibuja una nueva fila del espectrograma utilizando la FFT calculada
+    draw_spectrogram_row(fft_output, FFT_SIZE);
 }
 
 
@@ -199,9 +225,9 @@ int main(void)
         printf("[init] ADC initial failed!\r\n");
         goto _exit;
     }
-    /* 1024000 HZ / 4 = 256000 HZ */
-    ADC_DEV(mic_adc)->clk_div = ADC_CLOCK_DIV_4;
-    /* 256000 HZ / 16 = 16000 HZ (16k) */
+    /* 1024000 HZ / 16 = 64000 HZ */
+    ADC_DEV(mic_adc)->clk_div = ADC_CLOCK_DIV_16;
+    /* 64000 HZ / 16 = 4000 HZ (4k) */
     ADC_DEV(mic_adc)->data_width = ADC_DATA_WIDTH_14B_WITH_16_AVERAGE;
     ADC_DEV(mic_adc)->continuous_conv_mode = ENABLE;
     ADC_DEV(mic_adc)->vref = ADC_VREF_2V;

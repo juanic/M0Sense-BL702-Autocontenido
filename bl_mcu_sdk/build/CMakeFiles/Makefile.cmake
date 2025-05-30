@@ -28,10 +28,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.0-rc4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.27.0-rc4/CMakeSystem.cmake"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/common/CMakeLists.txt"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/ble/CMakeLists.txt"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/ble/ble_flags.cmake"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/freertos/CMakeLists.txt"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/mbedtls/CMakeLists.txt"
+  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/nmsis/CMakeLists.txt"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/shell/CMakeLists.txt"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/usb_stack/CMakeLists.txt"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/components/usb_stdio/CMakeLists.txt"
@@ -40,7 +37,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/compiler_flags.cmake"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/riscv64-unknown-elf-gcc.cmake"
   "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/bl_mcu_sdk/tools/cmake/tools.cmake"
-  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/ble_peripheral_NUS/CMakeLists.txt"
+  "D:/Documentos/REPOS/Github/M0Sense-BL702-Autocontenido/m0sense_apps/audio_fft_display/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -52,12 +49,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "samples/ble_peripheral_NUS/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "samples/audio_fft_display/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/common/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/bl702_driver/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libraries/freertos/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libraries/ble/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libraries/mbedtls/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libraries/nmsis/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/usb_stack/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/shell/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libraries/usb_stdio/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -65,12 +60,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "samples/ble_peripheral_NUS/CMakeFiles/ble_peripheral_NUS_bl702.elf.dir/DependInfo.cmake"
+  "samples/audio_fft_display/CMakeFiles/audio_fft_display_bl702.elf.dir/DependInfo.cmake"
   "libraries/common/CMakeFiles/common.dir/DependInfo.cmake"
   "libraries/bl702_driver/CMakeFiles/bl702_driver.dir/DependInfo.cmake"
-  "libraries/freertos/CMakeFiles/freertos.dir/DependInfo.cmake"
-  "libraries/ble/CMakeFiles/ble.dir/DependInfo.cmake"
-  "libraries/mbedtls/CMakeFiles/mbedtls.dir/DependInfo.cmake"
+  "libraries/nmsis/CMakeFiles/nmsis.dir/DependInfo.cmake"
   "libraries/usb_stack/CMakeFiles/usb_stack.dir/DependInfo.cmake"
   "libraries/shell/CMakeFiles/shell.dir/DependInfo.cmake"
   "libraries/usb_stdio/CMakeFiles/usb_stdio.dir/DependInfo.cmake"

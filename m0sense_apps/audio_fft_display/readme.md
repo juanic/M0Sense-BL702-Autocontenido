@@ -1,61 +1,53 @@
-# 🎵 M0Sense Tuner
+## Requisitos
 
-Este proyecto implementa un **afinador de instrumentos musicales** utilizando una **transformada rápida de Fourier (FFT)** para detectar la frecuencia dominante de una señal de audio, y mostrar la nota musical correspondiente en una **pantalla LCD SPI** conectada a la placa **M0Sense (BL702)**.
+- Placa con microcontrolador **BL702**.
+- Pantalla LCD conectada vía SPI.
+- Micrófono conectado a un canal ADC.
+- SDK de Bouffalo Lab (BL702).
+- Cliente serial USB para debug (opcional).
 
-![Afinador en pantalla](./docs/example.jpg) <!-- Asegúrate de subir una imagen real del dispositivo funcionando -->
+## Compilación
 
----
+Asegúrese de contar con el SDK y toolchain configurado:
 
-## 🛠️ Plataforma
-
-- **Placa:** M0Sense con SoC Bouffalo Lab BL702
-- **Lenguaje:** C
-- **IDE sugerido:** [Bouffalo Lab Dev Cube](https://dev.bouffalolab.com/) o VSCode + toolchain RISC-V
-- **Pantalla:** LCD SPI (incluida en M0Sense)
-- **Entrada de audio:** Micrófono analógico conectado al ADC interno
-
----
-
-## ⚙️ Funcionalidad
-
-- Captura de señal de audio a 16 kHz con ADC y DMA
-- Cálculo de la **FFT** en tiempo real con la librería `riscv_dsp`
-- Detección de la frecuencia dominante
-- Conversión de frecuencia a nota musical (basada en tabla cromática de C0 a B7)
-- Visualización en pantalla con:
-  - Letra de la nota
-  - Frecuencia detectada
-  - Indicador gráfico de afinación (estilo afinador cromático)
-
-<video src="./docs/example.mp4" controls width="400"></video>
-![](docs/example.gif)
----
-
-## 📷 Interfaz visual
-
-La pantalla LCD muestra:
-
-- Frecuencia actual (Hz)
-- Nota musical correspondiente (A, A#, B, ...)
-
----
-
-## 🧪 Requisitos
-
-- M0Sense con firmware cargado
-- Micrófono conectado a **ADC Channel 2**
-- Librerías:
-  - `riscv_math` / `riscv_dsp`
-  - `hal_adc`, `hal_dma`, `hal_gpio`, `mcu_lcd`
-
----
-
-## 📁 Estructura del proyecto
+```bash
+mkdir build && cd build
+cmake ..
+make
 ```
-.
-├── main.c                  # Código principal del afinador
-├── io_def.h                # Definiciones de pines para el LCD y micrófono
-├── docs/
-│   └── example.png         # Imagen de la pantalla del afinador
-└── README.md               # Este archivo
+
+## Uso
+
+1. Flashear el firmware en la placa BL702.
+2. Al encender, el sistema inicializa LCD, ADC, DMA y comienza la adquisición.
+3. El espectrograma se va dibujando en tiempo real en la pantalla, con barrido vertical.
+4. Cada nueva línea del espectrograma sobrescribe a la más antigua en forma circular.
+
+## Visualización
+
+- Cada columna representa una banda de frecuencia.
+- Cada fila es una "instantánea" del espectro en el tiempo.
+- Colores representan la intensidad (azul = baja, rojo = alta).
+- Se usa mapeo RGB565 para visualización en LCD.
+
+## Archivos principales
+
+- `main.c`: lógica principal del sistema, setup de periféricos, procesamiento de FFT y dibujo.
+- `draw_spectrogram_row()`: función que dibuja cada fila del espectrograma con scroll circular.
+- `map_intensity_to_color()`: transforma magnitudes en colores.
+
+## Consideraciones
+
+- Se recomienda usar señales entre 300 Hz y 4 kHz para mejor visualización.
+- La frecuencia de muestreo se ajusta automáticamente vía PLL.
+- Puede ser modificado fácilmente para guardar datos, enviar por BLE o UART.
+
+## Licencia
+
+Proyecto educativo y experimental distribuido bajo licencia Apache 2.0.
+
+---
+
+Desarrollado para plataformas BL702 con enfoque en procesamiento digital de señales en tiempo real.
+    # Este archivo
 ```
