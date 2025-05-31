@@ -6,6 +6,8 @@
 - SDK de Bouffalo Lab (BL702).
 - Cliente serial USB para debug (opcional).
 
+![Espectrograma](./docs/example.jpg) <!-- Asegúrate de subir una imagen real del dispositivo funcionando -->
+
 ## Compilación
 
 Asegúrese de contar con el SDK y toolchain configurado:
